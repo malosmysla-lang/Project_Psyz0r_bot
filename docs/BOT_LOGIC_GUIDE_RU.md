@@ -1,5 +1,8 @@
 # Psyz0r_bot — единый гайдлайн поведения
 
+Последнее дополнение10.10: [пять уровней/внутренняя адаптация](DIFFICULTY_ADAPTATION_SPEC_RU.md). Полупрофи уровня3 — целевой образ;1–2spawntrap-эпизода не квота, длина до2–3отдельно. Общий skill filter пока не реализован, QA-проверки только описаны.
+
+
 ## Текущая сверка10.10.2026 — только текст
 
 См. [сверку и конфликты](LOGIC_RECONCILIATION_RU.md), [текстовую схему](LOGIC_MAP_RU.md), [оригинальную PNG](Project_Psyz0r_logic_mindmap.png), [таблицу доказательств](REQUIREMENTS_TRACEABILITY_RU.md), [основы игры/crouch](GAME_BASICS_SPEC_RU.md) и [аудит источников](GUIDE_AUDIT_2026-10-10_RU.md).
