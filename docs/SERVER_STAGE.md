@@ -1,5 +1,17 @@
 # SSH и Linux-проверка — 9 октября 2026
 
+## Запуск, уточнённый владельцем
+
+Проверен /home/qlserver/server/run_server_x64.sh: он запускает qzeroded с LD_LIBRARY_PATH, но не загружает minqlx. Для нашего адаптера имеется run_server_x64_minqlx.sh, который дополнительно задаёт LD_PRELOAD=minqlx.x64.so. В server.cfg уже установлен bot_enable=1.
+
+Текущая служба quakelive.service использует minqlx-скрипт и уже запущена. Обычный запуск второго скрипта рядом с ней недопустим: сначала контролировать единственность процесса и занятость порта. Для штатного управления используем systemd. При ручном запуске остановленной службы из каталога server применяем:
+
+```sh
+./run_server_x64_minqlx.sh +set fs_basepath /home/qlserver/server +set fs_homepath /home/qlserver/.quakelive +set net_strict 1 +set net_port 27960 +set bot_enable 1 +exec server.cfg
+```
+
+quit — команда игровой консоли, не команда SSH-shell. SSH уже выполняется как qlserver, поэтому su - qlserver не требуется. Скрипт находится в server, не в baseq3. Текущий процесс не останавливался при проверке инструкции запуска.
+
 Владелец разрешил использовать сервер quake-admin для тестов Psyz0r_bot. SSH ключом из существующей настройки работает; сервер Linux x86_64, Quake Live qzeroded.x64 и minqlx.x64.so, quakelive.service active. Есть GCC/G++, CMake не обнаружен.
 
 ## Что размещено
