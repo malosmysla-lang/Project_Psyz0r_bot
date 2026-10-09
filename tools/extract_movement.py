@@ -25,6 +25,8 @@ class PlayerPrefix(Packed):
     _fields_ += [('grapplePoint', F * 3), ('eFlags', I), ('eventSequence', I), ('events', I * 2), ('eventParms', I * 2)]
     _fields_ += [(n, I) for n in ('externalEvent', 'externalEventParm', 'externalEventTime', 'clientNum', 'weapon', 'weaponstate')]
     _fields_ += [('viewangles', F * 3)]
+    _fields_ += [(n, I) for n in ('viewheight', 'damageEvent', 'damageYaw', 'damagePitch', 'damageCount')]
+    _fields_ += [('stats', I * 16), ('persistant', I * 16), ('powerups', I * 16), ('ammo', I * 64)]
 
 class Snapshot(Packed):
     _fields_ = [('mask', c.c_uint8 * 32), ('player', c.POINTER(PlayerPrefix))]
@@ -61,6 +63,7 @@ def extract(demo, output, dll_path):
     parse = bind(dll, 'udtCuParseMessage', I, [P, c.POINTER(Message), c.POINTER(U), c.POINTER(Input)])
     version = bind(dll, 'udtGetVersionString', c.c_char_p, [])
     magic = bind(dll, 'udtGetUDTMagicNumber', I, [c.POINTER(I), U, I, U, U])
+    id_magic = bind(dll, 'udtGetIdMagicNumber', I, [c.POINTER(I), U, I, U, U])
     if init() != 0:
         raise RuntimeError('UDT initialization failed')
     if version() != b'1.3.1':
@@ -68,6 +71,7 @@ def extract(demo, output, dll_path):
         raise RuntimeError('ABI validated only for UDT 1.3.1')
     ctx = create()
     count, segments, maximum_speed, gaps = 0, 0, 0, 0
+    game_state_number = 0
     previous = None
     last_event_sequence = None
     last_external = None
@@ -100,6 +104,7 @@ def extract(demo, output, dll_path):
                 if error != 0:
                     raise RuntimeError(f'UDT parse error {error} at packet {sequence}')
                 if message.is_gamestate:
+                    game_state_number += 1
                     segments += 1
                     previous = None
                     last_event_sequence = None
@@ -121,7 +126,7 @@ def extract(demo, output, dll_path):
                     gaps += bool(delta and delta > 100)
                     speed = math.hypot(ps.velocity[0], ps.velocity[1])
                     maximum_speed = max(maximum_speed, speed)
-                    pickups = []
+                    pickups, decoded_events = [], []
                     event_inputs = []
                     # PS has only a two-event ring. Never invent events missing from that ring.
                     if last_event_sequence is not None and ps.eventSequence >= last_event_sequence:
@@ -135,7 +140,11 @@ def extract(demo, output, dll_path):
                     last_external = external
                     for raw, parm, seq, event_source in event_inputs:
                         event_type = I()
-                        if magic(c.byref(event_type), 5, raw & ~0x300, protocol_id, 0) != 0 or event_type.value not in (2, 3):
+                        normalized = event_type.value if magic(c.byref(event_type), 5, raw & ~0x300, protocol_id, 0) == 0 else None
+                        decoded_events.append(dict(protocol_event_id=raw, parameter=parm,
+                                                   udt_event_id=normalized, event_sequence=seq, source=event_source,
+                                                   kind='weapon_fired' if normalized == 1 else 'other_or_unknown'))
+                        if normalized not in (2, 3):
                             continue
                         item_type = I()
                         if magic(c.byref(item_type), 12, parm, protocol_id, 0) != 0:
@@ -144,11 +153,23 @@ def extract(demo, output, dll_path):
                         if item:
                             pickups.append(dict(kind=item, event_sequence=seq, event_source=event_source, item_protocol_id=parm))
                     last_event_sequence = ps.eventSequence
-                    row = dict(segment=segments, time_ms=snap.time, message=snap.message,
+                    health_index, armor_index = I(), I()
+                    health_ok = id_magic(c.byref(health_index), 1, 0, protocol_id, 0) == 0 and 0 <= health_index.value < 16
+                    armor_ok = id_magic(c.byref(armor_index), 1, 3, protocol_id, 0) == 0 and 0 <= armor_index.value < 16
+                    health = ps.stats[health_index.value] if health_ok else None
+                    armor = ps.stats[armor_index.value] if armor_ok else None
+                    if health is not None and not -10000 <= health <= 10000:
+                        raise ValueError('Invalid health: check player state ABI')
+                    if armor is not None and not 0 <= armor <= 10000:
+                        raise ValueError('Invalid armor: check player state ABI')
+                    row = dict(segment=segments, game_state_number=game_state_number, time_ms=snap.time, message=snap.message,
                                client=ps.clientNum, position=list(ps.origin), velocity=list(ps.velocity),
                                viewangles=list(ps.viewangles), weapon_id=ps.weapon,
                                pm_type=ps.pm_type, ground_entity=ps.groundEntityNum,
                                speed_xy=speed, snapshot_delta_ms=delta,
+                               health=health, armor=armor,
+                               current_weapon_ammo=ps.ammo[ps.weapon] if 0 <= ps.weapon < 64 else None,
+                               events=decoded_events,
                                observed_pov_pickups=pickups,
                                raw_mouse_or_keys_verified=False)
                     target.write(json.dumps(row) + '\n')

@@ -9,6 +9,7 @@ struct OwnState {
     std::array<float, 3> position{}, velocity{}, view_angles{};
     int health = 0, armor = 0, weapon = 0;
     bool alive = false, on_ground = false;
+    bool state_verified = false, view_angles_valid = false;
 };
 struct GameCommand {
     std::uint64_t id = 0;
@@ -17,6 +18,8 @@ struct GameCommand {
     int forward = 0, right = 0;
     int weapon = 0;
     bool jump = false, attack = false;
+    bool quiet_walk = false;
+    int valid_for_ms = 0;
 };
 // Contract only. No retail QL implementation exists yet.
 // Acceptance must not be interpreted as observed execution.
