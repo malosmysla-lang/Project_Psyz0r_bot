@@ -37,12 +37,20 @@ class psyz_state_probe(minqlx.Plugin):
         if now - self.last_sample < 0.1:
             return
         self.last_sample = now
+        info = minqlx.player_info(slot)
+        if info is None or info.connection_state != minqlx.CS_ACTIVE:
+            if self.output:
+                self.write_record({'status': 'waiting_for_active_target', 'slot': slot,
+                                   'own_state_verified': False, 'command_sent': False})
+            return
         state = minqlx.player_state(slot)
         if state is None:
             return
         self.sequence += 1
         record = {
             'seq': self.sequence, 'monotonic_seconds': now, 'slot': slot,
+            'name': info.name, 'connection_state': info.connection_state,
+            'own_state_verified': True,
             'health': state.health, 'armor': state.armor,
             'position': list(state.position), 'velocity': list(state.velocity),
             'weapon': state.weapon, 'ammo': list(state.ammo),
@@ -50,6 +58,9 @@ class psyz_state_probe(minqlx.Plugin):
             'view_angles_status': 'not exposed in inspected PlayerState API',
             'command_sent': False,
         }
+        self.write_record(record)
+
+    def write_record(self, record):
         if self.output:
             temporary = self.output.with_suffix('.tmp')
             temporary.write_text(json.dumps(record), encoding='utf-8')
