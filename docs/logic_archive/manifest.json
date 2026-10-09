@@ -1,0 +1,75 @@
+{
+  "received_date": "2026-10-10",
+  "map_date_printed": "09.10.2026",
+  "files": [
+    {
+      "path": "docs/Project_Psyz0r_logic_mindmap.png",
+      "sha256": "ba65a73f2ef61faab86e860e2c3d96cd4fb34e2bfd5b3af365bef7356a3b7925",
+      "bytes": 777844
+    },
+    {
+      "path": "docs/logic_archive/2026-10-10_audit_assignment_original.txt",
+      "sha256": "233d0c27afc52daa46de3290a1dd32343c91a32f5543d35032845c9f69bc9700",
+      "bytes": 12401
+    },
+    {
+      "path": "docs/logic_archive/2026-10-10_prior_handoff_original.txt",
+      "sha256": "d4d99813f5f0390332842137286a627e8f40a6969be10839adb1208c108f61f2",
+      "bytes": 10059
+    },
+    {
+      "path": "docs/logic_archive/owner_package_2026-10-10/Project_Psyz0r_logic_mindmap.png",
+      "sha256": "ba65a73f2ef61faab86e860e2c3d96cd4fb34e2bfd5b3af365bef7356a3b7925",
+      "bytes": 777844
+    },
+    {
+      "path": "docs/logic_archive/owner_package_2026-10-10/Psyz0r_bot_chat_archive.md",
+      "sha256": "b88e6e9cdff272e397900d2d6ddef4e2709989e2a82d1f5e24ce0dd407c41f3d",
+      "bytes": 220123
+    },
+    {
+      "path": "docs/logic_archive/owner_package_2026-10-10/Psyz0r_bot_explorer.html",
+      "sha256": "9cc5bcb9b8bcab2721a3e77019066e102b7320ab1f154962214ce168eca4f493",
+      "bytes": 58073
+    },
+    {
+      "path": "docs/logic_archive/owner_package_2026-10-10/Psyz0r_bot_guide_RU.md",
+      "sha256": "0237b10bacf201050dbb8136aa23d940f9877278ae077eb5b5f5ba13ae429728",
+      "bytes": 62271
+    },
+    {
+      "path": "docs/logic_archive/owner_package_2026-10-10/Psyz0r_bot_logic_v2.pptx",
+      "sha256": "be1dc3d9ef3c3d8d3b93a51e47c7c668f2d92e69a087826009efb8e86462ea8b",
+      "bytes": 60129
+    },
+    {
+      "path": "docs/logic_archive/owner_package_2026-10-10/Psyz0r_bot_logic_v3.pptx",
+      "sha256": "2f4b55515040142cb0797b69fd37b63f65c723853b626e9f6b7feaea0d4f7734",
+      "bytes": 60282
+    },
+    {
+      "path": "docs/logic_archive/owner_package_2026-10-10/Psyz0r_bot_map.svg",
+      "sha256": "feb315abacd042ea219bcb9417fb0561b84fb1654856c46f870c798648869eeb",
+      "bytes": 33106
+    },
+    {
+      "path": "docs/logic_archive/owner_package_2026-10-10/Psyz0r_bot_map_4K_v3.png",
+      "sha256": "e54fc6bfe3ed55e38c978ce8d64867aca1f258b8f9218832f6ff0125ef1b955e",
+      "bytes": 783564
+    },
+    {
+      "path": "docs/logic_archive/owner_package_2026-10-10/Psyz0r_bot_mindmap.opml",
+      "sha256": "f1457c6797daf0345d1ff667f6cc222974da80f69f086a9655e06f1565f2cba9",
+      "bytes": 49206
+    },
+    {
+      "path": "docs/logic_archive/owner_package_2026-10-10/START_HERE.txt",
+      "sha256": "8770a99437137b34e8b56f3b9368a6504391168e11714a9e6fb9fdaab31bf75b",
+      "bytes": 528
+    }
+  ],
+  "missing": [],
+  "registry_version_printed": "09.10.2026",
+  "package_start_here_version": "10.10.2026",
+  "registry_ids": 153
+}

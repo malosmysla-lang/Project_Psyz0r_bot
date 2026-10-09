@@ -7,3 +7,6 @@
 *.json text eol=lf
 *.ini text eol=lf
 *.ps1 text eol=crlf
+
+# Preserve owner source packages byte-for-byte, including original line endings.
+docs/logic_archive/** -text whitespace=-blank-at-eol,-blank-at-eof
