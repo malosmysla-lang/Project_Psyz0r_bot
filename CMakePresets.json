@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "configurePresets": [{
+    "name": "msvc-x64", "displayName": "MSVC x64 Debug",
+    "generator": "Visual Studio 17 2022", "architecture": "x64",
+    "binaryDir": "${sourceDir}/out/msvc-x64"
+  }],
+  "buildPresets": [{"name": "msvc-x64", "configurePreset": "msvc-x64", "configuration": "Debug"}],
+  "testPresets": [{"name": "msvc-x64", "configurePreset": "msvc-x64", "configuration": "Debug", "output": {"outputOnFailure": true}}]
+}

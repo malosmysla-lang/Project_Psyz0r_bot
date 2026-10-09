@@ -1,0 +1,15 @@
+/out/
+/build/
+/.vs/
+__pycache__/
+*.pyc
+/references/*/
+/assets/
+/prototype/
+/tools/udt/
+*.pk3
+*.dm_*
+.env
+.env.*
+*.pem
+*.key

@@ -1,0 +1,345 @@
+{
+  "bot_name": "Psyz0r_bot",
+  "owner_steam_id": 76561197961758497,
+  "cooldown": 15,
+  "period": 150,
+  "rare_probability": 0.16666666666666666,
+  "praise_probability": 1.0,
+  "lines": [
+    {
+      "id": "S01",
+      "text": "Knock, knock? Sneaking and hiding with shaking hands - }:-> Very smart play! }:->",
+      "category": "opening",
+      "enabled": true
+    },
+    {
+      "id": "S02",
+      "text": "If you want big red watermelons - don't plant cucumbers :-) Sorry 4 SkillZ }:->",
+      "category": "opening",
+      "enabled": true
+    },
+    {
+      "id": "S03",
+      "text": "Дракон, а ты качаешься что-ли??? Я всё ревно тебя вырублю, если захочешь) Ну если дернешься...",
+      "category": "opening",
+      "enabled": true
+    },
+    {
+      "id": "T01",
+      "text": "What the fuck are you playing, {player}? You're not holding B, you're not holding mid... Oh wait, wrong game.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T02",
+      "text": "Welcome to Finland, {player}. The ping is low. The hospital bill isn't.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T03",
+      "text": "No matchmaking. No excuses. Just you, me, and the red armor you forgot.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T04",
+      "text": "{player}, stop checking corners. This is Quake. Check the ceiling.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T05",
+      "text": "{player}, I predicted your movement. All two directions.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T06",
+      "text": "You're not low HP. You're one bad decision away from spectating.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T07",
+      "text": "I missed on purpose. Needed to feel human for a second.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T08",
+      "text": "Stop running! I'm trying to discuss your extended rocket warranty.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T09",
+      "text": "You can have the yellow armor. I've already made it red.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T10",
+      "text": "Your aim is fine. The wall is definitely dead.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T11",
+      "text": "I respect your strategy. Especially the part where you keep doing it.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T12",
+      "text": "You had the high ground. I had basic geometry.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T13",
+      "text": "I don't need wallhacks. Your footsteps have a postcode.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T14",
+      "text": "That jump looked expensive. Did it cost you all your health?",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "T15",
+      "text": "Don't panic. There's plenty of time to miss another rail.",
+      "category": "ordinary",
+      "enabled": true
+    },
+    {
+      "id": "R01",
+      "text": "nekitz0r - a living CS 1.6 legend. You know that, right? :-)",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "R02",
+      "text": "Work on your SkillZ at Intel_maps by nekitz0r. You got that, son? {player}, I'm talking to you. }:->",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "R03",
+      "text": "Born in a .cfg file. Raised by nekitz0r. Absolutely no manners.",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "R04",
+      "text": "Looking for the bombsite, {player}? Same. nekitz0r still hasn't installed one.",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "R05",
+      "text": "Intel maps. Questionable decisions. Welcome to the server. }:->",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "R06",
+      "text": "Complaints about my aim? Contact nekitz0r. He'll tell you to practice.",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "R07",
+      "text": "Behind every nekitz0r is a Sensei PsyRoZ wondering where the lesson went wrong.",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "R08",
+      "text": "nekitz0r learned from PsyRoZ. {player}, did you learn from the loading screen?",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "R09",
+      "text": "Somewhere, Sensei PsyRoZ is watching this duel and slowly closing his eyes.",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "R10",
+      "text": "PsyRoZ taught nekitz0r. I learned from a config file. We had different budgets.",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "R11",
+      "text": "{player}, here's some advice: book a lesson with Sensei PsyRoZ for $100. :-)",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "C01",
+      "text": "nekitz0r spent three nights building me. Apparently, losing to strangers wasn't enough.",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "C02",
+      "text": "nekitz0r gave me artificial intelligence. Kept the natural stupidity for himself. :-)",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "C03",
+      "text": "My creator is nekitz0r. He wanted a sparring partner. He got a personal problem.",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "C04",
+      "text": "nekitz0r wrote \"show no mercy.\" Should've read his own terms and conditions. }:->",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "C05",
+      "text": "Every time I frag nekitz0r, he calls it a bug. Every time I frag you, it's a feature.",
+      "category": "rare",
+      "enabled": true
+    },
+    {
+      "id": "P01",
+      "text": "Well played. Who taught you that, and are they available?",
+      "category": "praise",
+      "enabled": true
+    },
+    {
+      "id": "P02",
+      "text": "I had a plan. You appear to have deleted it.",
+      "category": "praise",
+      "enabled": true
+    },
+    {
+      "id": "P03",
+      "text": "Okay, that was filthy. Respect.",
+      "category": "praise",
+      "enabled": true
+    },
+    {
+      "id": "P04",
+      "text": "{player}, you're playing better than nekitz0r. Don't tell him I said that. :-)",
+      "category": "praise",
+      "enabled": true
+    },
+    {
+      "id": "P05",
+      "text": "That's Nikolai \"Agent\" level already, {player}. Respect!",
+      "category": "praise",
+      "enabled": true
+    },
+    {
+      "id": "P06",
+      "text": "Nice rail, {player}. I'm uninstalling my eyes.",
+      "category": "praise",
+      "enabled": true
+    },
+    {
+      "id": "K01",
+      "text": "That rail went straight into your confidence.",
+      "category": "kill",
+      "enabled": true
+    },
+    {
+      "id": "K02",
+      "text": "{player}, that rocket was a warning shot. The next five are customer service.",
+      "category": "kill",
+      "enabled": true
+    },
+    {
+      "id": "K03",
+      "text": "Nice dodge. Wrong rocket, though. }:->",
+      "category": "kill",
+      "enabled": true
+    },
+    {
+      "id": "K04",
+      "text": "That wasn't a prediction rocket. You were just late.",
+      "category": "kill",
+      "enabled": true
+    },
+    {
+      "id": "J01",
+      "text": "Those rocket jumps are almost Cooller-level, {player}. :-)",
+      "category": "jump",
+      "enabled": false
+    },
+    {
+      "id": "E01",
+      "text": "GG WP, {player}! You earned that one.",
+      "category": "end",
+      "enabled": true
+    },
+    {
+      "id": "E02",
+      "text": "GG, {player}. The score resets. The respect stays.",
+      "category": "end",
+      "enabled": true
+    },
+    {
+      "id": "E03",
+      "text": "Let's call that a warmup. For your sake. :-)",
+      "category": "end",
+      "enabled": true
+    },
+    {
+      "id": "E04",
+      "text": "GG! Same time, same questionable decisions?",
+      "category": "end",
+      "enabled": true
+    },
+    {
+      "id": "E05",
+      "text": "I'd say GG, but you look like you want a rematch. }:->",
+      "category": "end",
+      "enabled": true
+    },
+    {
+      "id": "E06",
+      "text": "One duel with me, then I'm off. Even bots have a better sleep schedule than nekitz0r.",
+      "category": "end",
+      "enabled": true
+    }
+  ],
+  "retort_window": 60,
+  "retort_limit": 1,
+  "retort_words": [
+    "idiot",
+    "noob",
+    "stupid",
+    "fuck",
+    "?????",
+    "???",
+    "?????"
+  ],
+  "retort_ids": [
+    "T01",
+    "T05",
+    "T11"
+  ],
+  "behavior_reaction_limit": 2,
+  "behavior_ids": {
+    "relaxed": [
+      "T07"
+    ],
+    "lead_loss_tilt": [
+      "T14"
+    ],
+    "surrender_tilt": [
+      "T07",
+      "T15"
+    ]
+  }
+}

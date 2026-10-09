@@ -1,0 +1,31 @@
+[
+  {
+    "directory": "brainworks",
+    "commit": "bff5f372d0e893064048fcc35dc16d553c68b9c2",
+    "head": "ref: refs/heads/master",
+    "source": "https://github.com/NuclearMonster/quake3-brainworks"
+  },
+  {
+    "directory": "quake3-source",
+    "commit": "dbe4ddb10315479fc00086f08e25d968b4b43c49",
+    "head": "ref: refs/heads/master",
+    "source": "https://github.com/id-Software/Quake-III-Arena"
+  },
+  {
+    "directory": "winqlx32",
+    "commit": "4b0b09200564fe22ac817d5d876e89fc1c7b97ac",
+    "head": "ref: refs/heads/win32-beta",
+    "source": "https://github.com/locopol/WinQLX32"
+  },
+  {
+    "directory": "wolfcamql",
+    "commit": "89fcda121c6cc7cd0764a2b6525063de62e2d182",
+    "head": "ref: refs/heads/master",
+    "source": "https://github.com/brugal/wolfcamql"
+  },
+  {
+    "directory": "uberdemotools",
+    "source": "https://github.com/mightycow/uberdemotools",
+    "commit": "ecf60b9d0cc8b5e1b234e9ecf7d40ff7885ef65f"
+  }
+]

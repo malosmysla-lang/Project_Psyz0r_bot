@@ -1,0 +1,25 @@
+name: MSVC and behavior tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Configure MSVC
+        run: cmake --preset msvc-x64
+      - name: Build
+        run: cmake --build --preset msvc-x64
+      - name: C++ scenarios
+        run: ctest --preset msvc-x64
+      - name: Chat, configuration and C++ integration
+        run: python -m unittest discover -s tests -v
