@@ -36,4 +36,4 @@ references содержит только пять используемых ре�
 python tools/extract_one_demo.py "путь-к-файлу.dm_91"
 ```
 
-adapter/psyz_state_probe.py — не развёрнутый read-only minqlx-пробник выбранного слота. Требует отдельного тестового сервера и явных cvar; чтение в игре ещё не проверено. Контракты game_interface.hpp не имеют игрового исполнителя. Sandbox пишет JSONL с game_command_sent=false: это журнал офлайн-решения, не подтверждение управления QL.
+adapter/psyz_state_probe.py развёрнут на отдельном тестовом экземпляре Quake Live: подтверждено чтение собственного состояния активного слота Psyz0r_bot. На сервере пока работает штатный AI с нашим профилем. Контракты game_interface.hpp не имеют игрового исполнителя. Sandbox пишет JSONL с game_command_sent=false: это журнал офлайн-решения, не подтверждение управления QL. Подробности — [серверный этап](docs/SERVER_STAGE.md) и [полный отчёт о готовности](docs/STATUS_REPORT.md).
