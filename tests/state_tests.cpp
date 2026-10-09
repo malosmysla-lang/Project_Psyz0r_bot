@@ -75,5 +75,23 @@ int main() {
     Behavior low_confidence(Style::Aggressive);o={};o.time=30;o.enemy_visible=true;
     o.damage_dealt=90;o.favorable_fight_estimate=true;o.estimate_confidence=0.2;
     check(low_confidence.decide(o).intent!=Intent::Push,"uncertain damage does not authorize push");
+    BehaviorSettings macro;macro.total_control_probability=0;macro.surrender_enabled=false;
+    Observation map;map.time=30;map.opponent_score=10;
+    Behavior no_total(Style::Thoughtful,macro);
+    check(no_total.decide(map).items!=ItemPriority::FullControl,"deficit cannot force total control");
+    map.time=31;no_total.decide(map);
+    auto traces=no_total.drain_reaction_trace();
+    check(traces.size()==1&&traces[0].reason=="total_control_match_trial_declined","one macro probability trial");
+    macro.total_control_probability=1;
+    Behavior yes_total(Style::Thoughtful,macro);
+    check(yes_total.decide(map).items==ItemPriority::FullControl,"eligible macro selection");
+    yes_total.reset_match();map.opponent_score=0;
+    check(yes_total.decide(map).items!=ItemPriority::FullControl,"no automatic total control against unknown weak opponent");
+    ItemMemory timers;
+    check(!timers.server_timer("mega",1,36,"server",true,false),"exact timer privilege required");
+    check(!timers.server_timer("mega",1,36,"",true,true),"exact timer provenance required");
+    check(timers.server_timer("mega",1,36,"synthetic_test",true,true),"authorized exact timer accepted");
+    check(timers.estimate("mega")->exact&&timers.estimate("mega")->expected_respawn==36,"timer provenance retained");
+    check(!timers.pickup("mega",0,35,true),"stale prediction cannot replace exact timer");
     return failed?1:0;
 }

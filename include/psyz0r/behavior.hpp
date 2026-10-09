@@ -14,7 +14,8 @@ struct BehaviorSettings {
     int style_min_samples=8;
     double engagement_timeout=5, gauntlet_duration=90, corpse_duration=1;
     int gauntlet_damage=50, relax_lead=20, relax_allow_frags=7, strong_opponent_frags=5, pressure_equal_score=10;
-    double lead_tilt_probability=0.015, lead_tilt_duration=0, relax_probability=1;
+    double lead_tilt_probability=0.12, lead_tilt_duration=0, relax_probability=1;
+    double total_control_probability=0.15;
     bool surrender_enabled=true;
     int surrender_deficit=5, surrender_own_max_score=0, surrender_min_streak=3;
     double surrender_probability=0.10, surrender_duration=0, opening_seconds=15;
@@ -92,7 +93,8 @@ struct Observation {
     bool enemy_hp_estimate_valid=false;
     double enemy_hp_estimate=0;
     std::vector<Weapon> available_weapons;
-    // Static map locations and observed timer predictions only, not hidden pickup state.
+    // Static map locations with observed predictions or owner-authorized exact timers.
+    // Timer privilege never grants hidden live opponent positions.
     std::vector<ItemCandidate> item_candidates;
     // Static map cover candidates filtered by observed danger; no hidden enemy coordinates.
     std::vector<CoverCandidate> cover_candidates;
@@ -132,6 +134,7 @@ private:
     std::mt19937 rng_;
     Mood mood_=Mood::Normal;
     bool surrender_checked_=false, lead_checked_=false;
+    bool total_control_checked_=false, total_control_selected_=false;
     double mood_until_=0, last_style_change_=0, last_time_=0;
     std::unordered_map<std::string,OpponentReaction> reactions_;
     std::vector<ReactionTrace> reaction_trace_;

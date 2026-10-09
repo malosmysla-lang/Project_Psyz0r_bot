@@ -34,6 +34,7 @@ BehaviorSettings BehaviorSettings::load(const std::string& path) {
         FLOAT_SETTING(engagement_timeout) FLOAT_SETTING(gauntlet_duration) FLOAT_SETTING(corpse_duration)
         FLOAT_SETTING(lead_tilt_probability) FLOAT_SETTING(lead_tilt_duration)
         FLOAT_SETTING(relax_probability)
+        FLOAT_SETTING(total_control_probability)
         FLOAT_SETTING(surrender_probability) FLOAT_SETTING(surrender_duration) FLOAT_SETTING(opening_seconds)
         FLOAT_SETTING(revenge_target_estimated_hp) FLOAT_SETTING(revenge_contact_distance)
         FLOAT_SETTING(close_distance) FLOAT_SETTING(rail_distance) FLOAT_SETTING(push_confidence_min)
@@ -45,7 +46,7 @@ BehaviorSettings BehaviorSettings::load(const std::string& path) {
 #undef INT_SETTING
 #undef FLOAT_SETTING
     }
-    if(s.surrender_probability>1||s.lead_tilt_probability>1||s.relax_probability>1||s.style_margin>1||s.push_confidence_min>1||
+    if(s.surrender_probability>1||s.lead_tilt_probability>1||s.total_control_probability>1||s.relax_probability>1||s.style_margin>1||s.push_confidence_min>1||
        s.strong_min_observed_accuracy>1||s.relaxed_jump_scale>1||s.passive_jump_scale>1||
        s.style_min_samples<2||s.style_window<=0||s.close_distance>=s.rail_distance||s.surrender_deficit<1||s.gauntlet_damage<1||s.gauntlet_duration<=0||s.corpse_episode_threshold<1||s.corpse_duration>1||s.corpse_duration<=0||s.revenge_contact_distance<=0)
         throw std::runtime_error("Settings outside supported ranges");
@@ -64,6 +65,7 @@ void Behavior::enter(Mood mood,double now,double duration) {
 void Behavior::trigger_surrender_tilt() { surrender_checked_=true; enter(Mood::SurrenderTilt,last_time_,settings_.surrender_duration); }
 void Behavior::reset_match() {
     style_=initial_style_; mood_=Mood::Normal; surrender_checked_=lead_checked_=false;
+    total_control_checked_=total_control_selected_=false;
     mood_until_=last_style_change_=last_time_=0;
     pressure_events_.clear(); pressure_opponent_.clear(); last_fired_cover_.clear();
     waiting_cover_.clear();cover_wait_started_=0;
@@ -324,7 +326,15 @@ Decision Behavior::decide(const Observation& o) {
     }
     if(style_==Style::Passive && mood_!=Mood::Relaxed) { d.items=ItemPriority::YellowHealth; d.jump_scale=settings_.passive_jump_scale; }
     else if(o.time<settings_.opening_seconds) d.items=ItemPriority::Mega;
-    else if(mood_!=Mood::Relaxed&&lead<=0) d.items=ItemPriority::FullControl;
+    else if(mood_==Mood::Normal && strong && o.time>=settings_.opening_seconds) {
+        if(!total_control_checked_) {
+            total_control_checked_=true;
+            total_control_selected_=roll(settings_.total_control_probability);
+            reaction_trace_.push_back({0,o.opponent_id,"behavior_policy",
+                total_control_selected_?"total_control_match_trial_selected":"total_control_match_trial_declined"});
+        }
+        if(total_control_selected_) d.items=ItemPriority::FullControl;
+    }
     if(o.time>=settings_.opening_seconds && style_==Style::Aggressive && mood_!=Mood::Relaxed && o.enemy_visible && o.favorable_fight_estimate &&
        o.estimate_confidence>=settings_.push_confidence_min && std::max(o.damage_dealt,episode_dealt_)>=settings_.aggressive_push_damage)
         { d.intent=Intent::Push; d.reason="damage_estimate_push"; }

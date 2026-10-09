@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 import random
 import re
+from runtime.difficulty import DifficultySession
 
 
 def render(line, player, steam_id, owner):
@@ -32,7 +33,8 @@ def render(line, player, steam_id, owner):
 
 
 class ChatPolicy:
-    def __init__(self, config=None, rng=None):
+    def __init__(self, config=None, rng=None, difficulty=None):
+        self.difficulty = difficulty or DifficultySession()
         self.config = config or json.loads((Path(__file__).resolve().parents[1] / 'config/chat.json').read_text(encoding='utf-8'))
         self.rng = rng or random.Random()
         self.lines = {line['id']: line for line in self.config['lines']}
@@ -44,16 +46,24 @@ class ChatPolicy:
         self.diagnostics = []
         self.cancel()
 
-    def cancel(self):
-        """Map change, disconnect, new duel or bot removal cancels pending output."""
+    def cancel(self, *, preserve_rematch=False):
+        """Cancel output. Accepted next-map consent survives only with preserve_rematch.
+
+        The adapter uses preserve_rematch=True for a normal post-final map change;
+        disconnect/removal/abort uses the default, which cancels the proposal.
+        """
         self.active = False
         self.present = False
         self.pending = {}
+        if not preserve_rematch or self.difficulty.active:
+            self.difficulty.cancel()
 
-    def start(self, duel_id, player, steam_id, now, active_seconds=0):
+    def start(self, duel_id, player, steam_id, now, active_seconds=0, *, map_id=None):
         if duel_id == self.duel_id:
             return
-        self.cancel()
+        self.cancel(preserve_rematch=True)
+        if map_id is not None:
+            self.difficulty.begin(duel_id, steam_id, map_id, now)
         self.duel_id = duel_id
         self.player, self.steam_id = player, steam_id
         self.active = self.present = True
@@ -85,6 +95,7 @@ class ChatPolicy:
         """Disconnect/team change: clear the opponent and cancel its pending output."""
         self.interactions.pop(str(steam_id), None)
         if str(steam_id) == str(getattr(self, 'steam_id', None)):
+            self.difficulty.cancel(opponent=steam_id)
             self.cancel()
             self.duel_id = None
 
@@ -169,6 +180,11 @@ class ChatPolicy:
     def opponent_chat(self, event_id, now, *, sender_steam_id, text,
                       sender_is_bot=False, is_reply=False):
         """Adapter supplies human identity; responses to responses are excluded."""
+        if (self.present and getattr(self, 'ended', False) and not sender_is_bot and not is_reply
+                and str(sender_steam_id) == str(self.steam_id) and event_id not in self.events):
+            self.events.add(event_id)
+            self.difficulty.answer(sender_steam_id, text, now)
+            return
         if (not self.active or sender_is_bot or is_reply
                 or str(sender_steam_id) != str(self.steam_id) or event_id in self.events):
             return
@@ -209,12 +225,24 @@ class ChatPolicy:
         for reaction in record.get('interaction_events', []):
             self.interaction_record(('interaction', reaction['event_id']), now, reaction)
 
-    def end(self, now, result=None, *, aborted=False, leaving=False):
+    def end(self, now, result=None, *, aborted=False, leaving=False, summary=None):
         if not self.present or self.ended:
             return
+        text = None
+        if summary is not None:
+            if aborted != summary.aborted or leaving != summary.leaving:
+                raise ValueError('Conflicting duel end flags')
+            text = self.difficulty.finish(summary, now)
         self.ended = True
         self.active = False
         self.pending.clear()
+        if summary is not None:
+            if text:
+                self.pending[0] = (dict(id='REMATCH', text=text, category='rematch', enabled=True),
+                                   now + self.config.get('end_reply_ttl', 25))
+                return
+        elif self.difficulty.active:
+            self.difficulty.cancel()
         if aborted:
             return
         ids = ['E06'] if leaving else {'human_win': ['E01', 'E02'],
@@ -260,4 +288,6 @@ class ChatPolicy:
             if line['category'] == 'gauntlet_reaction':
                 state['last_gauntlet'], state['last_line'] = now, line['id']
         self.trace(now, 'message_sent', line_id=line['id'], category=line['category'])
+        if line['id'] == 'REMATCH':
+            self.difficulty.mark_sent(now)
         return render(line, self.player, self.steam_id, self.config['owner_steam_id'])

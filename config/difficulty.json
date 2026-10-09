@@ -1,0 +1,15 @@
+{
+  "initial_level": 3,
+  "min_active_seconds": 120,
+  "min_combat_samples": 10,
+  "clear_frag_margin": 5,
+  "clear_margin_ratio": 0.25,
+  "reply_timeout": 90,
+  "profiles": [
+    {"level": 1, "name": "I Can Win", "reaction_ms": 500, "decision_interval_ms": 300, "movement": "simple", "decision_quality": "basic", "tactical_frequency": "very_rare", "accuracy_percent": null, "aim_error_degrees": null, "execution_enabled": false},
+    {"level": 2, "name": "Bring It On", "reaction_ms": 350, "decision_interval_ms": 220, "movement": "basic_item_routes", "decision_quality": "resource_aware", "tactical_frequency": "rare", "accuracy_percent": null, "aim_error_degrees": null, "execution_enabled": false},
+    {"level": 3, "name": "Hurt Me Plenty", "reaction_ms": 240, "decision_interval_ms": 150, "movement": "balanced", "decision_quality": "balanced", "tactical_frequency": "moderate", "accuracy_percent": null, "aim_error_degrees": null, "execution_enabled": false},
+    {"level": 4, "name": "Hardcore", "reaction_ms": 170, "decision_interval_ms": 100, "movement": "confident", "decision_quality": "strict_main_items", "tactical_frequency": "frequent", "accuracy_percent": null, "aim_error_degrees": null, "execution_enabled": false},
+    {"level": 5, "name": "Nightmare / Кошмар", "reaction_ms": 120, "decision_interval_ms": 75, "movement": "strongest_verified_human", "decision_quality": "strongest_verified", "tactical_frequency": "high_bounded", "accuracy_percent": null, "aim_error_degrees": null, "execution_enabled": false}
+  ]
+}
