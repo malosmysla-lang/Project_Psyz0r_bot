@@ -6,12 +6,14 @@ from runtime.chat import ChatPolicy, render
 class ChatTests(unittest.TestCase):
     def policy(self):
         p = ChatPolicy(rng=random.Random(3))
+        p.config['weapon_item_probability'] = 1
+        p.config['periodic_probability'] = 1
         p.start('duel-1', '^1Human', 123, 0)
         return p
 
     def test_catalog(self):
         p = self.policy()
-        self.assertEqual(len(p.lines), 51)
+        self.assertEqual(len(p.lines), 57)
         self.assertEqual(sum('$100' in x['text'] and x['enabled'] for x in p.lines.values()), 1)
         self.assertFalse(p.lines['J01']['enabled'])
         self.assertIn('one bad decision', p.lines['T06']['text'])
@@ -21,6 +23,8 @@ class ChatTests(unittest.TestCase):
         text = p.tick(0, 0)
         self.assertTrue(text.startswith('^1'))
         self.assertEqual(text.count('^'), 2)
+        p.config['weapon_item_probability'] = 1
+        p.config['periodic_probability'] = 1
         p.start('duel-1', 'Human', 123, 1)
         self.assertIsNone(p.tick(1, 1))
         p.death('kill1', 10, bot_killed_human=True, weapon='railgun', opponent_steam_id=123)
@@ -55,11 +59,11 @@ class ChatTests(unittest.TestCase):
         p.tick(0, 0)
         p.end(2, 'human_win')
         self.assertIsNone(p.tick(2, 2))
-        self.assertIn('GG', p.tick(15, 15))
+        self.assertIn('GG', p.tick(20, 20))
         p = self.policy()
         p.tick(0, 0)
         p.end(2, 'human_win')
-        self.assertIsNone(p.tick(20, 20))
+        self.assertIsNone(p.tick(28, 28))
 
     def test_owner_and_missing_opponent(self):
         p = self.policy()

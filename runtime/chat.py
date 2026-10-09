@@ -36,9 +36,12 @@ class ChatPolicy:
         self.config = config or json.loads((Path(__file__).resolve().parents[1] / 'config/chat.json').read_text(encoding='utf-8'))
         self.rng = rng or random.Random()
         self.lines = {line['id']: line for line in self.config['lines']}
+        if len(self.lines) != len(self.config['lines']):
+            raise ValueError('Duplicate chat line ID')
         self.last_time = float('-inf')
         self.last_line = None
         self.duel_id = None
+        self.diagnostics = []
         self.cancel()
 
     def cancel(self):
@@ -58,12 +61,14 @@ class ChatPolicy:
         self.retort_times = []
         self.behavior_mood = 'normal'
         self.behavior_reactions = 0
+        self.interactions = {}
+        self.last_weapon_item = float('-inf')
         self.rare_used = self.ended = False
         self.next_period = active_seconds + self.config['period']
         self.offer(1, ['S01', 'S02', 'S03'], now, None)
 
-    def offer(self, priority, ids, now, ttl=5):
-        eligible = [self.lines[i] for i in ids if self.lines[i]['enabled'] and i not in self.used
+    def offer(self, priority, ids, now, ttl=5, repeat=False):
+        eligible = [self.lines[i] for i in ids if self.lines[i]['enabled'] and (repeat or i not in self.used)
                     and not (i == 'P04' and str(self.steam_id) == str(self.config['owner_steam_id']))
                     and render(self.lines[i], self.player, self.steam_id, self.config['owner_steam_id'])]
         alternatives = [line for line in eligible if line['id'] != self.last_line]
@@ -71,6 +76,74 @@ class ChatPolicy:
             eligible = alternatives
         if eligible and priority not in self.pending:
             self.pending[priority] = (self.rng.choice(eligible), None if ttl is None else now + ttl)
+
+    def trace(self, now, reason, **fields):
+        self.diagnostics.append(dict(time=now, reason=reason, **fields))
+        self.diagnostics = self.diagnostics[-1024:]
+
+    def forget_opponent(self, steam_id):
+        """Disconnect/team change: clear the opponent and cancel its pending output."""
+        self.interactions.pop(str(steam_id), None)
+        if str(steam_id) == str(getattr(self, 'steam_id', None)):
+            self.cancel()
+            self.duel_id = None
+
+    def interaction_record(self, event_id, now, record):
+        """Consume a verified C++ ReactionTrace, not a guessed weapon selection.
+
+        Transport/sensors are not implemented here. Opponent IDs must be stable
+        session identities mapped to the chat's human Steam ID by the adapter.
+        """
+        opponent = str(record.get('opponent_id', ''))
+        if not self.active or opponent != str(self.steam_id) or event_id in self.events:
+            return
+        self.events.add(event_id)
+        reason = record.get('reason')
+        if not record.get('source') or reason not in (
+                'gauntlet_damage_below_threshold', 'revenge_started',
+                'corpse_retaliation_enabled'):
+            self.trace(now, 'interaction_ignored', source=record.get('source'), event=reason)
+            return
+        state = self.interactions.setdefault(opponent, {
+            'last_gauntlet': float('-inf'), 'last_line': None,
+            'last_reply_time': None, 'last_reply_type': None, 'corpse_announced': False})
+        if reason == 'corpse_retaliation_enabled':
+            if state['corpse_announced']:
+                return
+            state['corpse_announced'] = True
+            self.offer(-2, self.config['corpse_reply_ids'], now,
+                       self.config['corpse_reply_ttl'], repeat=True)
+            self.trace(now, 'corpse_reply_offered', source=record['source'])
+            return
+        if now - state['last_gauntlet'] < self.config['gauntlet_reply_interval']:
+            self.trace(now, 'gauntlet_topic_cooldown')
+            return
+        if now - self.last_time < self.config['cooldown']:
+            self.trace(now, 'gauntlet_global_cooldown')
+            return
+        if self.rng.random() >= self.config['gauntlet_reply_probability']:
+            self.trace(now, 'gauntlet_probability_suppressed')
+            return
+        ids = [i for i in self.config['gauntlet_reply_ids'] if i != state['last_line']]
+        self.offer(-1, ids, now, 0, repeat=True)
+        self.trace(now, 'gauntlet_reply_offered', source=record['source'])
+
+    def weapon_item_offer(self, ids, now):
+        if now - self.last_weapon_item < self.config['weapon_item_interval']:
+            self.trace(now, 'weapon_item_topic_cooldown')
+            return
+        if self.rng.random() >= self.config['weapon_item_probability']:
+            self.trace(now, 'weapon_item_probability_suppressed')
+            return
+        self.offer(3, ids, now, 0)
+
+    def item_event(self, event_id, now, *, opponent_steam_id, kind, perceptible=False):
+        """Only a visible/audible pickup of the actual duel participant."""
+        if (not self.active or not perceptible or event_id in self.events
+                or str(opponent_steam_id) != str(self.steam_id)):
+            return
+        self.events.add(event_id)
+        self.weapon_item_offer(self.config.get('item_reply_ids', {}).get(kind, []), now)
 
     def death(self, event_id, now, *, bot_killed_human=False, human_killed_bot=False,
               weapon='', opponent_steam_id=None):
@@ -83,13 +156,15 @@ class ChatPolicy:
                 return
             ids = ['P01', 'P02', 'P03', 'P04', 'P05']
             if weapon.lower() == 'railgun':
-                ids.append('P06')
+                self.weapon_item_offer(['P06'], now)
+                if 3 in self.pending:
+                    return
             self.offer(2, ids, now)
 
         elif bot_killed_human and not human_killed_bot:
             ids = {'railgun': ['K01'], 'rocket': ['K02', 'K03', 'K04'],
                    'rocket_launcher': ['K02', 'K03', 'K04']}.get(weapon.lower(), [])
-            self.offer(2, ids, now)
+            self.weapon_item_offer(ids, now)
 
     def opponent_chat(self, event_id, now, *, sender_steam_id, text,
                       sender_is_bot=False, is_reply=False):
@@ -128,9 +203,11 @@ class ChatPolicy:
     def decision_record(self, event_id, now, record):
         """Consume the mood field of a C++ decision record; never transmit commands."""
         mood = record.get('mood')
-        if mood not in ('normal', 'relaxed', 'lead_loss_tilt', 'surrender_tilt'):
+        if mood not in ('normal', 'relaxed', 'lead_loss_tilt', 'surrender_tilt', 'pressure_escape'):
             raise ValueError('Unknown behavior mood')
         self.behavior_update(event_id, now, mood)
+        for reaction in record.get('interaction_events', []):
+            self.interaction_record(('interaction', reaction['event_id']), now, reaction)
 
     def end(self, now, result=None, *, aborted=False, leaving=False):
         if not self.present or self.ended:
@@ -142,7 +219,7 @@ class ChatPolicy:
             return
         ids = ['E06'] if leaving else {'human_win': ['E01', 'E02'],
             'bot_win': ['E03'], 'tie': ['E04', 'E05']}.get(result, [])
-        self.offer(0, ids, now, 15)
+        self.offer(0, ids, now, self.config.get('end_reply_ttl', 25))
 
     def tick(self, now, active_seconds):
         if not self.present:
@@ -153,17 +230,34 @@ class ChatPolicy:
             self.next_period = active_seconds + self.config['period']
             rare = not self.rare_used and self.rng.random() < self.config['rare_probability']
             category = 'rare' if rare else 'ordinary'
-            self.offer(3, [i for i, line in self.lines.items() if line['category'] == category], now, 0)
+            if self.rng.random() < self.config.get('periodic_probability', 0):
+                ids = [i for i, line in self.lines.items() if line['category'] == category
+                       and i not in self.config.get('weapon_item_ids', [])]
+                self.offer(3, ids, now, 0)
         if not self.pending:
             return None
         priority = min(self.pending)
         line, expiry = self.pending[priority]
         if now - self.last_time < self.config['cooldown']:
             # Event/periodic messages are dropped instead of accumulating.
-            self.pending = {p: entry for p, entry in self.pending.items() if p < 2}
+            self.pending = {p: entry for p, entry in self.pending.items() if p in (-2, 0, 1)}
+            self.trace(now, 'global_cooldown')
+            return None
+        if line['id'] in self.config.get('weapon_item_ids', []) and now - self.last_weapon_item < self.config['weapon_item_interval']:
+            self.pending.pop(priority)
+            self.trace(now, 'weapon_item_topic_cooldown')
             return None
         self.pending.clear()
         self.used.add(line['id'])
         self.rare_used |= line['category'] == 'rare'
         self.last_time, self.last_line = now, line['id']
+        if line['id'] in self.config.get('weapon_item_ids', []):
+            self.last_weapon_item = now
+        state = self.interactions.setdefault(str(self.steam_id), {'last_gauntlet': float('-inf'), 'last_line': None, 'corpse_announced': False})
+        state['last_reply_time'], state['last_reply_type'] = now, line['category']
+        if line['category'] in ('gauntlet_reaction', 'corpse_reaction'):
+            state['last_reply_time'], state['last_reply_type'] = now, line['category']
+            if line['category'] == 'gauntlet_reaction':
+                state['last_gauntlet'], state['last_line'] = now, line['id']
+        self.trace(now, 'message_sent', line_id=line['id'], category=line['category'])
         return render(line, self.player, self.steam_id, self.config['owner_steam_id'])

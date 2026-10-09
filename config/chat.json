@@ -1,7 +1,7 @@
 {
   "bot_name": "Psyz0r_bot",
   "owner_steam_id": 76561197961758497,
-  "cooldown": 15,
+  "cooldown": 20,
   "period": 150,
   "rare_probability": 0.16666666666666666,
   "praise_probability": 1.0,
@@ -311,6 +311,42 @@
       "text": "One duel with me, then I'm off. Even bots have a better sleep schedule than nekitz0r.",
       "category": "end",
       "enabled": true
+    },
+    {
+      "id": "G01",
+      "text": "Убери свой ножик",
+      "category": "gauntlet_reaction",
+      "enabled": true
+    },
+    {
+      "id": "G02",
+      "text": "Ну всё, теперь моя очередь",
+      "category": "gauntlet_reaction",
+      "enabled": true
+    },
+    {
+      "id": "G03",
+      "text": "Хочешь на пилах? Запомнил",
+      "category": "gauntlet_reaction",
+      "enabled": true
+    },
+    {
+      "id": "CR01",
+      "text": "Чем тебе мой труп помешал?",
+      "category": "corpse_reaction",
+      "enabled": true
+    },
+    {
+      "id": "CR02",
+      "text": "Давай с живым мной сразись",
+      "category": "corpse_reaction",
+      "enabled": true
+    },
+    {
+      "id": "CR03",
+      "text": "С трупом-то проще, да?",
+      "category": "corpse_reaction",
+      "enabled": true
     }
   ],
   "retort_window": 60,
@@ -340,6 +376,41 @@
     "surrender_tilt": [
       "T07",
       "T15"
+    ]
+  },
+  "weapon_item_interval": 120,
+  "weapon_item_probability": 0.1,
+  "gauntlet_reply_probability": 0.7,
+  "gauntlet_reply_interval": 30,
+  "corpse_reply_ttl": 30,
+  "end_reply_ttl": 25,
+  "periodic_probability": 0,
+  "gauntlet_reply_ids": [
+    "G01",
+    "G02",
+    "G03"
+  ],
+  "corpse_reply_ids": [
+    "CR01",
+    "CR02",
+    "CR03"
+  ],
+  "weapon_item_ids": [
+    "K01",
+    "K02",
+    "K03",
+    "K04",
+    "T03",
+    "T09",
+    "T15",
+    "P06"
+  ],
+  "item_reply_ids": {
+    "red": [
+      "T03"
+    ],
+    "yellow": [
+      "T09"
     ]
   }
 }

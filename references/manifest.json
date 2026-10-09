@@ -27,5 +27,14 @@
     "directory": "uberdemotools",
     "source": "https://github.com/mightycow/uberdemotools",
     "commit": "ecf60b9d0cc8b5e1b234e9ecf7d40ff7885ef65f"
+  },
+  {
+    "directory": "tools/udt/bin",
+    "source": "https://myt.playmorepromode.com/udt/udt_gui_0.7.2_dll_1.3.1_x64.zip",
+    "version": "GUI 0.7.2, UDT DLL 1.3.1 x64",
+    "archive_sha256": "336164a2417617fce507be5c3bb969ad24aa4c8a8581aee8836982edca41495b",
+    "dll_sha256": "963f87118a887ddbb36ef9460c5f10319f896e56de38bd649850d28153d31929",
+    "usage": "Offline POV snapshot analysis only; DLL is excluded from Git",
+    "license": "Upstream source GPL; own MIT does not relicense upstream"
   }
 ]

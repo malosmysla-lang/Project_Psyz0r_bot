@@ -5,7 +5,7 @@
 using namespace psyz0r;
 const char* mood_name(Mood mood) {
     switch(mood) {case Mood::Normal:return "normal";case Mood::Relaxed:return "relaxed";
-    case Mood::LeadLossTilt:return "lead_loss_tilt";case Mood::SurrenderTilt:return "surrender_tilt";}
+    case Mood::LeadLossTilt:return "lead_loss_tilt";case Mood::SurrenderTilt:return "surrender_tilt";case Mood::PressureEscape:return "pressure_escape";}
     return "unknown";
 }
 int main(int argc,char** argv) {

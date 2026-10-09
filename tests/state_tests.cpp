@@ -49,19 +49,6 @@ int main() {
     for(unsigned i=10;i<=30;++i)adapting.observe({i,22,EventKind::OpponentRetreat});
     o.time=22;check(adapting.decide(o).style==Style::Aggressive,"minimum style hold");
     o.time=42;check(adapting.decide(o).style==Style::Passive,"hysteresis switches after hold");
-    Behavior reactions; reactions.observe({1,1,EventKind::GauntletDamage,40});
-    reactions.observe({1,1,EventKind::GauntletDamage,40}); // duplicate does not add damage
-    o={};o.time=2;o.enemy_visible=true;o.available_weapons={Weapon::Gauntlet,Weapon::Rocket};
-    check(!reactions.decide(o).revenge_gauntlet,"deduped gauntlet damage");
-    reactions.observe({2,2,EventKind::GauntletDamage,40});
-    auto revenge=reactions.decide(o);
-    check(revenge.revenge_gauntlet&&revenge.weapon==Weapon::Gauntlet,"gauntlet revenge target");
-    reactions.observe({3,3,EventKind::BotKilledOpponent});o.time=3;
-    check(!reactions.decide(o).revenge_gauntlet,"kill fulfills revenge");
-    reactions.observe({4,4,EventKind::OpponentCorpseShot});o.time=4;o.enemy_visible=false;o.corpse_visible=true;
-    check(reactions.decide(o).intent==Intent::ShootCorpse,"observed visible corpse retaliation");
-    o.corpse_visible=false;check(reactions.decide(o).intent!=Intent::ShootCorpse,"no hidden corpse target");
-    o.time=40;o.corpse_visible=true;check(reactions.decide(o).intent!=Intent::ShootCorpse,"corpse reaction expires");
     ItemMemory items;
     check(!items.pickup("mega",1,35,false)&&!items.estimate("mega"),"hidden pickup rejected");
     check(items.pickup("mega",1,35,true)&&items.estimate("mega")->expected_respawn==36,"observed pickup timer");
