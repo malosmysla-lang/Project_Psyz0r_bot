@@ -125,3 +125,8 @@ Debug и Release сохранены в out/msvc-x64; обе конфигурац
 ## 10.10.2026 — геометрический фильтр и подготовка доставки
 
 check_shot_path проверяет conservative SolidBox, радиус и дистанцию; unknown/stale блокируются. MSVC Debug/Release: 8/8 CTest. Это локальная геометрия, не BSP/live trace и не автопушка. VS Code открыт. GitHub malosmysla-lang доступен, репозитория пока не видно; SSH quake-admin в стандартной настройке отсутствует. Требуются URL/создание репозитория и путь к SSH профилю; сервер не менялся.
+
+
+## 10.10.2026 — публикация GitHub подтверждена
+
+Origin: https://github.com/malosmysla-lang/Project_Psyz0r_bot.git. Push main успешен; удалённый SHA fbd4abb071fd187220bc73ce2f65e7a3bd895b53 подтверждён перед записью этого отчёта. main отслеживает origin/main. Рабочие незакоммиченные материалы сохранены локально. Для сервера ещё нужен действующий SSH-профиль/доступ; загрузка не выполнена.
