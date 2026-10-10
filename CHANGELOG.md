@@ -105,3 +105,8 @@
 ## 10.10.2026 — офлайн-сборка Debug и Release
 
 Собраны MSVC x64 Debug/Release, CTest 7/7 в каждой конфигурации. Release sandbox: 3 JSONL записи, все game_command_sent=false. Отчёт docs/OFFLINE_BUILD_2026-10-10_RU.md; бинарники/логи только в out. Сервер не запускался, GitHub remote отсутствует.
+
+
+## 10.10.2026 — проверка геометрии снаряда
+
+Добавлены shot_geometry и 16 проверок, включая связь с CombatPredictor. Debug/Release: 8/8 CTest. Документ docs/SHOT_GEOMETRY_RU.md. Подтверждён GitHub аккаунт, но origin/SSH профиль требуют настройки владельца; публикация и загрузка не выполнены.
