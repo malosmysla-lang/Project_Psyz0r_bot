@@ -7,7 +7,7 @@ static void Psyz_Think(gentity_t* ent) {
     cvar_t *test = Cvar_FindVar("qlx_psyzTestInstance");
     cvar_t *mode = Cvar_FindVar("qlx_psyzControlMode");
     cvar_t *port = Cvar_FindVar("net_port");
-    if (!test || test->integer != 1 || !mode || (mode->integer != 1 && mode->integer != 2) ||
+    if (!test || test->integer != 1 || !mode || (mode->integer != 1 && mode->integer != 2 && mode->integer != 3) ||
         !port || port->integer != 27961 || !ent || ent->s.number != 0 ||
         !(ent->r.svFlags & 8) || !ent->client || ent->health <= 0) {
         if (!mode || mode->integer == 0) psyz_started = -1;
@@ -15,6 +15,18 @@ static void Psyz_Think(gentity_t* ent) {
     }
     usercmd_t *cmd = &ent->client->pers.cmd;
     int now = cmd->serverTime;
+    if (mode->integer == 3) {
+        /* Baseline exploration uses stock AAS; our code observes only this bot. */
+        psyz_real_think(ent);
+        if (now - psyz_last_log >= 200) {
+            psyz_last_log = now;
+            fprintf(stderr,"PSYZ_NAV t=%d pos=%.3f,%.3f,%.3f vel=%.3f,%.3f,%.3f yaw=%.2f weapon=%d health=%d ground=%d source=stock_aas\n",
+                now,ent->client->ps.origin[0],ent->client->ps.origin[1],ent->client->ps.origin[2],
+                ent->client->ps.velocity[0],ent->client->ps.velocity[1],ent->client->ps.velocity[2],
+                ent->client->ps.viewangles[1],ent->client->ps.weapon,ent->health,ent->client->ps.groundEntityNum);
+        }
+        return;
+    }
     if (psyz_started < 0) psyz_started = now;
     int elapsed = now - psyz_started;
     int cycle = elapsed / 7000;
