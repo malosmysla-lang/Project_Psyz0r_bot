@@ -66,6 +66,12 @@
       "path": "docs/logic_archive/owner_package_2026-10-10/START_HERE.txt",
       "sha256": "8770a99437137b34e8b56f3b9368a6504391168e11714a9e6fb9fdaab31bf75b",
       "bytes": 528
+    },
+    {
+      "path": "docs/logic_archive/2026-10-10_opponent_adaptation_original.txt",
+      "sha256": "d6916cc3487e6bad1bb7d9276d56c0a18eac83d761aa1e1d633c9a8a533f96b5",
+      "bytes": 17089,
+      "source": "Дополнение владельца об адаптации, вложение d85252e4"
     }
   ],
   "missing": [],

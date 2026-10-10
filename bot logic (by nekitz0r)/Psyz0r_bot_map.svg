@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4096" height="2048" viewBox="0 0 4096 2048"><rect width="4096" height="2048" fill="#252A30"/>
+<text x="70" y="97.8" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="68" font-weight="700" text-anchor="start">PSYZ0R_BOT</text>
+<text x="650" y="92.69999999999999" fill="#81C7F1" font-family="Arial,sans-serif" font-size="42" font-weight="400" text-anchor="start">Карта логики тренировочного соперника Quake Live</text>
+<text x="2860" y="92.8" fill="#98ABBA" font-family="Arial,sans-serif" font-size="28" font-weight="400" text-anchor="start">12 ветвей / 153 пункта в реестре / 10.10.2026</text>
+<ellipse cx="2048" cy="990" rx="288" ry="150" fill="#2B323A" stroke="#81C7F1" stroke-width="3"/>
+<path d="M 1760 990 L 1460 306" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="70" y="175" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="92" y="216.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">A  Обучение и разработка</text>
+<text x="92" y="256.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">100 демок PsyRoZa + 20 nekitz0r; затем 100–200 на карту</text>
+<text x="92" y="280.15000000000003" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Сольные пробежки + боевые демки; маршруты, позиции, выбор пушек</text>
+<text x="92" y="303.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Разметка чатом #bot; стоп 5–10 с = кандидат на нычку</text>
+<text x="92" y="327.35" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Время, карта, координаты, скорость, взгляд, стек, оружие, исход</text>
+<text x="92" y="350.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Raw mouse / WASD проверить; восстановленный ввод помечать</text>
+<text x="92" y="374.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Q3 / QL аналоги: распаковать, изучить; C++17 / MSVC</text>
+<text x="92" y="398.15000000000003" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Один маршрут и прыжок сначала; затем расширять набор</text>
+<text x="92" y="421.75000000000006" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Локально; оригиналы целы; сервер только отдельной командой</text>
+<path d="M 1760 990 L 1460 592" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="70" y="461" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="92" y="502.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">B  Мувмент и триксы</text>
+<text x="92" y="542.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Бег / тихий шаг / остановка / прыжки по задаче, не постоянно</text>
+<text x="92" y="566.15" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Prestrafe, circle jump, single-beat и half-beat распрыжка</text>
+<text x="92" y="589.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Rocket jump; plasma jump отдельно от plasma climb</text>
+<text x="92" y="613.3499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Учить по 3–5 текстовым гайдам + своим демкам</text>
+<text x="92" y="636.9499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Физика QL: VQL и PQL раздельно; без скрытых бустов</text>
+<text x="92" y="660.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">RJ чище: успех, время, приземление, реальные потери HP</text>
+<text x="92" y="684.15" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">200/200: допустима погоня с RJ; под давлением меньше шума</text>
+<text x="92" y="707.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Уровень скилла ограничивает приёмы и качество исполнения</text>
+<path d="M 1760 990 L 1460 878" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="70" y="747" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="92" y="788.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">C  Стрельба и точность</text>
+<text x="92" y="828.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Стрейф + мышь + додж; контрстрейф относительно цели</text>
+<text x="92" y="852.15" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Преднаведение; полмодельки из угла, rail при видимости, отход</text>
+<text x="92" y="875.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Rocket / grenade prefire допустим по прогнозу прохода</text>
+<text x="92" y="899.3499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Rail / plasma / rocket / shaft: считать по демкам доминаторов</text>
+<text x="92" y="922.9499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Выстрелы, попадания, медиана, диапазон; splash отдельно</text>
+<text x="92" y="946.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Все пушки зависят от скилла; проценты только с согласованием</text>
+<text x="92" y="970.15" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Контроль: точность выше; давление: ниже; контррежим уточнить</text>
+<text x="92" y="993.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Через реакцию, наведение, упреждение; без гарантии попаданий</text>
+<path d="M 1760 990 L 1460 1164" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="70" y="1033" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="92" y="1074.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">D  Оружие и боевые связки</text>
+<text x="92" y="1114.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Дистанция, геометрия, скорость, патроны, стек, риск, switch time</text>
+<text x="92" y="1138.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Подбирать выпавшие свои / чужие пушки; не отдавать сопернику</text>
+<text x="92" y="1161.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">LG вблизи: RL / shotgun для добивания красной цели</text>
+<text x="92" y="1185.35" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Дальняя rocket + подброс: rail по доступной траектории</text>
+<text x="92" y="1208.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">После 70–110 урона: оценить сближение, не лететь автоматически</text>
+<text x="92" y="1232.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Штраф: rail либо 1–2 ракеты и отход из укрытия</text>
+<text x="92" y="1256.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Rocket / grenade zoning проходов, предметов и преследователя</text>
+<text x="92" y="1279.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Перчатка по цели мести; отмена опасной попытки, без WH</text>
+<path d="M 1760 990 L 1460 1450" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="70" y="1319" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="92" y="1360.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">E  Макроигра и предметы</text>
+<text x="92" y="1400.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Старт аккуратный; Мега важнее армора</text>
+<text x="92" y="1424.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Точные таймеры всех предметов разрешены как в спектаторах</text>
+<text x="92" y="1447.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Обычный цикл: MH / RA / YA / GA / шарды / HP / ammo / пушки</text>
+<text x="92" y="1471.35" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Враг на контроле: остатки, дистанция, штраф MH / RA и выход</text>
+<text x="92" y="1494.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Равный 10:10: LG-давление и прибытие ровно к таймингу</text>
+<text x="92" y="1518.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Сильный соперник: строже считать и собирать жёлтые</text>
+<text x="92" y="1542.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Тотальный контроль: 1–2 матча из 10, чаще против сильного</text>
+<text x="92" y="1565.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">При свободной игре оставлять ресурсы; не выравнивать счёт</text>
+<path d="M 1760 990 L 1460 1736" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="70" y="1605" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="92" y="1646.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">F  Циклы игрока и респауны</text>
+<text x="92" y="1686.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Повтор зон / времени / предметов: история и уверенность</text>
+<text x="92" y="1710.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Несколько повторов: перехват, prefire, тайминг power-up</text>
+<text x="92" y="1733.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Смена маршрута снижает уверенность; без скрытых координат</text>
+<text x="92" y="1757.35" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Spawntrap: позиции из демок, заранее RL / PG спам</text>
+<text x="92" y="1780.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Быстрый респ попадает под спам; задержка игрока неизвестна</text>
+<text x="92" y="1804.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Серия до 2–3 респов; выше шанс после захвата контроля</text>
+<text x="92" y="1828.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Lvl 1: нет; lvl 3: 1–2 эпизода за матч, не обязательная квота</text>
+<text x="92" y="1851.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Точный будущий респ — отдельное тренировочное исключение</text>
+<path d="M 2336 990 L 2636 306" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="2636" y="175" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="2658" y="216.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">G  Восприятие и честная информация</text>
+<text x="2658" y="256.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Зрение, звук, память; стек противника — оценка</text>
+<text x="2658" y="280.15000000000003" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">После потери цели прогноз стареет; возможна ошибка направления</text>
+<text x="2658" y="303.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Взгляд по задаче, а не постоянно на соперника</text>
+<text x="2658" y="327.35" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Игрок может тихо обойти, выйти в спину, ждать за углом</text>
+<text x="2658" y="350.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Реакция после доступного сигнала, с задержкой</text>
+<text x="2658" y="374.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Rail только LOS; projectile prefire по вероятному проходу</text>
+<text x="2658" y="398.15000000000003" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Разрешения отдельно: все таймеры / будущий респ</text>
+<text x="2658" y="421.75000000000006" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Лог причины реакции; no-WH проверять игровыми сценариями</text>
+<path d="M 2336 990 L 2636 592" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="2636" y="461" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="2658" y="502.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">H  Три стиля и осторожный режим</text>
+<text x="2658" y="542.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Агрессивный: 80–90 нанесённого урона + выгода; push, MH / RA</text>
+<text x="2658" y="566.15" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Средний: 70–100 полученного; отход, восстановление на YA</text>
+<text x="2658" y="589.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Пассивный: один rail по себе; выход, 1–2 YA и аптечки</text>
+<text x="2658" y="613.3499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Копирует агрессию / осторожность по накопленным наблюдениям</text>
+<text x="2658" y="636.9499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">«Обоссанец»: 0:3 / 0:4 / 0:5 + проигранные столкновения</text>
+<text x="2658" y="660.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Тихо уходит, YA / GA / HP / ammo; меньше лишних RJ</text>
+<text x="2658" y="684.15" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">MH / RA штрафует rail и уходит; безопасный подбор допустим</text>
+<text x="2658" y="707.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Выход после устойчивого восстановления; не после одного rail</text>
+<path d="M 2336 990 L 2636 878" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="2636" y="747" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="2658" y="788.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">I  Подстройка и «игра до фрага»</text>
+<text x="2658" y="828.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Сила: размен, контроль, бои при равном стеке, маршруты, отходы</text>
+<text x="2658" y="852.15" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Слабый: цикличность, знакомые позиции, пропуски пушек / итемов</text>
+<text x="2658" y="875.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Больше палится, рискует, RJ; коротко давит и отпускает</text>
+<text x="2658" y="899.3499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Сильный: строже контроль, контратака; после перехвата тише</text>
+<text x="2658" y="922.9499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Наглый push: собрать ≥100/100 + LG / RL / rail</text>
+<text x="2658" y="946.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">70–110 урона: выгодно сблизиться, RL / SG finish; иначе выйти</text>
+<text x="2658" y="970.15" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Равный: дистанция, размен и восстановление, до ~5 мин без фрага</text>
+<text x="2658" y="993.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Реальные ошибки и засады решают исход; без запрета убийства</text>
+<path d="M 2336 990 L 2636 1164" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="2636" y="1033" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="2658" y="1074.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">J  Характер, расслабление и forfeit</text>
+<text x="2658" y="1114.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">При 20:0 может расслабиться, открыть шансы на 5–10 фрагов</text>
+<text x="2658" y="1138.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Тильт с потерей лидерства: 1–2 случая за 10–15 игр</text>
+<text x="2658" y="1161.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">При 0:5 / 0:6 / 0:10 возможна поведенческая сдача</text>
+<text x="2658" y="1185.35" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">С респа 100 HP, первая пушка, rush, без нормального сбора</text>
+<text x="2658" y="1208.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Случайные 1–2 фрага не означают полноценный comeback</text>
+<text x="2658" y="1232.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Выход при ≥30 фрагах врага: дефицит &gt;15–20 ≈50%; 5:30 ≈90%</text>
+<text x="2658" y="1256.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">15:30 ещё может остаться; таблицу выхода согласовать</text>
+<text x="2658" y="1279.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Один бросок вероятности; не каждый тик; не возвращать autofill</text>
+<path d="M 2336 990 L 2636 1450" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="2636" y="1319" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="2658" y="1360.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">K  Чат и ответные действия</text>
+<text x="2658" y="1400.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">GL / HF / GG / WP: вежливо; в конце дуэли: «GG! Реванш?»</text>
+<text x="2658" y="1424.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">На грубость отвечает; не отвечает себе / ботам; без циклов</text>
+<text x="2658" y="1447.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Gauntlet: реальный damage, порог 50 (тест 25), месть 90 с</text>
+<text x="2658" y="1471.35" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Оценка HP ≤50 + близко + видно: обязательная попытка, не килл</text>
+<text x="2658" y="1494.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Реплика про пилу: 70%, ≥30 с; не от одного equip</text>
+<text x="2658" y="1518.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Трупы: первые 2 эпизода молчит, после 3-го реплика и ответ</text>
+<text x="2658" y="1542.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Один труп = эпизод; ответ ≤1 с безопасно; сброс в новом матче</text>
+<text x="2658" y="1565.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Чат ≥20 с; MH / RA / rail / rocket: 10%, не чаще 120 с</text>
+<path d="M 2336 990 L 2636 1736" stroke="#56758C" stroke-width="2.5" fill="none"/>
+<rect x="2636" y="1605" width="1390" height="262" fill="#2B323A" stroke="#56758C" stroke-width="1.5"/>
+<text x="2658" y="1646.9" fill="#81C7F1" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="start">L  Пять уровней сложности</text>
+<text x="2658" y="1686.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">1 I Can Win: почти без strafe, простой RJ, без tricks / spawntrap</text>
+<text x="2658" y="1710.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">2 Bring It On: базовый strafe с потерями, простые RJ / смены пушек</text>
+<text x="2658" y="1733.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">3 Hurt Me Plenty: полупрофи, tricks / combo, 1–2 spawntrap-эпизода</text>
+<text x="2658" y="1757.35" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">4 Hardcore: чище движение, богаче решения, лучше прогноз</text>
+<text x="2658" y="1780.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">5 Nightmare / Кошмар: максимум человеческого исполнения</text>
+<text x="2658" y="1804.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Уровень меняет все aim / reaction / move / решения / контроль</text>
+<text x="2658" y="1828.1499999999999" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Подстройка есть на каждом уровне, не открывает запретные умения</text>
+<text x="2658" y="1851.75" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start">Начать с 3; ±1 на следующую карту только при согласии на реванш</text>
+<text x="2048" y="911.55" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="43" font-weight="700" text-anchor="middle">PSYZ0R_BOT</text>
+<text x="2048" y="967.5" fill="#81C7F1" font-family="Arial,sans-serif" font-size="30" font-weight="700" text-anchor="middle">Ровные и интересные дуэли</text>
+<text x="2048" y="1010.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="27" font-weight="400" text-anchor="middle">Подстройка под стиль и силу</text>
+<text x="2048" y="1051.25" fill="#C3CDD6" font-family="Arial,sans-serif" font-size="25" font-weight="400" text-anchor="middle">В пределах текущей сложности</text>
+<text x="2048" y="1090.4" fill="#C3CDD6" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle">Размены, контроль, ключевой фраг</text>
+<text x="2048" y="206.05" fill="#81C7F1" font-family="Arial,sans-serif" font-size="33" font-weight="700" text-anchor="middle">Цикл решения</text>
+<rect x="1788" y="244" width="520" height="53" fill="#2B323A" stroke="#56758C"/>
+<text x="2048" y="277.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="27" font-weight="400" text-anchor="middle">Наблюдения и память</text>
+<rect x="1788" y="321" width="520" height="53" fill="#2B323A" stroke="#56758C"/>
+<text x="2048" y="354.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="27" font-weight="400" text-anchor="middle">Оценка игрока и стека</text>
+<path d="M 2048 297 L 2048 321" stroke="#81C7F1" stroke-width="2"/>
+<rect x="1788" y="398" width="520" height="53" fill="#2B323A" stroke="#56758C"/>
+<text x="2048" y="431.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="27" font-weight="400" text-anchor="middle">Профиль сложности</text>
+<path d="M 2048 374 L 2048 398" stroke="#81C7F1" stroke-width="2"/>
+<rect x="1788" y="475" width="520" height="53" fill="#2B323A" stroke="#56758C"/>
+<text x="2048" y="508.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="27" font-weight="400" text-anchor="middle">Режим и тактическая цель</text>
+<path d="M 2048 451 L 2048 475" stroke="#81C7F1" stroke-width="2"/>
+<rect x="1788" y="552" width="520" height="53" fill="#2B323A" stroke="#56758C"/>
+<text x="2048" y="585.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="27" font-weight="400" text-anchor="middle">Движение / оружие / огонь</text>
+<path d="M 2048 528 L 2048 552" stroke="#81C7F1" stroke-width="2"/>
+<rect x="1788" y="629" width="520" height="53" fill="#2B323A" stroke="#56758C"/>
+<text x="2048" y="662.95" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="27" font-weight="400" text-anchor="middle">Результат и новые наблюдения</text>
+<path d="M 2048 605 L 2048 629" stroke="#81C7F1" stroke-width="2"/>
+<text x="2048" y="740.65" fill="#81C7F1" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle">Как подстраивается</text>
+<text x="2048" y="781.25" fill="#C3CDD6" font-family="Arial,sans-serif" font-size="25" font-weight="400" text-anchor="middle">Слабому: читаемые ошибки</text>
+<text x="2048" y="820.25" fill="#C3CDD6" font-family="Arial,sans-serif" font-size="25" font-weight="400" text-anchor="middle">Сильному: лучшие решения</text>
+<text x="1768" y="1216.35" fill="#81C7F1" font-family="Arial,sans-serif" font-size="31" font-weight="700" text-anchor="start">Стартовый набор демок</text>
+<rect x="1780" y="1260" width="530" height="28" fill="#2B323A"/><rect x="1780" y="1260" width="441.6666666666667" height="28" fill="#81C7F1"/>
+<text x="1780" y="1318" fill="#F4F7FA" font-family="Arial" font-size="23">PsyRoZa  100</text>
+<rect x="1780" y="1355" width="530" height="28" fill="#2B323A"/><rect x="1780" y="1355" width="88.33333333333333" height="28" fill="#81C7F1"/>
+<text x="1780" y="1413" fill="#F4F7FA" font-family="Arial" font-size="23">nekitz0r  20</text>
+<text x="1768" y="1535.5" fill="#81C7F1" font-family="Arial,sans-serif" font-size="30" font-weight="700" text-anchor="start">Выход: примеры владельца</text>
+<rect x="1780" y="1580" width="530" height="28" fill="#2B323A"/><rect x="1780" y="1580" width="265" height="28" fill="#81C7F1"/>
+<text x="1780" y="1638" fill="#F4F7FA" font-family="Arial" font-size="23">Разрыв &gt;15–20: %  50</text>
+<rect x="1780" y="1670" width="530" height="28" fill="#2B323A"/><rect x="1780" y="1670" width="477" height="28" fill="#81C7F1"/>
+<text x="1780" y="1728" fill="#F4F7FA" font-family="Arial" font-size="23">5:30: %  90</text>
+<text x="1768" y="1822.4" fill="#C3CDD6" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="start">Функцию выхода ещё согласовать</text>
+<text x="1768" y="1861.4" fill="#C3CDD6" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="start">Точность: значения не утверждены</text>
+<text x="70" y="1958.5" fill="#F4F7FA" font-family="Arial,sans-serif" font-size="30" font-weight="700" text-anchor="start">Цель: напряжённые дуэли с адаптацией, где фраг решают ошибка или удачное действие</text>
+<text x="3270" y="1960.95" fill="#98ABBA" font-family="Arial,sans-serif" font-size="27" font-weight="400" text-anchor="start">4096 × 2048 px / 100 dpi</text>
+<text x="70" y="2001.25" fill="#98ABBA" font-family="Arial,sans-serif" font-size="25" font-weight="400" text-anchor="start">Счёт и фраги не подгоняются. Все прежние ветви, подробности, спорные правила и источники сохранены в реестре</text>
+</svg>
