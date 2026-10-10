@@ -1,0 +1,748 @@
+{
+  "records": [
+    {
+      "archive_id": "owner-001",
+      "filename": "@gZ@r-vs-keFir-bloodrun-2026_10_05-16_21_30.dm_91",
+      "source_sha256": "79b56fb2de1558f54697321bd0b44a84024139cd7e14d4a44c32b73fbf2b8cee",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 640,
+      "segments": 1,
+      "active_pov_samples": 0,
+      "pickups": {},
+      "approaches": 0,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-002",
+      "filename": "[333]Maverick-vs-R72LOKOMOTIV-bloodrun-2026_08_17-17_38_21.dm_91",
+      "source_sha256": "7a0b700c00ee5509a6fa0248773db46d2987f9867cebf920441799f13349e5f3",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24544,
+      "segments": 124,
+      "active_pov_samples": 23468,
+      "pickups": {
+        "lightning": 10,
+        "mega": 9,
+        "railgun": 6,
+        "red": 8,
+        "shotgun": 4,
+        "yellow": 22,
+        "plasma": 10,
+        "health_large": 2,
+        "health_small": 17,
+        "grenade": 14,
+        "rocket": 10,
+        "shard": 55,
+        "health": 9
+      },
+      "approaches": 168,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-003",
+      "filename": "FFA-bloodrun-2026_08_12-15_11_22.dm_91",
+      "source_sha256": "a90c403e1f9be3a2b055c67733d2fc0a29357d27850f9959d9e1e56fa34150b3",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 7281,
+      "segments": 1,
+      "active_pov_samples": 6047,
+      "pickups": {
+        "shotgun": 4,
+        "railgun": 5,
+        "rocket": 6,
+        "health_large": 1,
+        "plasma": 1,
+        "lightning": 4,
+        "health_small": 2,
+        "shard": 7,
+        "mega": 1
+      },
+      "approaches": 31,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-004",
+      "filename": "gadzillaa-vs-MrBaSiCh-bloodrun-2026_08_28-19_59_23.dm_91",
+      "source_sha256": "7751613932c28297b9714c17d6a5a940e9927c5853e1e337b93365b0f1d8436a",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 1448,
+      "segments": 2,
+      "active_pov_samples": 1206,
+      "pickups": {
+        "red": 1,
+        "yellow": 1,
+        "lightning": 1,
+        "shard": 4,
+        "rocket": 1,
+        "grenade": 1
+      },
+      "approaches": 9,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-005",
+      "filename": "jazzjack-vs-gadzillaa-bloodrun-2026_08_29-01_49_25.dm_91",
+      "source_sha256": "f1dffa9076316e6d4201ac170e4e0a18ab4337dd193eb2b3dfbe5ef18c88080e",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 1246,
+      "segments": 4,
+      "active_pov_samples": 1243,
+      "pickups": {
+        "rocket": 1,
+        "yellow": 1,
+        "grenade": 2,
+        "health": 3,
+        "railgun": 1,
+        "red": 1
+      },
+      "approaches": 9,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-006",
+      "filename": "nekitz0r(POV)-vs-[D+B]PsyRoZ-bloodrun-2026_09_28-00_56_50.dm_91",
+      "source_sha256": "a351042059821fcb09e7c0cb9f1a715de75f083018af9b30b4d45f23e11fd510",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24551,
+      "segments": 1,
+      "active_pov_samples": 22261,
+      "pickups": {
+        "lightning": 9,
+        "mega": 4,
+        "plasma": 17,
+        "yellow": 18,
+        "shotgun": 6,
+        "health": 11,
+        "shard": 29,
+        "grenade": 6,
+        "health_large": 7,
+        "railgun": 9,
+        "rocket": 19,
+        "health_small": 9,
+        "red": 2
+      },
+      "approaches": 146,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-007",
+      "filename": "nekitz0r(POV)-vs-ALekseych-bloodrun-2026_09_27-16_15_45.dm_91",
+      "source_sha256": "72596ea1ce15537fdb526324a1690e39c1cbc00f1a85ed2df7297caa44bcc942",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24550,
+      "segments": 1,
+      "active_pov_samples": 24184,
+      "pickups": {
+        "red": 12,
+        "grenade": 20,
+        "railgun": 10,
+        "shotgun": 10,
+        "yellow": 21,
+        "plasma": 7,
+        "shard": 41,
+        "rocket": 11,
+        "health": 3,
+        "mega": 9,
+        "lightning": 7,
+        "health_small": 3,
+        "health_large": 1
+      },
+      "approaches": 155,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-008",
+      "filename": "nekitz0r(POV)-vs-ALekseych-bloodrun-2026_09_27-17_57_54.dm_91",
+      "source_sha256": "55c921b585f78109ecd473e06becb53952b8db4999927ace6d282b7aa437d991",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 17802,
+      "segments": 1,
+      "active_pov_samples": 17632,
+      "pickups": {
+        "yellow": 7,
+        "mega": 5,
+        "lightning": 4,
+        "shard": 15,
+        "railgun": 1,
+        "shotgun": 6,
+        "red": 4,
+        "grenade": 4,
+        "rocket": 10,
+        "health": 1,
+        "health_small": 10,
+        "plasma": 1
+      },
+      "approaches": 68,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-009",
+      "filename": "nekitz0r(POV)-vs-Anarki-bloodrun-2026_08_08-23_29_12.dm_91",
+      "source_sha256": "a211106196a35cda2af123e8682a3db75cd334b616455deafd08ac494aa6cdab",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24551,
+      "segments": 1,
+      "active_pov_samples": 24388,
+      "pickups": {
+        "yellow": 18,
+        "mega": 12,
+        "lightning": 7,
+        "railgun": 11,
+        "red": 11,
+        "grenade": 27,
+        "rocket": 10,
+        "shard": 18,
+        "shotgun": 1,
+        "plasma": 5,
+        "health": 1,
+        "health_small": 3
+      },
+      "approaches": 124,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-010",
+      "filename": "nekitz0r(POV)-vs-Anarki-bloodrun-2026_08_11-20_06_04.dm_91",
+      "source_sha256": "1da01a563b3a360d72a2d505455382003663d4c946a5c7e37cc0efe4876819da",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24552,
+      "segments": 1,
+      "active_pov_samples": 23492,
+      "pickups": {
+        "rocket": 14,
+        "yellow": 15,
+        "lightning": 12,
+        "railgun": 11,
+        "red": 10,
+        "shard": 55,
+        "health": 10,
+        "health_small": 7,
+        "mega": 11,
+        "shotgun": 2,
+        "grenade": 16,
+        "plasma": 7,
+        "health_large": 1
+      },
+      "approaches": 171,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-011",
+      "filename": "nekitz0r(POV)-vs-Anarki-bloodrun-2026_08_14-02_23_10.dm_91",
+      "source_sha256": "8ca10a0ddcc95de7c47950a3bf5cad791c92e41dc6926e0a6af810be9a4aea87",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24552,
+      "segments": 1,
+      "active_pov_samples": 23784,
+      "pickups": {
+        "lightning": 9,
+        "mega": 10,
+        "railgun": 11,
+        "red": 13,
+        "plasma": 10,
+        "yellow": 13,
+        "grenade": 15,
+        "shard": 54,
+        "rocket": 15,
+        "shotgun": 4,
+        "health_small": 4,
+        "health_large": 3,
+        "health": 6
+      },
+      "approaches": 167,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-012",
+      "filename": "nekitz0r(POV)-vs-eL1k-bloodrun-2026_10_02-17_38_13.dm_91",
+      "source_sha256": "2646fd08c48a67834fa6261834d7f8c520ad550e24782e785c9ad6068e721d5c",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 22185,
+      "segments": 1,
+      "active_pov_samples": 19827,
+      "pickups": {
+        "red": 4,
+        "grenade": 17,
+        "shard": 26,
+        "health": 5,
+        "rocket": 13,
+        "yellow": 16,
+        "lightning": 13,
+        "plasma": 11,
+        "health_large": 3,
+        "shotgun": 11,
+        "railgun": 3,
+        "mega": 3,
+        "health_small": 4
+      },
+      "approaches": 129,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-013",
+      "filename": "nekitz0r(POV)-vs-hurtman-bloodrun-2026_09_27-16_26_19.dm_91",
+      "source_sha256": "220528097ae4040803689397a7f91a98bd161a36e91460f556c2647aa30cb100",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24550,
+      "segments": 1,
+      "active_pov_samples": 23229,
+      "pickups": {
+        "yellow": 16,
+        "mega": 4,
+        "lightning": 15,
+        "plasma": 10,
+        "health_large": 4,
+        "rocket": 13,
+        "shard": 38,
+        "railgun": 7,
+        "shotgun": 7,
+        "red": 5,
+        "grenade": 12,
+        "health": 8,
+        "health_small": 2
+      },
+      "approaches": 141,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-014",
+      "filename": "nekitz0r(POV)-vs-jazzjack-bloodrun-2026_08_29-01_38_50.dm_91",
+      "source_sha256": "cb0edeeee37f4c34f26e3786b92aff1ed0e324076a26b79eef6bbe2b29dedf6d",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24551,
+      "segments": 1,
+      "active_pov_samples": 22511,
+      "pickups": {
+        "rocket": 17,
+        "yellow": 17,
+        "mega": 8,
+        "lightning": 12,
+        "railgun": 15,
+        "shotgun": 11,
+        "red": 5,
+        "shard": 36,
+        "health": 10,
+        "plasma": 10,
+        "health_large": 4,
+        "health_small": 8,
+        "grenade": 9
+      },
+      "approaches": 162,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-015",
+      "filename": "nekitz0r(POV)-vs-Keel-bloodrun-2026_08_10-02_26_48.dm_91",
+      "source_sha256": "dbae44f86e4baeea537dd2f9de8e3c8d10b61432582ad75a596afad7543081d1",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24552,
+      "segments": 1,
+      "active_pov_samples": 23824,
+      "pickups": {
+        "yellow": 11,
+        "mega": 11,
+        "lightning": 11,
+        "plasma": 6,
+        "railgun": 17,
+        "red": 10,
+        "rocket": 11,
+        "health": 7,
+        "shard": 25,
+        "grenade": 13,
+        "shotgun": 6,
+        "health_small": 5
+      },
+      "approaches": 133,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-016",
+      "filename": "nekitz0r(POV)-vs-Keel-bloodrun-2026_08_10-03_35_29.dm_91",
+      "source_sha256": "306c234cb2db0ff6f403f9c927a87c20bf7d4a5a076cea8153a2e8f0e020b70c",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24552,
+      "segments": 1,
+      "active_pov_samples": 23427,
+      "pickups": {
+        "rocket": 13,
+        "mega": 8,
+        "grenade": 19,
+        "shard": 45,
+        "lightning": 9,
+        "railgun": 12,
+        "yellow": 9,
+        "health": 8,
+        "red": 7,
+        "shotgun": 8,
+        "health_small": 11,
+        "plasma": 6,
+        "health_large": 1
+      },
+      "approaches": 156,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-017",
+      "filename": "nekitz0r(POV)-vs-Keel-bloodrun-2026_08_10-14_32_33.dm_91",
+      "source_sha256": "be5c47cc17efa49166e63e98f414dac5e627400cb8ae67a8a3ea65536289a508",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 14101,
+      "segments": 1,
+      "active_pov_samples": 13358,
+      "pickups": {
+        "health_small": 5,
+        "yellow": 7,
+        "mega": 6,
+        "lightning": 8,
+        "railgun": 5,
+        "shard": 27,
+        "red": 3,
+        "grenade": 12,
+        "health": 5,
+        "rocket": 7,
+        "shotgun": 1,
+        "health_large": 1,
+        "plasma": 5
+      },
+      "approaches": 92,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-018",
+      "filename": "nekitz0r(POV)-vs-Keel-bloodrun-2026_08_10-14_38_53.dm_91",
+      "source_sha256": "38c7d0625f4a14091ea4b2884dacc0766a45fc5b1165d3ba5b6609e7e80e0ef5",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 9014,
+      "segments": 1,
+      "active_pov_samples": 8200,
+      "pickups": {
+        "rocket": 8,
+        "yellow": 3,
+        "mega": 4,
+        "railgun": 5,
+        "lightning": 6,
+        "shard": 14,
+        "plasma": 3,
+        "red": 2,
+        "grenade": 5,
+        "health": 2,
+        "health_small": 3,
+        "shotgun": 1
+      },
+      "approaches": 56,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-019",
+      "filename": "nekitz0r(POV)-vs-keFir-bloodrun-2026_10_02-17_58_26.dm_91",
+      "source_sha256": "24b16aa8f89f0ae501a1046397d1965e609b4188ed80921b936b8efe188f3b36",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24487,
+      "segments": 1,
+      "active_pov_samples": 22004,
+      "pickups": {
+        "yellow": 19,
+        "mega": 3,
+        "lightning": 12,
+        "plasma": 14,
+        "health_small": 5,
+        "shotgun": 13,
+        "railgun": 7,
+        "grenade": 12,
+        "rocket": 19,
+        "shard": 40,
+        "health": 15,
+        "health_large": 1,
+        "red": 3
+      },
+      "approaches": 163,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-020",
+      "filename": "nekitz0r(POV)-vs-NoRailNoSkill-bloodrun-2026_09_27-16_03_00.dm_91",
+      "source_sha256": "bd48cbee83d419701c0ac7cccbc0260d5cc5076e3a361ac44e780b7cbc9c4f10",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24550,
+      "segments": 1,
+      "active_pov_samples": 23338,
+      "pickups": {
+        "plasma": 19,
+        "yellow": 27,
+        "red": 4,
+        "grenade": 14,
+        "shard": 36,
+        "rocket": 12,
+        "lightning": 12,
+        "railgun": 4,
+        "mega": 3,
+        "shotgun": 9,
+        "health_small": 4,
+        "health_large": 4,
+        "health": 3
+      },
+      "approaches": 151,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-021",
+      "filename": "nekitz0r(POV)-vs-Orbb-bloodrun-2026_08_17-17_49_40.dm_91",
+      "source_sha256": "8245c3677e6901a3e24fd6c211b9d8d2c076fa84fcf1a5a638c84454850031c4",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24552,
+      "segments": 1,
+      "active_pov_samples": 23852,
+      "pickups": {
+        "lightning": 12,
+        "mega": 11,
+        "railgun": 11,
+        "red": 13,
+        "grenade": 24,
+        "shard": 36,
+        "rocket": 12,
+        "health": 9,
+        "plasma": 12,
+        "yellow": 17,
+        "shotgun": 7,
+        "health_large": 5,
+        "health_small": 6
+      },
+      "approaches": 175,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-022",
+      "filename": "nekitz0r(POV)-vs-Xaero-bloodrun-2026_08_12-14_05_26.dm_91",
+      "source_sha256": "d3f801eb0c5c529639337570207e5d5789128700b56d3b6ae276a594e239f1d5",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 29325,
+      "segments": 1,
+      "active_pov_samples": 27394,
+      "pickups": {
+        "red": 13,
+        "railgun": 17,
+        "shard": 44,
+        "health": 17,
+        "rocket": 19,
+        "lightning": 17,
+        "health_small": 7,
+        "yellow": 16,
+        "plasma": 9,
+        "health_large": 3,
+        "mega": 9,
+        "grenade": 21,
+        "shotgun": 5
+      },
+      "approaches": 197,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-023",
+      "status": "failed",
+      "error": "Unexpected recorded maps: ['bloodrun_duel']"
+    },
+    {
+      "archive_id": "owner-024",
+      "filename": "nekitz0r(POV)-vs-Zgrom-bloodrun-2026_10_08-08_05_55.dm_91",
+      "source_sha256": "86a7f4e43fa8f8bb537ab397a66cf50b938614d35654cf9d7ee50d1c9d3bc838",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24531,
+      "segments": 1,
+      "active_pov_samples": 24369,
+      "pickups": {
+        "rocket": 6,
+        "yellow": 22,
+        "mega": 11,
+        "shard": 45,
+        "shotgun": 10,
+        "railgun": 6,
+        "lightning": 5,
+        "plasma": 16,
+        "red": 10,
+        "health_small": 13,
+        "grenade": 12,
+        "health": 6,
+        "health_large": 4
+      },
+      "approaches": 166,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-025",
+      "filename": "o-vs-agzUr-bloodrun-2026_10_05-20_21_25.dm_91",
+      "source_sha256": "dd9b975f7f031d8b5212227682d5ff3ee5bc5e9869b884f55b90007422ad75a3",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 24310,
+      "segments": 7,
+      "active_pov_samples": 23605,
+      "pickups": {
+        "yellow": 10,
+        "mega": 5,
+        "railgun": 15,
+        "shard": 51,
+        "health_small": 15,
+        "shotgun": 6,
+        "lightning": 5,
+        "red": 5,
+        "grenade": 6,
+        "rocket": 9,
+        "plasma": 5,
+        "health_large": 1,
+        "health": 2
+      },
+      "approaches": 135,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    },
+    {
+      "archive_id": "owner-026",
+      "filename": "RedragoNash-vs-fire_bot-bloodrun-2026_08_28-19_01_34.dm_91",
+      "source_sha256": "3705df986e7e46420ea6f39a9a7b6ee2d7b813f00f1c4ebc1010b47606361b72",
+      "maps": [
+        "bloodrun"
+      ],
+      "status": "parsed",
+      "snapshots": 27078,
+      "segments": 5,
+      "active_pov_samples": 25078,
+      "pickups": {
+        "rocket": 15,
+        "shard": 59,
+        "yellow": 15,
+        "lightning": 11,
+        "grenade": 13,
+        "health": 17,
+        "shotgun": 7,
+        "red": 12,
+        "health_large": 3,
+        "plasma": 7,
+        "railgun": 13,
+        "mega": 7,
+        "health_small": 4
+      },
+      "approaches": 183,
+      "parser": "UDT 1.3.1",
+      "physics_verified": false,
+      "extractor_revision": 2
+    }
+  ]
+}

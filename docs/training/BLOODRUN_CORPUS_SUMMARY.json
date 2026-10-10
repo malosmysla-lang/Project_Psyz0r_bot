@@ -1,0 +1,31 @@
+{
+  "archive_demos": 100,
+  "archive_bytes": 191181814,
+  "unique_sha256": 100,
+  "archive_parsed": 100,
+  "archive_snapshots": 2223271,
+  "archive_approach_windows": 14840,
+  "archive_item_events": {
+    "yellow": 1745,
+    "mega": 989,
+    "lightning": 603,
+    "railgun": 622,
+    "red": 1258,
+    "grenade": 1067,
+    "health": 1067,
+    "shard": 4484,
+    "rocket": 663,
+    "shotgun": 614,
+    "plasma": 671,
+    "health_small": 835,
+    "health_large": 266
+  },
+  "archive_players": 23,
+  "owner_standard_candidates": 26,
+  "owner_standard_parsed": 25,
+  "owner_approach_windows": 3087,
+  "excluded_archive_record": 9207,
+  "exclusion_reason": "custom parser health sanity check",
+  "live_execution_trained": false,
+  "physics_verified": false
+}

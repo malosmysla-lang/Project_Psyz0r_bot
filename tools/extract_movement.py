@@ -165,7 +165,7 @@ def extract(demo, output, dll_path):
                     row = dict(segment=segments, game_state_number=game_state_number, time_ms=snap.time, message=snap.message,
                                client=ps.clientNum, position=list(ps.origin), velocity=list(ps.velocity),
                                viewangles=list(ps.viewangles), weapon_id=ps.weapon,
-                               pm_type=ps.pm_type, ground_entity=ps.groundEntityNum,
+                               pm_type=ps.pm_type, pm_flags=ps.pm_flags, ground_entity=ps.groundEntityNum,
                                speed_xy=speed, snapshot_delta_ms=delta,
                                health=health, armor=armor,
                                current_weapon_ammo=ps.ammo[ps.weapon] if 0 <= ps.weapon < 64 else None,
