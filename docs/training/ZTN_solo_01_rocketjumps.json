@@ -1,0 +1,1154 @@
+{
+  "demo": "nekitz0r_ZTN_solo_01.dm_91",
+  "demo_sha256": "593ac0a7420c405bb06ff4fd63a01c90dbf429f19be59e5f0e2092f20f93eade",
+  "parser": "UDT 1.3.1",
+  "criteria": "higher first landing (>8 units tolerance) OR pickup during maneuver / nearby within 1.5s after landing",
+  "physics_verified": false,
+  "results": [
+    {
+      "marker_ms": 71325,
+      "shot_ms": 73450,
+      "shot_position": [
+        -261.0423583984375,
+        -408.5301513671875,
+        435.8984375
+      ],
+      "shot_viewangles": [
+        87.890625,
+        71.1529541015625,
+        0.0
+      ],
+      "start_ms": 73325,
+      "start_position": [
+        -272.1065673828125,
+        -446.313720703125,
+        408.125
+      ],
+      "boost_ms": 73475,
+      "landing_ms": 74700,
+      "landing_position": [
+        -132.29415893554688,
+        40.87334060668945,
+        537.125
+      ],
+      "height_gain": 129.0,
+      "apex_z": 639.6677856445312,
+      "health_before": 100,
+      "health_after": 69,
+      "armor_before": 0,
+      "armor_after": 100,
+      "pickups": [
+        {
+          "time_ms": 74600,
+          "kind": "red"
+        }
+      ],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 71325,
+      "shot_ms": 77425,
+      "shot_position": [
+        -288.9335632324219,
+        -426.8808288574219,
+        410.7576904296875
+      ],
+      "shot_viewangles": [
+        87.890625,
+        66.59912109375,
+        0.0
+      ],
+      "start_ms": 77400,
+      "start_position": [
+        -291.7567138671875,
+        -435.06573486328125,
+        408.3150939941406
+      ],
+      "boost_ms": 77425,
+      "landing_ms": 79050,
+      "landing_position": [
+        -89.61076354980469,
+        -25.8927059173584,
+        24.125003814697266
+      ],
+      "height_gain": -384.19,
+      "apex_z": 653.4049682617188,
+      "health_before": 69,
+      "health_after": 52,
+      "armor_before": 100,
+      "armor_after": 65,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 87750,
+      "shot_ms": 89800,
+      "shot_position": [
+        660.5087280273438,
+        -983.642578125,
+        107.29209899902344
+      ],
+      "shot_viewangles": [
+        87.890625,
+        -85.2978515625,
+        0.0
+      ],
+      "start_ms": 89725,
+      "start_position": [
+        660.1300048828125,
+        -958.6856079101562,
+        88.27571105957031
+      ],
+      "boost_ms": 89825,
+      "landing_ms": 91100,
+      "landing_position": [
+        644.7235107421875,
+        -1379.321044921875,
+        272.1686096191406
+      ],
+      "height_gain": 183.89,
+      "apex_z": 361.1639404296875,
+      "health_before": 145,
+      "health_after": 133,
+      "armor_before": 115,
+      "armor_after": 92,
+      "pickups": [
+        {
+          "time_ms": 91000,
+          "kind": "rocket"
+        }
+      ],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 107650,
+      "shot_ms": 110350,
+      "shot_position": [
+        233.3922882080078,
+        -385.1115417480469,
+        88.125
+      ],
+      "shot_viewangles": [
+        62.6165771484375,
+        -179.3133544921875,
+        0.0
+      ],
+      "start_ms": 110350,
+      "start_position": [
+        233.3922882080078,
+        -385.1115417480469,
+        88.125
+      ],
+      "boost_ms": 110375,
+      "landing_ms": 112100,
+      "landing_position": [
+        -194.1284637451172,
+        -250.0260772705078,
+        16.125003814697266
+      ],
+      "height_gain": -72.0,
+      "apex_z": 346.5639343261719,
+      "health_before": 114,
+      "health_after": 100,
+      "armor_before": 100,
+      "armor_after": 77,
+      "pickups": [
+        {
+          "time_ms": 112050,
+          "kind": "railgun"
+        }
+      ],
+      "status": "success",
+      "reason": "immediate_pickup"
+    },
+    {
+      "marker_ms": 115025,
+      "shot_ms": 116525,
+      "shot_position": [
+        238.31748962402344,
+        -400.32379150390625,
+        88.125
+      ],
+      "shot_viewangles": [
+        87.890625,
+        175.4351806640625,
+        0.0
+      ],
+      "start_ms": 116500,
+      "start_position": [
+        247.28152465820312,
+        -400.627685546875,
+        88.125
+      ],
+      "boost_ms": 116525,
+      "landing_ms": 118025,
+      "landing_position": [
+        -305.9176330566406,
+        -314.9273376464844,
+        24.125003814697266
+      ],
+      "height_gain": -64.0,
+      "apex_z": 276.4192199707031,
+      "health_before": 100,
+      "health_after": 86,
+      "armor_before": 77,
+      "armor_after": 49,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 115025,
+      "shot_ms": 120125,
+      "shot_position": [
+        207.05882263183594,
+        -325.076171875,
+        88.125
+      ],
+      "shot_viewangles": [
+        32.750244140625,
+        147.821044921875,
+        0.0
+      ],
+      "status": "excluded",
+      "reason": "no_vertical_rocket_impulse_observed"
+    },
+    {
+      "marker_ms": 115025,
+      "shot_ms": 121275,
+      "shot_position": [
+        233.30905151367188,
+        -378.1555480957031,
+        88.125
+      ],
+      "shot_viewangles": [
+        87.890625,
+        168.7060546875,
+        0.0
+      ],
+      "start_ms": 121250,
+      "start_position": [
+        242.48561096191406,
+        -379.601318359375,
+        88.125
+      ],
+      "boost_ms": 121275,
+      "landing_ms": 122750,
+      "landing_position": [
+        -331.70343017578125,
+        -329.4996643066406,
+        32.125003814697266
+      ],
+      "height_gain": -56.0,
+      "apex_z": 276.4896240234375,
+      "health_before": 86,
+      "health_after": 72,
+      "armor_before": 49,
+      "armor_after": 21,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 134250,
+      "status": "unknown",
+      "reason": "no_rocket_shot_in_10s"
+    },
+    {
+      "marker_ms": 139400,
+      "shot_ms": 141375,
+      "shot_position": [
+        300.05767822265625,
+        -227.81394958496094,
+        93.20560455322266
+      ],
+      "shot_viewangles": [
+        87.890625,
+        119.8443603515625,
+        0.0
+      ],
+      "start_ms": 141350,
+      "start_position": [
+        305.6678466796875,
+        -225.12677001953125,
+        88.125
+      ],
+      "boost_ms": 141375,
+      "landing_ms": 142550,
+      "landing_position": [
+        -92.32579803466797,
+        -375.46881103515625,
+        24.125003814697266
+      ],
+      "height_gain": -64.0,
+      "apex_z": 303.13397216796875,
+      "health_before": 161,
+      "health_after": 114,
+      "armor_before": 0,
+      "armor_after": 0,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 139400,
+      "shot_ms": 144875,
+      "shot_position": [
+        304.61395263671875,
+        -243.51141357421875,
+        92.15999603271484
+      ],
+      "shot_viewangles": [
+        87.890625,
+        88.00048828125,
+        0.0
+      ],
+      "start_ms": 144850,
+      "start_position": [
+        312.9259033203125,
+        -243.78134155273438,
+        88.125
+      ],
+      "boost_ms": 144875,
+      "landing_ms": 146325,
+      "landing_position": [
+        -279.965087890625,
+        -316.9000244140625,
+        409.125
+      ],
+      "height_gain": 321.0,
+      "apex_z": 485.9529113769531,
+      "health_before": 112,
+      "health_after": 71,
+      "armor_before": 0,
+      "armor_after": 0,
+      "pickups": [
+        {
+          "time_ms": 146200,
+          "kind": "grenade"
+        }
+      ],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 151625,
+      "shot_ms": 153400,
+      "shot_position": [
+        297.187255859375,
+        -230.2946319580078,
+        88.125
+      ],
+      "shot_viewangles": [
+        85.4791259765625,
+        124.7332763671875,
+        0.0
+      ],
+      "start_ms": 153375,
+      "start_position": [
+        304.4582824707031,
+        -232.29476928710938,
+        88.125
+      ],
+      "boost_ms": 153400,
+      "landing_ms": 154875,
+      "landing_position": [
+        -185.59112548828125,
+        -317.0846252441406,
+        24.125003814697266
+      ],
+      "height_gain": -64.0,
+      "apex_z": 270.1099548339844,
+      "health_before": 71,
+      "health_after": 29,
+      "armor_before": 0,
+      "armor_after": 0,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 151625,
+      "shot_ms": 157275,
+      "shot_position": [
+        214.76133728027344,
+        -401.904052734375,
+        88.125
+      ],
+      "shot_viewangles": [
+        87.890625,
+        171.6943359375,
+        0.0
+      ],
+      "start_ms": 157250,
+      "start_position": [
+        222.26199340820312,
+        -403.5959167480469,
+        88.125
+      ],
+      "boost_ms": 157275,
+      "landing_ms": 158750,
+      "landing_position": [
+        -355.0538635253906,
+        -330.8014221191406,
+        48.125
+      ],
+      "height_gain": -40.0,
+      "apex_z": 276.3857116699219,
+      "health_before": 29,
+      "health_after": 2,
+      "armor_before": 15,
+      "armor_after": 0,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 165750,
+      "shot_ms": 166925,
+      "shot_position": [
+        672.3434448242188,
+        406.89874267578125,
+        96.95372772216797
+      ],
+      "shot_viewangles": [
+        5.38330078125,
+        83.089599609375,
+        0.0
+      ],
+      "start_ms": 166900,
+      "start_position": [
+        672.9783325195312,
+        408.33721923828125,
+        89.31513214111328
+      ],
+      "boost_ms": 166925,
+      "landing_ms": 169175,
+      "landing_position": [
+        652.1505737304688,
+        -765.6920166015625,
+        88.125
+      ],
+      "height_gain": -1.19,
+      "apex_z": 167.2540283203125,
+      "health_before": 122,
+      "health_after": 89,
+      "armor_before": 0,
+      "armor_after": 0,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 174850,
+      "shot_ms": 176775,
+      "shot_position": [
+        -284.23370361328125,
+        -339.10797119140625,
+        427.7034912109375
+      ],
+      "shot_viewangles": [
+        80.15625,
+        -126.1669921875,
+        0.0
+      ],
+      "start_ms": 176675,
+      "start_position": [
+        -311.08111572265625,
+        -359.0835266113281,
+        408.2634582519531
+      ],
+      "boost_ms": 176800,
+      "landing_ms": 178550,
+      "landing_position": [
+        165.1215057373047,
+        -87.55176544189453,
+        88.125
+      ],
+      "height_gain": -320.14,
+      "apex_z": 655.4022827148438,
+      "health_before": 89,
+      "health_after": 45,
+      "armor_before": 0,
+      "armor_after": 0,
+      "pickups": [
+        {
+          "time_ms": 179200,
+          "kind": "shard"
+        },
+        {
+          "time_ms": 179425,
+          "kind": "shard"
+        }
+      ],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 191800,
+      "shot_ms": 193825,
+      "shot_position": [
+        -183.2630615234375,
+        -309.96710205078125,
+        414.6109924316406
+      ],
+      "shot_viewangles": [
+        70.6805419921875,
+        -161.2188720703125,
+        0.0
+      ],
+      "start_ms": 193750,
+      "start_position": [
+        -212.17431640625,
+        -317.7174987792969,
+        409.125
+      ],
+      "boost_ms": 193850,
+      "landing_ms": 194950,
+      "landing_position": [
+        305.8183288574219,
+        -90.90287017822266,
+        536.125
+      ],
+      "height_gain": 127.0,
+      "apex_z": 655.723388671875,
+      "health_before": 95,
+      "health_after": 83,
+      "armor_before": 106,
+      "armor_after": 82,
+      "pickups": [],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 203600,
+      "shot_ms": 204400,
+      "shot_position": [
+        -176.6071319580078,
+        32.350067138671875,
+        541.9454345703125
+      ],
+      "shot_viewangles": [
+        10.162353515625,
+        92.6202392578125,
+        0.0
+      ],
+      "start_ms": 204375,
+      "start_position": [
+        -176.75221252441406,
+        36.08674240112305,
+        537.125
+      ],
+      "boost_ms": 204400,
+      "landing_ms": 205600,
+      "landing_position": [
+        -211.8748016357422,
+        -442.1311340332031,
+        408.125
+      ],
+      "height_gain": -129.0,
+      "apex_z": 615.4693603515625,
+      "health_before": 83,
+      "health_after": 71,
+      "armor_before": 82,
+      "armor_after": 57,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 211925,
+      "shot_ms": 213350,
+      "shot_position": [
+        -207.49270629882812,
+        -406.3120422363281,
+        443.1756591796875
+      ],
+      "shot_viewangles": [
+        87.890625,
+        81.6064453125,
+        0.0
+      ],
+      "start_ms": 213175,
+      "start_position": [
+        -214.25436401367188,
+        -462.3592224121094,
+        408.125
+      ],
+      "boost_ms": 213400,
+      "landing_ms": 214325,
+      "landing_position": [
+        -152.43016052246094,
+        -30.32011604309082,
+        537.125
+      ],
+      "height_gain": 129.0,
+      "apex_z": 581.4673461914062,
+      "health_before": 71,
+      "health_after": 62,
+      "armor_before": 82,
+      "armor_after": 63,
+      "pickups": [
+        {
+          "time_ms": 214375,
+          "kind": "red"
+        }
+      ],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 219675,
+      "shot_ms": 221525,
+      "shot_position": [
+        243.3737030029297,
+        -380.9295959472656,
+        88.125
+      ],
+      "shot_viewangles": [
+        87.890625,
+        170.9527587890625,
+        0.0
+      ],
+      "start_ms": 221500,
+      "start_position": [
+        249.46112060546875,
+        -381.3350524902344,
+        88.125
+      ],
+      "boost_ms": 221525,
+      "landing_ms": 223025,
+      "landing_position": [
+        -300.2899169921875,
+        -377.27911376953125,
+        24.125001907348633
+      ],
+      "height_gain": -64.0,
+      "apex_z": 276.7109069824219,
+      "health_before": 61,
+      "health_after": 47,
+      "armor_before": 167,
+      "armor_after": 137,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 219675,
+      "shot_ms": 227475,
+      "shot_position": [
+        298.3973083496094,
+        -255.009033203125,
+        89.31440734863281
+      ],
+      "shot_viewangles": [
+        87.890625,
+        64.35791015625,
+        0.0
+      ],
+      "start_ms": 227450,
+      "start_position": [
+        307.97296142578125,
+        -256.9434509277344,
+        88.22080993652344
+      ],
+      "boost_ms": 227475,
+      "landing_ms": 229025,
+      "landing_position": [
+        -407.8074951171875,
+        -349.69378662109375,
+        408.125
+      ],
+      "height_gain": 319.9,
+      "apex_z": 505.909912109375,
+      "health_before": 145,
+      "health_after": 129,
+      "armor_before": 133,
+      "armor_after": 103,
+      "pickups": [],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 233375,
+      "shot_ms": 236525,
+      "shot_position": [
+        288.7607421875,
+        -252.51478576660156,
+        96.40433502197266
+      ],
+      "shot_viewangles": [
+        87.890625,
+        27.960205078125,
+        0.0
+      ],
+      "start_ms": 236475,
+      "start_position": [
+        306.3323974609375,
+        -249.1150665283203,
+        88.26373291015625
+      ],
+      "boost_ms": 236525,
+      "landing_ms": 237850,
+      "landing_position": [
+        -283.4317321777344,
+        -338.0625,
+        409.125
+      ],
+      "height_gain": 320.86,
+      "apex_z": 461.3162841796875,
+      "health_before": 122,
+      "health_after": 108,
+      "armor_before": 100,
+      "armor_after": 74,
+      "pickups": [
+        {
+          "time_ms": 237725,
+          "kind": "grenade"
+        }
+      ],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 242175,
+      "shot_ms": 246425,
+      "shot_position": [
+        301.0774230957031,
+        -231.46998596191406,
+        88.125
+      ],
+      "shot_viewangles": [
+        85.946044921875,
+        115.33447265625,
+        0.0
+      ],
+      "start_ms": 246400,
+      "start_position": [
+        308.8219909667969,
+        -230.07421875,
+        88.125
+      ],
+      "boost_ms": 246425,
+      "landing_ms": 247900,
+      "landing_position": [
+        -149.68392944335938,
+        -303.0489196777344,
+        24.125003814697266
+      ],
+      "height_gain": -64.0,
+      "apex_z": 268.5458984375,
+      "health_before": 100,
+      "health_after": 86,
+      "armor_before": 70,
+      "armor_after": 42,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 251675,
+      "shot_ms": 254225,
+      "shot_position": [
+        282.1506652832031,
+        -252.12677001953125,
+        88.125
+      ],
+      "shot_viewangles": [
+        87.890625,
+        65.56640625,
+        0.0
+      ],
+      "start_ms": 254200,
+      "start_position": [
+        288.99078369140625,
+        -251.12594604492188,
+        88.125
+      ],
+      "boost_ms": 254225,
+      "landing_ms": 255700,
+      "landing_position": [
+        -334.1419372558594,
+        -334.5407409667969,
+        32.125003814697266
+      ],
+      "height_gain": -56.0,
+      "apex_z": 274.4968566894531,
+      "health_before": 86,
+      "health_after": 72,
+      "armor_before": 42,
+      "armor_after": 14,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 259000,
+      "shot_ms": 261400,
+      "shot_position": [
+        286.9046630859375,
+        -235.27264404296875,
+        92.42259979248047
+      ],
+      "shot_viewangles": [
+        87.03369140625,
+        97.80029296875,
+        0.0
+      ],
+      "start_ms": 261375,
+      "start_position": [
+        295.17144775390625,
+        -235.18846130371094,
+        88.125
+      ],
+      "boost_ms": 261400,
+      "landing_ms": 262825,
+      "landing_position": [
+        -291.1661682128906,
+        -326.86993408203125,
+        409.125
+      ],
+      "height_gain": 321.0,
+      "apex_z": 484.296630859375,
+      "health_before": 72,
+      "health_after": 45,
+      "armor_before": 14,
+      "armor_after": 0,
+      "pickups": [
+        {
+          "time_ms": 262725,
+          "kind": "grenade"
+        }
+      ],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 265800,
+      "shot_ms": 266975,
+      "shot_position": [
+        -222.3306427001953,
+        -374.5326232910156,
+        422.8079833984375
+      ],
+      "shot_viewangles": [
+        87.890625,
+        72.3614501953125,
+        0.0
+      ],
+      "start_ms": 266900,
+      "start_position": [
+        -226.902587890625,
+        -396.49737548828125,
+        408.2035827636719
+      ],
+      "boost_ms": 267000,
+      "landing_ms": 268075,
+      "landing_position": [
+        -168.1083984375,
+        40.80335998535156,
+        537.125
+      ],
+      "height_gain": 128.92,
+      "apex_z": 655.0109252929688,
+      "health_before": 45,
+      "health_after": 10,
+      "armor_before": 0,
+      "armor_after": 100,
+      "pickups": [
+        {
+          "time_ms": 268000,
+          "kind": "red"
+        }
+      ],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 273125,
+      "shot_ms": 275225,
+      "shot_position": [
+        -222.86007690429688,
+        -384.7390441894531,
+        408.2635192871094
+      ],
+      "shot_viewangles": [
+        74.1302490234375,
+        -164.5257568359375,
+        0.0
+      ],
+      "start_ms": 275200,
+      "start_position": [
+        -228.89340209960938,
+        -383.2762145996094,
+        408.2635192871094
+      ],
+      "boost_ms": 275225,
+      "landing_ms": 276275,
+      "landing_position": [
+        188.5811004638672,
+        -370.8855285644531,
+        536.125
+      ],
+      "height_gain": 127.86,
+      "apex_z": 587.228759765625,
+      "health_before": 60,
+      "health_after": 46,
+      "armor_before": 100,
+      "armor_after": 72,
+      "pickups": [],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 282825,
+      "shot_ms": 284325,
+      "shot_position": [
+        678.7239990234375,
+        -937.6522216796875,
+        105.85138702392578
+      ],
+      "shot_viewangles": [
+        87.890625,
+        -89.7088623046875,
+        0.0
+      ],
+      "start_ms": 284225,
+      "start_position": [
+        678.1612548828125,
+        -909.5390014648438,
+        88.125
+      ],
+      "boost_ms": 284350,
+      "landing_ms": 285700,
+      "landing_position": [
+        660.8163452148438,
+        -1413.601318359375,
+        272.125
+      ],
+      "height_gain": 184.0,
+      "apex_z": 373.45947265625,
+      "health_before": 46,
+      "health_after": 35,
+      "armor_before": 119,
+      "armor_after": 95,
+      "pickups": [
+        {
+          "time_ms": 285775,
+          "kind": "rocket"
+        }
+      ],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 290875,
+      "shot_ms": 293500,
+      "shot_position": [
+        -329.77105712890625,
+        -306.6977844238281,
+        417.94256591796875
+      ],
+      "shot_viewangles": [
+        53.865966796875,
+        -150.2984619140625,
+        0.0
+      ],
+      "start_ms": 293450,
+      "start_position": [
+        -346.0026550292969,
+        -310.91619873046875,
+        408.315185546875
+      ],
+      "boost_ms": 293525,
+      "landing_ms": 295275,
+      "landing_position": [
+        658.7371826171875,
+        -52.97084045410156,
+        536.2665405273438
+      ],
+      "height_gain": 127.95,
+      "apex_z": 601.6864013671875,
+      "health_before": 60,
+      "health_after": 50,
+      "armor_before": 114,
+      "armor_after": 94,
+      "pickups": [],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 302575,
+      "shot_ms": 304650,
+      "shot_position": [
+        -306.3740539550781,
+        -331.6133728027344,
+        408.350830078125
+      ],
+      "shot_viewangles": [
+        69.7412109375,
+        172.122802734375,
+        0.0
+      ],
+      "start_ms": 304625,
+      "start_position": [
+        -311.45025634765625,
+        -331.0670471191406,
+        408.350830078125
+      ],
+      "boost_ms": 304650,
+      "landing_ms": 306400,
+      "landing_position": [
+        186.67514038085938,
+        -203.20626831054688,
+        56.125003814697266
+      ],
+      "height_gain": -352.23,
+      "apex_z": 555.2350463867188,
+      "health_before": 50,
+      "health_after": 34,
+      "armor_before": 94,
+      "armor_after": 60,
+      "pickups": [],
+      "status": "unsuccessful",
+      "reason": "same_or_lower_landing_without_reward"
+    },
+    {
+      "marker_ms": 315375,
+      "shot_ms": 316675,
+      "shot_position": [
+        -246.91163635253906,
+        -416.0517883300781,
+        425.16552734375
+      ],
+      "shot_viewangles": [
+        87.890625,
+        86.5283203125,
+        0.0
+      ],
+      "start_ms": 316600,
+      "start_position": [
+        -251.353271484375,
+        -439.0596618652344,
+        408.315185546875
+      ],
+      "boost_ms": 316700,
+      "landing_ms": 317750,
+      "landing_position": [
+        -151.12681579589844,
+        -0.6408250331878662,
+        537.125
+      ],
+      "height_gain": 128.81,
+      "apex_z": 655.849609375,
+      "health_before": 125,
+      "health_after": 113,
+      "armor_before": 104,
+      "armor_after": 180,
+      "pickups": [
+        {
+          "time_ms": 317725,
+          "kind": "red"
+        }
+      ],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 319975,
+      "shot_ms": 322075,
+      "shot_position": [
+        -276.1117858886719,
+        -308.6617736816406,
+        413.68438720703125
+      ],
+      "shot_viewangles": [
+        74.3994140625,
+        -145.3326416015625,
+        0.0
+      ],
+      "start_ms": 322050,
+      "start_position": [
+        -283.0447082519531,
+        -309.6661376953125,
+        409.125
+      ],
+      "boost_ms": 322100,
+      "landing_ms": 323775,
+      "landing_position": [
+        547.0386352539062,
+        -55.13386535644531,
+        536.142333984375
+      ],
+      "height_gain": 127.02,
+      "apex_z": 654.7465209960938,
+      "health_before": 109,
+      "health_after": 97,
+      "armor_before": 176,
+      "armor_after": 148,
+      "pickups": [],
+      "status": "success",
+      "reason": "higher_landing"
+    },
+    {
+      "marker_ms": 319975,
+      "shot_ms": 325200,
+      "shot_position": [
+        679.4464721679688,
+        176.2386474609375,
+        536.125
+      ],
+      "shot_viewangles": [
+        1.966552734375,
+        145.469970703125,
+        0.0
+      ],
+      "status": "excluded",
+      "reason": "no_vertical_rocket_impulse_observed"
+    },
+    {
+      "marker_ms": 331525,
+      "shot_ms": 333850,
+      "shot_position": [
+        281.83026123046875,
+        -259.864013671875,
+        93.46499633789062
+      ],
+      "shot_viewangles": [
+        87.890625,
+        34.002685546875,
+        0.0
+      ],
+      "start_ms": 333825,
+      "start_position": [
+        292.0816650390625,
+        -260.0942077636719,
+        88.125
+      ],
+      "boost_ms": 333850,
+      "landing_ms": 335275,
+      "landing_position": [
+        -311.80438232421875,
+        -323.9909973144531,
+        408.125
+      ],
+      "height_gain": 320.0,
+      "apex_z": 480.12799072265625,
+      "health_before": 96,
+      "health_after": 83,
+      "armor_before": 149,
+      "armor_after": 121,
+      "pickups": [
+        {
+          "time_ms": 335150,
+          "kind": "grenade"
+        }
+      ],
+      "status": "success",
+      "reason": "higher_landing"
+    }
+  ]
+}
