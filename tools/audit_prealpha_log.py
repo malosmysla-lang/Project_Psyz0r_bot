@@ -15,7 +15,7 @@ def summarize(path):
         fields = dict(re.findall(r'(\w+)=([^\s]+)', line))
         if line.startswith(('PSYZ_OPENING_BEGIN ', 'PSYZ_OPENING_PLAN ', 'PSYZ_OPENING_PICKUP ', 'PSYZ_OPENING_END ')):
             openings.append(dict(event=line.split()[0], **fields))
-        if line.startswith('PSYZ_PICKUP '):
+        if line.startswith('PSYZ_PICKUP ') and all(k in fields for k in ('t', 'entity', 'class')):
             pickups.append(fields)
         elif line.startswith('PSYZ_RJ_END '):
             fields['success'] = fields.get('higher') == '1' or fields.get('pickup') == '1'

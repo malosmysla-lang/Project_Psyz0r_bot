@@ -9,6 +9,7 @@ static int psyz_rj_plan=-1,psyz_active_route=-1,psyz_route_point,psyz_last_move_
 static float psyz_progress_distance;
 static int psyz_strafe_log;
 static int psyz_progress_time,psyz_banned[1024];
+static int psyz_demo_retry_after[1024];
 static int psyz_rj=-1,psyz_rj_phase,psyz_rj_time,psyz_rj_ground,psyz_rj_last,psyz_rj_fired,psyz_rj_landed_at;
 static float psyz_rj_start_z;
 static int psyz_debug_logged;
@@ -28,6 +29,7 @@ static void Psyz_PreAlphaReset(void) {
     Psyz_OpeningReset();
     psyz_debug_logged=0;
     memset(psyz_goal_known,0,sizeof(psyz_goal_known));memset(psyz_route_banned,0,sizeof(psyz_route_banned));memset(psyz_banned,0,sizeof(psyz_banned));
+    memset(psyz_demo_retry_after,0,sizeof(psyz_demo_retry_after));
     psyz_rj_plan=psyz_goal_target=psyz_active_route=psyz_rj=psyz_last_pickup=-1;
 
     psyz_registry_logged=psyz_rj_phase=psyz_rj_last=psyz_last_move_time=0;
@@ -57,6 +59,7 @@ static float Psyz_ItemWeight(gentity_t *item,gentity_t *own,int recovering) {
 }
 static void Psyz_SelectDemoRoute(gentity_t *own,int target) {
     float best=97;psyz_active_route=-1;psyz_route_point=0;
+    if(target>=0 && target<1024 && psyz_demo_retry_after[target]>own->client->pers.cmd.serverTime)return;
     for(size_t i=0;i<PSYZ_ROUTE_COUNT;i++) {
         const PsyzLearnedRoute *r=&psyz_routes[i];if(psyz_route_banned[i]>own->client->pers.cmd.serverTime)continue;
         if(target<0 || r->count<2 || !g_entities[target].item || strcmp(r->classname,g_entities[target].item->classname) || Psyz_Distance(r->target,g_entities[target].r.currentOrigin)>16)continue;
@@ -148,6 +151,12 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     float distance=Psyz_Distance(own->client->ps.origin,g_entities[psyz_goal_target].r.currentOrigin);
     if(distance<psyz_progress_distance-32){psyz_progress_distance=distance;psyz_progress_time=now;}
     if(now-psyz_progress_time>6000) {
+        if(psyz_active_route>=0){
+            fprintf(stderr,"PSYZ_REPATH t=%d target=%d route=%d reason=demo_failed_fallback_aas\n",now,psyz_goal_target,psyz_active_route);
+            psyz_route_banned[psyz_active_route]=now+60000;
+            psyz_demo_retry_after[psyz_goal_target]=now+15000;
+            psyz_active_route=-1;psyz_progress_time=now;psyz_progress_distance=distance;
+        } else {
         Psyz_OpeningEnd(now,"no_progress");
         fprintf(stderr,"PSYZ_REPATH t=%d target=%d route=%d reason=no_progress\n",now,psyz_goal_target,psyz_active_route);
         if(psyz_active_route>=0)psyz_route_banned[psyz_active_route]=now+60000;
@@ -155,6 +164,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         int gs;memcpy(&gs,(char*)state+0x1968,4);void *imports;memcpy(&imports,(char*)qagame+0x2d8000,sizeof(imports));
         void (*pop)(int);memcpy(&pop,(char*)imports+0x468,sizeof(pop));pop(gs);
         float expired=0;memcpy((char*)state+0x179c,&expired,4);return;
+        }
     }
     memcpy(output,psyz_goal_cache[psyz_goal_target],64);
     if(psyz_active_route<0)Psyz_SelectDemoRoute(own,psyz_goal_target);

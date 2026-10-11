@@ -1,0 +1,10 @@
+{
+  "version": "0.6.2",
+  "map": "bloodrun",
+  "test_port": 27961,
+  "native_sha256": "0470474b360e61beb129ed2ba9739cccddd3e49535cb23e3901dd208f38416f4",
+  "backup": "/home/qlserver/psyz0r-bot/prealpha-20261011/backup-before-0.6.2",
+  "scope": ["item_navigation", "resource_selection", "strafejump", "rocketjump", "existing_openings"],
+  "all_paths_verified": false,
+  "full_mind_map_connected": false
+}

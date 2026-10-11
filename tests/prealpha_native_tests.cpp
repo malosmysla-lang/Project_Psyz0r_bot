@@ -91,5 +91,14 @@ int main(){try{
  phasevar.string="PRE_GAME";Psyz_OpeningTick(&world[0]);phasevar.string="IN_PROGRESS";Psyz_OpeningTick(&world[0]);
  world[0].health=0;Psyz_OpeningTick(&world[0]);check(!psyz_opening_active,"Death does not replay opening on respawn");
  portvar.integer=27960;enabled.integer=1;check(!Psyz_PreAlphaEnabled(),"Policy must never activate on primary port");
+ reset();world[200].inuse=1;world[200].item=&mega;world[200].r.contents=1;world[200].r.currentOrigin[0]=100;
+ client.ps.stats[STAT_ARMOR]=50;psyz_debug_logged=1;
+ goal(out,200,10,world[200].r.currentOrigin);goal(psyz_goal_cache[200],200,10,world[200].r.currentOrigin);
+ psyz_goal_known[200]=1;psyz_goal_target=200;psyz_active_route=0;psyz_progress_time=0;psyz_goal_since=0;
+ Psyz_PreAlphaGoal(state,0,out);
+ check(psyz_goal_target==200 && psyz_active_route<0,"Failed demo approach retries same item with stock AAS");
+ check(psyz_demo_retry_after[200]>20000 && psyz_route_banned[0]>20000,"Failed approach is not immediately reselected");
+ client.pers.cmd.serverTime=27001;goal(out,200,10,world[200].r.currentOrigin);Psyz_PreAlphaGoal(state,0,out);
+ check(psyz_goal_target<0 && psyz_banned[200]>27001,"A second no-progress timeout releases failed stock goal");
  std::cout<<"Native prealpha contextual scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

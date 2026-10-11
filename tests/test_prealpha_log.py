@@ -23,7 +23,8 @@ class LogEvidenceTests(unittest.TestCase):
     def test_intentions_and_failed_jumps_are_not_successes(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'console.log'
-            path.write_text('PSYZ_TARGET t=100 entity=20\n'
+            path.write_text('PSYZ_PICKUP install=0\n'
+                            'PSYZ_TARGET t=100 entity=20\n'
                             'PSYZ_DEMO_ROUTE t=150 target=20 route=3\n'
                             'PSYZ_RJ_END t=200 higher=0 pickup=0\n'
                             'PSYZ_RJ_END t=300 outcome=timeout\n'

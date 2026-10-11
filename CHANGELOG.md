@@ -1,4 +1,9 @@
 
+# 2026-10-11 - Prealpha 0.6.2 focused block hardening
+
+Scope frozen to item navigation/selection, strafejump, rocketjump and existing openings. Failed demo approach now retries the same item with stock AAS before abandoning it. Real QL test: railgun collected 2225 ms after fallback; 16 actual pickups, 16 strafe command observations, no RJ in this run. Corrected pickup audits to exclude hook-install diagnostics. MSVC Debug 12/12 and Python 92/92 passed; Linux NOPY built. Status and remaining tests: docs/FOCUSED_BLOCK_STATUS_RU.md. These blocks are NOT fully complete.
+
+
 # 2026-10-11 - Prealpha 0.6.1 opening overlay
 
 36 observed Blood Run opening orders connected to the native test-only goal selector. Real match phase with VM-reload handling; actual pickup advancement, recovery/death/unavailable/timeout fallback. MSVC Debug 12/12 CTest; Python 92/92; Linux NOPY build. First live order picked yellow and Mega, then aborted unavailable third goal. All 36 variants are not live verified. See docs/PREALPHA_0_6_1_RU.md.

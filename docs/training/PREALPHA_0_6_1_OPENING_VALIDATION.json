@@ -2,9 +2,6 @@
   "log_sha256": "a64ad19945f9312fa5890819dede81b6b1c5fecaf6ad1ef08c4e1a0ab3d9f72a",
   "actual_pickups": [
     {
-      "install": "0"
-    },
-    {
       "t": "18200",
       "entity": "103",
       "class": "item_armor_combat",
@@ -86,7 +83,7 @@
       "armor": "65"
     }
   ],
-  "actual_pickup_count": 10,
+  "actual_pickup_count": 9,
   "demo_route_activations": 5,
   "pickups_with_matching_target_and_active_demo_route": [
     {

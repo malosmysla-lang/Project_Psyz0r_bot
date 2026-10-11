@@ -2,9 +2,6 @@
   "log_sha256": "881f459a00748de5a348f66efea96472b1e80b9c8fcc9d4f1746162388c8f2d5",
   "actual_pickups": [
     {
-      "install": "0"
-    },
-    {
       "t": "40900",
       "entity": "90",
       "class": "ammo_shells",
@@ -50,7 +47,7 @@
       "armor": "0"
     }
   ],
-  "actual_pickup_count": 6,
+  "actual_pickup_count": 5,
   "demo_route_activations": 2,
   "pickups_with_matching_target_and_active_demo_route": [],
   "strafe_command_observations": [
