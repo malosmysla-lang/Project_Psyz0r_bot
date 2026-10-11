@@ -1,3 +1,6 @@
+
+
+2026-10-11 opening audit: first 30 seconds anchored to UDT match starts; first weapon/three strategic pickups, continuity and missing-start flags. No runtime policy change. See docs/OPENINGS_RU.md. Four focused tests passed.
 Prealpha follow-up: normalized native header whitespace; no executable behavior changed.
 
 # 2026-10-11 - Prealpha 0.6: live Blood Run navigation
