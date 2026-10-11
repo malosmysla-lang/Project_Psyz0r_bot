@@ -1,5 +1,7 @@
 /* Test-only command hook for the pinned Linux QL build. Not a general ABI. */
 #include <stddef.h>
+#include "psyz_prealpha.h"
+#define PSYZ_PREALPHA 1
 #include "psyz_stock_goal_observer.h"
 static void (*psyz_real_think)(gentity_t*);
 static int psyz_started = -1;
@@ -12,16 +14,20 @@ static void Psyz_Think(gentity_t* ent) {
         !port || port->integer != 27961 || !ent || ent->s.number != 0 ||
         !(ent->r.svFlags & 8) || !ent->client || ent->health <= 0) {
         if (!mode || mode->integer == 0) psyz_started = -1;
+        if(ent && ent->s.number==0 && ent->health<=0)psyz_rj=-1;
         psyz_real_think(ent); return;
     }
     usercmd_t *cmd = &ent->client->pers.cmd;
     int now = cmd->serverTime;
     if (mode->integer == 3) {
-        /* Baseline exploration uses stock AAS; our code observes only this bot. */
+        /* Install lazily: custom cvars may not exist during VM load. */
+        Psyz_InstallGoalObserver();
+        /* Preserve stock AAS; explicitly enabled prealpha may alter this bot. */
+        Psyz_PreAlphaMove(ent);
         psyz_real_think(ent);
         if (now - psyz_last_log >= 200) {
             psyz_last_log = now;
-            fprintf(stderr,"PSYZ_NAV t=%d pos=%.3f,%.3f,%.3f vel=%.3f,%.3f,%.3f yaw=%.2f weapon=%d health=%d ground=%d source=stock_aas\n",
+            fprintf(stderr,"PSYZ_NAV t=%d pos=%.3f,%.3f,%.3f vel=%.3f,%.3f,%.3f yaw=%.2f weapon=%d health=%d ground=%d source=stock_aas_plus_optin_prealpha\n",
                 now,ent->client->ps.origin[0],ent->client->ps.origin[1],ent->client->ps.origin[2],
                 ent->client->ps.velocity[0],ent->client->ps.velocity[1],ent->client->ps.velocity[2],
                 ent->client->ps.viewangles[1],ent->client->ps.weapon,ent->health,ent->client->ps.groundEntityNum);
@@ -52,6 +58,9 @@ static void Psyz_Think(gentity_t* ent) {
 }
 static void Psyz_Install(void) {
     if (!getenv("PSYZ_CONTROL_LAB")) return;
+    Psyz_PreAlphaReset();
+    Psyz_InstallPickup();
+    psyz_original_item_goal = NULL; /* VM reload invalidates the old trampoline. */
     /* Caller also verifies SHA256 of bin.pk3. Verify the target prologue here. */
     unsigned char expected[] = {0x41,0x57,0x41,0x56,0x41,0x55,0x41,0x54};
     void *target = (char*)qagame + 0x59df0;

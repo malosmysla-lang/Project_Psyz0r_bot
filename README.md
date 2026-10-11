@@ -1,3 +1,5 @@
+> Current playable milestone: [Blood Run prealpha 0.6](docs/PREALPHA_0_6_RU.md). Isolated test: 78.17.9.235:27961. Earlier implementation-status notes below may describe older stages.
+
 # Psyz0r_bot
 
 Последнее дополнение10.10: [адаптация к силе/стилю соперника](docs/OPPONENT_ADAPTATION_SPEC_RU.md): многопризнаковая оценка, читаемые привычки, подготовленная контратака, «Крыса» иQA-план. Исходник сохранён; кодирование уточняется отдельно.

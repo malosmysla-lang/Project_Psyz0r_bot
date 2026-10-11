@@ -1,0 +1,208 @@
+{
+  "log_sha256": "0b144802ac5e96fdcc8fcb1e94c3cc547deaec43ea1b6bb980a26c414b012a36",
+  "actual_pickups": [
+    {
+      "t": "41475",
+      "entity": "105",
+      "class": "weapon_rocketlauncher",
+      "target": "105",
+      "route": "-1",
+      "health": "119",
+      "armor": "0"
+    },
+    {
+      "t": "43575",
+      "entity": "103",
+      "class": "item_armor_combat",
+      "target": "112",
+      "route": "-1",
+      "health": "117",
+      "armor": "50"
+    },
+    {
+      "t": "46125",
+      "entity": "112",
+      "class": "item_health_mega",
+      "target": "112",
+      "route": "-1",
+      "health": "200",
+      "armor": "50"
+    },
+    {
+      "t": "46950",
+      "entity": "74",
+      "class": "ammo_bullets",
+      "target": "111",
+      "route": "50",
+      "health": "199",
+      "armor": "50"
+    },
+    {
+      "t": "49425",
+      "entity": "75",
+      "class": "ammo_shells",
+      "target": "111",
+      "route": "50",
+      "health": "197",
+      "armor": "50"
+    },
+    {
+      "t": "53775",
+      "entity": "111",
+      "class": "weapon_lightning",
+      "target": "111",
+      "route": "-1",
+      "health": "192",
+      "armor": "50"
+    },
+    {
+      "t": "58800",
+      "entity": "92",
+      "class": "item_armor_shard",
+      "target": "117",
+      "route": "88",
+      "health": "187",
+      "armor": "55"
+    },
+    {
+      "t": "59950",
+      "entity": "126",
+      "class": "item_armor_shard",
+      "target": "117",
+      "route": "88",
+      "health": "186",
+      "armor": "60"
+    },
+    {
+      "t": "60650",
+      "entity": "128",
+      "class": "item_armor_shard",
+      "target": "117",
+      "route": "88",
+      "health": "185",
+      "armor": "65"
+    },
+    {
+      "t": "60650",
+      "entity": "127",
+      "class": "item_armor_shard",
+      "target": "117",
+      "route": "88",
+      "health": "185",
+      "armor": "70"
+    },
+    {
+      "t": "70950",
+      "entity": "87",
+      "class": "ammo_slugs",
+      "target": "99",
+      "route": "-1",
+      "health": "175",
+      "armor": "70"
+    },
+    {
+      "t": "70950",
+      "entity": "79",
+      "class": "ammo_rockets",
+      "target": "99",
+      "route": "-1",
+      "health": "175",
+      "armor": "70"
+    },
+    {
+      "t": "76400",
+      "entity": "99",
+      "class": "weapon_shotgun",
+      "target": "117",
+      "route": "-1",
+      "health": "170",
+      "armor": "70"
+    },
+    {
+      "t": "78500",
+      "entity": "124",
+      "class": "item_armor_shard",
+      "target": "117",
+      "route": "-1",
+      "health": "165",
+      "armor": "68"
+    },
+    {
+      "t": "89025",
+      "entity": "126",
+      "class": "item_armor_shard",
+      "target": "-1",
+      "route": "-1",
+      "health": "154",
+      "armor": "43"
+    },
+    {
+      "t": "89025",
+      "entity": "127",
+      "class": "item_armor_shard",
+      "target": "-1",
+      "route": "-1",
+      "health": "154",
+      "armor": "48"
+    }
+  ],
+  "actual_pickup_count": 16,
+  "demo_route_activations": 8,
+  "pickups_with_matching_target_and_active_demo_route": [],
+  "strafe_command_observations": [
+    {
+      "t": "39600",
+      "route": "132",
+      "speed": "322.99",
+      "desired_speed": "323.14",
+      "ground": "1022"
+    },
+    {
+      "t": "48100",
+      "route": "50",
+      "speed": "177.32",
+      "desired_speed": "327.68",
+      "ground": "1022"
+    },
+    {
+      "t": "48925",
+      "route": "50",
+      "speed": "205.44",
+      "desired_speed": "327.68",
+      "ground": "1022"
+    },
+    {
+      "t": "49975",
+      "route": "50",
+      "speed": "161.11",
+      "desired_speed": "327.68",
+      "ground": "1022"
+    },
+    {
+      "t": "50925",
+      "route": "50",
+      "speed": "294.27",
+      "desired_speed": "327.68",
+      "ground": "1022"
+    },
+    {
+      "t": "51725",
+      "route": "50",
+      "speed": "206.34",
+      "desired_speed": "327.68",
+      "ground": "1022"
+    },
+    {
+      "t": "71875",
+      "route": "0",
+      "speed": "400.00",
+      "desired_speed": "349.48",
+      "ground": "1023"
+    }
+  ],
+  "rocketjump_results": [],
+  "rocketjump_successes": 0,
+  "repath_count": 2,
+  "interpretation": "Observed events only; route activation is not route completion. Probe execution is not autonomous tactical selection.",
+  "mode": "combat"
+}

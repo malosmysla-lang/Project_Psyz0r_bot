@@ -1,0 +1,73 @@
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <cstddef>
+#include <cmath>
+#include <stdexcept>
+#include <iostream>
+// A small ABI-independent world. Retail ABI is separately fingerprinted on Linux.
+enum {STAT_HEALTH,STAT_HOLDABLE_ITEM,STAT_RUNE,STAT_WEAPONS,STAT_ARMOR};
+struct usercmd_t {int serverTime,buttons,angles[3];unsigned char weapon;signed char forwardmove,rightmove,upmove;};
+struct playerState_t {float origin[3],velocity[3],viewangles[3];int delta_angles[3],stats[18],ammo[16],groundEntityNum,weapon,weaponTime;};
+struct Client {playerState_t ps;struct {usercmd_t cmd;} pers;};
+struct gitem_t {const char *classname,*pickup_name;int giTag;};
+struct gentity_t {int inuse,health,nextthink;struct {int number,modelindex;} s;struct {int svFlags,contents;float currentOrigin[3];} r;gitem_t *item;Client *client;};
+struct trace_t {};
+struct cvar_t {int integer;const char *string;};
+static gentity_t world[1024];static gentity_t *g_entities=world;
+static unsigned char game_memory[0x2d8010],imports_memory[0x600];static void *qagame=game_memory;
+static cvar_t enabled{1,"1"},mapvar{0,"bloodrun"},testvar{1,"1"},portvar{27961,"27961"};
+static cvar_t *Cvar_FindVar(const char *name){return !strcmp(name,"qlx_psyzPreAlpha")?&enabled:!strcmp(name,"mapname")?&mapvar:!strcmp(name,"qlx_psyzTestInstance")?&testvar:!strcmp(name,"net_port")?&portvar:nullptr;}
+static int Hook(void*,void(*)(gentity_t*,gentity_t*,trace_t*),void*){return 0;}
+#include "../adapter/native/psyz_prealpha.h"
+static void check(bool v,const char *message){if(!v)throw std::runtime_error(message);}
+static unsigned char pushed[64];
+static void pop(int){}
+static void push(int,void *p){memcpy(pushed,p,64);}
+static int get_item(int,const char*,void*){return -1;}
+static Client client;
+static gitem_t red{"item_armor_body","Heavy Armor",0},mega{"item_health_mega","Mega Health",0};
+static void reset(){
+ memset(world,0,sizeof(world));memset(&client,0,sizeof(client));Psyz_PreAlphaReset();enabled.integer=1;
+ world[0].client=&client;world[0].inuse=1;world[0].health=100;world[0].r.svFlags=8;
+ client.ps.groundEntityNum=1022;client.pers.cmd.serverTime=20000;
+ void *im=imports_memory;memcpy(game_memory+0x2d8000,&im,sizeof(im));
+ auto p=pop;auto u=push;auto g=get_item;memcpy(imports_memory+0x468,&p,sizeof(p));memcpy(imports_memory+0x460,&u,sizeof(u));memcpy(imports_memory+0x4d0,&g,sizeof(g));
+}
+static void goal(unsigned char *out,int id,int area,const float *position){memset(out,0,64);memcpy(out,position,12);memcpy(out+12,&area,4);memcpy(out+40,&id,4);int flags=1;memcpy(out+48,&flags,4);}
+int main(){try{
+ reset();world[200].item=&red;world[200].inuse=1;world[200].r.contents=1;
+ client.ps.stats[STAT_ARMOR]=190;
+ check(Psyz_ItemWeight(&world[200],&world[0],0)<10,"Do not chase redundant armor at full stack");
+ world[200].item=&mega;world[0].health=50;client.ps.stats[STAT_ARMOR]=0;
+ check(Psyz_ItemWeight(&world[200],&world[0],0)>100,"Mega is valuable below full health");
+
+ // Exact opponent stack changes recovery choices; no opponent coordinates are supplied.
+ reset();gitem_t yellow{"item_armor_combat","Armor",0};
+ world[200].inuse=world[201].inuse=1;world[200].item=&mega;world[201].item=&yellow;
+ world[200].r.contents=world[201].r.contents=1;world[200].r.currentOrigin[0]=world[201].r.currentOrigin[0]=100;
+ client.ps.stats[STAT_ARMOR]=50;unsigned char state[0x1970]{},out[64];
+ goal(out,200,10,world[200].r.currentOrigin);goal(psyz_goal_cache[201],201,10,world[201].r.currentOrigin);psyz_goal_known[201]=1;psyz_debug_logged=1;
+ Psyz_PreAlphaGoal(state,0,out);check(psyz_goal_target==200,"At adequate stack prefer Mega");
+ Client enemy{};world[1].inuse=1;world[1].client=&enemy;world[1].health=200;enemy.ps.stats[STAT_ARMOR]=200;
+ psyz_goal_target=-1;goal(out,200,10,world[200].r.currentOrigin);Psyz_PreAlphaGoal(state,0,out);
+ check(psyz_goal_target==201,"Outstacked bot should recover on yellow armor");
+ // Entity IDs change between FFA and Duel; position and class must retain the route.
+ const auto &r=psyz_routes[0];gitem_t mapped{r.classname,"test",0};world[333].item=&mapped;
+ memcpy(world[333].r.currentOrigin,r.target,12);memcpy(client.ps.origin,r.points[0].p,12);
+ Psyz_SelectDemoRoute(&world[0],333);check(psyz_active_route>=0,"Route should survive entity renumbering");
+ reset();const auto &jump=psyz_jumps[0];memcpy(client.ps.origin,jump.start,12);world[200].item=&red;
+ memcpy(world[200].r.currentOrigin,jump.landing,12);psyz_goal_target=200;client.ps.stats[STAT_WEAPONS]=1<<5;
+ client.ps.weapon=5;client.ps.ammo[5]=0;psyz_last_move_time=19975;
+ Psyz_PreAlphaMove(&world[0]);check(psyz_rj<0,"No rocket jump without ammunition");
+ client.ps.ammo[5]=5;world[0].health=200;client.pers.cmd.serverTime+=25;Psyz_PreAlphaMove(&world[0]);
+ check(psyz_rj>=0,"Valid recorded launch point should begin jump");
+ client.ps.velocity[1]=320;client.pers.cmd.serverTime+=25;Psyz_PreAlphaMove(&world[0]);
+ int start=psyz_rj_time;client.pers.cmd.serverTime=start+jump.shot_delay+25;psyz_last_move_time=client.pers.cmd.serverTime-25;
+ Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.buttons&1,"A late frame must still issue the rocket shot");
+ client.pers.cmd.serverTime+=25;Psyz_PreAlphaMove(&world[0]);check(!(client.pers.cmd.buttons&1),"Recorded jump must not spam rockets");
+ reset();client.pers.cmd.upmove=-127;psyz_last_move_time=19975;Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==0,"Crouch disabled by default");
+ enabled.integer=0;client.pers.cmd.upmove=-127;client.pers.cmd.serverTime+=25;Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==-127,"Disabled policy preserves stock commands");
+ portvar.integer=27960;enabled.integer=1;check(!Psyz_PreAlphaEnabled(),"Policy must never activate on primary port");
+ std::cout<<"Native prealpha contextual scenarios passed\n";return 0;
+ }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

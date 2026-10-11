@@ -1,0 +1,332 @@
+{
+  "log_sha256": "b1517bc4247b18ac482b9230b181f8c9b170d041415be4869e12a7e9b5b00e7a",
+  "actual_pickups": [
+    {
+      "t": "6675",
+      "entity": "103",
+      "class": "item_armor_combat",
+      "target": "103",
+      "route": "33",
+      "health": "124",
+      "armor": "50"
+    },
+    {
+      "t": "9450",
+      "entity": "112",
+      "class": "item_health_mega",
+      "target": "112",
+      "route": "-1",
+      "health": "200",
+      "armor": "50"
+    },
+    {
+      "t": "12350",
+      "entity": "126",
+      "class": "item_armor_shard",
+      "target": "92",
+      "route": "-1",
+      "health": "198",
+      "armor": "55"
+    },
+    {
+      "t": "12350",
+      "entity": "127",
+      "class": "item_armor_shard",
+      "target": "92",
+      "route": "-1",
+      "health": "198",
+      "armor": "60"
+    },
+    {
+      "t": "13600",
+      "entity": "92",
+      "class": "item_armor_shard",
+      "target": "92",
+      "route": "-1",
+      "health": "196",
+      "armor": "65"
+    },
+    {
+      "t": "13750",
+      "entity": "123",
+      "class": "item_armor_shard",
+      "target": "123",
+      "route": "-1",
+      "health": "196",
+      "armor": "70"
+    },
+    {
+      "t": "14275",
+      "entity": "124",
+      "class": "item_armor_shard",
+      "target": "124",
+      "route": "-1",
+      "health": "196",
+      "armor": "75"
+    },
+    {
+      "t": "15600",
+      "entity": "128",
+      "class": "item_armor_shard",
+      "target": "128",
+      "route": "-1",
+      "health": "194",
+      "armor": "80"
+    },
+    {
+      "t": "30225",
+      "entity": "100",
+      "class": "weapon_plasmagun",
+      "target": "-1",
+      "route": "-1",
+      "health": "180",
+      "armor": "80"
+    },
+    {
+      "t": "30700",
+      "entity": "96",
+      "class": "item_armor_combat",
+      "target": "-1",
+      "route": "-1",
+      "health": "179",
+      "armor": "130"
+    },
+    {
+      "t": "32300",
+      "entity": "129",
+      "class": "item_health_small",
+      "target": "103",
+      "route": "-1",
+      "health": "183",
+      "armor": "129"
+    },
+    {
+      "t": "32475",
+      "entity": "121",
+      "class": "item_health_small",
+      "target": "103",
+      "route": "-1",
+      "health": "187",
+      "armor": "128"
+    },
+    {
+      "t": "36300",
+      "entity": "99",
+      "class": "weapon_shotgun",
+      "target": "103",
+      "route": "-1",
+      "health": "184",
+      "armor": "125"
+    },
+    {
+      "t": "43500",
+      "entity": "103",
+      "class": "item_armor_combat",
+      "target": "103",
+      "route": "-1",
+      "health": "176",
+      "armor": "167"
+    },
+    {
+      "t": "51200",
+      "entity": "119",
+      "class": "item_armor_body",
+      "target": "98",
+      "route": "-1",
+      "health": "160",
+      "armor": "200"
+    },
+    {
+      "t": "53325",
+      "entity": "118",
+      "class": "weapon_grenadelauncher",
+      "target": "98",
+      "route": "-1",
+      "health": "158",
+      "armor": "198"
+    },
+    {
+      "t": "76025",
+      "entity": "118",
+      "class": "weapon_grenadelauncher",
+      "target": "98",
+      "route": "-1",
+      "health": "126",
+      "armor": "156"
+    },
+    {
+      "t": "97250",
+      "entity": "119",
+      "class": "item_armor_body",
+      "target": "98",
+      "route": "-1",
+      "health": "97",
+      "armor": "200"
+    },
+    {
+      "t": "99225",
+      "entity": "118",
+      "class": "weapon_grenadelauncher",
+      "target": "98",
+      "route": "-1",
+      "health": "97",
+      "armor": "198"
+    },
+    {
+      "t": "106950",
+      "entity": "98",
+      "class": "item_health_large",
+      "target": "98",
+      "route": "-1",
+      "health": "100",
+      "armor": "190"
+    },
+    {
+      "t": "122275",
+      "entity": "119",
+      "class": "item_armor_body",
+      "target": "119",
+      "route": "-1",
+      "health": "91",
+      "armor": "200"
+    },
+    {
+      "t": "137325",
+      "entity": "118",
+      "class": "weapon_grenadelauncher",
+      "target": "119",
+      "route": "-1",
+      "health": "91",
+      "armor": "185"
+    }
+  ],
+  "actual_pickup_count": 22,
+  "demo_route_activations": 228,
+  "pickups_with_matching_target_and_active_demo_route": [
+    {
+      "t": "6675",
+      "entity": "103",
+      "class": "item_armor_combat",
+      "target": "103",
+      "route": "33",
+      "health": "124",
+      "armor": "50"
+    }
+  ],
+  "strafe_command_observations": [
+    {
+      "t": "6175",
+      "route": "33",
+      "speed": "294.80",
+      "desired_speed": "335.48",
+      "ground": "1022"
+    },
+    {
+      "t": "21450",
+      "route": "83",
+      "speed": "327.26",
+      "desired_speed": "322.09",
+      "ground": "1022"
+    },
+    {
+      "t": "22625",
+      "route": "83",
+      "speed": "284.29",
+      "desired_speed": "322.09",
+      "ground": "1022"
+    },
+    {
+      "t": "53875",
+      "route": "177",
+      "speed": "289.79",
+      "desired_speed": "363.94",
+      "ground": "1022"
+    },
+    {
+      "t": "64150",
+      "route": "186",
+      "speed": "184.33",
+      "desired_speed": "324.92",
+      "ground": "1022"
+    },
+    {
+      "t": "76575",
+      "route": "177",
+      "speed": "289.80",
+      "desired_speed": "363.94",
+      "ground": "1022"
+    },
+    {
+      "t": "81000",
+      "route": "186",
+      "speed": "314.87",
+      "desired_speed": "324.92",
+      "ground": "1022"
+    },
+    {
+      "t": "83575",
+      "route": "179",
+      "speed": "282.77",
+      "desired_speed": "212.35",
+      "ground": "1022"
+    },
+    {
+      "t": "103400",
+      "route": "186",
+      "speed": "284.17",
+      "desired_speed": "324.92",
+      "ground": "1022"
+    }
+  ],
+  "rocketjump_results": [
+    {
+      "t": "51100",
+      "sample": "0",
+      "higher": "1",
+      "pickup": "0",
+      "delta_z": "128.00",
+      "reconstructed_input": "1",
+      "success": true
+    },
+    {
+      "t": "74100",
+      "sample": "0",
+      "higher": "1",
+      "pickup": "0",
+      "delta_z": "129.00",
+      "reconstructed_input": "1",
+      "success": true
+    },
+    {
+      "t": "97300",
+      "sample": "0",
+      "higher": "1",
+      "pickup": "1",
+      "delta_z": "129.00",
+      "reconstructed_input": "1",
+      "success": true
+    },
+    {
+      "t": "120600",
+      "sample": "0",
+      "higher": "1",
+      "pickup": "0",
+      "delta_z": "129.00",
+      "reconstructed_input": "1",
+      "success": true
+    },
+    {
+      "t": "139325",
+      "sample": "0",
+      "higher": "1",
+      "pickup": "0",
+      "delta_z": "129.00",
+      "reconstructed_input": "1",
+      "success": true
+    }
+  ],
+  "rocketjump_successes": 5,
+  "repath_count": 1,
+  "interpretation": "Observed events only; route activation is not route completion. Probe execution is not autonomous tactical selection.",
+  "mode": "rocketjump_probe"
+}

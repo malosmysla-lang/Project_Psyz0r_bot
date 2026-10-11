@@ -1,6 +1,6 @@
-/* Read-only diagnostic hook, only for the pinned test QL binary.
+/* Diagnostic hook, only for the pinned test QL binary.
  * Caller provides qagame, Cvar_FindVar and Hook from the lab minqlx build.
- * No bot_state layout or goal fields are assumed. No goals/commands are written.
+ * Standalone is read-only. PSYZ_PREALPHA enables a separately gated policy.
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,6 +19,9 @@ static int Psyz_ObserveItemGoal(void *state, int travel_flags, void *goal) {
     /* Exactly one original call, preserving its arguments and result. */
     int result = psyz_original_item_goal(state, travel_flags, goal);
     if (result && goal && Psyz_GoalObserverEnabled()) {
+#ifdef PSYZ_PREALPHA
+        Psyz_PreAlphaGoal(state,travel_flags,goal);
+#endif
         unsigned long long sequence = ++psyz_goal_observations;
         /* A bounded prefix only. Layout remains unverified; never cast to Q3 goal. */
         if ((sequence-1) % 16 == 0) {
@@ -31,8 +34,12 @@ static int Psyz_ObserveItemGoal(void *state, int travel_flags, void *goal) {
                 hex[2*i+1] = digits[bytes[i] & 15];
             }
             hex[96] = 0;
-            fprintf(stderr,"PSYZ_STOCK_GOAL sequence=%llu state=%p travel_flags=%d result=%d prefix48=%s source=stock_ltg layout=unverified\n",
-                    sequence,state,travel_flags,result,hex);
+            const char *source="stock_ltg",*layout="unverified";
+#ifdef PSYZ_PREALPHA
+            if(Psyz_PreAlphaEnabled()){source="ltg_after_optional_policy";layout="bounded";}
+#endif
+            fprintf(stderr,"PSYZ_STOCK_GOAL sequence=%llu state=%p travel_flags=%d result=%d prefix48=%s source=%s layout=%s\n",
+                    sequence,state,travel_flags,result,hex,source,layout);
         }
     }
     return result;
@@ -58,6 +65,6 @@ static int Psyz_InstallGoalObserver(void) {
         fprintf(stderr,"PSYZ_STOCK_GOAL refused: hook error=%d\n",error);
         return 0;
     }
-    fprintf(stderr,"PSYZ_STOCK_GOAL installed: read_only=1 prefix_bytes=48 layout=unverified\n");
+    fprintf(stderr,"PSYZ_STOCK_GOAL installed: standalone_read_only=1 optional_prealpha_policy=1 prefix_bytes=48\n");
     return 1;
 }

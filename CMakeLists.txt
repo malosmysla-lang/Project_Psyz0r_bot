@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(Psyz0r_bot VERSION 0.5.0 LANGUAGES CXX)
+project(Psyz0r_bot VERSION 0.6.0 LANGUAGES CXX)
 add_library(psyz0r_core src/behavior.cpp src/movement.cpp src/route_prediction.cpp src/combat_prediction.cpp src/shot_geometry.cpp src/resource_approach.cpp)
 target_include_directories(psyz0r_core PUBLIC include)
 target_compile_features(psyz0r_core PUBLIC cxx_std_17)
@@ -53,3 +53,11 @@ endif()
 add_executable(opponent_stack_tests tests/opponent_stack_tests.cpp)
 target_link_libraries(opponent_stack_tests PRIVATE psyz0r_core)
 add_test(NAME exact_opponent_stack COMMAND opponent_stack_tests)
+
+add_executable(prealpha_native_tests tests/prealpha_native_tests.cpp)
+target_compile_features(prealpha_native_tests PRIVATE cxx_std_17)
+add_test(NAME prealpha_native_context COMMAND prealpha_native_tests)
+
+if(MSVC)
+  target_compile_options(prealpha_native_tests PRIVATE /EHsc /utf-8)
+endif()

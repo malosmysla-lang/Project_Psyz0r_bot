@@ -1,0 +1,256 @@
+{
+  "log_sha256": "18a373942a730f18e5f03f0692729fa46593b6362ab1aca652c51d25ea5e9e18",
+  "actual_pickups": [
+    {
+      "t": "10500",
+      "entity": "103",
+      "class": "item_armor_combat",
+      "target": "103",
+      "route": "-1",
+      "health": "120",
+      "armor": "50"
+    },
+    {
+      "t": "13100",
+      "entity": "112",
+      "class": "item_health_mega",
+      "target": "112",
+      "route": "-1",
+      "health": "200",
+      "armor": "50"
+    },
+    {
+      "t": "15550",
+      "entity": "92",
+      "class": "item_armor_shard",
+      "target": "92",
+      "route": "-1",
+      "health": "197",
+      "armor": "55"
+    },
+    {
+      "t": "15550",
+      "entity": "123",
+      "class": "item_armor_shard",
+      "target": "-1",
+      "route": "-1",
+      "health": "197",
+      "armor": "60"
+    },
+    {
+      "t": "16150",
+      "entity": "124",
+      "class": "item_armor_shard",
+      "target": "124",
+      "route": "-1",
+      "health": "197",
+      "armor": "65"
+    },
+    {
+      "t": "17650",
+      "entity": "126",
+      "class": "item_armor_shard",
+      "target": "128",
+      "route": "-1",
+      "health": "195",
+      "armor": "70"
+    },
+    {
+      "t": "17650",
+      "entity": "127",
+      "class": "item_armor_shard",
+      "target": "128",
+      "route": "-1",
+      "health": "195",
+      "armor": "75"
+    },
+    {
+      "t": "17900",
+      "entity": "128",
+      "class": "item_armor_shard",
+      "target": "128",
+      "route": "-1",
+      "health": "195",
+      "armor": "80"
+    },
+    {
+      "t": "34350",
+      "entity": "100",
+      "class": "weapon_plasmagun",
+      "target": "-1",
+      "route": "-1",
+      "health": "178",
+      "armor": "80"
+    },
+    {
+      "t": "34825",
+      "entity": "96",
+      "class": "item_armor_combat",
+      "target": "-1",
+      "route": "-1",
+      "health": "178",
+      "armor": "130"
+    },
+    {
+      "t": "36250",
+      "entity": "129",
+      "class": "item_health_small",
+      "target": "119",
+      "route": "-1",
+      "health": "182",
+      "armor": "129"
+    },
+    {
+      "t": "36450",
+      "entity": "121",
+      "class": "item_health_small",
+      "target": "119",
+      "route": "-1",
+      "health": "186",
+      "armor": "128"
+    },
+    {
+      "t": "50000",
+      "entity": "119",
+      "class": "item_armor_body",
+      "target": "119",
+      "route": "24",
+      "health": "164",
+      "armor": "197"
+    },
+    {
+      "t": "67150",
+      "entity": "117",
+      "class": "weapon_railgun",
+      "target": "119",
+      "route": "-1",
+      "health": "144",
+      "armor": "173"
+    },
+    {
+      "t": "70875",
+      "entity": "112",
+      "class": "item_health_mega",
+      "target": "119",
+      "route": "-1",
+      "health": "200",
+      "armor": "169"
+    },
+    {
+      "t": "73425",
+      "entity": "103",
+      "class": "item_armor_combat",
+      "target": "119",
+      "route": "-1",
+      "health": "197",
+      "armor": "200"
+    },
+    {
+      "t": "80825",
+      "entity": "119",
+      "class": "item_armor_body",
+      "target": "119",
+      "route": "24",
+      "health": "181",
+      "armor": "200"
+    },
+    {
+      "t": "103000",
+      "entity": "103",
+      "class": "item_armor_combat",
+      "target": "119",
+      "route": "-1",
+      "health": "156",
+      "armor": "200"
+    },
+    {
+      "t": "110425",
+      "entity": "119",
+      "class": "item_armor_body",
+      "target": "119",
+      "route": "24",
+      "health": "139",
+      "armor": "200"
+    }
+  ],
+  "actual_pickup_count": 19,
+  "demo_route_activations": 519,
+  "pickups_with_matching_target_and_active_demo_route": [
+    {
+      "t": "50000",
+      "entity": "119",
+      "class": "item_armor_body",
+      "target": "119",
+      "route": "24",
+      "health": "164",
+      "armor": "197"
+    },
+    {
+      "t": "80825",
+      "entity": "119",
+      "class": "item_armor_body",
+      "target": "119",
+      "route": "24",
+      "health": "181",
+      "armor": "200"
+    },
+    {
+      "t": "110425",
+      "entity": "119",
+      "class": "item_armor_body",
+      "target": "119",
+      "route": "24",
+      "health": "139",
+      "armor": "200"
+    }
+  ],
+  "strafe_command_observations": [
+    {
+      "t": "22700",
+      "route": "83",
+      "speed": "335.45",
+      "desired_speed": "322.09",
+      "ground": "1022"
+    },
+    {
+      "t": "23450",
+      "route": "83",
+      "speed": "178.13",
+      "desired_speed": "322.09",
+      "ground": "1022"
+    }
+  ],
+  "rocketjump_results": [
+    {
+      "t": "50025",
+      "sample": "0",
+      "higher": "1",
+      "pickup": "1",
+      "delta_z": "129.00",
+      "reconstructed_input": "1",
+      "success": true
+    },
+    {
+      "t": "80825",
+      "sample": "0",
+      "higher": "1",
+      "pickup": "0",
+      "delta_z": "129.00",
+      "reconstructed_input": "1",
+      "success": true
+    },
+    {
+      "t": "110425",
+      "sample": "0",
+      "higher": "1",
+      "pickup": "0",
+      "delta_z": "129.00",
+      "reconstructed_input": "1",
+      "success": true
+    }
+  ],
+  "rocketjump_successes": 3,
+  "repath_count": 1,
+  "interpretation": "Observed events only; route activation is not route completion. Probe execution is not autonomous tactical selection.",
+  "mode": "rocketjump_probe"
+}

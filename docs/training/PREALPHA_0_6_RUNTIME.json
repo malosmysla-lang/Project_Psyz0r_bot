@@ -1,0 +1,38 @@
+{
+  "version": "0.6.0-prealpha",
+  "generated_utc": "2026-10-11T20:07:03.359960+00:00",
+  "map": "bloodrun",
+  "factory": "duel",
+  "port": 27961,
+  "native_sha256": "9ffad68ddcccc324aa001d48bfbed241d18a4e79831037559cbbc7ef85f3a84b",
+  "engine_sha256": "6fd0e87811facfd81ea34e10e2f6c486e7d4951dcab3cb2fa7f48dcb164c7b2e",
+  "qagame_sha256": "091d568f46a280afbf2deda4a5ba4c8bd5e02ed6d070ef56300b1f47c5f729be",
+  "minqlx_base": "fbdd915185337791d8e209dc4b686a1ee60d3721",
+  "autonomous_rocketjump_samples": [
+    0
+  ],
+  "experimental_rocketjump_samples": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "route_windows": 257,
+  "route_destinations": 22,
+  "ctest_debug_groups_passed": 12,
+  "python_tests_passed": 84,
+  "raw_demo_controls_verified": false,
+  "all_routes_live_verified": false,
+  "full_behavior_cpp_connected": false
+}
