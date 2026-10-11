@@ -8,6 +8,7 @@ static const PsyzLearnedRoute *Psyz_Route(size_t i) { return i<PSYZ_ROUTE_COUNT?
 static PsyzNavRecovery psyz_nav;
 static int psyz_nav_health,psyz_nav_damage_time;
 static int psyz_combat_until,psyz_diagnostic_time;
+static int psyz_combat_log;
 /* Smooth angular error, never modify damage, projectiles or registered hits.
    Match accuracy still needs empirical calibration at each distance. */
 static float Psyz_AimNoise(unsigned int bucket,unsigned int salt){
@@ -58,6 +59,7 @@ static int Psyz_PreAlphaEnabled(void) {
 static void Psyz_PreAlphaReset(void) {
     Psyz_NavReset(&psyz_nav);psyz_nav_health=psyz_nav_damage_time=0;
     psyz_combat_until=psyz_diagnostic_time=0;
+    psyz_combat_log=0;
     Psyz_OpeningReset();
     psyz_debug_logged=0;
     psyz_registry_retry=0;
@@ -190,6 +192,8 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     cvar_t *diagnostics=Cvar_FindVar("qlx_psyzItemDiagnostics");
     if(diagnostics && diagnostics->integer && now-psyz_diagnostic_time>=2000){
         psyz_diagnostic_time=now;
+        int ready=0;for(int w=5;w<=7;w++)if((own->client->ps.stats[STAT_WEAPONS]&(1<<w)) && own->client->ps.ammo[w]>0)ready++;
+        fprintf(stderr,"PSYZ_LOADOUT t=%d trinity_ready=%d rl_ammo=%d lg_ammo=%d rg_ammo=%d target=%d\n",now,ready,own->client->ps.ammo[5],own->client->ps.ammo[6],own->client->ps.ammo[7],psyz_goal_target);
         for(int i=0;i<1024;i++){
             gentity_t *e=&g_entities[i];if(!e->inuse || !e->item)continue;
             float d=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin);if(d>192)continue;
@@ -275,7 +279,10 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
         if(now<psyz_combat_until && psyz_rj<0){
             /* Preserve stock ground strafes and existing flight; block new jumps
                and route/RJ steering for the whole observed combat episode. */
-            if(ps->groundEntityNum!=1023 && cmd->upmove>0)cmd->upmove=0;
+            if(ps->groundEntityNum!=1023 && cmd->upmove>0){
+                cmd->upmove=0;
+                if(now-psyz_combat_log>=500){psyz_combat_log=now;fprintf(stderr,"PSYZ_COMBAT_GROUND t=%d weapon=%d until=%d jump_suppressed=1\n",now,ps->weapon,psyz_combat_until);}
+            }
             return;
         }
     }

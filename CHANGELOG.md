@@ -1,3 +1,7 @@
+# 2026-10-12 - Prealpha 0.6.5 deployed to isolated 27961
+
+Grounded combat hold, nearby-item/loadout diagnostics, empty RL/LG/RG pickup priority and approved LG/PG aim-error calibration installed after backup. Debug/Release 13/13; Python99/99; native SHA7c8f96c5f4c156431337ec80611835691b6d8808781350027914bf4ad0cbe017. Full situational weapon policy, red under human pressure and respawn routing remain incomplete. See docs/PREALPHA_0_6_5_RU.md and smoke report.
+
 # 2026-10-12 - First combat patch prepared offline
 
 Approved accuracy targets: PG 10-16% base12; LG 33-41% base37. Added combat hold between shots, grounded jump suppression, nearby-item diagnostics, empty-trinity weapon priority and gated smooth LG/PG angular error (not calibrated match percentages). Debug/Release 13/13; Python99/99; Linux NOPY compiled. Not deployed; full weapon selection and red/spawn followups remain. See docs/COMBAT_PATCH_01_RU.md.
