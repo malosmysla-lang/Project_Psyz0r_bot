@@ -1,3 +1,11 @@
+# 2026-10-12 - Prealpha 0.6.4 deployed to isolated 27961
+
+Backed up isolated native/config; installed SHA-verified 0.6.4, enabled both navigation switches. Blood Run Duel, 10min, unlimited frags, 120s overtime; only Psyz0r (stock Sarge skill5 base plus custom native overlay), no Xaero. Warmup smoke: 10 actual pickups; red at 38775ms, 2300ms after failed demo route fell back to AAS at 36475ms. One recovery, no RJ in smoke, integration errors see report. Main service unchanged. See docs/training/PREALPHA_0_6_4_SMOKE.json. New PJ/RJ candidates are not enabled actions.
+
+# 2026-10-12 - Red boost analysis, five-second pickup window
+
+Audited 1,416 red pickup events with 8s context and <=5s damage-to-pickup window: 700 candidate approaches, 729 rocket and 97 plasma coincidences (not unique proven self-damage jumps). Added continuity/teleport exclusions, source SHA provenance and four regression tests; Python 99/99. See docs/RED_BOOST_ANALYSIS_RU.md. No new PJ actions enabled.
+
 # 2026-10-12 - Duel Pracc Room square-glyph follow-up
 
 Read-only server check after a second screenshot: ASCII-only mappool entries and mapguard formatting with standard Quake color escapes; no square exists in the stored `qcdm1` entry. The same glyph appears in separate plugin messages, but its source remains unlocalized. No server changes, runtime actions, or restart. Next diagnostic requires comparing the exact server-emitted message with client rendering and owner authorization for any live test. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.

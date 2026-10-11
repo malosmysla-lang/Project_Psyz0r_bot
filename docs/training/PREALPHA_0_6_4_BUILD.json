@@ -1,9 +1,12 @@
 {
   "version": "0.6.4",
-  "deployed": false,
-  "live_verified": false,
+  "deployed": true,
+  "live_verified": true,
   "native_sha256": "c9e7db9e500a09a02794ba89ddb9a6f93dbbe8711fe82943532ea09d60d943c6",
   "ctest_debug": "13/13",
   "ctest_release": "13/13",
-  "python": "95/95"
+  "python": "95/95",
+  "live_verified_scope": "Single-bot warmup smoke: 10 pickups, red picked 2300ms after demo fallback. No new PJ/RJ validation.",
+  "runtime_home": "/home/qlserver/psyz0r-test-server-home",
+  "backup": "/home/qlserver/backups/psyz0r-064-20261011T225959Z"
 }
