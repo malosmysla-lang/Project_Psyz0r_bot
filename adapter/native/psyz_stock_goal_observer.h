@@ -65,6 +65,9 @@ static int Psyz_InstallGoalObserver(void) {
         fprintf(stderr,"PSYZ_STOCK_GOAL refused: hook error=%d\n",error);
         return 0;
     }
+#ifdef PSYZ_PREALPHA
+    psyz_vm_hook_count++;
+#endif
     fprintf(stderr,"PSYZ_STOCK_GOAL installed: standalone_read_only=1 optional_prealpha_policy=1 prefix_bytes=48\n");
     return 1;
 }

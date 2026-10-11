@@ -13,6 +13,8 @@ static int psyz_demo_retry_after[1024];
 static int psyz_rj=-1,psyz_rj_phase,psyz_rj_time,psyz_rj_ground,psyz_rj_last,psyz_rj_fired,psyz_rj_landed_at;
 static float psyz_rj_start_z;
 static int psyz_debug_logged;
+/* Successful VM hooks occupy a contiguous tail of the NOPY trampoline pool. */
+static int psyz_vm_hook_count;
 static int psyz_last_pickup=-1,psyz_last_pickup_time;
 
 static float Psyz_Distance(const float *a,const float *b) {
@@ -309,5 +311,6 @@ static void Psyz_InstallPickup(void) {
     void *target=(char*)qagame+0x787c0;
     if(memcmp(target,expected,sizeof(expected))){fprintf(stderr,"PSYZ_PICKUP refused ABI\n");return;}
     int result=Hook(target,Psyz_PreAlphaTouch,(void*)&psyz_real_touch);
+    if(!result)psyz_vm_hook_count++;
     fprintf(stderr,"PSYZ_PICKUP install=%d\n",result);
 }

@@ -11,8 +11,11 @@ def summarize(path):
     lines = data.decode('utf-8', errors='replace').splitlines()
     pickups, jumps, routes, strafes, repaths = [], [], [], [], []
     openings = []
+    integration_errors = []
     for line in lines:
         fields = dict(re.findall(r'(\w+)=([^\s]+)', line))
+        if line.startswith('PSYZ_') and ('refused' in line or ('install' in fields and fields['install'] != '0')):
+            integration_errors.append(line)
         if line.startswith(('PSYZ_OPENING_BEGIN ', 'PSYZ_OPENING_PLAN ', 'PSYZ_OPENING_PICKUP ', 'PSYZ_OPENING_END ')):
             openings.append(dict(event=line.split()[0], **fields))
         if line.startswith('PSYZ_PICKUP ') and all(k in fields for k in ('t', 'entity', 'class')):
@@ -38,6 +41,7 @@ def summarize(path):
         rocketjump_successes=sum(j['success'] for j in jumps),
         repath_count=len(repaths),
         opening_events=openings,
+        integration_errors=integration_errors,
         opening_actual_pickups=sum(e['event']=='PSYZ_OPENING_PICKUP' for e in openings),
         opening_completed_orders=sum(e['event']=='PSYZ_OPENING_END' and e.get('reason')=='completed_pickups' for e in openings),
         interpretation='Observed events only; route activation is not route completion. Probe execution is not autonomous tactical selection.',

@@ -1,4 +1,4 @@
-> Current playable milestone: [Blood Run prealpha 0.6.2: focused blocks and status](docs/FOCUSED_BLOCK_STATUS_RU.md). Playtest instructions: [openings](docs/PREALPHA_0_6_1_RU.md). Isolated test: 78.17.9.235:27961. Earlier implementation-status notes below may describe older stages.
+> Current playable milestone: [Blood Run prealpha 0.6.3: trial results and playtest](docs/PREALPHA_0_6_3_RU.md). [Focused block status](docs/FOCUSED_BLOCK_STATUS_RU.md). Isolated test: 78.17.9.235:27961. Earlier implementation-status notes below may describe older stages.
 
 # Psyz0r_bot
 

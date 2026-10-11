@@ -1,0 +1,11 @@
+{
+  "version": "0.6.3",
+  "map": "bloodrun",
+  "test_port": 27961,
+  "native_sha256": "4b1912c718e98cd0e1753a8adc4cf122a0d7d808f8d83dbc559379a23e13fa25",
+  "backup": "/home/qlserver/psyz0r-bot/prealpha-20261011/backup-before-0.6.3",
+  "rj_probe": 0,
+  "auto_enabled_rj_samples": [0],
+  "experimental_single_probe_pass": [1],
+  "full_mind_map_connected": false
+}

@@ -1,4 +1,9 @@
 
+# 2026-10-11 - Prealpha 0.6.3 repeated-map trials
+
+Fixed NOPY VM-hook trampoline slot exhaustion across qagame reloads by recycling only successful custom VM hooks. Added guarded isolated trial runner and SHA-checked reports. Final series: 3 Duel + 2 RJ probes, 33 real pickups, 17 strafe command observations, 2 successful RJ, zero integration errors. One full rocket/yellow/Mega opening preserved from preceding 0.6.2 trial; other post-exhaustion trials rejected. MSVC Debug/Release 12/12 CTest; Python 93/93; Linux NOPY built. Experimental RJ sample 1 remains manual-only; probe reset to 0. See docs/PREALPHA_0_6_3_RU.md.
+
+
 # 2026-10-11 - Prealpha 0.6.2 focused block hardening
 
 Scope frozen to item navigation/selection, strafejump, rocketjump and existing openings. Failed demo approach now retries the same item with stock AAS before abandoning it. Real QL test: railgun collected 2225 ms after fallback; 16 actual pickups, 16 strafe command observations, no RJ in this run. Corrected pickup audits to exclude hook-install diagnostics. MSVC Debug 12/12 and Python 92/92 passed; Linux NOPY built. Status and remaining tests: docs/FOCUSED_BLOCK_STATUS_RU.md. These blocks are NOT fully complete.

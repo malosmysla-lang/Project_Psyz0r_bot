@@ -9,6 +9,14 @@ spec.loader.exec_module(module)
 
 
 class LogEvidenceTests(unittest.TestCase):
+    def test_hook_failure_is_exposed_even_without_gameplay_events(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'console.log'
+            path.write_text('PSYZ_CONTROL install=-3\nPSYZ_STOCK_GOAL refused: hook error=-3\n')
+            result = module.summarize(path)
+            self.assertEqual(len(result['integration_errors']), 2)
+            self.assertEqual(result['actual_pickup_count'], 0)
+
     def test_opening_plan_and_abort_are_not_completion(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'console.log'
