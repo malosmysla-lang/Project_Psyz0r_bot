@@ -49,3 +49,7 @@ add_test(NAME stock_goal_observer_contract COMMAND stock_goal_observer_tests)
 if(MSVC)
   target_compile_options(stock_goal_observer_tests PRIVATE /EHsc /utf-8 /W4)
 endif()
+
+add_executable(opponent_stack_tests tests/opponent_stack_tests.cpp)
+target_link_libraries(opponent_stack_tests PRIVATE psyz0r_core)
+add_test(NAME exact_opponent_stack COMMAND opponent_stack_tests)

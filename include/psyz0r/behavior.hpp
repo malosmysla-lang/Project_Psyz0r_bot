@@ -1,5 +1,6 @@
 #pragma once
 #include <cstdint>
+#include "psyz0r/opponent_stack.hpp"
 #include <deque>
 #include <random>
 #include <string>
@@ -78,8 +79,12 @@ struct ReactionTrace {
     int gauntlet_damage=0, corpse_episodes=0;
 };
 // Observations are sanitized by the future adapter: enemy_visible requires LOS and FOV.
-// Enemy HP/armor and hidden positions are deliberately absent.
+// Owner-authorized exact HP/armor is separate from hidden-position knowledge.
 struct Observation {
+    StackContext stack_context;
+    std::optional<ExactOpponentStack> exact_opponent_stack;
+    double armor_absorption=2.0/3.0;
+    bool armor_rules_verified=false;
     int health=100, armor=0;
     bool alive=true, enemy_visible=false;
     int damage_dealt=0, damage_received=0;
@@ -113,6 +118,8 @@ struct Decision {
     double jump_scale=1;
     std::string reason;
     std::string target_item;
+    bool exact_stack_used=false;
+    double own_damage_budget=0, opponent_damage_budget=0;
     std::string reaction_reason;
     std::string target_cover;
     bool quiet_walk_requested=false, fast_escape_requested=false;

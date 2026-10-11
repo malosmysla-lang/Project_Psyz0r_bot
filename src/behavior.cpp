@@ -188,6 +188,15 @@ Decision Behavior::decide(const Observation& o) {
        (o.enemy_hp_estimate_valid&&(!std::isfinite(o.enemy_hp_estimate)||o.enemy_hp_estimate<0))||
        !std::isfinite(o.estimate_confidence)||o.estimate_confidence<0||o.estimate_confidence>1)
         throw std::invalid_argument("Invalid player observation");
+    const auto exact = o.stack_context.opponent_id==o.opponent_id
+        ? current_stack(o.exact_opponent_stack,o.stack_context,o.time) : std::nullopt;
+    const bool stack_known=exact && o.alive && o.health>0 && o.armor_rules_verified && std::isfinite(o.armor_absorption) &&
+        o.armor_absorption>0 && o.armor_absorption<1;
+    const double own_budget=stack_known?damage_budget(o.health,o.armor,o.armor_absorption):0;
+    const double enemy_budget=stack_known?damage_budget(exact->health,exact->armor,o.armor_absorption):0;
+    // Stack advantage is necessary evidence, not permission for blind pursuit.
+    const bool favorable=stack_known?own_budget>=enemy_budget*1.15:o.favorable_fight_estimate;
+    const bool outstacked=stack_known && enemy_budget>=own_budget*1.15;
     last_time_=o.time;
     if(last_combat_time_>=0 && o.time-last_combat_time_>settings_.engagement_timeout) {
         episode_dealt_=episode_received_=0; episode_rail_=false;
@@ -247,16 +256,19 @@ Decision Behavior::decide(const Observation& o) {
     }
     if(mood_==Mood::Relaxed && (lead<=0||o.opponent_score-relax_start_enemy_>=settings_.relax_allow_frags)) mood_=Mood::Normal;
     Decision d; d.style=style_; d.mood=mood_;
+    d.exact_stack_used=stack_known; d.own_damage_budget=own_budget; d.opponent_damage_budget=enemy_budget;
     auto it=reactions_.find(o.opponent_id);
     OpponentReaction* r=it==reactions_.end()?nullptr:&it->second;
     d.revenge_gauntlet=r && o.time<r->revenge_until;
+    const bool target_hp_known=exact.has_value() || o.enemy_hp_estimate_valid;
+    const double target_hp=exact?exact->health:o.enemy_hp_estimate;
     bool attempt=d.revenge_gauntlet && o.alive && o.enemy_visible && o.safe_close_contact &&
-        o.enemy_distance<=settings_.revenge_contact_distance && o.enemy_hp_estimate_valid &&
-        o.enemy_hp_estimate<=settings_.revenge_target_estimated_hp && o.health>settings_.own_health_recover &&
+        o.enemy_distance<=settings_.revenge_contact_distance && target_hp_known &&
+        target_hp<=settings_.revenge_target_estimated_hp && o.health>settings_.own_health_recover &&
         std::find(o.available_weapons.begin(),o.available_weapons.end(),Weapon::Gauntlet)!=o.available_weapons.end();
     d.reaction_reason=!d.revenge_gauntlet?"no_active_revenge":!o.enemy_visible?"revenge_no_visible_contact":
         !o.safe_close_contact?"revenge_unsafe_approach":o.enemy_distance>settings_.revenge_contact_distance?"revenge_out_of_contact":
-        !o.enemy_hp_estimate_valid?"revenge_unknown_hp_estimate":o.enemy_hp_estimate>settings_.revenge_target_estimated_hp?"revenge_target_not_low":
+        !target_hp_known?"revenge_unknown_hp_estimate":target_hp>settings_.revenge_target_estimated_hp?"revenge_target_not_low":
         o.health<=settings_.own_health_recover?"revenge_own_health_low":attempt?"gauntlet_finish_attempt":"revenge_no_usable_gauntlet";
     d.weapon=choose_weapon(o,attempt);
     d.attack_visible_target=o.enemy_visible && d.weapon!=Weapon::None;
@@ -318,11 +330,11 @@ Decision Behavior::decide(const Observation& o) {
         d.jump_scale=settings_.relaxed_jump_scale; d.strict_yellow_timing=false;
         d.collect_resources=false; d.items=ItemPriority::None;
     }
-    if(o.health<=settings_.own_health_recover || (style_==Style::Passive&&(o.hit_by_rail||episode_rail_)) ||
+    if((outstacked && mood_==Mood::Normal) || o.health<=settings_.own_health_recover || (style_==Style::Passive&&(o.hit_by_rail||episode_rail_)) ||
        (style_==Style::Thoughtful&&std::max(o.damage_received,episode_received_)>=settings_.thoughtful_retreat_damage)) {
         d.intent=Intent::Recover; d.items=ItemPriority::YellowHealth; d.collect_resources=true;
         d.weapon=choose_weapon(o,false); d.reaction_reason="revenge_recovery_has_priority";
-        d.reason="recover_after_damage"; choose_item(o,d); return d;
+        d.reason=outstacked?"recover_against_exact_stack":"recover_after_damage"; choose_item(o,d); return d;
     }
     if(style_==Style::Passive && mood_!=Mood::Relaxed) { d.items=ItemPriority::YellowHealth; d.jump_scale=settings_.passive_jump_scale; }
     else if(o.time<settings_.opening_seconds) d.items=ItemPriority::Mega;
@@ -335,11 +347,11 @@ Decision Behavior::decide(const Observation& o) {
         }
         if(total_control_selected_) d.items=ItemPriority::FullControl;
     }
-    if(o.time>=settings_.opening_seconds && style_==Style::Aggressive && mood_!=Mood::Relaxed && o.enemy_visible && o.favorable_fight_estimate &&
+    if(o.time>=settings_.opening_seconds && style_==Style::Aggressive && mood_!=Mood::Relaxed && o.enemy_visible && favorable &&
        o.estimate_confidence>=settings_.push_confidence_min && std::max(o.damage_dealt,episode_dealt_)>=settings_.aggressive_push_damage)
         { d.intent=Intent::Push; d.reason="damage_estimate_push"; }
     else if(o.time>=settings_.opening_seconds && mood_!=Mood::Relaxed && o.enemy_visible &&
-        (lead<0||(lead==0&&o.bot_score>=settings_.pressure_equal_score)) && o.favorable_fight_estimate && style_!=Style::Passive)
+        (lead<0||(lead==0&&o.bot_score>=settings_.pressure_equal_score)) && favorable && style_!=Style::Passive)
         { d.intent=Intent::Push; d.reason="score_pressure"; }
     else { d.reason=mood_==Mood::Relaxed?"relaxed_hold":"controlled_hold"; }
     if(attempt) { d.intent=Intent::Push; d.reason="gauntlet_revenge"; }
