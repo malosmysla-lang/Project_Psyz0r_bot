@@ -27,7 +27,7 @@ static void Psyz_PreAlphaReset(void) {
     psyz_debug_logged=0;
     memset(psyz_goal_known,0,sizeof(psyz_goal_known));memset(psyz_route_banned,0,sizeof(psyz_route_banned));memset(psyz_banned,0,sizeof(psyz_banned));
     psyz_rj_plan=psyz_goal_target=psyz_active_route=psyz_rj=psyz_last_pickup=-1;
-    
+
     psyz_registry_logged=psyz_rj_phase=psyz_rj_last=psyz_last_move_time=0;
     psyz_last_pickup_time=psyz_rj_landed_at=psyz_strafe_log=0;
 }

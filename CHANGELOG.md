@@ -1,3 +1,5 @@
+Prealpha follow-up: normalized native header whitespace; no executable behavior changed.
+
 # 2026-10-11 - Prealpha 0.6: live Blood Run navigation
 
 Native test-only QL adapter now executes item selection, observed demo approaches, bounded strafe jumps and one live-validated rocketjump. 257 approach windows / 22 destinations and 16 owner RJ observations are in the generated bank; only RJ sample 0 is autonomous-enabled after 3 live probe successes. Stock AAS and combat remain. Includes actual Touch_Item pickup evidence, target-stack synchronization, failed-route cooldown, binary pins and isolated 27961-only gating. Main 27960 untouched. See docs/PREALPHA_0_6_RU.md and docs/training/PREALPHA_0_6_VALIDATION.json. Validation: MSVC Debug 12/12 CTest, Python 84/84; Linux NOPY build and real QL observations. Full Mind map and full C++ Behavior integration are NOT complete.
