@@ -1,0 +1,540 @@
+{
+  "map": "bloodrun",
+  "aas_sha256": "c4ca730c12d02cb84758e8a6534bafadbb9f9e2dffc4efb7aa3559b851b55895",
+  "counts": {
+    "demos": 125,
+    "input_approaches": 17927,
+    "associated_approaches": 17927,
+    "samples": 2078461,
+    "solid_samples": 0,
+    "direct_aas_transitions": 138173,
+    "unresolved_transitions": 113306,
+    "complete_area_associations": 17927,
+    "excluded_index_records": 1
+  },
+  "observed_area_count": 841,
+  "candidate_sequence_count": 14867,
+  "repeated_sequence_count": 599,
+  "repeated_multi_area_sequence_count": 590,
+  "single_area_sequence_count": 48,
+  "top_candidates": [
+    {
+      "kind": "shotgun",
+      "areas": [
+        974,
+        978,
+        980,
+        991,
+        1016
+      ],
+      "observations": 58,
+      "unique_demo_files": 47,
+      "median_observed_window_ms": 1487.5,
+      "source_examples": [
+        {
+          "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
+          "pickup_ms": 6151150,
+          "source_route_index": 65,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "e3501bcad05f3f1d88175496f71c102d53c0c7ce8fdee5700e5b7f1cb09bf12c",
+          "pickup_ms": 174500,
+          "source_route_index": 41,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "78c99aa2901adc356b1eb090356798cb09cd6cf6ae9566303dfb806b7de5d08b",
+          "pickup_ms": 471950,
+          "source_route_index": 129,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "health_large",
+      "areas": [
+        878,
+        880,
+        869,
+        850,
+        847,
+        835
+      ],
+      "observations": 53,
+      "unique_demo_files": 39,
+      "median_observed_window_ms": 1725,
+      "source_examples": [
+        {
+          "source_sha256": "1c8044ae86e9974863858c42bfdbd0abfe61e2ef026f8b33447b96cf37a12801",
+          "pickup_ms": 290600,
+          "source_route_index": 84,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "1c8044ae86e9974863858c42bfdbd0abfe61e2ef026f8b33447b96cf37a12801",
+          "pickup_ms": 596000,
+          "source_route_index": 172,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "451504f745d9e2e355286cef858c05f8b1de7ddb1c0bd054be16d382dee4b679",
+          "pickup_ms": 153550,
+          "source_route_index": 36,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "shotgun",
+      "areas": [
+        974,
+        978,
+        980,
+        991,
+        999,
+        991,
+        1016
+      ],
+      "observations": 34,
+      "unique_demo_files": 26,
+      "median_observed_window_ms": 1250.0,
+      "source_examples": [
+        {
+          "source_sha256": "451504f745d9e2e355286cef858c05f8b1de7ddb1c0bd054be16d382dee4b679",
+          "pickup_ms": 195400,
+          "source_route_index": 46,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "451504f745d9e2e355286cef858c05f8b1de7ddb1c0bd054be16d382dee4b679",
+          "pickup_ms": 392650,
+          "source_route_index": 96,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "e3501bcad05f3f1d88175496f71c102d53c0c7ce8fdee5700e5b7f1cb09bf12c",
+          "pickup_ms": 54600,
+          "source_route_index": 5,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "health_large",
+      "areas": [
+        878,
+        880,
+        869,
+        850,
+        847,
+        798,
+        835
+      ],
+      "observations": 28,
+      "unique_demo_files": 24,
+      "median_observed_window_ms": 1875.0,
+      "source_examples": [
+        {
+          "source_sha256": "1c8044ae86e9974863858c42bfdbd0abfe61e2ef026f8b33447b96cf37a12801",
+          "pickup_ms": 429425,
+          "source_route_index": 130,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "45b60de1e54048e4fa51dfdf80c43d137e7c28739a4c7bb4398999db7253bc29",
+          "pickup_ms": 372925,
+          "source_route_index": 84,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "f64c7d5ef74d54207a2e094e07244a1a1375f27ae3187a1115fbf72ca303abd5",
+          "pickup_ms": 328700,
+          "source_route_index": 79,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "shotgun",
+      "areas": [
+        531,
+        978,
+        980,
+        991,
+        1016
+      ],
+      "observations": 20,
+      "unique_demo_files": 18,
+      "median_observed_window_ms": 3000.0,
+      "source_examples": [
+        {
+          "source_sha256": "45b60de1e54048e4fa51dfdf80c43d137e7c28739a4c7bb4398999db7253bc29",
+          "pickup_ms": 194525,
+          "source_route_index": 39,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "4d2344ee2169b62911a9cc6cdb8d2205ce6ac36c8327ab42a25c98934772f05f",
+          "pickup_ms": 537975,
+          "source_route_index": 99,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "c75ce265af8c0c3d8bea0de4587b5a023918190ec5bb4f9e62f32016c902ffa9",
+          "pickup_ms": 399475,
+          "source_route_index": 80,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "health",
+      "areas": [
+        1534,
+        2386,
+        2377
+      ],
+      "observations": 27,
+      "unique_demo_files": 14,
+      "median_observed_window_ms": 3000,
+      "source_examples": [
+        {
+          "source_sha256": "994e643268aeab4282ba9f7a719e23ab50f9cd3b7527a750e712954415ff00f2",
+          "pickup_ms": 395900,
+          "source_route_index": 114,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "994e643268aeab4282ba9f7a719e23ab50f9cd3b7527a750e712954415ff00f2",
+          "pickup_ms": 395950,
+          "source_route_index": 115,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "f64c7d5ef74d54207a2e094e07244a1a1375f27ae3187a1115fbf72ca303abd5",
+          "pickup_ms": 636425,
+          "source_route_index": 143,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "plasma",
+      "areas": [
+        869,
+        850,
+        847,
+        798,
+        844,
+        836,
+        813,
+        814,
+        630,
+        621,
+        642
+      ],
+      "observations": 15,
+      "unique_demo_files": 14,
+      "median_observed_window_ms": 3000,
+      "source_examples": [
+        {
+          "source_sha256": "451504f745d9e2e355286cef858c05f8b1de7ddb1c0bd054be16d382dee4b679",
+          "pickup_ms": 248400,
+          "source_route_index": 59,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "ab16c5ef80c631770b2b43c5e1914be9bb8e3d55607a304f84b404b85b728c2d",
+          "pickup_ms": 45461850,
+          "source_route_index": 89,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "982a86588473f30684fc2dcfdcd7e15fe508f594e050046ec0c713b49839ad34",
+          "pickup_ms": 673450,
+          "source_route_index": 120,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "plasma",
+      "areas": [
+        869,
+        850,
+        847,
+        798,
+        844,
+        836,
+        813,
+        814,
+        630,
+        621,
+        639
+      ],
+      "observations": 15,
+      "unique_demo_files": 14,
+      "median_observed_window_ms": 3000,
+      "source_examples": [
+        {
+          "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
+          "pickup_ms": 6420975,
+          "source_route_index": 129,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "78c99aa2901adc356b1eb090356798cb09cd6cf6ae9566303dfb806b7de5d08b",
+          "pickup_ms": 236600,
+          "source_route_index": 59,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "f0c5172412db2ca47d26b28a62896179a2c0a911965c575f3bc6113b88642893",
+          "pickup_ms": 155925,
+          "source_route_index": 28,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "rocket",
+      "areas": [
+        1808,
+        1814,
+        1815,
+        1829,
+        1831,
+        1832,
+        1915,
+        2175,
+        2173,
+        2174
+      ],
+      "observations": 15,
+      "unique_demo_files": 14,
+      "median_observed_window_ms": 1725,
+      "source_examples": [
+        {
+          "source_sha256": "7c1aa89b69b7cea648a0183fda752f25775db626576a8fff1d5b95aae2b8b70e",
+          "pickup_ms": 44950,
+          "source_route_index": 0,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "4d2344ee2169b62911a9cc6cdb8d2205ce6ac36c8327ab42a25c98934772f05f",
+          "pickup_ms": 202400,
+          "source_route_index": 0,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "e759979035ffb28d2c9d3207f9ec9777fd5018cf709e2506ecc7c9fb9e156d01",
+          "pickup_ms": 21725,
+          "source_route_index": 0,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "health",
+      "areas": [
+        850,
+        869,
+        882,
+        1500,
+        1509,
+        1539,
+        1554,
+        1537,
+        1534,
+        2386,
+        2377
+      ],
+      "observations": 20,
+      "unique_demo_files": 12,
+      "median_observed_window_ms": 3000.0,
+      "source_examples": [
+        {
+          "source_sha256": "5742644422aa9d20a2e1c6ee488c569b5d803144b02aff537232f8e2dae9abcb",
+          "pickup_ms": 3097275,
+          "source_route_index": 15,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "cbccd23a10411f7c0f23d71cd7d725e571b74f0435eea5fd8f62192ad237c281",
+          "pickup_ms": 306975,
+          "source_route_index": 77,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "cbccd23a10411f7c0f23d71cd7d725e571b74f0435eea5fd8f62192ad237c281",
+          "pickup_ms": 307150,
+          "source_route_index": 78,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "yellow",
+      "areas": [
+        869,
+        850,
+        847,
+        798,
+        844,
+        836,
+        813,
+        814,
+        630,
+        621,
+        639,
+        642,
+        640
+      ],
+      "observations": 12,
+      "unique_demo_files": 12,
+      "median_observed_window_ms": 3000.0,
+      "source_examples": [
+        {
+          "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
+          "pickup_ms": 6421300,
+          "source_route_index": 130,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "78c99aa2901adc356b1eb090356798cb09cd6cf6ae9566303dfb806b7de5d08b",
+          "pickup_ms": 236875,
+          "source_route_index": 60,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "f0c5172412db2ca47d26b28a62896179a2c0a911965c575f3bc6113b88642893",
+          "pickup_ms": 156175,
+          "source_route_index": 29,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    },
+    {
+      "kind": "yellow",
+      "areas": [
+        850,
+        847,
+        798,
+        844,
+        836,
+        813,
+        814,
+        630,
+        621,
+        642,
+        640
+      ],
+      "observations": 12,
+      "unique_demo_files": 11,
+      "median_observed_window_ms": 3000.0,
+      "source_examples": [
+        {
+          "source_sha256": "451504f745d9e2e355286cef858c05f8b1de7ddb1c0bd054be16d382dee4b679",
+          "pickup_ms": 248900,
+          "source_route_index": 60,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "ab16c5ef80c631770b2b43c5e1914be9bb8e3d55607a304f84b404b85b728c2d",
+          "pickup_ms": 45462300,
+          "source_route_index": 90,
+          "corpus": "bloodrun_corpus"
+        },
+        {
+          "source_sha256": "94b8f752d9eabc70df3d500fd96f41f3751f70898fd2bffc6904979d782c0e4f",
+          "pickup_ms": 506200,
+          "source_route_index": 119,
+          "corpus": "bloodrun_corpus"
+        }
+      ],
+      "ready_for_execution": false
+    }
+  ],
+  "geometry_verified": false,
+  "physics_verified": false,
+  "ready_for_execution": false,
+  "semantics": "AAS BSP point association only; unresolved edges may skip intermediate areas; windows are not full routes; different POV files may represent the same match",
+  "source_audit": {
+    "ql_files_hash_verified": 297,
+    "workshop": [
+      {
+        "package": "bot-xaero-instagibbot",
+        "files": 6,
+        "text_files_read": 5,
+        "ai_profiles": 1,
+        "navigation_sources": []
+      },
+      {
+        "package": "botextension",
+        "files": 9,
+        "text_files_read": 8,
+        "ai_profiles": 2,
+        "navigation_sources": []
+      },
+      {
+        "package": "KETNAR",
+        "files": 6,
+        "text_files_read": 5,
+        "ai_profiles": 1,
+        "navigation_sources": []
+      },
+      {
+        "package": "napoleon",
+        "files": 38,
+        "text_files_read": 6,
+        "ai_profiles": 1,
+        "navigation_sources": []
+      },
+      {
+        "package": "q3clan",
+        "files": 364,
+        "text_files_read": 9,
+        "ai_profiles": 0,
+        "navigation_sources": []
+      },
+      {
+        "package": "TAproskins",
+        "files": 120,
+        "text_files_read": 0,
+        "ai_profiles": 0,
+        "navigation_sources": []
+      },
+      {
+        "package": "z-missing_models",
+        "files": 15,
+        "text_files_read": 0,
+        "ai_profiles": 0,
+        "navigation_sources": []
+      },
+      {
+        "package": "ZZZ",
+        "files": 46,
+        "text_files_read": 46,
+        "ai_profiles": 2,
+        "navigation_sources": []
+      }
+    ],
+    "mindmap_ids": 153
+  },
+  "area_center_roundtrip": {
+    "matched": 2392,
+    "tested": 2392
+  }
+}
