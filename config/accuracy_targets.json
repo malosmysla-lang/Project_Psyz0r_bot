@@ -1,0 +1,10 @@
+{
+  "approved_by_owner": true,
+  "source": "docs/training/WEAPON_ACCURACY_CORPUS_20261012.json",
+  "metric": "observed_match_hits_divided_by_shots",
+  "plasma": {"base_percent": 12, "range_percent": [10, 16]},
+  "lightning": {"base_percent": 37, "range_percent": [33, 41]},
+  "rail": {"change_requested": false},
+  "calibration_complete": false,
+  "note": "Targets are not per-shot hit probabilities. Angular error needs playtest calibration. Score adaptation is not enabled."
+}

@@ -1,0 +1,4209 @@
+{
+  "note": "Per-player-match observations; repeated players possible; not all verified professionals. Sample thresholds exclude very small use. Accuracy is not direct aim-setting probability.",
+  "weapons": {
+    "plasmaGun": {
+      "minimum_shots": 100,
+      "groups": {
+        "all": {
+          "samples": 32,
+          "p25": 9.8,
+          "median": 12.13,
+          "p75": 14.78,
+          "p90": 16.25,
+          "pooled_accuracy": 12.61
+        },
+        "winners": {
+          "samples": 16,
+          "p25": 9.8,
+          "median": 12.23,
+          "p75": 15.13,
+          "p90": 15.68,
+          "pooled_accuracy": 12.26
+        }
+      },
+      "entries": [
+        {
+          "demo": "10759__PROX1MO-vs-h3lldown-bloodrun-2026_06_07-12_42_50.json",
+          "player": "h3lldown",
+          "shots": 140,
+          "hits": 15,
+          "accuracy": 10.714285714285714,
+          "winner": false
+        },
+        {
+          "demo": "10823__ashEGB-vs-EGBIcYpheR-bloodrun-2026_07_05-13_54_30.json",
+          "player": "EGB",
+          "shots": 105,
+          "hits": 10,
+          "accuracy": 9.523809523809524,
+          "winner": false
+        },
+        {
+          "demo": "10823__ashEGB-vs-EGBIcYpheR-bloodrun-2026_07_05-13_54_30.json",
+          "player": "cYpheR",
+          "shots": 203,
+          "hits": 34,
+          "accuracy": 16.748768472906406,
+          "winner": true
+        },
+        {
+          "demo": "10878__EGBIcYpheR-vs-RedragonAGENT-bloodrun-2026_08_02-11_11_24.json",
+          "player": "cYpheR",
+          "shots": 195,
+          "hits": 16,
+          "accuracy": 8.205128205128204,
+          "winner": false
+        },
+        {
+          "demo": "10912__ABCPAVEL-vs-k1llsen-bloodrun-2026_08_30-11_25_31.json",
+          "player": "PAVEL",
+          "shots": 146,
+          "hits": 17,
+          "accuracy": 11.643835616438356,
+          "winner": true
+        },
+        {
+          "demo": "10922__EGBIcYpheR-vs-RedragoNash-bloodrun-2026_08_30-16_12_39.json",
+          "player": "ash",
+          "shots": 272,
+          "hits": 35,
+          "accuracy": 12.867647058823529,
+          "winner": false
+        },
+        {
+          "demo": "9196__Dispyrosebnum-vs-baksteen-bloodrun-2025_07_27-15_27_35.json",
+          "player": "eb\u00e9num",
+          "shots": 140,
+          "hits": 21,
+          "accuracy": 15.0,
+          "winner": true
+        },
+        {
+          "demo": "9196__Dispyrosebnum-vs-baksteen-bloodrun-2025_07_27-15_27_35.json",
+          "player": "baksteen",
+          "shots": 120,
+          "hits": 13,
+          "accuracy": 10.833333333333334,
+          "winner": false
+        },
+        {
+          "demo": "9245__AGENT-vs-Dispyrosebnum-bloodrun-2025_08_17-11_42_10.json",
+          "player": "eb\u00e9num",
+          "shots": 159,
+          "hits": 40,
+          "accuracy": 25.157232704402517,
+          "winner": false
+        },
+        {
+          "demo": "9274__Dispyrosebnum-vs-k1llsen-bloodrun-2025_08_24-14_33_51.json",
+          "player": "eb\u00e9num",
+          "shots": 228,
+          "hits": 25,
+          "accuracy": 10.964912280701755,
+          "winner": true
+        },
+        {
+          "demo": "9293__ashEGB-vs-Dispyrosebnum-bloodrun-2025_09_14-14_27_59.json",
+          "player": "eb\u00e9num",
+          "shots": 221,
+          "hits": 31,
+          "accuracy": 14.027149321266968,
+          "winner": false
+        },
+        {
+          "demo": "9304__Dispyrosebnum-vs-Cypher-bloodrun-2025_09_14-17_38_21.json",
+          "player": "eb\u00e9num",
+          "shots": 176,
+          "hits": 45,
+          "accuracy": 25.568181818181817,
+          "winner": false
+        },
+        {
+          "demo": "9304__Dispyrosebnum-vs-Cypher-bloodrun-2025_09_14-17_38_21.json",
+          "player": "Cypher",
+          "shots": 170,
+          "hits": 25,
+          "accuracy": 14.705882352941176,
+          "winner": true
+        },
+        {
+          "demo": "9312__YanabGabla-vs-baksteen-bloodrun-2025_09_14-12_05_14.json",
+          "player": "baksteen",
+          "shots": 240,
+          "hits": 29,
+          "accuracy": 12.083333333333334,
+          "winner": false
+        },
+        {
+          "demo": "9364__k1llsen-vs-ashEGB-bloodrun-2025_08_31-15_08_29.json",
+          "player": "ash|EGB",
+          "shots": 256,
+          "hits": 19,
+          "accuracy": 7.421875,
+          "winner": true
+        },
+        {
+          "demo": "9383__ashEGB-vs-Cypher-bloodrun-2025_09_07-12_35_32.json",
+          "player": "ash|EGB",
+          "shots": 130,
+          "hits": 8,
+          "accuracy": 6.153846153846154,
+          "winner": false
+        },
+        {
+          "demo": "9412__baksteen-vs-ashEGB-bloodrun-2025_09_28-11_06_37.json",
+          "player": "EGB",
+          "shots": 105,
+          "hits": 15,
+          "accuracy": 14.285714285714286,
+          "winner": true
+        },
+        {
+          "demo": "9414__Cypher-vs-baksteen-bloodrun-2025_09_28-11_55_34.json",
+          "player": "baksteen",
+          "shots": 166,
+          "hits": 3,
+          "accuracy": 1.8072289156626506,
+          "winner": false
+        },
+        {
+          "demo": "9485__Dispyrosebnum-vs-fog-bloodrun-2025_11_01-15_02_07.json",
+          "player": "eb\u00e9num",
+          "shots": 442,
+          "hits": 43,
+          "accuracy": 9.728506787330316,
+          "winner": true
+        },
+        {
+          "demo": "9490__Dispyrosebnum-vs-sCoopY_-bloodrun-2025_11_01-14_15_34.json",
+          "player": "eb\u00e9num",
+          "shots": 133,
+          "hits": 21,
+          "accuracy": 15.789473684210526,
+          "winner": true
+        },
+        {
+          "demo": "9498__ILY4_35reg-vs-baxyc-bloodrun-2025_11_01-15_10_26.json",
+          "player": "baxyc",
+          "shots": 161,
+          "hits": 21,
+          "accuracy": 13.043478260869565,
+          "winner": false
+        },
+        {
+          "demo": "9504__sCoopY_-vs-Dispyrosebnum-bloodrun-2025_11_01-15_25_47.json",
+          "player": "eb\u00e9num",
+          "shots": 194,
+          "hits": 22,
+          "accuracy": 11.34020618556701,
+          "winner": false
+        },
+        {
+          "demo": "9548__0Overqill-vs-kgb-bloodrun-2025_11_09-11_20_10.json",
+          "player": "Overqill",
+          "shots": 319,
+          "hits": 52,
+          "accuracy": 16.300940438871475,
+          "winner": false
+        },
+        {
+          "demo": "9599__ashEGB-vs-Cypher-bloodrun-2026_02_01-15_56_59.json",
+          "player": "EGB",
+          "shots": 121,
+          "hits": 11,
+          "accuracy": 9.090909090909092,
+          "winner": true
+        },
+        {
+          "demo": "9622__AGENT-vs-Liquidrapha-bloodrun-2026_02_08-16_54_00.json",
+          "player": "rapha",
+          "shots": 156,
+          "hits": 20,
+          "accuracy": 12.820512820512821,
+          "winner": true
+        },
+        {
+          "demo": "9637__k1llsen-vs-ashEGB-bloodrun-2026_02_08-12_41_34.json",
+          "player": "EGB",
+          "shots": 123,
+          "hits": 8,
+          "accuracy": 6.504065040650406,
+          "winner": true
+        },
+        {
+          "demo": "9725__AGENT-vs-swex-bloodrun-2025_12_14-13_22_15.json",
+          "player": "swex",
+          "shots": 399,
+          "hits": 62,
+          "accuracy": 15.538847117794486,
+          "winner": true
+        },
+        {
+          "demo": "9739__SV-vs-EGBPAVEL-bloodrun-2025_12_14-11_05_11.json",
+          "player": "PAVEL",
+          "shots": 117,
+          "hits": 12,
+          "accuracy": 10.256410256410257,
+          "winner": true
+        },
+        {
+          "demo": "9745__baksteen-vs-EGBPAVEL-bloodrun-2025_12_21-13_16_37.json",
+          "player": "PAVEL",
+          "shots": 112,
+          "hits": 11,
+          "accuracy": 9.821428571428571,
+          "winner": true
+        },
+        {
+          "demo": "9781__swex-vs-EGBPAVEL-bloodrun-2026_01_11-13_41_17.json",
+          "player": "PAVEL",
+          "shots": 263,
+          "hits": 32,
+          "accuracy": 12.167300380228136,
+          "winner": false
+        },
+        {
+          "demo": "9812__baksteen-vs-ARSENY-bloodrun-2026_01_25-11_25_36.json",
+          "player": "ARSENY",
+          "shots": 147,
+          "hits": 18,
+          "accuracy": 12.244897959183673,
+          "winner": false
+        },
+        {
+          "demo": "9895__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-18_03_06.json",
+          "player": "rapha",
+          "shots": 167,
+          "hits": 26,
+          "accuracy": 15.568862275449101,
+          "winner": true
+        }
+      ]
+    },
+    "lightningGun": {
+      "minimum_shots": 200,
+      "groups": {
+        "all": {
+          "samples": 162,
+          "p25": 32.29,
+          "median": 36.23,
+          "p75": 40.33,
+          "p90": 44.0,
+          "pooled_accuracy": 36.52
+        },
+        "winners": {
+          "samples": 86,
+          "p25": 33.7,
+          "median": 36.7,
+          "p75": 40.44,
+          "p90": 43.94,
+          "pooled_accuracy": 37.44
+        }
+      },
+      "entries": [
+        {
+          "demo": "10759__PROX1MO-vs-h3lldown-bloodrun-2026_06_07-12_42_50.json",
+          "player": "PROX1MO",
+          "shots": 373,
+          "hits": 117,
+          "accuracy": 31.367292225201073,
+          "winner": true
+        },
+        {
+          "demo": "10759__PROX1MO-vs-h3lldown-bloodrun-2026_06_07-12_42_50.json",
+          "player": "h3lldown",
+          "shots": 456,
+          "hits": 129,
+          "accuracy": 28.289473684210527,
+          "winner": false
+        },
+        {
+          "demo": "10774__k1llsen-vs-ashEGB-bloodrun-2026_08_09-15_51_44.json",
+          "player": "k1llsen",
+          "shots": 227,
+          "hits": 105,
+          "accuracy": 46.25550660792952,
+          "winner": true
+        },
+        {
+          "demo": "10774__k1llsen-vs-ashEGB-bloodrun-2026_08_09-15_51_44.json",
+          "player": "EGB",
+          "shots": 274,
+          "hits": 116,
+          "accuracy": 42.33576642335766,
+          "winner": false
+        },
+        {
+          "demo": "10778__ashEGB-vs-baksteen-bloodrun-2026_06_14-13_25_13.json",
+          "player": "EGB",
+          "shots": 421,
+          "hits": 217,
+          "accuracy": 51.54394299287411,
+          "winner": true
+        },
+        {
+          "demo": "10787__prox1mo-vs-PAVEL-bloodrun-2026_06_14-11_16_41.json",
+          "player": "prox1mo",
+          "shots": 553,
+          "hits": 190,
+          "accuracy": 34.35804701627487,
+          "winner": true
+        },
+        {
+          "demo": "10787__prox1mo-vs-PAVEL-bloodrun-2026_06_14-11_16_41.json",
+          "player": "PAVEL",
+          "shots": 321,
+          "hits": 110,
+          "accuracy": 34.26791277258567,
+          "winner": false
+        },
+        {
+          "demo": "10790__AGENT-vs-baksteen-bloodrun-2026_06_21-14_06_37.json",
+          "player": "baksteen",
+          "shots": 429,
+          "hits": 118,
+          "accuracy": 27.505827505827504,
+          "winner": false
+        },
+        {
+          "demo": "10792__ARSENY-vs-fog-bloodrun-2026_06_21-13_05_25.json",
+          "player": "fog",
+          "shots": 224,
+          "hits": 134,
+          "accuracy": 59.82142857142857,
+          "winner": true
+        },
+        {
+          "demo": "10812__k1llsen-vs-PAVEL-bloodrun-2026_06_28-13_48_33.json",
+          "player": "PAVEL",
+          "shots": 278,
+          "hits": 81,
+          "accuracy": 29.136690647482013,
+          "winner": false
+        },
+        {
+          "demo": "10823__ashEGB-vs-EGBIcYpheR-bloodrun-2026_07_05-13_54_30.json",
+          "player": "EGB",
+          "shots": 418,
+          "hits": 157,
+          "accuracy": 37.55980861244019,
+          "winner": false
+        },
+        {
+          "demo": "10823__ashEGB-vs-EGBIcYpheR-bloodrun-2026_07_05-13_54_30.json",
+          "player": "cYpheR",
+          "shots": 414,
+          "hits": 184,
+          "accuracy": 44.44444444444444,
+          "winner": true
+        },
+        {
+          "demo": "10830__k1llsen-vs-baksteen-bloodrun-2026_07_05-13_05_05.json",
+          "player": "k1llsen",
+          "shots": 287,
+          "hits": 108,
+          "accuracy": 37.63066202090592,
+          "winner": true
+        },
+        {
+          "demo": "10846__fog-vs-ashEGB-bloodrun-2026_07_19-12_50_33.json",
+          "player": "fog",
+          "shots": 392,
+          "hits": 164,
+          "accuracy": 41.83673469387755,
+          "winner": false
+        },
+        {
+          "demo": "10846__fog-vs-ashEGB-bloodrun-2026_07_19-12_50_33.json",
+          "player": "EGB",
+          "shots": 541,
+          "hits": 209,
+          "accuracy": 38.632162661737524,
+          "winner": true
+        },
+        {
+          "demo": "10850__fog-vs-PAVEL-bloodrun-2026_07_19-11_33_19.json",
+          "player": "PAVEL",
+          "shots": 317,
+          "hits": 137,
+          "accuracy": 43.217665615141954,
+          "winner": true
+        },
+        {
+          "demo": "10867__prox1mo-vs-ashEGB-bloodrun-2026_07_26-16_31_02.json",
+          "player": "EGB",
+          "shots": 470,
+          "hits": 166,
+          "accuracy": 35.319148936170215,
+          "winner": true
+        },
+        {
+          "demo": "10878__EGBIcYpheR-vs-RedragonAGENT-bloodrun-2026_08_02-11_11_24.json",
+          "player": "cYpheR",
+          "shots": 519,
+          "hits": 230,
+          "accuracy": 44.3159922928709,
+          "winner": false
+        },
+        {
+          "demo": "10878__EGBIcYpheR-vs-RedragonAGENT-bloodrun-2026_08_02-11_11_24.json",
+          "player": "AGENT",
+          "shots": 361,
+          "hits": 135,
+          "accuracy": 37.39612188365651,
+          "winner": true
+        },
+        {
+          "demo": "10884__prox1mo-vs-baksteen-bloodrun-2026_08_02-13_02_59.json",
+          "player": "prox1mo",
+          "shots": 565,
+          "hits": 239,
+          "accuracy": 42.30088495575221,
+          "winner": false
+        },
+        {
+          "demo": "10884__prox1mo-vs-baksteen-bloodrun-2026_08_02-13_02_59.json",
+          "player": "baksteen",
+          "shots": 340,
+          "hits": 117,
+          "accuracy": 34.411764705882355,
+          "winner": true
+        },
+        {
+          "demo": "10912__ABCPAVEL-vs-k1llsen-bloodrun-2026_08_30-11_25_31.json",
+          "player": "PAVEL",
+          "shots": 259,
+          "hits": 82,
+          "accuracy": 31.66023166023166,
+          "winner": true
+        },
+        {
+          "demo": "10912__ABCPAVEL-vs-k1llsen-bloodrun-2026_08_30-11_25_31.json",
+          "player": "k1llsen",
+          "shots": 258,
+          "hits": 112,
+          "accuracy": 43.41085271317829,
+          "winner": false
+        },
+        {
+          "demo": "10916__ABCPAVEL-vs-RedragoNash-bloodrun-2026_08_30-15_34_22.json",
+          "player": "PAVEL",
+          "shots": 258,
+          "hits": 58,
+          "accuracy": 22.48062015503876,
+          "winner": false
+        },
+        {
+          "demo": "10916__ABCPAVEL-vs-RedragoNash-bloodrun-2026_08_30-15_34_22.json",
+          "player": "ash",
+          "shots": 373,
+          "hits": 141,
+          "accuracy": 37.80160857908847,
+          "winner": true
+        },
+        {
+          "demo": "10920__EGBIcYpheR-vs-k1llsen-bloodrun-2026_08_29-15_37_15.json",
+          "player": "cYpheR",
+          "shots": 763,
+          "hits": 274,
+          "accuracy": 35.91087811271297,
+          "winner": true
+        },
+        {
+          "demo": "10922__EGBIcYpheR-vs-RedragoNash-bloodrun-2026_08_30-16_12_39.json",
+          "player": "cYpheR",
+          "shots": 731,
+          "hits": 300,
+          "accuracy": 41.03967168262654,
+          "winner": true
+        },
+        {
+          "demo": "10922__EGBIcYpheR-vs-RedragoNash-bloodrun-2026_08_30-16_12_39.json",
+          "player": "ash",
+          "shots": 279,
+          "hits": 87,
+          "accuracy": 31.182795698924732,
+          "winner": false
+        },
+        {
+          "demo": "10931__RedragonAGENT-vs-EGBIcYpheR-bloodrun-2026_08_29-14_38_17.json",
+          "player": "AGENT",
+          "shots": 230,
+          "hits": 82,
+          "accuracy": 35.65217391304348,
+          "winner": true
+        },
+        {
+          "demo": "10931__RedragonAGENT-vs-EGBIcYpheR-bloodrun-2026_08_29-14_38_17.json",
+          "player": "cYpheR",
+          "shots": 265,
+          "hits": 105,
+          "accuracy": 39.62264150943396,
+          "winner": false
+        },
+        {
+          "demo": "10940__RedragoNash-vs-k1llsen-bloodrun-2026_08_29-14_15_46.json",
+          "player": "ash",
+          "shots": 237,
+          "hits": 95,
+          "accuracy": 40.08438818565401,
+          "winner": false
+        },
+        {
+          "demo": "10940__RedragoNash-vs-k1llsen-bloodrun-2026_08_29-14_15_46.json",
+          "player": "k1llsen",
+          "shots": 204,
+          "hits": 75,
+          "accuracy": 36.76470588235294,
+          "winner": true
+        },
+        {
+          "demo": "9192__Cypher-vs-Nitrino-bloodrun-2025_07_27-16_28_00.json",
+          "player": "Cypher",
+          "shots": 242,
+          "hits": 126,
+          "accuracy": 52.06611570247934,
+          "winner": true
+        },
+        {
+          "demo": "9192__Cypher-vs-Nitrino-bloodrun-2025_07_27-16_28_00.json",
+          "player": "Nitrino",
+          "shots": 245,
+          "hits": 95,
+          "accuracy": 38.775510204081634,
+          "winner": false
+        },
+        {
+          "demo": "9196__Dispyrosebnum-vs-baksteen-bloodrun-2025_07_27-15_27_35.json",
+          "player": "eb\u00e9num",
+          "shots": 278,
+          "hits": 103,
+          "accuracy": 37.05035971223022,
+          "winner": true
+        },
+        {
+          "demo": "9196__Dispyrosebnum-vs-baksteen-bloodrun-2025_07_27-15_27_35.json",
+          "player": "baksteen",
+          "shots": 347,
+          "hits": 63,
+          "accuracy": 18.155619596541786,
+          "winner": false
+        },
+        {
+          "demo": "9214__Cypher-vs-YanabGabla-bloodrun-2025_08_03-12_14_30.json",
+          "player": "Cypher",
+          "shots": 415,
+          "hits": 143,
+          "accuracy": 34.45783132530121,
+          "winner": true
+        },
+        {
+          "demo": "9222__k1llsen-vs-EGBPAVEL-bloodrun-2025_08_03-14_40_24.json",
+          "player": "k1llsen",
+          "shots": 226,
+          "hits": 71,
+          "accuracy": 31.41592920353982,
+          "winner": true
+        },
+        {
+          "demo": "9222__k1llsen-vs-EGBPAVEL-bloodrun-2025_08_03-14_40_24.json",
+          "player": "PAVEL",
+          "shots": 457,
+          "hits": 157,
+          "accuracy": 34.354485776805255,
+          "winner": false
+        },
+        {
+          "demo": "9237__k1llsen-vs-YanabGabla-bloodrun-2025_08_10-12_23_48.json",
+          "player": "k1llsen",
+          "shots": 361,
+          "hits": 146,
+          "accuracy": 40.443213296398895,
+          "winner": true
+        },
+        {
+          "demo": "9237__k1llsen-vs-YanabGabla-bloodrun-2025_08_10-12_23_48.json",
+          "player": "Gabla",
+          "shots": 442,
+          "hits": 180,
+          "accuracy": 40.723981900452486,
+          "winner": false
+        },
+        {
+          "demo": "9245__AGENT-vs-Dispyrosebnum-bloodrun-2025_08_17-11_42_10.json",
+          "player": "AGENT",
+          "shots": 375,
+          "hits": 137,
+          "accuracy": 36.53333333333333,
+          "winner": true
+        },
+        {
+          "demo": "9245__AGENT-vs-Dispyrosebnum-bloodrun-2025_08_17-11_42_10.json",
+          "player": "eb\u00e9num",
+          "shots": 202,
+          "hits": 49,
+          "accuracy": 24.257425742574256,
+          "winner": false
+        },
+        {
+          "demo": "9248__AGENT-vs-SV-bloodrun-2025_08_17-11_01_08.json",
+          "player": "SV",
+          "shots": 468,
+          "hits": 216,
+          "accuracy": 46.15384615384615,
+          "winner": false
+        },
+        {
+          "demo": "9274__Dispyrosebnum-vs-k1llsen-bloodrun-2025_08_24-14_33_51.json",
+          "player": "eb\u00e9num",
+          "shots": 341,
+          "hits": 123,
+          "accuracy": 36.070381231671554,
+          "winner": true
+        },
+        {
+          "demo": "9274__Dispyrosebnum-vs-k1llsen-bloodrun-2025_08_24-14_33_51.json",
+          "player": "k1llsen",
+          "shots": 295,
+          "hits": 108,
+          "accuracy": 36.610169491525426,
+          "winner": false
+        },
+        {
+          "demo": "9289__AGENT-vs-EGBPAVEL-bloodrun-2025_09_14-13_19_29.json",
+          "player": "AGENT",
+          "shots": 376,
+          "hits": 105,
+          "accuracy": 27.925531914893618,
+          "winner": true
+        },
+        {
+          "demo": "9293__ashEGB-vs-Dispyrosebnum-bloodrun-2025_09_14-14_27_59.json",
+          "player": "EGB",
+          "shots": 331,
+          "hits": 107,
+          "accuracy": 32.32628398791541,
+          "winner": true
+        },
+        {
+          "demo": "9304__Dispyrosebnum-vs-Cypher-bloodrun-2025_09_14-17_38_21.json",
+          "player": "eb\u00e9num",
+          "shots": 260,
+          "hits": 93,
+          "accuracy": 35.76923076923077,
+          "winner": false
+        },
+        {
+          "demo": "9304__Dispyrosebnum-vs-Cypher-bloodrun-2025_09_14-17_38_21.json",
+          "player": "Cypher",
+          "shots": 344,
+          "hits": 125,
+          "accuracy": 36.33720930232558,
+          "winner": true
+        },
+        {
+          "demo": "9312__YanabGabla-vs-baksteen-bloodrun-2025_09_14-12_05_14.json",
+          "player": "Gabla",
+          "shots": 421,
+          "hits": 213,
+          "accuracy": 50.5938242280285,
+          "winner": true
+        },
+        {
+          "demo": "9321__Cypher-vs-AGENT-bloodrun-2025_09_21-13_58_12.json",
+          "player": "Cypher",
+          "shots": 401,
+          "hits": 124,
+          "accuracy": 30.92269326683292,
+          "winner": false
+        },
+        {
+          "demo": "9321__Cypher-vs-AGENT-bloodrun-2025_09_21-13_58_12.json",
+          "player": "AGENT",
+          "shots": 399,
+          "hits": 126,
+          "accuracy": 31.57894736842105,
+          "winner": true
+        },
+        {
+          "demo": "9337__Nitrino-vs-YanabGabla-bloodrun-2025_09_21-17_23_34.json",
+          "player": "Nitrino",
+          "shots": 490,
+          "hits": 176,
+          "accuracy": 35.91836734693877,
+          "winner": false
+        },
+        {
+          "demo": "9337__Nitrino-vs-YanabGabla-bloodrun-2025_09_21-17_23_34.json",
+          "player": "Gabla",
+          "shots": 446,
+          "hits": 182,
+          "accuracy": 40.80717488789238,
+          "winner": true
+        },
+        {
+          "demo": "9346__SV-vs-EGBPAVEL-bloodrun-2025_09_21-12_19_15.json",
+          "player": "SV",
+          "shots": 355,
+          "hits": 110,
+          "accuracy": 30.985915492957748,
+          "winner": false
+        },
+        {
+          "demo": "9364__k1llsen-vs-ashEGB-bloodrun-2025_08_31-15_08_29.json",
+          "player": "k1llsen",
+          "shots": 228,
+          "hits": 87,
+          "accuracy": 38.1578947368421,
+          "winner": false
+        },
+        {
+          "demo": "9364__k1llsen-vs-ashEGB-bloodrun-2025_08_31-15_08_29.json",
+          "player": "ash|EGB",
+          "shots": 491,
+          "hits": 175,
+          "accuracy": 35.64154786150713,
+          "winner": true
+        },
+        {
+          "demo": "9370__SV-vs-fire_bot-bloodrun-2025_08_31-09_55_21.json",
+          "player": "SV",
+          "shots": 403,
+          "hits": 174,
+          "accuracy": 43.17617866004963,
+          "winner": false
+        },
+        {
+          "demo": "9370__SV-vs-fire_bot-bloodrun-2025_08_31-09_55_21.json",
+          "player": "fire_bot",
+          "shots": 595,
+          "hits": 229,
+          "accuracy": 38.48739495798319,
+          "winner": true
+        },
+        {
+          "demo": "9374__AGENT-vs-ashEGB-bloodrun-2025_09_07-11_05_42.json",
+          "player": "AGENT",
+          "shots": 436,
+          "hits": 150,
+          "accuracy": 34.403669724770644,
+          "winner": true
+        },
+        {
+          "demo": "9374__AGENT-vs-ashEGB-bloodrun-2025_09_07-11_05_42.json",
+          "player": "ash|EGB",
+          "shots": 284,
+          "hits": 127,
+          "accuracy": 44.71830985915493,
+          "winner": false
+        },
+        {
+          "demo": "9383__ashEGB-vs-Cypher-bloodrun-2025_09_07-12_35_32.json",
+          "player": "ash|EGB",
+          "shots": 368,
+          "hits": 110,
+          "accuracy": 29.891304347826086,
+          "winner": false
+        },
+        {
+          "demo": "9383__ashEGB-vs-Cypher-bloodrun-2025_09_07-12_35_32.json",
+          "player": "Cypher",
+          "shots": 564,
+          "hits": 217,
+          "accuracy": 38.47517730496454,
+          "winner": true
+        },
+        {
+          "demo": "9406__ashEGB-vs-EGBPAVEL-bloodrun-2025_09_28-13_07_35.json",
+          "player": "EGB",
+          "shots": 626,
+          "hits": 231,
+          "accuracy": 36.90095846645367,
+          "winner": true
+        },
+        {
+          "demo": "9406__ashEGB-vs-EGBPAVEL-bloodrun-2025_09_28-13_07_35.json",
+          "player": "PAVEL",
+          "shots": 441,
+          "hits": 183,
+          "accuracy": 41.49659863945578,
+          "winner": false
+        },
+        {
+          "demo": "9409__ashEGB-vs-fire_bot-bloodrun-2025_09_28-12_31_15.json",
+          "player": "EGB",
+          "shots": 453,
+          "hits": 161,
+          "accuracy": 35.54083885209713,
+          "winner": false
+        },
+        {
+          "demo": "9409__ashEGB-vs-fire_bot-bloodrun-2025_09_28-12_31_15.json",
+          "player": "fire_bot",
+          "shots": 376,
+          "hits": 150,
+          "accuracy": 39.8936170212766,
+          "winner": true
+        },
+        {
+          "demo": "9412__baksteen-vs-ashEGB-bloodrun-2025_09_28-11_06_37.json",
+          "player": "baksteen",
+          "shots": 262,
+          "hits": 83,
+          "accuracy": 31.6793893129771,
+          "winner": false
+        },
+        {
+          "demo": "9412__baksteen-vs-ashEGB-bloodrun-2025_09_28-11_06_37.json",
+          "player": "EGB",
+          "shots": 658,
+          "hits": 241,
+          "accuracy": 36.62613981762918,
+          "winner": true
+        },
+        {
+          "demo": "9414__Cypher-vs-baksteen-bloodrun-2025_09_28-11_55_34.json",
+          "player": "Cypher",
+          "shots": 484,
+          "hits": 150,
+          "accuracy": 30.99173553719008,
+          "winner": true
+        },
+        {
+          "demo": "9417__EGBPAVEL-vs-Cypher-bloodrun-2025_09_28-13_53_55.json",
+          "player": "PAVEL",
+          "shots": 314,
+          "hits": 99,
+          "accuracy": 31.528662420382165,
+          "winner": false
+        },
+        {
+          "demo": "9417__EGBPAVEL-vs-Cypher-bloodrun-2025_09_28-13_53_55.json",
+          "player": "Cypher",
+          "shots": 413,
+          "hits": 170,
+          "accuracy": 41.16222760290557,
+          "winner": true
+        },
+        {
+          "demo": "9430__AGENT-vs-Cypher-bloodrun-2025_10_05-15_44_12.json",
+          "player": "AGENT",
+          "shots": 238,
+          "hits": 56,
+          "accuracy": 23.529411764705884,
+          "winner": false
+        },
+        {
+          "demo": "9430__AGENT-vs-Cypher-bloodrun-2025_10_05-15_44_12.json",
+          "player": "Cypher",
+          "shots": 355,
+          "hits": 104,
+          "accuracy": 29.295774647887324,
+          "winner": true
+        },
+        {
+          "demo": "9436__AGENT-vs-k1llsen-bloodrun-2025_10_05-12_09_51.json",
+          "player": "AGENT",
+          "shots": 414,
+          "hits": 144,
+          "accuracy": 34.78260869565217,
+          "winner": true
+        },
+        {
+          "demo": "9436__AGENT-vs-k1llsen-bloodrun-2025_10_05-12_09_51.json",
+          "player": "k1llsen",
+          "shots": 252,
+          "hits": 118,
+          "accuracy": 46.82539682539682,
+          "winner": false
+        },
+        {
+          "demo": "9437__AGENT-vs-k1llsen-bloodrun-2025_10_05-14_39_32.json",
+          "player": "AGENT",
+          "shots": 342,
+          "hits": 85,
+          "accuracy": 24.853801169590643,
+          "winner": true
+        },
+        {
+          "demo": "9443__Cypher-vs-AGENT-bloodrun-2025_10_05-13_36_05.json",
+          "player": "Cypher",
+          "shots": 358,
+          "hits": 124,
+          "accuracy": 34.63687150837989,
+          "winner": false
+        },
+        {
+          "demo": "9443__Cypher-vs-AGENT-bloodrun-2025_10_05-13_36_05.json",
+          "player": "AGENT",
+          "shots": 287,
+          "hits": 116,
+          "accuracy": 40.41811846689895,
+          "winner": true
+        },
+        {
+          "demo": "9451__k1llsen-vs-EGBPAVEL-bloodrun-2025_10_05-13_06_02.json",
+          "player": "k1llsen",
+          "shots": 215,
+          "hits": 86,
+          "accuracy": 40.0,
+          "winner": true
+        },
+        {
+          "demo": "9451__k1llsen-vs-EGBPAVEL-bloodrun-2025_10_05-13_06_02.json",
+          "player": "PAVEL",
+          "shots": 227,
+          "hits": 80,
+          "accuracy": 35.242290748898675,
+          "winner": false
+        },
+        {
+          "demo": "9485__Dispyrosebnum-vs-fog-bloodrun-2025_11_01-15_02_07.json",
+          "player": "fog",
+          "shots": 333,
+          "hits": 144,
+          "accuracy": 43.24324324324324,
+          "winner": false
+        },
+        {
+          "demo": "9490__Dispyrosebnum-vs-sCoopY_-bloodrun-2025_11_01-14_15_34.json",
+          "player": "sCoopY_",
+          "shots": 233,
+          "hits": 68,
+          "accuracy": 29.184549356223176,
+          "winner": false
+        },
+        {
+          "demo": "9498__ILY4_35reg-vs-baxyc-bloodrun-2025_11_01-15_10_26.json",
+          "player": "baxyc",
+          "shots": 299,
+          "hits": 99,
+          "accuracy": 33.11036789297659,
+          "winner": false
+        },
+        {
+          "demo": "9504__sCoopY_-vs-Dispyrosebnum-bloodrun-2025_11_01-15_25_47.json",
+          "player": "sCoopY_",
+          "shots": 631,
+          "hits": 252,
+          "accuracy": 39.93660855784469,
+          "winner": true
+        },
+        {
+          "demo": "9504__sCoopY_-vs-Dispyrosebnum-bloodrun-2025_11_01-15_25_47.json",
+          "player": "eb\u00e9num",
+          "shots": 566,
+          "hits": 189,
+          "accuracy": 33.3922261484099,
+          "winner": false
+        },
+        {
+          "demo": "9516__prox1mo-vs-SV-bloodrun-2025_11_02-13_17_18.json",
+          "player": "prox1mo",
+          "shots": 397,
+          "hits": 131,
+          "accuracy": 32.99748110831234,
+          "winner": false
+        },
+        {
+          "demo": "9516__prox1mo-vs-SV-bloodrun-2025_11_02-13_17_18.json",
+          "player": "SV",
+          "shots": 914,
+          "hits": 386,
+          "accuracy": 42.23194748358862,
+          "winner": true
+        },
+        {
+          "demo": "9521__SV-vs-fire_bot-bloodrun-2025_11_02-14_06_50.json",
+          "player": "SV",
+          "shots": 430,
+          "hits": 153,
+          "accuracy": 35.58139534883721,
+          "winner": true
+        },
+        {
+          "demo": "9521__SV-vs-fire_bot-bloodrun-2025_11_02-14_06_50.json",
+          "player": "fire_bot",
+          "shots": 519,
+          "hits": 193,
+          "accuracy": 37.1868978805395,
+          "winner": false
+        },
+        {
+          "demo": "9523__SV-vs-prox1mo-bloodrun-2025_11_02-15_41_13.json",
+          "player": "SV",
+          "shots": 597,
+          "hits": 222,
+          "accuracy": 37.185929648241206,
+          "winner": false
+        },
+        {
+          "demo": "9523__SV-vs-prox1mo-bloodrun-2025_11_02-15_41_13.json",
+          "player": "prox1mo",
+          "shots": 454,
+          "hits": 152,
+          "accuracy": 33.480176211453745,
+          "winner": true
+        },
+        {
+          "demo": "9538__baksteen-vs-inz_-bloodrun-2025_11_08-07_46_39.json",
+          "player": "baksteen",
+          "shots": 425,
+          "hits": 154,
+          "accuracy": 36.23529411764706,
+          "winner": true
+        },
+        {
+          "demo": "9538__baksteen-vs-inz_-bloodrun-2025_11_08-07_46_39.json",
+          "player": "inz_",
+          "shots": 270,
+          "hits": 73,
+          "accuracy": 27.037037037037038,
+          "winner": false
+        },
+        {
+          "demo": "9548__0Overqill-vs-kgb-bloodrun-2025_11_09-11_20_10.json",
+          "player": "kgb",
+          "shots": 405,
+          "hits": 169,
+          "accuracy": 41.72839506172839,
+          "winner": true
+        },
+        {
+          "demo": "9564__fire_bot-vs-sCoopY_-bloodrun-2025_11_09-12_12_51.json",
+          "player": "fire_bot",
+          "shots": 428,
+          "hits": 164,
+          "accuracy": 38.3177570093458,
+          "winner": true
+        },
+        {
+          "demo": "9564__fire_bot-vs-sCoopY_-bloodrun-2025_11_09-12_12_51.json",
+          "player": "sCoopY_",
+          "shots": 435,
+          "hits": 166,
+          "accuracy": 38.160919540229884,
+          "winner": false
+        },
+        {
+          "demo": "9574__baksteen-vs-ashEGB-bloodrun-2025_11_16-15_26_09.json",
+          "player": "baksteen",
+          "shots": 253,
+          "hits": 82,
+          "accuracy": 32.41106719367589,
+          "winner": false
+        },
+        {
+          "demo": "9574__baksteen-vs-ashEGB-bloodrun-2025_11_16-15_26_09.json",
+          "player": "EGB",
+          "shots": 495,
+          "hits": 158,
+          "accuracy": 31.91919191919192,
+          "winner": true
+        },
+        {
+          "demo": "9585__Raisy-vs-swex-bloodrun-2025_11_16-13_09_30.json",
+          "player": "Raisy",
+          "shots": 459,
+          "hits": 221,
+          "accuracy": 48.148148148148145,
+          "winner": false
+        },
+        {
+          "demo": "9585__Raisy-vs-swex-bloodrun-2025_11_16-13_09_30.json",
+          "player": "swex",
+          "shots": 440,
+          "hits": 172,
+          "accuracy": 39.09090909090909,
+          "winner": true
+        },
+        {
+          "demo": "9591__2x2Tvprox1mo-vs-k1llsen-bloodrun-2026_02_01-15_32_02.json",
+          "player": "prox1mo",
+          "shots": 630,
+          "hits": 183,
+          "accuracy": 29.047619047619047,
+          "winner": true
+        },
+        {
+          "demo": "9599__ashEGB-vs-Cypher-bloodrun-2026_02_01-15_56_59.json",
+          "player": "EGB",
+          "shots": 247,
+          "hits": 92,
+          "accuracy": 37.24696356275304,
+          "winner": true
+        },
+        {
+          "demo": "9622__AGENT-vs-Liquidrapha-bloodrun-2026_02_08-16_54_00.json",
+          "player": "AGENT",
+          "shots": 526,
+          "hits": 148,
+          "accuracy": 28.136882129277566,
+          "winner": false
+        },
+        {
+          "demo": "9622__AGENT-vs-Liquidrapha-bloodrun-2026_02_08-16_54_00.json",
+          "player": "rapha",
+          "shots": 749,
+          "hits": 281,
+          "accuracy": 37.516688918558074,
+          "winner": true
+        },
+        {
+          "demo": "9631__EGBPAVEL-vs-AGENT-bloodrun-2026_02_08-14_06_26.json",
+          "player": "PAVEL",
+          "shots": 599,
+          "hits": 230,
+          "accuracy": 38.397328881469114,
+          "winner": true
+        },
+        {
+          "demo": "9633__EGBPAVEL-vs-ashEGB-bloodrun-2026_02_08-14_42_30.json",
+          "player": "PAVEL",
+          "shots": 284,
+          "hits": 125,
+          "accuracy": 44.014084507042256,
+          "winner": true
+        },
+        {
+          "demo": "9633__EGBPAVEL-vs-ashEGB-bloodrun-2026_02_08-14_42_30.json",
+          "player": "EGB",
+          "shots": 380,
+          "hits": 88,
+          "accuracy": 23.157894736842106,
+          "winner": false
+        },
+        {
+          "demo": "9637__k1llsen-vs-ashEGB-bloodrun-2026_02_08-12_41_34.json",
+          "player": "EGB",
+          "shots": 434,
+          "hits": 159,
+          "accuracy": 36.63594470046083,
+          "winner": true
+        },
+        {
+          "demo": "9654__baksteen-vs-SV-bloodrun-2025_11_23-11_04_41.json",
+          "player": "baksteen",
+          "shots": 369,
+          "hits": 104,
+          "accuracy": 28.18428184281843,
+          "winner": true
+        },
+        {
+          "demo": "9654__baksteen-vs-SV-bloodrun-2025_11_23-11_04_41.json",
+          "player": "SV",
+          "shots": 359,
+          "hits": 172,
+          "accuracy": 47.910863509749305,
+          "winner": false
+        },
+        {
+          "demo": "9657__fog-vs-ashEGB-bloodrun-2025_11_23-16_02_06.json",
+          "player": "fog",
+          "shots": 210,
+          "hits": 82,
+          "accuracy": 39.04761904761905,
+          "winner": false
+        },
+        {
+          "demo": "9657__fog-vs-ashEGB-bloodrun-2025_11_23-16_02_06.json",
+          "player": "EGB",
+          "shots": 216,
+          "hits": 78,
+          "accuracy": 36.111111111111114,
+          "winner": true
+        },
+        {
+          "demo": "9669__SV-vs-Raisy-bloodrun-2025_11_23-13_00_58.json",
+          "player": "SV",
+          "shots": 824,
+          "hits": 357,
+          "accuracy": 43.3252427184466,
+          "winner": true
+        },
+        {
+          "demo": "9669__SV-vs-Raisy-bloodrun-2025_11_23-13_00_58.json",
+          "player": "Raisy",
+          "shots": 634,
+          "hits": 264,
+          "accuracy": 41.640378548895896,
+          "winner": false
+        },
+        {
+          "demo": "9682__ARSENY-vs-chr-bloodrun-2025_11_30-13_02_48.json",
+          "player": "ARSENY",
+          "shots": 254,
+          "hits": 105,
+          "accuracy": 41.338582677165356,
+          "winner": false
+        },
+        {
+          "demo": "9682__ARSENY-vs-chr-bloodrun-2025_11_30-13_02_48.json",
+          "player": "chr",
+          "shots": 367,
+          "hits": 137,
+          "accuracy": 37.32970027247956,
+          "winner": true
+        },
+        {
+          "demo": "9700__AGENT-vs-Raisy-bloodrun-2025_12_07-12_31_11.json",
+          "player": "Raisy",
+          "shots": 453,
+          "hits": 164,
+          "accuracy": 36.203090507726266,
+          "winner": false
+        },
+        {
+          "demo": "9707__ashEGB-vs-prox1mo-bloodrun-2025_12_07-17_21_20.json",
+          "player": "EGB",
+          "shots": 312,
+          "hits": 132,
+          "accuracy": 42.30769230769231,
+          "winner": true
+        },
+        {
+          "demo": "9707__ashEGB-vs-prox1mo-bloodrun-2025_12_07-17_21_20.json",
+          "player": "prox1mo",
+          "shots": 428,
+          "hits": 129,
+          "accuracy": 30.14018691588785,
+          "winner": false
+        },
+        {
+          "demo": "9717__prox1mo-vs-AGENT-bloodrun-2025_12_07-12_52_37.json",
+          "player": "prox1mo",
+          "shots": 388,
+          "hits": 119,
+          "accuracy": 30.670103092783506,
+          "winner": false
+        },
+        {
+          "demo": "9717__prox1mo-vs-AGENT-bloodrun-2025_12_07-12_52_37.json",
+          "player": "AGENT",
+          "shots": 295,
+          "hits": 98,
+          "accuracy": 33.220338983050844,
+          "winner": true
+        },
+        {
+          "demo": "9725__AGENT-vs-swex-bloodrun-2025_12_14-13_22_15.json",
+          "player": "AGENT",
+          "shots": 423,
+          "hits": 127,
+          "accuracy": 30.023640661938533,
+          "winner": false
+        },
+        {
+          "demo": "9727__baksteen-vs-AGENT-bloodrun-2025_12_14-12_58_32.json",
+          "player": "baksteen",
+          "shots": 520,
+          "hits": 142,
+          "accuracy": 27.307692307692307,
+          "winner": false
+        },
+        {
+          "demo": "9739__SV-vs-EGBPAVEL-bloodrun-2025_12_14-11_05_11.json",
+          "player": "SV",
+          "shots": 460,
+          "hits": 168,
+          "accuracy": 36.52173913043478,
+          "winner": false
+        },
+        {
+          "demo": "9739__SV-vs-EGBPAVEL-bloodrun-2025_12_14-11_05_11.json",
+          "player": "PAVEL",
+          "shots": 447,
+          "hits": 176,
+          "accuracy": 39.37360178970917,
+          "winner": true
+        },
+        {
+          "demo": "9745__baksteen-vs-EGBPAVEL-bloodrun-2025_12_21-13_16_37.json",
+          "player": "baksteen",
+          "shots": 306,
+          "hits": 83,
+          "accuracy": 27.124183006535947,
+          "winner": false
+        },
+        {
+          "demo": "9745__baksteen-vs-EGBPAVEL-bloodrun-2025_12_21-13_16_37.json",
+          "player": "PAVEL",
+          "shots": 290,
+          "hits": 135,
+          "accuracy": 46.55172413793103,
+          "winner": true
+        },
+        {
+          "demo": "9751__EGBPAVEL-vs-prox1mo-bloodrun-2025_12_21-14_54_50.json",
+          "player": "PAVEL",
+          "shots": 301,
+          "hits": 136,
+          "accuracy": 45.182724252491695,
+          "winner": true
+        },
+        {
+          "demo": "9751__EGBPAVEL-vs-prox1mo-bloodrun-2025_12_21-14_54_50.json",
+          "player": "prox1mo",
+          "shots": 290,
+          "hits": 128,
+          "accuracy": 44.13793103448276,
+          "winner": false
+        },
+        {
+          "demo": "9781__swex-vs-EGBPAVEL-bloodrun-2026_01_11-13_41_17.json",
+          "player": "swex",
+          "shots": 328,
+          "hits": 104,
+          "accuracy": 31.70731707317073,
+          "winner": true
+        },
+        {
+          "demo": "9781__swex-vs-EGBPAVEL-bloodrun-2026_01_11-13_41_17.json",
+          "player": "PAVEL",
+          "shots": 370,
+          "hits": 108,
+          "accuracy": 29.18918918918919,
+          "winner": false
+        },
+        {
+          "demo": "9796__Liquidrapha-vs-k1llsen-bloodrun-2026_01_18-14_09_40.json",
+          "player": "rapha",
+          "shots": 347,
+          "hits": 109,
+          "accuracy": 31.412103746397694,
+          "winner": false
+        },
+        {
+          "demo": "9796__Liquidrapha-vs-k1llsen-bloodrun-2026_01_18-14_09_40.json",
+          "player": "k1llsen",
+          "shots": 426,
+          "hits": 141,
+          "accuracy": 33.098591549295776,
+          "winner": true
+        },
+        {
+          "demo": "9802__2x2Tvprox1mo-vs-SV-bloodrun-2026_01_25-16_25_46.json",
+          "player": "prox1mo",
+          "shots": 354,
+          "hits": 118,
+          "accuracy": 33.333333333333336,
+          "winner": true
+        },
+        {
+          "demo": "9802__2x2Tvprox1mo-vs-SV-bloodrun-2026_01_25-16_25_46.json",
+          "player": "SV",
+          "shots": 250,
+          "hits": 100,
+          "accuracy": 40.0,
+          "winner": false
+        },
+        {
+          "demo": "9812__baksteen-vs-ARSENY-bloodrun-2026_01_25-11_25_36.json",
+          "player": "baksteen",
+          "shots": 254,
+          "hits": 82,
+          "accuracy": 32.28346456692913,
+          "winner": true
+        },
+        {
+          "demo": "9817__EGBPAVEL-vs-Liquidrapha-bloodrun-2026_01_25-17_09_24.json",
+          "player": "PAVEL",
+          "shots": 501,
+          "hits": 157,
+          "accuracy": 31.3373253493014,
+          "winner": false
+        },
+        {
+          "demo": "9817__EGBPAVEL-vs-Liquidrapha-bloodrun-2026_01_25-17_09_24.json",
+          "player": "rapha",
+          "shots": 326,
+          "hits": 143,
+          "accuracy": 43.86503067484663,
+          "winner": true
+        },
+        {
+          "demo": "9846__fog-vs-chr-bloodrun-2026_02_15-17_34_23.json",
+          "player": "fog",
+          "shots": 268,
+          "hits": 87,
+          "accuracy": 32.46268656716418,
+          "winner": false
+        },
+        {
+          "demo": "9846__fog-vs-chr-bloodrun-2026_02_15-17_34_23.json",
+          "player": "chr",
+          "shots": 200,
+          "hits": 65,
+          "accuracy": 32.5,
+          "winner": true
+        },
+        {
+          "demo": "9861__SV-vs-fire_bot-bloodrun-2026_02_15-12_03_04.json",
+          "player": "SV",
+          "shots": 795,
+          "hits": 288,
+          "accuracy": 36.22641509433962,
+          "winner": true
+        },
+        {
+          "demo": "9861__SV-vs-fire_bot-bloodrun-2026_02_15-12_03_04.json",
+          "player": "fire_bot",
+          "shots": 439,
+          "hits": 151,
+          "accuracy": 34.39635535307517,
+          "winner": false
+        },
+        {
+          "demo": "9866__AGENT-vs-Cypher-bloodrun-2026_03_07-13_00_38.json",
+          "player": "Cypher",
+          "shots": 345,
+          "hits": 124,
+          "accuracy": 35.94202898550725,
+          "winner": true
+        },
+        {
+          "demo": "9871__ashEGB-vs-k1llsen-bloodrun-2026_03_07-14_53_21.json",
+          "player": "EGB",
+          "shots": 890,
+          "hits": 341,
+          "accuracy": 38.31460674157304,
+          "winner": true
+        },
+        {
+          "demo": "9871__ashEGB-vs-k1llsen-bloodrun-2026_03_07-14_53_21.json",
+          "player": "k1llsen",
+          "shots": 433,
+          "hits": 165,
+          "accuracy": 38.10623556581986,
+          "winner": false
+        },
+        {
+          "demo": "9874__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-16_31_02.json",
+          "player": "Cypher",
+          "shots": 338,
+          "hits": 80,
+          "accuracy": 23.668639053254438,
+          "winner": true
+        },
+        {
+          "demo": "9874__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-16_31_02.json",
+          "player": "rapha",
+          "shots": 358,
+          "hits": 129,
+          "accuracy": 36.03351955307262,
+          "winner": false
+        },
+        {
+          "demo": "9875__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-19_42_54.json",
+          "player": "Cypher",
+          "shots": 354,
+          "hits": 123,
+          "accuracy": 34.74576271186441,
+          "winner": true
+        },
+        {
+          "demo": "9875__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-19_42_54.json",
+          "player": "rapha",
+          "shots": 409,
+          "hits": 158,
+          "accuracy": 38.63080684596577,
+          "winner": false
+        },
+        {
+          "demo": "9886__EGBPAVEL-vs-ashEGB-bloodrun-2026_03_07-11_44_19.json",
+          "player": "PAVEL",
+          "shots": 435,
+          "hits": 143,
+          "accuracy": 32.87356321839081,
+          "winner": false
+        },
+        {
+          "demo": "9886__EGBPAVEL-vs-ashEGB-bloodrun-2026_03_07-11_44_19.json",
+          "player": "EGB",
+          "shots": 436,
+          "hits": 183,
+          "accuracy": 41.972477064220186,
+          "winner": true
+        },
+        {
+          "demo": "9891__k1llsen-vs-AGENT-bloodrun-2026_03_07-11_00_41.json",
+          "player": "AGENT",
+          "shots": 290,
+          "hits": 95,
+          "accuracy": 32.758620689655174,
+          "winner": true
+        },
+        {
+          "demo": "9894__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-13_28_43.json",
+          "player": "rapha",
+          "shots": 453,
+          "hits": 185,
+          "accuracy": 40.83885209713024,
+          "winner": true
+        },
+        {
+          "demo": "9894__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-13_28_43.json",
+          "player": "EGB",
+          "shots": 445,
+          "hits": 133,
+          "accuracy": 29.8876404494382,
+          "winner": false
+        },
+        {
+          "demo": "9895__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-18_03_06.json",
+          "player": "rapha",
+          "shots": 407,
+          "hits": 136,
+          "accuracy": 33.415233415233416,
+          "winner": true
+        },
+        {
+          "demo": "9895__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-18_03_06.json",
+          "player": "EGB",
+          "shots": 447,
+          "hits": 139,
+          "accuracy": 31.09619686800895,
+          "winner": false
+        },
+        {
+          "demo": "9947__PROX1MO-vs-Raisy-bloodrun-2026_05_17-14_15_39.json",
+          "player": "PROX1MO",
+          "shots": 538,
+          "hits": 187,
+          "accuracy": 34.75836431226766,
+          "winner": true
+        },
+        {
+          "demo": "9947__PROX1MO-vs-Raisy-bloodrun-2026_05_17-14_15_39.json",
+          "player": "Raisy",
+          "shots": 630,
+          "hits": 231,
+          "accuracy": 36.666666666666664,
+          "winner": false
+        },
+        {
+          "demo": "9963__Nitrino-vs-chr-bloodrun-2026_05_24-16_07_16.json",
+          "player": "Nitrino",
+          "shots": 479,
+          "hits": 208,
+          "accuracy": 43.42379958246347,
+          "winner": true
+        },
+        {
+          "demo": "9963__Nitrino-vs-chr-bloodrun-2026_05_24-16_07_16.json",
+          "player": "chr",
+          "shots": 218,
+          "hits": 107,
+          "accuracy": 49.08256880733945,
+          "winner": false
+        }
+      ]
+    },
+    "railgun": {
+      "minimum_shots": 20,
+      "groups": {
+        "all": {
+          "samples": 132,
+          "p25": 40.0,
+          "median": 48.44,
+          "p75": 57.58,
+          "p90": 65.0,
+          "pooled_accuracy": 49.29
+        },
+        "winners": {
+          "samples": 68,
+          "p25": 47.57,
+          "median": 54.17,
+          "p75": 60.0,
+          "p90": 66.67,
+          "pooled_accuracy": 53.93
+        }
+      },
+      "entries": [
+        {
+          "demo": "10759__PROX1MO-vs-h3lldown-bloodrun-2026_06_07-12_42_50.json",
+          "player": "PROX1MO",
+          "shots": 20,
+          "hits": 9,
+          "accuracy": 45.0,
+          "winner": true
+        },
+        {
+          "demo": "10759__PROX1MO-vs-h3lldown-bloodrun-2026_06_07-12_42_50.json",
+          "player": "h3lldown",
+          "shots": 23,
+          "hits": 11,
+          "accuracy": 47.82608695652174,
+          "winner": false
+        },
+        {
+          "demo": "10774__k1llsen-vs-ashEGB-bloodrun-2026_08_09-15_51_44.json",
+          "player": "k1llsen",
+          "shots": 45,
+          "hits": 23,
+          "accuracy": 51.111111111111114,
+          "winner": true
+        },
+        {
+          "demo": "10774__k1llsen-vs-ashEGB-bloodrun-2026_08_09-15_51_44.json",
+          "player": "EGB",
+          "shots": 49,
+          "hits": 22,
+          "accuracy": 44.89795918367347,
+          "winner": false
+        },
+        {
+          "demo": "10787__prox1mo-vs-PAVEL-bloodrun-2026_06_14-11_16_41.json",
+          "player": "prox1mo",
+          "shots": 23,
+          "hits": 11,
+          "accuracy": 47.82608695652174,
+          "winner": true
+        },
+        {
+          "demo": "10787__prox1mo-vs-PAVEL-bloodrun-2026_06_14-11_16_41.json",
+          "player": "PAVEL",
+          "shots": 22,
+          "hits": 9,
+          "accuracy": 40.90909090909091,
+          "winner": false
+        },
+        {
+          "demo": "10790__AGENT-vs-baksteen-bloodrun-2026_06_21-14_06_37.json",
+          "player": "AGENT",
+          "shots": 47,
+          "hits": 22,
+          "accuracy": 46.808510638297875,
+          "winner": true
+        },
+        {
+          "demo": "10790__AGENT-vs-baksteen-bloodrun-2026_06_21-14_06_37.json",
+          "player": "baksteen",
+          "shots": 38,
+          "hits": 20,
+          "accuracy": 52.63157894736842,
+          "winner": false
+        },
+        {
+          "demo": "10792__ARSENY-vs-fog-bloodrun-2026_06_21-13_05_25.json",
+          "player": "ARSENY",
+          "shots": 28,
+          "hits": 10,
+          "accuracy": 35.714285714285715,
+          "winner": false
+        },
+        {
+          "demo": "10792__ARSENY-vs-fog-bloodrun-2026_06_21-13_05_25.json",
+          "player": "fog",
+          "shots": 24,
+          "hits": 18,
+          "accuracy": 75.0,
+          "winner": true
+        },
+        {
+          "demo": "10812__k1llsen-vs-PAVEL-bloodrun-2026_06_28-13_48_33.json",
+          "player": "k1llsen",
+          "shots": 33,
+          "hits": 22,
+          "accuracy": 66.66666666666667,
+          "winner": true
+        },
+        {
+          "demo": "10812__k1llsen-vs-PAVEL-bloodrun-2026_06_28-13_48_33.json",
+          "player": "PAVEL",
+          "shots": 20,
+          "hits": 8,
+          "accuracy": 40.0,
+          "winner": false
+        },
+        {
+          "demo": "10823__ashEGB-vs-EGBIcYpheR-bloodrun-2026_07_05-13_54_30.json",
+          "player": "EGB",
+          "shots": 28,
+          "hits": 10,
+          "accuracy": 35.714285714285715,
+          "winner": false
+        },
+        {
+          "demo": "10823__ashEGB-vs-EGBIcYpheR-bloodrun-2026_07_05-13_54_30.json",
+          "player": "cYpheR",
+          "shots": 23,
+          "hits": 12,
+          "accuracy": 52.17391304347826,
+          "winner": true
+        },
+        {
+          "demo": "10830__k1llsen-vs-baksteen-bloodrun-2026_07_05-13_05_05.json",
+          "player": "k1llsen",
+          "shots": 38,
+          "hits": 29,
+          "accuracy": 76.3157894736842,
+          "winner": true
+        },
+        {
+          "demo": "10830__k1llsen-vs-baksteen-bloodrun-2026_07_05-13_05_05.json",
+          "player": "baksteen",
+          "shots": 24,
+          "hits": 9,
+          "accuracy": 37.5,
+          "winner": false
+        },
+        {
+          "demo": "10846__fog-vs-ashEGB-bloodrun-2026_07_19-12_50_33.json",
+          "player": "EGB",
+          "shots": 23,
+          "hits": 13,
+          "accuracy": 56.52173913043478,
+          "winner": true
+        },
+        {
+          "demo": "10867__prox1mo-vs-ashEGB-bloodrun-2026_07_26-16_31_02.json",
+          "player": "prox1mo",
+          "shots": 35,
+          "hits": 21,
+          "accuracy": 60.0,
+          "winner": false
+        },
+        {
+          "demo": "10867__prox1mo-vs-ashEGB-bloodrun-2026_07_26-16_31_02.json",
+          "player": "EGB",
+          "shots": 36,
+          "hits": 18,
+          "accuracy": 50.0,
+          "winner": true
+        },
+        {
+          "demo": "10878__EGBIcYpheR-vs-RedragonAGENT-bloodrun-2026_08_02-11_11_24.json",
+          "player": "cYpheR",
+          "shots": 25,
+          "hits": 8,
+          "accuracy": 32.0,
+          "winner": false
+        },
+        {
+          "demo": "10878__EGBIcYpheR-vs-RedragonAGENT-bloodrun-2026_08_02-11_11_24.json",
+          "player": "AGENT",
+          "shots": 33,
+          "hits": 19,
+          "accuracy": 57.57575757575758,
+          "winner": true
+        },
+        {
+          "demo": "10884__prox1mo-vs-baksteen-bloodrun-2026_08_02-13_02_59.json",
+          "player": "baksteen",
+          "shots": 22,
+          "hits": 13,
+          "accuracy": 59.09090909090909,
+          "winner": true
+        },
+        {
+          "demo": "10912__ABCPAVEL-vs-k1llsen-bloodrun-2026_08_30-11_25_31.json",
+          "player": "PAVEL",
+          "shots": 32,
+          "hits": 17,
+          "accuracy": 53.125,
+          "winner": true
+        },
+        {
+          "demo": "10912__ABCPAVEL-vs-k1llsen-bloodrun-2026_08_30-11_25_31.json",
+          "player": "k1llsen",
+          "shots": 21,
+          "hits": 11,
+          "accuracy": 52.38095238095238,
+          "winner": false
+        },
+        {
+          "demo": "10922__EGBIcYpheR-vs-RedragoNash-bloodrun-2026_08_30-16_12_39.json",
+          "player": "ash",
+          "shots": 23,
+          "hits": 9,
+          "accuracy": 39.130434782608695,
+          "winner": false
+        },
+        {
+          "demo": "10931__RedragonAGENT-vs-EGBIcYpheR-bloodrun-2026_08_29-14_38_17.json",
+          "player": "AGENT",
+          "shots": 37,
+          "hits": 21,
+          "accuracy": 56.75675675675676,
+          "winner": true
+        },
+        {
+          "demo": "10931__RedragonAGENT-vs-EGBIcYpheR-bloodrun-2026_08_29-14_38_17.json",
+          "player": "cYpheR",
+          "shots": 36,
+          "hits": 16,
+          "accuracy": 44.44444444444444,
+          "winner": false
+        },
+        {
+          "demo": "10940__RedragoNash-vs-k1llsen-bloodrun-2026_08_29-14_15_46.json",
+          "player": "ash",
+          "shots": 27,
+          "hits": 10,
+          "accuracy": 37.03703703703704,
+          "winner": false
+        },
+        {
+          "demo": "10940__RedragoNash-vs-k1llsen-bloodrun-2026_08_29-14_15_46.json",
+          "player": "k1llsen",
+          "shots": 33,
+          "hits": 18,
+          "accuracy": 54.54545454545455,
+          "winner": true
+        },
+        {
+          "demo": "9192__Cypher-vs-Nitrino-bloodrun-2025_07_27-16_28_00.json",
+          "player": "Cypher",
+          "shots": 30,
+          "hits": 23,
+          "accuracy": 76.66666666666667,
+          "winner": true
+        },
+        {
+          "demo": "9196__Dispyrosebnum-vs-baksteen-bloodrun-2025_07_27-15_27_35.json",
+          "player": "eb\u00e9num",
+          "shots": 31,
+          "hits": 21,
+          "accuracy": 67.74193548387096,
+          "winner": true
+        },
+        {
+          "demo": "9196__Dispyrosebnum-vs-baksteen-bloodrun-2025_07_27-15_27_35.json",
+          "player": "baksteen",
+          "shots": 20,
+          "hits": 11,
+          "accuracy": 55.0,
+          "winner": false
+        },
+        {
+          "demo": "9214__Cypher-vs-YanabGabla-bloodrun-2025_08_03-12_14_30.json",
+          "player": "Cypher",
+          "shots": 21,
+          "hits": 14,
+          "accuracy": 66.66666666666667,
+          "winner": true
+        },
+        {
+          "demo": "9222__k1llsen-vs-EGBPAVEL-bloodrun-2025_08_03-14_40_24.json",
+          "player": "k1llsen",
+          "shots": 23,
+          "hits": 9,
+          "accuracy": 39.130434782608695,
+          "winner": true
+        },
+        {
+          "demo": "9222__k1llsen-vs-EGBPAVEL-bloodrun-2025_08_03-14_40_24.json",
+          "player": "PAVEL",
+          "shots": 36,
+          "hits": 12,
+          "accuracy": 33.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9237__k1llsen-vs-YanabGabla-bloodrun-2025_08_10-12_23_48.json",
+          "player": "k1llsen",
+          "shots": 21,
+          "hits": 14,
+          "accuracy": 66.66666666666667,
+          "winner": true
+        },
+        {
+          "demo": "9245__AGENT-vs-Dispyrosebnum-bloodrun-2025_08_17-11_42_10.json",
+          "player": "AGENT",
+          "shots": 36,
+          "hits": 22,
+          "accuracy": 61.111111111111114,
+          "winner": true
+        },
+        {
+          "demo": "9245__AGENT-vs-Dispyrosebnum-bloodrun-2025_08_17-11_42_10.json",
+          "player": "eb\u00e9num",
+          "shots": 31,
+          "hits": 11,
+          "accuracy": 35.483870967741936,
+          "winner": false
+        },
+        {
+          "demo": "9248__AGENT-vs-SV-bloodrun-2025_08_17-11_01_08.json",
+          "player": "AGENT",
+          "shots": 27,
+          "hits": 12,
+          "accuracy": 44.44444444444444,
+          "winner": true
+        },
+        {
+          "demo": "9248__AGENT-vs-SV-bloodrun-2025_08_17-11_01_08.json",
+          "player": "SV",
+          "shots": 20,
+          "hits": 8,
+          "accuracy": 40.0,
+          "winner": false
+        },
+        {
+          "demo": "9289__AGENT-vs-EGBPAVEL-bloodrun-2025_09_14-13_19_29.json",
+          "player": "PAVEL",
+          "shots": 20,
+          "hits": 5,
+          "accuracy": 25.0,
+          "winner": false
+        },
+        {
+          "demo": "9293__ashEGB-vs-Dispyrosebnum-bloodrun-2025_09_14-14_27_59.json",
+          "player": "EGB",
+          "shots": 20,
+          "hits": 10,
+          "accuracy": 50.0,
+          "winner": true
+        },
+        {
+          "demo": "9293__ashEGB-vs-Dispyrosebnum-bloodrun-2025_09_14-14_27_59.json",
+          "player": "eb\u00e9num",
+          "shots": 24,
+          "hits": 3,
+          "accuracy": 12.5,
+          "winner": false
+        },
+        {
+          "demo": "9304__Dispyrosebnum-vs-Cypher-bloodrun-2025_09_14-17_38_21.json",
+          "player": "eb\u00e9num",
+          "shots": 22,
+          "hits": 8,
+          "accuracy": 36.36363636363637,
+          "winner": false
+        },
+        {
+          "demo": "9304__Dispyrosebnum-vs-Cypher-bloodrun-2025_09_14-17_38_21.json",
+          "player": "Cypher",
+          "shots": 20,
+          "hits": 10,
+          "accuracy": 50.0,
+          "winner": true
+        },
+        {
+          "demo": "9312__YanabGabla-vs-baksteen-bloodrun-2025_09_14-12_05_14.json",
+          "player": "Gabla",
+          "shots": 28,
+          "hits": 17,
+          "accuracy": 60.714285714285715,
+          "winner": true
+        },
+        {
+          "demo": "9312__YanabGabla-vs-baksteen-bloodrun-2025_09_14-12_05_14.json",
+          "player": "baksteen",
+          "shots": 21,
+          "hits": 10,
+          "accuracy": 47.61904761904762,
+          "winner": false
+        },
+        {
+          "demo": "9321__Cypher-vs-AGENT-bloodrun-2025_09_21-13_58_12.json",
+          "player": "Cypher",
+          "shots": 35,
+          "hits": 16,
+          "accuracy": 45.714285714285715,
+          "winner": false
+        },
+        {
+          "demo": "9321__Cypher-vs-AGENT-bloodrun-2025_09_21-13_58_12.json",
+          "player": "AGENT",
+          "shots": 28,
+          "hits": 13,
+          "accuracy": 46.42857142857143,
+          "winner": true
+        },
+        {
+          "demo": "9346__SV-vs-EGBPAVEL-bloodrun-2025_09_21-12_19_15.json",
+          "player": "SV",
+          "shots": 21,
+          "hits": 8,
+          "accuracy": 38.095238095238095,
+          "winner": false
+        },
+        {
+          "demo": "9346__SV-vs-EGBPAVEL-bloodrun-2025_09_21-12_19_15.json",
+          "player": "PAVEL",
+          "shots": 21,
+          "hits": 8,
+          "accuracy": 38.095238095238095,
+          "winner": true
+        },
+        {
+          "demo": "9364__k1llsen-vs-ashEGB-bloodrun-2025_08_31-15_08_29.json",
+          "player": "k1llsen",
+          "shots": 46,
+          "hits": 22,
+          "accuracy": 47.82608695652174,
+          "winner": false
+        },
+        {
+          "demo": "9364__k1llsen-vs-ashEGB-bloodrun-2025_08_31-15_08_29.json",
+          "player": "ash|EGB",
+          "shots": 33,
+          "hits": 17,
+          "accuracy": 51.515151515151516,
+          "winner": true
+        },
+        {
+          "demo": "9370__SV-vs-fire_bot-bloodrun-2025_08_31-09_55_21.json",
+          "player": "SV",
+          "shots": 39,
+          "hits": 21,
+          "accuracy": 53.84615384615385,
+          "winner": false
+        },
+        {
+          "demo": "9374__AGENT-vs-ashEGB-bloodrun-2025_09_07-11_05_42.json",
+          "player": "AGENT",
+          "shots": 27,
+          "hits": 14,
+          "accuracy": 51.851851851851855,
+          "winner": true
+        },
+        {
+          "demo": "9374__AGENT-vs-ashEGB-bloodrun-2025_09_07-11_05_42.json",
+          "player": "ash|EGB",
+          "shots": 41,
+          "hits": 19,
+          "accuracy": 46.34146341463415,
+          "winner": false
+        },
+        {
+          "demo": "9383__ashEGB-vs-Cypher-bloodrun-2025_09_07-12_35_32.json",
+          "player": "ash|EGB",
+          "shots": 20,
+          "hits": 14,
+          "accuracy": 70.0,
+          "winner": false
+        },
+        {
+          "demo": "9383__ashEGB-vs-Cypher-bloodrun-2025_09_07-12_35_32.json",
+          "player": "Cypher",
+          "shots": 34,
+          "hits": 15,
+          "accuracy": 44.11764705882353,
+          "winner": true
+        },
+        {
+          "demo": "9406__ashEGB-vs-EGBPAVEL-bloodrun-2025_09_28-13_07_35.json",
+          "player": "EGB",
+          "shots": 30,
+          "hits": 18,
+          "accuracy": 60.0,
+          "winner": true
+        },
+        {
+          "demo": "9409__ashEGB-vs-fire_bot-bloodrun-2025_09_28-12_31_15.json",
+          "player": "EGB",
+          "shots": 29,
+          "hits": 11,
+          "accuracy": 37.93103448275862,
+          "winner": false
+        },
+        {
+          "demo": "9409__ashEGB-vs-fire_bot-bloodrun-2025_09_28-12_31_15.json",
+          "player": "fire_bot",
+          "shots": 27,
+          "hits": 16,
+          "accuracy": 59.25925925925926,
+          "winner": true
+        },
+        {
+          "demo": "9412__baksteen-vs-ashEGB-bloodrun-2025_09_28-11_06_37.json",
+          "player": "baksteen",
+          "shots": 24,
+          "hits": 8,
+          "accuracy": 33.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9412__baksteen-vs-ashEGB-bloodrun-2025_09_28-11_06_37.json",
+          "player": "EGB",
+          "shots": 21,
+          "hits": 12,
+          "accuracy": 57.142857142857146,
+          "winner": true
+        },
+        {
+          "demo": "9414__Cypher-vs-baksteen-bloodrun-2025_09_28-11_55_34.json",
+          "player": "Cypher",
+          "shots": 29,
+          "hits": 14,
+          "accuracy": 48.275862068965516,
+          "winner": true
+        },
+        {
+          "demo": "9414__Cypher-vs-baksteen-bloodrun-2025_09_28-11_55_34.json",
+          "player": "baksteen",
+          "shots": 33,
+          "hits": 13,
+          "accuracy": 39.39393939393939,
+          "winner": false
+        },
+        {
+          "demo": "9430__AGENT-vs-Cypher-bloodrun-2025_10_05-15_44_12.json",
+          "player": "AGENT",
+          "shots": 29,
+          "hits": 14,
+          "accuracy": 48.275862068965516,
+          "winner": false
+        },
+        {
+          "demo": "9430__AGENT-vs-Cypher-bloodrun-2025_10_05-15_44_12.json",
+          "player": "Cypher",
+          "shots": 24,
+          "hits": 16,
+          "accuracy": 66.66666666666667,
+          "winner": true
+        },
+        {
+          "demo": "9436__AGENT-vs-k1llsen-bloodrun-2025_10_05-12_09_51.json",
+          "player": "k1llsen",
+          "shots": 33,
+          "hits": 21,
+          "accuracy": 63.63636363636363,
+          "winner": false
+        },
+        {
+          "demo": "9437__AGENT-vs-k1llsen-bloodrun-2025_10_05-14_39_32.json",
+          "player": "AGENT",
+          "shots": 20,
+          "hits": 6,
+          "accuracy": 30.0,
+          "winner": true
+        },
+        {
+          "demo": "9437__AGENT-vs-k1llsen-bloodrun-2025_10_05-14_39_32.json",
+          "player": "k1llsen",
+          "shots": 37,
+          "hits": 25,
+          "accuracy": 67.56756756756756,
+          "winner": false
+        },
+        {
+          "demo": "9443__Cypher-vs-AGENT-bloodrun-2025_10_05-13_36_05.json",
+          "player": "Cypher",
+          "shots": 23,
+          "hits": 14,
+          "accuracy": 60.869565217391305,
+          "winner": false
+        },
+        {
+          "demo": "9451__k1llsen-vs-EGBPAVEL-bloodrun-2025_10_05-13_06_02.json",
+          "player": "k1llsen",
+          "shots": 22,
+          "hits": 15,
+          "accuracy": 68.18181818181819,
+          "winner": true
+        },
+        {
+          "demo": "9485__Dispyrosebnum-vs-fog-bloodrun-2025_11_01-15_02_07.json",
+          "player": "eb\u00e9num",
+          "shots": 24,
+          "hits": 13,
+          "accuracy": 54.166666666666664,
+          "winner": true
+        },
+        {
+          "demo": "9485__Dispyrosebnum-vs-fog-bloodrun-2025_11_01-15_02_07.json",
+          "player": "fog",
+          "shots": 32,
+          "hits": 15,
+          "accuracy": 46.875,
+          "winner": false
+        },
+        {
+          "demo": "9498__ILY4_35reg-vs-baxyc-bloodrun-2025_11_01-15_10_26.json",
+          "player": "ILY4_35reg",
+          "shots": 27,
+          "hits": 11,
+          "accuracy": 40.74074074074074,
+          "winner": true
+        },
+        {
+          "demo": "9498__ILY4_35reg-vs-baxyc-bloodrun-2025_11_01-15_10_26.json",
+          "player": "baxyc",
+          "shots": 21,
+          "hits": 11,
+          "accuracy": 52.38095238095238,
+          "winner": false
+        },
+        {
+          "demo": "9504__sCoopY_-vs-Dispyrosebnum-bloodrun-2025_11_01-15_25_47.json",
+          "player": "sCoopY_",
+          "shots": 33,
+          "hits": 18,
+          "accuracy": 54.54545454545455,
+          "winner": true
+        },
+        {
+          "demo": "9504__sCoopY_-vs-Dispyrosebnum-bloodrun-2025_11_01-15_25_47.json",
+          "player": "eb\u00e9num",
+          "shots": 28,
+          "hits": 9,
+          "accuracy": 32.142857142857146,
+          "winner": false
+        },
+        {
+          "demo": "9516__prox1mo-vs-SV-bloodrun-2025_11_02-13_17_18.json",
+          "player": "prox1mo",
+          "shots": 21,
+          "hits": 9,
+          "accuracy": 42.857142857142854,
+          "winner": false
+        },
+        {
+          "demo": "9516__prox1mo-vs-SV-bloodrun-2025_11_02-13_17_18.json",
+          "player": "SV",
+          "shots": 33,
+          "hits": 19,
+          "accuracy": 57.57575757575758,
+          "winner": true
+        },
+        {
+          "demo": "9521__SV-vs-fire_bot-bloodrun-2025_11_02-14_06_50.json",
+          "player": "SV",
+          "shots": 31,
+          "hits": 17,
+          "accuracy": 54.83870967741935,
+          "winner": true
+        },
+        {
+          "demo": "9521__SV-vs-fire_bot-bloodrun-2025_11_02-14_06_50.json",
+          "player": "fire_bot",
+          "shots": 27,
+          "hits": 11,
+          "accuracy": 40.74074074074074,
+          "winner": false
+        },
+        {
+          "demo": "9523__SV-vs-prox1mo-bloodrun-2025_11_02-15_41_13.json",
+          "player": "SV",
+          "shots": 24,
+          "hits": 14,
+          "accuracy": 58.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9548__0Overqill-vs-kgb-bloodrun-2025_11_09-11_20_10.json",
+          "player": "Overqill",
+          "shots": 22,
+          "hits": 6,
+          "accuracy": 27.272727272727273,
+          "winner": false
+        },
+        {
+          "demo": "9548__0Overqill-vs-kgb-bloodrun-2025_11_09-11_20_10.json",
+          "player": "kgb",
+          "shots": 32,
+          "hits": 13,
+          "accuracy": 40.625,
+          "winner": true
+        },
+        {
+          "demo": "9564__fire_bot-vs-sCoopY_-bloodrun-2025_11_09-12_12_51.json",
+          "player": "sCoopY_",
+          "shots": 26,
+          "hits": 11,
+          "accuracy": 42.30769230769231,
+          "winner": false
+        },
+        {
+          "demo": "9574__baksteen-vs-ashEGB-bloodrun-2025_11_16-15_26_09.json",
+          "player": "baksteen",
+          "shots": 31,
+          "hits": 18,
+          "accuracy": 58.064516129032256,
+          "winner": false
+        },
+        {
+          "demo": "9574__baksteen-vs-ashEGB-bloodrun-2025_11_16-15_26_09.json",
+          "player": "EGB",
+          "shots": 20,
+          "hits": 12,
+          "accuracy": 60.0,
+          "winner": true
+        },
+        {
+          "demo": "9591__2x2Tvprox1mo-vs-k1llsen-bloodrun-2026_02_01-15_32_02.json",
+          "player": "prox1mo",
+          "shots": 20,
+          "hits": 13,
+          "accuracy": 65.0,
+          "winner": true
+        },
+        {
+          "demo": "9591__2x2Tvprox1mo-vs-k1llsen-bloodrun-2026_02_01-15_32_02.json",
+          "player": "k1llsen",
+          "shots": 36,
+          "hits": 16,
+          "accuracy": 44.44444444444444,
+          "winner": false
+        },
+        {
+          "demo": "9622__AGENT-vs-Liquidrapha-bloodrun-2026_02_08-16_54_00.json",
+          "player": "AGENT",
+          "shots": 36,
+          "hits": 15,
+          "accuracy": 41.666666666666664,
+          "winner": false
+        },
+        {
+          "demo": "9622__AGENT-vs-Liquidrapha-bloodrun-2026_02_08-16_54_00.json",
+          "player": "rapha",
+          "shots": 34,
+          "hits": 21,
+          "accuracy": 61.76470588235294,
+          "winner": true
+        },
+        {
+          "demo": "9631__EGBPAVEL-vs-AGENT-bloodrun-2026_02_08-14_06_26.json",
+          "player": "PAVEL",
+          "shots": 23,
+          "hits": 9,
+          "accuracy": 39.130434782608695,
+          "winner": true
+        },
+        {
+          "demo": "9633__EGBPAVEL-vs-ashEGB-bloodrun-2026_02_08-14_42_30.json",
+          "player": "EGB",
+          "shots": 21,
+          "hits": 12,
+          "accuracy": 57.142857142857146,
+          "winner": false
+        },
+        {
+          "demo": "9637__k1llsen-vs-ashEGB-bloodrun-2026_02_08-12_41_34.json",
+          "player": "EGB",
+          "shots": 26,
+          "hits": 16,
+          "accuracy": 61.53846153846154,
+          "winner": true
+        },
+        {
+          "demo": "9654__baksteen-vs-SV-bloodrun-2025_11_23-11_04_41.json",
+          "player": "baksteen",
+          "shots": 27,
+          "hits": 15,
+          "accuracy": 55.55555555555556,
+          "winner": true
+        },
+        {
+          "demo": "9654__baksteen-vs-SV-bloodrun-2025_11_23-11_04_41.json",
+          "player": "SV",
+          "shots": 27,
+          "hits": 9,
+          "accuracy": 33.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9682__ARSENY-vs-chr-bloodrun-2025_11_30-13_02_48.json",
+          "player": "ARSENY",
+          "shots": 21,
+          "hits": 9,
+          "accuracy": 42.857142857142854,
+          "winner": false
+        },
+        {
+          "demo": "9682__ARSENY-vs-chr-bloodrun-2025_11_30-13_02_48.json",
+          "player": "chr",
+          "shots": 37,
+          "hits": 16,
+          "accuracy": 43.24324324324324,
+          "winner": true
+        },
+        {
+          "demo": "9700__AGENT-vs-Raisy-bloodrun-2025_12_07-12_31_11.json",
+          "player": "AGENT",
+          "shots": 40,
+          "hits": 26,
+          "accuracy": 65.0,
+          "winner": true
+        },
+        {
+          "demo": "9707__ashEGB-vs-prox1mo-bloodrun-2025_12_07-17_21_20.json",
+          "player": "EGB",
+          "shots": 31,
+          "hits": 14,
+          "accuracy": 45.16129032258065,
+          "winner": true
+        },
+        {
+          "demo": "9707__ashEGB-vs-prox1mo-bloodrun-2025_12_07-17_21_20.json",
+          "player": "prox1mo",
+          "shots": 31,
+          "hits": 9,
+          "accuracy": 29.032258064516128,
+          "winner": false
+        },
+        {
+          "demo": "9717__prox1mo-vs-AGENT-bloodrun-2025_12_07-12_52_37.json",
+          "player": "prox1mo",
+          "shots": 39,
+          "hits": 15,
+          "accuracy": 38.46153846153846,
+          "winner": false
+        },
+        {
+          "demo": "9717__prox1mo-vs-AGENT-bloodrun-2025_12_07-12_52_37.json",
+          "player": "AGENT",
+          "shots": 28,
+          "hits": 15,
+          "accuracy": 53.57142857142857,
+          "winner": true
+        },
+        {
+          "demo": "9727__baksteen-vs-AGENT-bloodrun-2025_12_14-12_58_32.json",
+          "player": "baksteen",
+          "shots": 33,
+          "hits": 10,
+          "accuracy": 30.303030303030305,
+          "winner": false
+        },
+        {
+          "demo": "9727__baksteen-vs-AGENT-bloodrun-2025_12_14-12_58_32.json",
+          "player": "AGENT",
+          "shots": 38,
+          "hits": 16,
+          "accuracy": 42.10526315789474,
+          "winner": true
+        },
+        {
+          "demo": "9745__baksteen-vs-EGBPAVEL-bloodrun-2025_12_21-13_16_37.json",
+          "player": "baksteen",
+          "shots": 38,
+          "hits": 17,
+          "accuracy": 44.73684210526316,
+          "winner": false
+        },
+        {
+          "demo": "9745__baksteen-vs-EGBPAVEL-bloodrun-2025_12_21-13_16_37.json",
+          "player": "PAVEL",
+          "shots": 35,
+          "hits": 21,
+          "accuracy": 60.0,
+          "winner": true
+        },
+        {
+          "demo": "9781__swex-vs-EGBPAVEL-bloodrun-2026_01_11-13_41_17.json",
+          "player": "swex",
+          "shots": 24,
+          "hits": 13,
+          "accuracy": 54.166666666666664,
+          "winner": true
+        },
+        {
+          "demo": "9796__Liquidrapha-vs-k1llsen-bloodrun-2026_01_18-14_09_40.json",
+          "player": "rapha",
+          "shots": 26,
+          "hits": 9,
+          "accuracy": 34.61538461538461,
+          "winner": false
+        },
+        {
+          "demo": "9796__Liquidrapha-vs-k1llsen-bloodrun-2026_01_18-14_09_40.json",
+          "player": "k1llsen",
+          "shots": 49,
+          "hits": 27,
+          "accuracy": 55.10204081632653,
+          "winner": true
+        },
+        {
+          "demo": "9802__2x2Tvprox1mo-vs-SV-bloodrun-2026_01_25-16_25_46.json",
+          "player": "SV",
+          "shots": 29,
+          "hits": 11,
+          "accuracy": 37.93103448275862,
+          "winner": false
+        },
+        {
+          "demo": "9812__baksteen-vs-ARSENY-bloodrun-2026_01_25-11_25_36.json",
+          "player": "baksteen",
+          "shots": 46,
+          "hits": 24,
+          "accuracy": 52.17391304347826,
+          "winner": true
+        },
+        {
+          "demo": "9812__baksteen-vs-ARSENY-bloodrun-2026_01_25-11_25_36.json",
+          "player": "ARSENY",
+          "shots": 29,
+          "hits": 17,
+          "accuracy": 58.62068965517241,
+          "winner": false
+        },
+        {
+          "demo": "9817__EGBPAVEL-vs-Liquidrapha-bloodrun-2026_01_25-17_09_24.json",
+          "player": "PAVEL",
+          "shots": 30,
+          "hits": 14,
+          "accuracy": 46.666666666666664,
+          "winner": false
+        },
+        {
+          "demo": "9817__EGBPAVEL-vs-Liquidrapha-bloodrun-2026_01_25-17_09_24.json",
+          "player": "rapha",
+          "shots": 20,
+          "hits": 6,
+          "accuracy": 30.0,
+          "winner": true
+        },
+        {
+          "demo": "9846__fog-vs-chr-bloodrun-2026_02_15-17_34_23.json",
+          "player": "chr",
+          "shots": 23,
+          "hits": 13,
+          "accuracy": 56.52173913043478,
+          "winner": true
+        },
+        {
+          "demo": "9861__SV-vs-fire_bot-bloodrun-2026_02_15-12_03_04.json",
+          "player": "SV",
+          "shots": 21,
+          "hits": 11,
+          "accuracy": 52.38095238095238,
+          "winner": true
+        },
+        {
+          "demo": "9871__ashEGB-vs-k1llsen-bloodrun-2026_03_07-14_53_21.json",
+          "player": "EGB",
+          "shots": 26,
+          "hits": 10,
+          "accuracy": 38.46153846153846,
+          "winner": true
+        },
+        {
+          "demo": "9871__ashEGB-vs-k1llsen-bloodrun-2026_03_07-14_53_21.json",
+          "player": "k1llsen",
+          "shots": 25,
+          "hits": 12,
+          "accuracy": 48.0,
+          "winner": false
+        },
+        {
+          "demo": "9874__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-16_31_02.json",
+          "player": "Cypher",
+          "shots": 33,
+          "hits": 19,
+          "accuracy": 57.57575757575758,
+          "winner": true
+        },
+        {
+          "demo": "9874__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-16_31_02.json",
+          "player": "rapha",
+          "shots": 33,
+          "hits": 18,
+          "accuracy": 54.54545454545455,
+          "winner": false
+        },
+        {
+          "demo": "9875__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-19_42_54.json",
+          "player": "Cypher",
+          "shots": 31,
+          "hits": 15,
+          "accuracy": 48.38709677419355,
+          "winner": true
+        },
+        {
+          "demo": "9875__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-19_42_54.json",
+          "player": "rapha",
+          "shots": 28,
+          "hits": 10,
+          "accuracy": 35.714285714285715,
+          "winner": false
+        },
+        {
+          "demo": "9886__EGBPAVEL-vs-ashEGB-bloodrun-2026_03_07-11_44_19.json",
+          "player": "PAVEL",
+          "shots": 26,
+          "hits": 14,
+          "accuracy": 53.84615384615385,
+          "winner": false
+        },
+        {
+          "demo": "9886__EGBPAVEL-vs-ashEGB-bloodrun-2026_03_07-11_44_19.json",
+          "player": "EGB",
+          "shots": 23,
+          "hits": 9,
+          "accuracy": 39.130434782608695,
+          "winner": true
+        },
+        {
+          "demo": "9891__k1llsen-vs-AGENT-bloodrun-2026_03_07-11_00_41.json",
+          "player": "k1llsen",
+          "shots": 23,
+          "hits": 15,
+          "accuracy": 65.21739130434783,
+          "winner": false
+        },
+        {
+          "demo": "9891__k1llsen-vs-AGENT-bloodrun-2026_03_07-11_00_41.json",
+          "player": "AGENT",
+          "shots": 33,
+          "hits": 16,
+          "accuracy": 48.484848484848484,
+          "winner": true
+        },
+        {
+          "demo": "9894__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-13_28_43.json",
+          "player": "EGB",
+          "shots": 20,
+          "hits": 13,
+          "accuracy": 65.0,
+          "winner": false
+        },
+        {
+          "demo": "9895__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-18_03_06.json",
+          "player": "rapha",
+          "shots": 27,
+          "hits": 14,
+          "accuracy": 51.851851851851855,
+          "winner": true
+        },
+        {
+          "demo": "9895__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-18_03_06.json",
+          "player": "EGB",
+          "shots": 40,
+          "hits": 12,
+          "accuracy": 30.0,
+          "winner": false
+        },
+        {
+          "demo": "9963__Nitrino-vs-chr-bloodrun-2026_05_24-16_07_16.json",
+          "player": "Nitrino",
+          "shots": 21,
+          "hits": 13,
+          "accuracy": 61.904761904761905,
+          "winner": true
+        }
+      ]
+    },
+    "rocketLauncher": {
+      "minimum_shots": 30,
+      "groups": {
+        "all": {
+          "samples": 188,
+          "p25": 28.02,
+          "median": 33.33,
+          "p75": 40.0,
+          "p90": 44.96,
+          "pooled_accuracy": 33.46
+        },
+        "winners": {
+          "samples": 96,
+          "p25": 28.52,
+          "median": 33.71,
+          "p75": 40.0,
+          "p90": 45.02,
+          "pooled_accuracy": 34.2
+        }
+      },
+      "entries": [
+        {
+          "demo": "10759__PROX1MO-vs-h3lldown-bloodrun-2026_06_07-12_42_50.json",
+          "player": "PROX1MO",
+          "shots": 66,
+          "hits": 31,
+          "accuracy": 46.96969696969697,
+          "winner": true
+        },
+        {
+          "demo": "10759__PROX1MO-vs-h3lldown-bloodrun-2026_06_07-12_42_50.json",
+          "player": "h3lldown",
+          "shots": 53,
+          "hits": 17,
+          "accuracy": 32.075471698113205,
+          "winner": false
+        },
+        {
+          "demo": "10774__k1llsen-vs-ashEGB-bloodrun-2026_08_09-15_51_44.json",
+          "player": "k1llsen",
+          "shots": 70,
+          "hits": 30,
+          "accuracy": 42.857142857142854,
+          "winner": true
+        },
+        {
+          "demo": "10774__k1llsen-vs-ashEGB-bloodrun-2026_08_09-15_51_44.json",
+          "player": "EGB",
+          "shots": 67,
+          "hits": 7,
+          "accuracy": 10.447761194029852,
+          "winner": false
+        },
+        {
+          "demo": "10778__ashEGB-vs-baksteen-bloodrun-2026_06_14-13_25_13.json",
+          "player": "EGB",
+          "shots": 39,
+          "hits": 14,
+          "accuracy": 35.8974358974359,
+          "winner": true
+        },
+        {
+          "demo": "10787__prox1mo-vs-PAVEL-bloodrun-2026_06_14-11_16_41.json",
+          "player": "prox1mo",
+          "shots": 81,
+          "hits": 20,
+          "accuracy": 24.691358024691358,
+          "winner": true
+        },
+        {
+          "demo": "10787__prox1mo-vs-PAVEL-bloodrun-2026_06_14-11_16_41.json",
+          "player": "PAVEL",
+          "shots": 104,
+          "hits": 31,
+          "accuracy": 29.807692307692307,
+          "winner": false
+        },
+        {
+          "demo": "10790__AGENT-vs-baksteen-bloodrun-2026_06_21-14_06_37.json",
+          "player": "AGENT",
+          "shots": 79,
+          "hits": 27,
+          "accuracy": 34.177215189873415,
+          "winner": true
+        },
+        {
+          "demo": "10790__AGENT-vs-baksteen-bloodrun-2026_06_21-14_06_37.json",
+          "player": "baksteen",
+          "shots": 84,
+          "hits": 28,
+          "accuracy": 33.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "10792__ARSENY-vs-fog-bloodrun-2026_06_21-13_05_25.json",
+          "player": "ARSENY",
+          "shots": 34,
+          "hits": 16,
+          "accuracy": 47.05882352941177,
+          "winner": false
+        },
+        {
+          "demo": "10792__ARSENY-vs-fog-bloodrun-2026_06_21-13_05_25.json",
+          "player": "fog",
+          "shots": 56,
+          "hits": 15,
+          "accuracy": 26.785714285714285,
+          "winner": true
+        },
+        {
+          "demo": "10812__k1llsen-vs-PAVEL-bloodrun-2026_06_28-13_48_33.json",
+          "player": "k1llsen",
+          "shots": 53,
+          "hits": 11,
+          "accuracy": 20.754716981132077,
+          "winner": true
+        },
+        {
+          "demo": "10812__k1llsen-vs-PAVEL-bloodrun-2026_06_28-13_48_33.json",
+          "player": "PAVEL",
+          "shots": 44,
+          "hits": 6,
+          "accuracy": 13.636363636363637,
+          "winner": false
+        },
+        {
+          "demo": "10823__ashEGB-vs-EGBIcYpheR-bloodrun-2026_07_05-13_54_30.json",
+          "player": "EGB",
+          "shots": 43,
+          "hits": 10,
+          "accuracy": 23.25581395348837,
+          "winner": false
+        },
+        {
+          "demo": "10823__ashEGB-vs-EGBIcYpheR-bloodrun-2026_07_05-13_54_30.json",
+          "player": "cYpheR",
+          "shots": 61,
+          "hits": 13,
+          "accuracy": 21.311475409836067,
+          "winner": true
+        },
+        {
+          "demo": "10830__k1llsen-vs-baksteen-bloodrun-2026_07_05-13_05_05.json",
+          "player": "k1llsen",
+          "shots": 53,
+          "hits": 21,
+          "accuracy": 39.62264150943396,
+          "winner": true
+        },
+        {
+          "demo": "10830__k1llsen-vs-baksteen-bloodrun-2026_07_05-13_05_05.json",
+          "player": "baksteen",
+          "shots": 90,
+          "hits": 26,
+          "accuracy": 28.88888888888889,
+          "winner": false
+        },
+        {
+          "demo": "10846__fog-vs-ashEGB-bloodrun-2026_07_19-12_50_33.json",
+          "player": "fog",
+          "shots": 38,
+          "hits": 16,
+          "accuracy": 42.10526315789474,
+          "winner": false
+        },
+        {
+          "demo": "10846__fog-vs-ashEGB-bloodrun-2026_07_19-12_50_33.json",
+          "player": "EGB",
+          "shots": 89,
+          "hits": 30,
+          "accuracy": 33.70786516853933,
+          "winner": true
+        },
+        {
+          "demo": "10850__fog-vs-PAVEL-bloodrun-2026_07_19-11_33_19.json",
+          "player": "fog",
+          "shots": 56,
+          "hits": 17,
+          "accuracy": 30.357142857142858,
+          "winner": false
+        },
+        {
+          "demo": "10850__fog-vs-PAVEL-bloodrun-2026_07_19-11_33_19.json",
+          "player": "PAVEL",
+          "shots": 46,
+          "hits": 7,
+          "accuracy": 15.217391304347826,
+          "winner": true
+        },
+        {
+          "demo": "10867__prox1mo-vs-ashEGB-bloodrun-2026_07_26-16_31_02.json",
+          "player": "prox1mo",
+          "shots": 44,
+          "hits": 14,
+          "accuracy": 31.818181818181817,
+          "winner": false
+        },
+        {
+          "demo": "10867__prox1mo-vs-ashEGB-bloodrun-2026_07_26-16_31_02.json",
+          "player": "EGB",
+          "shots": 73,
+          "hits": 22,
+          "accuracy": 30.136986301369863,
+          "winner": true
+        },
+        {
+          "demo": "10878__EGBIcYpheR-vs-RedragonAGENT-bloodrun-2026_08_02-11_11_24.json",
+          "player": "cYpheR",
+          "shots": 43,
+          "hits": 11,
+          "accuracy": 25.58139534883721,
+          "winner": false
+        },
+        {
+          "demo": "10878__EGBIcYpheR-vs-RedragonAGENT-bloodrun-2026_08_02-11_11_24.json",
+          "player": "AGENT",
+          "shots": 72,
+          "hits": 18,
+          "accuracy": 25.0,
+          "winner": true
+        },
+        {
+          "demo": "10884__prox1mo-vs-baksteen-bloodrun-2026_08_02-13_02_59.json",
+          "player": "prox1mo",
+          "shots": 75,
+          "hits": 30,
+          "accuracy": 40.0,
+          "winner": false
+        },
+        {
+          "demo": "10884__prox1mo-vs-baksteen-bloodrun-2026_08_02-13_02_59.json",
+          "player": "baksteen",
+          "shots": 78,
+          "hits": 35,
+          "accuracy": 44.87179487179487,
+          "winner": true
+        },
+        {
+          "demo": "10912__ABCPAVEL-vs-k1llsen-bloodrun-2026_08_30-11_25_31.json",
+          "player": "PAVEL",
+          "shots": 68,
+          "hits": 27,
+          "accuracy": 39.705882352941174,
+          "winner": true
+        },
+        {
+          "demo": "10912__ABCPAVEL-vs-k1llsen-bloodrun-2026_08_30-11_25_31.json",
+          "player": "k1llsen",
+          "shots": 85,
+          "hits": 23,
+          "accuracy": 27.058823529411764,
+          "winner": false
+        },
+        {
+          "demo": "10916__ABCPAVEL-vs-RedragoNash-bloodrun-2026_08_30-15_34_22.json",
+          "player": "PAVEL",
+          "shots": 44,
+          "hits": 24,
+          "accuracy": 54.54545454545455,
+          "winner": false
+        },
+        {
+          "demo": "10916__ABCPAVEL-vs-RedragoNash-bloodrun-2026_08_30-15_34_22.json",
+          "player": "ash",
+          "shots": 47,
+          "hits": 22,
+          "accuracy": 46.808510638297875,
+          "winner": true
+        },
+        {
+          "demo": "10920__EGBIcYpheR-vs-k1llsen-bloodrun-2026_08_29-15_37_15.json",
+          "player": "cYpheR",
+          "shots": 44,
+          "hits": 13,
+          "accuracy": 29.545454545454547,
+          "winner": true
+        },
+        {
+          "demo": "10920__EGBIcYpheR-vs-k1llsen-bloodrun-2026_08_29-15_37_15.json",
+          "player": "k1llsen",
+          "shots": 54,
+          "hits": 28,
+          "accuracy": 51.851851851851855,
+          "winner": false
+        },
+        {
+          "demo": "10922__EGBIcYpheR-vs-RedragoNash-bloodrun-2026_08_30-16_12_39.json",
+          "player": "cYpheR",
+          "shots": 69,
+          "hits": 33,
+          "accuracy": 47.82608695652174,
+          "winner": true
+        },
+        {
+          "demo": "10922__EGBIcYpheR-vs-RedragoNash-bloodrun-2026_08_30-16_12_39.json",
+          "player": "ash",
+          "shots": 57,
+          "hits": 18,
+          "accuracy": 31.57894736842105,
+          "winner": false
+        },
+        {
+          "demo": "10931__RedragonAGENT-vs-EGBIcYpheR-bloodrun-2026_08_29-14_38_17.json",
+          "player": "AGENT",
+          "shots": 35,
+          "hits": 13,
+          "accuracy": 37.142857142857146,
+          "winner": true
+        },
+        {
+          "demo": "10931__RedragonAGENT-vs-EGBIcYpheR-bloodrun-2026_08_29-14_38_17.json",
+          "player": "cYpheR",
+          "shots": 46,
+          "hits": 13,
+          "accuracy": 28.26086956521739,
+          "winner": false
+        },
+        {
+          "demo": "10940__RedragoNash-vs-k1llsen-bloodrun-2026_08_29-14_15_46.json",
+          "player": "ash",
+          "shots": 65,
+          "hits": 22,
+          "accuracy": 33.84615384615385,
+          "winner": false
+        },
+        {
+          "demo": "10940__RedragoNash-vs-k1llsen-bloodrun-2026_08_29-14_15_46.json",
+          "player": "k1llsen",
+          "shots": 57,
+          "hits": 20,
+          "accuracy": 35.08771929824562,
+          "winner": true
+        },
+        {
+          "demo": "9192__Cypher-vs-Nitrino-bloodrun-2025_07_27-16_28_00.json",
+          "player": "Cypher",
+          "shots": 64,
+          "hits": 20,
+          "accuracy": 31.25,
+          "winner": true
+        },
+        {
+          "demo": "9192__Cypher-vs-Nitrino-bloodrun-2025_07_27-16_28_00.json",
+          "player": "Nitrino",
+          "shots": 58,
+          "hits": 22,
+          "accuracy": 37.93103448275862,
+          "winner": false
+        },
+        {
+          "demo": "9196__Dispyrosebnum-vs-baksteen-bloodrun-2025_07_27-15_27_35.json",
+          "player": "eb\u00e9num",
+          "shots": 119,
+          "hits": 43,
+          "accuracy": 36.134453781512605,
+          "winner": true
+        },
+        {
+          "demo": "9196__Dispyrosebnum-vs-baksteen-bloodrun-2025_07_27-15_27_35.json",
+          "player": "baksteen",
+          "shots": 82,
+          "hits": 30,
+          "accuracy": 36.58536585365854,
+          "winner": false
+        },
+        {
+          "demo": "9214__Cypher-vs-YanabGabla-bloodrun-2025_08_03-12_14_30.json",
+          "player": "Cypher",
+          "shots": 44,
+          "hits": 7,
+          "accuracy": 15.909090909090908,
+          "winner": true
+        },
+        {
+          "demo": "9222__k1llsen-vs-EGBPAVEL-bloodrun-2025_08_03-14_40_24.json",
+          "player": "k1llsen",
+          "shots": 69,
+          "hits": 37,
+          "accuracy": 53.6231884057971,
+          "winner": true
+        },
+        {
+          "demo": "9222__k1llsen-vs-EGBPAVEL-bloodrun-2025_08_03-14_40_24.json",
+          "player": "PAVEL",
+          "shots": 47,
+          "hits": 21,
+          "accuracy": 44.680851063829785,
+          "winner": false
+        },
+        {
+          "demo": "9237__k1llsen-vs-YanabGabla-bloodrun-2025_08_10-12_23_48.json",
+          "player": "k1llsen",
+          "shots": 65,
+          "hits": 26,
+          "accuracy": 40.0,
+          "winner": true
+        },
+        {
+          "demo": "9237__k1llsen-vs-YanabGabla-bloodrun-2025_08_10-12_23_48.json",
+          "player": "Gabla",
+          "shots": 44,
+          "hits": 26,
+          "accuracy": 59.09090909090909,
+          "winner": false
+        },
+        {
+          "demo": "9245__AGENT-vs-Dispyrosebnum-bloodrun-2025_08_17-11_42_10.json",
+          "player": "AGENT",
+          "shots": 113,
+          "hits": 48,
+          "accuracy": 42.47787610619469,
+          "winner": true
+        },
+        {
+          "demo": "9245__AGENT-vs-Dispyrosebnum-bloodrun-2025_08_17-11_42_10.json",
+          "player": "eb\u00e9num",
+          "shots": 60,
+          "hits": 26,
+          "accuracy": 43.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9248__AGENT-vs-SV-bloodrun-2025_08_17-11_01_08.json",
+          "player": "AGENT",
+          "shots": 60,
+          "hits": 23,
+          "accuracy": 38.333333333333336,
+          "winner": true
+        },
+        {
+          "demo": "9248__AGENT-vs-SV-bloodrun-2025_08_17-11_01_08.json",
+          "player": "SV",
+          "shots": 70,
+          "hits": 7,
+          "accuracy": 10.0,
+          "winner": false
+        },
+        {
+          "demo": "9271__AGENT-vs-baksteen-bloodrun-2025_08_24-11_14_20.json",
+          "player": "AGENT",
+          "shots": 54,
+          "hits": 24,
+          "accuracy": 44.44444444444444,
+          "winner": true
+        },
+        {
+          "demo": "9271__AGENT-vs-baksteen-bloodrun-2025_08_24-11_14_20.json",
+          "player": "baksteen",
+          "shots": 35,
+          "hits": 16,
+          "accuracy": 45.714285714285715,
+          "winner": false
+        },
+        {
+          "demo": "9274__Dispyrosebnum-vs-k1llsen-bloodrun-2025_08_24-14_33_51.json",
+          "player": "eb\u00e9num",
+          "shots": 99,
+          "hits": 36,
+          "accuracy": 36.36363636363637,
+          "winner": true
+        },
+        {
+          "demo": "9274__Dispyrosebnum-vs-k1llsen-bloodrun-2025_08_24-14_33_51.json",
+          "player": "k1llsen",
+          "shots": 84,
+          "hits": 28,
+          "accuracy": 33.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9289__AGENT-vs-EGBPAVEL-bloodrun-2025_09_14-13_19_29.json",
+          "player": "AGENT",
+          "shots": 53,
+          "hits": 29,
+          "accuracy": 54.716981132075475,
+          "winner": true
+        },
+        {
+          "demo": "9289__AGENT-vs-EGBPAVEL-bloodrun-2025_09_14-13_19_29.json",
+          "player": "PAVEL",
+          "shots": 36,
+          "hits": 13,
+          "accuracy": 36.111111111111114,
+          "winner": false
+        },
+        {
+          "demo": "9293__ashEGB-vs-Dispyrosebnum-bloodrun-2025_09_14-14_27_59.json",
+          "player": "EGB",
+          "shots": 59,
+          "hits": 15,
+          "accuracy": 25.423728813559322,
+          "winner": true
+        },
+        {
+          "demo": "9293__ashEGB-vs-Dispyrosebnum-bloodrun-2025_09_14-14_27_59.json",
+          "player": "eb\u00e9num",
+          "shots": 58,
+          "hits": 14,
+          "accuracy": 24.137931034482758,
+          "winner": false
+        },
+        {
+          "demo": "9304__Dispyrosebnum-vs-Cypher-bloodrun-2025_09_14-17_38_21.json",
+          "player": "eb\u00e9num",
+          "shots": 89,
+          "hits": 29,
+          "accuracy": 32.58426966292135,
+          "winner": false
+        },
+        {
+          "demo": "9304__Dispyrosebnum-vs-Cypher-bloodrun-2025_09_14-17_38_21.json",
+          "player": "Cypher",
+          "shots": 117,
+          "hits": 42,
+          "accuracy": 35.8974358974359,
+          "winner": true
+        },
+        {
+          "demo": "9312__YanabGabla-vs-baksteen-bloodrun-2025_09_14-12_05_14.json",
+          "player": "Gabla",
+          "shots": 45,
+          "hits": 18,
+          "accuracy": 40.0,
+          "winner": true
+        },
+        {
+          "demo": "9312__YanabGabla-vs-baksteen-bloodrun-2025_09_14-12_05_14.json",
+          "player": "baksteen",
+          "shots": 43,
+          "hits": 20,
+          "accuracy": 46.51162790697674,
+          "winner": false
+        },
+        {
+          "demo": "9321__Cypher-vs-AGENT-bloodrun-2025_09_21-13_58_12.json",
+          "player": "Cypher",
+          "shots": 133,
+          "hits": 39,
+          "accuracy": 29.32330827067669,
+          "winner": false
+        },
+        {
+          "demo": "9321__Cypher-vs-AGENT-bloodrun-2025_09_21-13_58_12.json",
+          "player": "AGENT",
+          "shots": 119,
+          "hits": 31,
+          "accuracy": 26.050420168067227,
+          "winner": true
+        },
+        {
+          "demo": "9337__Nitrino-vs-YanabGabla-bloodrun-2025_09_21-17_23_34.json",
+          "player": "Nitrino",
+          "shots": 55,
+          "hits": 25,
+          "accuracy": 45.45454545454545,
+          "winner": false
+        },
+        {
+          "demo": "9337__Nitrino-vs-YanabGabla-bloodrun-2025_09_21-17_23_34.json",
+          "player": "Gabla",
+          "shots": 46,
+          "hits": 28,
+          "accuracy": 60.869565217391305,
+          "winner": true
+        },
+        {
+          "demo": "9346__SV-vs-EGBPAVEL-bloodrun-2025_09_21-12_19_15.json",
+          "player": "SV",
+          "shots": 47,
+          "hits": 10,
+          "accuracy": 21.27659574468085,
+          "winner": false
+        },
+        {
+          "demo": "9346__SV-vs-EGBPAVEL-bloodrun-2025_09_21-12_19_15.json",
+          "player": "PAVEL",
+          "shots": 60,
+          "hits": 18,
+          "accuracy": 30.0,
+          "winner": true
+        },
+        {
+          "demo": "9364__k1llsen-vs-ashEGB-bloodrun-2025_08_31-15_08_29.json",
+          "player": "k1llsen",
+          "shots": 80,
+          "hits": 22,
+          "accuracy": 27.5,
+          "winner": false
+        },
+        {
+          "demo": "9364__k1llsen-vs-ashEGB-bloodrun-2025_08_31-15_08_29.json",
+          "player": "ash|EGB",
+          "shots": 92,
+          "hits": 29,
+          "accuracy": 31.52173913043478,
+          "winner": true
+        },
+        {
+          "demo": "9370__SV-vs-fire_bot-bloodrun-2025_08_31-09_55_21.json",
+          "player": "SV",
+          "shots": 89,
+          "hits": 19,
+          "accuracy": 21.348314606741575,
+          "winner": false
+        },
+        {
+          "demo": "9370__SV-vs-fire_bot-bloodrun-2025_08_31-09_55_21.json",
+          "player": "fire_bot",
+          "shots": 67,
+          "hits": 19,
+          "accuracy": 28.35820895522388,
+          "winner": true
+        },
+        {
+          "demo": "9374__AGENT-vs-ashEGB-bloodrun-2025_09_07-11_05_42.json",
+          "player": "AGENT",
+          "shots": 62,
+          "hits": 28,
+          "accuracy": 45.16129032258065,
+          "winner": true
+        },
+        {
+          "demo": "9374__AGENT-vs-ashEGB-bloodrun-2025_09_07-11_05_42.json",
+          "player": "ash|EGB",
+          "shots": 72,
+          "hits": 15,
+          "accuracy": 20.833333333333332,
+          "winner": false
+        },
+        {
+          "demo": "9383__ashEGB-vs-Cypher-bloodrun-2025_09_07-12_35_32.json",
+          "player": "ash|EGB",
+          "shots": 52,
+          "hits": 22,
+          "accuracy": 42.30769230769231,
+          "winner": false
+        },
+        {
+          "demo": "9383__ashEGB-vs-Cypher-bloodrun-2025_09_07-12_35_32.json",
+          "player": "Cypher",
+          "shots": 64,
+          "hits": 23,
+          "accuracy": 35.9375,
+          "winner": true
+        },
+        {
+          "demo": "9406__ashEGB-vs-EGBPAVEL-bloodrun-2025_09_28-13_07_35.json",
+          "player": "EGB",
+          "shots": 44,
+          "hits": 12,
+          "accuracy": 27.272727272727273,
+          "winner": true
+        },
+        {
+          "demo": "9406__ashEGB-vs-EGBPAVEL-bloodrun-2025_09_28-13_07_35.json",
+          "player": "PAVEL",
+          "shots": 81,
+          "hits": 25,
+          "accuracy": 30.864197530864196,
+          "winner": false
+        },
+        {
+          "demo": "9409__ashEGB-vs-fire_bot-bloodrun-2025_09_28-12_31_15.json",
+          "player": "EGB",
+          "shots": 63,
+          "hits": 15,
+          "accuracy": 23.80952380952381,
+          "winner": false
+        },
+        {
+          "demo": "9409__ashEGB-vs-fire_bot-bloodrun-2025_09_28-12_31_15.json",
+          "player": "fire_bot",
+          "shots": 58,
+          "hits": 18,
+          "accuracy": 31.03448275862069,
+          "winner": true
+        },
+        {
+          "demo": "9412__baksteen-vs-ashEGB-bloodrun-2025_09_28-11_06_37.json",
+          "player": "baksteen",
+          "shots": 49,
+          "hits": 19,
+          "accuracy": 38.775510204081634,
+          "winner": false
+        },
+        {
+          "demo": "9412__baksteen-vs-ashEGB-bloodrun-2025_09_28-11_06_37.json",
+          "player": "EGB",
+          "shots": 40,
+          "hits": 5,
+          "accuracy": 12.5,
+          "winner": true
+        },
+        {
+          "demo": "9414__Cypher-vs-baksteen-bloodrun-2025_09_28-11_55_34.json",
+          "player": "Cypher",
+          "shots": 70,
+          "hits": 30,
+          "accuracy": 42.857142857142854,
+          "winner": true
+        },
+        {
+          "demo": "9414__Cypher-vs-baksteen-bloodrun-2025_09_28-11_55_34.json",
+          "player": "baksteen",
+          "shots": 75,
+          "hits": 25,
+          "accuracy": 33.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9417__EGBPAVEL-vs-Cypher-bloodrun-2025_09_28-13_53_55.json",
+          "player": "PAVEL",
+          "shots": 63,
+          "hits": 15,
+          "accuracy": 23.80952380952381,
+          "winner": false
+        },
+        {
+          "demo": "9417__EGBPAVEL-vs-Cypher-bloodrun-2025_09_28-13_53_55.json",
+          "player": "Cypher",
+          "shots": 67,
+          "hits": 17,
+          "accuracy": 25.37313432835821,
+          "winner": true
+        },
+        {
+          "demo": "9430__AGENT-vs-Cypher-bloodrun-2025_10_05-15_44_12.json",
+          "player": "AGENT",
+          "shots": 72,
+          "hits": 23,
+          "accuracy": 31.944444444444443,
+          "winner": false
+        },
+        {
+          "demo": "9430__AGENT-vs-Cypher-bloodrun-2025_10_05-15_44_12.json",
+          "player": "Cypher",
+          "shots": 82,
+          "hits": 35,
+          "accuracy": 42.68292682926829,
+          "winner": true
+        },
+        {
+          "demo": "9436__AGENT-vs-k1llsen-bloodrun-2025_10_05-12_09_51.json",
+          "player": "AGENT",
+          "shots": 103,
+          "hits": 48,
+          "accuracy": 46.601941747572816,
+          "winner": true
+        },
+        {
+          "demo": "9436__AGENT-vs-k1llsen-bloodrun-2025_10_05-12_09_51.json",
+          "player": "k1llsen",
+          "shots": 68,
+          "hits": 29,
+          "accuracy": 42.64705882352941,
+          "winner": false
+        },
+        {
+          "demo": "9437__AGENT-vs-k1llsen-bloodrun-2025_10_05-14_39_32.json",
+          "player": "AGENT",
+          "shots": 72,
+          "hits": 23,
+          "accuracy": 31.944444444444443,
+          "winner": true
+        },
+        {
+          "demo": "9437__AGENT-vs-k1llsen-bloodrun-2025_10_05-14_39_32.json",
+          "player": "k1llsen",
+          "shots": 57,
+          "hits": 23,
+          "accuracy": 40.35087719298246,
+          "winner": false
+        },
+        {
+          "demo": "9443__Cypher-vs-AGENT-bloodrun-2025_10_05-13_36_05.json",
+          "player": "Cypher",
+          "shots": 64,
+          "hits": 26,
+          "accuracy": 40.625,
+          "winner": false
+        },
+        {
+          "demo": "9443__Cypher-vs-AGENT-bloodrun-2025_10_05-13_36_05.json",
+          "player": "AGENT",
+          "shots": 83,
+          "hits": 31,
+          "accuracy": 37.34939759036145,
+          "winner": true
+        },
+        {
+          "demo": "9451__k1llsen-vs-EGBPAVEL-bloodrun-2025_10_05-13_06_02.json",
+          "player": "k1llsen",
+          "shots": 32,
+          "hits": 18,
+          "accuracy": 56.25,
+          "winner": true
+        },
+        {
+          "demo": "9451__k1llsen-vs-EGBPAVEL-bloodrun-2025_10_05-13_06_02.json",
+          "player": "PAVEL",
+          "shots": 37,
+          "hits": 13,
+          "accuracy": 35.13513513513514,
+          "winner": false
+        },
+        {
+          "demo": "9485__Dispyrosebnum-vs-fog-bloodrun-2025_11_01-15_02_07.json",
+          "player": "eb\u00e9num",
+          "shots": 64,
+          "hits": 18,
+          "accuracy": 28.125,
+          "winner": true
+        },
+        {
+          "demo": "9485__Dispyrosebnum-vs-fog-bloodrun-2025_11_01-15_02_07.json",
+          "player": "fog",
+          "shots": 71,
+          "hits": 24,
+          "accuracy": 33.80281690140845,
+          "winner": false
+        },
+        {
+          "demo": "9490__Dispyrosebnum-vs-sCoopY_-bloodrun-2025_11_01-14_15_34.json",
+          "player": "eb\u00e9num",
+          "shots": 77,
+          "hits": 30,
+          "accuracy": 38.96103896103896,
+          "winner": true
+        },
+        {
+          "demo": "9490__Dispyrosebnum-vs-sCoopY_-bloodrun-2025_11_01-14_15_34.json",
+          "player": "sCoopY_",
+          "shots": 77,
+          "hits": 16,
+          "accuracy": 20.77922077922078,
+          "winner": false
+        },
+        {
+          "demo": "9498__ILY4_35reg-vs-baxyc-bloodrun-2025_11_01-15_10_26.json",
+          "player": "ILY4_35reg",
+          "shots": 66,
+          "hits": 22,
+          "accuracy": 33.333333333333336,
+          "winner": true
+        },
+        {
+          "demo": "9498__ILY4_35reg-vs-baxyc-bloodrun-2025_11_01-15_10_26.json",
+          "player": "baxyc",
+          "shots": 30,
+          "hits": 8,
+          "accuracy": 26.666666666666668,
+          "winner": false
+        },
+        {
+          "demo": "9504__sCoopY_-vs-Dispyrosebnum-bloodrun-2025_11_01-15_25_47.json",
+          "player": "sCoopY_",
+          "shots": 95,
+          "hits": 42,
+          "accuracy": 44.21052631578947,
+          "winner": true
+        },
+        {
+          "demo": "9504__sCoopY_-vs-Dispyrosebnum-bloodrun-2025_11_01-15_25_47.json",
+          "player": "eb\u00e9num",
+          "shots": 81,
+          "hits": 25,
+          "accuracy": 30.864197530864196,
+          "winner": false
+        },
+        {
+          "demo": "9516__prox1mo-vs-SV-bloodrun-2025_11_02-13_17_18.json",
+          "player": "prox1mo",
+          "shots": 93,
+          "hits": 31,
+          "accuracy": 33.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9516__prox1mo-vs-SV-bloodrun-2025_11_02-13_17_18.json",
+          "player": "SV",
+          "shots": 65,
+          "hits": 18,
+          "accuracy": 27.692307692307693,
+          "winner": true
+        },
+        {
+          "demo": "9521__SV-vs-fire_bot-bloodrun-2025_11_02-14_06_50.json",
+          "player": "SV",
+          "shots": 92,
+          "hits": 36,
+          "accuracy": 39.130434782608695,
+          "winner": true
+        },
+        {
+          "demo": "9521__SV-vs-fire_bot-bloodrun-2025_11_02-14_06_50.json",
+          "player": "fire_bot",
+          "shots": 54,
+          "hits": 18,
+          "accuracy": 33.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9523__SV-vs-prox1mo-bloodrun-2025_11_02-15_41_13.json",
+          "player": "SV",
+          "shots": 74,
+          "hits": 21,
+          "accuracy": 28.37837837837838,
+          "winner": false
+        },
+        {
+          "demo": "9523__SV-vs-prox1mo-bloodrun-2025_11_02-15_41_13.json",
+          "player": "prox1mo",
+          "shots": 73,
+          "hits": 32,
+          "accuracy": 43.83561643835616,
+          "winner": true
+        },
+        {
+          "demo": "9548__0Overqill-vs-kgb-bloodrun-2025_11_09-11_20_10.json",
+          "player": "Overqill",
+          "shots": 42,
+          "hits": 14,
+          "accuracy": 33.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9548__0Overqill-vs-kgb-bloodrun-2025_11_09-11_20_10.json",
+          "player": "kgb",
+          "shots": 70,
+          "hits": 20,
+          "accuracy": 28.571428571428573,
+          "winner": true
+        },
+        {
+          "demo": "9564__fire_bot-vs-sCoopY_-bloodrun-2025_11_09-12_12_51.json",
+          "player": "fire_bot",
+          "shots": 93,
+          "hits": 35,
+          "accuracy": 37.634408602150536,
+          "winner": true
+        },
+        {
+          "demo": "9564__fire_bot-vs-sCoopY_-bloodrun-2025_11_09-12_12_51.json",
+          "player": "sCoopY_",
+          "shots": 42,
+          "hits": 17,
+          "accuracy": 40.476190476190474,
+          "winner": false
+        },
+        {
+          "demo": "9574__baksteen-vs-ashEGB-bloodrun-2025_11_16-15_26_09.json",
+          "player": "baksteen",
+          "shots": 77,
+          "hits": 25,
+          "accuracy": 32.467532467532465,
+          "winner": false
+        },
+        {
+          "demo": "9574__baksteen-vs-ashEGB-bloodrun-2025_11_16-15_26_09.json",
+          "player": "EGB",
+          "shots": 64,
+          "hits": 15,
+          "accuracy": 23.4375,
+          "winner": true
+        },
+        {
+          "demo": "9585__Raisy-vs-swex-bloodrun-2025_11_16-13_09_30.json",
+          "player": "Raisy",
+          "shots": 65,
+          "hits": 28,
+          "accuracy": 43.07692307692308,
+          "winner": false
+        },
+        {
+          "demo": "9585__Raisy-vs-swex-bloodrun-2025_11_16-13_09_30.json",
+          "player": "swex",
+          "shots": 89,
+          "hits": 30,
+          "accuracy": 33.70786516853933,
+          "winner": true
+        },
+        {
+          "demo": "9591__2x2Tvprox1mo-vs-k1llsen-bloodrun-2026_02_01-15_32_02.json",
+          "player": "prox1mo",
+          "shots": 56,
+          "hits": 21,
+          "accuracy": 37.5,
+          "winner": true
+        },
+        {
+          "demo": "9591__2x2Tvprox1mo-vs-k1llsen-bloodrun-2026_02_01-15_32_02.json",
+          "player": "k1llsen",
+          "shots": 66,
+          "hits": 23,
+          "accuracy": 34.84848484848485,
+          "winner": false
+        },
+        {
+          "demo": "9599__ashEGB-vs-Cypher-bloodrun-2026_02_01-15_56_59.json",
+          "player": "EGB",
+          "shots": 55,
+          "hits": 23,
+          "accuracy": 41.81818181818182,
+          "winner": true
+        },
+        {
+          "demo": "9599__ashEGB-vs-Cypher-bloodrun-2026_02_01-15_56_59.json",
+          "player": "Cypher",
+          "shots": 45,
+          "hits": 18,
+          "accuracy": 40.0,
+          "winner": false
+        },
+        {
+          "demo": "9622__AGENT-vs-Liquidrapha-bloodrun-2026_02_08-16_54_00.json",
+          "player": "AGENT",
+          "shots": 174,
+          "hits": 52,
+          "accuracy": 29.885057471264368,
+          "winner": false
+        },
+        {
+          "demo": "9622__AGENT-vs-Liquidrapha-bloodrun-2026_02_08-16_54_00.json",
+          "player": "rapha",
+          "shots": 124,
+          "hits": 36,
+          "accuracy": 29.032258064516128,
+          "winner": true
+        },
+        {
+          "demo": "9631__EGBPAVEL-vs-AGENT-bloodrun-2026_02_08-14_06_26.json",
+          "player": "PAVEL",
+          "shots": 54,
+          "hits": 22,
+          "accuracy": 40.74074074074074,
+          "winner": true
+        },
+        {
+          "demo": "9631__EGBPAVEL-vs-AGENT-bloodrun-2026_02_08-14_06_26.json",
+          "player": "AGENT",
+          "shots": 92,
+          "hits": 38,
+          "accuracy": 41.30434782608695,
+          "winner": false
+        },
+        {
+          "demo": "9633__EGBPAVEL-vs-ashEGB-bloodrun-2026_02_08-14_42_30.json",
+          "player": "PAVEL",
+          "shots": 60,
+          "hits": 18,
+          "accuracy": 30.0,
+          "winner": true
+        },
+        {
+          "demo": "9633__EGBPAVEL-vs-ashEGB-bloodrun-2026_02_08-14_42_30.json",
+          "player": "EGB",
+          "shots": 83,
+          "hits": 23,
+          "accuracy": 27.710843373493976,
+          "winner": false
+        },
+        {
+          "demo": "9637__k1llsen-vs-ashEGB-bloodrun-2026_02_08-12_41_34.json",
+          "player": "k1llsen",
+          "shots": 80,
+          "hits": 44,
+          "accuracy": 55.0,
+          "winner": false
+        },
+        {
+          "demo": "9637__k1llsen-vs-ashEGB-bloodrun-2026_02_08-12_41_34.json",
+          "player": "EGB",
+          "shots": 59,
+          "hits": 17,
+          "accuracy": 28.8135593220339,
+          "winner": true
+        },
+        {
+          "demo": "9654__baksteen-vs-SV-bloodrun-2025_11_23-11_04_41.json",
+          "player": "baksteen",
+          "shots": 77,
+          "hits": 18,
+          "accuracy": 23.376623376623378,
+          "winner": true
+        },
+        {
+          "demo": "9654__baksteen-vs-SV-bloodrun-2025_11_23-11_04_41.json",
+          "player": "SV",
+          "shots": 76,
+          "hits": 21,
+          "accuracy": 27.63157894736842,
+          "winner": false
+        },
+        {
+          "demo": "9669__SV-vs-Raisy-bloodrun-2025_11_23-13_00_58.json",
+          "player": "SV",
+          "shots": 113,
+          "hits": 18,
+          "accuracy": 15.929203539823009,
+          "winner": true
+        },
+        {
+          "demo": "9669__SV-vs-Raisy-bloodrun-2025_11_23-13_00_58.json",
+          "player": "Raisy",
+          "shots": 72,
+          "hits": 24,
+          "accuracy": 33.333333333333336,
+          "winner": false
+        },
+        {
+          "demo": "9682__ARSENY-vs-chr-bloodrun-2025_11_30-13_02_48.json",
+          "player": "ARSENY",
+          "shots": 89,
+          "hits": 27,
+          "accuracy": 30.337078651685392,
+          "winner": false
+        },
+        {
+          "demo": "9682__ARSENY-vs-chr-bloodrun-2025_11_30-13_02_48.json",
+          "player": "chr",
+          "shots": 68,
+          "hits": 20,
+          "accuracy": 29.41176470588235,
+          "winner": true
+        },
+        {
+          "demo": "9700__AGENT-vs-Raisy-bloodrun-2025_12_07-12_31_11.json",
+          "player": "AGENT",
+          "shots": 70,
+          "hits": 25,
+          "accuracy": 35.714285714285715,
+          "winner": true
+        },
+        {
+          "demo": "9707__ashEGB-vs-prox1mo-bloodrun-2025_12_07-17_21_20.json",
+          "player": "EGB",
+          "shots": 69,
+          "hits": 20,
+          "accuracy": 28.985507246376812,
+          "winner": true
+        },
+        {
+          "demo": "9707__ashEGB-vs-prox1mo-bloodrun-2025_12_07-17_21_20.json",
+          "player": "prox1mo",
+          "shots": 54,
+          "hits": 20,
+          "accuracy": 37.03703703703704,
+          "winner": false
+        },
+        {
+          "demo": "9717__prox1mo-vs-AGENT-bloodrun-2025_12_07-12_52_37.json",
+          "player": "prox1mo",
+          "shots": 62,
+          "hits": 21,
+          "accuracy": 33.87096774193548,
+          "winner": false
+        },
+        {
+          "demo": "9717__prox1mo-vs-AGENT-bloodrun-2025_12_07-12_52_37.json",
+          "player": "AGENT",
+          "shots": 99,
+          "hits": 36,
+          "accuracy": 36.36363636363637,
+          "winner": true
+        },
+        {
+          "demo": "9725__AGENT-vs-swex-bloodrun-2025_12_14-13_22_15.json",
+          "player": "AGENT",
+          "shots": 70,
+          "hits": 20,
+          "accuracy": 28.571428571428573,
+          "winner": false
+        },
+        {
+          "demo": "9725__AGENT-vs-swex-bloodrun-2025_12_14-13_22_15.json",
+          "player": "swex",
+          "shots": 66,
+          "hits": 24,
+          "accuracy": 36.36363636363637,
+          "winner": true
+        },
+        {
+          "demo": "9727__baksteen-vs-AGENT-bloodrun-2025_12_14-12_58_32.json",
+          "player": "baksteen",
+          "shots": 95,
+          "hits": 25,
+          "accuracy": 26.31578947368421,
+          "winner": false
+        },
+        {
+          "demo": "9727__baksteen-vs-AGENT-bloodrun-2025_12_14-12_58_32.json",
+          "player": "AGENT",
+          "shots": 86,
+          "hits": 29,
+          "accuracy": 33.72093023255814,
+          "winner": true
+        },
+        {
+          "demo": "9739__SV-vs-EGBPAVEL-bloodrun-2025_12_14-11_05_11.json",
+          "player": "SV",
+          "shots": 47,
+          "hits": 18,
+          "accuracy": 38.297872340425535,
+          "winner": false
+        },
+        {
+          "demo": "9739__SV-vs-EGBPAVEL-bloodrun-2025_12_14-11_05_11.json",
+          "player": "PAVEL",
+          "shots": 54,
+          "hits": 19,
+          "accuracy": 35.18518518518518,
+          "winner": true
+        },
+        {
+          "demo": "9743__AGENT-vs-Cypher-bloodrun-2025_12_21-11_44_27.json",
+          "player": "AGENT",
+          "shots": 34,
+          "hits": 15,
+          "accuracy": 44.11764705882353,
+          "winner": true
+        },
+        {
+          "demo": "9745__baksteen-vs-EGBPAVEL-bloodrun-2025_12_21-13_16_37.json",
+          "player": "baksteen",
+          "shots": 80,
+          "hits": 22,
+          "accuracy": 27.5,
+          "winner": false
+        },
+        {
+          "demo": "9745__baksteen-vs-EGBPAVEL-bloodrun-2025_12_21-13_16_37.json",
+          "player": "PAVEL",
+          "shots": 51,
+          "hits": 15,
+          "accuracy": 29.41176470588235,
+          "winner": true
+        },
+        {
+          "demo": "9751__EGBPAVEL-vs-prox1mo-bloodrun-2025_12_21-14_54_50.json",
+          "player": "PAVEL",
+          "shots": 61,
+          "hits": 24,
+          "accuracy": 39.34426229508197,
+          "winner": true
+        },
+        {
+          "demo": "9751__EGBPAVEL-vs-prox1mo-bloodrun-2025_12_21-14_54_50.json",
+          "player": "prox1mo",
+          "shots": 62,
+          "hits": 22,
+          "accuracy": 35.483870967741936,
+          "winner": false
+        },
+        {
+          "demo": "9781__swex-vs-EGBPAVEL-bloodrun-2026_01_11-13_41_17.json",
+          "player": "swex",
+          "shots": 77,
+          "hits": 19,
+          "accuracy": 24.675324675324674,
+          "winner": true
+        },
+        {
+          "demo": "9781__swex-vs-EGBPAVEL-bloodrun-2026_01_11-13_41_17.json",
+          "player": "PAVEL",
+          "shots": 46,
+          "hits": 18,
+          "accuracy": 39.130434782608695,
+          "winner": false
+        },
+        {
+          "demo": "9796__Liquidrapha-vs-k1llsen-bloodrun-2026_01_18-14_09_40.json",
+          "player": "rapha",
+          "shots": 92,
+          "hits": 33,
+          "accuracy": 35.869565217391305,
+          "winner": false
+        },
+        {
+          "demo": "9796__Liquidrapha-vs-k1llsen-bloodrun-2026_01_18-14_09_40.json",
+          "player": "k1llsen",
+          "shots": 73,
+          "hits": 31,
+          "accuracy": 42.465753424657535,
+          "winner": true
+        },
+        {
+          "demo": "9802__2x2Tvprox1mo-vs-SV-bloodrun-2026_01_25-16_25_46.json",
+          "player": "prox1mo",
+          "shots": 58,
+          "hits": 26,
+          "accuracy": 44.827586206896555,
+          "winner": true
+        },
+        {
+          "demo": "9802__2x2Tvprox1mo-vs-SV-bloodrun-2026_01_25-16_25_46.json",
+          "player": "SV",
+          "shots": 63,
+          "hits": 17,
+          "accuracy": 26.984126984126984,
+          "winner": false
+        },
+        {
+          "demo": "9812__baksteen-vs-ARSENY-bloodrun-2026_01_25-11_25_36.json",
+          "player": "baksteen",
+          "shots": 83,
+          "hits": 27,
+          "accuracy": 32.53012048192771,
+          "winner": true
+        },
+        {
+          "demo": "9812__baksteen-vs-ARSENY-bloodrun-2026_01_25-11_25_36.json",
+          "player": "ARSENY",
+          "shots": 59,
+          "hits": 25,
+          "accuracy": 42.3728813559322,
+          "winner": false
+        },
+        {
+          "demo": "9817__EGBPAVEL-vs-Liquidrapha-bloodrun-2026_01_25-17_09_24.json",
+          "player": "PAVEL",
+          "shots": 46,
+          "hits": 5,
+          "accuracy": 10.869565217391305,
+          "winner": false
+        },
+        {
+          "demo": "9817__EGBPAVEL-vs-Liquidrapha-bloodrun-2026_01_25-17_09_24.json",
+          "player": "rapha",
+          "shots": 52,
+          "hits": 15,
+          "accuracy": 28.846153846153847,
+          "winner": true
+        },
+        {
+          "demo": "9846__fog-vs-chr-bloodrun-2026_02_15-17_34_23.json",
+          "player": "fog",
+          "shots": 68,
+          "hits": 27,
+          "accuracy": 39.705882352941174,
+          "winner": false
+        },
+        {
+          "demo": "9846__fog-vs-chr-bloodrun-2026_02_15-17_34_23.json",
+          "player": "chr",
+          "shots": 67,
+          "hits": 16,
+          "accuracy": 23.880597014925375,
+          "winner": true
+        },
+        {
+          "demo": "9861__SV-vs-fire_bot-bloodrun-2026_02_15-12_03_04.json",
+          "player": "SV",
+          "shots": 67,
+          "hits": 15,
+          "accuracy": 22.388059701492537,
+          "winner": true
+        },
+        {
+          "demo": "9861__SV-vs-fire_bot-bloodrun-2026_02_15-12_03_04.json",
+          "player": "fire_bot",
+          "shots": 93,
+          "hits": 30,
+          "accuracy": 32.25806451612903,
+          "winner": false
+        },
+        {
+          "demo": "9866__AGENT-vs-Cypher-bloodrun-2026_03_07-13_00_38.json",
+          "player": "AGENT",
+          "shots": 61,
+          "hits": 18,
+          "accuracy": 29.508196721311474,
+          "winner": false
+        },
+        {
+          "demo": "9866__AGENT-vs-Cypher-bloodrun-2026_03_07-13_00_38.json",
+          "player": "Cypher",
+          "shots": 38,
+          "hits": 18,
+          "accuracy": 47.36842105263158,
+          "winner": true
+        },
+        {
+          "demo": "9871__ashEGB-vs-k1llsen-bloodrun-2026_03_07-14_53_21.json",
+          "player": "EGB",
+          "shots": 40,
+          "hits": 11,
+          "accuracy": 27.5,
+          "winner": true
+        },
+        {
+          "demo": "9871__ashEGB-vs-k1llsen-bloodrun-2026_03_07-14_53_21.json",
+          "player": "k1llsen",
+          "shots": 55,
+          "hits": 28,
+          "accuracy": 50.90909090909091,
+          "winner": false
+        },
+        {
+          "demo": "9874__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-16_31_02.json",
+          "player": "Cypher",
+          "shots": 70,
+          "hits": 25,
+          "accuracy": 35.714285714285715,
+          "winner": true
+        },
+        {
+          "demo": "9874__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-16_31_02.json",
+          "player": "rapha",
+          "shots": 70,
+          "hits": 19,
+          "accuracy": 27.142857142857142,
+          "winner": false
+        },
+        {
+          "demo": "9875__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-19_42_54.json",
+          "player": "Cypher",
+          "shots": 78,
+          "hits": 26,
+          "accuracy": 33.333333333333336,
+          "winner": true
+        },
+        {
+          "demo": "9875__Cypher-vs-Liquidrapha-bloodrun-2026_03_07-19_42_54.json",
+          "player": "rapha",
+          "shots": 73,
+          "hits": 21,
+          "accuracy": 28.767123287671232,
+          "winner": false
+        },
+        {
+          "demo": "9886__EGBPAVEL-vs-ashEGB-bloodrun-2026_03_07-11_44_19.json",
+          "player": "PAVEL",
+          "shots": 50,
+          "hits": 16,
+          "accuracy": 32.0,
+          "winner": false
+        },
+        {
+          "demo": "9886__EGBPAVEL-vs-ashEGB-bloodrun-2026_03_07-11_44_19.json",
+          "player": "EGB",
+          "shots": 49,
+          "hits": 14,
+          "accuracy": 28.571428571428573,
+          "winner": true
+        },
+        {
+          "demo": "9891__k1llsen-vs-AGENT-bloodrun-2026_03_07-11_00_41.json",
+          "player": "k1llsen",
+          "shots": 49,
+          "hits": 21,
+          "accuracy": 42.857142857142854,
+          "winner": false
+        },
+        {
+          "demo": "9891__k1llsen-vs-AGENT-bloodrun-2026_03_07-11_00_41.json",
+          "player": "AGENT",
+          "shots": 96,
+          "hits": 31,
+          "accuracy": 32.291666666666664,
+          "winner": true
+        },
+        {
+          "demo": "9894__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-13_28_43.json",
+          "player": "rapha",
+          "shots": 61,
+          "hits": 14,
+          "accuracy": 22.950819672131146,
+          "winner": true
+        },
+        {
+          "demo": "9894__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-13_28_43.json",
+          "player": "EGB",
+          "shots": 63,
+          "hits": 17,
+          "accuracy": 26.984126984126984,
+          "winner": false
+        },
+        {
+          "demo": "9895__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-18_03_06.json",
+          "player": "rapha",
+          "shots": 75,
+          "hits": 25,
+          "accuracy": 33.333333333333336,
+          "winner": true
+        },
+        {
+          "demo": "9895__Liquidrapha-vs-ashEGB-bloodrun-2026_03_07-18_03_06.json",
+          "player": "EGB",
+          "shots": 78,
+          "hits": 17,
+          "accuracy": 21.794871794871796,
+          "winner": false
+        },
+        {
+          "demo": "9947__PROX1MO-vs-Raisy-bloodrun-2026_05_17-14_15_39.json",
+          "player": "PROX1MO",
+          "shots": 64,
+          "hits": 15,
+          "accuracy": 23.4375,
+          "winner": true
+        },
+        {
+          "demo": "9947__PROX1MO-vs-Raisy-bloodrun-2026_05_17-14_15_39.json",
+          "player": "Raisy",
+          "shots": 54,
+          "hits": 19,
+          "accuracy": 35.18518518518518,
+          "winner": false
+        },
+        {
+          "demo": "9963__Nitrino-vs-chr-bloodrun-2026_05_24-16_07_16.json",
+          "player": "Nitrino",
+          "shots": 55,
+          "hits": 16,
+          "accuracy": 29.09090909090909,
+          "winner": true
+        },
+        {
+          "demo": "9963__Nitrino-vs-chr-bloodrun-2026_05_24-16_07_16.json",
+          "player": "chr",
+          "shots": 58,
+          "hits": 16,
+          "accuracy": 27.586206896551722,
+          "winner": false
+        }
+      ]
+    }
+  }
+}

@@ -1,3 +1,7 @@
+# 2026-10-12 - First combat patch prepared offline
+
+Approved accuracy targets: PG 10-16% base12; LG 33-41% base37. Added combat hold between shots, grounded jump suppression, nearby-item diagnostics, empty-trinity weapon priority and gated smooth LG/PG angular error (not calibrated match percentages). Debug/Release 13/13; Python99/99; Linux NOPY compiled. Not deployed; full weapon selection and red/spawn followups remain. See docs/COMBAT_PATCH_01_RU.md.
+
 # 2026-10-12 - Three-demo playtest comparison
 
 Preserved and parsed Psyz0r, Xaero and dammit recordings; exported all 100 corpus match-stat files (99 with player stats). Confirmed Psyz0r zero red, 5 Mega, shotgun 50.8% damage; server interval has 9 RL pickups, first +31.025s. Marked 7 deaths <=5s after respawn against dammit. Found firing-button-only gate for route strafe, not a full combat gate. Analysis only, no runtime changes. See docs/PLAYTEST_COMPARISON_20261012_RU.md.

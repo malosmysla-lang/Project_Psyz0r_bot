@@ -18,7 +18,8 @@ static gentity_t world[1024];static gentity_t *g_entities=world;
 static unsigned char game_memory[0x2d8010],imports_memory[0x600];static void *qagame=game_memory;
 static cvar_t enabled{1,"1"},mapvar{0,"bloodrun"},testvar{1,"1"},portvar{27961,"27961"};
 static cvar_t openingvar{0,"0"},phasevar{0,"PRE_GAME"};
-static cvar_t *Cvar_FindVar(const char *name){return !strcmp(name,"qlx_psyzOpening")?&openingvar:!strcmp(name,"g_gameState")?&phasevar:!strcmp(name,"qlx_psyzPreAlpha")?&enabled:!strcmp(name,"mapname")?&mapvar:!strcmp(name,"qlx_psyzTestInstance")?&testvar:!strcmp(name,"net_port")?&portvar:nullptr;}
+static cvar_t combatvar{0,"0"},aimvar{0,"0"};
+static cvar_t *Cvar_FindVar(const char *name){return !strcmp(name,"qlx_psyzAimHumanize")?&aimvar:!strcmp(name,"qlx_psyzGroundCombat")?&combatvar:!strcmp(name,"qlx_psyzOpening")?&openingvar:!strcmp(name,"g_gameState")?&phasevar:!strcmp(name,"qlx_psyzPreAlpha")?&enabled:!strcmp(name,"mapname")?&mapvar:!strcmp(name,"qlx_psyzTestInstance")?&testvar:!strcmp(name,"net_port")?&portvar:nullptr;}
 static int Hook(void*,void(*)(gentity_t*,gentity_t*,trace_t*),void*){return 0;}
 #include "../adapter/native/psyz_prealpha.h"
 static void check(bool v,const char *message){if(!v)throw std::runtime_error(message);}
@@ -35,7 +36,7 @@ static gitem_t red{"item_armor_body","Heavy Armor",0},mega{"item_health_mega","M
 static void reset(){
  memset(world,0,sizeof(world));memset(&client,0,sizeof(client));Psyz_PreAlphaReset();enabled.integer=1;
  openingvar.integer=0;phasevar.string="PRE_GAME";portvar.integer=27961;
- registry_ready=0;
+ registry_ready=0;combatvar.integer=0;aimvar.integer=0;
  world[0].client=&client;world[0].inuse=1;world[0].health=100;world[0].r.svFlags=8;
  client.ps.groundEntityNum=1022;client.pers.cmd.serverTime=20000;
  void *im=imports_memory;memcpy(game_memory+0x2d8000,&im,sizeof(im));
@@ -111,5 +112,24 @@ int main(){try{
  Psyz_PreAlphaGoal(state,0,out);check(!psyz_goal_known[201],"Unavailable registry entry is not fabricated");
  registry_ready=1;client.pers.cmd.serverTime=21001;goal(out,201,10,world[201].r.currentOrigin);memcpy(out+48,&bad_flags,4);
  Psyz_PreAlphaGoal(state,0,out);check(psyz_goal_known[201],"Late stock red goal is discovered on retry");
+ reset();combatvar.integer=1;psyz_last_move_time=19975;client.pers.cmd.buttons=1;client.pers.cmd.upmove=127;
+ Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==0,"Ground combat blocks new jump");
+ client.pers.cmd.serverTime+=50;client.pers.cmd.buttons=0;client.pers.cmd.upmove=127;
+ Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==0,"Ground combat persists between shots");
+ client.pers.cmd.serverTime+=50;client.ps.groundEntityNum=1023;client.pers.cmd.upmove=127;
+ Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==127,"Combat gate does not rewrite existing flight");
+ client.pers.cmd.serverTime+=1500;psyz_last_move_time=client.pers.cmd.serverTime-25;client.ps.groundEntityNum=1022;client.pers.cmd.upmove=127;
+ Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==127,"Combat hold expires outside firing");
+ reset();gitem_t rocket{"weapon_rocketlauncher","Rocket Launcher",5};world[200].item=&rocket;
+ client.ps.stats[STAT_WEAPONS]=1<<5;client.ps.ammo[5]=0;
+ check(Psyz_ItemWeight(&world[200],&world[0],0)==180,"Empty rocket launcher is not ready");
+ client.ps.ammo[5]=5;check(Psyz_ItemWeight(&world[200],&world[0],0)==8,"Armed rocket no longer missing");
+ reset();aimvar.integer=1;usercmd_t shot{};shot.buttons=1;
+ Psyz_HumanizeAim(&shot,7,20100);check(shot.angles[0]==0 && shot.angles[1]==0,"Rail aim unchanged");
+ shot.weapon=6;Psyz_HumanizeAim(&shot,6,20100);check(shot.angles[0]!=0 || shot.angles[1]!=0,"LG aim error applied");
+ check(std::abs(shot.angles[0])<=228 && std::abs(shot.angles[1])<=228,"LG angular error bounded");
+ usercmd_t before{},after{};before.buttons=after.buttons=1;before.weapon=after.weapon=8;Psyz_HumanizeAim(&before,8,20159);Psyz_HumanizeAim(&after,8,20160);
+ check(std::abs(before.angles[0]-after.angles[0])<10 && std::abs(before.angles[1]-after.angles[1])<10,"Aim interpolation continuous across noise boundary");
+ shot={};Psyz_HumanizeAim(&shot,8,20100);check(shot.angles[0]==0 && shot.angles[1]==0,"Non-firing navigation aim unchanged");
  std::cout<<"Native prealpha contextual scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

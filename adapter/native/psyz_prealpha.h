@@ -7,6 +7,27 @@ static const PsyzLearnedRoute *Psyz_Route(size_t i) { return i<PSYZ_ROUTE_COUNT?
 #include "psyz_nav_recovery.h"
 static PsyzNavRecovery psyz_nav;
 static int psyz_nav_health,psyz_nav_damage_time;
+static int psyz_combat_until,psyz_diagnostic_time;
+/* Smooth angular error, never modify damage, projectiles or registered hits.
+   Match accuracy still needs empirical calibration at each distance. */
+static float Psyz_AimNoise(unsigned int bucket,unsigned int salt){
+    unsigned int x=bucket*747796405u+salt*2891336453u+277803737u;
+    x=(x^(x>>16))*2246822519u;x^=x>>13;
+    return (float)(x&65535u)/32767.5f-1.f;
+}
+static void Psyz_HumanizeAim(usercmd_t *cmd,int weapon,int now){
+    cvar_t *on=Cvar_FindVar("qlx_psyzAimHumanize");
+    if(!on || !on->integer || !(cmd->buttons&1) || cmd->weapon!=weapon || (weapon!=6 && weapon!=8))return;
+    cvar_t *amplitude=Cvar_FindVar(weapon==6?"qlx_psyzLGAimError":"qlx_psyzPlasmaAimError");
+    float degrees=amplitude?(float)atof(amplitude->string):(weapon==6?1.25f:3.f);
+    if(degrees<0)degrees=0;if(degrees>10)degrees=10;
+    unsigned int bucket=(unsigned int)(now/240);float t=(now%240)/240.f;t=t*t*(3-2*t);
+    for(int axis=0;axis<2;axis++){
+        unsigned int salt=(unsigned int)(weapon*11+axis);
+        float error=Psyz_AimNoise(bucket,salt)*(1-t)+Psyz_AimNoise(bucket+1,salt)*t;
+        cmd->angles[axis]+=(int)(error*degrees*65536.f/360.f);
+    }
+}
 static unsigned char psyz_goal_cache[1024][64];
 static unsigned char psyz_goal_known[1024];
 static int psyz_route_banned[PSYZ_ALL_ROUTE_COUNT];
@@ -36,6 +57,7 @@ static int Psyz_PreAlphaEnabled(void) {
 #include "psyz_opening.h"
 static void Psyz_PreAlphaReset(void) {
     Psyz_NavReset(&psyz_nav);psyz_nav_health=psyz_nav_damage_time=0;
+    psyz_combat_until=psyz_diagnostic_time=0;
     Psyz_OpeningReset();
     psyz_debug_logged=0;
     psyz_registry_retry=0;
@@ -54,9 +76,9 @@ static void Psyz_PreAlphaVmReset(void) {
 static float Psyz_ItemWeight(gentity_t *item,gentity_t *own,int recovering) {
     const char *c=item->item->classname;int h=own->health,a=own->client->ps.stats[STAT_ARMOR];
     int weapons=own->client->ps.stats[STAT_WEAPONS];
-    if(!strcmp(c,"weapon_rocketlauncher"))return weapons&(1<<5)?8:180;
-    if(!strcmp(c,"weapon_lightning"))return weapons&(1<<6)?8:150;
-    if(!strcmp(c,"weapon_railgun"))return weapons&(1<<7)?8:145;
+    if(!strcmp(c,"weapon_rocketlauncher"))return (weapons&(1<<5)) && own->client->ps.ammo[5]>0?8:180;
+    if(!strcmp(c,"weapon_lightning"))return (weapons&(1<<6)) && own->client->ps.ammo[6]>0?8:150;
+    if(!strcmp(c,"weapon_railgun"))return (weapons&(1<<7)) && own->client->ps.ammo[7]>0?8:145;
     if(!strcmp(c,"weapon_shotgun"))return weapons&(1<<3)?6:90;
     if(!strcmp(c,"weapon_plasmagun"))return weapons&(1<<8)?6:75;
     if(!strcmp(c,"weapon_grenadelauncher"))return weapons&(1<<4)?5:50;
@@ -165,6 +187,17 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         }
         if(target>=0){psyz_goal_target=target;psyz_progress_time=now;}
     }
+    cvar_t *diagnostics=Cvar_FindVar("qlx_psyzItemDiagnostics");
+    if(diagnostics && diagnostics->integer && now-psyz_diagnostic_time>=2000){
+        psyz_diagnostic_time=now;
+        for(int i=0;i<1024;i++){
+            gentity_t *e=&g_entities[i];if(!e->inuse || !e->item)continue;
+            float d=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin);if(d>192)continue;
+            float w=Psyz_ItemWeight(e,own,recovering);
+            const char *reason=i==psyz_goal_target?"selected":!e->r.contents?"unavailable":!psyz_goal_known[i]?"no_aas_goal":psyz_banned[i]>now?"temporarily_banned":w<=15?"low_need":"other_goal_retained_or_ranked_higher";
+            fprintf(stderr,"PSYZ_NEAR_ITEM t=%d entity=%d class=%s distance=%.1f available=%d known=%d weight=%.1f target=%d reason=%s\n",now,i,e->item->classname,d,e->r.contents!=0,psyz_goal_known[i]!=0,w,psyz_goal_target,reason);
+        }
+    }
     if(psyz_goal_target<0)return;
     float distance=Psyz_Distance(own->client->ps.origin,g_entities[psyz_goal_target].r.currentOrigin);
     if(distance<psyz_progress_distance-32){psyz_progress_distance=distance;psyz_progress_time=now;}
@@ -234,6 +267,18 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
     if(dt<=0 || dt>100 || own->health<=0){psyz_rj=-1;return;}
     // Never inherit habitual crouching. Agreed exceptions are not enabled yet.
     if(cmd->upmove<0)cmd->upmove=0;
+    Psyz_HumanizeAim(cmd,ps->weapon,now);
+    cvar_t *ground_combat=Cvar_FindVar("qlx_psyzGroundCombat");
+    if(ground_combat && ground_combat->integer){
+        int triggered=(cmd->buttons&1) || (psyz_nav_damage_time>0 && now-psyz_nav_damage_time<1000);
+        if(triggered && psyz_rj<0)psyz_combat_until=now+1200;
+        if(now<psyz_combat_until && psyz_rj<0){
+            /* Preserve stock ground strafes and existing flight; block new jumps
+               and route/RJ steering for the whole observed combat episode. */
+            if(ps->groundEntityNum!=1023 && cmd->upmove>0)cmd->upmove=0;
+            return;
+        }
+    }
     if(psyz_rj_plan>=0)cmd->weapon=5;
     if(psyz_goal_target>=0 && psyz_rj<0 && now-psyz_rj_last>15000 && !(cmd->buttons&1) &&
        (ps->stats[STAT_WEAPONS]&(1<<5)) && ps->ammo[5]>0) {
