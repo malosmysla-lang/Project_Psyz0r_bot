@@ -103,7 +103,7 @@
   <rect class="card" x="620" y="726" width="548" height="430" rx="22"/>
   <circle cx="654" cy="770" r="9" class="amber"/>
   <text x="676" y="779" font-size="25" font-weight="700" fill="#ffc857">НУЖНА ПРОВЕРКА</text>
-  <text x="650" y="824" class="body">• На скриншоте квадрат перед “Technical”</text>
+  <text x="650" y="824" class="body">• Квадраты в приветствии и !mappool</text>
   <text x="650" y="861" class="body">• Runtime-значение приветствия не считано</text>
   <text x="650" y="898" class="body">• Цикл бота: ожидание → 1 дуэль → выход</text>
   <text x="650" y="935" class="body">• Голосование и команды смены карт</text>

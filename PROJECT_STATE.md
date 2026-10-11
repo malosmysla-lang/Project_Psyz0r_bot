@@ -1,3 +1,7 @@
+# 2026-10-12 - Duel Pracc Room square-glyph follow-up
+
+Read-only server check after a second screenshot: ASCII-only mappool entries and mapguard formatting with standard Quake color escapes; no square exists in the stored `qcdm1` entry. The same glyph appears in separate plugin messages, but its source remains unlocalized. No server changes, runtime actions, or restart. Next diagnostic requires comparing the exact server-emitted message with client rendering and owner authorization for any live test. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.
+
 # 2026-10-12 - Duel Pracc Room audit snapshot
 
 Separate server-only audit snapshot is provisional. Main Quake Live service was active and enabled at inspection; no live changes or restarts were made. The infographic reports 6/18 implemented-or-confirmed, 7/18 partial, and 5/18 not started, based on equal item counts only. The welcome-square source, recent complete match reports, and full prior chat remain unresolved. This audit does not change or represent Psyz0r bot implementation readiness. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12.svg and docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.

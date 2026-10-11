@@ -1,3 +1,7 @@
+# 2026-10-12 - Duel Pracc Room square-glyph follow-up
+
+Read-only check of the owner’s new screenshot: the mappool file and mapguard output source contain ASCII map names, with standard Quake color escapes; `qcdm1` is not stored with a square. This adds evidence for a display/runtime-path issue but does not localize it. No server changes or restart. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.
+
 # 2026-10-12 - Duel Pracc Room audit snapshot
 
 Added a provisional, read-only status infographic and Russian evidence summary for the separate Duel server. No server configuration, bot source, or runtime was changed. Counts are explicit item counts, not weighted readiness; match-report freshness and the welcome-square source remain unresolved. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12.svg and docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md. Remaining chat history is still awaited.
