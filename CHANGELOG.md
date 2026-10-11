@@ -1,3 +1,7 @@
+# 2026-10-12 - Grenade zoning safety policy
+
+C++ one-grenade permission module for Mega from GL platform and upper TP to red. Requires fresh confirmed enemy position, verified fastest approach excluding fast closure, safe demonstrated trajectory and zoning purpose; unknown safety denies. Local only, not wired to game. Debug/Release14/14. Demo-shot candidates mined separately, not asserted tactical proofs. See docs/GRENADE_ZONING_RU.md.
+
 # 2026-10-12 - Owner approved all-weapon accuracy ranges
 
 Authoritative config/accuracy_targets_all.json approved. MG39[37,43], SG30[23,40], GL6[2,9], RL34[28,40], LG36[32,40], RG49[40,58], PG12[10,15]. Runtime calibration incomplete; execution flag remains false. Grenade spam policy awaits owner rules. Existing live angular-error settings unchanged.

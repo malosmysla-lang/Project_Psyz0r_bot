@@ -105,6 +105,7 @@
     }
   },
   "approval_date": "2026-10-12",
-  "grenade_spam_policy": "awaiting_owner_rules",
-  "note": "Approved target ranges. Runtime calibration and all-weapon execution are incomplete; no fabricated hits."
+  "grenade_spam_policy": "docs/GRENADE_ZONING_RU.md",
+  "note": "Approved target ranges. Runtime calibration and all-weapon execution are incomplete; no fabricated hits.",
+  "grenade_zoning_runtime_enabled": false
 }
