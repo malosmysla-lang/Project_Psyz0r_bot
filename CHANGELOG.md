@@ -6,6 +6,10 @@ Backed up isolated native/config; installed SHA-verified 0.6.4, enabled both nav
 
 Audited 1,416 red pickup events with 8s context and <=5s damage-to-pickup window: 700 candidate approaches, 729 rocket and 97 plasma coincidences (not unique proven self-damage jumps). Added continuity/teleport exclusions, source SHA provenance and four regression tests; Python 99/99. See docs/RED_BOOST_ANALYSIS_RU.md. No new PJ actions enabled.
 
+# 2026-10-12 - Duel Pracc Room Xaero control commands
+
+Added admin commands `!goduel` (one-human, one-duel lifecycle; refuses during an active match) and `!leaveme` (alias of the existing bot removal/suppression handler), and documented both in Welcome. Backed up the live plugin and server.cfg before updating files on disk. The running service was not restarted, so runtime activation and gameplay validation remain pending. Syntax and three focused mocked `!goduel` cases passed. Status and exact changed behavior: docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.
+
 # 2026-10-12 - Duel Pracc Room square-glyph follow-up
 
 Read-only check of the owner’s new screenshot: the mappool file and mapguard output source contain ASCII map names, with standard Quake color escapes; `qcdm1` is not stored with a square. This adds evidence for a display/runtime-path issue but does not localize it. No server changes or restart. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.

@@ -105,7 +105,7 @@
   <text x="676" y="779" font-size="25" font-weight="700" fill="#ffc857">НУЖНА ПРОВЕРКА</text>
   <text x="650" y="824" class="body">• Квадраты в приветствии и !mappool</text>
   <text x="650" y="861" class="body">• Runtime-значение приветствия не считано</text>
-  <text x="650" y="898" class="body">• Цикл бота: ожидание → 1 дуэль → выход</text>
+  <text x="650" y="898" class="body">• !goduel / !leaveme на диске, не загружены</text>
   <text x="650" y="935" class="body">• Голосование и команды смены карт</text>
   <text x="650" y="972" class="body">• Безопасный рестарт; в логах возврат -15</text>
   <text x="650" y="1009" class="body">• Отчётов матчей после 9 окт. нет; события</text>
