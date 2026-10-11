@@ -1,3 +1,7 @@
+# 2026-10-12 - Three-demo playtest comparison
+
+Preserved and parsed Psyz0r, Xaero and dammit recordings; exported all 100 corpus match-stat files (99 with player stats). Confirmed Psyz0r zero red, 5 Mega, shotgun 50.8% damage; server interval has 9 RL pickups, first +31.025s. Marked 7 deaths <=5s after respawn against dammit. Found firing-button-only gate for route strafe, not a full combat gate. Analysis only, no runtime changes. See docs/PLAYTEST_COMPARISON_20261012_RU.md.
+
 # 2026-10-12 - Prealpha 0.6.4 deployed to isolated 27961
 
 Backed up isolated native/config; installed SHA-verified 0.6.4, enabled both navigation switches. Blood Run Duel, 10min, unlimited frags, 120s overtime; only Psyz0r (stock Sarge skill5 base plus custom native overlay), no Xaero. Warmup smoke: 10 actual pickups; red at 38775ms, 2300ms after failed demo route fell back to AAS at 36475ms. One recovery, no RJ in smoke, integration errors see report. Main service unchanged. See docs/training/PREALPHA_0_6_4_SMOKE.json. New PJ/RJ candidates are not enabled actions.
