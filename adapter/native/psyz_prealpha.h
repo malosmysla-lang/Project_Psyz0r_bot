@@ -1,9 +1,15 @@
-﻿/* Experimental Blood Run prealpha. Uses valid goals produced by stock QL. */
+/* Experimental Blood Run prealpha. Uses valid goals produced by stock QL. */
 #include <math.h>
 #include "psyz_bloodrun_bank.h"
+#include "psyz_red_routes.h"
+#define PSYZ_ALL_ROUTE_COUNT (PSYZ_ROUTE_COUNT+PSYZ_RED_ROUTE_COUNT)
+static const PsyzLearnedRoute *Psyz_Route(size_t i) { return i<PSYZ_ROUTE_COUNT?&psyz_routes[i]:&psyz_red_routes[i-PSYZ_ROUTE_COUNT]; }
+#include "psyz_nav_recovery.h"
+static PsyzNavRecovery psyz_nav;
+static int psyz_nav_health,psyz_nav_damage_time;
 static unsigned char psyz_goal_cache[1024][64];
 static unsigned char psyz_goal_known[1024];
-static int psyz_route_banned[PSYZ_ROUTE_COUNT];
+static int psyz_route_banned[PSYZ_ALL_ROUTE_COUNT];
 static int psyz_goal_target=-1,psyz_goal_since,psyz_registry_logged;
 static int psyz_rj_plan=-1,psyz_active_route=-1,psyz_route_point,psyz_last_move_time;
 static float psyz_progress_distance;
@@ -13,6 +19,7 @@ static int psyz_demo_retry_after[1024];
 static int psyz_rj=-1,psyz_rj_phase,psyz_rj_time,psyz_rj_ground,psyz_rj_last,psyz_rj_fired,psyz_rj_landed_at;
 static float psyz_rj_start_z;
 static int psyz_debug_logged;
+static int psyz_registry_retry;
 /* Successful VM hooks occupy a contiguous tail of the NOPY trampoline pool. */
 static int psyz_vm_hook_count;
 static int psyz_last_pickup=-1,psyz_last_pickup_time;
@@ -28,8 +35,10 @@ static int Psyz_PreAlphaEnabled(void) {
 }
 #include "psyz_opening.h"
 static void Psyz_PreAlphaReset(void) {
+    Psyz_NavReset(&psyz_nav);psyz_nav_health=psyz_nav_damage_time=0;
     Psyz_OpeningReset();
     psyz_debug_logged=0;
+    psyz_registry_retry=0;
     memset(psyz_goal_known,0,sizeof(psyz_goal_known));memset(psyz_route_banned,0,sizeof(psyz_route_banned));memset(psyz_banned,0,sizeof(psyz_banned));
     memset(psyz_demo_retry_after,0,sizeof(psyz_demo_retry_after));
     psyz_rj_plan=psyz_goal_target=psyz_active_route=psyz_rj=psyz_last_pickup=-1;
@@ -62,8 +71,9 @@ static float Psyz_ItemWeight(gentity_t *item,gentity_t *own,int recovering) {
 static void Psyz_SelectDemoRoute(gentity_t *own,int target) {
     float best=97;psyz_active_route=-1;psyz_route_point=0;
     if(target>=0 && target<1024 && psyz_demo_retry_after[target]>own->client->pers.cmd.serverTime)return;
-    for(size_t i=0;i<PSYZ_ROUTE_COUNT;i++) {
-        const PsyzLearnedRoute *r=&psyz_routes[i];if(psyz_route_banned[i]>own->client->pers.cmd.serverTime)continue;
+    for(size_t i=0;i<PSYZ_ALL_ROUTE_COUNT;i++) {
+        const PsyzLearnedRoute *r=Psyz_Route(i);
+        cvar_t *red=Cvar_FindVar("qlx_psyzRedRoutes");if(i>=PSYZ_ROUTE_COUNT && (!red || !red->integer))continue;if(psyz_route_banned[i]>own->client->pers.cmd.serverTime)continue;
         if(target<0 || r->count<2 || !g_entities[target].item || strcmp(r->classname,g_entities[target].item->classname) || Psyz_Distance(r->target,g_entities[target].r.currentOrigin)>16)continue;
         float d=Psyz_Distance(own->client->ps.origin,r->points[0].p);
         if(d<best){best=d;psyz_active_route=(int)i;}
@@ -90,12 +100,13 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     }
     if(!Psyz_PreAlphaEnabled())return;
     Psyz_OpeningTick(own);
-    if(!psyz_debug_logged){
+    if(!psyz_debug_logged || now-psyz_registry_retry>=1000){
+        psyz_registry_retry=now;
         psyz_debug_logged=1;void *im;memcpy(&im,(char*)qagame+0x2d8000,sizeof(im));
         int (*get_item)(int,const char*,void*);memcpy(&get_item,(char*)im+0x4d0,sizeof(get_item));
         int count=0;
         for(int n=0;n<1024;n++){
-            gentity_t *e=&g_entities[n];if(!e->inuse || !e->item || !e->item->pickup_name)continue;
+            gentity_t *e=&g_entities[n];if(psyz_goal_known[n] || !e->inuse || !e->item || !e->item->pickup_name)continue;
             unsigned char candidate[256];int cursor=-1;
             for(int j=0;j<64;j++){
                 memset(candidate,0,sizeof(candidate));int next=get_item(cursor,e->item->pickup_name,candidate);
@@ -105,7 +116,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
                 if(id==n && area>0 && area<2393 && flags==1 && Psyz_Distance(p,e->r.currentOrigin)<64){memcpy(psyz_goal_cache[n],candidate,64);psyz_goal_known[n]=1;count++;break;}
             }
         }
-        fprintf(stderr,"PSYZ_GOAL_REGISTRY valid_item_goals=%d weapons=%d ammo_rl=%d\n",count,own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo[5]);
+        if(count)fprintf(stderr,"PSYZ_GOAL_REGISTRY newly_valid_item_goals=%d weapons=%d ammo_rl=%d\n",count,own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo[5]);
     }
     int recovering=own->health<70 || (own->health<100 && own->client->ps.stats[STAT_ARMOR]<30);
     // Only exact enemy HP/armor are read, never hidden enemy coordinates.
@@ -118,8 +129,13 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     int was_opening=psyz_opening_active;
     int opening_target=Psyz_OpeningTarget(own,recovering);
     if(was_opening && !psyz_opening_active){psyz_goal_target=-1;psyz_active_route=-1;}
+    cvar_t *nav=Cvar_FindVar("qlx_psyzNavRecovery");
+    int nav_hold=nav && nav->integer && !recovering && psyz_nav.target==psyz_goal_target &&
+        now-psyz_nav.start<30000;
     int keep=opening_target<0 && psyz_goal_target>=0 && psyz_goal_known[psyz_goal_target] &&
-        g_entities[psyz_goal_target].r.contents && now-psyz_goal_since<3000;
+        g_entities[psyz_goal_target].r.contents &&
+        Psyz_ItemWeight(&g_entities[psyz_goal_target],own,recovering)>15 &&
+        (now-psyz_goal_since<3000 || nav_hold);
     if(!keep) {
         float best=-1;int selected=-1;
         for(int i=0;i<1024;i++) {
@@ -152,8 +168,17 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     if(psyz_goal_target<0)return;
     float distance=Psyz_Distance(own->client->ps.origin,g_entities[psyz_goal_target].r.currentOrigin);
     if(distance<psyz_progress_distance-32){psyz_progress_distance=distance;psyz_progress_time=now;}
-    if(now-psyz_progress_time>6000) {
-        if(psyz_active_route>=0){
+    int nav_action=0;
+    if(nav && nav->integer){
+        gentity_t *target=&g_entities[psyz_goal_target];
+        int waiting=!target->r.contents && target->nextthink>now && target->nextthink-now<=3000;
+        int combat=(own->client->pers.cmd.buttons&1) || (psyz_nav_damage_time>0 && now-psyz_nav_damage_time<1000);
+        nav_action=Psyz_NavUpdate(&psyz_nav,psyz_goal_target,now,own->client->ps.origin,distance,
+                    psyz_active_route>=0?psyz_route_point:-1,psyz_active_route>=0,combat,waiting);
+    }
+    if((nav && nav->integer)?nav_action!=0:now-psyz_progress_time>6000) {
+        if(nav && nav->integer)fprintf(stderr,"PSYZ_NAV_RECOVERY t=%d target=%d action=%d elapsed=%d paused=%d visited=%d waypoint=%d\n",now,psyz_goal_target,nav_action,now-psyz_nav.start,psyz_nav.paused,psyz_nav.cell_count,psyz_nav.waypoint);
+        if(psyz_active_route>=0 && (!nav || !nav->integer || nav_action==1)){
             fprintf(stderr,"PSYZ_REPATH t=%d target=%d route=%d reason=demo_failed_fallback_aas\n",now,psyz_goal_target,psyz_active_route);
             psyz_route_banned[psyz_active_route]=now+60000;
             psyz_demo_retry_after[psyz_goal_target]=now+15000;
@@ -171,7 +196,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     memcpy(output,psyz_goal_cache[psyz_goal_target],64);
     if(psyz_active_route<0)Psyz_SelectDemoRoute(own,psyz_goal_target);
     if(psyz_active_route>=0) {
-        const PsyzLearnedRoute *r=&psyz_routes[psyz_active_route];
+        const PsyzLearnedRoute *r=Psyz_Route((size_t)psyz_active_route);
         while(psyz_route_point<r->count && Psyz_Distance(own->client->ps.origin,r->points[psyz_route_point].p)<48)psyz_route_point++;
         if(psyz_route_point<r->count-1) {
             const PsyzRoutePoint *p=&r->points[psyz_route_point];int flags=0;
@@ -202,6 +227,8 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
     if(!Psyz_PreAlphaEnabled())return;
     usercmd_t *cmd=&own->client->pers.cmd;playerState_t *ps=&own->client->ps;int now=cmd->serverTime;
     if(now<psyz_last_move_time)Psyz_PreAlphaReset();
+    if(psyz_nav_health-own->health>1)psyz_nav_damage_time=now;
+    psyz_nav_health=own->health;
     Psyz_OpeningTick(own);
     int dt=now-psyz_last_move_time;psyz_last_move_time=now;
     if(dt<=0 || dt>100 || own->health<=0){psyz_rj=-1;return;}
@@ -269,7 +296,7 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
     }
     // Strafe-jump only on a straight, observed demo corridor, never during firing.
     if(psyz_active_route<0 || (cmd->buttons&1))return;
-    const PsyzLearnedRoute *r=&psyz_routes[psyz_active_route];int k=psyz_route_point;
+    const PsyzLearnedRoute *r=Psyz_Route((size_t)psyz_active_route);int k=psyz_route_point;
     if(k+3>=r->count)return;
     float dx=r->points[k+3].p[0]-ps->origin[0],dy=r->points[k+3].p[1]-ps->origin[1];
     float length=hypotf(dx,dy);if(length<160 || fabsf(r->points[k+3].p[2]-ps->origin[2])>32)return;

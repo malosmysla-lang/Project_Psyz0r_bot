@@ -1,0 +1,9 @@
+{
+  "version": "0.6.4",
+  "deployed": false,
+  "live_verified": false,
+  "native_sha256": "c9e7db9e500a09a02794ba89ddb9a6f93dbbe8711fe82943532ea09d60d943c6",
+  "ctest_debug": "13/13",
+  "ctest_release": "13/13",
+  "python": "95/95"
+}

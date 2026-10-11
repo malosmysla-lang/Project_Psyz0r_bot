@@ -21,4 +21,6 @@ shutil.copyfile(root/'adapter/native/psyz_prealpha.h',a.checkout/'psyz_prealpha.
 shutil.copyfile(root/'adapter/native/psyz_bloodrun_bank.h',a.checkout/'psyz_bloodrun_bank.h')
 shutil.copyfile(root/'adapter/native/psyz_opening.h',a.checkout/'psyz_opening.h')
 shutil.copyfile(root/'adapter/native/psyz_opening_bank.h',a.checkout/'psyz_opening_bank.h')
+shutil.copyfile(root/'adapter/native/psyz_nav_recovery.h',a.checkout/'psyz_nav_recovery.h')
+shutil.copyfile(root/'adapter/native/psyz_red_routes.h',a.checkout/'psyz_red_routes.h')
 print('Prepared separate checkout. Build with make -B nopy; verify pinned binary hashes before running.')

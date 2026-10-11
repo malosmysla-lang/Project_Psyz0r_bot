@@ -1,0 +1,102 @@
+[
+  {
+    "kind": "owner_rocketjump_red",
+    "source_sha256": "593ac0a7420c405bb06ff4fd63a01c90dbf429f19be59e5f0e2092f20f93eade",
+    "start_ms": 71325,
+    "end_ms": 76600,
+    "clip": "red_approaches/demo_clips/01_owner_rocketjump_red/nekitz0r_ZTN_solo_01_CUT_111_117.dm_91",
+    "clip_sha256": "68c2c996a5f1acaf805df25805131f61aedf06482c5989d80b9b6aca25ef1c8d",
+    "parsed_snapshots": 240,
+    "red_pickup_events": 1
+  },
+  {
+    "kind": "owner_rocketjump_red",
+    "source_sha256": "593ac0a7420c405bb06ff4fd63a01c90dbf429f19be59e5f0e2092f20f93eade",
+    "start_ms": 211175,
+    "end_ms": 216375,
+    "clip": "red_approaches/demo_clips/02_owner_rocketjump_red/nekitz0r_ZTN_solo_01_CUT_331_337.dm_91",
+    "clip_sha256": "2daae0985fb74dcf5c2845c2ef6081f44051b1a87eed66454dfadaa01d2ef579",
+    "parsed_snapshots": 240,
+    "red_pickup_events": 1
+  },
+  {
+    "kind": "owner_rocketjump_red",
+    "source_sha256": "593ac0a7420c405bb06ff4fd63a01c90dbf429f19be59e5f0e2092f20f93eade",
+    "start_ms": 264900,
+    "end_ms": 270000,
+    "clip": "red_approaches/demo_clips/03_owner_rocketjump_red/nekitz0r_ZTN_solo_01_CUT_424_430.dm_91",
+    "clip_sha256": "f691852dbf8f63ac894bfeb8fed79280c91624eef84fe2ce03c5c40ecd89c22b",
+    "parsed_snapshots": 240,
+    "red_pickup_events": 1
+  },
+  {
+    "kind": "owner_rocketjump_red",
+    "source_sha256": "593ac0a7420c405bb06ff4fd63a01c90dbf429f19be59e5f0e2092f20f93eade",
+    "start_ms": 314600,
+    "end_ms": 319725,
+    "clip": "red_approaches/demo_clips/04_owner_rocketjump_red/nekitz0r_ZTN_solo_01_CUT_514_520.dm_91",
+    "clip_sha256": "029d020f506eae6514911b3269fd48e370b90040e63fb8307bad6780e089ca95",
+    "parsed_snapshots": 240,
+    "red_pickup_events": 1
+  },
+  {
+    "kind": "longjump_candidate_red",
+    "source_sha256": "7a7e278b98cf5aa5b955c5d94db5ede8cff4c21ab1e44a7f6efba78dd8a8d043",
+    "start_ms": 20525,
+    "end_ms": 24775,
+    "clip": "red_approaches/demo_clips/05_longjump_candidate_red/10759__PROX1MO-vs-h3lldown-bloodrun-2026_06_07-12_42_50_CUT_020_025.dm_91",
+    "clip_sha256": "79390f167b7272f1f70825c30e1650d47d4437145b96b68251c224a12bdcf19a",
+    "parsed_snapshots": 200,
+    "red_pickup_events": 1
+  },
+  {
+    "kind": "longjump_candidate_red",
+    "source_sha256": "1c9d26edca2edcf341a084013c1e86122517b5c70f3403d3c2e2350a7e5671ae",
+    "start_ms": 83400,
+    "end_ms": 89400,
+    "clip": "red_approaches/demo_clips/06_longjump_candidate_red/10763__ABCPAVEL-vs-RedragonAGENT-bloodrun-2026_08_09-12_23_16_CUT_123_130.dm_91",
+    "clip_sha256": "176a49ce08ebd88227a8f38a9f9e2a3dd468d90af44fa81550e1dfc7d8b250d4",
+    "parsed_snapshots": 258,
+    "red_pickup_events": 1
+  },
+  {
+    "kind": "longjump_candidate_red",
+    "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
+    "start_ms": 5971175,
+    "end_ms": 5977175,
+    "clip": "red_approaches/demo_clips/07_longjump_candidate_red/10774__k1llsen-vs-ashEGB-bloodrun-2026_08_09-15_51_44_CUT_9931_9938.dm_91",
+    "clip_sha256": "e6c430c3e2aeb0ac615797cf3992bfb06f99ecbeb414ca3eebe57532c3950d48",
+    "parsed_snapshots": 280,
+    "red_pickup_events": 1
+  },
+  {
+    "kind": "longjump_candidate_red",
+    "source_sha256": "5ab7eb53c27f900c19d00f0ff4c928f45962e97c01892a8a27f9a400a36354da",
+    "start_ms": 32900,
+    "end_ms": 38900,
+    "clip": "red_approaches/demo_clips/08_longjump_candidate_red/10778__ashEGB-vs-baksteen-bloodrun-2026_06_14-13_25_13_CUT_032_039.dm_91",
+    "clip_sha256": "dc8f226eccb51b0116e5e584ca6e33e6ef305fba9eabcaa1220a7f64af067e1d",
+    "parsed_snapshots": 258,
+    "red_pickup_events": 1
+  },
+  {
+    "kind": "longjump_candidate_red",
+    "source_sha256": "bb47d72bd4d3f65dc7c5213412ac9b2b87141ba84c27f27e14248dec6b48c719",
+    "start_ms": 179050,
+    "end_ms": 185050,
+    "clip": "red_approaches/demo_clips/09_longjump_candidate_red/10787__prox1mo-vs-PAVEL-bloodrun-2026_06_14-11_16_41_CUT_259_306.dm_91",
+    "clip_sha256": "db4b080da765f2eff5ccf9a7607eb0123172a92b1e1bde943fc6bda4848e450d",
+    "parsed_snapshots": 261,
+    "red_pickup_events": 1
+  },
+  {
+    "kind": "longjump_candidate_red",
+    "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
+    "start_ms": 454425,
+    "end_ms": 460425,
+    "clip": "red_approaches/demo_clips/10_longjump_candidate_red/10790__AGENT-vs-baksteen-bloodrun-2026_06_21-14_06_37_CUT_734_741.dm_91",
+    "clip_sha256": "f65cb77d5b7b325b939474d7f66739191e406ec7e452c3967b7d3d98ecea6516",
+    "parsed_snapshots": 280,
+    "red_pickup_events": 1
+  }
+]

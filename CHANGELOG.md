@@ -1,3 +1,7 @@
+# 2026-10-12 - Prealpha 0.6.4 offline navigation recovery
+
+Separate bounded navigation watchdog and red-route switches; late item registry retry. Audited 1,415 red pickups, added 24 grounded approaches, cut and re-parsed 10 real clips (4 confirmed owner RJ + 6 longjump candidates). MSVC Debug/Release 13/13 each; Python 95/95; Linux NOPY built offline. NOT deployed or live verified. See docs/PREALPHA_0_6_4_RU.md.
+
 
 # 2026-10-11 - Prealpha 0.6.3 repeated-map trials
 

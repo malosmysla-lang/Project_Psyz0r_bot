@@ -25,12 +25,17 @@ static void check(bool v,const char *message){if(!v)throw std::runtime_error(mes
 static unsigned char pushed[64];
 static void pop(int){}
 static void push(int,void *p){memcpy(pushed,p,64);}
-static int get_item(int,const char*,void*){return -1;}
+static int registry_ready;static unsigned char late_goal[64];
+static int get_item(int cursor,const char *name,void *out){
+ if(registry_ready && cursor<0 && !strcmp(name,"Heavy Armor")){memcpy(out,late_goal,64);return 1;}
+ return -1;
+}
 static Client client;
 static gitem_t red{"item_armor_body","Heavy Armor",0},mega{"item_health_mega","Mega Health",0};
 static void reset(){
  memset(world,0,sizeof(world));memset(&client,0,sizeof(client));Psyz_PreAlphaReset();enabled.integer=1;
  openingvar.integer=0;phasevar.string="PRE_GAME";portvar.integer=27961;
+ registry_ready=0;
  world[0].client=&client;world[0].inuse=1;world[0].health=100;world[0].r.svFlags=8;
  client.ps.groundEntityNum=1022;client.pers.cmd.serverTime=20000;
  void *im=imports_memory;memcpy(game_memory+0x2d8000,&im,sizeof(im));
@@ -100,5 +105,11 @@ int main(){try{
  check(psyz_demo_retry_after[200]>20000 && psyz_route_banned[0]>20000,"Failed approach is not immediately reselected");
  client.pers.cmd.serverTime=27001;goal(out,200,10,world[200].r.currentOrigin);Psyz_PreAlphaGoal(state,0,out);
  check(psyz_goal_target<0 && psyz_banned[200]>27001,"A second no-progress timeout releases failed stock goal");
+ reset();world[201].inuse=1;world[201].item=&red;world[201].r.contents=1;world[201].r.currentOrigin[0]=100;
+ goal(late_goal,201,10,world[201].r.currentOrigin);psyz_debug_logged=1;psyz_registry_retry=20000;
+ goal(out,201,10,world[201].r.currentOrigin);int bad_flags=0;memcpy(out+48,&bad_flags,4);
+ Psyz_PreAlphaGoal(state,0,out);check(!psyz_goal_known[201],"Unavailable registry entry is not fabricated");
+ registry_ready=1;client.pers.cmd.serverTime=21001;goal(out,201,10,world[201].r.currentOrigin);memcpy(out+48,&bad_flags,4);
+ Psyz_PreAlphaGoal(state,0,out);check(psyz_goal_known[201],"Late stock red goal is discovered on retry");
  std::cout<<"Native prealpha contextual scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}
