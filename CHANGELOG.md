@@ -1,3 +1,7 @@
+# 2026-10-12 - All-weapon accuracy proposal, both players
+
+Computed equal player-match arithmetic means and p25-p75 across both sides, with minimum-shot filters. Seven weapons have usable samples; others remain unknown. Proposed all-weapon profile saved disabled/unapproved; existing approved PG/LG profile unchanged. No runtime edits. See docs/ALL_WEAPON_ACCURACY_RU.md.
+
 # 2026-10-12 - Prealpha 0.6.5 deployed to isolated 27961
 
 Grounded combat hold, nearby-item/loadout diagnostics, empty RL/LG/RG pickup priority and approved LG/PG aim-error calibration installed after backup. Debug/Release 13/13; Python99/99; native SHA7c8f96c5f4c156431337ec80611835691b6d8808781350027914bf4ad0cbe017. Full situational weapon policy, red under human pressure and respawn routing remain incomplete. See docs/PREALPHA_0_6_5_RU.md and smoke report.

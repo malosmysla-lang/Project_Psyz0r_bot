@@ -1,0 +1,107 @@
+{
+  "approved_by_owner": false,
+  "execution_enabled": false,
+  "source": "docs/training/ALL_WEAPON_ACCURACY_CORPUS_20261012.json",
+  "aggregation": "Equal weight per eligible player-match, both sides, arithmetic mean; range rounded p25-p75.",
+  "calibration_complete": false,
+  "weapons": {
+    "gauntlet": {
+      "base_percent": null,
+      "range_percent": null,
+      "samples": 0,
+      "reason": "No eligible recorded shots; do not invent accuracy."
+    },
+    "machinegun": {
+      "base_percent": 39,
+      "range_percent": [
+        37,
+        43
+      ],
+      "samples": 14
+    },
+    "shotgun": {
+      "base_percent": 30,
+      "range_percent": [
+        23,
+        40
+      ],
+      "samples": 30
+    },
+    "grenadeLauncher": {
+      "base_percent": 6,
+      "range_percent": [
+        2,
+        9
+      ],
+      "samples": 164
+    },
+    "rocketLauncher": {
+      "base_percent": 34,
+      "range_percent": [
+        28,
+        40
+      ],
+      "samples": 188
+    },
+    "lightningGun": {
+      "base_percent": 36,
+      "range_percent": [
+        32,
+        40
+      ],
+      "samples": 162
+    },
+    "railgun": {
+      "base_percent": 49,
+      "range_percent": [
+        40,
+        58
+      ],
+      "samples": 132
+    },
+    "plasmaGun": {
+      "base_percent": 12,
+      "range_percent": [
+        10,
+        15
+      ],
+      "samples": 32
+    },
+    "bfg": {
+      "base_percent": null,
+      "range_percent": null,
+      "samples": 0,
+      "reason": "No eligible recorded shots; do not invent accuracy."
+    },
+    "grapplingHook": {
+      "base_percent": null,
+      "range_percent": null,
+      "samples": 0,
+      "reason": "No eligible recorded shots; do not invent accuracy."
+    },
+    "nailgun": {
+      "base_percent": null,
+      "range_percent": null,
+      "samples": 0,
+      "reason": "No eligible recorded shots; do not invent accuracy."
+    },
+    "chaingun": {
+      "base_percent": null,
+      "range_percent": null,
+      "samples": 0,
+      "reason": "No eligible recorded shots; do not invent accuracy."
+    },
+    "proximityMine": {
+      "base_percent": null,
+      "range_percent": null,
+      "samples": 0,
+      "reason": "No eligible recorded shots; do not invent accuracy."
+    },
+    "heavyMachinegun": {
+      "base_percent": null,
+      "range_percent": null,
+      "samples": 0,
+      "reason": "No eligible recorded shots; do not invent accuracy."
+    }
+  }
+}
