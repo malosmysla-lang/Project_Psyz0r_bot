@@ -1,3 +1,7 @@
+# 2026-10-12 - Owner approved all-weapon accuracy ranges
+
+Authoritative config/accuracy_targets_all.json approved. MG39[37,43], SG30[23,40], GL6[2,9], RL34[28,40], LG36[32,40], RG49[40,58], PG12[10,15]. Runtime calibration incomplete; execution flag remains false. Grenade spam policy awaits owner rules. Existing live angular-error settings unchanged.
+
 # 2026-10-12 - All-weapon accuracy proposal, both players
 
 Computed equal player-match arithmetic means and p25-p75 across both sides, with minimum-shot filters. Seven weapons have usable samples; others remain unknown. Proposed all-weapon profile saved disabled/unapproved; existing approved PG/LG profile unchanged. No runtime edits. See docs/ALL_WEAPON_ACCURACY_RU.md.
