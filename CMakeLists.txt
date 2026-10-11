@@ -41,3 +41,11 @@ add_test(NAME shot_geometry COMMAND shot_geometry_tests)
 add_executable(resource_approach_tests tests/resource_approach_tests.cpp)
 target_link_libraries(resource_approach_tests PRIVATE psyz0r_core)
 add_test(NAME resource_pickup_progress COMMAND resource_approach_tests)
+
+add_executable(stock_goal_observer_tests tests/stock_goal_observer_tests.cpp)
+target_compile_features(stock_goal_observer_tests PRIVATE cxx_std_17)
+add_test(NAME stock_goal_observer_contract COMMAND stock_goal_observer_tests)
+
+if(MSVC)
+  target_compile_options(stock_goal_observer_tests PRIVATE /EHsc /utf-8 /W4)
+endif()

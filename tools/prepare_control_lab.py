@@ -2,7 +2,11 @@
 import argparse
 from pathlib import Path
 import shutil
-p=argparse.ArgumentParser();p.add_argument('checkout',type=Path);a=p.parse_args()
+import hashlib
+p=argparse.ArgumentParser();p.add_argument('checkout',type=Path);p.add_argument('--qagame',type=Path,required=True);a=p.parse_args()
+expected='091d568f46a280afbf2deda4a5ba4c8bd5e02ed6d070ef56300b1f47c5f729be'
+if hashlib.sha256(a.qagame.read_bytes()).hexdigest()!=expected:
+    p.error('qagame SHA256 mismatch; refusing to prepare hooks')
 root=Path(__file__).resolve().parents[1];hooks=a.checkout/'hooks.c'
 s=hooks.read_text()
 if '#include "psyz_control_lab.h"' not in s:
@@ -12,4 +16,5 @@ if '#include "psyz_control_lab.h"' not in s:
  s=s.replace(old,old+'\n    Psyz_Install();')
  hooks.write_text(s)
 shutil.copyfile(root/'adapter/native/psyz_control_lab.h',a.checkout/'psyz_control_lab.h')
+shutil.copyfile(root/'adapter/native/psyz_stock_goal_observer.h',a.checkout/'psyz_stock_goal_observer.h')
 print('Prepared separate checkout. Build with make -B nopy; verify pinned binary hashes before running.')

@@ -1,5 +1,6 @@
 /* Test-only command hook for the pinned Linux QL build. Not a general ABI. */
 #include <stddef.h>
+#include "psyz_stock_goal_observer.h"
 static void (*psyz_real_think)(gentity_t*);
 static int psyz_started = -1;
 static int psyz_last_log = -1;
@@ -57,6 +58,7 @@ static void Psyz_Install(void) {
     if (memcmp(target,expected,sizeof(expected)) || offsetof(gclient_t,pers.cmd)!=0x254 || sizeof(usercmd_t)!=28) {
         fprintf(stderr,"PSYZ_CONTROL refused: ABI mismatch cmd=%zu offset=%zu\n",sizeof(usercmd_t),offsetof(gclient_t,pers.cmd));return;
     }
+    Psyz_InstallGoalObserver();
     psyz_started = -1;
     int error = Hook(target,Psyz_Think,(void*)&psyz_real_think);
     fprintf(stderr,"PSYZ_CONTROL install=%d\n",error);
