@@ -1,0 +1,12 @@
+{
+  "version": "0.6.1",
+  "test_port": 27961,
+  "map": "bloodrun",
+  "native_sha256": "befa1d960dc5975bdb536e6ab71d3d4e17cd1185058d6dde6261e2d1e81ec8f2",
+  "build_checkout": "/home/qlserver/psyz0r-bot/prealpha-20261011/opening-build-01",
+  "runtime_binary": "/home/qlserver/psyz0r-bot/prealpha-20261011/minqlx/bin/minqlx_nopy.so",
+  "backup": "/home/qlserver/psyz0r-bot/prealpha-20261011/backup-before-0.6.1",
+  "opening_candidates": 36,
+  "all_openings_live_verified": false,
+  "full_mind_map_connected": false
+}

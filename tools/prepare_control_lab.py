@@ -19,4 +19,6 @@ shutil.copyfile(root/'adapter/native/psyz_control_lab.h',a.checkout/'psyz_contro
 shutil.copyfile(root/'adapter/native/psyz_stock_goal_observer.h',a.checkout/'psyz_stock_goal_observer.h')
 shutil.copyfile(root/'adapter/native/psyz_prealpha.h',a.checkout/'psyz_prealpha.h')
 shutil.copyfile(root/'adapter/native/psyz_bloodrun_bank.h',a.checkout/'psyz_bloodrun_bank.h')
+shutil.copyfile(root/'adapter/native/psyz_opening.h',a.checkout/'psyz_opening.h')
+shutil.copyfile(root/'adapter/native/psyz_opening_bank.h',a.checkout/'psyz_opening_bank.h')
 print('Prepared separate checkout. Build with make -B nopy; verify pinned binary hashes before running.')

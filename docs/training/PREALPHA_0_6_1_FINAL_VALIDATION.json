@@ -1,0 +1,105 @@
+{
+  "log_sha256": "881f459a00748de5a348f66efea96472b1e80b9c8fcc9d4f1746162388c8f2d5",
+  "actual_pickups": [
+    {
+      "install": "0"
+    },
+    {
+      "t": "40900",
+      "entity": "90",
+      "class": "ammo_shells",
+      "target": "99",
+      "route": "-1",
+      "health": "122",
+      "armor": "0"
+    },
+    {
+      "t": "41425",
+      "entity": "99",
+      "class": "weapon_shotgun",
+      "target": "99",
+      "route": "-1",
+      "health": "121",
+      "armor": "0"
+    },
+    {
+      "t": "53750",
+      "entity": "124",
+      "class": "item_armor_shard",
+      "target": "105",
+      "route": "-1",
+      "health": "100",
+      "armor": "5"
+    },
+    {
+      "t": "53775",
+      "entity": "123",
+      "class": "item_armor_shard",
+      "target": "105",
+      "route": "-1",
+      "health": "100",
+      "armor": "10"
+    },
+    {
+      "t": "59450",
+      "entity": "120",
+      "class": "item_health",
+      "target": "95",
+      "route": "-1",
+      "health": "100",
+      "armor": "0"
+    }
+  ],
+  "actual_pickup_count": 6,
+  "demo_route_activations": 2,
+  "pickups_with_matching_target_and_active_demo_route": [],
+  "strafe_command_observations": [
+    {
+      "t": "42400",
+      "route": "48",
+      "speed": "189.03",
+      "desired_speed": "314.92",
+      "ground": "1022"
+    },
+    {
+      "t": "49725",
+      "route": "118",
+      "speed": "178.90",
+      "desired_speed": "332.14",
+      "ground": "1022"
+    }
+  ],
+  "rocketjump_results": [],
+  "rocketjump_successes": 0,
+  "repath_count": 2,
+  "opening_events": [
+    {
+      "event": "PSYZ_OPENING_BEGIN",
+      "t": "37225"
+    },
+    {
+      "event": "PSYZ_OPENING_PLAN",
+      "t": "37625",
+      "plan": "13",
+      "distance": "0.00"
+    },
+    {
+      "event": "PSYZ_OPENING_PICKUP",
+      "t": "41425",
+      "plan": "13",
+      "step": "0",
+      "entity": "99"
+    },
+    {
+      "event": "PSYZ_OPENING_END",
+      "t": "49125",
+      "plan": "13",
+      "step": "1",
+      "reason": "no_progress"
+    }
+  ],
+  "opening_actual_pickups": 1,
+  "opening_completed_orders": 0,
+  "interpretation": "Observed events only; route activation is not route completion. Probe execution is not autonomous tactical selection.",
+  "mode": "combat"
+}

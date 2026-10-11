@@ -14,7 +14,11 @@ static void Psyz_Think(gentity_t* ent) {
         !port || port->integer != 27961 || !ent || ent->s.number != 0 ||
         !(ent->r.svFlags & 8) || !ent->client || ent->health <= 0) {
         if (!mode || mode->integer == 0) psyz_started = -1;
-        if(ent && ent->s.number==0 && ent->health<=0)psyz_rj=-1;
+        if(ent && ent->s.number==0 && ent->health<=0){
+            psyz_rj=-1;
+            if(Psyz_PreAlphaEnabled() && ent->client)Psyz_OpeningEnd(ent->client->pers.cmd.serverTime,"death");
+            psyz_goal_target=psyz_active_route=psyz_rj_plan=-1;
+        }
         psyz_real_think(ent); return;
     }
     usercmd_t *cmd = &ent->client->pers.cmd;
@@ -58,7 +62,9 @@ static void Psyz_Think(gentity_t* ent) {
 }
 static void Psyz_Install(void) {
     if (!getenv("PSYZ_CONTROL_LAB")) return;
-    Psyz_PreAlphaReset();
+    /* Duel allready reloads qagame. Preserve only observed match phase,
+       never pointers, cached goals or the previous opening plan. */
+    Psyz_PreAlphaVmReset();
     Psyz_InstallPickup();
     psyz_original_item_goal = NULL; /* VM reload invalidates the old trampoline. */
     /* Caller also verifies SHA256 of bin.pk3. Verify the target prologue here. */

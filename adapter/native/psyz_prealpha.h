@@ -23,13 +23,20 @@ static int Psyz_PreAlphaEnabled(void) {
     cvar_t *test=Cvar_FindVar("qlx_psyzTestInstance"),*port=Cvar_FindVar("net_port");
     return test && test->integer==1 && port && port->integer==27961 && v && v->integer==1 && m && !strcmp(m->string,"bloodrun");
 }
+#include "psyz_opening.h"
 static void Psyz_PreAlphaReset(void) {
+    Psyz_OpeningReset();
     psyz_debug_logged=0;
     memset(psyz_goal_known,0,sizeof(psyz_goal_known));memset(psyz_route_banned,0,sizeof(psyz_route_banned));memset(psyz_banned,0,sizeof(psyz_banned));
     psyz_rj_plan=psyz_goal_target=psyz_active_route=psyz_rj=psyz_last_pickup=-1;
 
     psyz_registry_logged=psyz_rj_phase=psyz_rj_last=psyz_last_move_time=0;
     psyz_last_pickup_time=psyz_rj_landed_at=psyz_strafe_log=0;
+}
+static void Psyz_PreAlphaVmReset(void) {
+    int seen=psyz_opening_seen,playing=psyz_opening_playing;
+    Psyz_PreAlphaReset();
+    psyz_opening_seen=seen;psyz_opening_playing=playing;
 }
 static float Psyz_ItemWeight(gentity_t *item,gentity_t *own,int recovering) {
     const char *c=item->item->classname;int h=own->health,a=own->client->ps.stats[STAT_ARMOR];
@@ -77,6 +84,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         }
     }
     if(!Psyz_PreAlphaEnabled())return;
+    Psyz_OpeningTick(own);
     if(!psyz_debug_logged){
         psyz_debug_logged=1;void *im;memcpy(&im,(char*)qagame+0x2d8000,sizeof(im));
         int (*get_item)(int,const char*,void*);memcpy(&get_item,(char*)im+0x4d0,sizeof(get_item));
@@ -102,7 +110,10 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         float theirs=e->health+fminf(e->client->ps.stats[STAT_ARMOR],2*e->health);
         if(theirs>ours*1.15f)recovering=1;
     }
-    int keep=psyz_goal_target>=0 && psyz_goal_known[psyz_goal_target] &&
+    int was_opening=psyz_opening_active;
+    int opening_target=Psyz_OpeningTarget(own,recovering);
+    if(was_opening && !psyz_opening_active){psyz_goal_target=-1;psyz_active_route=-1;}
+    int keep=opening_target<0 && psyz_goal_target>=0 && psyz_goal_known[psyz_goal_target] &&
         g_entities[psyz_goal_target].r.contents && now-psyz_goal_since<3000;
     if(!keep) {
         float best=-1;int selected=-1;
@@ -116,6 +127,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
             float score=weight-distance*.035f-wait*15;
             if(score>best){best=score;selected=i;}
         }
+        if(opening_target>=0)selected=opening_target;
         if(selected!=psyz_goal_target) {
             psyz_goal_target=selected;psyz_goal_since=now;psyz_progress_time=now;
             psyz_progress_distance=selected>=0?Psyz_Distance(own->client->ps.origin,g_entities[selected].r.currentOrigin):0;
@@ -136,6 +148,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     float distance=Psyz_Distance(own->client->ps.origin,g_entities[psyz_goal_target].r.currentOrigin);
     if(distance<psyz_progress_distance-32){psyz_progress_distance=distance;psyz_progress_time=now;}
     if(now-psyz_progress_time>6000) {
+        Psyz_OpeningEnd(now,"no_progress");
         fprintf(stderr,"PSYZ_REPATH t=%d target=%d route=%d reason=no_progress\n",now,psyz_goal_target,psyz_active_route);
         if(psyz_active_route>=0)psyz_route_banned[psyz_active_route]=now+60000;
         psyz_banned[psyz_goal_target]=now+8000;psyz_goal_target=-1;psyz_active_route=-1;
@@ -177,6 +190,7 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
     if(!Psyz_PreAlphaEnabled())return;
     usercmd_t *cmd=&own->client->pers.cmd;playerState_t *ps=&own->client->ps;int now=cmd->serverTime;
     if(now<psyz_last_move_time)Psyz_PreAlphaReset();
+    Psyz_OpeningTick(own);
     int dt=now-psyz_last_move_time;psyz_last_move_time=now;
     if(dt<=0 || dt>100 || own->health<=0){psyz_rj=-1;return;}
     // Never inherit habitual crouching. Agreed exceptions are not enabled yet.
@@ -274,6 +288,7 @@ static void Psyz_PreAlphaTouch(gentity_t *item,gentity_t *other,trace_t *trace) 
     int ammo_after=item->item && item->item->giTag>=0 && item->item->giTag<16?other->client->ps.ammo[item->item->giTag]:0;
     if(item->item && ((before && !item->r.contents) || weapons_before!=other->client->ps.stats[STAT_WEAPONS] || ammo_after>ammo_before)) {
         const char *c=item->item->classname;
+        Psyz_OpeningPickup(item,other->client->pers.cmd.serverTime);
         if(!strncmp(c,"weapon_",7) || !strncmp(c,"item_health",11) || !strcmp(c,"item_armor_body") || !strcmp(c,"item_armor_combat")){psyz_last_pickup=item->s.number;psyz_last_pickup_time=other->client->pers.cmd.serverTime;}
         fprintf(stderr,"PSYZ_PICKUP t=%d entity=%d class=%s target=%d route=%d health=%d armor=%d\n",other->client->pers.cmd.serverTime,item->s.number,item->item->classname,psyz_goal_target,psyz_active_route,other->health,other->client->ps.stats[STAT_ARMOR]);
         if(item->s.number==psyz_goal_target){psyz_goal_target=-1;psyz_active_route=-1;}

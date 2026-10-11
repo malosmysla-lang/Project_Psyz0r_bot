@@ -17,7 +17,8 @@ struct cvar_t {int integer;const char *string;};
 static gentity_t world[1024];static gentity_t *g_entities=world;
 static unsigned char game_memory[0x2d8010],imports_memory[0x600];static void *qagame=game_memory;
 static cvar_t enabled{1,"1"},mapvar{0,"bloodrun"},testvar{1,"1"},portvar{27961,"27961"};
-static cvar_t *Cvar_FindVar(const char *name){return !strcmp(name,"qlx_psyzPreAlpha")?&enabled:!strcmp(name,"mapname")?&mapvar:!strcmp(name,"qlx_psyzTestInstance")?&testvar:!strcmp(name,"net_port")?&portvar:nullptr;}
+static cvar_t openingvar{0,"0"},phasevar{0,"PRE_GAME"};
+static cvar_t *Cvar_FindVar(const char *name){return !strcmp(name,"qlx_psyzOpening")?&openingvar:!strcmp(name,"g_gameState")?&phasevar:!strcmp(name,"qlx_psyzPreAlpha")?&enabled:!strcmp(name,"mapname")?&mapvar:!strcmp(name,"qlx_psyzTestInstance")?&testvar:!strcmp(name,"net_port")?&portvar:nullptr;}
 static int Hook(void*,void(*)(gentity_t*,gentity_t*,trace_t*),void*){return 0;}
 #include "../adapter/native/psyz_prealpha.h"
 static void check(bool v,const char *message){if(!v)throw std::runtime_error(message);}
@@ -29,6 +30,7 @@ static Client client;
 static gitem_t red{"item_armor_body","Heavy Armor",0},mega{"item_health_mega","Mega Health",0};
 static void reset(){
  memset(world,0,sizeof(world));memset(&client,0,sizeof(client));Psyz_PreAlphaReset();enabled.integer=1;
+ openingvar.integer=0;phasevar.string="PRE_GAME";portvar.integer=27961;
  world[0].client=&client;world[0].inuse=1;world[0].health=100;world[0].r.svFlags=8;
  client.ps.groundEntityNum=1022;client.pers.cmd.serverTime=20000;
  void *im=imports_memory;memcpy(game_memory+0x2d8000,&im,sizeof(im));
@@ -68,6 +70,26 @@ int main(){try{
  client.pers.cmd.serverTime+=25;Psyz_PreAlphaMove(&world[0]);check(!(client.pers.cmd.buttons&1),"Recorded jump must not spam rockets");
  reset();client.pers.cmd.upmove=-127;psyz_last_move_time=19975;Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==0,"Crouch disabled by default");
  enabled.integer=0;client.pers.cmd.upmove=-127;client.pers.cmd.serverTime+=25;Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==-127,"Disabled policy preserves stock commands");
+ // Attach-in-progress is not a new opening. A real phase transition is required.
+ reset();openingvar.integer=1;phasevar.string="IN_PROGRESS";
+ Psyz_OpeningTick(&world[0]);check(!psyz_opening_active,"No invented opening on midgame attach");
+ phasevar.string="PRE_GAME";Psyz_OpeningTick(&world[0]);
+ psyz_goal_known[210]=1;psyz_goal_target=210;
+ Psyz_PreAlphaVmReset();
+ check(psyz_opening_seen && !psyz_opening_playing && !psyz_goal_known[210] && psyz_goal_target<0,"VM reload retains phase but invalidates old goal pointers");
+ phasevar.string="IN_PROGRESS";Psyz_OpeningTick(&world[0]);
+ check(psyz_opening_active,"Warmup-to-match transition begins opening");
+ const auto &op=psyz_openings[0];memcpy(client.ps.origin,op.start,12);
+ gitem_t first_item{op.steps[0].classname,"opening",0};
+ world[210].inuse=1;world[210].item=&first_item;world[210].r.contents=1;world[210].s.number=210;
+ memcpy(world[210].r.currentOrigin,op.steps[0].position,12);psyz_goal_known[210]=1;
+ check(Psyz_OpeningTarget(&world[0],0)==210,"Observed opening maps class and position to current entity");
+ Psyz_OpeningPickup(&world[210],20001);check(psyz_opening_step==1,"Only actual matched pickup advances plan");
+ Psyz_OpeningTarget(&world[0],1);check(!psyz_opening_active,"Recovery preempts opening");
+ phasevar.string="PRE_GAME";Psyz_OpeningTick(&world[0]);phasevar.string="IN_PROGRESS";Psyz_OpeningTick(&world[0]);
+ client.pers.cmd.serverTime+=30000;Psyz_OpeningTick(&world[0]);check(!psyz_opening_active,"Opening ends after 30 seconds");
+ phasevar.string="PRE_GAME";Psyz_OpeningTick(&world[0]);phasevar.string="IN_PROGRESS";Psyz_OpeningTick(&world[0]);
+ world[0].health=0;Psyz_OpeningTick(&world[0]);check(!psyz_opening_active,"Death does not replay opening on respawn");
  portvar.integer=27960;enabled.integer=1;check(!Psyz_PreAlphaEnabled(),"Policy must never activate on primary port");
  std::cout<<"Native prealpha contextual scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

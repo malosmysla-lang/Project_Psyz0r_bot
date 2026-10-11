@@ -1,0 +1,1311 @@
+{
+  "map": "bloodrun",
+  "plans": [
+    {
+      "start": [
+        598.8062133789062,
+        -720.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "position": [
+            672.0,
+            -1368.0,
+            264.0
+          ]
+        },
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "10790",
+      "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
+      "start_delay_ms": 725,
+      "observed_health_loss": 14,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1120.0,
+        224.0,
+        88.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "10812",
+      "source_sha256": "f0c5172412db2ca47d26b28a62896179a2c0a911965c575f3bc6113b88642893",
+      "start_delay_ms": 675,
+      "observed_health_loss": 11,
+      "live_verified": false
+    },
+    {
+      "start": [
+        828.2098999023438,
+        -876.7348022460938,
+        88.12500762939453
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "10846",
+      "source_sha256": "78c99aa2901adc356b1eb090356798cb09cd6cf6ae9566303dfb806b7de5d08b",
+      "start_delay_ms": 675,
+      "observed_health_loss": 13,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1008.8862915039062,
+        264.4437255859375,
+        86.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "10867",
+      "source_sha256": "e3501bcad05f3f1d88175496f71c102d53c0c7ce8fdee5700e5b7f1cb09bf12c",
+      "start_delay_ms": 775,
+      "observed_health_loss": 10,
+      "live_verified": false
+    },
+    {
+      "start": [
+        606.2716674804688,
+        -720.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_shotgun",
+          "position": [
+            256.0,
+            -224.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "item_armor_body",
+          "position": [
+            -160.0,
+            16.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "10931",
+      "source_sha256": "994e643268aeab4282ba9f7a719e23ab50f9cd3b7527a750e712954415ff00f2",
+      "start_delay_ms": 725,
+      "observed_health_loss": 34,
+      "live_verified": false
+    },
+    {
+      "start": [
+        864.0,
+        -800.0,
+        97.0
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9192",
+      "source_sha256": "9d8166fadda71c713171cc54aa046801d2024bb2b471ed73ac2bbf1e8b0f0423",
+      "start_delay_ms": 650,
+      "observed_health_loss": 18,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1120.0,
+        224.0,
+        97.0
+      ],
+      "steps": [
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9196",
+      "source_sha256": "5f22be4ca3d33eed4b122bb88e0588d449b80ac13062c27b2d3b9b70f90de3da",
+      "start_delay_ms": 600,
+      "observed_health_loss": 24,
+      "live_verified": false
+    },
+    {
+      "start": [
+        352.0,
+        480.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_body",
+          "position": [
+            -160.0,
+            16.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9222",
+      "source_sha256": "facc7a28742faf5b54cf68834a90becff41119e97e5969180a4c7a5dcbf9089a",
+      "start_delay_ms": 650,
+      "observed_health_loss": 11,
+      "live_verified": false
+    },
+    {
+      "start": [
+        813.8712158203125,
+        -907.4756469726562,
+        88.12500762939453
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        },
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "9237",
+      "source_sha256": "8188acb168f9e2b673eb5d8537a568ee83a4b6b700912c0cfd6b3744c219a5b8",
+      "start_delay_ms": 725,
+      "observed_health_loss": 29,
+      "live_verified": false
+    },
+    {
+      "start": [
+        604.991943359375,
+        -720.0296020507812,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "position": [
+            672.0,
+            -1368.0,
+            264.0
+          ]
+        },
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "9304",
+      "source_sha256": "b5f9f5cb4efc82da831197e7f81a015ae07deff2f51053f3d685f88dc78afc65",
+      "start_delay_ms": 700,
+      "observed_health_loss": 9,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1041.23486328125,
+        252.6692657470703,
+        86.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9312",
+      "source_sha256": "fd5c290d0f1c6fd950994cb1e7b8e0ea69f041f47ff981b19da4093e3dee53a8",
+      "start_delay_ms": 700,
+      "observed_health_loss": 34,
+      "live_verified": false
+    },
+    {
+      "start": [
+        821.1738891601562,
+        -892.1673583984375,
+        88.12500762939453
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9374",
+      "source_sha256": "dcc2744ba98013d7a70c90d6c761dd7208c06011fb2eb8f466b7c4affb7b10b5",
+      "start_delay_ms": 700,
+      "observed_health_loss": 25,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1044.9931640625,
+        251.3011932373047,
+        86.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9406",
+      "source_sha256": "b624b76ba2428071af1752d167575dc6677c9406ed369f4fd00b6781084a4c5a",
+      "start_delay_ms": 675,
+      "observed_health_loss": 11,
+      "live_verified": false
+    },
+    {
+      "start": [
+        496.0,
+        -720.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_shotgun",
+          "position": [
+            256.0,
+            -224.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "item_armor_body",
+          "position": [
+            -160.0,
+            16.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_rocketlauncher",
+          "position": [
+            672.0,
+            -1368.0,
+            264.0
+          ]
+        }
+      ],
+      "demo_id": "9409",
+      "source_sha256": "d35c71a7585a7a8a88ac0eb87b7e43af5e20fadb40ec369deb1087765bc5ea30",
+      "start_delay_ms": 725,
+      "observed_health_loss": 25,
+      "live_verified": false
+    },
+    {
+      "start": [
+        496.0,
+        -720.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_shotgun",
+          "position": [
+            256.0,
+            -224.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "item_armor_body",
+          "position": [
+            -160.0,
+            16.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_plasmagun",
+          "position": [
+            224.0,
+            384.0,
+            528.0
+          ]
+        }
+      ],
+      "demo_id": "9417",
+      "source_sha256": "f565814541b008cd74ef3fdac37ffc9fbc5b7ca2cf771f38e750df34865450a7",
+      "start_delay_ms": 700,
+      "observed_health_loss": 40,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1141.888916015625,
+        -1312.0,
+        280.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "position": [
+            672.0,
+            -1368.0,
+            264.0
+          ]
+        },
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "9436",
+      "source_sha256": "fb8fc8d4b41bf2f72e4f619b16cbbdf0eb5586a3f2e14ebb42aefc3330219d99",
+      "start_delay_ms": 675,
+      "observed_health_loss": 22,
+      "live_verified": false
+    },
+    {
+      "start": [
+        588.0302124023438,
+        -719.753173828125,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_body",
+          "position": [
+            -160.0,
+            16.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9437",
+      "source_sha256": "55d706c2709c13bd52672e99b0cc05b5a421dfb4ee08b48e42ee98709ba4eed5",
+      "start_delay_ms": 700,
+      "observed_health_loss": 10,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1232.0,
+        -1312.0,
+        280.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "position": [
+            672.0,
+            -1368.0,
+            264.0
+          ]
+        },
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "9443",
+      "source_sha256": "4d513a95dd524fd13dd56b1cd8b8e6e0682a3abffb6932a784c21851ea097104",
+      "start_delay_ms": 700,
+      "observed_health_loss": 40,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1062.33740234375,
+        244.9881134033203,
+        86.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9523",
+      "source_sha256": "e90ee7802bc5a04301947c3a08fcc900938cb76300e033d78a49d9db50d8bcc8",
+      "start_delay_ms": 700,
+      "observed_health_loss": 6,
+      "live_verified": false
+    },
+    {
+      "start": [
+        538.1405639648438,
+        -719.7355346679688,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_shotgun",
+          "position": [
+            256.0,
+            -224.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "item_armor_body",
+          "position": [
+            -160.0,
+            16.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_grenadelauncher",
+          "position": [
+            -256.0,
+            -320.0,
+            400.0
+          ]
+        }
+      ],
+      "demo_id": "9548",
+      "source_sha256": "8bf4ac1d2049327844475bc52c4c4454c3b4439aad42d73fe7b4c365ffcd7e36",
+      "start_delay_ms": 700,
+      "observed_health_loss": 26,
+      "live_verified": false
+    },
+    {
+      "start": [
+        496.0,
+        -720.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_shotgun",
+          "position": [
+            256.0,
+            -224.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9564",
+      "source_sha256": "0969b665325b43d6feb2f1af27aa18567a9ff47da86ffd2bf6bd89f1920dadcb",
+      "start_delay_ms": 700,
+      "observed_health_loss": 25,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1040.550537109375,
+        252.9181671142578,
+        86.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "9599",
+      "source_sha256": "7550f3da885c10c2b897b30de68757cc2635242e16ff9080f96b3dd293582d06",
+      "start_delay_ms": 675,
+      "observed_health_loss": 35,
+      "live_verified": false
+    },
+    {
+      "start": [
+        864.0,
+        -800.0,
+        88.125
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "9622",
+      "source_sha256": "08d4f88683f246b6478538ec3f7db5b05f51240b4f6a5c3a79ac4ea0709d2747",
+      "start_delay_ms": 700,
+      "observed_health_loss": 26,
+      "live_verified": false
+    },
+    {
+      "start": [
+        444.9908752441406,
+        480.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            224.0,
+            240.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_plasmagun",
+          "position": [
+            224.0,
+            384.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_rocketlauncher",
+          "position": [
+            672.0,
+            -1368.0,
+            264.0
+          ]
+        }
+      ],
+      "demo_id": "9631",
+      "source_sha256": "9cbca3d3d82737296da66293b3ff85955199ceb2b774c9751ef1aecf0832b13a",
+      "start_delay_ms": 675,
+      "observed_health_loss": 25,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1032.7572021484375,
+        255.650634765625,
+        86.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "9633",
+      "source_sha256": "e56d5da48b16019a9751a7d54249641477309c66bee4d0e08aa643c588940dcf",
+      "start_delay_ms": 700,
+      "observed_health_loss": 40,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1232.0,
+        -1312.0,
+        280.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "position": [
+            672.0,
+            -1368.0,
+            264.0
+          ]
+        },
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "9669",
+      "source_sha256": "94b66047e2f9d3a2cb3a3970b5a1ac36007990748dd2ab56adcf0ef895b454c4",
+      "start_delay_ms": 700,
+      "observed_health_loss": 29,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1039.4644775390625,
+        253.31350708007812,
+        86.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9781",
+      "source_sha256": "0de9f00d220eff47ece45f34091279fe6cd58e732e31d4a98356aca0c680abac",
+      "start_delay_ms": 675,
+      "observed_health_loss": 6,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1136.1287841796875,
+        -1312.0,
+        280.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "position": [
+            672.0,
+            -1368.0,
+            264.0
+          ]
+        },
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "9817",
+      "source_sha256": "982a86588473f30684fc2dcfdcd7e15fe508f594e050046ec0c713b49839ad34",
+      "start_delay_ms": 700,
+      "observed_health_loss": 29,
+      "live_verified": false
+    },
+    {
+      "start": [
+        352.0,
+        480.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_body",
+          "position": [
+            -160.0,
+            16.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9861",
+      "source_sha256": "17549444daa39dad20abd5942492af0cefb6ee113eb29a4e96bbf4581d329eef",
+      "start_delay_ms": 675,
+      "observed_health_loss": 10,
+      "live_verified": false
+    },
+    {
+      "start": [
+        450.4308776855469,
+        480.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_body",
+          "position": [
+            -160.0,
+            16.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9866",
+      "source_sha256": "cbccd23a10411f7c0f23d71cd7d725e571b74f0435eea5fd8f62192ad237c281",
+      "start_delay_ms": 700,
+      "observed_health_loss": 9,
+      "live_verified": false
+    },
+    {
+      "start": [
+        826.3162231445312,
+        -880.794921875,
+        88.12500762939453
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        }
+      ],
+      "demo_id": "9871",
+      "source_sha256": "b1381559532fde38d9051ae3587fb310d400cf298d6b62fb6ef2d91a5b190404",
+      "start_delay_ms": 675,
+      "observed_health_loss": 31,
+      "live_verified": false
+    },
+    {
+      "start": [
+        587.3910522460938,
+        -720.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_shotgun",
+          "position": [
+            256.0,
+            -224.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "item_armor_body",
+          "position": [
+            -160.0,
+            16.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_plasmagun",
+          "position": [
+            224.0,
+            384.0,
+            528.0
+          ]
+        }
+      ],
+      "demo_id": "9886",
+      "source_sha256": "ab16c5ef80c631770b2b43c5e1914be9bb8e3d55607a304f84b404b85b728c2d",
+      "start_delay_ms": 675,
+      "observed_health_loss": 34,
+      "live_verified": false
+    },
+    {
+      "start": [
+        602.7514038085938,
+        -720.0,
+        440.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_shotgun",
+          "position": [
+            256.0,
+            -224.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "item_armor_body",
+          "position": [
+            -160.0,
+            16.0,
+            528.0
+          ]
+        },
+        {
+          "classname": "weapon_grenadelauncher",
+          "position": [
+            -256.0,
+            -320.0,
+            400.0
+          ]
+        }
+      ],
+      "demo_id": "9891",
+      "source_sha256": "d5146a13cf4957273c193a6ba09854accd8d051a9a30c5a7eede9cd997b6827d",
+      "start_delay_ms": 725,
+      "observed_health_loss": 28,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1114.037841796875,
+        226.15386962890625,
+        88.125
+      ],
+      "steps": [
+        {
+          "classname": "weapon_lightning",
+          "position": [
+            672.0,
+            384.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "9963",
+      "source_sha256": "f3a01ec078946aa17d3fcf1c80e0da3ca5885648cb7ca377dcba5de2d0988fc8",
+      "start_delay_ms": 800,
+      "observed_health_loss": 10,
+      "live_verified": false
+    },
+    {
+      "start": [
+        1232.0,
+        -1312.0,
+        289.0
+      ],
+      "steps": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "position": [
+            672.0,
+            -1368.0,
+            264.0
+          ]
+        },
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        }
+      ],
+      "demo_id": "owner-005",
+      "source_sha256": "f1dffa9076316e6d4201ac170e4e0a18ab4337dd193eb2b3dfbe5ef18c88080e",
+      "start_delay_ms": 550,
+      "observed_health_loss": 33,
+      "live_verified": false
+    },
+    {
+      "start": [
+        864.0,
+        -800.0,
+        88.125
+      ],
+      "steps": [
+        {
+          "classname": "item_armor_combat",
+          "position": [
+            672.0,
+            -992.0,
+            80.0
+          ]
+        },
+        {
+          "classname": "item_health_mega",
+          "position": [
+            784.0,
+            -224.0,
+            81.0
+          ]
+        },
+        {
+          "classname": "weapon_railgun",
+          "position": [
+            -192.0,
+            -224.0,
+            8.0
+          ]
+        }
+      ],
+      "demo_id": "owner-025",
+      "source_sha256": "dd9b975f7f031d8b5212227682d5ff3ee5bc5e9869b884f55b90007422ad75a3",
+      "start_delay_ms": 600,
+      "observed_health_loss": 29,
+      "live_verified": false
+    }
+  ],
+  "optimality_verified": false,
+  "note": "Partial observed starts; loss filter includes decay/self damage"
+}

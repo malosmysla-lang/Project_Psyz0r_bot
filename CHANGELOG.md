@@ -1,4 +1,9 @@
 
+# 2026-10-11 - Prealpha 0.6.1 opening overlay
+
+36 observed Blood Run opening orders connected to the native test-only goal selector. Real match phase with VM-reload handling; actual pickup advancement, recovery/death/unavailable/timeout fallback. MSVC Debug 12/12 CTest; Python 92/92; Linux NOPY build. First live order picked yellow and Mega, then aborted unavailable third goal. All 36 variants are not live verified. See docs/PREALPHA_0_6_1_RU.md.
+
+
 
 2026-10-11 opening audit: first 30 seconds anchored to UDT match starts; first weapon/three strategic pickups, continuity and missing-start flags. No runtime policy change. See docs/OPENINGS_RU.md. Four focused tests passed.
 Prealpha follow-up: normalized native header whitespace; no executable behavior changed.

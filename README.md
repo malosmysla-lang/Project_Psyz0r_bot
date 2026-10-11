@@ -1,4 +1,4 @@
-> Current playable milestone: [Blood Run prealpha 0.6](docs/PREALPHA_0_6_RU.md). Isolated test: 78.17.9.235:27961. Earlier implementation-status notes below may describe older stages.
+> Current playable milestone: [Blood Run prealpha 0.6.1: openings](docs/PREALPHA_0_6_1_RU.md). Isolated test: 78.17.9.235:27961. Earlier implementation-status notes below may describe older stages.
 
 # Psyz0r_bot
 

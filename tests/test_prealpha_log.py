@@ -9,6 +9,17 @@ spec.loader.exec_module(module)
 
 
 class LogEvidenceTests(unittest.TestCase):
+    def test_opening_plan_and_abort_are_not_completion(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'console.log'
+            path.write_text('PSYZ_OPENING_BEGIN t=1\n'
+                            'PSYZ_OPENING_PLAN t=2 plan=0\n'
+                            'PSYZ_OPENING_PICKUP t=3 plan=0 step=0 entity=20\n'
+                            'PSYZ_OPENING_END t=4 plan=0 step=1 reason=unavailable_or_distant\n')
+            result = module.summarize(path)
+            self.assertEqual(result['opening_actual_pickups'], 1)
+            self.assertEqual(result['opening_completed_orders'], 0)
+
     def test_intentions_and_failed_jumps_are_not_successes(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'console.log'
