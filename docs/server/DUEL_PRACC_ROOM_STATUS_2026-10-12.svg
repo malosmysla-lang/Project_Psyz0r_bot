@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1800 1320" role="img" aria-labelledby="title desc">
+  <title id="title">Duel's Pracc Room — состояние сервера на 12 октября 2026</title>
+  <desc id="desc">Сводка конфигурации Duel-сервера, статистики матчей, готовых и требующих проверки работ, а также планов.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071426"/>
+      <stop offset="1" stop-color="#102b49"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" x2="1">
+      <stop offset="0" stop-color="#2b7de9"/>
+      <stop offset="1" stop-color="#59b5ff"/>
+    </linearGradient>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #edf5ff; }
+      .muted { fill: #a9bdd3; }
+      .small { font-size: 18px; }
+      .body { font-size: 21px; }
+      .head { font-size: 27px; font-weight: 700; }
+      .card { fill: #10233a; stroke: #294765; stroke-width: 2; }
+      .green { fill: #49d49a; }
+      .amber { fill: #ffc857; }
+      .red { fill: #ff737b; }
+      .line { stroke: #294765; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect width="1800" height="1320" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1800" height="12" fill="#fff"/>
+  <rect x="0" y="12" width="1800" height="12" fill="#2b7de9"/>
+
+  <text x="64" y="78" font-size="20" font-weight="700" letter-spacing="3" fill="#78baff">АУДИТ СЕРВЕРА • СНИМОК 01</text>
+  <text x="64" y="132" font-size="43" font-weight="750">DUEL's Pracc Room by nekitz0r</text>
+  <text x="64" y="171" font-size="25" class="muted">Intel_maps_Finland  •  Quake Live  •  12 октября 2026</text>
+  <rect x="1430" y="66" width="306" height="72" rx="18" fill="#153b34" stroke="#49d49a" stroke-width="2"/>
+  <circle cx="1464" cy="102" r="10" fill="#49d49a"/>
+  <text x="1488" y="110" font-size="20" font-weight="700">ОСНОВНОЙ: АКТИВЕН</text>
+  <text x="1430" y="169" font-size="18" class="muted">UDP 27960 • основной инстанс</text>
+
+  <rect class="card" x="64" y="208" width="1672" height="170" rx="22"/>
+  <text class="head" x="94" y="250">СОСТОЯНИЕ СЕРВЕРА</text>
+  <line class="line" x1="94" y1="267" x2="1704" y2="267"/>
+  <text x="96" y="309" font-size="25" font-weight="700">DUEL</text>
+  <text x="96" y="344" class="body muted">8 мест • 1 резерв (по сводке)</text>
+  <line class="line" x1="435" y1="286" x2="435" y2="354"/>
+  <text x="474" y="309" font-size="25" font-weight="700" fill="#78baff">ПУЛ ИЗ 21 КАРТЫ</text>
+  <text x="474" y="344" class="body muted">Классика • Intel / Blue • карты QC</text>
+  <line class="line" x1="1002" y1="286" x2="1002" y2="354"/>
+  <text x="1042" y="309" font-size="25" font-weight="700">СТАРТОВАЯ КАРТА</text>
+  <text x="1042" y="344" class="body muted">sinisterblue (настроена)</text>
+  <line class="line" x1="1395" y1="286" x2="1395" y2="354"/>
+  <text x="1432" y="309" font-size="25" font-weight="700">БАЗОВЫЙ DUEL</text>
+  <text x="1432" y="344" class="body muted">штатные правила + админ-утилиты</text>
+
+  <rect class="card" x="64" y="402" width="810" height="300" rx="22"/>
+  <text class="head" x="94" y="446">ЗАПИСЬ МАТЧЕЙ • SQLITE</text>
+  <text x="94" y="480" class="small muted">Состояние базы при проверке 12 октября; включая матчи с ботами.</text>
+  <circle cx="220" cy="576" r="74" fill="none" stroke="#294765" stroke-width="24"/>
+  <circle cx="220" cy="576" r="74" fill="none" stroke="#49d49a" stroke-width="24" stroke-dasharray="240.8 464.9" transform="rotate(-90 220 576)"/>
+  <circle cx="220" cy="576" r="74" fill="none" stroke="#ff737b" stroke-width="24" stroke-dasharray="224.1 464.9" stroke-dashoffset="-240.8" transform="rotate(-90 220 576)"/>
+  <text x="220" y="570" text-anchor="middle" font-size="39" font-weight="750">58</text>
+  <text x="220" y="600" text-anchor="middle" class="small muted">отчётов</text>
+  <circle cx="320" cy="535" r="7" class="green"/>
+  <text x="340" y="542" class="body"><tspan font-weight="700">30</tspan> без метки прерывания</text>
+  <circle cx="320" cy="575" r="7" class="red"/>
+  <text x="340" y="582" class="body"><tspan font-weight="700">28</tspan> с меткой прерывания</text>
+  <text x="340" y="627" class="body"><tspan fill="#78baff" font-weight="700">21</tspan> человек против человека</text>
+  <text x="340" y="660" class="body"><tspan fill="#78baff" font-weight="700">9</tspan> человек против бота</text>
+  <line class="line" x1="640" y1="510" x2="640" y2="667"/>
+  <text x="665" y="545" font-size="34" font-weight="750">1,266</text>
+  <text x="665" y="575" class="small muted">событий в базе</text>
+  <text x="665" y="618" font-size="28" font-weight="700">30</text>
+  <text x="714" y="618" class="small muted">начал матчей</text>
+  <text x="665" y="658" class="small muted">Последний отчёт: 9 окт.</text>
+
+  <rect class="card" x="902" y="402" width="834" height="300" rx="22"/>
+  <text class="head" x="932" y="446">ПЛАН • ЧИСЛО ПУНКТОВ, НЕ ВЗВЕШЕННАЯ ГОТОВНОСТЬ</text>
+  <text x="932" y="480" class="small muted">18 пунктов по CFG, коду, данным сервера и сводке владельца.</text>
+  <rect x="934" y="514" width="804" height="30" rx="15" fill="#294765"/>
+  <path d="M949 514 H1202 V544 H949 A15 15 0 0 1 934 529 A15 15 0 0 1 949 514" fill="#49d49a"/>
+  <rect x="1202" y="514" width="313" height="30" fill="#ffc857"/>
+  <path d="M1515 514 H1723 A15 15 0 0 1 1738 529 A15 15 0 0 1 1723 544 H1515 Z" fill="#ff737b"/>
+  <text x="934" y="590" font-size="40" font-weight="750" fill="#49d49a">6</text>
+  <text x="975" y="588" class="body">реализовано / подтверждено</text>
+  <text x="1280" y="590" font-size="40" font-weight="750" fill="#ffc857">7</text>
+  <text x="1320" y="588" class="body">частично / нужна проверка</text>
+  <text x="934" y="646" font-size="40" font-weight="750" fill="#ff737b">5</text>
+  <text x="975" y="644" class="body">не начато / планы</text>
+  <text x="1280" y="645" class="small muted">33% / 39% / 28% по числу пунктов</text>
+  <text x="932" y="680" class="small muted">Все пункты равны по весу; это не оценка готовности по сложности.</text>
+
+  <rect class="card" x="64" y="726" width="528" height="430" rx="22"/>
+  <circle cx="98" cy="770" r="9" class="green"/>
+  <text x="120" y="779" font-size="25" font-weight="700" fill="#49d49a">ЕСТЬ И РАБОТАЕТ</text>
+  <text x="94" y="824" class="body">• Duel и лимит 8 клиентов</text>
+  <text x="94" y="861" class="body">• Пул из 21 карты настроен</text>
+  <text x="94" y="898" class="body">• Сервис активен, автозапуск включён</text>
+  <text x="94" y="935" class="body">• Админские функции подтверждены</text>
+  <text x="94" y="972" class="body">• Бот добавляется вручную через /rcon</text>
+  <text x="94" y="1009" class="body">• События записываются в SQLite</text>
+  <text x="94" y="1052" class="small muted">В CFG не найдено плагинов изменения физики</text>
+  <text x="94" y="1080" class="small muted">или боевых правил. Workshop: карты, Gibs,</text>
+  <text x="94" y="1108" class="small muted">ресурсы ботов; Gibs зависит и от клиента.</text>
+
+  <rect class="card" x="620" y="726" width="548" height="430" rx="22"/>
+  <circle cx="654" cy="770" r="9" class="amber"/>
+  <text x="676" y="779" font-size="25" font-weight="700" fill="#ffc857">НУЖНА ПРОВЕРКА</text>
+  <text x="650" y="824" class="body">• На скриншоте квадрат перед “Technical”</text>
+  <text x="650" y="861" class="body">• Runtime-значение приветствия не считано</text>
+  <text x="650" y="898" class="body">• Цикл бота: ожидание → 1 дуэль → выход</text>
+  <text x="650" y="935" class="body">• Голосование и команды смены карт</text>
+  <text x="650" y="972" class="body">• Безопасный рестарт; в логах возврат -15</text>
+  <text x="650" y="1009" class="body">• Отчётов матчей после 9 окт. нет; события</text>
+  <text x="672" y="1037" class="body">разминки есть до 11 окт.</text>
+  <text x="650" y="1090" class="small muted">В CFG — “Intel_maps_Finland”; ранее было</text>
+  <text x="650" y="1118" class="small muted">“Inlet”. Написание имени нужно уточнить.</text>
+
+  <rect class="card" x="1196" y="726" width="540" height="430" rx="22"/>
+  <circle cx="1230" cy="770" r="9" class="red"/>
+  <text x="1252" y="779" font-size="25" font-weight="700" fill="#ff737b">ЕЩЁ НЕ СДЕЛАНО</text>
+  <text x="1226" y="824" class="body">• Карточки игроков: победы, карты, соперники</text>
+  <text x="1226" y="861" class="body">• Посещаемость, пики онлайна и география</text>
+  <text x="1226" y="898" class="body">• Картинка в HUD (возможность не проверена)</text>
+  <text x="1226" y="935" class="body">• Бэкапы, ротация логов, контроль диска</text>
+  <text x="1226" y="972" class="body">• Памятка админа и две будущие площадки</text>
+  <line class="line" x1="1226" y1="1001" x2="1704" y2="1001"/>
+  <text x="1226" y="1043" class="small muted">В карточке не планировались Elo/MMR, K/D,</text>
+  <text x="1226" y="1071" class="small muted">смерти или поражения.</text>
+  <text x="1226" y="1118" class="small muted">Планы не отмечены как готовые.</text>
+
+  <text x="64" y="1210" class="small muted">Источники: CFG, плагины, статус службы, агрегаты SQLite, скриншот и сводка владельца.</text>
+  <text x="64" y="1242" class="small muted">Снимок предварительный: полной истории чата здесь нет. Обновить после оставшихся сообщений владельца.</text>
+  <text x="64" y="1282" font-size="18" fill="#78baff">Duel's Pracc Room by nekitz0r</text>
+  <text x="1736" y="1282" text-anchor="end" font-size="18" class="muted">АУДИТ • СЕРВЕР НЕ МЕНЯЛСЯ</text>
+</svg>

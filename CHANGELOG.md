@@ -1,3 +1,7 @@
+# 2026-10-12 - Duel Pracc Room audit snapshot
+
+Added a provisional, read-only status infographic and Russian evidence summary for the separate Duel server. No server configuration, bot source, or runtime was changed. Counts are explicit item counts, not weighted readiness; match-report freshness and the welcome-square source remain unresolved. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12.svg and docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md. Remaining chat history is still awaited.
+
 # 2026-10-12 - Prealpha 0.6.4 offline navigation recovery
 
 Separate bounded navigation watchdog and red-route switches; late item registry retry. Audited 1,415 red pickups, added 24 grounded approaches, cut and re-parsed 10 real clips (4 confirmed owner RJ + 6 longjump candidates). MSVC Debug/Release 13/13 each; Python 95/95; Linux NOPY built offline. NOT deployed or live verified. See docs/PREALPHA_0_6_4_RU.md.

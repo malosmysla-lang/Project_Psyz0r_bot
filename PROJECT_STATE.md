@@ -1,3 +1,7 @@
+# 2026-10-12 - Duel Pracc Room audit snapshot
+
+Separate server-only audit snapshot is provisional. Main Quake Live service was active and enabled at inspection; no live changes or restarts were made. The infographic reports 6/18 implemented-or-confirmed, 7/18 partial, and 5/18 not started, based on equal item counts only. The welcome-square source, recent complete match reports, and full prior chat remain unresolved. This audit does not change or represent Psyz0r bot implementation readiness. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12.svg and docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.
+
 # 2026-10-12 - Prealpha 0.6.4 offline navigation recovery
 
 Separate bounded navigation watchdog and red-route switches; late item registry retry. Audited 1,415 red pickups, added 24 grounded approaches, cut and re-parsed 10 real clips (4 confirmed owner RJ + 6 longjump candidates). MSVC Debug/Release 13/13 each; Python 95/95; Linux NOPY built offline. NOT deployed or live verified. See docs/PREALPHA_0_6_4_RU.md.
