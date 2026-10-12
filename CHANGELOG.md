@@ -1,3 +1,7 @@
+# 2026-10-12 - Xaero join greeting copy proposal
+
+Drafted seven short, friendly English join lines with Russian meanings, plus proposed one-line-per-human-join selection behavior. Documentation only: no plugin or server changes. See docs/server/XAERO_JOIN_GREETING_OPTIONS_2026-10-12_RU.md.
+
 # 2026-10-12 - Grenade zoning safety policy
 
 C++ one-grenade permission module for Mega from GL platform and upper TP to red. Requires fresh confirmed enemy position, verified fastest approach excluding fast closure, safe demonstrated trajectory and zoning purpose; unknown safety denies. Local only, not wired to game. Debug/Release14/14. Demo-shot candidates mined separately, not asserted tactical proofs. See docs/GRENADE_ZONING_RU.md.
