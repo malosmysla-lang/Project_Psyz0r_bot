@@ -1,3 +1,7 @@
+# 2026-10-12 - Server Xaero communication lines deployed
+
+Only the main server's minqlx dialogue plugin changed: delayed private join greetings, one colored GL & HF per eligible bot duel, and friendly post-match lines. No Psyz0r AI, skill, combat or project source changes. The empty server restarted; active PID 226792; plugin loaded and Practice bot ready. Focused syntax/mock tests passed; owner gameplay check remains. Weapon accuracy and blowout lines wait for agreed thresholds. Full catalog: docs/server/XAERO_COMMUNICATIONS_2026-10-12_RU.md.
+
 # 2026-10-12 - Prealpha 0.6.9 item clocks and openings deployed
 
 Owner demo analyzed: bot4-10, red0/mega8/yellow12, LG82/346, one confirmed higher RJ. Found 3s timing horizon and 30s goal hold; connected engine item-clock registry and travel-aware major lookahead/preemption. Fixed Red Armor display versus Heavy Armor botlib query (cold-start goal area1429). Openings latch start, wait for registry, require main-gun candidate and cancel on emergency rather than mere rival stack advantage. Audit36 candidates/100 destinations valid, 32 eligible, 39 demo-covered legs and61 AAS fallbacks. Live: two full LG-Mega-RG orders; final build full Red-RG with actual red pickup at+9.1s. Engine clocks verified armor25s/Mega35s. Debug/Release14/14, Python99/99. Final SHA a29bf4da62c096c2c24bea072ee690ac86c9d900f647c0caca9c3b4502711eda. Only27961 changed. Aim calibration and other opening variants remain. See docs/PREALPHA_0_6_9_RU.md.
