@@ -1,5 +1,4 @@
 """Build original bot definitions using retail includes at runtime, not copied code."""
-import json
 import zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -16,11 +15,13 @@ def main():
     weights=['#include "inv.h"']
     for args in [
         ('Machinegun','INVENTORY_MACHINEGUN','INVENTORY_BULLETS',[(None,25)]),
-        ('Shotgun','INVENTORY_SHOTGUN','INVENTORY_SHELLS',[(128,95),(256,55),(512,15),(None,3)]),
-        ('Rocket Launcher','INVENTORY_ROCKETLAUNCHER','INVENTORY_ROCKETS',[(128,70),(384,160),(768,125),(None,60)]),
-        ('Lightning Gun','INVENTORY_LIGHTNING','INVENTORY_LIGHTNINGAMMO',[(128,170),(600,175),(768,95),(None,0)]),
-        ('Railgun','INVENTORY_RAILGUN','INVENTORY_SLUGS',[(256,65),(600,115),(None,200)]),
-        ('Plasma Gun','INVENTORY_PLASMAGUN','INVENTORY_CELLS',[(384,75),(768,40),(None,10)]),
+        # Adjacent integer boundaries avoid a broad fuzzy blend through the
+        # fighting range (the retail engine interpolates switch weights).
+        ('Shotgun','INVENTORY_SHOTGUN','INVENTORY_SHELLS',[(128,90),(129,20),(None,20)]),
+        ('Rocket Launcher','INVENTORY_ROCKETLAUNCHER','INVENTORY_ROCKETS',[(128,85),(129,170),(None,170)]),
+        ('Lightning Gun','INVENTORY_LIGHTNING','INVENTORY_LIGHTNINGAMMO',[(767,240),(768,0),(None,0)]),
+        ('Railgun','INVENTORY_RAILGUN','INVENTORY_SLUGS',[(767,100),(768,260),(None,260)]),
+        ('Plasma Gun','INVENTORY_PLASMAGUN','INVENTORY_CELLS',[(None,40)]),
         ('Grenade Launcher','INVENTORY_GRENADELAUNCHER','INVENTORY_GRENADES',[(None,0)]),
     ]:weights.append(weapon(*args))
     weights.append('weight "Gauntlet" { switch(INVENTORY_GAUNTLET) { case 1: return 0; default: return 5; } }')

@@ -1,0 +1,25 @@
+{
+  "deployment": {
+    "profile": "0.6.7-lg1",
+    "weapon_profile_sha256": "e1cdbfdef807e5b71547ea93fe760b88f21e91e0c568f5c597d6e09a0b2af1da",
+    "backup": "/home/qlserver/backups/psyz0r-lg1-20261012T001642Z",
+    "native_unchanged": true,
+    "main_pid_unchanged": true,
+    "retail_profile_loaded": true
+  },
+  "duration_seconds": 40,
+  "pickups": 12,
+  "sampled_firing_weapons": {},
+  "errors": [],
+  "samples_are_not_shot_counts": true,
+  "followup": {
+    "duration_seconds": 60,
+    "baseline_skill": 5,
+    "pickups": 14,
+    "sampled_firing_weapons": {
+      "2": 3,
+      "5": 5
+    },
+    "errors": []
+  }
+}

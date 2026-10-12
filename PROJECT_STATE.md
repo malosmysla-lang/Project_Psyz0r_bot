@@ -1,3 +1,7 @@
+# 2026-10-12 - LG-first duel weapon profile
+
+Owner weapon hierarchy applied to retail profile 0.6.7-lg1: LG240 in working horizontal range, RL170 main alternative, RG260 beyond LG range; secondary guns reduced. Adjacent integer fuzzy nodes prevent a broad transition across the medium range. Profile loaded on isolated27961 after backup; native unchanged. Local Behavior aligned with LG-first, far RG/RL and conditional safe shotgun finish. Rail-hit-to-push rule preserved as pending event integration, not claimed live. See docs/WEAPON_PRIORITY_LG1_RU.md.
+
 # 2026-10-12 - Prealpha 0.6.7 loadout preparation deployed
 
 Connected ammunition reserves, missing-weapon preparation and optional forward-push gate; armor damage extends grounded combat, aim targets interpolate across windows. Debug/Release 14/14 and Python99/99. Two isolated 40s duel trials (including map reload): 20 pickups, 11 preparation gates, 3 grounded-jump blocks, 8 aim-profile records, no detected ERROR/load failures. Test27961 Blood Run Duel verified; main PID unchanged. See docs/PREALPHA_0_6_7_RU.md and docs/ADDON_RUNTIME_STATUS_RU.md. Full behavior integration remains incomplete.

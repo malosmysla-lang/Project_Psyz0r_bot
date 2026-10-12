@@ -154,10 +154,13 @@ void Behavior::observe(const Event& e) {
 Weapon Behavior::choose_weapon(const Observation& o,bool revenge) const {
     auto has=[&](Weapon w){return std::find(o.available_weapons.begin(),o.available_weapons.end(),w)!=o.available_weapons.end();};
     if(revenge && has(Weapon::Gauntlet)) return Weapon::Gauntlet;
-    if(o.enemy_visible && o.enemy_distance>=settings_.rail_distance && has(Weapon::Rail)) return Weapon::Rail;
-    if(o.enemy_visible && o.enemy_distance<settings_.close_distance && has(Weapon::Shotgun)) return Weapon::Shotgun;
+    if(o.enemy_visible && o.enemy_distance>=767 && has(Weapon::Rail)) return Weapon::Rail;
+    // A close shotgun finish is situational, not the default duel weapon.
+    if(o.enemy_visible && o.enemy_distance<settings_.close_distance && o.safe_close_contact &&
+       o.enemy_hp_estimate_valid && o.enemy_hp_estimate>0 && o.enemy_hp_estimate<=50 && has(Weapon::Shotgun)) return Weapon::Shotgun;
+    if(o.enemy_visible && o.enemy_distance>=767 && has(Weapon::Rocket))return Weapon::Rocket;
     for(auto w:{Weapon::Lightning,Weapon::Rocket,Weapon::Rail,Weapon::Plasma,Weapon::Shotgun,Weapon::Machinegun,Weapon::Grenade,Weapon::Gauntlet})
-        if(has(w)) return w;
+        if(has(w) && !(w==Weapon::Lightning && o.enemy_visible && o.enemy_distance>=767)) return w;
     return Weapon::None;
 }
 void Behavior::choose_item(const Observation& o,Decision& d) const {
