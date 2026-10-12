@@ -1,3 +1,7 @@
+# 2026-10-12 - Xaero duel-start greeting copy
+
+Five duel-start text options added to the Xaero copy proposal: blue (`^4`) opening, white (`^7`) ampersand, blue closing, with abbreviated and full-word lines. Behavior is specified for one message only after an accepted bot duel starts; human-vs-human matches excluded. Text proposal only; code and server unchanged. See docs/server/XAERO_JOIN_GREETING_OPTIONS_2026-10-12_RU.md.
+
 # 2026-10-12 - Prealpha 0.6.6 deployed on isolated 27961
 
 Own Psyz0r weapon profile, nearby missing trinity pickup override, grounded combat and approved all-weapon aim target inputs connected. Actual accuracy calibration remains incomplete. Debug/Release 14/14; live smoke 33 pickup records, 11 aim profile records, no ERROR strings. Trial opponent removed. See docs/PREALPHA_0_6_6_RU.md.
