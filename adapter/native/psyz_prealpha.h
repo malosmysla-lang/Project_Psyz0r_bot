@@ -61,6 +61,8 @@ static int psyz_goal_target=-1,psyz_goal_since,psyz_registry_logged;
 static int psyz_rj_plan=-1,psyz_active_route=-1,psyz_route_point,psyz_last_move_time;
 static float psyz_progress_distance;
 static int psyz_strafe_log;
+static int psyz_strafe_phase,psyz_strafe_since,psyz_strafe_direction,psyz_strafe_route;
+static float psyz_strafe_start_speed,psyz_strafe_first_peak;
 static int psyz_progress_time,psyz_banned[1024];
 static int psyz_demo_retry_after[1024];
 static int psyz_rj=-1,psyz_rj_phase,psyz_rj_time,psyz_rj_ground,psyz_rj_last,psyz_rj_fired,psyz_rj_landed_at;
@@ -75,6 +77,11 @@ static float Psyz_Distance(const float *a,const float *b) {
     float x=a[0]-b[0],y=a[1]-b[1],z=a[2]-b[2];return sqrtf(x*x+y*y+z*z);
 }
 static float Psyz_Angle(float a) { while(a>180)a-=360;while(a< -180)a+=360;return a; }
+static float Psyz_TurnToward(float current,float target,float limit) {
+    float delta=Psyz_Angle(target-current);
+    if(delta>limit)delta=limit;if(delta< -limit)delta=-limit;
+    return current+delta;
+}
 static int Psyz_PreAlphaEnabled(void) {
     cvar_t *v=Cvar_FindVar("qlx_psyzPreAlpha");cvar_t *m=Cvar_FindVar("mapname");
     cvar_t *test=Cvar_FindVar("qlx_psyzTestInstance"),*port=Cvar_FindVar("net_port");
@@ -95,6 +102,8 @@ static void Psyz_PreAlphaReset(void) {
 
     psyz_registry_logged=psyz_rj_phase=psyz_rj_last=psyz_last_move_time=0;
     psyz_last_pickup_time=psyz_rj_landed_at=psyz_strafe_log=0;
+    psyz_strafe_phase=psyz_strafe_since=0;psyz_strafe_direction=1;psyz_strafe_route=-1;
+    psyz_strafe_start_speed=psyz_strafe_first_peak=0;
 }
 static void Psyz_PreAlphaVmReset(void) {
     int seen=psyz_opening_seen,playing=psyz_opening_playing;
@@ -451,27 +460,74 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
         }
         return;
     }
-    // Strafe-jump only on a straight, observed demo corridor, never during firing.
-    if(psyz_active_route<0 || (cmd->buttons&1))return;
+    /* Route strafe-jump only on a straight observed corridor.  Combat returned
+       above, so this controller never starts while firing or after damage. */
+    if(psyz_active_route<0 || (cmd->buttons&1)){psyz_strafe_phase=0;psyz_strafe_route=-1;return;}
     const PsyzLearnedRoute *r=Psyz_Route((size_t)psyz_active_route);int k=psyz_route_point;
-    if(k+3>=r->count)return;
+    if(k+3>=r->count){psyz_strafe_phase=0;return;}
     float dx=r->points[k+3].p[0]-ps->origin[0],dy=r->points[k+3].p[1]-ps->origin[1];
     float length=hypotf(dx,dy);if(length<160 || fabsf(r->points[k+3].p[2]-ps->origin[2])>32)return;
     float heading=atan2f(dy,dx)*57.2957795f;
     for(int n=k;n<k+3;n++){
         float ex=r->points[n].p[0]-ps->origin[0],ey=r->points[n].p[1]-ps->origin[1];
-        if(hypotf(ex,ey)>48 && fabsf(Psyz_Angle(atan2f(ey,ex)*57.2957795f-heading))>15)return;
+        if(hypotf(ex,ey)>48 && fabsf(Psyz_Angle(atan2f(ey,ex)*57.2957795f-heading))>20){psyz_strafe_phase=0;return;}
     }
-    if(fabsf(Psyz_Angle(heading-ps->viewangles[1]))>35 || cmd->forwardmove<70)return;
-    float speed=hypotf(ps->velocity[0],ps->velocity[1]);if(speed<150)return;
+    if(cmd->forwardmove<70){psyz_strafe_phase=0;return;}
+    float speed=hypotf(ps->velocity[0],ps->velocity[1]);
+    if(psyz_strafe_route!=psyz_active_route){psyz_strafe_phase=0;psyz_strafe_route=psyz_active_route;}
+    if(psyz_strafe_phase==0){
+        if(ps->groundEntityNum!=1023 && speed<=100){
+            float turn=Psyz_Angle(heading-ps->viewangles[1]);
+            psyz_strafe_direction=fabsf(turn)>5?(turn>0?1:-1):(((psyz_active_route+k)&1)?1:-1);
+            psyz_strafe_phase=1;psyz_strafe_since=now;psyz_strafe_start_speed=speed;psyz_strafe_first_peak=speed;
+            fprintf(stderr,"PSYZ_STRAFE_START t=%d route=%d point=%d speed=%.2f direction=%d combat=0\n",now,psyz_active_route,k,speed,psyz_strafe_direction);
+        }else if(speed>=150){
+            float vh=atan2f(ps->velocity[1],ps->velocity[0])*57.2957795f;
+            psyz_strafe_direction=Psyz_Angle(heading-vh)>=0?1:-1;psyz_strafe_phase=5;psyz_strafe_since=now;
+        }else return;
+    }
+    if(psyz_strafe_phase==1){
+        int elapsed=now-psyz_strafe_since;
+        if(ps->groundEntityNum==1023){
+            psyz_strafe_phase=2;psyz_strafe_since=now;psyz_strafe_first_peak=speed;
+            fprintf(stderr,"PSYZ_STRAFE_JUMP1 t=%d route=%d speed=%.2f prep_ms=%d\n",now,psyz_active_route,speed,elapsed);
+        }else{
+            /* Corpus median: 350 ms from <=80 UPS to takeoff and 36 degrees
+               of observable ground yaw.  Begin wider, then close to the
+               forward+strafe 45-degree wish direction without an aim snap. */
+            float progress=elapsed<=100?0.f:(elapsed>=350?1.f:(elapsed-100)/250.f);
+            float offset=70.f-25.f*progress;
+            float target=heading-psyz_strafe_direction*offset;
+            float yaw=Psyz_TurnToward(ps->viewangles[1],target,10.f);
+            cmd->angles[1]=(int)(yaw*65536.f/360.f)-ps->delta_angles[1];
+            cmd->forwardmove=127;cmd->rightmove=(signed char)(psyz_strafe_direction*127);
+            cmd->upmove=(elapsed>=300 && speed>=300) || elapsed>=450?127:0;
+            return;
+        }
+    }
     float velocity_heading=atan2f(ps->velocity[1],ps->velocity[0])*57.2957795f;
-    int beat=Psyz_Angle(heading-velocity_heading)>=0?1:-1;
+    if(psyz_strafe_phase==2 && speed>psyz_strafe_first_peak)psyz_strafe_first_peak=speed;
+    if(psyz_strafe_phase==2 && ps->groundEntityNum!=1023){
+        psyz_strafe_direction=-psyz_strafe_direction;psyz_strafe_phase=3;psyz_strafe_since=now;
+    }else if(psyz_strafe_phase==3 && ps->groundEntityNum==1023){
+        int ground_delay=now-psyz_strafe_since;psyz_strafe_phase=4;psyz_strafe_since=now;
+        fprintf(stderr,"PSYZ_STRAFE_JUMP2 t=%d route=%d speed=%.2f first_peak=%.2f ground_delay_ms=%d\n",now,psyz_active_route,speed,psyz_strafe_first_peak,ground_delay);
+    }else if(psyz_strafe_phase==4 && ps->groundEntityNum!=1023){
+        psyz_strafe_direction=-psyz_strafe_direction;psyz_strafe_phase=6;
+    }else if(psyz_strafe_phase==5 && ps->groundEntityNum!=1023){
+        psyz_strafe_direction=-psyz_strafe_direction;psyz_strafe_phase=6;
+    }else if(psyz_strafe_phase==6 && ps->groundEntityNum==1023){
+        psyz_strafe_phase=5;
+    }
+    int beat=psyz_strafe_direction;
     float wish_angle=speed>320?acosf(fminf(1,(320.f-320.f*dt/1000.f)/speed))*57.2957795f:0;
     float yaw=velocity_heading+beat*wish_angle-beat*45;
+    yaw=Psyz_TurnToward(ps->viewangles[1],yaw,10.f);
     cmd->angles[1]=(int)(yaw*65536.f/360.f)-ps->delta_angles[1];
-    cmd->forwardmove=127;cmd->rightmove=(signed char)(-beat*127);
+    cmd->forwardmove=127;cmd->rightmove=(signed char)(beat*127);
     if(ps->groundEntityNum!=1023)cmd->upmove=127;
-    if(now-psyz_strafe_log>500){psyz_strafe_log=now;fprintf(stderr,"PSYZ_STRAFE t=%d route=%d speed=%.2f desired_speed=%.2f ground=%d\n",now,psyz_active_route,speed,r->speed,ps->groundEntityNum);}
+    else cmd->upmove=0;
+    if(now-psyz_strafe_log>500){psyz_strafe_log=now;fprintf(stderr,"PSYZ_STRAFE t=%d route=%d phase=%d speed=%.2f desired_speed=%.2f ground=%d\n",now,psyz_active_route,psyz_strafe_phase,speed,r->speed,ps->groundEntityNum);}
 }
 
 static void (*psyz_real_touch)(gentity_t*,gentity_t*,trace_t*);

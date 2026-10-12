@@ -181,5 +181,23 @@ int main(){try{
  check(psyz_goal_known[201] && mapped_entity==201,"Red Armor display resolves Heavy Armor botlib name and remaps static entity after restart");
  reset();psyz_opening_active=1;psyz_opening_since=20000;memcpy(psyz_opening_start,op.start,12);
  check(Psyz_OpeningTarget(&world[0],0)<0 && psyz_opening_active,"Opening waits briefly for item registry instead of aborting immediately");
+ // A stopped route runner performs a measured circle-jump setup, releases
+ // jump in flight and requests the second jump immediately on landing.
+ reset();const auto &sr=psyz_routes[1];psyz_active_route=1;psyz_route_point=0;
+ memcpy(client.ps.origin,sr.points[0].p,12);client.ps.viewangles[1]=0;
+ client.pers.cmd.forwardmove=127;psyz_last_move_time=19975;
+ Psyz_PreAlphaMove(&world[0]);
+ check(psyz_strafe_phase==1 && client.pers.cmd.rightmove!=0 && client.pers.cmd.upmove==0,"Stopped route begins circle-jump preparation");
+ client.pers.cmd.serverTime=20350;psyz_last_move_time=20325;client.ps.velocity[0]=350;client.pers.cmd.forwardmove=127;
+ Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==127,"Prepared first jump is requested after measured ground acceleration");
+ client.pers.cmd.serverTime=20375;client.ps.groundEntityNum=1023;client.pers.cmd.forwardmove=127;
+ Psyz_PreAlphaMove(&world[0]);check(psyz_strafe_phase==2 && client.pers.cmd.upmove==0,"First flight releases jump");
+ client.pers.cmd.serverTime=21050;psyz_last_move_time=21025;client.ps.groundEntityNum=1022;client.pers.cmd.forwardmove=127;
+ Psyz_PreAlphaMove(&world[0]);check(psyz_strafe_phase==3 && client.pers.cmd.upmove==127,"Landing immediately requests second jump");
+ client.pers.cmd.serverTime=21075;client.ps.groundEntityNum=1023;client.pers.cmd.forwardmove=127;
+ Psyz_PreAlphaMove(&world[0]);check(psyz_strafe_phase==4 && client.pers.cmd.upmove==0,"Second flight is recognized");
+ reset();combatvar.integer=1;psyz_active_route=1;psyz_route_point=0;memcpy(client.ps.origin,sr.points[0].p,12);
+ client.pers.cmd.forwardmove=127;client.pers.cmd.buttons=1;psyz_last_move_time=19975;
+ Psyz_PreAlphaMove(&world[0]);check(psyz_strafe_phase==0,"Combat cannot start route strafe controller");
  std::cout<<"Native prealpha contextual scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

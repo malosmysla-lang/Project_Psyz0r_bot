@@ -1,3 +1,7 @@
+# 2026-10-12 - Prealpha 0.7.0 route strafe start
+
+Movement corpus now has a reproducible start-jump audit: 99 non-firing two-jump starts across 100 Blood Run demos. Retail route movement performs a bounded circle-jump setup from low speed, releases jump during first flight, requests the second jump on landing, and logs each phase. Combat and damage suppress startup. Debug/Release14/14 and Python101/101 passed. Linux NOPY `976b374c...323f` is active only on 27961; smoke observed sustained phases at 320-322 UPS with no error tokens. The stopped-start live branch still needs owner playtest. See docs/PREALPHA_0_7_0_RU.md.
+
 # 2026-10-12 - Server Xaero communication lines deployed
 
 Only the main server's minqlx dialogue plugin changed: delayed private join greetings, one colored GL & HF per eligible bot duel, and friendly post-match lines. No Psyz0r AI, skill, combat or project source changes. The empty server restarted; active PID 226792; plugin loaded and Practice bot ready. Focused syntax/mock tests passed; owner gameplay check remains. Weapon accuracy and blowout lines wait for agreed thresholds. Full catalog: docs/server/XAERO_COMMUNICATIONS_2026-10-12_RU.md.

@@ -1,0 +1,36 @@
+{
+  "version": "0.7.0",
+  "runtime_sha256": "976b374c22c5648d0c248d1113eae04eec35420cbc12e183ad926886d954323f",
+  "console_slice_sha256": "0650965619aab479ba4bbf4825c011735cec8ae6a0ade73b33aead3c9f3c82ae",
+  "markers": {
+    "PSYZ_STRAFE_START": 0,
+    "PSYZ_STRAFE_JUMP1": 0,
+    "PSYZ_STRAFE_JUMP2": 0,
+    "PSYZ_STRAFE ": 4,
+    "PSYZ_COMBAT_GROUND": 0,
+    "PSYZ_PICKUP": 4
+  },
+  "strafe_speed_observations": [
+    {
+      "phase": 6,
+      "speed": 320.49
+    },
+    {
+      "phase": 5,
+      "speed": 322.09
+    },
+    {
+      "phase": 6,
+      "speed": 322.09
+    },
+    {
+      "phase": 6,
+      "speed": 322.09
+    }
+  ],
+  "error_tokens": {
+    "ERROR": 0,
+    "Error": 0
+  },
+  "note": "Automated opponent was interrupted at tool timeout and removed. Sustained route phases executed; no low-speed stopped start occurred in this slice, so JUMP1/JUMP2 remain for owner playtest."
+}

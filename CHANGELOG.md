@@ -1,3 +1,7 @@
+# 2026-10-12 - Prealpha 0.7.0 route strafe start
+
+Replaced the ineffective speed-only route hop with a stopped-start controller: circle-jump preparation, bounded yaw sweep, first-flight jump release, immediate second takeoff and continued route beats. Calibration comes from 99 non-firing two-jump starts in 100 Blood Run POV demos; raw keys/mouse are explicitly not claimed. Combat and damage gates stay above route movement. Debug/Release 14/14 and Python 101/101. Linux NOPY SHA `976b374c...323f` deployed only to 27961 after backup; main PID 227498 unchanged. Smoke reached 320-322 UPS in sustained route phases without error tokens; stopped-start live branch awaits owner test. See docs/PREALPHA_0_7_0_RU.md.
+
 # 2026-10-12 - Server Xaero communication lines deployed
 
 Updated only dialogue behavior in the live server's minqlx plugin: seven delayed private join greetings, five no-repeat blue/white/blue GL & HF lines for a one-human Xaero duel, and four friendly lines after a completed duel. Psyz0r AI, skills and combat logic were untouched. A backup was made; syntax and mocked behavior checks passed. The confirmed-empty server restarted; minqlx loaded `room_bot`, logged Practice bot ready, and systemd is active at PID 226792. Weapon praise and blowout GG remain disabled until thresholds are agreed. Full inventory: docs/server/XAERO_COMMUNICATIONS_2026-10-12_RU.md.
