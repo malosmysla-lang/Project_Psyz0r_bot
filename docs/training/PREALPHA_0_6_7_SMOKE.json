@@ -1,0 +1,46 @@
+{
+  "version": "0.6.7",
+  "deployment": {
+    "version": "0.6.7",
+    "backup": "/home/qlserver/backups/psyz0r-067-20261012T000948Z",
+    "native_sha256": "83e05b83027e93bc3c0ff70eb3fb4a79767d082316cd1f65f27eabc2f4894401",
+    "main_pid_unchanged": true,
+    "startup_log_offset": 3150747
+  },
+  "trials": [
+    {
+      "trial": "duel_1",
+      "duration_seconds": 40,
+      "counts": {
+        "PSYZ_PICKUP": 12,
+        "PSYZ_PREPARE": 4,
+        "PSYZ_COMBAT_GROUND": 3,
+        "PSYZ_AIM_PROFILE": 3,
+        "PSYZ_LOADOUT": 16,
+        "PSYZ_RECOVERY": 0
+      },
+      "errors": []
+    },
+    {
+      "trial": "duel_after_map_reload",
+      "duration_seconds": 40,
+      "counts": {
+        "PSYZ_PICKUP": 8,
+        "PSYZ_PREPARE": 7,
+        "PSYZ_COMBAT_GROUND": 0,
+        "PSYZ_AIM_PROFILE": 5,
+        "PSYZ_LOADOUT": 20,
+        "PSYZ_RECOVERY": 0
+      },
+      "errors": []
+    }
+  ],
+  "test_service_active": true,
+  "final_map": "bloodrun",
+  "temporary_opponent_removed": true,
+  "profile_loose_file_sha256": {
+    "scripts/bots.txt": "1ead3f715a2b9ded154d0c24d81a34e47d620c6ce7ae8a298a2ba8c36ead29c5",
+    "botfiles/bots/psyz_c.c": "819d4c29573914b5170f5e53826bd352bd2ab459b3766da2fb867312ae99f6b1",
+    "botfiles/bots/psyz_w.c": "a340645bfcc68b128c78be7d581be5c7d2c4ad356d9414d56d3fb4ed30d38e1f"
+  }
+}

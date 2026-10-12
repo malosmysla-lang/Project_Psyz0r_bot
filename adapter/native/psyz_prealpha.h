@@ -1,12 +1,14 @@
 /* Experimental Blood Run prealpha. Uses valid goals produced by stock QL. */
 #include <math.h>
+#include "psyz_loadout.h"
 #include "psyz_bloodrun_bank.h"
 #include "psyz_red_routes.h"
 #define PSYZ_ALL_ROUTE_COUNT (PSYZ_ROUTE_COUNT+PSYZ_RED_ROUTE_COUNT)
 static const PsyzLearnedRoute *Psyz_Route(size_t i) { return i<PSYZ_ROUTE_COUNT?&psyz_routes[i]:&psyz_red_routes[i-PSYZ_ROUTE_COUNT]; }
 #include "psyz_nav_recovery.h"
 static PsyzNavRecovery psyz_nav;
-static int psyz_nav_health,psyz_nav_damage_time;
+static int psyz_nav_health,psyz_nav_armor,psyz_nav_damage_time;
+static int psyz_prepare_log;
 static int psyz_combat_until,psyz_diagnostic_time;
 static int psyz_combat_log;
 static int psyz_aim_log;
@@ -33,7 +35,9 @@ static void Psyz_HumanizeAim(usercmd_t *cmd,int weapon,int now){
         snprintf(name,sizeof(name),"qlx_psyzAcc%dMax",weapon);cvar_t *high=Cvar_FindVar(name);
         float center=base?(float)atof(base->string):0,lo=low?(float)atof(low->string):0,hi=high?(float)atof(high->string):0;
         if(isfinite(center)&&isfinite(lo)&&isfinite(hi)&&lo>0&&center>=lo&&hi>=center&&hi<=100){
-            float f=(Psyz_AimNoise((unsigned int)(now/15000),(unsigned int)weapon)+1)*.5f;
+            unsigned int window=(unsigned int)(now/15000);
+            float blend=(now%15000)/15000.f;blend=blend*blend*(3-2*blend);
+            float f=(Psyz_AimNoise(window,(unsigned int)weapon)*(1-blend)+Psyz_AimNoise(window+1,(unsigned int)weapon)*blend+1)*.5f;
             float target=lo+(hi-lo)*f;
             if(psyz_nav_damage_time>0 && now-psyz_nav_damage_time<2000)target=lo;
             degrees*=center/target;
@@ -75,7 +79,7 @@ static int Psyz_PreAlphaEnabled(void) {
 }
 #include "psyz_opening.h"
 static void Psyz_PreAlphaReset(void) {
-    Psyz_NavReset(&psyz_nav);psyz_nav_health=psyz_nav_damage_time=0;
+    Psyz_NavReset(&psyz_nav);psyz_nav_health=psyz_nav_armor=psyz_nav_damage_time=psyz_prepare_log=0;
     psyz_combat_until=psyz_diagnostic_time=0;
     psyz_combat_log=psyz_aim_log=0;
     Psyz_OpeningReset();
@@ -96,18 +100,18 @@ static void Psyz_PreAlphaVmReset(void) {
 static float Psyz_ItemWeight(gentity_t *item,gentity_t *own,int recovering) {
     const char *c=item->item->classname;int h=own->health,a=own->client->ps.stats[STAT_ARMOR];
     int weapons=own->client->ps.stats[STAT_WEAPONS];
-    if(!strcmp(c,"weapon_rocketlauncher"))return (weapons&(1<<5)) && own->client->ps.ammo[5]>0?8:180;
-    if(!strcmp(c,"weapon_lightning"))return (weapons&(1<<6)) && own->client->ps.ammo[6]>0?8:150;
-    if(!strcmp(c,"weapon_railgun"))return (weapons&(1<<7)) && own->client->ps.ammo[7]>0?8:145;
-    if(!strcmp(c,"weapon_shotgun"))return weapons&(1<<3)?6:90;
-    if(!strcmp(c,"weapon_plasmagun"))return weapons&(1<<8)?6:75;
+    if(!strcmp(c,"weapon_rocketlauncher"))return !(weapons&(1<<5)) || own->client->ps.ammo[5]<=0?180:own->client->ps.ammo[5]<Psyz_Reserve(5)?105:8;
+    if(!strcmp(c,"weapon_lightning"))return !(weapons&(1<<6)) || own->client->ps.ammo[6]<=0?150:own->client->ps.ammo[6]<Psyz_Reserve(6)?95:8;
+    if(!strcmp(c,"weapon_railgun"))return !(weapons&(1<<7)) || own->client->ps.ammo[7]<=0?145:own->client->ps.ammo[7]<Psyz_Reserve(7)?90:8;
+    if(!strcmp(c,"weapon_shotgun"))return (weapons&(1<<3)) && own->client->ps.ammo[3]>0?6:90;
+    if(!strcmp(c,"weapon_plasmagun"))return (weapons&(1<<8)) && own->client->ps.ammo[8]>0?6:75;
     if(!strcmp(c,"weapon_grenadelauncher"))return weapons&(1<<4)?5:50;
     if(!strcmp(c,"item_health_mega"))return h>=190?5:recovering?65:135;
     if(!strcmp(c,"item_armor_body"))return a>=190?4:recovering?55:110;
     if(!strcmp(c,"item_armor_combat"))return a>=150?4:recovering?160:80;
     if(!strncmp(c,"item_health",11))return h>=100?2:recovering?180:120;
     if(!strcmp(c,"item_armor_shard"))return a>=190?1:recovering?35:12;
-    if(!strncmp(c,"ammo_",5)){int tag=item->item->giTag;return tag>=0 && tag<16 && own->client->ps.ammo[tag]<20?40:0;}
+    if(!strncmp(c,"ammo_",5))return Psyz_AmmoNeed(weapons,own->client->ps.ammo,item->item->giTag);
     return 1;
 }
 static void Psyz_SelectDemoRoute(gentity_t *own,int target) {
@@ -295,13 +299,23 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
     if(!Psyz_PreAlphaEnabled())return;
     usercmd_t *cmd=&own->client->pers.cmd;playerState_t *ps=&own->client->ps;int now=cmd->serverTime;
     if(now<psyz_last_move_time)Psyz_PreAlphaReset();
-    if(psyz_nav_health-own->health>1)psyz_nav_damage_time=now;
+    if(psyz_nav_health-own->health>1 || psyz_nav_armor-ps->stats[STAT_ARMOR]>1)psyz_nav_damage_time=now;
     psyz_nav_health=own->health;
+    psyz_nav_armor=ps->stats[STAT_ARMOR];
     Psyz_OpeningTick(own);
     int dt=now-psyz_last_move_time;psyz_last_move_time=now;
     if(dt<=0 || dt>100 || own->health<=0){psyz_rj=-1;return;}
     // Never inherit habitual crouching. Agreed exceptions are not enabled yet.
     if(cmd->upmove<0)cmd->upmove=0;
+    cvar_t *prepare=Cvar_FindVar("qlx_psyzLoadoutPreparation");
+    if(prepare && prepare->integer && psyz_rj<0 && (cmd->buttons&1) && cmd->forwardmove>0 &&
+       Psyz_TrinityReady(ps->stats[STAT_WEAPONS],ps->ammo)<2){
+        /* Stock AI still aims, fires and strafes defensively. Do not add a
+           voluntary forward push with insufficient main weapons/ammunition.
+           No hidden enemy position is read or synthetic retreat path issued. */
+        cmd->forwardmove=0;
+        if(now-psyz_prepare_log>=2000){psyz_prepare_log=now;fprintf(stderr,"PSYZ_PREPARE t=%d ready=%d forward_push_blocked=1\n",now,Psyz_TrinityReady(ps->stats[STAT_WEAPONS],ps->ammo));}
+    }
     Psyz_HumanizeAim(cmd,ps->weapon,now);
     cvar_t *ground_combat=Cvar_FindVar("qlx_psyzGroundCombat");
     if(ground_combat && ground_combat->integer){

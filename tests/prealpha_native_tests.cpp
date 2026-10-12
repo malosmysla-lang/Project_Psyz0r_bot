@@ -19,7 +19,8 @@ static unsigned char game_memory[0x2d8010],imports_memory[0x600];static void *qa
 static cvar_t enabled{1,"1"},mapvar{0,"bloodrun"},testvar{1,"1"},portvar{27961,"27961"};
 static cvar_t openingvar{0,"0"},phasevar{0,"PRE_GAME"};
 static cvar_t combatvar{0,"0"},aimvar{0,"0"};
-static cvar_t *Cvar_FindVar(const char *name){return !strcmp(name,"qlx_psyzAimHumanize")?&aimvar:!strcmp(name,"qlx_psyzGroundCombat")?&combatvar:!strcmp(name,"qlx_psyzOpening")?&openingvar:!strcmp(name,"g_gameState")?&phasevar:!strcmp(name,"qlx_psyzPreAlpha")?&enabled:!strcmp(name,"mapname")?&mapvar:!strcmp(name,"qlx_psyzTestInstance")?&testvar:!strcmp(name,"net_port")?&portvar:nullptr;}
+static cvar_t preparevar{0,"0"};
+static cvar_t *Cvar_FindVar(const char *name){return !strcmp(name,"qlx_psyzLoadoutPreparation")?&preparevar:!strcmp(name,"qlx_psyzAimHumanize")?&aimvar:!strcmp(name,"qlx_psyzGroundCombat")?&combatvar:!strcmp(name,"qlx_psyzOpening")?&openingvar:!strcmp(name,"g_gameState")?&phasevar:!strcmp(name,"qlx_psyzPreAlpha")?&enabled:!strcmp(name,"mapname")?&mapvar:!strcmp(name,"qlx_psyzTestInstance")?&testvar:!strcmp(name,"net_port")?&portvar:nullptr;}
 static int Hook(void*,void(*)(gentity_t*,gentity_t*,trace_t*),void*){return 0;}
 #include "../adapter/native/psyz_prealpha.h"
 static void check(bool v,const char *message){if(!v)throw std::runtime_error(message);}
@@ -36,7 +37,7 @@ static gitem_t red{"item_armor_body","Heavy Armor",0},mega{"item_health_mega","M
 static void reset(){
  memset(world,0,sizeof(world));memset(&client,0,sizeof(client));Psyz_PreAlphaReset();enabled.integer=1;
  openingvar.integer=0;phasevar.string="PRE_GAME";portvar.integer=27961;
- registry_ready=0;combatvar.integer=0;aimvar.integer=0;
+ registry_ready=0;combatvar.integer=0;aimvar.integer=0;preparevar.integer=0;
  world[0].client=&client;world[0].inuse=1;world[0].health=100;world[0].r.svFlags=8;
  client.ps.groundEntityNum=1022;client.pers.cmd.serverTime=20000;
  void *im=imports_memory;memcpy(game_memory+0x2d8000,&im,sizeof(im));
@@ -138,5 +139,18 @@ int main(){try{
  psyz_goal_target=200;psyz_goal_since=20000;psyz_debug_logged=1;client.ps.stats[STAT_ARMOR]=50;
  goal(out,200,10,world[200].r.currentOrigin);Psyz_PreAlphaGoal(state,0,out);
  check(psyz_goal_target==201,"Nearby missing main weapon interrupts retained resource target");
+ reset();combatvar.integer=1;preparevar.integer=1;psyz_last_move_time=19975;
+ client.pers.cmd.buttons=1;client.pers.cmd.forwardmove=127;client.pers.cmd.rightmove=64;
+ Psyz_PreAlphaMove(&world[0]);
+ check(client.pers.cmd.forwardmove==0 && client.pers.cmd.rightmove==64 && (client.pers.cmd.buttons&1),"Unarmed bot defends without voluntary forward push");
+ client.ps.stats[STAT_WEAPONS]=(1<<5)|(1<<6);client.ps.ammo[5]=3;client.ps.ammo[6]=40;
+ client.pers.cmd.serverTime+=25;client.pers.cmd.forwardmove=127;Psyz_PreAlphaMove(&world[0]);
+ check(client.pers.cmd.forwardmove==127,"Two adequately supplied main weapons permit stock push");
+ client.ps.ammo[6]=1;check(Psyz_TrinityReady(client.ps.stats[STAT_WEAPONS],client.ps.ammo)==1,"Last LG cell is not a full combat reserve");
+ check(Psyz_AmmoNeed(client.ps.stats[STAT_WEAPONS],client.ps.ammo,6)==125,"Low LG reserve prioritizes cells");
+ check(Psyz_AmmoNeed(client.ps.stats[STAT_WEAPONS],client.ps.ammo,7)==0,"Do not chase ammo for unowned weapon");
+ reset();combatvar.integer=1;client.ps.stats[STAT_ARMOR]=100;psyz_last_move_time=19975;
+ Psyz_PreAlphaMove(&world[0]);client.ps.stats[STAT_ARMOR]=60;client.pers.cmd.serverTime+=25;client.pers.cmd.upmove=127;
+ Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==0,"Armor-only damage triggers grounded combat");
  std::cout<<"Native prealpha contextual scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

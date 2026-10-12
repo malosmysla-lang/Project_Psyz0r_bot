@@ -1,3 +1,7 @@
+# 2026-10-12 - Prealpha 0.6.7 loadout preparation deployed
+
+Connected ammunition reserves, missing-weapon preparation and optional forward-push gate; armor damage extends grounded combat, aim targets interpolate across windows. Debug/Release 14/14 and Python99/99. Two isolated 40s duel trials (including map reload): 20 pickups, 11 preparation gates, 3 grounded-jump blocks, 8 aim-profile records, no detected ERROR/load failures. Test27961 Blood Run Duel verified; main PID unchanged. See docs/PREALPHA_0_6_7_RU.md and docs/ADDON_RUNTIME_STATUS_RU.md. Full behavior integration remains incomplete.
+
 # 2026-10-12 - Xaero end-of-duel praise proposal
 
 Specified required positive post-duel praise, occasional rail/lightning/rocket compliments grounded in reliable accuracy samples, GG/GG WP endings, and a sad-bot line for a blowout. Accuracy sample/percentage and blowout thresholds remain to be agreed. Documentation only; no server or plugin changes. See docs/server/XAERO_JOIN_GREETING_OPTIONS_2026-10-12_RU.md.
