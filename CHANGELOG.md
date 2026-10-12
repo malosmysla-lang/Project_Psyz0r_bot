@@ -1,3 +1,7 @@
+# 2026-10-12 - Prealpha 0.7.1 Psyz0r chat connected
+
+Copied the deployed Xaero room plugin into source for comparison and added a bounded Psyz0r-only test plugin. Sports GL/HF/GG, match start/end, rail/rocket/gauntlet-kill reactions, limited retorts and sparse periodic lines are live on 27961. Rebuilt the same native Psyz0r hooks into full Python minqlx; test runner now enables stats before engine startup. Backup `psyz0r-071-chat-20261012T055235Z`; main PID227498 unchanged. Per-damage gauntlet accumulation and corpse shots still need native sensors. See docs/PREALPHA_0_7_1_CHAT_RU.md.
+
 # 2026-10-12 - Prealpha 0.7.0 route strafe start
 
 Replaced the ineffective speed-only route hop with a stopped-start controller: circle-jump preparation, bounded yaw sweep, first-flight jump release, immediate second takeoff and continued route beats. Calibration comes from 99 non-firing two-jump starts in 100 Blood Run POV demos; raw keys/mouse are explicitly not claimed. Combat and damage gates stay above route movement. Debug/Release 14/14 and Python 101/101. Linux NOPY SHA `976b374c...323f` deployed only to 27961 after backup; main PID 227498 unchanged. Smoke reached 320-322 UPS in sustained route phases without error tokens; stopped-start live branch awaits owner test. See docs/PREALPHA_0_7_0_RU.md.

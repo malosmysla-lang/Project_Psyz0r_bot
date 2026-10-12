@@ -1,3 +1,7 @@
+# 2026-10-12 - Prealpha 0.7.1 Psyz0r chat connected
+
+The isolated 27961 now runs a full Python-enabled minqlx build containing the same C++ bot hooks and loads `psyz_chat`. The plugin reuses the deployed Xaero phrasing style without its bot lifecycle: GL/HF/GG, start/end, kill reactions, limited retorts and sparse periodic chat. Stock `bot_nochat=1` remains to suppress QL spam. Per-damage gauntlet and corpse-shot sensors remain absent. Main27960 stayed PID227498. See docs/PREALPHA_0_7_1_CHAT_RU.md.
+
 # 2026-10-12 - Prealpha 0.7.0 route strafe start
 
 Movement corpus now has a reproducible start-jump audit: 99 non-firing two-jump starts across 100 Blood Run demos. Retail route movement performs a bounded circle-jump setup from low speed, releases jump during first flight, requests the second jump on landing, and logs each phase. Combat and damage suppress startup. Debug/Release14/14 and Python101/101 passed. Linux NOPY `976b374c...323f` is active only on 27961; smoke observed sustained phases at 320-322 UPS with no error tokens. The stopped-start live branch still needs owner playtest. See docs/PREALPHA_0_7_0_RU.md.

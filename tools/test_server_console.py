@@ -47,6 +47,7 @@ def main():
     commands = [str(args.base / 'qzeroded.x64'), '+set', 'fs_basepath', str(args.base),
                 '+set', 'fs_homepath', str(home), '+set', 'net_ip', args.listen,
                 '+set', 'net_strict', '1', '+set', 'net_port', '27961',
+                '+set', 'zmq_stats_enable', '1',
                 '+set', 'com_hunkMegs', '192', '+exec', 'psyz_test.cfg',
                 '+map', 'bloodrun', args.factory]
     with (home / 'console.log').open('ab', buffering=0) as log:
