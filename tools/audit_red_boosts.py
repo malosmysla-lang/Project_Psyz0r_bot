@@ -1,4 +1,4 @@
-"""Five-second red pickup attribution candidates from POV evidence, not held gun."""
+"""One-to-three-second red pickup boost candidates from POV evidence."""
 import gzip
 import json
 import math
@@ -6,6 +6,7 @@ from collections import Counter, deque
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+MAX_PICKUP_DELAY_MS = 3000
 
 
 def identity(row):
@@ -13,7 +14,7 @@ def identity(row):
 
 
 def analyze_window(rows):
-    """Keep an eight-second approach; accept a boost only <=5s before pickup.
+    """Keep an eight-second approach; accept a boost only <=3s before pickup.
 
     POV health loss cannot prove damage ownership: opponent fire is ambiguous.
     Require firing, damage and a nearby upward impulse; report that limitation.
@@ -37,7 +38,7 @@ def analyze_window(rows):
         shots = [r for r in rows if r['weapon_id'] in (5, 8) and
                  any(e['kind'] == 'weapon_fired' for e in r['events'])]
         for a, b in zip(rows, rows[1:]):
-            if not 0 <= end['time_ms']-b['time_ms'] <= 5000:
+            if not 0 <= end['time_ms']-b['time_ms'] <= MAX_PICKUP_DELAY_MS:
                 continue
             if a['health'] is None or b['health'] is None:
                 continue
@@ -61,11 +62,27 @@ def analyze_window(rows):
                                hp_loss=hp_loss, armor_loss=armor_loss,
                                shot_position=shot['position'], shot_viewangles=shot['viewangles'],
                                self_damage_verified=False))
+    # A plasma climb creates several damage rows.  Preserve those rows as
+    # evidence, but also expose one sequence so training does not count every
+    # bolt as a separate successful jump.
+    sequences=[]
+    for kind in ('rocketjump_candidate','plasmajump_candidate'):
+        group=sorted((b for b in boosts if b['kind']==kind), key=lambda b:b['shot_ms'])
+        while group:
+            seq=[group.pop(0)]
+            while group and group[0]['shot_ms']-seq[-1]['shot_ms'] <= 150:
+                seq.append(group.pop(0))
+            sequences.append(dict(kind=kind.replace('_candidate',''),
+                first_shot_ms=seq[0]['shot_ms'], last_shot_ms=seq[-1]['shot_ms'],
+                shot_count=len(seq), pickup_delay_ms=end['time_ms']-seq[0]['shot_ms'],
+                start_position=seq[0]['shot_position'], shot_viewangles=seq[0]['shot_viewangles'],
+                total_observed_loss=sum(b['hp_loss']+b['armor_loss'] for b in seq),
+                self_damage_verified=False, live_verified=False))
     return dict(pickup_ms=end['time_ms'], client=end['client'], segment=end['segment'],
                 category=('boost_candidate' if boosts else 'teleport_or_correction_candidate'
                           if discontinuities else 'unclassified'),
                 continuity_verified=valid and contiguous, discontinuities_ms=discontinuities,
-                boosts=boosts, points=rows, live_verified=False)
+                boosts=boosts, sequences=sequences, points=rows, live_verified=False)
 
 
 def main():
@@ -89,17 +106,18 @@ def main():
                         result.update(demo_id=file.parent.name, corpus=corpus, source_sha256=source_sha)
                         episodes.append(result)
     out = ROOT/'out/red_approaches'; out.mkdir(exist_ok=True)
-    with gzip.open(out/'boost_episodes_5s.json.gz', 'wt', encoding='utf-8') as f:
+    with gzip.open(out/'boost_episodes_3s.json.gz', 'wt', encoding='utf-8') as f:
         json.dump(episodes, f)
-    summary = dict(window_after_damage_ms=5000, approach_context_ms=8000,
+    summary = dict(window_after_damage_ms=MAX_PICKUP_DELAY_MS, approach_context_ms=8000,
                    total_red_pickups=len(episodes),
                    categories=dict(Counter(e['category'] for e in episodes)),
                    boost_types=dict(Counter(b['kind'] for e in episodes for b in e['boosts'])),
+                   sequence_types=dict(Counter(s['kind'] for e in episodes for s in e['sequences'])),
                    candidates=[{k:v for k,v in e.items() if k!='points'}
                                for e in episodes if e['boosts']],
                    note='Damage + shot + upward impulse are candidates; POV damage ownership unknown. '
                         'Teleport/correction crossings excluded after boost. No new movement auto-enabled.')
-    (ROOT/'docs/training/BLOODRUN_RED_BOOSTS_5S.json').write_text(
+    (ROOT/'docs/training/BLOODRUN_RED_BOOSTS_3S.json').write_text(
         json.dumps(summary, indent=2), encoding='utf-8')
     print(json.dumps({k:v for k,v in summary.items() if k not in ('candidates','note')}))
 

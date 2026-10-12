@@ -1,3 +1,7 @@
+# 2026-10-12 - Prealpha 0.7.2 boost executor and second-cycle red
+
+Generalized the learned jump executor from one rocket shot to weapon-specific impulse sequences. The 16 existing rocket examples retain one RL shot; one repeated three-shot plasma climb to Blood Run Heavy Armor was extracted from pro-demo 10774 and added as forced-probe-only sample 17. Red boost attribution is now limited to 0-3 seconds and groups repeated plasma damage into one sequence. The opening policy now reserves the first second-cycle Heavy Armor by the observed item clock, choosing diagnostic `fight` or `penalty` mode from stack and Trinity readiness. A valid Sarge-1 trial confirmed `penalty` selection and the actual red pickup; another run confirmed RJ sample 0 with +129 height and immediate red pickup. Debug 14/14 and Python 105/105. Main server unchanged. See docs/PREALPHA_0_7_2_BOOSTS_OPENING_RU.md.
+
 # 2026-10-12 - Prealpha 0.7.1 Psyz0r chat connected
 
 Copied the deployed Xaero room plugin into source for comparison and added a bounded Psyz0r-only test plugin. Sports GL/HF/GG, match start/end, rail/rocket/gauntlet-kill reactions, limited retorts and sparse periodic lines are live on 27961. Rebuilt the same native Psyz0r hooks into full Python minqlx; test runner now enables stats before engine startup. Backup `psyz0r-071-chat-20261012T055235Z`; main PID227498 unchanged. Per-damage gauntlet accumulation and corpse shots still need native sensors. See docs/PREALPHA_0_7_1_CHAT_RU.md.

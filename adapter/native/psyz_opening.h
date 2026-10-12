@@ -2,10 +2,12 @@
 #include "psyz_opening_bank.h"
 static int psyz_opening_seen,psyz_opening_playing,psyz_opening_since;
 static int psyz_opening_plan=-1,psyz_opening_step,psyz_opening_active;
+static int psyz_opening_red_followup,psyz_opening_red_mode_logged,psyz_opening_red_resolved;
 static float psyz_opening_start[3];
 static void Psyz_OpeningReset(void) {
     psyz_opening_seen=psyz_opening_playing=psyz_opening_since=0;
     psyz_opening_plan=-1;psyz_opening_step=psyz_opening_active=0;
+    psyz_opening_red_followup=psyz_opening_red_mode_logged=psyz_opening_red_resolved=0;
     memset(psyz_opening_start,0,sizeof(psyz_opening_start));
 }
 static void Psyz_OpeningEnd(int now,const char *reason) {
@@ -19,6 +21,7 @@ static void Psyz_OpeningTick(gentity_t *own) {
     int playing=!strcmp(phase->string,"IN_PROGRESS");
     if(psyz_opening_seen && playing && !psyz_opening_playing){
         psyz_opening_since=now;psyz_opening_active=1;psyz_opening_plan=-1;psyz_opening_step=0;
+        psyz_opening_red_followup=psyz_opening_red_mode_logged=psyz_opening_red_resolved=0;
         memcpy(psyz_opening_start,own->client->ps.origin,sizeof(psyz_opening_start));
         fprintf(stderr,"PSYZ_OPENING_BEGIN t=%d\n",now);
         /* Warmup targets must not survive the duel restart. */
@@ -28,6 +31,38 @@ static void Psyz_OpeningTick(gentity_t *own) {
     if(!playing)Psyz_OpeningEnd(now,"not_in_progress");
     else if(own->health<=0)Psyz_OpeningEnd(now,"death");
     else if(now-psyz_opening_since>=30000)Psyz_OpeningEnd(now,"time_limit");
+    /* The first Heavy Armor cycle is due before the second Mega cycle on
+       classic Duel timing.  Reserve it even when a learned opening route was
+       interrupted: the choice between fight and penalty happens at arrival. */
+    if(playing && psyz_opening_seen && !psyz_opening_red_resolved &&
+       !psyz_opening_red_followup && now-psyz_opening_since>=20000 &&
+       now-psyz_opening_since<50000){
+        psyz_opening_red_followup=1;psyz_opening_red_mode_logged=0;
+        fprintf(stderr,"PSYZ_OPENING_RED_RESERVE t=%d rule=mandatory_second_cycle source=clock\n",now);
+    }
+    if(psyz_opening_red_followup && now-psyz_opening_since>=50000){
+        fprintf(stderr,"PSYZ_OPENING_RED_END t=%d reason=window_expired\n",now);
+        psyz_opening_red_followup=0;psyz_opening_red_resolved=1;
+    }
+}
+static int Psyz_OpeningRedTarget(gentity_t *own) {
+    if(!psyz_opening_red_followup)return -1;
+    int now=own->client->pers.cmd.serverTime,best=-1;float distance=1e9f;
+    for(int i=0;i<1024;i++){
+        gentity_t *e=&g_entities[i];
+        if(!psyz_goal_known[i] || !e->inuse || !e->item || !e->item->classname ||
+           strcmp(e->item->classname,"item_armor_body"))continue;
+        float d=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin);
+        if(d<distance){distance=d;best=i;}
+    }
+    if(best>=0 && !psyz_opening_red_mode_logged){
+        int ready=Psyz_TrinityReady(own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo);
+        int fight=ready>=2 && own->health>=100 && own->client->ps.stats[STAT_ARMOR]>=50;
+        fprintf(stderr,"PSYZ_OPENING_RED t=%d entity=%d mode=%s trinity_ready=%d health=%d armor=%d rule=mandatory_second_cycle\n",
+                now,best,fight?"fight":"penalty",ready,own->health,own->client->ps.stats[STAT_ARMOR]);
+        psyz_opening_red_mode_logged=1;
+    }
+    return best;
 }
 static int Psyz_OpeningTarget(gentity_t *own,int recovering) {
     int now=own->client->pers.cmd.serverTime;
@@ -86,6 +121,19 @@ static void Psyz_OpeningPickup(gentity_t *item,int now) {
     if(!strcmp(item->item->classname,step->classname) && Psyz_Distance(item->r.currentOrigin,step->position)<16){
         fprintf(stderr,"PSYZ_OPENING_PICKUP t=%d plan=%d step=%d entity=%d\n",now,psyz_opening_plan,psyz_opening_step,item->s.number);
         psyz_opening_step++;
-        if(psyz_opening_step>=p->count)Psyz_OpeningEnd(now,"completed_pickups");
+        if(psyz_opening_step>=p->count){
+            if(!psyz_opening_red_followup && !psyz_opening_red_resolved){
+                psyz_opening_red_followup=1;psyz_opening_red_mode_logged=0;
+                fprintf(stderr,"PSYZ_OPENING_RED_RESERVE t=%d rule=mandatory_second_cycle source=completed_route\n",now);
+            }
+            Psyz_OpeningEnd(now,"completed_pickups");
+        }
+    }
+}
+static void Psyz_OpeningAnyPickup(gentity_t *item,int now) {
+    if(psyz_opening_red_followup && item && item->item && item->item->classname &&
+       !strcmp(item->item->classname,"item_armor_body")){
+        fprintf(stderr,"PSYZ_OPENING_RED_END t=%d reason=red_picked\n",now);
+        psyz_opening_red_followup=0;psyz_opening_red_resolved=1;
     }
 }

@@ -1,4 +1,4 @@
-> Current playable milestone: [Blood Run prealpha 0.7.1: connected Psyz0r chat](docs/PREALPHA_0_7_1_CHAT_RU.md) and [0.7.0 movement](docs/PREALPHA_0_7_0_RU.md). [Focused block status](docs/FOCUSED_BLOCK_STATUS_RU.md). Isolated test: 78.17.9.235:27961. Earlier implementation-status notes below may describe older stages.
+> Current playable milestone: [Blood Run prealpha 0.7.2: boost executor and mandatory second-cycle red](docs/PREALPHA_0_7_2_BOOSTS_OPENING_RU.md), [0.7.1 chat](docs/PREALPHA_0_7_1_CHAT_RU.md) and [0.7.0 movement](docs/PREALPHA_0_7_0_RU.md). [Focused block status](docs/FOCUSED_BLOCK_STATUS_RU.md). Isolated test: 78.17.9.235:27961. Earlier implementation-status notes below may describe older stages.
 
 # Psyz0r_bot
 

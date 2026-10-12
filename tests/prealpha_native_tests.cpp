@@ -76,6 +76,21 @@ int main(){try{
  int start=psyz_rj_time;client.pers.cmd.serverTime=start+jump.shot_delay+25;psyz_last_move_time=client.pers.cmd.serverTime-25;
  Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.buttons&1,"A late frame must still issue the rocket shot");
  client.pers.cmd.serverTime+=25;Psyz_PreAlphaMove(&world[0]);check(!(client.pers.cmd.buttons&1),"Recorded jump must not spam rockets");
+ reset();const auto &plasma_jump=psyz_jumps[PSYZ_JUMP_COUNT-1];
+ check(plasma_jump.weapon==8 && plasma_jump.shot_count==3,"Reviewed red climb must retain three plasma impulses");
+ memcpy(client.ps.origin,plasma_jump.start,12);world[200].item=&red;world[200].inuse=1;
+ memcpy(world[200].r.currentOrigin,plasma_jump.landing,12);psyz_goal_target=200;psyz_rj_plan=(int)PSYZ_JUMP_COUNT-1;
+ client.ps.stats[STAT_WEAPONS]=1<<8;client.ps.weapon=8;client.ps.ammo[8]=10;world[0].health=200;psyz_last_move_time=19975;
+ Psyz_PreAlphaMove(&world[0]);check(psyz_rj>=0 && client.pers.cmd.weapon==8,"Plasma probe begins with plasma selected");
+ client.ps.velocity[1]=320;client.pers.cmd.serverTime+=25;Psyz_PreAlphaMove(&world[0]);
+ int plasma_start=psyz_rj_time;
+ for(int shot_index=0;shot_index<3;shot_index++){
+  client.pers.cmd.serverTime=plasma_start+plasma_jump.shot_delay+shot_index*plasma_jump.shot_interval+25;
+  psyz_last_move_time=client.pers.cmd.serverTime-25;client.ps.weaponTime=0;Psyz_PreAlphaMove(&world[0]);
+  check(client.pers.cmd.buttons&1,"Each recorded plasma impulse must fire exactly once");
+  client.pers.cmd.serverTime+=25;Psyz_PreAlphaMove(&world[0]);check(!(client.pers.cmd.buttons&1),"Plasma climb must release attack between impulses");
+ }
+ check(psyz_rj_shots==3,"Plasma climb must emit the recorded impulse count");
  reset();client.pers.cmd.upmove=-127;psyz_last_move_time=19975;Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==0,"Crouch disabled by default");
  enabled.integer=0;client.pers.cmd.upmove=-127;client.pers.cmd.serverTime+=25;Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==-127,"Disabled policy preserves stock commands");
  // Attach-in-progress is not a new opening. A real phase transition is required.
@@ -99,9 +114,17 @@ int main(){try{
  }
  check(Psyz_OpeningTarget(&world[0],0)==210,"Observed opening maps class and position to current entity");
  Psyz_OpeningPickup(&world[210],20001);check(psyz_opening_step==1,"Only actual matched pickup advances plan");
+ for(int s=1;s<op.count;s++)Psyz_OpeningPickup(&world[210+s],20001+s);
+ check(psyz_opening_red_followup,"Completed first-cycle order must reserve second-cycle red");
+ world[220].inuse=1;world[220].item=&red;world[220].r.contents=0;world[220].r.currentOrigin[0]=300;
+ psyz_goal_known[220]=1;
+ check(Psyz_OpeningRedTarget(&world[0])==220,"Red follow-up targets Heavy Armor even before it respawns");
+ Psyz_OpeningAnyPickup(&world[220],20010);check(!psyz_opening_red_followup,"Actual red pickup ends mandatory follow-up");
+ psyz_opening_active=1;psyz_opening_plan=0;psyz_opening_step=1;
  world[0].health=60;Psyz_OpeningTarget(&world[0],1);check(!psyz_opening_active,"Emergency recovery preempts opening");world[0].health=100;
  phasevar.string="PRE_GAME";Psyz_OpeningTick(&world[0]);phasevar.string="IN_PROGRESS";Psyz_OpeningTick(&world[0]);
  client.pers.cmd.serverTime+=30000;Psyz_OpeningTick(&world[0]);check(!psyz_opening_active,"Opening ends after 30 seconds");
+ check(psyz_opening_red_followup,"Second-cycle red is mandatory even when the learned opening times out");
  phasevar.string="PRE_GAME";Psyz_OpeningTick(&world[0]);phasevar.string="IN_PROGRESS";Psyz_OpeningTick(&world[0]);
  world[0].health=0;Psyz_OpeningTick(&world[0]);check(!psyz_opening_active,"Death does not replay opening on respawn");
  portvar.integer=27960;enabled.integer=1;check(!Psyz_PreAlphaEnabled(),"Policy must never activate on primary port");

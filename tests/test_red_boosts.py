@@ -3,7 +3,7 @@ from tools.audit_red_boosts import analyze_window
 
 
 class RedBoostTests(unittest.TestCase):
-    def rows(self, weapon=5, delay=5000):
+    def rows(self, weapon=5, delay=3000):
         rows=[]
         for t in range(0, delay+101, 100):
             rows.append(dict(segment=1, game_state_number=0, client=0, pm_type=0,
@@ -15,13 +15,14 @@ class RedBoostTests(unittest.TestCase):
         rows[-1]['observed_pov_pickups']=[dict(kind='red')]
         return rows
 
-    def test_five_second_boundary_and_weapon(self):
+    def test_three_second_boundary_and_weapon(self):
         for weapon, kind in [(5,'rocketjump_candidate'),(8,'plasmajump_candidate')]:
             result=analyze_window(self.rows(weapon))
-            self.assertEqual(result['boosts'][0]['pickup_delay_ms'],5000)
+            self.assertEqual(result['boosts'][0]['pickup_delay_ms'],3000)
             self.assertEqual(result['boosts'][0]['kind'],kind)
             self.assertFalse(result['boosts'][0]['self_damage_verified'])
-        self.assertFalse(analyze_window(self.rows(delay=5100))['boosts'])
+            self.assertEqual(result['sequences'][0]['shot_count'],1)
+        self.assertFalse(analyze_window(self.rows(delay=3100))['boosts'])
 
     def test_held_weapon_and_decay_are_not_boosts(self):
         rows=self.rows()

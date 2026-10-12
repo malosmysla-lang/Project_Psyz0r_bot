@@ -37,7 +37,19 @@ def main():
   if byentity.get(r['entity'],0)>=12:continue
   r['comparable_observations']=counts[key];selected.append(r);byentity[r['entity']]=byentity.get(r['entity'],0)+1
  rj=json.loads((ROOT/'docs/training/ZTN_solo_01_rocketjumps.json').read_text())
- jumps=[r for r in rj['results'] if r.get('status')=='success']
+ jumps=[dict(r, weapon=5, shot_count=1, shot_interval=0, boost_kind='rocketjump')
+        for r in rj['results'] if r.get('status')=='success']
+ # Repeated pro-demo observation of the ZTN plasma climb to Heavy Armor.
+ # The source sequence is preserved in BLOODRUN_RED_BOOSTS_3S.json.  This is a
+ # candidate until it passes a live forced probe; it is never auto-selected.
+ plasma=dict(start_position=[-297.9000,-193.8000,408.2400],
+             landing_position=[-189.4900,-15.1600,540.5200],
+             shot_viewangles=[62.1497,168.2941,0.0], health_before=121,
+             health_after=100, start_ms=6090275, shot_ms=6090300,
+             weapon=8, shot_count=3, shot_interval=100,
+             boost_kind='plasmajump', source_demo='10774',
+             source_pickup_ms=6091100, live_verified=False)
+ jumps.append(plasma)
  out=ROOT/'config/bloodrun_prealpha_bank.json'
  out.write_text(json.dumps(dict(map='bloodrun',aas_sha256=locator.graph['sha256'],routes=selected,rocketjumps=jumps,raw_controls_verified=False),indent=2),encoding='utf-8')
  lines=['/* Generated observed routes; execution remains gated by live context. */','typedef struct { float p[3]; int area; } PsyzRoutePoint;','typedef struct { int entity, count; float speed; float target[3]; const char *classname; PsyzRoutePoint points[24]; } PsyzLearnedRoute;','static const PsyzLearnedRoute psyz_routes[] = {']
@@ -45,9 +57,9 @@ def main():
   points=','.join('{{'+','.join(f'{v:.4f}f' for v in p['p'])+'},'+str(p['area'])+'}' for p in r['points'])
   lines.append('{%d,%d,%.4ff,{%s},"%s",{%s}},'%(r['entity'],len(r['points']),r['median_speed'],','.join(f'{v:.4f}f' for v in r['target_position']),r['target_class'],points))
  lines.append('};\n#define PSYZ_ROUTE_COUNT (sizeof(psyz_routes)/sizeof(psyz_routes[0]))')
- lines.extend(['typedef struct { float start[3],landing[3],pitch,yaw; int health_cost,start_area,shot_delay; } PsyzLearnedJump;','static const PsyzLearnedJump psyz_jumps[] = {'])
+ lines.extend(['typedef struct { float start[3],landing[3],pitch,yaw; int health_cost,start_area,shot_delay,weapon,shot_count,shot_interval; } PsyzLearnedJump;','static const PsyzLearnedJump psyz_jumps[] = {'])
  for r in jumps:
-  lines.append('{{%s},{%s},%.4ff,%.4ff,%d,%d,%d},'%(','.join(f'{v:.4f}f' for v in r['start_position']),','.join(f'{v:.4f}f' for v in r['landing_position']),r['shot_viewangles'][0],r['shot_viewangles'][1],max(0,r['health_before']-r['health_after']),locator.area(r['start_position']),r['shot_ms']-r['start_ms']))
+  lines.append('{{%s},{%s},%.4ff,%.4ff,%d,%d,%d,%d,%d,%d},'%(','.join(f'{v:.4f}f' for v in r['start_position']),','.join(f'{v:.4f}f' for v in r['landing_position']),r['shot_viewangles'][0],r['shot_viewangles'][1],max(0,r['health_before']-r['health_after']),locator.area(r['start_position']),r['shot_ms']-r['start_ms'],r['weapon'],r['shot_count'],r['shot_interval']))
  lines.append('};\n#define PSYZ_JUMP_COUNT (sizeof(psyz_jumps)/sizeof(psyz_jumps[0]))')
  (ROOT/'adapter/native/psyz_bloodrun_bank.h').write_text('\n'.join(lines)+'\n',encoding='utf-8')
  print('Selected routes',len(selected),'entities',len(byentity),'successful RJ',len(jumps))

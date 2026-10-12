@@ -14,7 +14,7 @@
       "source_sha256": "e3501bcad05f3f1d88175496f71c102d53c0c7ce8fdee5700e5b7f1cb09bf12c",
       "pickup_ms": 174500,
       "duration_ms": 1400,
-      "length": 516.6950551651105,
+      "length": 516.6950551651104,
       "median_speed": 349.47844190077484,
       "points": [
         {
@@ -115,7 +115,7 @@
       "source_sha256": "86909857c2b8a2bfc5ef98e44964be3f422c311eea7e1df7c3574136af48cc4c",
       "pickup_ms": 262425,
       "duration_ms": 2675,
-      "length": 872.9795546336837,
+      "length": 872.9795546336841,
       "median_speed": 322.12580146062476,
       "points": [
         {
@@ -508,7 +508,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 62075,
       "duration_ms": 3000,
-      "length": 1049.186272464037,
+      "length": 1049.1862724640368,
       "median_speed": 335.8618277488938,
       "points": [
         {
@@ -672,7 +672,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 60100,
       "duration_ms": 1825,
-      "length": 617.1038895417922,
+      "length": 617.1038895417919,
       "median_speed": 338.0618363484365,
       "points": [
         {
@@ -782,7 +782,7 @@
       "source_sha256": "7a0b700c00ee5509a6fa0248773db46d2987f9867cebf920441799f13349e5f3",
       "pickup_ms": 496275,
       "duration_ms": 2225,
-      "length": 822.1375708636392,
+      "length": 822.1375708636388,
       "median_speed": 344.75688185089115,
       "points": [
         {
@@ -975,7 +975,7 @@
       "source_sha256": "45b60de1e54048e4fa51dfdf80c43d137e7c28739a4c7bb4398999db7253bc29",
       "pickup_ms": 246575,
       "duration_ms": 3000,
-      "length": 516.1471410005355,
+      "length": 516.1471410005354,
       "median_speed": 164.91571475816704,
       "points": [
         {
@@ -1058,7 +1058,7 @@
       "source_sha256": "1c8044ae86e9974863858c42bfdbd0abfe61e2ef026f8b33447b96cf37a12801",
       "pickup_ms": 598750,
       "duration_ms": 3000,
-      "length": 990.5097234017379,
+      "length": 990.509723401738,
       "median_speed": 327.483486309819,
       "points": [
         {
@@ -1305,7 +1305,7 @@
       "source_sha256": "e80b46cf86685687501f6578022af46c1c7a821d58f3e222f9662a4f29b39788",
       "pickup_ms": 430575,
       "duration_ms": 3000,
-      "length": 1097.5376623570905,
+      "length": 1097.53766235709,
       "median_speed": 337.9326578452791,
       "points": [
         {
@@ -1570,7 +1570,7 @@
       "source_sha256": "7a0b700c00ee5509a6fa0248773db46d2987f9867cebf920441799f13349e5f3",
       "pickup_ms": 291725,
       "duration_ms": 1025,
-      "length": 252.49281524275332,
+      "length": 252.49281524275335,
       "median_speed": 294.65779847014113,
       "points": [
         {
@@ -1635,7 +1635,7 @@
       "source_sha256": "86909857c2b8a2bfc5ef98e44964be3f422c311eea7e1df7c3574136af48cc4c",
       "pickup_ms": 261950,
       "duration_ms": 2200,
-      "length": 718.3777255325756,
+      "length": 718.3777255325759,
       "median_speed": 325.50250264958373,
       "points": [
         {
@@ -1846,7 +1846,7 @@
       "source_sha256": "7c1aa89b69b7cea648a0183fda752f25775db626576a8fff1d5b95aae2b8b70e",
       "pickup_ms": 439075,
       "duration_ms": 3000,
-      "length": 351.55992010438547,
+      "length": 351.55992010438564,
       "median_speed": 38.06926800404425,
       "points": [
         {
@@ -1911,7 +1911,7 @@
       "source_sha256": "6fa056df142b610f0ba6812892f3c54711ae0f648084795004afd81ffde013ea",
       "pickup_ms": 363100,
       "duration_ms": 3000,
-      "length": 1070.9052254283265,
+      "length": 1070.905225428326,
       "median_speed": 336.6130189585187,
       "points": [
         {
@@ -2261,7 +2261,7 @@
       "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
       "pickup_ms": 6091100,
       "duration_ms": 3000,
-      "length": 728.3853299842077,
+      "length": 728.3853299842079,
       "median_speed": 280.1735229500253,
       "points": [
         {
@@ -2380,7 +2380,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 132475,
       "duration_ms": 3000,
-      "length": 1075.085142029937,
+      "length": 1075.0851420299373,
       "median_speed": 339.49451578202354,
       "points": [
         {
@@ -2544,7 +2544,7 @@
       "source_sha256": "d35c71a7585a7a8a88ac0eb87b7e43af5e20fadb40ec369deb1087765bc5ea30",
       "pickup_ms": 373600,
       "duration_ms": 2475,
-      "length": 839.1019342581033,
+      "length": 839.1019342581034,
       "median_speed": 336.4765038441901,
       "points": [
         {
@@ -2690,7 +2690,7 @@
       "source_sha256": "bb47d72bd4d3f65dc7c5213412ac9b2b87141ba84c27f27e14248dec6b48c719",
       "pickup_ms": 667925,
       "duration_ms": 3000,
-      "length": 765.8582862951561,
+      "length": 765.8582862951563,
       "median_speed": 299.2251950147471,
       "points": [
         {
@@ -2818,7 +2818,7 @@
       "source_sha256": "6212c58702a1333d8982e8c70017f073332e7534976e0910749d2b953fae5783",
       "pickup_ms": 98025,
       "duration_ms": 3000,
-      "length": 970.9313708663965,
+      "length": 970.9313708663967,
       "median_speed": 326.09426479756064,
       "points": [
         {
@@ -2973,7 +2973,7 @@
       "source_sha256": "bb47d72bd4d3f65dc7c5213412ac9b2b87141ba84c27f27e14248dec6b48c719",
       "pickup_ms": 554275,
       "duration_ms": 3000,
-      "length": 925.116739756707,
+      "length": 925.1167397567069,
       "median_speed": 320.82856968904906,
       "points": [
         {
@@ -3110,7 +3110,7 @@
       "source_sha256": "7c1aa89b69b7cea648a0183fda752f25775db626576a8fff1d5b95aae2b8b70e",
       "pickup_ms": 128600,
       "duration_ms": 3000,
-      "length": 456.9723136554334,
+      "length": 456.9723136554335,
       "median_speed": 161.2657873786016,
       "points": [
         {
@@ -3193,7 +3193,7 @@
       "source_sha256": "6212c58702a1333d8982e8c70017f073332e7534976e0910749d2b953fae5783",
       "pickup_ms": 351425,
       "duration_ms": 3000,
-      "length": 949.9408379755885,
+      "length": 949.9408379755886,
       "median_speed": 325.6150652928459,
       "points": [
         {
@@ -3339,7 +3339,7 @@
       "source_sha256": "6fe1920c4d54d3f8a3fb034b4d71b55df83ea51e97f33b84b3a5ad8c82992327",
       "pickup_ms": 323275,
       "duration_ms": 2650,
-      "length": 649.7756438030292,
+      "length": 649.7756438030289,
       "median_speed": 316.5364002332671,
       "points": [
         {
@@ -3449,7 +3449,7 @@
       "source_sha256": "24b16aa8f89f0ae501a1046397d1965e609b4188ed80921b936b8efe188f3b36",
       "pickup_ms": 667150,
       "duration_ms": 2450,
-      "length": 582.9973620544193,
+      "length": 582.9973620544195,
       "median_speed": 174.93599333018213,
       "points": [
         {
@@ -3559,7 +3559,7 @@
       "source_sha256": "6fa056df142b610f0ba6812892f3c54711ae0f648084795004afd81ffde013ea",
       "pickup_ms": 260125,
       "duration_ms": 3000,
-      "length": 755.4857794355672,
+      "length": 755.4857794355671,
       "median_speed": 320.4909556989695,
       "points": [
         {
@@ -3788,7 +3788,7 @@
       "source_sha256": "55c921b585f78109ecd473e06becb53952b8db4999927ace6d282b7aa437d991",
       "pickup_ms": 2090350,
       "duration_ms": 700,
-      "length": 262.36497123626697,
+      "length": 262.364971236267,
       "median_speed": 335.47916110526944,
       "points": [
         {
@@ -3853,7 +3853,7 @@
       "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
       "pickup_ms": 6001250,
       "duration_ms": 3000,
-      "length": 328.85708765651356,
+      "length": 328.8570876565136,
       "median_speed": 107.61890571255351,
       "points": [
         {
@@ -3927,7 +3927,7 @@
       "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
       "pickup_ms": 6282425,
       "duration_ms": 3000,
-      "length": 929.8532750235146,
+      "length": 929.8532750235144,
       "median_speed": 329.25428093023254,
       "points": [
         {
@@ -4156,7 +4156,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 106825,
       "duration_ms": 3000,
-      "length": 675.8159978229069,
+      "length": 675.8159978229068,
       "median_speed": 302.6396448379974,
       "points": [
         {
@@ -4322,7 +4322,7 @@
       "source_sha256": "f0c5172412db2ca47d26b28a62896179a2c0a911965c575f3bc6113b88642893",
       "pickup_ms": 338400,
       "duration_ms": 3000,
-      "length": 616.058736828221,
+      "length": 616.0587368282207,
       "median_speed": 161.98423769002187,
       "points": [
         {
@@ -4560,7 +4560,7 @@
       "source_sha256": "78c99aa2901adc356b1eb090356798cb09cd6cf6ae9566303dfb806b7de5d08b",
       "pickup_ms": 154125,
       "duration_ms": 3000,
-      "length": 655.1402880885803,
+      "length": 655.1402880885802,
       "median_speed": 234.3688900454161,
       "points": [
         {
@@ -4643,7 +4643,7 @@
       "source_sha256": "e3501bcad05f3f1d88175496f71c102d53c0c7ce8fdee5700e5b7f1cb09bf12c",
       "pickup_ms": 326300,
       "duration_ms": 3000,
-      "length": 1047.6234334886715,
+      "length": 1047.623433488671,
       "median_speed": 328.85979501249903,
       "points": [
         {
@@ -5009,7 +5009,7 @@
       "source_sha256": "1a6e837ff3731942b42603674adb801a55832305032aab8912b20eabceb5e2a2",
       "pickup_ms": 390850,
       "duration_ms": 1575,
-      "length": 484.5391707802082,
+      "length": 484.53917078020817,
       "median_speed": 327.7008571974937,
       "points": [
         {
@@ -5092,7 +5092,7 @@
       "source_sha256": "fef692508a117f6912570b5b43a37010283e78813cecd7f540ef9e03614d7eba",
       "pickup_ms": 615075,
       "duration_ms": 1850,
-      "length": 605.2259652247395,
+      "length": 605.2259652247394,
       "median_speed": 338.1662035775757,
       "points": [
         {
@@ -5193,7 +5193,7 @@
       "source_sha256": "5ab7eb53c27f900c19d00f0ff4c928f45962e97c01892a8a27f9a400a36354da",
       "pickup_ms": 287350,
       "duration_ms": 3000,
-      "length": 442.20921628925265,
+      "length": 442.2092162892525,
       "median_speed": 0.0,
       "points": [
         {
@@ -5285,7 +5285,7 @@
       "source_sha256": "994e643268aeab4282ba9f7a719e23ab50f9cd3b7527a750e712954415ff00f2",
       "pickup_ms": 27825,
       "duration_ms": 3000,
-      "length": 844.1424857260029,
+      "length": 844.1424857260026,
       "median_speed": 314.91947173507515,
       "points": [
         {
@@ -5395,7 +5395,7 @@
       "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
       "pickup_ms": 5907475,
       "duration_ms": 3000,
-      "length": 1091.7306973157667,
+      "length": 1091.7306973157665,
       "median_speed": 339.3024100611467,
       "points": [
         {
@@ -5568,7 +5568,7 @@
       "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
       "pickup_ms": 6363425,
       "duration_ms": 3000,
-      "length": 961.3061770809422,
+      "length": 961.3061770809427,
       "median_speed": 327.68359369723134,
       "points": [
         {
@@ -5723,7 +5723,7 @@
       "source_sha256": "5ab7eb53c27f900c19d00f0ff4c928f45962e97c01892a8a27f9a400a36354da",
       "pickup_ms": 321875,
       "duration_ms": 3000,
-      "length": 942.4389136883528,
+      "length": 942.438913688353,
       "median_speed": 331.210174043045,
       "points": [
         {
@@ -6015,7 +6015,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 88175,
       "duration_ms": 3000,
-      "length": 903.7297355017448,
+      "length": 903.729735501745,
       "median_speed": 314.0304410673953,
       "points": [
         {
@@ -6143,7 +6143,7 @@
       "source_sha256": "7c1aa89b69b7cea648a0183fda752f25775db626576a8fff1d5b95aae2b8b70e",
       "pickup_ms": 56825,
       "duration_ms": 3000,
-      "length": 929.8414730581756,
+      "length": 929.8414730581751,
       "median_speed": 327.570913696116,
       "points": [
         {
@@ -6289,7 +6289,7 @@
       "source_sha256": "6212c58702a1333d8982e8c70017f073332e7534976e0910749d2b953fae5783",
       "pickup_ms": 143425,
       "duration_ms": 3000,
-      "length": 989.8465614507084,
+      "length": 989.8465614507082,
       "median_speed": 327.96868515545736,
       "points": [
         {
@@ -6453,7 +6453,7 @@
       "source_sha256": "45b60de1e54048e4fa51dfdf80c43d137e7c28739a4c7bb4398999db7253bc29",
       "pickup_ms": 81150,
       "duration_ms": 3000,
-      "length": 509.9153061032152,
+      "length": 509.9153061032153,
       "median_speed": 162.13305867373438,
       "points": [
         {
@@ -6545,7 +6545,7 @@
       "source_sha256": "1c8044ae86e9974863858c42bfdbd0abfe61e2ef026f8b33447b96cf37a12801",
       "pickup_ms": 480975,
       "duration_ms": 3000,
-      "length": 986.9225635363955,
+      "length": 986.9225635363953,
       "median_speed": 334.3180974873946,
       "points": [
         {
@@ -6691,7 +6691,7 @@
       "source_sha256": "be5c47cc17efa49166e63e98f414dac5e627400cb8ae67a8a3ea65536289a508",
       "pickup_ms": 330750,
       "duration_ms": 2125,
-      "length": 706.8208263531263,
+      "length": 706.8208263531262,
       "median_speed": 376.60250229939027,
       "points": [
         {
@@ -6810,7 +6810,7 @@
       "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
       "pickup_ms": 6180950,
       "duration_ms": 3000,
-      "length": 909.3965661905378,
+      "length": 909.3965661905374,
       "median_speed": 329.81804919773504,
       "points": [
         {
@@ -6938,7 +6938,7 @@
       "source_sha256": "bb47d72bd4d3f65dc7c5213412ac9b2b87141ba84c27f27e14248dec6b48c719",
       "pickup_ms": 253025,
       "duration_ms": 3000,
-      "length": 954.897079234904,
+      "length": 954.8970792349039,
       "median_speed": 328.8500654767231,
       "points": [
         {
@@ -7084,7 +7084,7 @@
       "source_sha256": "f64c7d5ef74d54207a2e094e07244a1a1375f27ae3187a1115fbf72ca303abd5",
       "pickup_ms": 98350,
       "duration_ms": 3000,
-      "length": 1043.2332788669678,
+      "length": 1043.233278866968,
       "median_speed": 336.1024165326537,
       "points": [
         {
@@ -7248,7 +7248,7 @@
       "source_sha256": "e80b46cf86685687501f6578022af46c1c7a821d58f3e222f9662a4f29b39788",
       "pickup_ms": 210100,
       "duration_ms": 3000,
-      "length": 664.7396350142524,
+      "length": 664.739635014252,
       "median_speed": 265.021159819981,
       "points": [
         {
@@ -7513,7 +7513,7 @@
       "source_sha256": "6fa056df142b610f0ba6812892f3c54711ae0f648084795004afd81ffde013ea",
       "pickup_ms": 162450,
       "duration_ms": 3000,
-      "length": 997.1430115749331,
+      "length": 997.1430115749328,
       "median_speed": 321.53172143186504,
       "points": [
         {
@@ -7659,7 +7659,7 @@
       "source_sha256": "f64c7d5ef74d54207a2e094e07244a1a1375f27ae3187a1115fbf72ca303abd5",
       "pickup_ms": 514625,
       "duration_ms": 3000,
-      "length": 782.6006347941818,
+      "length": 782.6006347941819,
       "median_speed": 320.0600991973367,
       "points": [
         {
@@ -7796,7 +7796,7 @@
       "source_sha256": "7c1aa89b69b7cea648a0183fda752f25775db626576a8fff1d5b95aae2b8b70e",
       "pickup_ms": 472475,
       "duration_ms": 3000,
-      "length": 662.1766340701404,
+      "length": 662.1766340701403,
       "median_speed": 226.54645938107984,
       "points": [
         {
@@ -8061,7 +8061,7 @@
       "source_sha256": "5f22be4ca3d33eed4b122bb88e0588d449b80ac13062c27b2d3b9b70f90de3da",
       "pickup_ms": 625325,
       "duration_ms": 1550,
-      "length": 368.8531095014151,
+      "length": 368.8531095014149,
       "median_speed": 171.88992823110493,
       "points": [
         {
@@ -8144,7 +8144,7 @@
       "source_sha256": "5f22be4ca3d33eed4b122bb88e0588d449b80ac13062c27b2d3b9b70f90de3da",
       "pickup_ms": 625775,
       "duration_ms": 2000,
-      "length": 520.2492625216303,
+      "length": 520.2492625216302,
       "median_speed": 320.4623910784653,
       "points": [
         {
@@ -8382,7 +8382,7 @@
       "source_sha256": "7a7e278b98cf5aa5b955c5d94db5ede8cff4c21ab1e44a7f6efba78dd8a8d043",
       "pickup_ms": 70750,
       "duration_ms": 3000,
-      "length": 1048.2550414586779,
+      "length": 1048.255041458678,
       "median_speed": 337.0301812034094,
       "points": [
         {
@@ -8537,7 +8537,7 @@
       "source_sha256": "bb47d72bd4d3f65dc7c5213412ac9b2b87141ba84c27f27e14248dec6b48c719",
       "pickup_ms": 750100,
       "duration_ms": 3000,
-      "length": 1054.6687337369547,
+      "length": 1054.6687337369551,
       "median_speed": 332.05119646291814,
       "points": [
         {
@@ -8701,7 +8701,7 @@
       "source_sha256": "5f22be4ca3d33eed4b122bb88e0588d449b80ac13062c27b2d3b9b70f90de3da",
       "pickup_ms": 354575,
       "duration_ms": 3000,
-      "length": 567.0215940380731,
+      "length": 567.0215940380733,
       "median_speed": 168.66995688700274,
       "points": [
         {
@@ -8811,7 +8811,7 @@
       "source_sha256": "4aa1cce7a4919d0cc2a2af875487248e7aefaaa202932b06f02f471892c1a0bc",
       "pickup_ms": 214225,
       "duration_ms": 3000,
-      "length": 751.6157363619054,
+      "length": 751.6157363619055,
       "median_speed": 188.92698070829493,
       "points": [
         {
@@ -9177,7 +9177,7 @@
       "source_sha256": "5ab7eb53c27f900c19d00f0ff4c928f45962e97c01892a8a27f9a400a36354da",
       "pickup_ms": 229875,
       "duration_ms": 3000,
-      "length": 575.6362545869775,
+      "length": 575.6362545869774,
       "median_speed": 169.83776964856798,
       "points": [
         {
@@ -9451,7 +9451,7 @@
       "source_sha256": "7c1aa89b69b7cea648a0183fda752f25775db626576a8fff1d5b95aae2b8b70e",
       "pickup_ms": 506850,
       "duration_ms": 3000,
-      "length": 756.3308493326564,
+      "length": 756.3308493326565,
       "median_speed": 321.20023585102246,
       "points": [
         {
@@ -9752,7 +9752,7 @@
       "source_sha256": "994e643268aeab4282ba9f7a719e23ab50f9cd3b7527a750e712954415ff00f2",
       "pickup_ms": 60075,
       "duration_ms": 3000,
-      "length": 898.3422838523603,
+      "length": 898.3422838523602,
       "median_speed": 324.95902375619005,
       "points": [
         {
@@ -9898,7 +9898,7 @@
       "source_sha256": "facc7a28742faf5b54cf68834a90becff41119e97e5969180a4c7a5dcbf9089a",
       "pickup_ms": 512225,
       "duration_ms": 3000,
-      "length": 602.9517062322196,
+      "length": 602.9517062322199,
       "median_speed": 182.45632196231307,
       "points": [
         {
@@ -10192,7 +10192,7 @@
       "source_sha256": "4aa1cce7a4919d0cc2a2af875487248e7aefaaa202932b06f02f471892c1a0bc",
       "pickup_ms": 440475,
       "duration_ms": 1475,
-      "length": 306.65599383879197,
+      "length": 306.6559938387921,
       "median_speed": 272.8206524563441,
       "points": [
         {
@@ -10266,7 +10266,7 @@
       "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
       "pickup_ms": 6248975,
       "duration_ms": 3000,
-      "length": 948.8119397382665,
+      "length": 948.8119397382667,
       "median_speed": 320.00790997610284,
       "points": [
         {
@@ -10421,7 +10421,7 @@
       "source_sha256": "bb47d72bd4d3f65dc7c5213412ac9b2b87141ba84c27f27e14248dec6b48c719",
       "pickup_ms": 265675,
       "duration_ms": 3000,
-      "length": 1047.023239532246,
+      "length": 1047.0232395322464,
       "median_speed": 330.16052422740006,
       "points": [
         {
@@ -10749,7 +10749,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 383025,
       "duration_ms": 3000,
-      "length": 966.2292326785657,
+      "length": 966.2292326785664,
       "median_speed": 325.9174264530317,
       "points": [
         {
@@ -11160,7 +11160,7 @@
       "source_sha256": "6141a4ea0fb66f706160301a83526c663dd6655adcd2223d5329d9246a166c89",
       "pickup_ms": 216825,
       "duration_ms": 3000,
-      "length": 926.2614478468626,
+      "length": 926.2614478468624,
       "median_speed": 321.37496361065683,
       "points": [
         {
@@ -11306,7 +11306,7 @@
       "source_sha256": "4aa1cce7a4919d0cc2a2af875487248e7aefaaa202932b06f02f471892c1a0bc",
       "pickup_ms": 149675,
       "duration_ms": 1000,
-      "length": 335.68449372319486,
+      "length": 335.6844937231948,
       "median_speed": 320.25758639321907,
       "points": [
         {
@@ -11472,7 +11472,7 @@
       "source_sha256": "c77cb5d1409f8780b33fc83c2d91237d8b00a6db83fceba4c0e23abae6aebba0",
       "pickup_ms": 217900,
       "duration_ms": 2850,
-      "length": 732.879829393109,
+      "length": 732.8798293931093,
       "median_speed": 320.00142377475913,
       "points": [
         {
@@ -11591,7 +11591,7 @@
       "source_sha256": "7a7e278b98cf5aa5b955c5d94db5ede8cff4c21ab1e44a7f6efba78dd8a8d043",
       "pickup_ms": 115150,
       "duration_ms": 3000,
-      "length": 783.3518819379813,
+      "length": 783.3518819379809,
       "median_speed": 183.0993983624162,
       "points": [
         {
@@ -11728,7 +11728,7 @@
       "source_sha256": "f0c5172412db2ca47d26b28a62896179a2c0a911965c575f3bc6113b88642893",
       "pickup_ms": 260100,
       "duration_ms": 3000,
-      "length": 649.2876784743938,
+      "length": 649.2876784743937,
       "median_speed": 176.33978123674555,
       "points": [
         {
@@ -11829,7 +11829,7 @@
       "source_sha256": "f0c5172412db2ca47d26b28a62896179a2c0a911965c575f3bc6113b88642893",
       "pickup_ms": 354350,
       "duration_ms": 3000,
-      "length": 778.969998137638,
+      "length": 778.9699981376383,
       "median_speed": 323.700765506578,
       "points": [
         {
@@ -11966,7 +11966,7 @@
       "source_sha256": "7c1aa89b69b7cea648a0183fda752f25775db626576a8fff1d5b95aae2b8b70e",
       "pickup_ms": 154400,
       "duration_ms": 3000,
-      "length": 1024.3002485980314,
+      "length": 1024.300248598031,
       "median_speed": 342.8357787348033,
       "points": [
         {
@@ -12130,7 +12130,7 @@
       "source_sha256": "78c99aa2901adc356b1eb090356798cb09cd6cf6ae9566303dfb806b7de5d08b",
       "pickup_ms": 266525,
       "duration_ms": 3000,
-      "length": 913.0443687080532,
+      "length": 913.0443687080535,
       "median_speed": 324.3711662685778,
       "points": [
         {
@@ -12267,7 +12267,7 @@
       "source_sha256": "78c99aa2901adc356b1eb090356798cb09cd6cf6ae9566303dfb806b7de5d08b",
       "pickup_ms": 468625,
       "duration_ms": 3000,
-      "length": 1035.5352885495226,
+      "length": 1035.5352885495224,
       "median_speed": 339.64355379433505,
       "points": [
         {
@@ -12422,7 +12422,7 @@
       "source_sha256": "30ddc6d351d8a541b4d9d5797e38a5f3cea826f8e43d6f514b4aa33761f59b4d",
       "pickup_ms": 285725,
       "duration_ms": 3000,
-      "length": 1132.4042248353035,
+      "length": 1132.4042248353032,
       "median_speed": 336.3721511933226,
       "points": [
         {
@@ -12604,7 +12604,7 @@
       "source_sha256": "30ddc6d351d8a541b4d9d5797e38a5f3cea826f8e43d6f514b4aa33761f59b4d",
       "pickup_ms": 633075,
       "duration_ms": 3000,
-      "length": 800.3813747060776,
+      "length": 800.3813747060778,
       "median_speed": 321.33478763247155,
       "points": [
         {
@@ -12714,7 +12714,7 @@
       "source_sha256": "994e643268aeab4282ba9f7a719e23ab50f9cd3b7527a750e712954415ff00f2",
       "pickup_ms": 420500,
       "duration_ms": 3000,
-      "length": 1072.9392043548162,
+      "length": 1072.939204354816,
       "median_speed": 326.3506601421511,
       "points": [
         {
@@ -13060,7 +13060,7 @@
       "source_sha256": "36da5d45349a6c0f400a390819deb92880d43ade65ff280e730e446815fbb999",
       "pickup_ms": 35025,
       "duration_ms": 3000,
-      "length": 847.4229206544924,
+      "length": 847.4229206544926,
       "median_speed": 320.8837435967442,
       "points": [
         {
@@ -13179,7 +13179,7 @@
       "source_sha256": "b624b76ba2428071af1752d167575dc6677c9406ed369f4fd00b6781084a4c5a",
       "pickup_ms": 609350,
       "duration_ms": 3000,
-      "length": 729.2416520161826,
+      "length": 729.2416520161831,
       "median_speed": 262.7637807368659,
       "points": [
         {
@@ -13280,7 +13280,7 @@
       "source_sha256": "a351042059821fcb09e7c0cb9f1a715de75f083018af9b30b4d45f23e11fd510",
       "pickup_ms": 511300,
       "duration_ms": 1800,
-      "length": 540.1855735675556,
+      "length": 540.1855735675557,
       "median_speed": 326.58643815512335,
       "points": [
         {
@@ -13381,7 +13381,7 @@
       "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
       "pickup_ms": 5992475,
       "duration_ms": 3000,
-      "length": 854.9916963795433,
+      "length": 854.9916963795434,
       "median_speed": 320.0037302616987,
       "points": [
         {
@@ -13518,7 +13518,7 @@
       "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
       "pickup_ms": 6048975,
       "duration_ms": 3000,
-      "length": 669.6072604091693,
+      "length": 669.6072604091692,
       "median_speed": 251.90006232948184,
       "points": [
         {
@@ -13628,7 +13628,7 @@
       "source_sha256": "f0c5172412db2ca47d26b28a62896179a2c0a911965c575f3bc6113b88642893",
       "pickup_ms": 394300,
       "duration_ms": 3000,
-      "length": 865.0571028426997,
+      "length": 865.0571028426995,
       "median_speed": 304.7196015736418,
       "points": [
         {
@@ -13765,7 +13765,7 @@
       "source_sha256": "f64c7d5ef74d54207a2e094e07244a1a1375f27ae3187a1115fbf72ca303abd5",
       "pickup_ms": 81000,
       "duration_ms": 3000,
-      "length": 939.5638993774165,
+      "length": 939.5638993774162,
       "median_speed": 321.012160457161,
       "points": [
         {
@@ -13994,7 +13994,7 @@
       "source_sha256": "5742644422aa9d20a2e1c6ee488c569b5d803144b02aff537232f8e2dae9abcb",
       "pickup_ms": 3112250,
       "duration_ms": 3000,
-      "length": 848.6263256672087,
+      "length": 848.626325667209,
       "median_speed": 320.99879155476606,
       "points": [
         {
@@ -14122,7 +14122,7 @@
       "source_sha256": "5f22be4ca3d33eed4b122bb88e0588d449b80ac13062c27b2d3b9b70f90de3da",
       "pickup_ms": 124225,
       "duration_ms": 3000,
-      "length": 932.43790916564,
+      "length": 932.4379091656397,
       "median_speed": 321.040223714126,
       "points": [
         {
@@ -14441,7 +14441,7 @@
       "source_sha256": "93c36eaae6b887a47f65943e4caf2ef0da7f01f8d895347c3a10c2b35cb6faef",
       "pickup_ms": 329025,
       "duration_ms": 3000,
-      "length": 929.4169197757545,
+      "length": 929.4169197757548,
       "median_speed": 322.42156089753144,
       "points": [
         {
@@ -14661,7 +14661,7 @@
       "source_sha256": "208ba1005213ac54e716d1f8b246d63a746d8753c9935aca849d1be21c9e83ef",
       "pickup_ms": 6159325,
       "duration_ms": 3000,
-      "length": 1045.301167155192,
+      "length": 1045.3011671551915,
       "median_speed": 334.3522189493971,
       "points": [
         {
@@ -14825,7 +14825,7 @@
       "source_sha256": "f0c5172412db2ca47d26b28a62896179a2c0a911965c575f3bc6113b88642893",
       "pickup_ms": 515100,
       "duration_ms": 3000,
-      "length": 912.680107765127,
+      "length": 912.6801077651271,
       "median_speed": 322.55460467201243,
       "points": [
         {
@@ -15254,7 +15254,7 @@
       "source_sha256": "e80b46cf86685687501f6578022af46c1c7a821d58f3e222f9662a4f29b39788",
       "pickup_ms": 134825,
       "duration_ms": 3000,
-      "length": 1003.6574302701268,
+      "length": 1003.6574302701271,
       "median_speed": 333.05277532424134,
       "points": [
         {
@@ -15510,7 +15510,7 @@
       "source_sha256": "6212c58702a1333d8982e8c70017f073332e7534976e0910749d2b953fae5783",
       "pickup_ms": 463150,
       "duration_ms": 3000,
-      "length": 891.2200603602643,
+      "length": 891.2200603602638,
       "median_speed": 323.17626528391116,
       "points": [
         {
@@ -15656,7 +15656,7 @@
       "source_sha256": "30ddc6d351d8a541b4d9d5797e38a5f3cea826f8e43d6f514b4aa33761f59b4d",
       "pickup_ms": 330950,
       "duration_ms": 3000,
-      "length": 898.470989391913,
+      "length": 898.4709893919131,
       "median_speed": 322.5215554746553,
       "points": [
         {
@@ -15811,7 +15811,7 @@
       "source_sha256": "1c8044ae86e9974863858c42bfdbd0abfe61e2ef026f8b33447b96cf37a12801",
       "pickup_ms": 403950,
       "duration_ms": 3000,
-      "length": 1098.8155962711255,
+      "length": 1098.8155962711257,
       "median_speed": 337.97502792245666,
       "points": [
         {
@@ -16166,7 +16166,7 @@
       "source_sha256": "4aa1cce7a4919d0cc2a2af875487248e7aefaaa202932b06f02f471892c1a0bc",
       "pickup_ms": 365225,
       "duration_ms": 3000,
-      "length": 907.6479718091427,
+      "length": 907.6479718091431,
       "median_speed": 322.34056048917785,
       "points": [
         {
@@ -16485,7 +16485,7 @@
       "source_sha256": "f565814541b008cd74ef3fdac37ffc9fbc5b7ca2cf771f38e750df34865450a7",
       "pickup_ms": 508650,
       "duration_ms": 3000,
-      "length": 1103.3456703098177,
+      "length": 1103.3456703098173,
       "median_speed": 344.17399958088413,
       "points": [
         {
@@ -16759,7 +16759,7 @@
       "source_sha256": "329b0742f18406f645b3d3dc8257ab3bfce147e58e1ef90c318c3c326ff3a529",
       "pickup_ms": 161850,
       "duration_ms": 2075,
-      "length": 785.5685834688287,
+      "length": 785.568583468829,
       "median_speed": 349.96331316942116,
       "points": [
         {
@@ -16896,7 +16896,7 @@
       "source_sha256": "94b66047e2f9d3a2cb3a3970b5a1ac36007990748dd2ab56adcf0ef895b454c4",
       "pickup_ms": 710425,
       "duration_ms": 2975,
-      "length": 758.7371398248478,
+      "length": 758.7371398248475,
       "median_speed": 282.7602075368151,
       "points": [
         {
@@ -17015,7 +17015,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 527250,
       "duration_ms": 3000,
-      "length": 517.7300334751246,
+      "length": 517.7300334751244,
       "median_speed": 128.29574181711746,
       "points": [
         {
@@ -17235,7 +17235,7 @@
       "source_sha256": "78c99aa2901adc356b1eb090356798cb09cd6cf6ae9566303dfb806b7de5d08b",
       "pickup_ms": 108525,
       "duration_ms": 3000,
-      "length": 1078.1873845251962,
+      "length": 1078.1873845251955,
       "median_speed": 332.1069025880075,
       "points": [
         {
@@ -17718,7 +17718,7 @@
       "source_sha256": "30ddc6d351d8a541b4d9d5797e38a5f3cea826f8e43d6f514b4aa33761f59b4d",
       "pickup_ms": 129200,
       "duration_ms": 3000,
-      "length": 872.3676693278971,
+      "length": 872.367669327897,
       "median_speed": 321.2111995330091,
       "points": [
         {
@@ -17864,7 +17864,7 @@
       "source_sha256": "30ddc6d351d8a541b4d9d5797e38a5f3cea826f8e43d6f514b4aa33761f59b4d",
       "pickup_ms": 599425,
       "duration_ms": 3000,
-      "length": 871.6517519835231,
+      "length": 871.6517519835236,
       "median_speed": 321.0595299495835,
       "points": [
         {
@@ -18010,7 +18010,7 @@
       "source_sha256": "30ddc6d351d8a541b4d9d5797e38a5f3cea826f8e43d6f514b4aa33761f59b4d",
       "pickup_ms": 599650,
       "duration_ms": 3000,
-      "length": 857.9734517922691,
+      "length": 857.9734517922695,
       "median_speed": 320.72129399917947,
       "points": [
         {
@@ -18156,7 +18156,7 @@
       "source_sha256": "1c8044ae86e9974863858c42bfdbd0abfe61e2ef026f8b33447b96cf37a12801",
       "pickup_ms": 294400,
       "duration_ms": 3000,
-      "length": 903.4843586893477,
+      "length": 903.4843586893473,
       "median_speed": 323.42412519848597,
       "points": [
         {
@@ -18302,7 +18302,7 @@
       "source_sha256": "1c8044ae86e9974863858c42bfdbd0abfe61e2ef026f8b33447b96cf37a12801",
       "pickup_ms": 422300,
       "duration_ms": 3000,
-      "length": 1120.4936750486534,
+      "length": 1120.4936750486536,
       "median_speed": 337.38317196776507,
       "points": [
         {
@@ -18457,7 +18457,7 @@
       "source_sha256": "451504f745d9e2e355286cef858c05f8b1de7ddb1c0bd054be16d382dee4b679",
       "pickup_ms": 291075,
       "duration_ms": 3000,
-      "length": 448.01115333864544,
+      "length": 448.0111533386455,
       "median_speed": 159.69389769980933,
       "points": [
         {
@@ -18540,7 +18540,7 @@
       "source_sha256": "451504f745d9e2e355286cef858c05f8b1de7ddb1c0bd054be16d382dee4b679",
       "pickup_ms": 296975,
       "duration_ms": 3000,
-      "length": 759.8659184047649,
+      "length": 759.8659184047647,
       "median_speed": 320.0024045265875,
       "points": [
         {
@@ -18632,7 +18632,7 @@
       "source_sha256": "6998d2e67bb01e1fa0207ecf469a143295710cd5d6bc118a036f4fc648ac8b33",
       "pickup_ms": 395750,
       "duration_ms": 3000,
-      "length": 989.8581556928377,
+      "length": 989.8581556928378,
       "median_speed": 330.0118635266262,
       "points": [
         {
@@ -18787,7 +18787,7 @@
       "source_sha256": "4e4f586809595037a3219dfb306f1f621e396e6a9436616cddb03ca8b5600e2c",
       "pickup_ms": 901100,
       "duration_ms": 3000,
-      "length": 851.5065779252983,
+      "length": 851.5065779252986,
       "median_speed": 320.7884968945818,
       "points": [
         {
@@ -18915,7 +18915,7 @@
       "source_sha256": "6e50917809ecd6447990b4126f629cff1dc4cd75e1d37185de581a07221797dd",
       "pickup_ms": 1025850,
       "duration_ms": 3000,
-      "length": 881.3323012287767,
+      "length": 881.3323012287766,
       "median_speed": 321.22034185959205,
       "points": [
         {
@@ -19225,7 +19225,7 @@
       "source_sha256": "dcc2744ba98013d7a70c90d6c761dd7208c06011fb2eb8f466b7c4affb7b10b5",
       "pickup_ms": 609450,
       "duration_ms": 3000,
-      "length": 928.9206355495334,
+      "length": 928.9206355495335,
       "median_speed": 320.0865057329424,
       "points": [
         {
@@ -19380,7 +19380,7 @@
       "source_sha256": "46d74eeff8232970a82181ee945ef6d5da2e06dbb88a7d18c63b60914169c0b5",
       "pickup_ms": 676250,
       "duration_ms": 3000,
-      "length": 913.9720734649834,
+      "length": 913.9720734649827,
       "median_speed": 325.88863635880165,
       "points": [
         {
@@ -19517,7 +19517,7 @@
       "source_sha256": "fb8fc8d4b41bf2f72e4f619b16cbbdf0eb5586a3f2e14ebb42aefc3330219d99",
       "pickup_ms": 9976575,
       "duration_ms": 3000,
-      "length": 942.7448121972509,
+      "length": 942.744812197251,
       "median_speed": 333.9098434805032,
       "points": [
         {
@@ -19672,7 +19672,7 @@
       "source_sha256": "61e95f19a6fa83002578d5e2206ec230ae80f46b988732e95e1add63a446cc98",
       "pickup_ms": 418125,
       "duration_ms": 3000,
-      "length": 1182.729384929416,
+      "length": 1182.7293849294163,
       "median_speed": 328.8006684445825,
       "points": [
         {
@@ -19863,7 +19863,7 @@
       "source_sha256": "306c234cb2db0ff6f403f9c927a87c20bf7d4a5a076cea8153a2e8f0e020b70c",
       "pickup_ms": 78025,
       "duration_ms": 3000,
-      "length": 1073.0295812777504,
+      "length": 1073.02958127775,
       "median_speed": 324.72825522629665,
       "points": [
         {
@@ -20018,7 +20018,7 @@
       "source_sha256": "4aa1cce7a4919d0cc2a2af875487248e7aefaaa202932b06f02f471892c1a0bc",
       "pickup_ms": 255025,
       "duration_ms": 750,
-      "length": 217.51134055642166,
+      "length": 217.51134055642163,
       "median_speed": 328.77785454368234,
       "points": [
         {
@@ -20083,7 +20083,7 @@
       "source_sha256": "e759979035ffb28d2c9d3207f9ec9777fd5018cf709e2506ecc7c9fb9e156d01",
       "pickup_ms": 78775,
       "duration_ms": 1150,
-      "length": 379.7433765304293,
+      "length": 379.74337653042943,
       "median_speed": 324.1578385908964,
       "points": [
         {
@@ -20166,7 +20166,7 @@
       "source_sha256": "7a7e278b98cf5aa5b955c5d94db5ede8cff4c21ab1e44a7f6efba78dd8a8d043",
       "pickup_ms": 71800,
       "duration_ms": 3000,
-      "length": 1169.5322224734261,
+      "length": 1169.5322224734257,
       "median_speed": 346.38569286818426,
       "points": [
         {
@@ -20530,7 +20530,7 @@
       "source_sha256": "bb47d72bd4d3f65dc7c5213412ac9b2b87141ba84c27f27e14248dec6b48c719",
       "pickup_ms": 250400,
       "duration_ms": 3000,
-      "length": 1047.8822015929218,
+      "length": 1047.882201592922,
       "median_speed": 331.36038022707555,
       "points": [
         {
@@ -20703,7 +20703,7 @@
       "source_sha256": "bb47d72bd4d3f65dc7c5213412ac9b2b87141ba84c27f27e14248dec6b48c719",
       "pickup_ms": 468400,
       "duration_ms": 3000,
-      "length": 946.044372271095,
+      "length": 946.0443722710951,
       "median_speed": 331.1373271250033,
       "points": [
         {
@@ -20849,7 +20849,7 @@
       "source_sha256": "bb47d72bd4d3f65dc7c5213412ac9b2b87141ba84c27f27e14248dec6b48c719",
       "pickup_ms": 776400,
       "duration_ms": 3000,
-      "length": 427.0703187418727,
+      "length": 427.07031874187277,
       "median_speed": 169.71418715041779,
       "points": [
         {
@@ -20932,7 +20932,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 63850,
       "duration_ms": 3000,
-      "length": 917.5731143628732,
+      "length": 917.5731143628734,
       "median_speed": 322.6775905677955,
       "points": [
         {
@@ -21078,7 +21078,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 235150,
       "duration_ms": 3000,
-      "length": 977.0874389202177,
+      "length": 977.0874389202173,
       "median_speed": 325.6737378422888,
       "points": [
         {
@@ -21233,7 +21233,7 @@
       "source_sha256": "78c99aa2901adc356b1eb090356798cb09cd6cf6ae9566303dfb806b7de5d08b",
       "pickup_ms": 494325,
       "duration_ms": 3000,
-      "length": 1022.6342427295805,
+      "length": 1022.6342427295798,
       "median_speed": 329.78462045616993,
       "points": [
         {
@@ -21397,7 +21397,7 @@
       "source_sha256": "30ddc6d351d8a541b4d9d5797e38a5f3cea826f8e43d6f514b4aa33761f59b4d",
       "pickup_ms": 330575,
       "duration_ms": 3000,
-      "length": 912.9941155420456,
+      "length": 912.9941155420455,
       "median_speed": 325.2173055279124,
       "points": [
         {
@@ -21552,7 +21552,7 @@
       "source_sha256": "45b60de1e54048e4fa51dfdf80c43d137e7c28739a4c7bb4398999db7253bc29",
       "pickup_ms": 298225,
       "duration_ms": 3000,
-      "length": 962.1865085183091,
+      "length": 962.1865085183093,
       "median_speed": 327.9435562025216,
       "points": [
         {
@@ -21698,7 +21698,7 @@
       "source_sha256": "facc7a28742faf5b54cf68834a90becff41119e97e5969180a4c7a5dcbf9089a",
       "pickup_ms": 512050,
       "duration_ms": 3000,
-      "length": 627.6254224060636,
+      "length": 627.6254224060639,
       "median_speed": 205.72629345728254,
       "points": [
         {
@@ -21936,7 +21936,7 @@
       "source_sha256": "649494b1d2af31dee181c0247f293ab88f977c54288a1da5b3c9867aa3be15fa",
       "pickup_ms": 500250,
       "duration_ms": 3000,
-      "length": 962.0136564812822,
+      "length": 962.0136564812819,
       "median_speed": 326.781472615977,
       "points": [
         {
@@ -22091,7 +22091,7 @@
       "source_sha256": "fd5c290d0f1c6fd950994cb1e7b8e0ea69f041f47ff981b19da4093e3dee53a8",
       "pickup_ms": 46825,
       "duration_ms": 3000,
-      "length": 631.4102202842754,
+      "length": 631.4102202842757,
       "median_speed": 193.38224247430236,
       "points": [
         {
@@ -22192,7 +22192,7 @@
       "source_sha256": "dcc2744ba98013d7a70c90d6c761dd7208c06011fb2eb8f466b7c4affb7b10b5",
       "pickup_ms": 749975,
       "duration_ms": 3000,
-      "length": 1044.5745531513091,
+      "length": 1044.5745531513094,
       "median_speed": 344.2630709601839,
       "points": [
         {
@@ -22356,7 +22356,7 @@
       "source_sha256": "61e95f19a6fa83002578d5e2206ec230ae80f46b988732e95e1add63a446cc98",
       "pickup_ms": 115750,
       "duration_ms": 3000,
-      "length": 1027.1795447254772,
+      "length": 1027.1795447254776,
       "median_speed": 342.3827459115001,
       "points": [
         {
@@ -22693,7 +22693,7 @@
       "source_sha256": "329b0742f18406f645b3d3dc8257ab3bfce147e58e1ef90c318c3c326ff3a529",
       "pickup_ms": 446200,
       "duration_ms": 3000,
-      "length": 778.2899832343745,
+      "length": 778.2899832343747,
       "median_speed": 320.00010544061377,
       "points": [
         {
@@ -22794,7 +22794,7 @@
       "source_sha256": "93c36eaae6b887a47f65943e4caf2ef0da7f01f8d895347c3a10c2b35cb6faef",
       "pickup_ms": 200925,
       "duration_ms": 3000,
-      "length": 996.9292662591494,
+      "length": 996.9292662591495,
       "median_speed": 329.55206103389236,
       "points": [
         {
@@ -22949,7 +22949,7 @@
       "source_sha256": "3fd50e77f84e65e1acf42e1a271d334b2da70a77526e995df774307f7d22cab3",
       "pickup_ms": 65200,
       "duration_ms": 3000,
-      "length": 1127.3588930605968,
+      "length": 1127.3588930605972,
       "median_speed": 363.93586940381215,
       "points": [
         {
@@ -23232,7 +23232,7 @@
       "source_sha256": "c68549d30798ef279706b4155098ec637e8d6767cf0971add5e2c89b578f83bd",
       "pickup_ms": 547950,
       "duration_ms": 3000,
-      "length": 700.1067373430031,
+      "length": 700.1067373430033,
       "median_speed": 212.35139502633962,
       "points": [
         {
@@ -23333,7 +23333,7 @@
       "source_sha256": "2e20cb9b50ec343bf5ff6bf41b77907d1b207b399c9e72cf82c5d5c80656deff",
       "pickup_ms": 329900,
       "duration_ms": 3000,
-      "length": 850.9301315489819,
+      "length": 850.930131548982,
       "median_speed": 320.60751159056207,
       "points": [
         {
@@ -23526,7 +23526,7 @@
       "source_sha256": "c77cb5d1409f8780b33fc83c2d91237d8b00a6db83fceba4c0e23abae6aebba0",
       "pickup_ms": 240600,
       "duration_ms": 3000,
-      "length": 991.50303733897,
+      "length": 991.5030373389702,
       "median_speed": 337.75415665238046,
       "points": [
         {
@@ -23672,7 +23672,7 @@
       "source_sha256": "17549444daa39dad20abd5942492af0cefb6ee113eb29a4e96bbf4581d329eef",
       "pickup_ms": 7659050,
       "duration_ms": 1050,
-      "length": 359.51127835806017,
+      "length": 359.5112783580603,
       "median_speed": 333.44524885832675,
       "points": [
         {
@@ -23755,7 +23755,7 @@
       "source_sha256": "5358ed3765450e6faf93c54395682df8e700476f688449b803ce6a3745378c91",
       "pickup_ms": 13180700,
       "duration_ms": 1575,
-      "length": 564.4846528359446,
+      "length": 564.4846528359448,
       "median_speed": 347.09191895404933,
       "points": [
         {
@@ -23856,7 +23856,7 @@
       "source_sha256": "306c234cb2db0ff6f403f9c927a87c20bf7d4a5a076cea8153a2e8f0e020b70c",
       "pickup_ms": 126600,
       "duration_ms": 1575,
-      "length": 424.50054128256716,
+      "length": 424.50054128256704,
       "median_speed": 323.3373258089159,
       "points": [
         {
@@ -23948,7 +23948,7 @@
       "source_sha256": "e56d5da48b16019a9751a7d54249641477309c66bee4d0e08aa643c588940dcf",
       "pickup_ms": 600350,
       "duration_ms": 2850,
-      "length": 867.4600447696696,
+      "length": 867.4600447696698,
       "median_speed": 324.92434077829864,
       "points": [
         {
@@ -24076,7 +24076,7 @@
       "source_sha256": "36da5d45349a6c0f400a390819deb92880d43ade65ff280e730e446815fbb999",
       "pickup_ms": 173800,
       "duration_ms": 2900,
-      "length": 1123.3187466033103,
+      "length": 1123.3187466033098,
       "median_speed": 355.35521828543676,
       "points": [
         {
@@ -24249,7 +24249,7 @@
       "source_sha256": "3fd50e77f84e65e1acf42e1a271d334b2da70a77526e995df774307f7d22cab3",
       "pickup_ms": 625100,
       "duration_ms": 2975,
-      "length": 756.0429782656257,
+      "length": 756.0429782656258,
       "median_speed": 264.57909983375697,
       "points": [
         {
@@ -24359,7 +24359,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 63450,
       "duration_ms": 3000,
-      "length": 963.9791985054704,
+      "length": 963.9791985054707,
       "median_speed": 330.6587475735488,
       "points": [
         {
@@ -24514,7 +24514,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 615775,
       "duration_ms": 3000,
-      "length": 1003.6800172824454,
+      "length": 1003.6800172824453,
       "median_speed": 327.76284127291706,
       "points": [
         {
@@ -24669,7 +24669,7 @@
       "source_sha256": "e80b46cf86685687501f6578022af46c1c7a821d58f3e222f9662a4f29b39788",
       "pickup_ms": 92825,
       "duration_ms": 3000,
-      "length": 1061.4881723143214,
+      "length": 1061.4881723143212,
       "median_speed": 332.60776249531574,
       "points": [
         {
@@ -24842,7 +24842,7 @@
       "source_sha256": "e80b46cf86685687501f6578022af46c1c7a821d58f3e222f9662a4f29b39788",
       "pickup_ms": 135025,
       "duration_ms": 3000,
-      "length": 995.1246995113282,
+      "length": 995.1246995113285,
       "median_speed": 332.4893531606761,
       "points": [
         {
@@ -24997,7 +24997,7 @@
       "source_sha256": "30ddc6d351d8a541b4d9d5797e38a5f3cea826f8e43d6f514b4aa33761f59b4d",
       "pickup_ms": 129475,
       "duration_ms": 3000,
-      "length": 858.4252868015199,
+      "length": 858.4252868015194,
       "median_speed": 320.69584892432005,
       "points": [
         {
@@ -25134,7 +25134,7 @@
       "source_sha256": "9d019db298507a421b9c2d72c57352014364246da44bcb40daea140de7f41775",
       "pickup_ms": 162750,
       "duration_ms": 3000,
-      "length": 713.028522711734,
+      "length": 713.0285227117341,
       "median_speed": 320.3799762941984,
       "points": [
         {
@@ -25390,7 +25390,7 @@
       "source_sha256": "9d019db298507a421b9c2d72c57352014364246da44bcb40daea140de7f41775",
       "pickup_ms": 765000,
       "duration_ms": 3000,
-      "length": 819.3876607521862,
+      "length": 819.3876607521861,
       "median_speed": 137.72834664459464,
       "points": [
         {
@@ -25673,7 +25673,7 @@
       "source_sha256": "994e643268aeab4282ba9f7a719e23ab50f9cd3b7527a750e712954415ff00f2",
       "pickup_ms": 226800,
       "duration_ms": 3000,
-      "length": 670.0602013442913,
+      "length": 670.0602013442916,
       "median_speed": 301.5461078569375,
       "points": [
         {
@@ -25792,7 +25792,7 @@
       "source_sha256": "994e643268aeab4282ba9f7a719e23ab50f9cd3b7527a750e712954415ff00f2",
       "pickup_ms": 279750,
       "duration_ms": 3000,
-      "length": 797.3588104206386,
+      "length": 797.3588104206382,
       "median_speed": 311.82234924632,
       "points": [
         {
@@ -25911,7 +25911,7 @@
       "source_sha256": "5f22be4ca3d33eed4b122bb88e0588d449b80ac13062c27b2d3b9b70f90de3da",
       "pickup_ms": 664750,
       "duration_ms": 3000,
-      "length": 788.594264225278,
+      "length": 788.5942642252779,
       "median_speed": 321.4745130306932,
       "points": [
         {
@@ -26295,7 +26295,7 @@
       "source_sha256": "46d20f6902c15a326068f5c8c9bdc54bb7a38ff252b1894c37dd1c4b13cc3458",
       "pickup_ms": 623325,
       "duration_ms": 3000,
-      "length": 713.0015033409308,
+      "length": 713.0015033409305,
       "median_speed": 185.22147744848198,
       "points": [
         {
@@ -26423,7 +26423,7 @@
       "source_sha256": "63c58b82d804d5a13e950629657a57b9bab114c9bd52f014ee5022573d16f34b",
       "pickup_ms": 399600,
       "duration_ms": 3000,
-      "length": 925.9941763408913,
+      "length": 925.9941763408912,
       "median_speed": 327.11684820942844,
       "points": [
         {
@@ -26578,7 +26578,7 @@
       "source_sha256": "6e50917809ecd6447990b4126f629cff1dc4cd75e1d37185de581a07221797dd",
       "pickup_ms": 443100,
       "duration_ms": 3000,
-      "length": 749.2046962790452,
+      "length": 749.2046962790448,
       "median_speed": 204.23903603763202,
       "points": [
         {
@@ -26697,7 +26697,7 @@
       "source_sha256": "dcc2744ba98013d7a70c90d6c761dd7208c06011fb2eb8f466b7c4affb7b10b5",
       "pickup_ms": 910575,
       "duration_ms": 3000,
-      "length": 749.5987896213564,
+      "length": 749.5987896213563,
       "median_speed": 321.0971184629535,
       "points": [
         {
@@ -26816,7 +26816,7 @@
       "source_sha256": "bc23c759fb2dbf13ac021b9e41867b857c565829fafbd4b633fefc1e229854a2",
       "pickup_ms": 70125,
       "duration_ms": 3000,
-      "length": 1203.335695726302,
+      "length": 1203.3356957263018,
       "median_speed": 344.66771176746715,
       "points": [
         {
@@ -26998,7 +26998,7 @@
       "source_sha256": "bc23c759fb2dbf13ac021b9e41867b857c565829fafbd4b633fefc1e229854a2",
       "pickup_ms": 430700,
       "duration_ms": 3000,
-      "length": 984.7119538226698,
+      "length": 984.7119538226696,
       "median_speed": 327.91148766551504,
       "points": [
         {
@@ -27135,7 +27135,7 @@
       "source_sha256": "bc23c759fb2dbf13ac021b9e41867b857c565829fafbd4b633fefc1e229854a2",
       "pickup_ms": 430875,
       "duration_ms": 3000,
-      "length": 961.5086599622725,
+      "length": 961.5086599622723,
       "median_speed": 323.3428662844672,
       "points": [
         {
@@ -27272,7 +27272,7 @@
       "source_sha256": "f565814541b008cd74ef3fdac37ffc9fbc5b7ca2cf771f38e750df34865450a7",
       "pickup_ms": 344175,
       "duration_ms": 3000,
-      "length": 1002.4630220555617,
+      "length": 1002.4630220555614,
       "median_speed": 325.5382991605115,
       "points": [
         {
@@ -27436,7 +27436,7 @@
       "source_sha256": "fb8fc8d4b41bf2f72e4f619b16cbbdf0eb5586a3f2e14ebb42aefc3330219d99",
       "pickup_ms": 10229475,
       "duration_ms": 3000,
-      "length": 1011.9557856265965,
+      "length": 1011.9557856265967,
       "median_speed": 339.48483261044976,
       "points": [
         {
@@ -27600,7 +27600,7 @@
       "source_sha256": "ad4bfd7c4da175723c12a17f9f4e5869aa0359d8d5f257301c6f273dfcb57a54",
       "pickup_ms": 615325,
       "duration_ms": 3000,
-      "length": 438.0682784539913,
+      "length": 438.0682784539914,
       "median_speed": 108.92631567189424,
       "points": [
         {
@@ -28085,7 +28085,7 @@
       "source_sha256": "4a03e9042e8da8bdb6a59ed702db0e677123dd09b451afa56a32a69ae8322af9",
       "pickup_ms": 4528050,
       "duration_ms": 3000,
-      "length": 659.1317342451476,
+      "length": 659.1317342451481,
       "median_speed": 221.96999882011232,
       "points": [
         {
@@ -28195,7 +28195,7 @@
       "source_sha256": "9cbca3d3d82737296da66293b3ff85955199ceb2b774c9751ef1aecf0832b13a",
       "pickup_ms": 203950,
       "duration_ms": 3000,
-      "length": 403.43394593167767,
+      "length": 403.4339459316777,
       "median_speed": 78.77885765016818,
       "points": [
         {
@@ -28260,7 +28260,7 @@
       "source_sha256": "5dad0e48c55520284ec799708e6abc6aa2fab5e67056d5f15e4253190c19dfda",
       "pickup_ms": 67125,
       "duration_ms": 3000,
-      "length": 889.159907428548,
+      "length": 889.1599074285483,
       "median_speed": 314.29872768010773,
       "points": [
         {
@@ -28397,7 +28397,7 @@
       "source_sha256": "c68549d30798ef279706b4155098ec637e8d6767cf0971add5e2c89b578f83bd",
       "pickup_ms": 154550,
       "duration_ms": 3000,
-      "length": 1021.3723507353973,
+      "length": 1021.3723507353969,
       "median_speed": 326.98311202316665,
       "points": [
         {
@@ -28552,7 +28552,7 @@
       "source_sha256": "0de9f00d220eff47ece45f34091279fe6cd58e732e31d4a98356aca0c680abac",
       "pickup_ms": 313525,
       "duration_ms": 3000,
-      "length": 1019.2213653236151,
+      "length": 1019.2213653236154,
       "median_speed": 332.9561433863998,
       "points": [
         {
@@ -28707,7 +28707,7 @@
       "source_sha256": "2e20cb9b50ec343bf5ff6bf41b77907d1b207b399c9e72cf82c5d5c80656deff",
       "pickup_ms": 104350,
       "duration_ms": 3000,
-      "length": 648.500171963884,
+      "length": 648.5001719638841,
       "median_speed": 240.337571094877,
       "points": [
         {
@@ -28972,7 +28972,7 @@
       "source_sha256": "0171b58717f4c39b9b8a8521a981ca8313e5c033dfc20be43da02c5dd52bbd28",
       "pickup_ms": 412800,
       "duration_ms": 3000,
-      "length": 821.0646145910453,
+      "length": 821.0646145910451,
       "median_speed": 320.01141864926296,
       "points": [
         {
@@ -29109,7 +29109,7 @@
       "source_sha256": "b1381559532fde38d9051ae3587fb310d400cf298d6b62fb6ef2d91a5b190404",
       "pickup_ms": 711475,
       "duration_ms": 3000,
-      "length": 988.5854852495914,
+      "length": 988.5854852495913,
       "median_speed": 326.84259466512754,
       "points": [
         {
@@ -29428,7 +29428,7 @@
       "source_sha256": "7a0b700c00ee5509a6fa0248773db46d2987f9867cebf920441799f13349e5f3",
       "pickup_ms": 478575,
       "duration_ms": 3000,
-      "length": 871.0886708543594,
+      "length": 871.0886708543599,
       "median_speed": 325.1152101004148,
       "points": [
         {
@@ -29711,7 +29711,7 @@
       "source_sha256": "86a7f4e43fa8f8bb537ab397a66cf50b938614d35654cf9d7ee50d1c9d3bc838",
       "pickup_ms": 311675,
       "duration_ms": 3000,
-      "length": 404.6125910009556,
+      "length": 404.61259100095555,
       "median_speed": 123.03118606845368,
       "points": [
         {
@@ -29776,7 +29776,7 @@
       "source_sha256": "dd9b975f7f031d8b5212227682d5ff3ee5bc5e9869b884f55b90007422ad75a3",
       "pickup_ms": 686575,
       "duration_ms": 3000,
-      "length": 1069.3725211405635,
+      "length": 1069.3725211405633,
       "median_speed": 328.84873615021843,
       "points": [
         {
@@ -29940,7 +29940,7 @@
       "source_sha256": "5dad0e48c55520284ec799708e6abc6aa2fab5e67056d5f15e4253190c19dfda",
       "pickup_ms": 69350,
       "duration_ms": 1525,
-      "length": 571.2105326646691,
+      "length": 571.2105326646692,
       "median_speed": 331.99960715969945,
       "points": [
         {
@@ -30050,7 +30050,7 @@
       "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
       "pickup_ms": 413500,
       "duration_ms": 3000,
-      "length": 897.3985033958783,
+      "length": 897.398503395879,
       "median_speed": 324.22060591961076,
       "points": [
         {
@@ -30342,7 +30342,7 @@
       "source_sha256": "45b60de1e54048e4fa51dfdf80c43d137e7c28739a4c7bb4398999db7253bc29",
       "pickup_ms": 227075,
       "duration_ms": 3000,
-      "length": 999.411279948317,
+      "length": 999.4112799483173,
       "median_speed": 338.5048595217273,
       "points": [
         {
@@ -30488,7 +30488,7 @@
       "source_sha256": "451504f745d9e2e355286cef858c05f8b1de7ddb1c0bd054be16d382dee4b679",
       "pickup_ms": 171250,
       "duration_ms": 3000,
-      "length": 937.3377871692043,
+      "length": 937.3377871692045,
       "median_speed": 322.3680386094006,
       "points": [
         {
@@ -30643,7 +30643,7 @@
       "source_sha256": "5f22be4ca3d33eed4b122bb88e0588d449b80ac13062c27b2d3b9b70f90de3da",
       "pickup_ms": 356150,
       "duration_ms": 3000,
-      "length": 884.6681907993523,
+      "length": 884.6681907993524,
       "median_speed": 328.04943352497867,
       "points": [
         {
@@ -30780,7 +30780,7 @@
       "source_sha256": "46d20f6902c15a326068f5c8c9bdc54bb7a38ff252b1894c37dd1c4b13cc3458",
       "pickup_ms": 493250,
       "duration_ms": 3000,
-      "length": 718.6528349120838,
+      "length": 718.6528349120839,
       "median_speed": 174.77504323951842,
       "points": [
         {
@@ -30908,7 +30908,7 @@
       "source_sha256": "649494b1d2af31dee181c0247f293ab88f977c54288a1da5b3c9867aa3be15fa",
       "pickup_ms": 313600,
       "duration_ms": 3000,
-      "length": 1001.210894420914,
+      "length": 1001.2108944209141,
       "median_speed": 323.94521632287103,
       "points": [
         {
@@ -31063,7 +31063,7 @@
       "source_sha256": "649494b1d2af31dee181c0247f293ab88f977c54288a1da5b3c9867aa3be15fa",
       "pickup_ms": 313800,
       "duration_ms": 3000,
-      "length": 1004.8676279975157,
+      "length": 1004.8676279975156,
       "median_speed": 325.0708637539221,
       "points": [
         {
@@ -31218,7 +31218,7 @@
       "source_sha256": "649494b1d2af31dee181c0247f293ab88f977c54288a1da5b3c9867aa3be15fa",
       "pickup_ms": 500100,
       "duration_ms": 3000,
-      "length": 993.0958941616575,
+      "length": 993.0958941616573,
       "median_speed": 331.2014032992191,
       "points": [
         {
@@ -31382,7 +31382,7 @@
       "source_sha256": "4e4f586809595037a3219dfb306f1f621e396e6a9436616cddb03ca8b5600e2c",
       "pickup_ms": 156750,
       "duration_ms": 3000,
-      "length": 1010.1284990064072,
+      "length": 1010.1284990064073,
       "median_speed": 325.65266037691913,
       "points": [
         {
@@ -31683,7 +31683,7 @@
       "source_sha256": "6e50917809ecd6447990b4126f629cff1dc4cd75e1d37185de581a07221797dd",
       "pickup_ms": 1113850,
       "duration_ms": 3000,
-      "length": 935.7267090392317,
+      "length": 935.7267090392318,
       "median_speed": 322.72460952125675,
       "points": [
         {
@@ -31820,7 +31820,7 @@
       "source_sha256": "b624b76ba2428071af1752d167575dc6677c9406ed369f4fd00b6781084a4c5a",
       "pickup_ms": 584375,
       "duration_ms": 3000,
-      "length": 975.5068093327378,
+      "length": 975.5068093327379,
       "median_speed": 320.0279250787896,
       "points": [
         {
@@ -31957,7 +31957,7 @@
       "source_sha256": "46d74eeff8232970a82181ee945ef6d5da2e06dbb88a7d18c63b60914169c0b5",
       "pickup_ms": 254500,
       "duration_ms": 3000,
-      "length": 1025.8121753988016,
+      "length": 1025.8121753988012,
       "median_speed": 334.4566165795582,
       "points": [
         {
@@ -32312,7 +32312,7 @@
       "source_sha256": "ad4bfd7c4da175723c12a17f9f4e5869aa0359d8d5f257301c6f273dfcb57a54",
       "pickup_ms": 136150,
       "duration_ms": 3000,
-      "length": 879.5944725155493,
+      "length": 879.5944725155491,
       "median_speed": 326.59478760263397,
       "points": [
         {
@@ -32622,7 +32622,7 @@
       "source_sha256": "1b8dbec21c4b0ca6ef5830a2cebd47e56ca06cf6eeef86444e831b19c4ca764f",
       "pickup_ms": 327275,
       "duration_ms": 3000,
-      "length": 943.1968429778533,
+      "length": 943.1968429778532,
       "median_speed": 326.80373685010375,
       "points": [
         {
@@ -32768,7 +32768,7 @@
       "source_sha256": "2e20cb9b50ec343bf5ff6bf41b77907d1b207b399c9e72cf82c5d5c80656deff",
       "pickup_ms": 339075,
       "duration_ms": 3000,
-      "length": 1070.4160492591675,
+      "length": 1070.4160492591677,
       "median_speed": 334.34339866803623,
       "points": [
         {
@@ -32941,7 +32941,7 @@
       "source_sha256": "4d2344ee2169b62911a9cc6cdb8d2205ce6ac36c8327ab42a25c98934772f05f",
       "pickup_ms": 669450,
       "duration_ms": 3000,
-      "length": 1083.4599312451758,
+      "length": 1083.4599312451767,
       "median_speed": 342.7087860012835,
       "points": [
         {
@@ -33114,7 +33114,7 @@
       "source_sha256": "55c921b585f78109ecd473e06becb53952b8db4999927ace6d282b7aa437d991",
       "pickup_ms": 2179600,
       "duration_ms": 3000,
-      "length": 990.1767223948781,
+      "length": 990.1767223948782,
       "median_speed": 323.1999393303442,
       "points": [
         {
@@ -33361,7 +33361,7 @@
       "source_sha256": "55c921b585f78109ecd473e06becb53952b8db4999927ace6d282b7aa437d991",
       "pickup_ms": 2225900,
       "duration_ms": 3000,
-      "length": 583.8818378817488,
+      "length": 583.8818378817489,
       "median_speed": 161.81367281361756,
       "points": [
         {
@@ -33509,7 +33509,7 @@
       "source_sha256": "55c921b585f78109ecd473e06becb53952b8db4999927ace6d282b7aa437d991",
       "pickup_ms": 2403175,
       "duration_ms": 3000,
-      "length": 255.35565595929387,
+      "length": 255.35565595929398,
       "median_speed": 54.99999538329887,
       "points": [
         {
@@ -33556,7 +33556,7 @@
       "source_sha256": "2646fd08c48a67834fa6261834d7f8c520ad550e24782e785c9ad6068e721d5c",
       "pickup_ms": 416325,
       "duration_ms": 3000,
-      "length": 1074.574194900003,
+      "length": 1074.5741949000032,
       "median_speed": 321.2499928596368,
       "points": [
         {
@@ -33758,7 +33758,11 @@
         }
       ],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 87750,
@@ -33799,7 +33803,11 @@
         }
       ],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 107650,
@@ -33840,7 +33848,11 @@
         }
       ],
       "status": "success",
-      "reason": "immediate_pickup"
+      "reason": "immediate_pickup",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 139400,
@@ -33881,7 +33893,11 @@
         }
       ],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 191800,
@@ -33917,7 +33933,11 @@
       "armor_after": 82,
       "pickups": [],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 211925,
@@ -33958,7 +33978,11 @@
         }
       ],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 219675,
@@ -33994,7 +34018,11 @@
       "armor_after": 103,
       "pickups": [],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 233375,
@@ -34035,7 +34063,11 @@
         }
       ],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 259000,
@@ -34076,7 +34108,11 @@
         }
       ],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 265800,
@@ -34117,7 +34153,11 @@
         }
       ],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 273125,
@@ -34153,7 +34193,11 @@
       "armor_after": 72,
       "pickups": [],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 282825,
@@ -34194,7 +34238,11 @@
         }
       ],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 290875,
@@ -34230,7 +34278,11 @@
       "armor_after": 94,
       "pickups": [],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 315375,
@@ -34271,7 +34323,11 @@
         }
       ],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 319975,
@@ -34307,7 +34363,11 @@
       "armor_after": 148,
       "pickups": [],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
     },
     {
       "marker_ms": 331525,
@@ -34348,7 +34408,39 @@
         }
       ],
       "status": "success",
-      "reason": "higher_landing"
+      "reason": "higher_landing",
+      "weapon": 5,
+      "shot_count": 1,
+      "shot_interval": 0,
+      "boost_kind": "rocketjump"
+    },
+    {
+      "start_position": [
+        -297.9,
+        -193.8,
+        408.24
+      ],
+      "landing_position": [
+        -189.49,
+        -15.16,
+        540.52
+      ],
+      "shot_viewangles": [
+        62.1497,
+        168.2941,
+        0.0
+      ],
+      "health_before": 121,
+      "health_after": 100,
+      "start_ms": 6090275,
+      "shot_ms": 6090300,
+      "weapon": 8,
+      "shot_count": 3,
+      "shot_interval": 100,
+      "boost_kind": "plasmajump",
+      "source_demo": "10774",
+      "source_pickup_ms": 6091100,
+      "live_verified": false
     }
   ],
   "raw_controls_verified": false
