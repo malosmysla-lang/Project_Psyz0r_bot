@@ -1,0 +1,114 @@
+[
+  {
+    "probe": 2,
+    "sample": 1,
+    "begins": 1,
+    "successes": 1,
+    "endings": 1
+  },
+  {
+    "probe": 3,
+    "sample": 2,
+    "begins": 1,
+    "successes": 1,
+    "endings": 1
+  },
+  {
+    "probe": 4,
+    "sample": 3,
+    "begins": 1,
+    "successes": 1,
+    "endings": 1
+  },
+  {
+    "probe": 5,
+    "sample": 4,
+    "begins": 1,
+    "successes": 0,
+    "endings": 0
+  },
+  {
+    "probe": 6,
+    "sample": 5,
+    "begins": 1,
+    "successes": 0,
+    "endings": 1
+  },
+  {
+    "probe": 7,
+    "sample": 6,
+    "begins": 1,
+    "successes": 1,
+    "endings": 1
+  },
+  {
+    "probe": 8,
+    "sample": 7,
+    "begins": 0,
+    "successes": 0,
+    "endings": 0
+  },
+  {
+    "probe": 9,
+    "sample": 8,
+    "begins": 0,
+    "successes": 0,
+    "endings": 0
+  },
+  {
+    "probe": 10,
+    "sample": 9,
+    "begins": 1,
+    "successes": 1,
+    "endings": 1
+  },
+  {
+    "probe": 11,
+    "sample": 10,
+    "begins": 1,
+    "successes": 1,
+    "endings": 1
+  },
+  {
+    "probe": 12,
+    "sample": 11,
+    "begins": 1,
+    "successes": 1,
+    "endings": 1
+  },
+  {
+    "probe": 13,
+    "sample": 12,
+    "begins": 0,
+    "successes": 0,
+    "endings": 0
+  },
+  {
+    "probe": 14,
+    "sample": 13,
+    "begins": 0,
+    "successes": 0,
+    "endings": 0
+  },
+  {
+    "probe": 15,
+    "sample": 14,
+    "begins": 0,
+    "successes": 0,
+    "endings": 0
+  },
+  {
+    "probe": 16,
+    "sample": 15,
+    "begins": 1,
+    "successes": 1,
+    "endings": 1
+  },
+  {
+    "probe": 17,
+    "sample": 16,
+    "begins": 1,
+    "successes": 0,
+    "endings": 0
+  }
+]
