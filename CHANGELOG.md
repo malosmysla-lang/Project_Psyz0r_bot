@@ -2,6 +2,14 @@
 
 Connected ammunition reserves, missing-weapon preparation and optional forward-push gate; armor damage extends grounded combat, aim targets interpolate across windows. Debug/Release 14/14 and Python99/99. Two isolated 40s duel trials (including map reload): 20 pickups, 11 preparation gates, 3 grounded-jump blocks, 8 aim-profile records, no detected ERROR/load failures. Test27961 Blood Run Duel verified; main PID unchanged. See docs/PREALPHA_0_6_7_RU.md and docs/ADDON_RUNTIME_STATUS_RU.md. Full behavior integration remains incomplete.
 
+# 2026-10-12 - Duel Pracc Room technical-restart warnings deployed
+
+Added red `WARNING` notices 15, 10, 5 and 1 minute before the six-hour restart deadline. The restart still waits for an active duel to finish. Focused tests passed for all thresholds, duplicate suppression and missed-window handling. At the owner's request, the empty main server was restarted to load the plugin; service is active (PID 223006), UDP 27960 is listening, and the deployed file is mode 644 with SHA-256 `b79aac73eb2d54472cdb63a349f80d63fc9a44485352db61fae43c4d342080f8`. The first live countdown is not yet due. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.
+
+# 2026-10-12 - Xaero command update active after scheduled restart
+
+Verified the main service is active after its regular six-hour restart (PID 218143), which occurred after the bot plugin and Welcome config were written. `room_bot` loaded; no import traceback was found. Commands are ready for owner in-game testing. Runtime Welcome cvar and command behavior have not been queried/tested. Logs include a prior skill-5 bot-spawn failure on bloodrunintel. No additional restart was issued. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.
+
 # 2026-10-12 - Xaero end-of-duel praise proposal
 
 Specified required positive post-duel praise, occasional rail/lightning/rocket compliments grounded in reliable accuracy samples, GG/GG WP endings, and a sad-bot line for a blowout. Accuracy sample/percentage and blowout thresholds remain to be agreed. Documentation only; no server or plugin changes. See docs/server/XAERO_JOIN_GREETING_OPTIONS_2026-10-12_RU.md.

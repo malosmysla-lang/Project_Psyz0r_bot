@@ -2,6 +2,14 @@
 
 Connected ammunition reserves, missing-weapon preparation and optional forward-push gate; armor damage extends grounded combat, aim targets interpolate across windows. Debug/Release 14/14 and Python99/99. Two isolated 40s duel trials (including map reload): 20 pickups, 11 preparation gates, 3 grounded-jump blocks, 8 aim-profile records, no detected ERROR/load failures. Test27961 Blood Run Duel verified; main PID unchanged. See docs/PREALPHA_0_6_7_RU.md and docs/ADDON_RUNTIME_STATUS_RU.md. Full behavior integration remains incomplete.
 
+# 2026-10-12 - Duel Pracc Room technical-restart warnings deployed
+
+The main server's restart plugin now sends red warnings at 15, 10, 5 and 1 minutes before its six-hour deadline and preserves the existing wait-for-duel safe point. Threshold, duplicate and missed-window tests passed. Per owner request, the empty server was restarted to load the change; systemd is active at PID 223006 and UDP 27960 is listening. Deployed plugin SHA-256: `b79aac73eb2d54472cdb63a349f80d63fc9a44485352db61fae43c4d342080f8`. Live warning delivery awaits the first scheduled countdown. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.
+
+# 2026-10-12 - Xaero command update active after scheduled restart
+
+Main server is active after the regular six-hour restart following the on-disk bot/plugin and Welcome update (PID 218143); room_bot load appears in logs without an import traceback. No manual restart was issued. Owner can now test `!goduel` and `!leaveme`; runtime command success remains unverified. A bot skill-5 spawn failure was logged on bloodrunintel. See docs/server/DUEL_PRACC_ROOM_STATUS_2026-10-12_RU.md.
+
 # 2026-10-12 - Xaero end-of-duel praise proposal
 
 End-of-duel behavior now requires a positive player compliment every completed bot duel; occasional rail/LG/rocket praise only with reliable accuracy and enough samples; finish with GG/GG WP, or a sad-bot line for a blowout. Numeric thresholds need owner approval. Documentation only; code and server unchanged. See docs/server/XAERO_JOIN_GREETING_OPTIONS_2026-10-12_RU.md.
