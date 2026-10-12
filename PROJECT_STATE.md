@@ -1,3 +1,7 @@
+# 2026-10-12 - Prealpha 0.6.9 item clocks and openings deployed
+
+Owner demo analyzed: bot4-10, red0/mega8/yellow12, LG82/346, one confirmed higher RJ. Found 3s timing horizon and 30s goal hold; connected engine item-clock registry and travel-aware major lookahead/preemption. Fixed Red Armor display versus Heavy Armor botlib query (cold-start goal area1429). Openings latch start, wait for registry, require main-gun candidate and cancel on emergency rather than mere rival stack advantage. Audit36 candidates/100 destinations valid, 32 eligible, 39 demo-covered legs and61 AAS fallbacks. Live: two full LG-Mega-RG orders; final build full Red-RG with actual red pickup at+9.1s. Engine clocks verified armor25s/Mega35s. Debug/Release14/14, Python99/99. Final SHA a29bf4da62c096c2c24bea072ee690ac86c9d900f647c0caca9c3b4502711eda. Only27961 changed. Aim calibration and other opening variants remain. See docs/PREALPHA_0_6_9_RU.md.
+
 # 2026-10-12 - LG-first duel weapon profile
 
 Owner weapon hierarchy applied to retail profile 0.6.7-lg1: LG240 in working horizontal range, RL170 main alternative, RG260 beyond LG range; secondary guns reduced. Adjacent integer fuzzy nodes prevent a broad transition across the medium range. Profile loaded on isolated27961 after backup; native unchanged. Local Behavior aligned with LG-first, far RG/RL and conditional safe shotgun finish. Rail-hit-to-push rule preserved as pending event integration, not claimed live. See docs/WEAPON_PRIORITY_LG1_RU.md.

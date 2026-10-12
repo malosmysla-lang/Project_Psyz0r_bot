@@ -1,6 +1,9 @@
 /* Experimental Blood Run prealpha. Uses valid goals produced by stock QL. */
 #include <math.h>
 #include "psyz_loadout.h"
+#include "psyz_item_timing.h"
+static PsyzItemClock psyz_item_clocks[1024];
+static int psyz_timer_log;
 #include "psyz_bloodrun_bank.h"
 #include "psyz_red_routes.h"
 #define PSYZ_ALL_ROUTE_COUNT (PSYZ_ROUTE_COUNT+PSYZ_RED_ROUTE_COUNT)
@@ -80,6 +83,7 @@ static int Psyz_PreAlphaEnabled(void) {
 #include "psyz_opening.h"
 static void Psyz_PreAlphaReset(void) {
     Psyz_NavReset(&psyz_nav);psyz_nav_health=psyz_nav_armor=psyz_nav_damage_time=psyz_prepare_log=0;
+    memset(psyz_item_clocks,0,sizeof(psyz_item_clocks));psyz_timer_log=0;
     psyz_combat_until=psyz_diagnostic_time=0;
     psyz_combat_log=psyz_aim_log=0;
     Psyz_OpeningReset();
@@ -146,6 +150,19 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     }
     if(!Psyz_PreAlphaEnabled())return;
     Psyz_OpeningTick(own);
+    cvar_t *clock_mode=Cvar_FindVar("qlx_psyzItemTiming");int timed=clock_mode && clock_mode->integer;
+    if(timed){
+        int clocks=0,unknown=0;
+        for(int n=0;n<1024;n++){
+            gentity_t *e=&g_entities[n];
+            if(!e->inuse || !e->item || !e->item->classname){psyz_item_clocks[n].valid=0;continue;}
+            psyz_item_clocks[n]=Psyz_ReadItemClock(e->r.contents,e->nextthink,now);clocks++;
+            if(psyz_item_clocks[n].due<0)unknown++;
+            if(now-psyz_timer_log>=2000 && (!strcmp(e->item->classname,"item_health_mega") || !strcmp(e->item->classname,"item_armor_body")))
+                fprintf(stderr,"PSYZ_ITEM_TIMER t=%d entity=%d class=%s available=%d due=%d remaining_ms=%d known_goal=%d source=engine_nextthink\n",now,n,e->item->classname,psyz_item_clocks[n].available,psyz_item_clocks[n].due,psyz_item_clocks[n].due<0?-1:psyz_item_clocks[n].due-now,psyz_goal_known[n]);
+        }
+        if(now-psyz_timer_log>=2000){psyz_timer_log=now;fprintf(stderr,"PSYZ_CLOCK_REGISTRY t=%d items=%d unknown_deadlines=%d opponent_positions=0\n",now,clocks,unknown);}
+    }
     if(!psyz_debug_logged || now-psyz_registry_retry>=1000){
         psyz_registry_retry=now;
         psyz_debug_logged=1;void *im;memcpy(&im,(char*)qagame+0x2d8000,sizeof(im));
@@ -153,13 +170,25 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         int count=0;
         for(int n=0;n<1024;n++){
             gentity_t *e=&g_entities[n];if(psyz_goal_known[n] || !e->inuse || !e->item || !e->item->pickup_name)continue;
+            const char *query=!strcmp(e->item->classname,"item_armor_body")?"Heavy Armor":e->item->pickup_name;
             unsigned char candidate[256];int cursor=-1;
             for(int j=0;j<64;j++){
-                memset(candidate,0,sizeof(candidate));int next=get_item(cursor,e->item->pickup_name,candidate);
+                memset(candidate,0,sizeof(candidate));int next=get_item(cursor,query,candidate);
+                if(j==0 && !strcmp(e->item->classname,"item_armor_body")){
+                    int candidate_area;memcpy(&candidate_area,candidate+12,4);
+                    fprintf(stderr,"PSYZ_RED_REGISTRY t=%d display=%s query=%s result=%d area=%d\n",now,e->item->pickup_name,query,next,candidate_area);
+                }
                 if(next<0 || next==cursor)break;
                 cursor=next;
                 int id,area,flags;float p[3];memcpy(p,candidate,12);memcpy(&area,candidate+12,4);memcpy(&id,candidate+40,4);memcpy(&flags,candidate+48,4);
-                if(id==n && area>0 && area<2393 && flags==1 && Psyz_Distance(p,e->r.currentOrigin)<64){memcpy(psyz_goal_cache[n],candidate,64);psyz_goal_known[n]=1;count++;break;}
+                /* Botlib can retain entitynum=0 until its item observation
+                   catches up after restart. Match the stock item goal by name
+                   and static position; preserve its real area/item number. */
+                if(id>=0 && id<1024 && area>0 && area<2393 && flags==1 && Psyz_Distance(p,e->r.currentOrigin)<(id==n?64:16)){
+                    memcpy(candidate+40,&n,4);memcpy(psyz_goal_cache[n],candidate,64);psyz_goal_known[n]=1;count++;
+                    if(id!=n)fprintf(stderr,"PSYZ_GOAL_REMAP t=%d entity=%d source_entity=%d class=%s static_position_match=1\n",now,n,id,e->item->classname);
+                    break;
+                }
             }
         }
         if(count)fprintf(stderr,"PSYZ_GOAL_REGISTRY newly_valid_item_goals=%d weapons=%d ammo_rl=%d\n",count,own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo[5]);
@@ -179,7 +208,9 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     int nav_hold=nav && nav->integer && !recovering && psyz_nav.target==psyz_goal_target &&
         now-psyz_nav.start<30000;
     int keep=opening_target<0 && psyz_goal_target>=0 && psyz_goal_known[psyz_goal_target] &&
-        g_entities[psyz_goal_target].r.contents &&
+        g_entities[psyz_goal_target].inuse && g_entities[psyz_goal_target].item &&
+        (g_entities[psyz_goal_target].r.contents || (timed && Psyz_TimerCandidate(psyz_item_clocks[psyz_goal_target],now,Psyz_ItemTravelSeconds(Psyz_Distance(own->client->ps.origin,g_entities[psyz_goal_target].r.currentOrigin)),
+        !strcmp(g_entities[psyz_goal_target].item->classname,"item_health_mega") || !strcmp(g_entities[psyz_goal_target].item->classname,"item_armor_body")))) &&
         Psyz_ItemWeight(&g_entities[psyz_goal_target],own,recovering)>15 &&
         (now-psyz_goal_since<3000 || nav_hold);
     /* A nearby needed main weapon may interrupt a long resource route.
@@ -194,25 +225,54 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         if(d<nearby_best){nearby_best=d;nearby_main=i;}
     }
     if(nearby_main>=0 && !recovering && opening_target<0 && nearby_main!=psyz_goal_target)keep=0;
+    /* A timed major-item opportunity can interrupt the old 30s navigation
+       hold. Keep emergency recovery, missing nearby guns and openings first. */
+    int major_target=-1;float major_best=-1;
+    if(timed && opening_target<0 && nearby_main<0 && own->health>=70 &&
+       Psyz_TrinityReady(own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo)>=2){
+        for(int i=0;i<1024;i++){
+            gentity_t *e=&g_entities[i];
+            if(!psyz_goal_known[i] || psyz_banned[i]>now || !e->inuse || !e->item || !e->item->classname)continue;
+            const char *c=e->item->classname;
+            if(strcmp(c,"item_health_mega") && strcmp(c,"item_armor_body"))continue;
+            float weight=Psyz_ItemWeight(e,own,recovering);if(weight<=15)continue;
+            float distance=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin),travel=Psyz_ItemTravelSeconds(distance);
+            if(!Psyz_TimerCandidate(psyz_item_clocks[i],now,travel,1))continue;
+            /* Do not downrank a reachable red merely because the rival's
+               stack is larger; the stack check has no positional danger data. */
+            if(!strcmp(c,"item_armor_body") && own->client->ps.stats[STAT_ARMOR]<150)weight=fmaxf(weight,125);
+            float score=weight+35-distance*.035f-Psyz_TimerIdle(psyz_item_clocks[i],now,travel)*12;
+            if(score>major_best){major_best=score;major_target=i;}
+        }
+        if(major_target>=0 && major_target!=psyz_goal_target){
+            float old=psyz_goal_target>=0?Psyz_ItemWeight(&g_entities[psyz_goal_target],own,recovering)-Psyz_Distance(own->client->ps.origin,g_entities[psyz_goal_target].r.currentOrigin)*.035f:0;
+            if(major_best>old+20)keep=0;else major_target=-1;
+        }
+    }
     if(!keep) {
         float best=-1;int selected=-1;
         for(int i=0;i<1024;i++) {
             if(!psyz_goal_known[i] || psyz_banned[i]>now)continue;
             gentity_t *e=&g_entities[i];if(!e->inuse||!e->item||!e->item->classname)continue;
             float weight=Psyz_ItemWeight(e,own,recovering);if(weight<=0)continue;
-            float wait=e->r.contents?0:fmaxf(0,(e->nextthink-now)/1000.f);
-            if(!e->r.contents && (e->nextthink<=now || wait>3))continue;
             float distance=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin);
+            float wait=e->r.contents?0:fmaxf(0,(e->nextthink-now)/1000.f);
+            int major=!strcmp(e->item->classname,"item_health_mega") || !strcmp(e->item->classname,"item_armor_body");
+            float travel=Psyz_ItemTravelSeconds(distance);
+            if(timed){if(!Psyz_TimerCandidate(psyz_item_clocks[i],now,travel,major))continue;wait=Psyz_TimerIdle(psyz_item_clocks[i],now,travel);}
+            else if(!e->r.contents && (e->nextthink<=now || wait>3))continue;
             float score=weight-distance*.035f-wait*15;
             if(score>best){best=score;selected=i;}
         }
         if(nearby_main>=0 && !recovering && opening_target<0)selected=nearby_main;
+        else if(major_target>=0)selected=major_target;
         if(opening_target>=0)selected=opening_target;
         if(selected!=psyz_goal_target) {
             psyz_goal_target=selected;psyz_goal_since=now;psyz_progress_time=now;
             psyz_progress_distance=selected>=0?Psyz_Distance(own->client->ps.origin,g_entities[selected].r.currentOrigin):0;
             Psyz_SelectDemoRoute(own,selected);
             fprintf(stderr,"PSYZ_TARGET t=%d entity=%d recover=%d stock_original=%d known_only=1\n",now,selected,recovering,entity);
+            if(timed && selected>=0)fprintf(stderr,"PSYZ_TIMED_TARGET t=%d entity=%d class=%s due=%d travel_estimate=%.2f available=%d\n",now,selected,g_entities[selected].item->classname,psyz_item_clocks[selected].due,Psyz_ItemTravelSeconds(psyz_progress_distance),psyz_item_clocks[selected].available);
         }
     }
     cvar_t *probe=Cvar_FindVar("qlx_psyzRJProbe");
@@ -420,7 +480,12 @@ static void Psyz_PreAlphaTouch(gentity_t *item,gentity_t *other,trace_t *trace) 
     int weapons_before=other && other->client?other->client->ps.stats[STAT_WEAPONS]:0;
     int ammo_before=item && item->item && other && other->client && item->item->giTag>=0 && item->item->giTag<16?other->client->ps.ammo[item->item->giTag]:0;
     psyz_real_touch(item,other,trace);
-    if(!Psyz_PreAlphaEnabled() || !item || !other || other->s.number!=0 || !other->client)return;
+    if(!Psyz_PreAlphaEnabled() || !item || !other || !other->client)return;
+    if(item->item && before && !item->r.contents){
+        int now=other->client->pers.cmd.serverTime;
+        fprintf(stderr,"PSYZ_CLOCK_PICKUP t=%d entity=%d class=%s picker=%d nextthink=%d source=engine_nextthink\n",now,item->s.number,item->item->classname,other->s.number,item->nextthink);
+    }
+    if(other->s.number!=0)return;
     int ammo_after=item->item && item->item->giTag>=0 && item->item->giTag<16?other->client->ps.ammo[item->item->giTag]:0;
     if(item->item && ((before && !item->r.contents) || weapons_before!=other->client->ps.stats[STAT_WEAPONS] || ammo_after>ammo_before)) {
         const char *c=item->item->classname;

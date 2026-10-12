@@ -1,0 +1,292 @@
+{
+  "deployment": {
+    "version": "0.6.8",
+    "backup": "/home/qlserver/backups/psyz0r-068-20261012T011629Z",
+    "native_sha256": "367b645b577778fb700e1efe762c09ac1842bd7bf61f7cb20145e6e96a75a02b",
+    "main_pid_unchanged": true,
+    "startup_offset": 7282124
+  },
+  "duel_seconds": 60,
+  "registry_samples": [
+    {
+      "t": "5775",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "7775",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "10375",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "13075",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "15675",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "17775",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "19775",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "21775",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "23775",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "25775",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "27775",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "29775",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "31775",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "33800",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "36500",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "38500",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "40500",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "44450",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "46450",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "48450",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "50450",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "54150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "57250",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "59250",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "62150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "64150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "66150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "68150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "70150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "72150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "74150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "76150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "78150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "80150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "82150",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "91050",
+      "items": "45",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "93650",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    },
+    {
+      "t": "95650",
+      "items": "44",
+      "unknown_deadlines": "0",
+      "opponent_positions": "0"
+    }
+  ],
+  "timed_goals_beyond_old_3s_horizon": [
+    {
+      "t": "40200",
+      "entity": "112",
+      "class": "item_health_mega",
+      "due": "48000",
+      "travel_estimate": "4.86",
+      "available": "0"
+    }
+  ],
+  "major_pickup_deadlines": [
+    {
+      "t": "13000",
+      "entity": "112",
+      "class": "item_health_mega",
+      "picker": "0",
+      "nextthink": "48000",
+      "source": "engine_nextthink",
+      "delay_ms": 35000
+    },
+    {
+      "t": "58675",
+      "entity": "112",
+      "class": "item_health_mega",
+      "picker": "0",
+      "nextthink": "93675",
+      "source": "engine_nextthink",
+      "delay_ms": 35000
+    }
+  ],
+  "bot_pickup_count": 24,
+  "bot_major_pickups": [
+    {
+      "t": "13000",
+      "entity": "112",
+      "class": "item_health_mega",
+      "target": "112",
+      "route": "-1",
+      "health": "200",
+      "armor": "50"
+    },
+    {
+      "t": "58675",
+      "entity": "112",
+      "class": "item_health_mega",
+      "target": "112",
+      "route": "46",
+      "health": "200",
+      "armor": "0"
+    }
+  ],
+  "errors": []
+}

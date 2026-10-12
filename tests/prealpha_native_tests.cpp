@@ -20,7 +20,8 @@ static cvar_t enabled{1,"1"},mapvar{0,"bloodrun"},testvar{1,"1"},portvar{27961,"
 static cvar_t openingvar{0,"0"},phasevar{0,"PRE_GAME"};
 static cvar_t combatvar{0,"0"},aimvar{0,"0"};
 static cvar_t preparevar{0,"0"};
-static cvar_t *Cvar_FindVar(const char *name){return !strcmp(name,"qlx_psyzLoadoutPreparation")?&preparevar:!strcmp(name,"qlx_psyzAimHumanize")?&aimvar:!strcmp(name,"qlx_psyzGroundCombat")?&combatvar:!strcmp(name,"qlx_psyzOpening")?&openingvar:!strcmp(name,"g_gameState")?&phasevar:!strcmp(name,"qlx_psyzPreAlpha")?&enabled:!strcmp(name,"mapname")?&mapvar:!strcmp(name,"qlx_psyzTestInstance")?&testvar:!strcmp(name,"net_port")?&portvar:nullptr;}
+static cvar_t timervar{0,"0"};
+static cvar_t *Cvar_FindVar(const char *name){return !strcmp(name,"qlx_psyzItemTiming")?&timervar:!strcmp(name,"qlx_psyzLoadoutPreparation")?&preparevar:!strcmp(name,"qlx_psyzAimHumanize")?&aimvar:!strcmp(name,"qlx_psyzGroundCombat")?&combatvar:!strcmp(name,"qlx_psyzOpening")?&openingvar:!strcmp(name,"g_gameState")?&phasevar:!strcmp(name,"qlx_psyzPreAlpha")?&enabled:!strcmp(name,"mapname")?&mapvar:!strcmp(name,"qlx_psyzTestInstance")?&testvar:!strcmp(name,"net_port")?&portvar:nullptr;}
 static int Hook(void*,void(*)(gentity_t*,gentity_t*,trace_t*),void*){return 0;}
 #include "../adapter/native/psyz_prealpha.h"
 static void check(bool v,const char *message){if(!v)throw std::runtime_error(message);}
@@ -37,7 +38,7 @@ static gitem_t red{"item_armor_body","Heavy Armor",0},mega{"item_health_mega","M
 static void reset(){
  memset(world,0,sizeof(world));memset(&client,0,sizeof(client));Psyz_PreAlphaReset();enabled.integer=1;
  openingvar.integer=0;phasevar.string="PRE_GAME";portvar.integer=27961;
- registry_ready=0;combatvar.integer=0;aimvar.integer=0;preparevar.integer=0;
+ registry_ready=0;combatvar.integer=0;aimvar.integer=0;preparevar.integer=0;timervar.integer=0;
  world[0].client=&client;world[0].inuse=1;world[0].health=100;world[0].r.svFlags=8;
  client.ps.groundEntityNum=1022;client.pers.cmd.serverTime=20000;
  void *im=imports_memory;memcpy(game_memory+0x2d8000,&im,sizeof(im));
@@ -90,9 +91,15 @@ int main(){try{
  gitem_t first_item{op.steps[0].classname,"opening",0};
  world[210].inuse=1;world[210].item=&first_item;world[210].r.contents=1;world[210].s.number=210;
  memcpy(world[210].r.currentOrigin,op.steps[0].position,12);psyz_goal_known[210]=1;
+ memcpy(psyz_opening_start,op.start,12);
+ gitem_t opening_items[3]{};
+ for(int s=1;s<op.count;s++){
+  opening_items[s]={op.steps[s].classname,"opening",0};world[210+s].inuse=1;world[210+s].item=&opening_items[s];world[210+s].r.contents=1;
+  memcpy(world[210+s].r.currentOrigin,op.steps[s].position,12);psyz_goal_known[210+s]=1;
+ }
  check(Psyz_OpeningTarget(&world[0],0)==210,"Observed opening maps class and position to current entity");
  Psyz_OpeningPickup(&world[210],20001);check(psyz_opening_step==1,"Only actual matched pickup advances plan");
- Psyz_OpeningTarget(&world[0],1);check(!psyz_opening_active,"Recovery preempts opening");
+ world[0].health=60;Psyz_OpeningTarget(&world[0],1);check(!psyz_opening_active,"Emergency recovery preempts opening");world[0].health=100;
  phasevar.string="PRE_GAME";Psyz_OpeningTick(&world[0]);phasevar.string="IN_PROGRESS";Psyz_OpeningTick(&world[0]);
  client.pers.cmd.serverTime+=30000;Psyz_OpeningTick(&world[0]);check(!psyz_opening_active,"Opening ends after 30 seconds");
  phasevar.string="PRE_GAME";Psyz_OpeningTick(&world[0]);phasevar.string="IN_PROGRESS";Psyz_OpeningTick(&world[0]);
@@ -107,7 +114,7 @@ int main(){try{
  check(psyz_demo_retry_after[200]>20000 && psyz_route_banned[0]>20000,"Failed approach is not immediately reselected");
  client.pers.cmd.serverTime=27001;goal(out,200,10,world[200].r.currentOrigin);Psyz_PreAlphaGoal(state,0,out);
  check(psyz_goal_target<0 && psyz_banned[200]>27001,"A second no-progress timeout releases failed stock goal");
- reset();world[201].inuse=1;world[201].item=&red;world[201].r.contents=1;world[201].r.currentOrigin[0]=100;
+ reset();gitem_t red_display{"item_armor_body","Red Armor",0};world[201].inuse=1;world[201].item=&red_display;world[201].r.contents=1;world[201].r.currentOrigin[0]=100;
  goal(late_goal,201,10,world[201].r.currentOrigin);psyz_debug_logged=1;psyz_registry_retry=20000;
  goal(out,201,10,world[201].r.currentOrigin);int bad_flags=0;memcpy(out+48,&bad_flags,4);
  Psyz_PreAlphaGoal(state,0,out);check(!psyz_goal_known[201],"Unavailable registry entry is not fabricated");
@@ -152,5 +159,27 @@ int main(){try{
  reset();combatvar.integer=1;client.ps.stats[STAT_ARMOR]=100;psyz_last_move_time=19975;
  Psyz_PreAlphaMove(&world[0]);client.ps.stats[STAT_ARMOR]=60;client.pers.cmd.serverTime+=25;client.pers.cmd.upmove=127;
  Psyz_PreAlphaMove(&world[0]);check(client.pers.cmd.upmove==0,"Armor-only damage triggers grounded combat");
+ reset();timervar.integer=1;psyz_debug_logged=1;
+ world[200].inuse=1;world[200].item=&mega;world[200].r.contents=0;world[200].nextthink=28000;world[200].r.currentOrigin[0]=900;
+ world[201].inuse=1;world[201].item=&yellow;world[201].r.contents=1;world[201].r.currentOrigin[0]=50;
+ goal(psyz_goal_cache[200],200,10,world[200].r.currentOrigin);psyz_goal_known[200]=1;
+ goal(psyz_goal_cache[201],201,10,world[201].r.currentOrigin);psyz_goal_known[201]=1;
+ client.ps.stats[STAT_WEAPONS]=(1<<5)|(1<<6);client.ps.ammo[5]=5;client.ps.ammo[6]=100;client.ps.stats[STAT_ARMOR]=50;
+ psyz_goal_target=201;psyz_goal_since=20000;goal(out,201,10,world[201].r.currentOrigin);
+ Psyz_PreAlphaGoal(state,0,out);
+ check(psyz_item_clocks[200].due==28000,"Observer clock preserves future engine deadline");
+ check(psyz_goal_target==200,"Eight-second Mega approach preempts retained secondary resource");
+ world[200].nextthink=40000;psyz_goal_target=-1;goal(out,201,10,world[201].r.currentOrigin);Psyz_PreAlphaGoal(state,0,out);
+ check(psyz_goal_target!=200,"Do not idle twenty seconds for Mega");
+ auto unknown=Psyz_ReadItemClock(0,0,20000);
+ check(unknown.due<0 && !Psyz_TimerCandidate(unknown,20000,5,1),"Unknown timer is not invented as available");
+ check(!Psyz_TimerCandidate(Psyz_ReadItemClock(0,28000,20000),20000,5,0),"Ordinary item keeps short waiting window");
+ reset();world[201].inuse=1;world[201].item=&red_display;world[201].r.contents=1;world[201].r.currentOrigin[0]=100;
+ goal(late_goal,0,10,world[201].r.currentOrigin);registry_ready=1;
+ goal(out,201,10,world[201].r.currentOrigin);memcpy(out+48,&bad_flags,4);Psyz_PreAlphaGoal(state,0,out);
+ int mapped_entity=-1;memcpy(&mapped_entity,psyz_goal_cache[201]+40,4);
+ check(psyz_goal_known[201] && mapped_entity==201,"Red Armor display resolves Heavy Armor botlib name and remaps static entity after restart");
+ reset();psyz_opening_active=1;psyz_opening_since=20000;memcpy(psyz_opening_start,op.start,12);
+ check(Psyz_OpeningTarget(&world[0],0)<0 && psyz_opening_active,"Opening waits briefly for item registry instead of aborting immediately");
  std::cout<<"Native prealpha contextual scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

@@ -2,9 +2,11 @@
 #include "psyz_opening_bank.h"
 static int psyz_opening_seen,psyz_opening_playing,psyz_opening_since;
 static int psyz_opening_plan=-1,psyz_opening_step,psyz_opening_active;
+static float psyz_opening_start[3];
 static void Psyz_OpeningReset(void) {
     psyz_opening_seen=psyz_opening_playing=psyz_opening_since=0;
     psyz_opening_plan=-1;psyz_opening_step=psyz_opening_active=0;
+    memset(psyz_opening_start,0,sizeof(psyz_opening_start));
 }
 static void Psyz_OpeningEnd(int now,const char *reason) {
     if(psyz_opening_active)fprintf(stderr,"PSYZ_OPENING_END t=%d plan=%d step=%d reason=%s\n",now,psyz_opening_plan,psyz_opening_step,reason);
@@ -17,6 +19,7 @@ static void Psyz_OpeningTick(gentity_t *own) {
     int playing=!strcmp(phase->string,"IN_PROGRESS");
     if(psyz_opening_seen && playing && !psyz_opening_playing){
         psyz_opening_since=now;psyz_opening_active=1;psyz_opening_plan=-1;psyz_opening_step=0;
+        memcpy(psyz_opening_start,own->client->ps.origin,sizeof(psyz_opening_start));
         fprintf(stderr,"PSYZ_OPENING_BEGIN t=%d\n",now);
         /* Warmup targets must not survive the duel restart. */
         psyz_goal_target=psyz_active_route=psyz_rj_plan=-1;
@@ -29,16 +32,37 @@ static void Psyz_OpeningTick(gentity_t *own) {
 static int Psyz_OpeningTarget(gentity_t *own,int recovering) {
     int now=own->client->pers.cmd.serverTime;
     if(!psyz_opening_active)return -1;
-    if(recovering){Psyz_OpeningEnd(now,"recovery");return -1;}
+    if(recovering && (own->health<70 || (own->health<100 && own->client->ps.stats[STAT_ARMOR]<30))){Psyz_OpeningEnd(now,"emergency_recovery");return -1;}
     if(psyz_opening_plan<0){
-        float best=193;
+        float best=1e9f;int nearby=0;
         for(size_t i=0;i<PSYZ_OPENING_COUNT;i++){
             const PsyzOpeningPlan *p=&psyz_openings[i];
-            float d=Psyz_Distance(own->client->ps.origin,p->start);
-            if(d<best){best=d;psyz_opening_plan=(int)i;}
+            float d=Psyz_Distance(psyz_opening_start,p->start);if(d>=193)continue;nearby++;
+            int main_weapon=0;
+            for(int s=0;s<p->count;s++)if(!strcmp(p->steps[s].classname,"weapon_lightning") ||
+                !strcmp(p->steps[s].classname,"weapon_rocketlauncher") || !strcmp(p->steps[s].classname,"weapon_railgun"))main_weapon=1;
+            if(!main_weapon)continue;
+            int valid=1;
+            for(int s=0;s<p->count;s++){
+                int found=0;
+                for(int n=0;n<1024;n++){
+                    gentity_t *e=&g_entities[n];
+                    if(psyz_goal_known[n] && e->inuse && e->item && e->item->classname &&
+                       !strcmp(e->item->classname,p->steps[s].classname) && Psyz_Distance(e->r.currentOrigin,p->steps[s].position)<16){found=1;break;}
+                }
+                if(!found){valid=0;break;}
+            }
+            if(!valid)continue;
+            const char *first=p->steps[0].classname;
+            float cost=d+Psyz_Distance(psyz_opening_start,p->steps[0].position)*.05f;
+            if(strcmp(first,"weapon_lightning") && strcmp(first,"weapon_rocketlauncher") && strcmp(first,"weapon_railgun"))cost+=80;
+            if(cost<best){best=cost;psyz_opening_plan=(int)i;}
         }
-        if(psyz_opening_plan<0){Psyz_OpeningEnd(now,"no_nearby_demo");return -1;}
-        fprintf(stderr,"PSYZ_OPENING_PLAN t=%d plan=%d distance=%.2f\n",now,psyz_opening_plan,best);
+        if(psyz_opening_plan<0){
+            if(nearby && now-psyz_opening_since<2000)return -1;
+            Psyz_OpeningEnd(now,nearby?"registry_not_ready":"no_nearby_demo");return -1;
+        }
+        fprintf(stderr,"PSYZ_OPENING_PLAN t=%d plan=%d selection_cost=%.2f latched_start=1\n",now,psyz_opening_plan,best);
     }
     const PsyzOpeningPlan *p=&psyz_openings[psyz_opening_plan];
     if(psyz_opening_step>=p->count){Psyz_OpeningEnd(now,"completed_pickups");return -1;}
@@ -52,7 +76,7 @@ static int Psyz_OpeningTarget(gentity_t *own,int recovering) {
         }
         return i;
     }
-    Psyz_OpeningEnd(now,"no_valid_goal");return -1;
+    if(now-psyz_opening_since>=2000)Psyz_OpeningEnd(now,"no_valid_goal");return -1;
 }
 static void Psyz_OpeningPickup(gentity_t *item,int now) {
     if(!psyz_opening_active || psyz_opening_plan<0)return;

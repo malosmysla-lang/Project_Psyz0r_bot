@@ -1,0 +1,566 @@
+{
+  "demo_sha256": "bf04598112034ffdea60cb5f07e1dd3138fa8c329d02880c23f9071d40836ca1",
+  "map": "bloodrun",
+  "start_ms": 2202975,
+  "end_ms": 2803150,
+  "score": {
+    "nekitz0r": 10,
+    "Psyz0r": 4
+  },
+  "players": [
+    {
+      "cleanName": "Psyz0r",
+      "redArmorPickups": 0,
+      "yellowArmorPickups": 12,
+      "megaHealthPickups": 8,
+      "damageGiven": 1609,
+      "rocketLauncherShots": 89,
+      "rocketLauncherHits": 21,
+      "lightningGunShots": 346,
+      "lightningGunHits": 82,
+      "railgunShots": 8,
+      "railgunHits": 1,
+      "machinegunShots": 149,
+      "machinegunHits": 7
+    },
+    {
+      "cleanName": "nekitz0r",
+      "redArmorPickups": 4,
+      "yellowArmorPickups": 12,
+      "megaHealthPickups": 5,
+      "damageGiven": 2762,
+      "rocketLauncherShots": 67,
+      "rocketLauncherHits": 20,
+      "lightningGunShots": 140,
+      "lightningGunHits": 62,
+      "railgunShots": 24,
+      "railgunHits": 12,
+      "machinegunShots": 17,
+      "machinegunHits": 5
+    }
+  ],
+  "bot_pickup_events": 158,
+  "red_target_events": [
+    "PSYZ_TARGET t=2280975 entity=119 recover=0 stock_original=118 known_only=1",
+    "PSYZ_TARGET t=2368675 entity=119 recover=0 stock_original=76 known_only=1",
+    "PSYZ_TARGET t=2517575 entity=119 recover=0 stock_original=126 known_only=1"
+  ],
+  "red_near_diagnostics": [
+    "PSYZ_NEAR_ITEM t=2434175 entity=119 class=item_armor_body distance=178.5 available=1 known=1 weight=55.0 target=96 reason=other_goal_retained_or_ranked_higher",
+    "PSYZ_NEAR_ITEM t=2769075 entity=119 class=item_armor_body distance=186.5 available=0 known=1 weight=55.0 target=120 reason=unavailable"
+  ],
+  "rocketjump_results": [
+    "PSYZ_RJ_END t=2606925 sample=0 higher=1 pickup=0 delta_z=129.00 reconstructed_input=1"
+  ],
+  "labels_required": false,
+  "stationary_target_accuracy_verified": false,
+  "old_timing_lookahead_seconds": 3,
+  "old_nav_goal_hold_seconds": 30,
+  "coarse_firing_samples": [
+    {
+      "elapsed_ms": 4025,
+      "weapon": 2,
+      "owner_speed": 176.27833555142684,
+      "distance_xy": 787.5271793275019,
+      "bot_yaw_error_degrees": -1.51,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 17425,
+      "weapon": 5,
+      "owner_speed": 0.0,
+      "distance_xy": 868.2568620978072,
+      "bot_yaw_error_degrees": 5.34,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 20625,
+      "weapon": 5,
+      "owner_speed": 449.84781147316414,
+      "distance_xy": 442.6975935006278,
+      "bot_yaw_error_degrees": -3.44,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 23625,
+      "weapon": 5,
+      "owner_speed": 0.0,
+      "distance_xy": 534.4555081741738,
+      "bot_yaw_error_degrees": 1.74,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 30625,
+      "weapon": 6,
+      "owner_speed": 0.0,
+      "distance_xy": 528.799508092596,
+      "bot_yaw_error_degrees": 2.03,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 81125,
+      "weapon": 7,
+      "owner_speed": 338.16552968079145,
+      "distance_xy": 892.6865860490094,
+      "bot_yaw_error_degrees": 2.39,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 85925,
+      "weapon": 6,
+      "owner_speed": 161.308792854302,
+      "distance_xy": 728.4300114039543,
+      "bot_yaw_error_degrees": 139.87,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 90625,
+      "weapon": 6,
+      "owner_speed": 52.14251992183791,
+      "distance_xy": 205.15794353039465,
+      "bot_yaw_error_degrees": 3.9,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 97125,
+      "weapon": 6,
+      "owner_speed": 0.0,
+      "distance_xy": 334.292330449139,
+      "bot_yaw_error_degrees": -1.44,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 114825,
+      "weapon": 5,
+      "owner_speed": 250.79087084823297,
+      "distance_xy": 211.65633246754686,
+      "bot_yaw_error_degrees": 25.58,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 117825,
+      "weapon": 5,
+      "owner_speed": 400.00000000000153,
+      "distance_xy": 554.9813893056604,
+      "bot_yaw_error_degrees": 145.65,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 120825,
+      "weapon": 5,
+      "owner_speed": 371.65078741855996,
+      "distance_xy": 137.36314039762556,
+      "bot_yaw_error_degrees": -137.54,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 139850,
+      "weapon": 5,
+      "owner_speed": 179.12564423301646,
+      "distance_xy": 469.3715464853344,
+      "bot_yaw_error_degrees": -6.15,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 178725,
+      "weapon": 6,
+      "owner_speed": 172.62874380839642,
+      "distance_xy": 597.3681501665867,
+      "bot_yaw_error_degrees": -1.43,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 184725,
+      "weapon": 7,
+      "owner_speed": 400.00000000000006,
+      "distance_xy": 1300.3803545914277,
+      "bot_yaw_error_degrees": 124.33,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 204850,
+      "weapon": 6,
+      "owner_speed": 161.34070431564834,
+      "distance_xy": 433.9318147111922,
+      "bot_yaw_error_degrees": -5.96,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 207850,
+      "weapon": 6,
+      "owner_speed": 175.74887199280212,
+      "distance_xy": 442.6035893591917,
+      "bot_yaw_error_degrees": -13.72,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 210850,
+      "weapon": 6,
+      "owner_speed": 327.40974116633873,
+      "distance_xy": 438.8118908489781,
+      "bot_yaw_error_degrees": 1.35,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 213850,
+      "weapon": 7,
+      "owner_speed": 320.52394781186933,
+      "distance_xy": 707.3548102526802,
+      "bot_yaw_error_degrees": -4.56,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 216850,
+      "weapon": 7,
+      "owner_speed": 333.9740288077655,
+      "distance_xy": 1376.6770170159264,
+      "bot_yaw_error_degrees": 25.86,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 247850,
+      "weapon": 5,
+      "owner_speed": 73.21178614156976,
+      "distance_xy": 154.85785699585023,
+      "bot_yaw_error_degrees": -5.53,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 250850,
+      "weapon": 5,
+      "owner_speed": 153.9702952084479,
+      "distance_xy": 529.7383921916575,
+      "bot_yaw_error_degrees": -0.22,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 261525,
+      "weapon": 5,
+      "owner_speed": 320.15852035564143,
+      "distance_xy": 410.05122469284356,
+      "bot_yaw_error_degrees": -20.63,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 271925,
+      "weapon": 5,
+      "owner_speed": 321.60766971911676,
+      "distance_xy": 694.5665322382935,
+      "bot_yaw_error_degrees": 13.73,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 274925,
+      "weapon": 5,
+      "owner_speed": 327.87738233292026,
+      "distance_xy": 452.3641770153094,
+      "bot_yaw_error_degrees": -13.06,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 277925,
+      "weapon": 5,
+      "owner_speed": 327.35151919284215,
+      "distance_xy": 231.53275798471512,
+      "bot_yaw_error_degrees": -17.44,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 301125,
+      "weapon": 6,
+      "owner_speed": 332.7988780076617,
+      "distance_xy": 186.2442434600408,
+      "bot_yaw_error_degrees": 16.64,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 319525,
+      "weapon": 6,
+      "owner_speed": 326.2587841135631,
+      "distance_xy": 559.3915055497603,
+      "bot_yaw_error_degrees": 8.99,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 323125,
+      "weapon": 6,
+      "owner_speed": 0.0,
+      "distance_xy": 445.67045355684377,
+      "bot_yaw_error_degrees": 4.16,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 342725,
+      "weapon": 5,
+      "owner_speed": 342.8406889711612,
+      "distance_xy": 500.1536172655185,
+      "bot_yaw_error_degrees": -16.77,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 345725,
+      "weapon": 5,
+      "owner_speed": 189.7705321767349,
+      "distance_xy": 1177.013930591752,
+      "bot_yaw_error_degrees": 8.48,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 358325,
+      "weapon": 5,
+      "owner_speed": 0.0,
+      "distance_xy": 1193.4854407247847,
+      "bot_yaw_error_degrees": 3.84,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 361325,
+      "weapon": 5,
+      "owner_speed": 402.6993699549834,
+      "distance_xy": 1244.9371815083848,
+      "bot_yaw_error_degrees": 6.68,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 364950,
+      "weapon": 2,
+      "owner_speed": 0.0,
+      "distance_xy": 1449.2828323154388,
+      "bot_yaw_error_degrees": -1.76,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 367950,
+      "weapon": 2,
+      "owner_speed": 325.17053243580693,
+      "distance_xy": 1417.0893310872227,
+      "bot_yaw_error_degrees": -27.84,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 370950,
+      "weapon": 2,
+      "owner_speed": 346.1994571235072,
+      "distance_xy": 774.1376147262916,
+      "bot_yaw_error_degrees": -4.83,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 373950,
+      "weapon": 2,
+      "owner_speed": 299.1225331900578,
+      "distance_xy": 489.825215960224,
+      "bot_yaw_error_degrees": -31.85,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 384625,
+      "weapon": 2,
+      "owner_speed": 0.0,
+      "distance_xy": 753.7080365464624,
+      "bot_yaw_error_degrees": 5.64,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 387950,
+      "weapon": 5,
+      "owner_speed": 0.0,
+      "distance_xy": 607.9281572702128,
+      "bot_yaw_error_degrees": 18.56,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 403825,
+      "weapon": 5,
+      "owner_speed": 45.375982586706506,
+      "distance_xy": 616.466412470832,
+      "bot_yaw_error_degrees": 102.23,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 407025,
+      "weapon": 5,
+      "owner_speed": 69.68117528904519,
+      "distance_xy": 443.34555281678496,
+      "bot_yaw_error_degrees": -9.67,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 442525,
+      "weapon": 5,
+      "owner_speed": 146.5149088474552,
+      "distance_xy": 237.64777735355338,
+      "bot_yaw_error_degrees": -6.36,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 446150,
+      "weapon": 7,
+      "owner_speed": 282.4639987490754,
+      "distance_xy": 1513.1361489304509,
+      "bot_yaw_error_degrees": 131.73,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 449625,
+      "weapon": 5,
+      "owner_speed": 163.07861976881915,
+      "distance_xy": 323.9722411835351,
+      "bot_yaw_error_degrees": 3.55,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 460825,
+      "weapon": 7,
+      "owner_speed": 161.44293772132528,
+      "distance_xy": 844.0100224573621,
+      "bot_yaw_error_degrees": -3.88,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 463825,
+      "weapon": 5,
+      "owner_speed": 161.2613957947638,
+      "distance_xy": 480.97437930721793,
+      "bot_yaw_error_degrees": -8.51,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 466825,
+      "weapon": 5,
+      "owner_speed": 169.99607915225195,
+      "distance_xy": 376.1381649103398,
+      "bot_yaw_error_degrees": 9.31,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 470325,
+      "weapon": 5,
+      "owner_speed": 156.0228396258951,
+      "distance_xy": 344.19289295927837,
+      "bot_yaw_error_degrees": 40.69,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 476225,
+      "weapon": 2,
+      "owner_speed": 162.79332799500256,
+      "distance_xy": 615.9426922273205,
+      "bot_yaw_error_degrees": 1.29,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 480075,
+      "weapon": 2,
+      "owner_speed": 0.0,
+      "distance_xy": 1055.1491750227253,
+      "bot_yaw_error_degrees": 18.15,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 483150,
+      "weapon": 5,
+      "owner_speed": 0.0,
+      "distance_xy": 944.0484004987903,
+      "bot_yaw_error_degrees": -0.57,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 486150,
+      "weapon": 5,
+      "owner_speed": 163.80461233786616,
+      "distance_xy": 867.1522790214686,
+      "bot_yaw_error_degrees": -79.89,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 489150,
+      "weapon": 5,
+      "owner_speed": 51.500473821923975,
+      "distance_xy": 906.1347890495583,
+      "bot_yaw_error_degrees": -85.8,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 498525,
+      "weapon": 5,
+      "owner_speed": 321.8914154846998,
+      "distance_xy": 488.45013307696803,
+      "bot_yaw_error_degrees": -24.74,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 502650,
+      "weapon": 5,
+      "owner_speed": 353.6891393910406,
+      "distance_xy": 822.9686290114518,
+      "bot_yaw_error_degrees": -52.52,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 517525,
+      "weapon": 6,
+      "owner_speed": 114.48881129470101,
+      "distance_xy": 275.19513949023525,
+      "bot_yaw_error_degrees": -1.39,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 540625,
+      "weapon": 6,
+      "owner_speed": 318.1707376771983,
+      "distance_xy": 684.1723440134916,
+      "bot_yaw_error_degrees": 3.01,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 543625,
+      "weapon": 6,
+      "owner_speed": 302.5284325387285,
+      "distance_xy": 324.28913910235997,
+      "bot_yaw_error_degrees": -0.11,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 549250,
+      "weapon": 7,
+      "owner_speed": 0.0,
+      "distance_xy": 1054.583891869503,
+      "bot_yaw_error_degrees": -0.91,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 552250,
+      "weapon": 6,
+      "owner_speed": 93.24578774138854,
+      "distance_xy": 490.7250859154566,
+      "bot_yaw_error_degrees": -0.99,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 582850,
+      "weapon": 5,
+      "owner_speed": 16.365443489315435,
+      "distance_xy": 715.723430172608,
+      "bot_yaw_error_degrees": -8.26,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 586025,
+      "weapon": 5,
+      "owner_speed": 162.17019093065946,
+      "distance_xy": 513.8129541145929,
+      "bot_yaw_error_degrees": -26.66,
+      "coarse_yaw_only": true
+    },
+    {
+      "elapsed_ms": 589725,
+      "weapon": 5,
+      "owner_speed": 0.0,
+      "distance_xy": 533.0949172289537,
+      "bot_yaw_error_degrees": 0.97,
+      "coarse_yaw_only": true
+    }
+  ],
+  "stationary_samples_note": "3-second sampled diagnostics, asynchronous view yaw, no exact shot/hit attribution"
+}

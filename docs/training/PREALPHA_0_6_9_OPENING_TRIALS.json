@@ -1,0 +1,593 @@
+{
+  "deployment": {
+    "version": "0.6.9",
+    "backup": "/home/qlserver/backups/psyz0r-069-20261012T012255Z",
+    "native_sha256": "3bcb023a26fba4f8e207f86f312444d948c562431edd2a4b4e61ba290a3076ec",
+    "main_pid_unchanged": true
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "match_started": true,
+      "opening_events": [
+        "PSYZ_OPENING_BEGIN t=13900",
+        "PSYZ_OPENING_PLAN t=14300 plan=6 selection_cost=23.80 latched_start=1",
+        "PSYZ_OPENING_PICKUP t=16375 plan=6 step=0 entity=111",
+        "PSYZ_OPENING_PICKUP t=18475 plan=6 step=1 entity=112",
+        "PSYZ_OPENING_PICKUP t=39425 plan=6 step=2 entity=117",
+        "PSYZ_OPENING_END t=39425 plan=6 step=3 reason=completed_pickups"
+      ],
+      "remapped_goals": [
+        "PSYZ_GOAL_REMAP t=600 entity=78 source_entity=173 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=80 source_entity=170 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=92 source_entity=123 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=94 source_entity=122 class=item_health static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=95 source_entity=121 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=121 source_entity=129 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=123 source_entity=124 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=126 source_entity=127 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=127 source_entity=128 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=171 source_entity=172 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=173 source_entity=174 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=78 source_entity=173 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=80 source_entity=170 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=92 source_entity=123 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=94 source_entity=122 class=item_health static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=95 source_entity=121 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=121 source_entity=129 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=123 source_entity=124 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=126 source_entity=127 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=127 source_entity=128 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=171 source_entity=172 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14300 entity=173 source_entity=174 class=item_armor_shard static_position_match=1"
+      ],
+      "major_timers": [
+        {
+          "t": "41800",
+          "entity": "112",
+          "class": "item_health_mega",
+          "available": "0",
+          "due": "53475",
+          "remaining_ms": "11675",
+          "known_goal": "1",
+          "source": "engine_nextthink"
+        },
+        {
+          "t": "41800",
+          "entity": "119",
+          "class": "item_armor_body",
+          "available": "1",
+          "due": "41800",
+          "remaining_ms": "0",
+          "known_goal": "0",
+          "source": "engine_nextthink"
+        },
+        {
+          "t": "44400",
+          "entity": "112",
+          "class": "item_health_mega",
+          "available": "0",
+          "due": "53475",
+          "remaining_ms": "9075",
+          "known_goal": "1",
+          "source": "engine_nextthink"
+        },
+        {
+          "t": "44400",
+          "entity": "119",
+          "class": "item_armor_body",
+          "available": "1",
+          "due": "44400",
+          "remaining_ms": "0",
+          "known_goal": "0",
+          "source": "engine_nextthink"
+        }
+      ],
+      "actual_pickups": [
+        {
+          "t": "3200",
+          "entity": "112",
+          "class": "item_health_mega",
+          "target": "112",
+          "route": "-1",
+          "health": "200",
+          "armor": "0"
+        },
+        {
+          "t": "16375",
+          "entity": "111",
+          "class": "weapon_lightning",
+          "target": "111",
+          "route": "-1",
+          "health": "123",
+          "armor": "0"
+        },
+        {
+          "t": "18475",
+          "entity": "112",
+          "class": "item_health_mega",
+          "target": "112",
+          "route": "-1",
+          "health": "200",
+          "armor": "0"
+        },
+        {
+          "t": "22575",
+          "entity": "126",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "196",
+          "armor": "5"
+        },
+        {
+          "t": "23750",
+          "entity": "92",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "194",
+          "armor": "10"
+        },
+        {
+          "t": "28475",
+          "entity": "128",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "190",
+          "armor": "13"
+        },
+        {
+          "t": "28625",
+          "entity": "127",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "190",
+          "armor": "18"
+        },
+        {
+          "t": "29900",
+          "entity": "123",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "188",
+          "armor": "23"
+        },
+        {
+          "t": "30000",
+          "entity": "124",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "188",
+          "armor": "28"
+        },
+        {
+          "t": "39425",
+          "entity": "117",
+          "class": "weapon_railgun",
+          "target": "117",
+          "route": "-1",
+          "health": "179",
+          "armor": "28"
+        },
+        {
+          "t": "41750",
+          "entity": "87",
+          "class": "ammo_slugs",
+          "target": "105",
+          "route": "-1",
+          "health": "176",
+          "armor": "28"
+        },
+        {
+          "t": "41750",
+          "entity": "79",
+          "class": "ammo_rockets",
+          "target": "105",
+          "route": "-1",
+          "health": "176",
+          "armor": "28"
+        },
+        {
+          "t": "44350",
+          "entity": "99",
+          "class": "weapon_shotgun",
+          "target": "105",
+          "route": "-1",
+          "health": "174",
+          "armor": "28"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "trial": 2,
+      "match_started": true,
+      "opening_events": [
+        "PSYZ_OPENING_BEGIN t=13875",
+        "PSYZ_OPENING_PLAN t=14275 plan=20 selection_cost=116.71 latched_start=1",
+        "PSYZ_OPENING_PICKUP t=17800 plan=20 step=0 entity=99",
+        "PSYZ_OPENING_END t=23275 plan=20 step=1 reason=emergency_recovery"
+      ],
+      "remapped_goals": [
+        "PSYZ_GOAL_REMAP t=600 entity=78 source_entity=173 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=80 source_entity=170 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=92 source_entity=123 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=94 source_entity=122 class=item_health static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=95 source_entity=121 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=121 source_entity=129 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=123 source_entity=124 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=126 source_entity=127 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=127 source_entity=128 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=171 source_entity=172 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=173 source_entity=174 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=78 source_entity=173 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=80 source_entity=170 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=92 source_entity=123 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=94 source_entity=122 class=item_health static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=95 source_entity=121 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=121 source_entity=129 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=123 source_entity=124 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=126 source_entity=127 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=127 source_entity=128 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=171 source_entity=172 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=173 source_entity=174 class=item_armor_shard static_position_match=1"
+      ],
+      "major_timers": [
+        {
+          "t": "39475",
+          "entity": "112",
+          "class": "item_health_mega",
+          "available": "1",
+          "due": "39475",
+          "remaining_ms": "0",
+          "known_goal": "1",
+          "source": "engine_nextthink"
+        },
+        {
+          "t": "39475",
+          "entity": "119",
+          "class": "item_armor_body",
+          "available": "1",
+          "due": "39475",
+          "remaining_ms": "0",
+          "known_goal": "0",
+          "source": "engine_nextthink"
+        },
+        {
+          "t": "41475",
+          "entity": "112",
+          "class": "item_health_mega",
+          "available": "1",
+          "due": "41475",
+          "remaining_ms": "0",
+          "known_goal": "1",
+          "source": "engine_nextthink"
+        },
+        {
+          "t": "41475",
+          "entity": "119",
+          "class": "item_armor_body",
+          "available": "1",
+          "due": "41475",
+          "remaining_ms": "0",
+          "known_goal": "0",
+          "source": "engine_nextthink"
+        }
+      ],
+      "actual_pickups": [
+        {
+          "t": "3300",
+          "entity": "103",
+          "class": "item_armor_combat",
+          "target": "112",
+          "route": "-1",
+          "health": "117",
+          "armor": "50"
+        },
+        {
+          "t": "17800",
+          "entity": "99",
+          "class": "weapon_shotgun",
+          "target": "99",
+          "route": "-1",
+          "health": "121",
+          "armor": "0"
+        },
+        {
+          "t": "18450",
+          "entity": "90",
+          "class": "ammo_shells",
+          "target": "117",
+          "route": "-1",
+          "health": "121",
+          "armor": "0"
+        },
+        {
+          "t": "20125",
+          "entity": "124",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "-1",
+          "health": "109",
+          "armor": "5"
+        },
+        {
+          "t": "23850",
+          "entity": "126",
+          "class": "item_armor_shard",
+          "target": "95",
+          "route": "-1",
+          "health": "90",
+          "armor": "5"
+        },
+        {
+          "t": "24000",
+          "entity": "127",
+          "class": "item_armor_shard",
+          "target": "95",
+          "route": "-1",
+          "health": "90",
+          "armor": "10"
+        },
+        {
+          "t": "24950",
+          "entity": "128",
+          "class": "item_armor_shard",
+          "target": "95",
+          "route": "-1",
+          "health": "87",
+          "armor": "9"
+        },
+        {
+          "t": "26850",
+          "entity": "117",
+          "class": "weapon_railgun",
+          "target": "95",
+          "route": "-1",
+          "health": "84",
+          "armor": "3"
+        },
+        {
+          "t": "29475",
+          "entity": "120",
+          "class": "item_health",
+          "target": "120",
+          "route": "-1",
+          "health": "100",
+          "armor": "1"
+        },
+        {
+          "t": "31050",
+          "entity": "87",
+          "class": "ammo_slugs",
+          "target": "105",
+          "route": "-1",
+          "health": "100",
+          "armor": "1"
+        },
+        {
+          "t": "31050",
+          "entity": "79",
+          "class": "ammo_rockets",
+          "target": "105",
+          "route": "-1",
+          "health": "100",
+          "armor": "1"
+        },
+        {
+          "t": "33475",
+          "entity": "99",
+          "class": "weapon_shotgun",
+          "target": "105",
+          "route": "-1",
+          "health": "100",
+          "armor": "1"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "trial": 3,
+      "match_started": true,
+      "opening_events": [
+        "PSYZ_OPENING_BEGIN t=13875",
+        "PSYZ_OPENING_PLAN t=14275 plan=6 selection_cost=23.80 latched_start=1",
+        "PSYZ_OPENING_PICKUP t=16575 plan=6 step=0 entity=111",
+        "PSYZ_OPENING_PICKUP t=18675 plan=6 step=1 entity=112",
+        "PSYZ_OPENING_PICKUP t=37200 plan=6 step=2 entity=117",
+        "PSYZ_OPENING_END t=37200 plan=6 step=3 reason=completed_pickups"
+      ],
+      "remapped_goals": [
+        "PSYZ_GOAL_REMAP t=600 entity=78 source_entity=173 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=80 source_entity=170 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=92 source_entity=123 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=94 source_entity=122 class=item_health static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=95 source_entity=121 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=121 source_entity=129 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=123 source_entity=124 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=126 source_entity=127 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=127 source_entity=128 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=171 source_entity=172 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=600 entity=173 source_entity=174 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=78 source_entity=173 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=80 source_entity=170 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=92 source_entity=123 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=94 source_entity=122 class=item_health static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=95 source_entity=121 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=121 source_entity=129 class=item_health_small static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=123 source_entity=124 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=126 source_entity=127 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=127 source_entity=128 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=171 source_entity=172 class=item_armor_shard static_position_match=1",
+        "PSYZ_GOAL_REMAP t=14275 entity=173 source_entity=174 class=item_armor_shard static_position_match=1"
+      ],
+      "major_timers": [
+        {
+          "t": "48175",
+          "entity": "112",
+          "class": "item_health_mega",
+          "available": "0",
+          "due": "53675",
+          "remaining_ms": "5500",
+          "known_goal": "1",
+          "source": "engine_nextthink"
+        },
+        {
+          "t": "48175",
+          "entity": "119",
+          "class": "item_armor_body",
+          "available": "1",
+          "due": "48175",
+          "remaining_ms": "0",
+          "known_goal": "0",
+          "source": "engine_nextthink"
+        },
+        {
+          "t": "50175",
+          "entity": "112",
+          "class": "item_health_mega",
+          "available": "0",
+          "due": "53675",
+          "remaining_ms": "3500",
+          "known_goal": "1",
+          "source": "engine_nextthink"
+        },
+        {
+          "t": "50175",
+          "entity": "119",
+          "class": "item_armor_body",
+          "available": "1",
+          "due": "50175",
+          "remaining_ms": "0",
+          "known_goal": "0",
+          "source": "engine_nextthink"
+        }
+      ],
+      "actual_pickups": [
+        {
+          "t": "16575",
+          "entity": "111",
+          "class": "weapon_lightning",
+          "target": "111",
+          "route": "-1",
+          "health": "123",
+          "armor": "0"
+        },
+        {
+          "t": "18675",
+          "entity": "112",
+          "class": "item_health_mega",
+          "target": "112",
+          "route": "-1",
+          "health": "200",
+          "armor": "0"
+        },
+        {
+          "t": "19525",
+          "entity": "74",
+          "class": "ammo_bullets",
+          "target": "117",
+          "route": "128",
+          "health": "199",
+          "armor": "0"
+        },
+        {
+          "t": "25900",
+          "entity": "126",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "184",
+          "armor": "5"
+        },
+        {
+          "t": "26400",
+          "entity": "127",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "184",
+          "armor": "10"
+        },
+        {
+          "t": "27725",
+          "entity": "92",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "182",
+          "armor": "15"
+        },
+        {
+          "t": "28350",
+          "entity": "124",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "182",
+          "armor": "20"
+        },
+        {
+          "t": "28350",
+          "entity": "123",
+          "class": "item_armor_shard",
+          "target": "117",
+          "route": "128",
+          "health": "182",
+          "armor": "25"
+        },
+        {
+          "t": "37200",
+          "entity": "117",
+          "class": "weapon_railgun",
+          "target": "117",
+          "route": "-1",
+          "health": "173",
+          "armor": "25"
+        },
+        {
+          "t": "39600",
+          "entity": "87",
+          "class": "ammo_slugs",
+          "target": "105",
+          "route": "-1",
+          "health": "171",
+          "armor": "25"
+        },
+        {
+          "t": "39600",
+          "entity": "79",
+          "class": "ammo_rockets",
+          "target": "105",
+          "route": "-1",
+          "health": "171",
+          "armor": "25"
+        },
+        {
+          "t": "42150",
+          "entity": "99",
+          "class": "weapon_shotgun",
+          "target": "105",
+          "route": "-1",
+          "health": "168",
+          "armor": "25"
+        },
+        {
+          "t": "47900",
+          "entity": "130",
+          "class": "item_health_small",
+          "target": "105",
+          "route": "174",
+          "health": "164",
+          "armor": "18"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

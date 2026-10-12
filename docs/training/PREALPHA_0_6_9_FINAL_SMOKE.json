@@ -1,0 +1,433 @@
+{
+  "deployment": {
+    "version": "0.6.9",
+    "backup": "/home/qlserver/backups/psyz0r-069-20261012T012255Z",
+    "native_sha256": "a29bf4da62c096c2c24bea072ee690ac86c9d900f647c0caca9c3b4502711eda",
+    "main_pid_unchanged": true,
+    "phase": "final_registry_tightening"
+  },
+  "opening_events": [
+    "PSYZ_OPENING_BEGIN t=50275",
+    "PSYZ_OPENING_PLAN t=50675 plan=7 selection_cost=123.65 latched_start=1",
+    "PSYZ_OPENING_PICKUP t=59375 plan=7 step=0 entity=119",
+    "PSYZ_OPENING_PICKUP t=71050 plan=7 step=1 entity=117",
+    "PSYZ_OPENING_END t=71050 plan=7 step=2 reason=completed_pickups"
+  ],
+  "red_registry_events": [
+    "PSYZ_RED_REGISTRY t=50675 display=Red Armor query=Heavy Armor result=29 area=1429"
+  ],
+  "red_timer_samples": [
+    {
+      "t": "41025",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "0",
+      "due": "50350",
+      "remaining_ms": "9325",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "43025",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "0",
+      "due": "50350",
+      "remaining_ms": "7325",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "45425",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "0",
+      "due": "50350",
+      "remaining_ms": "4925",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "50675",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "1",
+      "due": "50675",
+      "remaining_ms": "0",
+      "known_goal": "0",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "52675",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "1",
+      "due": "52675",
+      "remaining_ms": "0",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "54675",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "1",
+      "due": "54675",
+      "remaining_ms": "0",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "56675",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "1",
+      "due": "56675",
+      "remaining_ms": "0",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "58675",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "1",
+      "due": "58675",
+      "remaining_ms": "0",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "60675",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "0",
+      "due": "84375",
+      "remaining_ms": "23700",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "62975",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "0",
+      "due": "84375",
+      "remaining_ms": "21400",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "65075",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "0",
+      "due": "84375",
+      "remaining_ms": "19300",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "67475",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "0",
+      "due": "84375",
+      "remaining_ms": "16900",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "70575",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "0",
+      "due": "84375",
+      "remaining_ms": "13800",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "79375",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "0",
+      "due": "84375",
+      "remaining_ms": "5000",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "81375",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "0",
+      "due": "84375",
+      "remaining_ms": "3000",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "84875",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "1",
+      "due": "84875",
+      "remaining_ms": "0",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "86875",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "1",
+      "due": "86875",
+      "remaining_ms": "0",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "88875",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "1",
+      "due": "88875",
+      "remaining_ms": "0",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "96075",
+      "entity": "119",
+      "class": "item_armor_body",
+      "available": "1",
+      "due": "96075",
+      "remaining_ms": "0",
+      "known_goal": "1",
+      "source": "engine_nextthink"
+    }
+  ],
+  "red_actual_pickups": [
+    {
+      "t": "59375",
+      "entity": "119",
+      "class": "item_armor_body",
+      "target": "119",
+      "route": "-1",
+      "health": "116",
+      "armor": "100"
+    }
+  ],
+  "all_clock_pickups": [
+    {
+      "t": "55500",
+      "entity": "99",
+      "class": "weapon_shotgun",
+      "picker": "0",
+      "nextthink": "60500",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "56125",
+      "entity": "90",
+      "class": "ammo_shells",
+      "picker": "0",
+      "nextthink": "96125",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "56825",
+      "entity": "103",
+      "class": "item_armor_combat",
+      "picker": "1",
+      "nextthink": "81825",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "59375",
+      "entity": "119",
+      "class": "item_armor_body",
+      "picker": "0",
+      "nextthink": "84375",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "70100",
+      "entity": "112",
+      "class": "item_health_mega",
+      "picker": "1",
+      "nextthink": "105100",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "71050",
+      "entity": "117",
+      "class": "weapon_railgun",
+      "picker": "0",
+      "nextthink": "76050",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "71600",
+      "entity": "74",
+      "class": "ammo_bullets",
+      "picker": "1",
+      "nextthink": "111600",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "72100",
+      "entity": "75",
+      "class": "ammo_shells",
+      "picker": "1",
+      "nextthink": "112100",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "76850",
+      "entity": "126",
+      "class": "item_armor_shard",
+      "picker": "1",
+      "nextthink": "101850",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "79325",
+      "entity": "127",
+      "class": "item_armor_shard",
+      "picker": "0",
+      "nextthink": "104325",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "80650",
+      "entity": "92",
+      "class": "item_armor_shard",
+      "picker": "0",
+      "nextthink": "105650",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "84750",
+      "entity": "77",
+      "class": "ammo_cells",
+      "picker": "1",
+      "nextthink": "124750",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "84875",
+      "entity": "103",
+      "class": "item_armor_combat",
+      "picker": "0",
+      "nextthink": "109875",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "85025",
+      "entity": "91",
+      "class": "ammo_grenades",
+      "picker": "1",
+      "nextthink": "125025",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "86475",
+      "entity": "118",
+      "class": "weapon_grenadelauncher",
+      "picker": "1",
+      "nextthink": "91475",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "86600",
+      "entity": "130",
+      "class": "item_health_small",
+      "picker": "0",
+      "nextthink": "121600",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "91075",
+      "entity": "174",
+      "class": "item_armor_shard",
+      "picker": "1",
+      "nextthink": "116075",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "91350",
+      "entity": "105",
+      "class": "weapon_rocketlauncher",
+      "picker": "0",
+      "nextthink": "96350",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "91375",
+      "entity": "173",
+      "class": "item_armor_shard",
+      "picker": "1",
+      "nextthink": "116375",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "91700",
+      "entity": "171",
+      "class": "item_armor_shard",
+      "picker": "1",
+      "nextthink": "116700",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "91700",
+      "entity": "78",
+      "class": "item_armor_shard",
+      "picker": "1",
+      "nextthink": "116700",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "92050",
+      "entity": "172",
+      "class": "item_armor_shard",
+      "picker": "1",
+      "nextthink": "117050",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "93025",
+      "entity": "89",
+      "class": "ammo_bullets",
+      "picker": "0",
+      "nextthink": "133025",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "95125",
+      "entity": "93",
+      "class": "ammo_rockets",
+      "picker": "0",
+      "nextthink": "135125",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "96300",
+      "entity": "81",
+      "class": "item_health",
+      "picker": "0",
+      "nextthink": "131300",
+      "source": "engine_nextthink"
+    },
+    {
+      "t": "101550",
+      "entity": "105",
+      "class": "weapon_rocketlauncher",
+      "picker": "1",
+      "nextthink": "106550",
+      "source": "engine_nextthink"
+    }
+  ],
+  "errors": []
+}

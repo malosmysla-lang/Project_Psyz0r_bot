@@ -1,0 +1,1167 @@
+{
+  "plans": 36,
+  "eligible_plans": 32,
+  "invalid_destinations": 0,
+  "demo_covered_legs": 39,
+  "total_legs": 100,
+  "source_hashes": {
+    "bloodrun_openings.json": "31bd98d0d14e0f0836604647dc1570c855ddce64d538c494296036ba14efaae0",
+    "bloodrun_prealpha_bank.json": "a0fb6814f967e7b561d9e332ae6380bd7e6d5553232da36f0ed5075d3384e7b6"
+  },
+  "records": [
+    {
+      "plan": 0,
+      "source_sha256": "c4f551b7beb280e205153e76cf64e4a9cae8d2e79a057ea5ff9db7e7192c04fd",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 65.69375412021247,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 675.4860072754536,
+          "height_delta": -176.125
+        },
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 346.5088478967768,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 418.60721446243616,
+          "height_delta": -184.0
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        }
+      ]
+    },
+    {
+      "plan": 1,
+      "source_sha256": "f0c5172412db2ca47d26b28a62896179a2c0a911965c575f3bc6113b88642893",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 105.4216484357615,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 475.7675541953234,
+          "height_delta": -7.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 480.59048185757644,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 2,
+      "source_sha256": "78c99aa2901adc356b1eb090356798cb09cd6cf6ae9566303dfb806b7de5d08b",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 85.13475571307922,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 194.30289341573143,
+          "height_delta": -8.125007629394531
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 3,
+      "source_sha256": "e3501bcad05f3f1d88175496f71c102d53c0c7ce8fdee5700e5b7f1cb09bf12c",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 13.058048124210709,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 357.5085198705417,
+          "height_delta": -5.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 480.59048185757644,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 4,
+      "source_sha256": "994e643268aeab4282ba9f7a719e23ab50f9cd3b7527a750e712954415ff00f2",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_shotgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 639.4825728097371,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 613.5374940984032,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "item_armor_body",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 28.978025607420555,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 480.2665926337163,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 561.5519366578577,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 573.6061366477873,
+          "height_delta": -520.0
+        }
+      ]
+    },
+    {
+      "plan": 5,
+      "source_sha256": "9d8166fadda71c713171cc54aa046801d2024bb2b471ed73ac2bbf1e8b0f0423",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 0.0,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 272.0606550017845,
+          "height_delta": -17.0
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 6,
+      "source_sha256": "5f22be4ca3d33eed4b122bb88e0588d449b80ac13062c27b2d3b9b70f90de3da",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 105.95867002594608,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 475.98319298059255,
+          "height_delta": -16.0
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 480.59048185757644,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 7,
+      "source_sha256": "facc7a28742faf5b54cf68834a90becff41119e97e5969180a4c7a5dcbf9089a",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_body",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 425.9347724998165,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 696.5357245863273,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 561.5519366578577,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 573.6061366477873,
+          "height_delta": -520.0
+        }
+      ]
+    },
+    {
+      "plan": 8,
+      "source_sha256": "8188acb168f9e2b673eb5d8537a568ee83a4b6b700912c0cfd6b3744c219a5b8",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 118.92298005475236,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 165.3415370740288,
+          "height_delta": -8.125007629394531
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 645.0270401708841,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 1158.2331371533107,
+          "height_delta": -72.0
+        },
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 486.089828982143,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 1059.003777141517,
+          "height_delta": 73.0
+        }
+      ]
+    },
+    {
+      "plan": 9,
+      "source_sha256": "b5f9f5cb4efc82da831197e7f81a015ae07deff2f51053f3d685f88dc78afc65",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 59.683106697913225,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 674.8153317006232,
+          "height_delta": -176.125
+        },
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 346.5088478967768,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 418.60721446243616,
+          "height_delta": -184.0
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        }
+      ]
+    },
+    {
+      "plan": 10,
+      "source_sha256": "fd5c290d0f1c6fd950994cb1e7b8e0ea69f041f47ff981b19da4093e3dee53a8",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 21.674769687351752,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 391.9290900746422,
+          "height_delta": -5.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 480.59048185757644,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 11,
+      "source_sha256": "dcc2744ba98013d7a70c90d6c761dd7208c06011fb2eb8f466b7c4affb7b10b5",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 102.01795534802153,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 179.68144390918704,
+          "height_delta": -8.125007629394531
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 12,
+      "source_sha256": "b624b76ba2428071af1752d167575dc6677c9406ed369f4fd00b6781084a4c5a",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 25.65634205006679,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 395.928199776927,
+          "height_delta": -5.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 480.59048185757644,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 13,
+      "source_sha256": "d35c71a7585a7a8a88ac0eb87b7e43af5e20fadb40ec369deb1087765bc5ea30",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_shotgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 648.3530926983328,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 557.9767160240649,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "item_armor_body",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 28.978025607420555,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 480.2665926337163,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_rocketlauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 847.4316251610012,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 1636.2689265521117,
+          "height_delta": -264.0
+        }
+      ]
+    },
+    {
+      "plan": 14,
+      "source_sha256": "f565814541b008cd74ef3fdac37ffc9fbc5b7ca2cf771f38e750df34865450a7",
+      "eligible_main_weapon": false,
+      "legs": [
+        {
+          "classname": "weapon_shotgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 648.3530926983328,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 557.9767160240649,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "item_armor_body",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 28.978025607420555,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 480.2665926337163,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_plasmagun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 247.5776814794778,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 531.8646444350292,
+          "height_delta": 0.0
+        }
+      ]
+    },
+    {
+      "plan": 15,
+      "source_sha256": "fb8fc8d4b41bf2f72e4f619b16cbbdf0eb5586a3f2e14ebb42aefc3330219d99",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 90.54707660570321,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 473.4887633506619,
+          "height_delta": -16.125
+        },
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 346.5088478967768,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 418.60721446243616,
+          "height_delta": -184.0
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        }
+      ]
+    },
+    {
+      "plan": 16,
+      "source_sha256": "55d706c2709c13bd52672e99b0cc05b5a421dfb4ee08b48e42ee98709ba4eed5",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_body",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 326.88572248387277,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 1052.9026294438886,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 561.5519366578577,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 573.6061366477873,
+          "height_delta": -520.0
+        }
+      ]
+    },
+    {
+      "plan": 17,
+      "source_sha256": "4d513a95dd524fd13dd56b1cd8b8e6e0682a3abffb6932a784c21851ea097104",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 8.875,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 563.0239920509605,
+          "height_delta": -16.125
+        },
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 346.5088478967768,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 418.60721446243616,
+          "height_delta": -184.0
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        }
+      ]
+    },
+    {
+      "plan": 18,
+      "source_sha256": "e90ee7802bc5a04301947c3a08fcc900938cb76300e033d78a49d9db50d8bcc8",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 44.07299456318259,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 414.3837085463601,
+          "height_delta": -5.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 480.59048185757644,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 19,
+      "source_sha256": "8bf4ac1d2049327844475bc52c4c4454c3b4439aad42d73fe7b4c365ffcd7e36",
+      "eligible_main_weapon": false,
+      "legs": [
+        {
+          "classname": "weapon_shotgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 642.4878952259375,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 577.1299973073111,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "item_armor_body",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 28.978025607420555,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 480.2665926337163,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_grenadelauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 32.44935352451138,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 372.15050718761626,
+          "height_delta": -128.0
+        }
+      ]
+    },
+    {
+      "plan": 20,
+      "source_sha256": "0969b665325b43d6feb2f1af27aa18567a9ff47da86ffd2bf6bd89f1920dadcb",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_shotgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 648.3530926983328,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 557.9767160240649,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 441.92640210800806,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 686.3701625216528,
+          "height_delta": -520.0
+        }
+      ]
+    },
+    {
+      "plan": 21,
+      "source_sha256": "7550f3da885c10c2b897b30de68757cc2635242e16ff9080f96b3dd293582d06",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 20.95061586612333,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 391.20098535317425,
+          "height_delta": -5.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 480.59048185757644,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        }
+      ]
+    },
+    {
+      "plan": 22,
+      "source_sha256": "08d4f88683f246b6478538ec3f7db5b05f51240b4f6a5c3a79ac4ea0709d2747",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 8.875,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 271.65053952642904,
+          "height_delta": -8.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        },
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 136.4240489909985,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        }
+      ]
+    },
+    {
+      "plan": 23,
+      "source_sha256": "9cbca3d3d82737296da66293b3ff85955199ceb2b774c9751ef1aecf0832b13a",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 265.5299842391516,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 337.87421115878516,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "weapon_plasmagun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 379.3035183415318,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 144.0,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_rocketlauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 1134.9744017052283,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 1827.5404236295294,
+          "height_delta": -264.0
+        }
+      ]
+    },
+    {
+      "plan": 24,
+      "source_sha256": "e56d5da48b16019a9751a7d54249641477309c66bee4d0e08aa643c588940dcf",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 12.787712517175642,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 382.9433170627679,
+          "height_delta": -5.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 480.59048185757644,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        }
+      ]
+    },
+    {
+      "plan": 25,
+      "source_sha256": "94b66047e2f9d3a2cb3a3970b5a1ac36007990748dd2ab56adcf0ef895b454c4",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 8.875,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 563.0239920509605,
+          "height_delta": -16.125
+        },
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 346.5088478967768,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 418.60721446243616,
+          "height_delta": -184.0
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        }
+      ]
+    },
+    {
+      "plan": 26,
+      "source_sha256": "0de9f00d220eff47ece45f34091279fe6cd58e732e31d4a98356aca0c680abac",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 19.801811698789614,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 390.045340069286,
+          "height_delta": -5.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 480.59048185757644,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 27,
+      "source_sha256": "982a86588473f30684fc2dcfdcd7e15fe508f594e050046ec0c713b49839ad34",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 96.28112820207778,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 467.7729619474761,
+          "height_delta": -16.125
+        },
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 346.5088478967768,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 418.60721446243616,
+          "height_delta": -184.0
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        }
+      ]
+    },
+    {
+      "plan": 28,
+      "source_sha256": "17549444daa39dad20abd5942492af0cefb6ee113eb29a4e96bbf4581d329eef",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_body",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 425.9347724998165,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 696.5357245863273,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 561.5519366578577,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 573.6061366477873,
+          "height_delta": -520.0
+        }
+      ]
+    },
+    {
+      "plan": 29,
+      "source_sha256": "cbccd23a10411f7c0f23d71cd7d725e571b74f0435eea5fd8f62192ad237c281",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_body",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 344.6216638900178,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 771.7796784425897,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 561.5519366578577,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 573.6061366477873,
+          "height_delta": -520.0
+        }
+      ]
+    },
+    {
+      "plan": 30,
+      "source_sha256": "b1381559532fde38d9051ae3587fb310d400cf298d6b62fb6ef2d91a5b190404",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 89.59158402695212,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 190.3840378691392,
+          "height_delta": -8.125007629394531
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        },
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 136.4240489909985,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        }
+      ]
+    },
+    {
+      "plan": 31,
+      "source_sha256": "ab16c5ef80c631770b2b43c5e1914be9bb8e3d55607a304f84b404b85b728c2d",
+      "eligible_main_weapon": false,
+      "legs": [
+        {
+          "classname": "weapon_shotgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 639.662731078179,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 602.9577473868076,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "item_armor_body",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 28.978025607420555,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 480.2665926337163,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_plasmagun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 247.5776814794778,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 531.8646444350292,
+          "height_delta": 0.0
+        }
+      ]
+    },
+    {
+      "plan": 32,
+      "source_sha256": "d5146a13cf4957273c193a6ba09854accd8d051a9a30c5a7eede9cd997b6827d",
+      "eligible_main_weapon": false,
+      "legs": [
+        {
+          "classname": "weapon_shotgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 639.4738894214389,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 611.5345874668337,
+          "height_delta": 87.875
+        },
+        {
+          "classname": "item_armor_body",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 28.978025607420555,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 480.2665926337163,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_grenadelauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 32.44935352451138,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 372.15050718761626,
+          "height_delta": -128.0
+        }
+      ]
+    },
+    {
+      "plan": 33,
+      "source_sha256": "f3a01ec078946aa17d3fcf1c80e0da3ca5885648cb7ca377dcba5de2d0988fc8",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_lightning",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 99.08540917869828,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 469.4290362542217,
+          "height_delta": -7.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 480.59048185757644,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 618.229730763573,
+          "height_delta": 0.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    },
+    {
+      "plan": 34,
+      "source_sha256": "f1dffa9076316e6d4201ac170e4e0a18ab4337dd193eb2b3dfbe5ef18c88080e",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "weapon_rocketlauncher",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 0.0,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 563.3480274217706,
+          "height_delta": -25.0
+        },
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 346.5088478967768,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 418.60721446243616,
+          "height_delta": -184.0
+        }
+      ]
+    },
+    {
+      "plan": 35,
+      "source_sha256": "dd9b975f7f031d8b5212227682d5ff3ee5bc5e9869b884f55b90007422ad75a3",
+      "eligible_main_weapon": true,
+      "legs": [
+        {
+          "classname": "item_armor_combat",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 8.875,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 271.65053952642904,
+          "height_delta": -8.125
+        },
+        {
+          "classname": "item_health_mega",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 510.1307852820654,
+          "demo_route_start_in_97_units": false,
+          "stock_aas_fallback_required": true,
+          "straight_distance": 776.1243457075676,
+          "height_delta": 1.0
+        },
+        {
+          "classname": "weapon_railgun",
+          "static_destination_valid": true,
+          "nearest_demo_route_start_gap": 37.867687117670066,
+          "demo_route_start_in_97_units": true,
+          "stock_aas_fallback_required": false,
+          "straight_distance": 978.7262129931945,
+          "height_delta": -73.0
+        }
+      ]
+    }
+  ],
+  "optimality_verified": false,
+  "note": "Static geometry/route-bank audit only. AAS reachability and live timing must be tested."
+}
