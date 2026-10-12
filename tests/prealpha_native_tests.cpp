@@ -131,5 +131,12 @@ int main(){try{
  usercmd_t before{},after{};before.buttons=after.buttons=1;before.weapon=after.weapon=8;Psyz_HumanizeAim(&before,8,20159);Psyz_HumanizeAim(&after,8,20160);
  check(std::abs(before.angles[0]-after.angles[0])<10 && std::abs(before.angles[1]-after.angles[1])<10,"Aim interpolation continuous across noise boundary");
  shot={};Psyz_HumanizeAim(&shot,8,20100);check(shot.angles[0]==0 && shot.angles[1]==0,"Non-firing navigation aim unchanged");
+ reset();world[200].inuse=1;world[200].item=&mega;world[200].r.contents=1;world[200].r.currentOrigin[0]=300;
+ world[201].inuse=1;world[201].item=&rocket;world[201].r.contents=1;world[201].r.currentOrigin[0]=80;
+ goal(psyz_goal_cache[200],200,10,world[200].r.currentOrigin);psyz_goal_known[200]=1;
+ goal(psyz_goal_cache[201],201,10,world[201].r.currentOrigin);psyz_goal_known[201]=1;
+ psyz_goal_target=200;psyz_goal_since=20000;psyz_debug_logged=1;client.ps.stats[STAT_ARMOR]=50;
+ goal(out,200,10,world[200].r.currentOrigin);Psyz_PreAlphaGoal(state,0,out);
+ check(psyz_goal_target==201,"Nearby missing main weapon interrupts retained resource target");
  std::cout<<"Native prealpha contextual scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

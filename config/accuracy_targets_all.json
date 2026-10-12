@@ -1,6 +1,6 @@
 {
   "approved_by_owner": true,
-  "execution_enabled": false,
+  "execution_enabled": true,
   "source": "docs/training/ALL_WEAPON_ACCURACY_CORPUS_20261012.json",
   "aggregation": "Equal weight per eligible player-match, both sides, arithmetic mean; range rounded p25-p75.",
   "calibration_complete": false,

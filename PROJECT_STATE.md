@@ -1,3 +1,7 @@
+# 2026-10-12 - Prealpha 0.6.6 deployed on isolated 27961
+
+Own Psyz0r weapon profile, nearby missing trinity pickup override, grounded combat and approved all-weapon aim target inputs connected. Actual accuracy calibration remains incomplete. Debug/Release 14/14; live smoke 33 pickup records, 11 aim profile records, no ERROR strings. Trial opponent removed. See docs/PREALPHA_0_6_6_RU.md.
+
 # 2026-10-12 - Xaero join greeting copy proposal
 
 Seven proposed Xaero join greetings are documented in English with Russian meanings. Proposed behavior: one randomized line per human join, no repeats until the set is exhausted, avoid duplicate load/map/match triggers and stagger after server Welcome. This is text only; bot code and the server were not changed. See docs/server/XAERO_JOIN_GREETING_OPTIONS_2026-10-12_RU.md.

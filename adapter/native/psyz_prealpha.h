@@ -9,6 +9,7 @@ static PsyzNavRecovery psyz_nav;
 static int psyz_nav_health,psyz_nav_damage_time;
 static int psyz_combat_until,psyz_diagnostic_time;
 static int psyz_combat_log;
+static int psyz_aim_log;
 /* Smooth angular error, never modify damage, projectiles or registered hits.
    Match accuracy still needs empirical calibration at each distance. */
 static float Psyz_AimNoise(unsigned int bucket,unsigned int salt){
@@ -18,10 +19,27 @@ static float Psyz_AimNoise(unsigned int bucket,unsigned int salt){
 }
 static void Psyz_HumanizeAim(usercmd_t *cmd,int weapon,int now){
     cvar_t *on=Cvar_FindVar("qlx_psyzAimHumanize");
-    if(!on || !on->integer || !(cmd->buttons&1) || cmd->weapon!=weapon || (weapon!=6 && weapon!=8))return;
-    cvar_t *amplitude=Cvar_FindVar(weapon==6?"qlx_psyzLGAimError":"qlx_psyzPlasmaAimError");
-    float degrees=amplitude?(float)atof(amplitude->string):(weapon==6?1.25f:3.f);
+    cvar_t *all=Cvar_FindVar("qlx_psyzAllWeaponAim");int all_weapons=all && all->integer;
+    if(!on || !on->integer || !(cmd->buttons&1) || cmd->weapon!=weapon || weapon<2 || weapon>8 ||
+       (!all_weapons && weapon!=6 && weapon!=8))return;
+    const float initial[9]={0,0,1.1f,1.5f,3.f,2.5f,1.25f,.45f,3.f};
+    cvar_t *amplitude=Cvar_FindVar(weapon==6?"qlx_psyzLGAimError":weapon==8?"qlx_psyzPlasmaAimError":"qlx_psyzOtherAimError");
+    float degrees=amplitude?(float)atof(amplitude->string):initial[weapon];
+    if(!isfinite(degrees))degrees=initial[weapon];
     if(degrees<0)degrees=0;if(degrees>10)degrees=10;
+    if(all_weapons){
+        char name[64];snprintf(name,sizeof(name),"qlx_psyzAcc%dBase",weapon);cvar_t *base=Cvar_FindVar(name);
+        snprintf(name,sizeof(name),"qlx_psyzAcc%dMin",weapon);cvar_t *low=Cvar_FindVar(name);
+        snprintf(name,sizeof(name),"qlx_psyzAcc%dMax",weapon);cvar_t *high=Cvar_FindVar(name);
+        float center=base?(float)atof(base->string):0,lo=low?(float)atof(low->string):0,hi=high?(float)atof(high->string):0;
+        if(isfinite(center)&&isfinite(lo)&&isfinite(hi)&&lo>0&&center>=lo&&hi>=center&&hi<=100){
+            float f=(Psyz_AimNoise((unsigned int)(now/15000),(unsigned int)weapon)+1)*.5f;
+            float target=lo+(hi-lo)*f;
+            if(psyz_nav_damage_time>0 && now-psyz_nav_damage_time<2000)target=lo;
+            degrees*=center/target;
+            if(now-psyz_aim_log>=3000){psyz_aim_log=now;fprintf(stderr,"PSYZ_AIM_PROFILE t=%d weapon=%d target=%.2f error_degrees=%.3f calibrated=0\n",now,weapon,target,degrees);}
+        }
+    }
     unsigned int bucket=(unsigned int)(now/240);float t=(now%240)/240.f;t=t*t*(3-2*t);
     for(int axis=0;axis<2;axis++){
         unsigned int salt=(unsigned int)(weapon*11+axis);
@@ -59,7 +77,7 @@ static int Psyz_PreAlphaEnabled(void) {
 static void Psyz_PreAlphaReset(void) {
     Psyz_NavReset(&psyz_nav);psyz_nav_health=psyz_nav_damage_time=0;
     psyz_combat_until=psyz_diagnostic_time=0;
-    psyz_combat_log=0;
+    psyz_combat_log=psyz_aim_log=0;
     Psyz_OpeningReset();
     psyz_debug_logged=0;
     psyz_registry_retry=0;
@@ -160,6 +178,18 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         g_entities[psyz_goal_target].r.contents &&
         Psyz_ItemWeight(&g_entities[psyz_goal_target],own,recovering)>15 &&
         (now-psyz_goal_since<3000 || nav_hold);
+    /* A nearby needed main weapon may interrupt a long resource route.
+       Use only registered available goals; do not fabricate a path. */
+    int nearby_main=-1;float nearby_best=192;
+    for(int i=0;i<1024;i++){
+        gentity_t *e=&g_entities[i];if(!psyz_goal_known[i] || psyz_banned[i]>now || !e->inuse || !e->item || !e->r.contents)continue;
+        const char *c=e->item->classname;
+        if(strcmp(c,"weapon_rocketlauncher") && strcmp(c,"weapon_lightning") && strcmp(c,"weapon_railgun"))continue;
+        if(Psyz_ItemWeight(e,own,recovering)<140)continue;
+        float d=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin);
+        if(d<nearby_best){nearby_best=d;nearby_main=i;}
+    }
+    if(nearby_main>=0 && !recovering && opening_target<0 && nearby_main!=psyz_goal_target)keep=0;
     if(!keep) {
         float best=-1;int selected=-1;
         for(int i=0;i<1024;i++) {
@@ -172,6 +202,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
             float score=weight-distance*.035f-wait*15;
             if(score>best){best=score;selected=i;}
         }
+        if(nearby_main>=0 && !recovering && opening_target<0)selected=nearby_main;
         if(opening_target>=0)selected=opening_target;
         if(selected!=psyz_goal_target) {
             psyz_goal_target=selected;psyz_goal_since=now;psyz_progress_time=now;
