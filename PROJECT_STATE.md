@@ -1,3 +1,7 @@
+# 2026-10-12 - Xaero end-of-duel praise proposal
+
+End-of-duel behavior now requires a positive player compliment every completed bot duel; occasional rail/LG/rocket praise only with reliable accuracy and enough samples; finish with GG/GG WP, or a sad-bot line for a blowout. Numeric thresholds need owner approval. Documentation only; code and server unchanged. See docs/server/XAERO_JOIN_GREETING_OPTIONS_2026-10-12_RU.md.
+
 # 2026-10-12 - Xaero duel-start greeting copy
 
 Five duel-start text options added to the Xaero copy proposal: blue (`^4`) opening, white (`^7`) ampersand, blue closing, with abbreviated and full-word lines. Behavior is specified for one message only after an accepted bot duel starts; human-vs-human matches excluded. Text proposal only; code and server unchanged. See docs/server/XAERO_JOIN_GREETING_OPTIONS_2026-10-12_RU.md.

@@ -1,3 +1,7 @@
+# 2026-10-12 - Xaero end-of-duel praise proposal
+
+Specified required positive post-duel praise, occasional rail/lightning/rocket compliments grounded in reliable accuracy samples, GG/GG WP endings, and a sad-bot line for a blowout. Accuracy sample/percentage and blowout thresholds remain to be agreed. Documentation only; no server or plugin changes. See docs/server/XAERO_JOIN_GREETING_OPTIONS_2026-10-12_RU.md.
+
 # 2026-10-12 - Xaero duel-start greeting copy
 
 Added five proposed duel-start phrases with blue/white/blue `GL & HF` styling, including full-word and playful variants. Specified one line only after an accepted bot duel actually starts, excluding ordinary human-vs-human games. Documentation only; no bot or server changes. See docs/server/XAERO_JOIN_GREETING_OPTIONS_2026-10-12_RU.md.
