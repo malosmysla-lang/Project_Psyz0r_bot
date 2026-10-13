@@ -1,0 +1,602 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8192" height="8192" viewBox="0 0 8192 8192">
+<rect width="100%" height="100%" fill="#151922"/>
+<text x="180" y="230" font-family="Segoe UI,Arial" font-size="76" font-weight="700" fill="#F4F7FB">Psyz0r_bot — Mind Map v4</text>
+<text x="180" y="315" font-family="Segoe UI,Arial" font-size="34" fill="#95A0B5">Полная логика проекта · 12.10.2026 · масштабируемый источник</text>
+<path d="M 4096 4096 Q 4096.0 2776.0 4096.0 1256.0" fill="none" stroke="#74D8FF" stroke-width="10" opacity="0.72"/>
+<circle cx="4096.0" cy="2776.0" r="74" fill="#252B38" stroke="#74D8FF" stroke-width="8"/>
+<text x="4096.0" y="2796.0" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#74D8FF"><tspan x="4096.0" dy="0.0">A</tspan></text>
+<path d="M 4096 4096 Q 4632.9 2890.1 5251.1 1501.5" fill="none" stroke="#FFD76A" stroke-width="10" opacity="0.72"/>
+<circle cx="4632.9" cy="2890.1" r="74" fill="#252B38" stroke="#FFD76A" stroke-width="8"/>
+<text x="4632.9" y="2910.1" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#FFD76A"><tspan x="4632.9" dy="0.0">B</tspan></text>
+<path d="M 4096 4096 Q 5077.0 3212.7 6206.5 2195.7" fill="none" stroke="#C89BFF" stroke-width="10" opacity="0.72"/>
+<circle cx="5077.0" cy="3212.7" r="74" fill="#252B38" stroke="#C89BFF" stroke-width="8"/>
+<text x="5077.0" y="3232.7" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#C89BFF"><tspan x="5077.0" dy="0.0">C</tspan></text>
+<path d="M 4096 4096 Q 5351.4 3688.1 6797.0 3218.4" fill="none" stroke="#FF929D" stroke-width="10" opacity="0.72"/>
+<circle cx="5351.4" cy="3688.1" r="74" fill="#252B38" stroke="#FF929D" stroke-width="8"/>
+<text x="5351.4" y="3708.1" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#FF929D"><tspan x="5351.4" dy="0.0">D</tspan></text>
+<path d="M 4096 4096 Q 5408.8 4234.0 6920.4 4392.9" fill="none" stroke="#8FE596" stroke-width="10" opacity="0.72"/>
+<circle cx="5408.8" cy="4234.0" r="74" fill="#252B38" stroke="#8FE596" stroke-width="8"/>
+<text x="5408.8" y="4254.0" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#8FE596"><tspan x="5408.8" dy="0.0">E</tspan></text>
+<path d="M 4096 4096 Q 5239.2 4756.0 6555.5 5516.0" fill="none" stroke="#F4E7A2" stroke-width="10" opacity="0.72"/>
+<circle cx="5239.2" cy="4756.0" r="74" fill="#252B38" stroke="#F4E7A2" stroke-width="8"/>
+<text x="5239.2" y="4776.0" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#F4E7A2"><tspan x="5239.2" dy="0.0">F</tspan></text>
+<path d="M 4096 4096 Q 4871.9 5163.9 5765.3 6393.6" fill="none" stroke="#79E1D1" stroke-width="10" opacity="0.72"/>
+<circle cx="4871.9" cy="5163.9" r="74" fill="#252B38" stroke="#79E1D1" stroke-width="8"/>
+<text x="4871.9" y="5183.9" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#79E1D1"><tspan x="4871.9" dy="0.0">G</tspan></text>
+<path d="M 4096 4096 Q 4370.4 5387.2 4686.5 6873.9" fill="none" stroke="#FFB06A" stroke-width="10" opacity="0.72"/>
+<circle cx="4370.4" cy="5387.2" r="74" fill="#252B38" stroke="#FFB06A" stroke-width="8"/>
+<text x="4370.4" y="5407.2" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#FFB06A"><tspan x="4370.4" dy="0.0">H</tspan></text>
+<path d="M 4096 4096 Q 3821.6 5387.2 3505.5 6873.9" fill="none" stroke="#8CB7FF" stroke-width="10" opacity="0.72"/>
+<circle cx="3821.6" cy="5387.2" r="74" fill="#252B38" stroke="#8CB7FF" stroke-width="8"/>
+<text x="3821.6" y="5407.2" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#8CB7FF"><tspan x="3821.6" dy="0.0">I</tspan></text>
+<path d="M 4096 4096 Q 3320.1 5163.9 2426.7 6393.6" fill="none" stroke="#E58DE3" stroke-width="10" opacity="0.72"/>
+<circle cx="3320.1" cy="5163.9" r="74" fill="#252B38" stroke="#E58DE3" stroke-width="8"/>
+<text x="3320.1" y="5183.9" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#E58DE3"><tspan x="3320.1" dy="0.0">J</tspan></text>
+<path d="M 4096 4096 Q 2952.8 4756.0 1636.5 5516.0" fill="none" stroke="#A9E26F" stroke-width="10" opacity="0.72"/>
+<circle cx="2952.8" cy="4756.0" r="74" fill="#252B38" stroke="#A9E26F" stroke-width="8"/>
+<text x="2952.8" y="4776.0" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#A9E26F"><tspan x="2952.8" dy="0.0">K</tspan></text>
+<path d="M 4096 4096 Q 2783.2 4234.0 1271.6 4392.9" fill="none" stroke="#FF7F73" stroke-width="10" opacity="0.72"/>
+<circle cx="2783.2" cy="4234.0" r="74" fill="#252B38" stroke="#FF7F73" stroke-width="8"/>
+<text x="2783.2" y="4254.0" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#FF7F73"><tspan x="2783.2" dy="0.0">L</tspan></text>
+<path d="M 4096 4096 Q 2840.6 3688.1 1395.0 3218.4" fill="none" stroke="#6FD3A4" stroke-width="10" opacity="0.72"/>
+<circle cx="2840.6" cy="3688.1" r="74" fill="#252B38" stroke="#6FD3A4" stroke-width="8"/>
+<text x="2840.6" y="3708.1" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#6FD3A4"><tspan x="2840.6" dy="0.0">M</tspan></text>
+<path d="M 4096 4096 Q 3115.0 3212.7 1985.5 2195.7" fill="none" stroke="#D1A2FF" stroke-width="10" opacity="0.72"/>
+<circle cx="3115.0" cy="3212.7" r="74" fill="#252B38" stroke="#D1A2FF" stroke-width="8"/>
+<text x="3115.0" y="3232.7" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#D1A2FF"><tspan x="3115.0" dy="0.0">N</tspan></text>
+<path d="M 4096 4096 Q 3559.1 2890.1 2940.9 1501.5" fill="none" stroke="#F1BE78" stroke-width="10" opacity="0.72"/>
+<circle cx="3559.1" cy="2890.1" r="74" fill="#252B38" stroke="#F1BE78" stroke-width="8"/>
+<text x="3559.1" y="2910.1" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#F1BE78"><tspan x="3559.1" dy="0.0">O</tspan></text>
+<rect x="3280" y="3600" width="1632" height="992" rx="90" fill="#242A37" stroke="#566176" stroke-width="8"/>
+<text x="4096.0" y="3900.0" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="112" font-weight="800" fill="#FFFFFF"><tspan x="4096.0" dy="0.0">Psyz0r_bot</tspan></text>
+<text x="4096.0" y="4030.0" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="44" font-weight="700" fill="#7EDCFF"><tspan x="4096.0" dy="0.0">TRAINING DUEL BOT</tspan><tspan x="4096.0" dy="57.2">QUAKE LIVE</tspan></text>
+<text x="4096.0" y="4265.0" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="400" fill="#C8D0DD"><tspan x="4096.0" dy="0.0">Psyz0r_bot — частный тренировочный</tspan><tspan x="4096.0" dy="49.4">Duel-бот Quake Live, максимально похожий</tspan><tspan x="4096.0" dy="49.4">на сильного живого игрока..</tspan></text>
+<text x="4096.0" y="4495.0" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="600" fill="#AAB4C5"><tspan x="4096.0" dy="0.0">198 micro-rules · 15 branches · 8 conflicts</tspan></text>
+<rect x="3456.0" y="696.0" width="1280" height="1120" rx="44" fill="#202632" stroke="#74D8FF" stroke-width="6"/>
+<rect x="3456.0" y="696.0" width="1280" height="126" rx="44" fill="#74D8FF" opacity="0.94"/>
+<text x="3498.0" y="754.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="3498.0" dy="0.0">A. Назначение, человеческий</tspan><tspan x="3498.0" dy="39.9">образ и границы проекта</tspan></text>
+<circle cx="3498.0" cy="864.0" r="10" fill="#D0D6E2"/>
+<text x="3524.0" y="874.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="3524.0" dy="0.0">A01 SPEC</tspan></text>
+<text x="3524.0" y="908.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Practice-бот для Duel, рабочие имена PzyZ0r-bot / Psyz0r_bot</tspan></text>
+<circle cx="3498.0" cy="930.0" r="10" fill="#D0D6E2"/>
+<text x="3524.0" y="940.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="3524.0" dy="0.0">A02 SPEC</tspan></text>
+<text x="3524.0" y="974.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Не отдельная нейросеть: скриптовая система решений,</tspan><tspan x="3524.0" dy="27.6">параметры, статистика и примеры из демок.</tspan></text>
+<circle cx="3498.0" cy="1024.0" r="10" fill="#D0D6E2"/>
+<text x="3524.0" y="1034.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="3524.0" dy="0.0">A03 SPEC</tspan></text>
+<text x="3524.0" y="1068.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Имитировать осмысленные человеческие действия, характер,</tspan><tspan x="3524.0" dy="27.6">колебания формы и ошибки</tspan></text>
+<circle cx="3498.0" cy="1118.0" r="10" fill="#D0D6E2"/>
+<text x="3524.0" y="1128.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="3524.0" dy="0.0">A04 SPEC</tspan></text>
+<text x="3524.0" y="1162.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Бот должен оставаться обходимым: может смотреть не туда,</tspan><tspan x="3524.0" dy="27.6">неверно ждать из угла, пропустить тихий обход или атаку в…</tspan></text>
+<circle cx="3498.0" cy="1212.0" r="10" fill="#D0D6E2"/>
+<text x="3524.0" y="1222.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="3524.0" dy="0.0">A05 SPEC</tspan></text>
+<text x="3524.0" y="1256.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Человеческая информация отделяется от разрешённой серверной</tspan><tspan x="3524.0" dy="27.6">информации. Никакого постоянного знания координат соперника…</tspan></text>
+<circle cx="3498.0" cy="1306.0" r="10" fill="#D0D6E2"/>
+<text x="3524.0" y="1316.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="3524.0" dy="0.0">A06 SPEC</tspan></text>
+<text x="3524.0" y="1350.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Все уровни используют реальные HP, armor, ammo, размеры</tspan><tspan x="3524.0" dy="27.6">модели, урон, скорость и физику.</tspan></text>
+<circle cx="3498.0" cy="1400.0" r="10" fill="#D0D6E2"/>
+<text x="3524.0" y="1410.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="3524.0" dy="0.0">A07 SPEC</tspan></text>
+<text x="3524.0" y="1444.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Центральный результат — качество дуэли и обучение игрока, а</tspan><tspan x="3524.0" dy="27.6">не обязательный равный счёт или заданная длительность 0:0.</tspan></text>
+<circle cx="3498.0" cy="1494.0" r="10" fill="#D0D6E2"/>
+<text x="3524.0" y="1504.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="3524.0" dy="0.0">A08 SPEC</tspan></text>
+<text x="3524.0" y="1538.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Возможны длительные «игры до фрага», когда оба около пяти</tspan><tspan x="3524.0" dy="27.6">минут разменяются и восстанавливаются</tspan></text>
+<circle cx="3498.0" cy="1588.0" r="10" fill="#D0D6E2"/>
+<text x="3524.0" y="1598.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="3524.0" dy="0.0">A09 SPEC</tspan></text>
+<text x="3524.0" y="1632.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Бот может сделать серию после ключевой ошибки соперника,</tspan><tspan x="3524.0" dy="27.6">например превратить долгое 0:0 в 5:0.</tspan></text>
+<circle cx="3498.0" cy="1682.0" r="10" fill="#8993A5"/>
+<text x="3524.0" y="1692.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#8993A5"><tspan x="3524.0" dy="0.0">A10 PAUSED</tspan></text>
+<text x="3524.0" y="1726.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Серверный MMR и рейтинг отложены</tspan></text>
+<circle cx="3498.0" cy="1748.0" r="10" fill="#D0D6E2"/>
+<text x="3524.0" y="1758.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="3524.0" dy="0.0">A11 SPEC</tspan></text>
+<text x="3524.0" y="1792.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="3524.0" dy="0.0">Первый целевой набор карт — Blood Run/ZTN, затем ещё две</tspan><tspan x="3524.0" dy="27.6">карты владельца</tspan></text>
+<rect x="4611.1" y="941.5" width="1280" height="1120" rx="44" fill="#202632" stroke="#FFD76A" stroke-width="6"/>
+<rect x="4611.1" y="941.5" width="1280" height="126" rx="44" fill="#FFD76A" opacity="0.94"/>
+<text x="4653.1" y="999.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="4653.1" dy="0.0">B. Основы Duel и формальный</tspan><tspan x="4653.1" dy="39.9">контекст матча</tspan></text>
+<circle cx="4653.1" cy="1109.5" r="10" fill="#D0D6E2"/>
+<text x="4679.1" y="1119.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4679.1" dy="0.0">B01 SPEC</tspan></text>
+<text x="4679.1" y="1153.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">Duel — 1v1</tspan></text>
+<circle cx="4653.1" cy="1175.5" r="10" fill="#D0D6E2"/>
+<text x="4679.1" y="1185.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4679.1" dy="0.0">B02 SPEC</tspan></text>
+<text x="4679.1" y="1219.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">Различать разминку, countdown, активный матч, паузу, overtime</tspan><tspan x="4679.1" dy="27.6">и завершение.</tspan></text>
+<circle cx="4653.1" cy="1269.5" r="10" fill="#D0D6E2"/>
+<text x="4679.1" y="1279.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4679.1" dy="0.0">B03 SPEC</tspan></text>
+<text x="4679.1" y="1313.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">Различать победу, текущее лидерство, контроль карты и</tspan><tspan x="4679.1" dy="27.6">доминирование. Один показатель не заменяет остальные.</tspan></text>
+<circle cx="4653.1" cy="1363.5" r="10" fill="#D0D6E2"/>
+<text x="4679.1" y="1373.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4679.1" dy="0.0">B04 SPEC</tspan></text>
+<text x="4679.1" y="1407.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">Смерть от мира/self-kill меняет счёт по правилам сервера</tspan></text>
+<circle cx="4653.1" cy="1429.5" r="10" fill="#D0D6E2"/>
+<text x="4679.1" y="1439.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4679.1" dy="0.0">B05 SPEC</tspan></text>
+<text x="4679.1" y="1473.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">При лидерстве и малом остатке времени уменьшать неоправданный</tspan><tspan x="4679.1" dy="27.6">риск, сохраняя возможность очевидного добивания.</tspan></text>
+<circle cx="4653.1" cy="1523.5" r="10" fill="#D0D6E2"/>
+<text x="4679.1" y="1533.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4679.1" dy="0.0">B06 SPEC</tspan></text>
+<text x="4679.1" y="1567.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">При отставании сопоставлять оставшееся время с длительностью</tspan><tspan x="4679.1" dy="27.6">восстановления, маршрута и атаки</tspan></text>
+<circle cx="4653.1" cy="1617.5" r="10" fill="#D0D6E2"/>
+<text x="4679.1" y="1627.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4679.1" dy="0.0">B07 SPEC</tspan></text>
+<text x="4679.1" y="1661.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">В overtime играть осторожнее: безопасные ресурсы, выгодный</tspan><tspan x="4679.1" dy="27.6">размен, выживание</tspan></text>
+<circle cx="4653.1" cy="1711.5" r="10" fill="#D0D6E2"/>
+<text x="4679.1" y="1721.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4679.1" dy="0.0">B08 SPEC</tspan></text>
+<text x="4679.1" y="1755.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">Смена карты/матча очищает несовместимую память</tspan></text>
+<circle cx="4653.1" cy="1777.5" r="10" fill="#D0D6E2"/>
+<text x="4679.1" y="1787.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4679.1" dy="0.0">B09 SPEC</tspan></text>
+<text x="4679.1" y="1821.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">Формальный результат и причина завершения нужны для адаптации</tspan><tspan x="4679.1" dy="27.6">сложности и предложения реванша.</tspan></text>
+<circle cx="4653.1" cy="1871.5" r="10" fill="#B494F5"/>
+<text x="4679.1" y="1881.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#B494F5"><tspan x="4679.1" dy="0.0">B10 DATA</tspan></text>
+<text x="4679.1" y="1915.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">Философия Duel: десять минут концентрации, борьба нервов и</tspan><tspan x="4679.1" dy="27.6">характеров</tspan></text>
+<circle cx="4653.1" cy="1965.5" r="10" fill="#B494F5"/>
+<text x="4679.1" y="1975.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#B494F5"><tspan x="4679.1" dy="0.0">B11 DATA</tspan></text>
+<text x="4679.1" y="2009.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4679.1" dy="0.0">Опытные игроки большую часть времени приблизительно понимают</tspan><tspan x="4679.1" dy="27.6">положение соперника по маршрутам, звуку и ресурсам</tspan></text>
+<text x="4679.1" y="2031.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#FFD76A"><tspan x="4679.1" dy="0.0">+ ещё 1 правил — на листе раздела</tspan></text>
+<rect x="5566.5" y="1635.7" width="1280" height="1120" rx="44" fill="#202632" stroke="#C89BFF" stroke-width="6"/>
+<rect x="5566.5" y="1635.7" width="1280" height="126" rx="44" fill="#C89BFF" opacity="0.94"/>
+<text x="5608.5" y="1693.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="5608.5" dy="0.0">C. Восприятие, звук, память и</tspan><tspan x="5608.5" dy="39.9">честная информация</tspan></text>
+<circle cx="5608.5" cy="1803.7" r="10" fill="#D0D6E2"/>
+<text x="5634.5" y="1813.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5634.5" dy="0.0">C01 SPEC</tspan></text>
+<text x="5634.5" y="1847.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5634.5" dy="0.0">Бот без WH. Точное положение соперника допустимо только при</tspan><tspan x="5634.5" dy="27.6">видимости или достоверном событии.</tspan></text>
+<circle cx="5608.5" cy="1897.7" r="10" fill="#D0D6E2"/>
+<text x="5634.5" y="1907.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5634.5" dy="0.0">C02 SPEC</tspan></text>
+<text x="5634.5" y="1941.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5634.5" dy="0.0">Использовать LOS, звук шагов/прыжков/оружия/подбора, недавнее</tspan><tspan x="5634.5" dy="27.6">направление, вероятные маршруты и исчезающую память.</tspan></text>
+<circle cx="5608.5" cy="1991.7" r="10" fill="#D0D6E2"/>
+<text x="5634.5" y="2001.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5634.5" dy="0.0">C03 SPEC</tspan></text>
+<text x="5634.5" y="2035.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5634.5" dy="0.0">Уверенность в прогнозе должна убывать со временем и при</tspan><tspan x="5634.5" dy="27.6">наличии развилок.</tspan></text>
+<circle cx="5608.5" cy="2085.7" r="10" fill="#D0D6E2"/>
+<text x="5634.5" y="2095.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5634.5" dy="0.0">C04 SPEC</tspan></text>
+<text x="5634.5" y="2129.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5634.5" dy="0.0">Бот умеет слушать этажи и проходы из отмеченных позиций, но</tspan><tspan x="5634.5" dy="27.6">может неверно определить маршрут.</tspan></text>
+<circle cx="5608.5" cy="2179.7" r="10" fill="#D0D6E2"/>
+<text x="5634.5" y="2189.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5634.5" dy="0.0">C05 SPEC</tspan></text>
+<text x="5634.5" y="2223.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5634.5" dy="0.0">Остановка владельца на 5–10 секунд создаёт кандидата</tspan><tspan x="5634.5" dy="27.6">listen/hide/escape/ambush</tspan></text>
+<circle cx="5608.5" cy="2273.7" r="10" fill="#D0D6E2"/>
+<text x="5634.5" y="2283.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5634.5" dy="0.0">C06 SPEC</tspan></text>
+<text x="5634.5" y="2317.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5634.5" dy="0.0">После обнаружения или выстрела из засады менять позицию</tspan></text>
+<circle cx="5608.5" cy="2339.7" r="10" fill="#D0D6E2"/>
+<text x="5634.5" y="2349.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5634.5" dy="0.0">C07 SPEC</tspan></text>
+<text x="5634.5" y="2383.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5634.5" dy="0.0">Разрешён observer-authorized таймер предмета, но не</tspan><tspan x="5634.5" dy="27.6">координаты живого соперника.</tspan></text>
+<circle cx="5608.5" cy="2433.7" r="10" fill="#F7C65B"/>
+<text x="5634.5" y="2443.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F7C65B"><tspan x="5634.5" dy="0.0">C08 PARTIAL</tspan></text>
+<text x="5634.5" y="2477.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5634.5" dy="0.0">Собственный стек и точный стек соперника читаются серверным</tspan><tspan x="5634.5" dy="27.6">модулем</tspan></text>
+<circle cx="5608.5" cy="2527.7" r="10" fill="#D0D6E2"/>
+<text x="5634.5" y="2537.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5634.5" dy="0.0">C09 SPEC</tspan></text>
+<text x="5634.5" y="2571.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5634.5" dy="0.0">Не быть всегда лицом к сопернику</tspan></text>
+<circle cx="5608.5" cy="2593.7" r="10" fill="#D0D6E2"/>
+<text x="5634.5" y="2603.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5634.5" dy="0.0">C10 SPEC</tspan></text>
+<text x="5634.5" y="2637.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5634.5" dy="0.0">Логи обязаны указывать источник знания: visible, heard,</tspan><tspan x="5634.5" dy="27.6">pickup, timer, predicted, unknown.</tspan></text>
+<rect x="6157.0" y="2658.4" width="1280" height="1120" rx="44" fill="#202632" stroke="#FF929D" stroke-width="6"/>
+<rect x="6157.0" y="2658.4" width="1280" height="126" rx="44" fill="#FF929D" opacity="0.94"/>
+<text x="6199.0" y="2716.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="6199.0" dy="0.0">D. Знание карты, AAS, маршруты</tspan><tspan x="6199.0" dy="39.9">и позиции</tspan></text>
+<circle cx="6199.0" cy="2826.4" r="10" fill="#59D98E"/>
+<text x="6225.0" y="2836.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="6225.0" dy="0.0">D01 LIVE</tspan></text>
+<text x="6225.0" y="2870.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6225.0" dy="0.0">Штатный QL botlib/AAS остаётся базой жизненного цикла и</tspan><tspan x="6225.0" dy="27.6">навигации.</tspan></text>
+<circle cx="6199.0" cy="2920.4" r="10" fill="#F7C65B"/>
+<text x="6225.0" y="2930.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F7C65B"><tspan x="6225.0" dy="0.0">D02 PARTIAL</tspan></text>
+<text x="6225.0" y="2964.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6225.0" dy="0.0">На Blood Run подключены 257 демонстрационных подходов к 22</tspan><tspan x="6225.0" dy="27.6">назначениям</tspan></text>
+<circle cx="6199.0" cy="3014.4" r="10" fill="#59D98E"/>
+<text x="6225.0" y="3024.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="6225.0" dy="0.0">D03 LIVE</tspan></text>
+<text x="6225.0" y="3058.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6225.0" dy="0.0">При провале demo-route бот временно запрещает его, повторяет</tspan><tspan x="6225.0" dy="27.6">цель штатным AAS и затем освобождает застрявшую цель.</tspan></text>
+<circle cx="6199.0" cy="3108.4" r="10" fill="#D0D6E2"/>
+<text x="6225.0" y="3118.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6225.0" dy="0.0">D04 SPEC</tspan></text>
+<text x="6225.0" y="3152.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6225.0" dy="0.0">Маршрут выбирается по предмету, времени, стеку, набору</tspan><tspan x="6225.0" dy="27.6">оружия, контролю, риску и противодействию.</tspan></text>
+<circle cx="6199.0" cy="3202.4" r="10" fill="#D0D6E2"/>
+<text x="6225.0" y="3212.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6225.0" dy="0.0">D05 SPEC</tspan></text>
+<text x="6225.0" y="3246.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6225.0" dy="0.0">Отделить перемещение к ресурсу от движения в бою</tspan></text>
+<circle cx="6199.0" cy="3268.4" r="10" fill="#D0D6E2"/>
+<text x="6225.0" y="3278.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6225.0" dy="0.0">D06 SPEC</tspan></text>
+<text x="6225.0" y="3312.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6225.0" dy="0.0">Из демок извлекать быстрые и безопасные пути, повороты,</tspan><tspan x="6225.0" dy="27.6">вертикальные переходы, телепорты, точки отхода и…</tspan></text>
+<circle cx="6199.0" cy="3362.4" r="10" fill="#D0D6E2"/>
+<text x="6225.0" y="3372.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6225.0" dy="0.0">D07 SPEC</tspan></text>
+<text x="6225.0" y="3406.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6225.0" dy="0.0">На ZTN отдельно проверить достижение красного через телепорт,</tspan><tspan x="6225.0" dy="27.6">RJ, long jump и plasma climb. Вход в верхний телепорт часто…</tspan></text>
+<circle cx="6199.0" cy="3456.4" r="10" fill="#D0D6E2"/>
+<text x="6225.0" y="3466.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6225.0" dy="0.0">D08 SPEC</tspan></text>
+<text x="6225.0" y="3500.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6225.0" dy="0.0">Карта должна содержать позиции прослушивания, крысинга,</tspan><tspan x="6225.0" dy="27.6">безопасного штрафа, приёма погони, спама и выхода.</tspan></text>
+<circle cx="6199.0" cy="3550.4" r="10" fill="#D0D6E2"/>
+<text x="6225.0" y="3560.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6225.0" dy="0.0">D09 SPEC</tspan></text>
+<text x="6225.0" y="3594.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6225.0" dy="0.0">Бот может исследовать карту в офлайн/тестовом режиме, но</tspan><tspan x="6225.0" dy="27.6">найденный путь становится игровым только после проверки…</tspan></text>
+<circle cx="6199.0" cy="3644.4" r="10" fill="#D0D6E2"/>
+<text x="6225.0" y="3654.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6225.0" dy="0.0">D10 SPEC</tspan></text>
+<text x="6225.0" y="3688.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6225.0" dy="0.0">Техническое застревание, AFK у доступного предмета и</tspan><tspan x="6225.0" dy="27.6">бесконечное повторение провального пути запрещены на любой…</tspan></text>
+<text x="6225.0" y="3748.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#FF929D"><tspan x="6225.0" dy="0.0">+ ещё 1 правил — на листе раздела</tspan></text>
+<rect x="6280.4" y="3832.9" width="1280" height="1120" rx="44" fill="#202632" stroke="#8FE596" stroke-width="6"/>
+<rect x="6280.4" y="3832.9" width="1280" height="126" rx="44" fill="#8FE596" opacity="0.94"/>
+<text x="6322.4" y="3890.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="6322.4" dy="0.0">E. Движение, распрыжка и триксы</tspan></text>
+<circle cx="6322.4" cy="4000.9" r="10" fill="#F7C65B"/>
+<text x="6348.4" y="4010.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F7C65B"><tspan x="6348.4" dy="0.0">E01 PARTIAL</tspan></text>
+<text x="6348.4" y="4044.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">Есть ограниченный route strafe-start и два первых прыжка</tspan></text>
+<circle cx="6322.4" cy="4066.9" r="10" fill="#D0D6E2"/>
+<text x="6348.4" y="4076.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6348.4" dy="0.0">E02 SPEC</tspan></text>
+<text x="6348.4" y="4110.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">Последовательность: обычный бег → prestrafe/circle jump →</tspan><tspan x="6348.4" dy="27.6">single beat → half beat/переходы → RJ → plasma jump → plasma…</tspan></text>
+<circle cx="6322.4" cy="4160.9" r="10" fill="#D0D6E2"/>
+<text x="6348.4" y="4170.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6348.4" dy="0.0">E03 SPEC</tspan></text>
+<text x="6348.4" y="4204.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">Первый прыжок после остановки включает наземный разгон,</tspan><tspan x="6348.4" dy="27.6">согласованный поворот мышью и направление WASD</tspan></text>
+<circle cx="6322.4" cy="4254.9" r="10" fill="#D0D6E2"/>
+<text x="6348.4" y="4264.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6348.4" dy="0.0">E04 SPEC</tspan></text>
+<text x="6348.4" y="4298.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">Стрейф и угол взгляда меняются по скорости и направлению</tspan></text>
+<circle cx="6322.4" cy="4320.9" r="10" fill="#D0D6E2"/>
+<text x="6348.4" y="4330.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6348.4" dy="0.0">E05 SPEC</tspan></text>
+<text x="6348.4" y="4364.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">Выбирать бег, тихий шаг, остановку и прыжок по цели,</tspan><tspan x="6348.4" dy="27.6">опасности, шуму и стеку.</tspan></text>
+<circle cx="6322.4" cy="4414.9" r="10" fill="#59D98E"/>
+<text x="6348.4" y="4424.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="6348.4" dy="0.0">E06 LIVE</tspan></text>
+<text x="6348.4" y="4458.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">Новые прыжки подавляются в ближнем/среднем боевом эпизоде</tspan></text>
+<circle cx="6322.4" cy="4480.9" r="10" fill="#D0D6E2"/>
+<text x="6348.4" y="4490.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6348.4" dy="0.0">E07 SPEC</tspan></text>
+<text x="6348.4" y="4524.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">В ближнем и среднем RL/LG бою основа — непредсказуемые</tspan><tspan x="6348.4" dy="27.6">наземные стрейфы, короткая остановка и резкий длинный стрейф…</tspan></text>
+<circle cx="6322.4" cy="4574.9" r="10" fill="#D0D6E2"/>
+<text x="6348.4" y="4584.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6348.4" dy="0.0">E08 SPEC</tspan></text>
+<text x="6348.4" y="4618.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">Прыжок в бою допустим как редкое позиционное исключение,</tspan><tspan x="6348.4" dy="27.6">например дальний rail pixel-shot</tspan></text>
+<circle cx="6322.4" cy="4668.9" r="10" fill="#59D98E"/>
+<text x="6348.4" y="4678.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="6348.4" dy="0.0">E09 LIVE</tspan></text>
+<text x="6348.4" y="4712.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">Crouch запрещён по умолчанию.</tspan></text>
+<circle cx="6322.4" cy="4734.9" r="10" fill="#D0D6E2"/>
+<text x="6348.4" y="4744.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="6348.4" dy="0.0">E10 SPEC</tspan></text>
+<text x="6348.4" y="4778.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">Будущие исключения crouch: конкретный jump-pad сценарий и LG</tspan><tspan x="6348.4" dy="27.6">с highground за укрытием</tspan></text>
+<circle cx="6322.4" cy="4828.9" r="10" fill="#59D98E"/>
+<text x="6348.4" y="4838.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="6348.4" dy="0.0">E11 LIVE</tspan></text>
+<text x="6348.4" y="4872.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">RJ sample 0 автоматически разрешён</tspan></text>
+<circle cx="6322.4" cy="4894.9" r="10" fill="#B494F5"/>
+<text x="6348.4" y="4904.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#B494F5"><tspan x="6348.4" dy="0.0">E12 DATA</tspan></text>
+<text x="6348.4" y="4938.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="6348.4" dy="0.0">16 исходных успешных RJ владельца</tspan></text>
+<text x="6348.4" y="4922.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#8FE596"><tspan x="6348.4" dy="0.0">+ ещё 5 правил — на листе раздела</tspan></text>
+<rect x="5915.5" y="4956.0" width="1280" height="1120" rx="44" fill="#202632" stroke="#F4E7A2" stroke-width="6"/>
+<rect x="5915.5" y="4956.0" width="1280" height="126" rx="44" fill="#F4E7A2" opacity="0.94"/>
+<text x="5957.5" y="5014.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="5957.5" dy="0.0">F. Стрельба, прицеливание,</tspan><tspan x="5957.5" dy="39.9">dodge и точность</tspan></text>
+<circle cx="5957.5" cy="5124.0" r="10" fill="#D0D6E2"/>
+<text x="5983.5" y="5134.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5983.5" dy="0.0">F01 SPEC</tspan></text>
+<text x="5983.5" y="5168.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5983.5" dy="0.0">Стрельба Quake строится совместно с движением ног, а не</tspan><tspan x="5983.5" dy="27.6">только наведением крестика.</tspan></text>
+<circle cx="5957.5" cy="5218.0" r="10" fill="#D0D6E2"/>
+<text x="5983.5" y="5228.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5983.5" dy="0.0">F02 SPEC</tspan></text>
+<text x="5983.5" y="5262.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5983.5" dy="0.0">Из демок извлекать пары: позиция, дистанция, оружие,</tspan><tspan x="5983.5" dy="27.6">направление стрейфа, остановка, viewangles, исход.</tspan></text>
+<circle cx="5957.5" cy="5312.0" r="10" fill="#D0D6E2"/>
+<text x="5983.5" y="5322.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5983.5" dy="0.0">F03 SPEC</tspan></text>
+<text x="5983.5" y="5356.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5983.5" dy="0.0">Контрстрейф: смена направления/резкая остановка для окна</tspan><tspan x="5983.5" dy="27.6">точного выстрела и нарушения tracking соперника.</tspan></text>
+<circle cx="5957.5" cy="5406.0" r="10" fill="#D0D6E2"/>
+<text x="5983.5" y="5416.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5983.5" dy="0.0">F04 SPEC</tspan></text>
+<text x="5983.5" y="5450.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5983.5" dy="0.0">Rail peek/prefire: показать часть модели из-за угла, держать</tspan><tspan x="5983.5" dy="27.6">прицел в ожидаемой точке/стене и минимально корректировать…</tspan></text>
+<circle cx="5957.5" cy="5500.0" r="10" fill="#D0D6E2"/>
+<text x="5983.5" y="5510.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5983.5" dy="0.0">F05 SPEC</tspan></text>
+<text x="5983.5" y="5544.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5983.5" dy="0.0">Предикт движения соперника использует скорость, направление,</tspan><tspan x="5983.5" dy="27.6">геометрию, видимость и вероятный выход</tspan></text>
+<circle cx="5957.5" cy="5594.0" r="10" fill="#79B8FF"/>
+<text x="5983.5" y="5604.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#79B8FF"><tspan x="5983.5" dy="0.0">F06 LOCAL</tspan></text>
+<text x="5983.5" y="5638.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5983.5" dy="0.0">Есть расчёты lead для projectile, геометрии выстрела и combat</tspan><tspan x="5983.5" dy="27.6">prediction</tspan></text>
+<circle cx="5957.5" cy="5688.0" r="10" fill="#D0D6E2"/>
+<text x="5983.5" y="5698.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5983.5" dy="0.0">F07 SPEC</tspan></text>
+<text x="5983.5" y="5732.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5983.5" dy="0.0">Rocket prediction учитывает скорость ракеты, расстояние,</tspan><tspan x="5983.5" dy="27.6">полёт цели, пол/стену, splash и возможный dodge.</tspan></text>
+<circle cx="5957.5" cy="5782.0" r="10" fill="#D0D6E2"/>
+<text x="5983.5" y="5792.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5983.5" dy="0.0">F08 SPEC</tspan></text>
+<text x="5983.5" y="5826.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5983.5" dy="0.0">Prefire разрешён в типовом проходе при достаточной</tspan><tspan x="5983.5" dy="27.6">уверенности</tspan></text>
+<circle cx="5957.5" cy="5876.0" r="10" fill="#F7C65B"/>
+<text x="5983.5" y="5886.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F7C65B"><tspan x="5983.5" dy="0.0">F09 PARTIAL</tspan></text>
+<text x="5983.5" y="5920.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5983.5" dy="0.0">Aim humanization меняет команды наведения, не damage и не</tspan><tspan x="5983.5" dy="27.6">зарегистрированные попадания.</tspan></text>
+<circle cx="5957.5" cy="5970.0" r="10" fill="#B494F5"/>
+<text x="5983.5" y="5980.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#B494F5"><tspan x="5983.5" dy="0.0">F10 DATA/PARTIAL</tspan></text>
+<text x="5983.5" y="6014.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5983.5" dy="0.0">Согласованные ориентиры: plasma 10–16% (база 12%), LG 33–41%</tspan><tspan x="5983.5" dy="27.6">(база 37%)</tspan></text>
+<text x="5983.5" y="6046.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F4E7A2"><tspan x="5983.5" dy="0.0">+ ещё 3 правил — на листе раздела</tspan></text>
+<rect x="5125.3" y="5833.6" width="1280" height="1120" rx="44" fill="#202632" stroke="#79E1D1" stroke-width="6"/>
+<rect x="5125.3" y="5833.6" width="1280" height="126" rx="44" fill="#79E1D1" opacity="0.94"/>
+<text x="5167.3" y="5891.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="5167.3" dy="0.0">G. Оружие, выбор, комбо и</tspan><tspan x="5167.3" dy="39.9">зонирование</tspan></text>
+<circle cx="5167.3" cy="6001.6" r="10" fill="#F7C65B"/>
+<text x="5193.3" y="6011.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F7C65B"><tspan x="5193.3" dy="0.0">G01 PARTIAL</tspan></text>
+<text x="5193.3" y="6045.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">Есть приоритет отсутствующего полезного оружия и диагностика</tspan><tspan x="5193.3" dy="27.6">причины выбора/пропуска/подбора.</tspan></text>
+<circle cx="5167.3" cy="6095.6" r="10" fill="#D0D6E2"/>
+<text x="5193.3" y="6105.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5193.3" dy="0.0">G02 SPEC</tspan></text>
+<text x="5193.3" y="6139.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">До двух-трёх пушек Unholy Trinity бот редко принимает</tspan><tspan x="5193.3" dy="27.6">добровольный прямой бой. Допустимые пары: LG+RL, RL+RG и…</tspan></text>
+<circle cx="5167.3" cy="6189.6" r="10" fill="#59D98E"/>
+<text x="5193.3" y="6199.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="5193.3" dy="0.0">G03 LIVE/PARTIAL</tspan></text>
+<text x="5193.3" y="6233.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">Добровольный forward-push блокируется при недостаточном</tspan><tspan x="5193.3" dy="27.6">Trinity-наборе</tspan></text>
+<circle cx="5167.3" cy="6283.6" r="10" fill="#D0D6E2"/>
+<text x="5193.3" y="6293.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5193.3" dy="0.0">G04 SPEC</tspan></text>
+<text x="5193.3" y="6327.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">Средняя дистанция 1v1: основной приоритет LG</tspan></text>
+<circle cx="5167.3" cy="6349.6" r="10" fill="#D0D6E2"/>
+<text x="5193.3" y="6359.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5193.3" dy="0.0">G05 SPEC</tspan></text>
+<text x="5193.3" y="6393.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">Если у соперника нет оружия и LG достаёт, LG обычно лучше</tspan></text>
+<circle cx="5167.3" cy="6415.6" r="10" fill="#D0D6E2"/>
+<text x="5193.3" y="6425.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5193.3" dy="0.0">G06 SPEC</tspan></text>
+<text x="5193.3" y="6459.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">SG, plasma, grenade, machinegun и gauntlet — преимущественно</tspan><tspan x="5193.3" dy="27.6">ситуационные, но не запрещённые.</tspan></text>
+<circle cx="5167.3" cy="6509.6" r="10" fill="#D0D6E2"/>
+<text x="5193.3" y="6519.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5193.3" dy="0.0">G07 SPEC</tspan></text>
+<text x="5193.3" y="6553.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">Выбор учитывает расстояние, позицию, высоту, проход, ammo,</tspan><tspan x="5193.3" dy="27.6">свой/чужой стек, возможность отхода и текущее оружие…</tspan></text>
+<circle cx="5167.3" cy="6603.6" r="10" fill="#D0D6E2"/>
+<text x="5193.3" y="6613.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5193.3" dy="0.0">G08 SPEC</tspan></text>
+<text x="5193.3" y="6647.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">LG vs LG при сближении и красном сопернике: резко перейти на</tspan><tspan x="5193.3" dy="27.6">RL или SG для добивания.</tspan></text>
+<circle cx="5167.3" cy="6697.6" r="10" fill="#D0D6E2"/>
+<text x="5193.3" y="6707.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5193.3" dy="0.0">G09 SPEC</tspan></text>
+<text x="5193.3" y="6741.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">После дальней precise rocket, остановившей/подбросившей</tspan><tspan x="5193.3" dy="27.6">модель, быстро переключиться на RG, пока полёт ограничивает…</tspan></text>
+<circle cx="5167.3" cy="6791.6" r="10" fill="#D0D6E2"/>
+<text x="5193.3" y="6801.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5193.3" dy="0.0">G10 SPEC</tspan></text>
+<text x="5193.3" y="6835.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">Попадание rail создаёт условие для пуша только после оценки</tspan><tspan x="5193.3" dy="27.6">оставшегося стека, расстояния, оружия и выхода</tspan></text>
+<circle cx="5167.3" cy="6885.6" r="10" fill="#D0D6E2"/>
+<text x="5193.3" y="6895.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="5193.3" dy="0.0">G11 SPEC</tspan></text>
+<text x="5193.3" y="6929.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="5193.3" dy="0.0">Подбирать оружие со своего и чужого трупа, если это не отдаёт</tspan><tspan x="5193.3" dy="27.6">позицию и лишает соперника полезной пушки.</tspan></text>
+<text x="5193.3" y="6923.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#79E1D1"><tspan x="5193.3" dy="0.0">+ ещё 4 правил — на листе раздела</tspan></text>
+<rect x="4046.5" y="6313.9" width="1280" height="1120" rx="44" fill="#202632" stroke="#FFB06A" stroke-width="6"/>
+<rect x="4046.5" y="6313.9" width="1280" height="126" rx="44" fill="#FFB06A" opacity="0.94"/>
+<text x="4088.5" y="6371.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="4088.5" dy="0.0">H. Предметы, тайминги, стек и</tspan><tspan x="4088.5" dy="39.9">макроигра</tspan></text>
+<circle cx="4088.5" cy="6481.9" r="10" fill="#59D98E"/>
+<text x="4114.5" y="6491.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="4114.5" dy="0.0">H01 LIVE</tspan></text>
+<text x="4114.5" y="6525.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4114.5" dy="0.0">Нативный модуль читает item clocks всех зарегистрированных</tspan><tspan x="4114.5" dy="27.6">предметов</tspan></text>
+<circle cx="4088.5" cy="6575.9" r="10" fill="#D0D6E2"/>
+<text x="4114.5" y="6585.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4114.5" dy="0.0">H02 SPEC</tspan></text>
+<text x="4114.5" y="6619.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4114.5" dy="0.0">Классические интервалы: Heavy Armor 25 секунд, MegaHealth 35</tspan><tspan x="4114.5" dy="27.6">секунд</tspan></text>
+<circle cx="4088.5" cy="6669.9" r="10" fill="#D0D6E2"/>
+<text x="4114.5" y="6679.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4114.5" dy="0.0">H03 SPEC</tspan></text>
+<text x="4114.5" y="6713.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4114.5" dy="0.0">Бот знает таймеры как разрешённый observer, но выбирает,</tspan><tspan x="4114.5" dy="27.6">какие предметы оспаривать или сознательно оставить.</tspan></text>
+<circle cx="4088.5" cy="6763.9" r="10" fill="#D0D6E2"/>
+<text x="4114.5" y="6773.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4114.5" dy="0.0">H04 SPEC</tspan></text>
+<text x="4114.5" y="6807.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4114.5" dy="0.0">Приоритет цели учитывает свой стек, точный доступный стек</tspan><tspan x="4114.5" dy="27.6">соперника, оружие, путь, время ожидания и режим матча.</tspan></text>
+<circle cx="4088.5" cy="6857.9" r="10" fill="#D0D6E2"/>
+<text x="4114.5" y="6867.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4114.5" dy="0.0">H05 SPEC</tspan></text>
+<text x="4114.5" y="6901.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4114.5" dy="0.0">«Цикл» — маршрут по основным и вторичным ресурсам, включая</tspan><tspan x="4114.5" dy="27.6">shards/green/yellow при наличии.</tspan></text>
+<circle cx="4088.5" cy="6951.9" r="10" fill="#D0D6E2"/>
+<text x="4114.5" y="6961.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4114.5" dy="0.0">H06 SPEC</tspan></text>
+<text x="4114.5" y="6995.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4114.5" dy="0.0">На контроле: связывать предметы в цикл, давить, перекрывать</tspan><tspan x="4114.5" dy="27.6">оружие и возможные выходы, но не обязательно включать…</tspan></text>
+<circle cx="4088.5" cy="7045.9" r="10" fill="#D0D6E2"/>
+<text x="4114.5" y="7055.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4114.5" dy="0.0">H07 SPEC</tspan></text>
+<text x="4114.5" y="7089.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4114.5" dy="0.0">Без контроля: избегать прямой драки за MH/RA, брать остатки,</tspan><tspan x="4114.5" dy="27.6">аптечки, YA/GA, ammo, наносить 1 rail или 1–2 rockets из…</tspan></text>
+<circle cx="4088.5" cy="7139.9" r="10" fill="#D0D6E2"/>
+<text x="4114.5" y="7149.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4114.5" dy="0.0">H08 SPEC</tspan></text>
+<text x="4114.5" y="7183.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4114.5" dy="0.0">Строгий контроль основных ресурсов и тотальный контроль всей</tspan><tspan x="4114.5" dy="27.6">карты — разные режимы.</tspan></text>
+<circle cx="4088.5" cy="7233.9" r="10" fill="#D0D6E2"/>
+<text x="4114.5" y="7243.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4114.5" dy="0.0">H09 SPEC</tspan></text>
+<text x="4114.5" y="7277.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4114.5" dy="0.0">Тотальный контроль редок: ориентир 1–2 матча из 10 и</tspan><tspan x="4114.5" dy="27.6">преимущественно против очень сильного игрока.</tspan></text>
+<circle cx="4088.5" cy="7327.9" r="10" fill="#D0D6E2"/>
+<text x="4114.5" y="7337.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="4114.5" dy="0.0">H10 SPEC</tspan></text>
+<text x="4114.5" y="7371.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="4114.5" dy="0.0">При равной игре или сильном отставании контроль усиливается</tspan></text>
+<text x="4114.5" y="7403.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#FFB06A"><tspan x="4114.5" dy="0.0">+ ещё 3 правил — на листе раздела</tspan></text>
+<rect x="2865.5" y="6313.9" width="1280" height="1120" rx="44" fill="#202632" stroke="#8CB7FF" stroke-width="6"/>
+<rect x="2865.5" y="6313.9" width="1280" height="126" rx="44" fill="#8CB7FF" opacity="0.94"/>
+<text x="2907.5" y="6371.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="2907.5" dy="0.0">I. Дебют, респауны, повторы и</tspan><tspan x="2907.5" dy="39.9">тактический прогноз</tspan></text>
+<circle cx="2907.5" cy="6481.9" r="10" fill="#F7C65B"/>
+<text x="2933.5" y="6491.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F7C65B"><tspan x="2933.5" dy="0.0">I01 PARTIAL</tspan></text>
+<text x="2933.5" y="6525.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">Банк содержит 36 дебютных кандидатов из первых 30 секунд</tspan><tspan x="2933.5" dy="27.6">демок</tspan></text>
+<circle cx="2907.5" cy="6575.9" r="10" fill="#D0D6E2"/>
+<text x="2933.5" y="6585.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2933.5" dy="0.0">I02 SPEC</tspan></text>
+<text x="2933.5" y="6619.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">Дебют — стартовый spawn, первая пушка и первые 2–3 предмета</tspan></text>
+<circle cx="2907.5" cy="6641.9" r="10" fill="#D0D6E2"/>
+<text x="2933.5" y="6651.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2933.5" dy="0.0">I03 SPEC</tspan></text>
+<text x="2933.5" y="6685.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">Аккуратное начало с прежним общим акцентом на Mega</tspan></text>
+<circle cx="2907.5" cy="6707.9" r="10" fill="#59D98E"/>
+<text x="2933.5" y="6717.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="2933.5" dy="0.0">I04 LIVE</tspan></text>
+<text x="2933.5" y="6751.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">После первого цикла введён обязательный выход к первому</tspan><tspan x="2933.5" dy="27.6">красному второго цикла</tspan></text>
+<circle cx="2907.5" cy="6801.9" r="10" fill="#59D98E"/>
+<text x="2933.5" y="6811.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="2933.5" dy="0.0">I05 LIVE</tspan></text>
+<text x="2933.5" y="6845.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">Для выхода на красный диагностируются `fight` при достаточном</tspan><tspan x="2933.5" dy="27.6">стеке/двух Trinity и `penalty` при слабом наборе</tspan></text>
+<circle cx="2907.5" cy="6895.9" r="10" fill="#D0D6E2"/>
+<text x="2933.5" y="6905.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2933.5" dy="0.0">I06 SPEC</tspan></text>
+<text x="2933.5" y="6939.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">Режим penalty означает безопасный штраф/оспаривание с</tspan><tspan x="2933.5" dy="27.6">выходом, а не обязательную прямую драку</tspan></text>
+<circle cx="2907.5" cy="6989.9" r="10" fill="#D0D6E2"/>
+<text x="2933.5" y="6999.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2933.5" dy="0.0">I07 SPEC</tspan></text>
+<text x="2933.5" y="7033.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">После красного следующим ключевым окном обычно является Mega</tspan><tspan x="2933.5" dy="27.6">по её фактическому таймеру.</tspan></text>
+<circle cx="2907.5" cy="7083.9" r="10" fill="#D0D6E2"/>
+<text x="2933.5" y="7093.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2933.5" dy="0.0">I08 SPEC</tspan></text>
+<text x="2933.5" y="7127.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">Повторяемые циклы игрока распознаются по нескольким обходам</tspan></text>
+<circle cx="2907.5" cy="7149.9" r="10" fill="#D0D6E2"/>
+<text x="2933.5" y="7159.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2933.5" dy="0.0">I09 SPEC</tspan></text>
+<text x="2933.5" y="7193.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">Наказание повторов должно обучать вариативности и постепенно</tspan><tspan x="2933.5" dy="27.6">меняться после того, как игрок адаптировался.</tspan></text>
+<circle cx="2907.5" cy="7243.9" r="10" fill="#B494F5"/>
+<text x="2933.5" y="7253.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#B494F5"><tspan x="2933.5" dy="0.0">I10 DATA</tspan></text>
+<text x="2933.5" y="7287.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">Spawntrap-кандидаты искать по минимальному времени от respawn</tspan><tspan x="2933.5" dy="27.6">до damage/frag, позиции стрелка и направлению spam.</tspan></text>
+<circle cx="2907.5" cy="7337.9" r="10" fill="#D0D6E2"/>
+<text x="2933.5" y="7347.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2933.5" dy="0.0">I11 SPEC</tspan></text>
+<text x="2933.5" y="7381.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2933.5" dy="0.0">Знание spawn algorithm и вероятностей отделять от незаконного</tspan><tspan x="2933.5" dy="27.6">знания будущего конкретного spawn.</tspan></text>
+<text x="2933.5" y="7403.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#8CB7FF"><tspan x="2933.5" dy="0.0">+ ещё 4 правил — на листе раздела</tspan></text>
+<rect x="1786.7" y="5833.6" width="1280" height="1120" rx="44" fill="#202632" stroke="#E58DE3" stroke-width="6"/>
+<rect x="1786.7" y="5833.6" width="1280" height="126" rx="44" fill="#E58DE3" opacity="0.94"/>
+<text x="1828.7" y="5891.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="1828.7" dy="0.0">J. Стили, адаптация и «игра до</tspan><tspan x="1828.7" dy="39.9">фрага»</tspan></text>
+<circle cx="1828.7" cy="6001.6" r="10" fill="#79B8FF"/>
+<text x="1854.7" y="6011.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#79B8FF"><tspan x="1854.7" dy="0.0">J01 LOCAL</tspan></text>
+<text x="1854.7" y="6045.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Базовые стили: aggressive, balanced, passive</tspan></text>
+<circle cx="1828.7" cy="6067.6" r="10" fill="#D0D6E2"/>
+<text x="1854.7" y="6077.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1854.7" dy="0.0">J02 SPEC</tspan></text>
+<text x="1854.7" y="6111.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Aggressive: после нанесённых ~80–90 damage при выгоде резко</tspan><tspan x="1854.7" dy="27.6">пушит</tspan></text>
+<circle cx="1828.7" cy="6161.6" r="10" fill="#D0D6E2"/>
+<text x="1854.7" y="6171.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1854.7" dy="0.0">J03 SPEC</tspan></text>
+<text x="1854.7" y="6205.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Balanced: если получил ~70–100 damage, выходит из боя, больше</tspan><tspan x="1854.7" dy="27.6">собирает YA и восстанавливается.</tspan></text>
+<circle cx="1828.7" cy="6255.6" r="10" fill="#D0D6E2"/>
+<text x="1854.7" y="6265.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1854.7" dy="0.0">J04 SPEC</tspan></text>
+<text x="1854.7" y="6299.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Passive: после одного rail-hit может уйти, собрать 1–2</tspan><tspan x="1854.7" dy="27.6">YA/аптечки, снизить прыжки, RJ и темп.</tspan></text>
+<circle cx="1828.7" cy="6349.6" r="10" fill="#D0D6E2"/>
+<text x="1854.7" y="6359.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1854.7" dy="0.0">J05 SPEC</tspan></text>
+<text x="1854.7" y="6393.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Оценивать силу не по одному счёту: damage trade при</tspan><tspan x="1854.7" dy="27.6">сопоставимом стеке, ресурсы, оружие, позиции, погоня/отход…</tspan></text>
+<circle cx="1828.7" cy="6443.6" r="10" fill="#D0D6E2"/>
+<text x="1854.7" y="6453.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1854.7" dy="0.0">J06 SPEC</tspan></text>
+<text x="1854.7" y="6487.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Отдельно оценивать aggression, caution, chase и risk</tspan></text>
+<circle cx="1828.7" cy="6509.6" r="10" fill="#D0D6E2"/>
+<text x="1854.7" y="6519.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1854.7" dy="0.0">J07 SPEC</tspan></text>
+<text x="1854.7" y="6553.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Против слабого: ограниченные повторяемые маршруты/позиции,</tspan><tspan x="1854.7" dy="27.6">пропуски предметов/пушки, хуже слушает этаж, чаще выдаёт…</tspan></text>
+<circle cx="1828.7" cy="6603.6" r="10" fill="#D0D6E2"/>
+<text x="1854.7" y="6613.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1854.7" dy="0.0">J08 SPEC</tspan></text>
+<text x="1854.7" y="6647.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Ошибка слабого профиля остаётся читаемой несколько эпизодов,</tspan><tspan x="1854.7" dy="27.6">затем меняется после наказания.</tspan></text>
+<circle cx="1828.7" cy="6697.6" r="10" fill="#D0D6E2"/>
+<text x="1854.7" y="6707.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1854.7" dy="0.0">J09 SPEC</tspan></text>
+<text x="1854.7" y="6741.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Иногда сначала продавить слабого, затем слегка снизить темп</tspan></text>
+<circle cx="1828.7" cy="6763.6" r="10" fill="#D0D6E2"/>
+<text x="1854.7" y="6773.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1854.7" dy="0.0">J10 SPEC</tspan></text>
+<text x="1854.7" y="6807.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Против сильного: лучшие доступные тайминги, восстановление</tspan><tspan x="1854.7" dy="27.6">стека/оружия, перекрытия, короткий spawntrap, выгодное…</tspan></text>
+<circle cx="1828.7" cy="6857.6" r="10" fill="#D0D6E2"/>
+<text x="1854.7" y="6867.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1854.7" dy="0.0">J11 SPEC</tspan></text>
+<text x="1854.7" y="6901.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1854.7" dy="0.0">Сильно наглого соперника встречать после подготовки около</tspan><tspan x="1854.7" dy="27.6">100/100 и выгодных LG/RL/RG</tspan></text>
+<text x="1854.7" y="6923.6" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#E58DE3"><tspan x="1854.7" dy="0.0">+ ещё 3 правил — на листе раздела</tspan></text>
+<rect x="996.5" y="4956.0" width="1280" height="1120" rx="44" fill="#202632" stroke="#A9E26F" stroke-width="6"/>
+<rect x="996.5" y="4956.0" width="1280" height="126" rx="44" fill="#A9E26F" opacity="0.94"/>
+<text x="1038.5" y="5014.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="1038.5" dy="0.0">K. Характер, давление,</tspan><tspan x="1038.5" dy="39.9">расслабление, тильт и forfeit</tspan></text>
+<circle cx="1038.5" cy="5124.0" r="10" fill="#79B8FF"/>
+<text x="1064.5" y="5134.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#79B8FF"><tspan x="1064.5" dy="0.0">K01 LOCAL</tspan></text>
+<text x="1064.5" y="5168.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">Есть отдельные состояния relaxed, lead tilt,</tspan><tspan x="1064.5" dy="27.6">surrender/forfeit и pressure_escape</tspan></text>
+<circle cx="1038.5" cy="5218.0" r="10" fill="#D0D6E2"/>
+<text x="1064.5" y="5228.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1064.5" dy="0.0">K02 SPEC</tspan></text>
+<text x="1064.5" y="5262.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">При лидерстве вроде 20:0 бот может ослабить контроль, больше</tspan><tspan x="1064.5" dy="27.6">рисковать и дать сопернику реальные шансы на 5–10 фрагов</tspan></text>
+<circle cx="1038.5" cy="5312.0" r="10" fill="#FF6B72"/>
+<text x="1064.5" y="5322.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#FF6B72"><tspan x="1064.5" dy="0.0">K03 CONFLICT</tspan></text>
+<text x="1064.5" y="5356.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">Редкий тильт с потерей лидерства: ранний ориентир 1–2 матча</tspan><tspan x="1064.5" dy="27.6">из 100</tspan></text>
+<circle cx="1038.5" cy="5406.0" r="10" fill="#D0D6E2"/>
+<text x="1064.5" y="5416.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1064.5" dy="0.0">K04 SPEC</tspan></text>
+<text x="1064.5" y="5450.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">Тильт — состояние матча/эпизода, а не случайный roll каждый</tspan><tspan x="1064.5" dy="27.6">кадр</tspan></text>
+<circle cx="1038.5" cy="5500.0" r="10" fill="#D0D6E2"/>
+<text x="1064.5" y="5510.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1064.5" dy="0.0">K05 SPEC</tspan></text>
+<text x="1064.5" y="5544.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">При доминировании игрока 0:5/0:6/0:10 возможна поведенческая</tspan><tspan x="1064.5" dy="27.6">сдача: со spawn HP и первой пушкой лететь в атаку без…</tspan></text>
+<circle cx="1038.5" cy="5594.0" r="10" fill="#D0D6E2"/>
+<text x="1064.5" y="5604.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1064.5" dy="0.0">K06 SPEC</tspan></text>
+<text x="1064.5" y="5638.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">Случайные 1–2 фрага в forfeit не обязаны вернуть нормальную</tspan><tspan x="1064.5" dy="27.6">игру.</tspan></text>
+<circle cx="1038.5" cy="5688.0" r="10" fill="#D0D6E2"/>
+<text x="1064.5" y="5698.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1064.5" dy="0.0">K07 SPEC</tspan></text>
+<text x="1064.5" y="5732.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">Pressure_escape («Обоссанец») противоположен сдаче: бот хочет</tspan><tspan x="1064.5" dy="27.6">выжить, восстановиться и вернуться.</tspan></text>
+<circle cx="1038.5" cy="5782.0" r="10" fill="#D0D6E2"/>
+<text x="1064.5" y="5792.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1064.5" dy="0.0">K08 SPEC</tspan></text>
+<text x="1064.5" y="5826.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">Pressure_escape: уступает позиции, играет вторым номером,</tspan><tspan x="1064.5" dy="27.6">quiet/walk где безопасно, собирает YA/GA/HP/rail ammo.</tspan></text>
+<circle cx="1038.5" cy="5876.0" r="10" fill="#D0D6E2"/>
+<text x="1064.5" y="5886.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1064.5" dy="0.0">K09 SPEC</tspan></text>
+<text x="1064.5" y="5920.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">MH/RA преимущественно штрафует rail/RL из позиции с выходом</tspan></text>
+<circle cx="1038.5" cy="5942.0" r="10" fill="#D0D6E2"/>
+<text x="1064.5" y="5952.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1064.5" dy="0.0">K10 SPEC</tspan></text>
+<text x="1064.5" y="5986.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">После одного rail меняет позицию независимо от попадания</tspan></text>
+<circle cx="1038.5" cy="6008.0" r="10" fill="#D0D6E2"/>
+<text x="1064.5" y="6018.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1064.5" dy="0.0">K11 SPEC</tspan></text>
+<text x="1064.5" y="6052.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1064.5" dy="0.0">Предварительный выход из pressure_escape: минимум 30 секунд,</tspan><tspan x="1064.5" dy="27.6">затем 15 секунд без давления и восстановление примерно до…</tspan></text>
+<text x="1064.5" y="6046.0" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#A9E26F"><tspan x="1064.5" dy="0.0">+ ещё 3 правил — на листе раздела</tspan></text>
+<rect x="631.6" y="3832.9" width="1280" height="1120" rx="44" fill="#202632" stroke="#FF7F73" stroke-width="6"/>
+<rect x="631.6" y="3832.9" width="1280" height="126" rx="44" fill="#FF7F73" opacity="0.94"/>
+<text x="673.6" y="3890.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="673.6" dy="0.0">L. Чат, спортивность и ответные</tspan><tspan x="673.6" dy="39.9">реакции</tspan></text>
+<circle cx="673.6" cy="4000.9" r="10" fill="#59D98E"/>
+<text x="699.6" y="4010.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="699.6" dy="0.0">L01 LIVE</tspan></text>
+<text x="699.6" y="4044.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">Отдельный Psyz0r minqlx-плагин загружен на тестовый сервер</tspan></text>
+<circle cx="673.6" cy="4066.9" r="10" fill="#59D98E"/>
+<text x="699.6" y="4076.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="699.6" dy="0.0">L02 LIVE/PARTIAL</tspan></text>
+<text x="699.6" y="4110.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">GL/HF/GG/WP, старт/финиш, rail/rocket/gauntlet-kill,</tspan><tspan x="699.6" dy="27.6">ограниченная грубость и редкие реплики подключены</tspan></text>
+<circle cx="673.6" cy="4160.9" r="10" fill="#D0D6E2"/>
+<text x="699.6" y="4170.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="699.6" dy="0.0">L03 SPEC</tspan></text>
+<text x="699.6" y="4204.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">Спортивные фразы распознаются после удаления цветов/регистра</tspan><tspan x="699.6" dy="27.6">и по словам</tspan></text>
+<circle cx="673.6" cy="4254.9" r="10" fill="#D0D6E2"/>
+<text x="699.6" y="4264.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="699.6" dy="0.0">L04 SPEC</tspan></text>
+<text x="699.6" y="4298.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">Не отвечать самому себе/другому боту, дедупликация и cooldown</tspan><tspan x="699.6" dy="27.6">исключают петли.</tspan></text>
+<circle cx="673.6" cy="4348.9" r="10" fill="#D0D6E2"/>
+<text x="699.6" y="4358.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="699.6" dy="0.0">L05 SPEC</tspan></text>
+<text x="699.6" y="4392.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">Тематические rail/Mega/RA/rocket фразы редки</tspan></text>
+<circle cx="673.6" cy="4414.9" r="10" fill="#D0D6E2"/>
+<text x="699.6" y="4424.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="699.6" dy="0.0">L06 SPEC</tspan></text>
+<text x="699.6" y="4458.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">На грубость человека бот может ответить грубо, но ограниченно</tspan><tspan x="699.6" dy="27.6">и без постоянного потока.</tspan></text>
+<circle cx="673.6" cy="4508.9" r="10" fill="#79B8FF"/>
+<text x="699.6" y="4518.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#79B8FF"><tspan x="699.6" dy="0.0">L07 LOCAL/PARTIAL</tspan></text>
+<text x="699.6" y="4552.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">Gauntlet: выбор оружия сам по себе не событие</tspan></text>
+<circle cx="673.6" cy="4574.9" r="10" fill="#D0D6E2"/>
+<text x="699.6" y="4584.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="699.6" dy="0.0">L08 SPEC</tspan></text>
+<text x="699.6" y="4618.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">После gauntlet damage возможна реплика «убери ножик»</tspan></text>
+<circle cx="673.6" cy="4640.9" r="10" fill="#FF6B72"/>
+<text x="699.6" y="4650.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#FF6B72"><tspan x="699.6" dy="0.0">L09 CONFLICT</tspan></text>
+<text x="699.6" y="4684.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">Основной предложенный порог мести — 50 damage</tspan></text>
+<circle cx="673.6" cy="4706.9" r="10" fill="#D0D6E2"/>
+<text x="699.6" y="4716.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="699.6" dy="0.0">L10 SPEC</tspan></text>
+<text x="699.6" y="4750.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">При оценке low HP и безопасном близком контакте попытка</tspan><tspan x="699.6" dy="27.6">gauntlet обязательнее, но не гарантирует попадание</tspan></text>
+<circle cx="673.6" cy="4800.9" r="10" fill="#D0D6E2"/>
+<text x="699.6" y="4810.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="699.6" dy="0.0">L11 SPEC</tspan></text>
+<text x="699.6" y="4844.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">Изначально трупы не добивает. Первые два намеренных эпизода</tspan><tspan x="699.6" dy="27.6">повреждения его трупа игнорирует</tspan></text>
+<circle cx="673.6" cy="4894.9" r="10" fill="#D0D6E2"/>
+<text x="699.6" y="4904.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="699.6" dy="0.0">L12 SPEC</tspan></text>
+<text x="699.6" y="4938.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="699.6" dy="0.0">Killing shot, auto-gib и случайный damage не считать corpse</tspan><tspan x="699.6" dy="27.6">episode</tspan></text>
+<text x="699.6" y="4922.9" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#FF7F73"><tspan x="699.6" dy="0.0">+ ещё 5 правил — на листе раздела</tspan></text>
+<rect x="755.0" y="2658.4" width="1280" height="1120" rx="44" fill="#202632" stroke="#6FD3A4" stroke-width="6"/>
+<rect x="755.0" y="2658.4" width="1280" height="126" rx="44" fill="#6FD3A4" opacity="0.94"/>
+<text x="797.0" y="2716.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="797.0" dy="0.0">M. Пять уровней сложности</tspan></text>
+<circle cx="797.0" cy="2826.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="2836.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M01 SPEC</tspan></text>
+<text x="823.0" y="2870.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">Пять классических уровней</tspan></text>
+<circle cx="797.0" cy="2892.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="2902.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M02 SPEC</tspan></text>
+<text x="823.0" y="2936.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">Уровень задаёт границы точности всех пушек, реакции,</tspan><tspan x="823.0" dy="27.6">movement, ошибок, разнообразия маршрутов/решений, контроля…</tspan></text>
+<circle cx="797.0" cy="2986.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="2996.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M03 SPEC</tspan></text>
+<text x="823.0" y="3030.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">Level 1 / I Can Win: почти нет распрыжки, нет сложных</tspan><tspan x="823.0" dy="27.6">tricks/spawntrap, низкая точность/реакция</tspan></text>
+<circle cx="797.0" cy="3080.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="3090.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M04 SPEC</tspan></text>
+<text x="823.0" y="3124.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">Level 2 / Bring It On: базовый strafe с потерями скорости,</tspan><tspan x="823.0" dy="27.6">простые освоенные RJ и switches, шире маршруты, без…</tspan></text>
+<circle cx="797.0" cy="3174.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="3184.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M05 SPEC</tspan></text>
+<text x="823.0" y="3218.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">Level 3 / Hurt Me Plenty: полупрофи</tspan></text>
+<circle cx="797.0" cy="3240.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="3250.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M06 SPEC</tspan></text>
+<text x="823.0" y="3284.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">Level 4 / Hardcore: быстрый movement, больше tricks, лучше</tspan><tspan x="823.0" dy="27.6">tracking/lead, вариативные решения, чтение циклов.</tspan></text>
+<circle cx="797.0" cy="3334.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="3344.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M07 SPEC</tspan></text>
+<text x="823.0" y="3378.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">Level 5 / Nightmare: максимум согласованного человеческого</tspan><tspan x="823.0" dy="27.6">исполнения, контроля и прогноза</tspan></text>
+<circle cx="797.0" cy="3428.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="3438.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M08 SPEC</tspan></text>
+<text x="823.0" y="3472.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">Адаптация слабый/сильный/наглый/осторожный присутствует на</tspan><tspan x="823.0" dy="27.6">каждом уровне только внутри его разрешённых навыков.</tspan></text>
+<circle cx="797.0" cy="3522.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="3532.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M09 SPEC</tspan></text>
+<text x="823.0" y="3566.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">Частота и длина spawntrap задаются отдельно от общей</tspan><tspan x="823.0" dy="27.6">точности.</tspan></text>
+<circle cx="797.0" cy="3616.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="3626.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M10 SPEC</tspan></text>
+<text x="823.0" y="3660.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">Tilt/forfeit/relaxed не используются как надёжная оценка силы</tspan><tspan x="823.0" dy="27.6">игрока для следующего уровня.</tspan></text>
+<circle cx="797.0" cy="3710.4" r="10" fill="#D0D6E2"/>
+<text x="823.0" y="3720.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="823.0" dy="0.0">M11 SPEC</tspan></text>
+<text x="823.0" y="3754.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="823.0" dy="0.0">После реванша уровень меняется максимум на ±1</tspan></text>
+<text x="823.0" y="3748.4" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#6FD3A4"><tspan x="823.0" dy="0.0">+ ещё 1 правил — на листе раздела</tspan></text>
+<rect x="1345.5" y="1635.7" width="1280" height="1120" rx="44" fill="#202632" stroke="#D1A2FF" stroke-width="6"/>
+<rect x="1345.5" y="1635.7" width="1280" height="126" rx="44" fill="#D1A2FF" opacity="0.94"/>
+<text x="1387.5" y="1693.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="1387.5" dy="0.0">N. Демки, обучение, источники и</tspan><tspan x="1387.5" dy="39.9">повторное использование кода</tspan></text>
+<circle cx="1387.5" cy="1803.7" r="10" fill="#B494F5"/>
+<text x="1413.5" y="1813.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#B494F5"><tspan x="1413.5" dy="0.0">N01 DATA</tspan></text>
+<text x="1413.5" y="1847.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">Исходный ориентир: 100 демок PsyRoZa и 20 владельца</tspan></text>
+<circle cx="1387.5" cy="1869.7" r="10" fill="#B494F5"/>
+<text x="1413.5" y="1879.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#B494F5"><tspan x="1413.5" dy="0.0">N02 DATA</tspan></text>
+<text x="1413.5" y="1913.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">На Blood Run собран большой корпус профессиональных и</tspan><tspan x="1413.5" dy="27.6">пользовательских демок</tspan></text>
+<circle cx="1387.5" cy="1963.7" r="10" fill="#D0D6E2"/>
+<text x="1413.5" y="1973.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1413.5" dy="0.0">N03 SPEC</tspan></text>
+<text x="1413.5" y="2007.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">Сольные демки: маршруты, цикл, оружие, позиции,</tspan><tspan x="1413.5" dy="27.6">listen/hide/escape, RJ/tricks. Боевые: стрейфы, дистанция…</tspan></text>
+<circle cx="1387.5" cy="2057.7" r="10" fill="#F7C65B"/>
+<text x="1413.5" y="2067.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F7C65B"><tspan x="1413.5" dy="0.0">N04 PARTIAL</tspan></text>
+<text x="1413.5" y="2101.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">Метки `#bot cycle`, `rocketjump`, `listen`, `hide`, `escape`,</tspan><tspan x="1413.5" dy="27.6">`punish`, `spawntrap` привязываются ко времени и позиции</tspan></text>
+<circle cx="1387.5" cy="2151.7" r="10" fill="#D0D6E2"/>
+<text x="1413.5" y="2161.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1413.5" dy="0.0">N05 SPEC</tspan></text>
+<text x="1413.5" y="2195.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">Сырые WASD/mouse не объявлять доступными без доказательства</tspan></text>
+<circle cx="1387.5" cy="2217.7" r="10" fill="#D0D6E2"/>
+<text x="1413.5" y="2227.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1413.5" dy="0.0">N06 SPEC</tspan></text>
+<text x="1413.5" y="2261.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">Каждый эпизод хранит</tspan><tspan x="1413.5" dy="27.6">карту/physics/source/time/position/velocity/view/weapon/stack/ammo/events/outcome/confidence.</tspan></text>
+<circle cx="1387.5" cy="2311.7" r="10" fill="#B494F5"/>
+<text x="1413.5" y="2321.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#B494F5"><tspan x="1413.5" dy="0.0">N07 DATA</tspan></text>
+<text x="1413.5" y="2355.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">Изучены штатные Q3/QL bot files, Workshop-наборы, Quake</tspan><tspan x="1413.5" dy="27.6">III/BrainWorks/minqlx/Wolfcam/UDT</tspan></text>
+<circle cx="1387.5" cy="2405.7" r="10" fill="#D0D6E2"/>
+<text x="1413.5" y="2415.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1413.5" dy="0.0">N08 SPEC</tspan></text>
+<text x="1413.5" y="2449.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">Не «декомпилировать и скопировать всё»: закрытый QL код не</tspan><tspan x="1413.5" dy="27.6">выдавать за свой исходник</tspan></text>
+<circle cx="1387.5" cy="2499.7" r="10" fill="#B494F5"/>
+<text x="1413.5" y="2509.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#B494F5"><tspan x="1413.5" dy="0.0">N09 DATA</tspan></text>
+<text x="1413.5" y="2543.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">3–5 текстовых movement-гайдов используются как источник</tspan><tspan x="1413.5" dy="27.6">гипотез</tspan></text>
+<circle cx="1387.5" cy="2593.7" r="10" fill="#D0D6E2"/>
+<text x="1413.5" y="2603.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1413.5" dy="0.0">N10 SPEC</tspan></text>
+<text x="1413.5" y="2637.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">Для каждого правила: условие → решение → исключения → способ</tspan><tspan x="1413.5" dy="27.6">проверки → источник.</tspan></text>
+<circle cx="1387.5" cy="2687.7" r="10" fill="#D0D6E2"/>
+<text x="1413.5" y="2697.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="1413.5" dy="0.0">N11 SPEC</tspan></text>
+<text x="1413.5" y="2731.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="1413.5" dy="0.0">Демки являются основной базой маршрутов и решений, но</tspan><tspan x="1413.5" dy="27.6">live-движок/AAS подтверждает достижимость.</tspan></text>
+<text x="1413.5" y="2725.7" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#D1A2FF"><tspan x="1413.5" dy="0.0">+ ещё 1 правил — на листе раздела</tspan></text>
+<rect x="2300.9" y="941.5" width="1280" height="1120" rx="44" fill="#202632" stroke="#F1BE78" stroke-width="6"/>
+<rect x="2300.9" y="941.5" width="1280" height="126" rx="44" fill="#F1BE78" opacity="0.94"/>
+<text x="2342.9" y="999.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="800" fill="#141821"><tspan x="2342.9" dy="0.0">O. Архитектура, журналы,</tspan><tspan x="2342.9" dy="39.9">проверки и фактическая</tspan></text>
+<circle cx="2342.9" cy="1109.5" r="10" fill="#59D98E"/>
+<text x="2368.9" y="1119.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="2368.9" dy="0.0">O01 LIVE</tspan></text>
+<text x="2368.9" y="1153.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">C++ overlay подключён только к изолированному 27961 и Blood</tspan><tspan x="2368.9" dy="27.6">Run</tspan></text>
+<circle cx="2342.9" cy="1203.5" r="10" fill="#59D98E"/>
+<text x="2368.9" y="1213.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="2368.9" dy="0.0">O02 LIVE</tspan></text>
+<text x="2368.9" y="1247.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">Item clocks, target selection, demo routes, AAS fallback,</tspan><tspan x="2368.9" dy="27.6">ограниченный movement, RJ sample 0, combat jump suppression и…</tspan></text>
+<circle cx="2342.9" cy="1297.5" r="10" fill="#F7C65B"/>
+<text x="2368.9" y="1307.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F7C65B"><tspan x="2368.9" dy="0.0">O03 PARTIAL</tspan></text>
+<text x="2368.9" y="1341.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">Opening bank, обязательный второй RA, loadout preparation и</tspan><tspan x="2368.9" dy="27.6">aim humanization подключены, но требуют матчей против…</tspan></text>
+<circle cx="2342.9" cy="1391.5" r="10" fill="#79B8FF"/>
+<text x="2368.9" y="1401.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#79B8FF"><tspan x="2368.9" dy="0.0">O04 LOCAL/PARTIAL</tspan></text>
+<text x="2368.9" y="1435.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">Три стиля, adaptation, pressure_escape, relaxed/tilt/forfeit,</tspan><tspan x="2368.9" dy="27.6">difficulty session, prediction и реакции имеют автономный…</tspan></text>
+<circle cx="2342.9" cy="1485.5" r="10" fill="#D0D6E2"/>
+<text x="2368.9" y="1495.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2368.9" dy="0.0">O05 SPEC</tspan></text>
+<text x="2368.9" y="1529.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">Любая функция получает независимые статусы: описано, данные</tspan><tspan x="2368.9" dy="27.6">есть, код локальный, подключено, подтверждено человеком.</tspan></text>
+<circle cx="2342.9" cy="1579.5" r="10" fill="#D0D6E2"/>
+<text x="2368.9" y="1589.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2368.9" dy="0.0">O06 SPEC</tspan></text>
+<text x="2368.9" y="1623.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">Нельзя считать тест формулы доказательством игрового навыка</tspan></text>
+<circle cx="2342.9" cy="1645.5" r="10" fill="#D0D6E2"/>
+<text x="2368.9" y="1655.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2368.9" dy="0.0">O07 SPEC</tspan></text>
+<text x="2368.9" y="1689.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">Для item/movement/weapon диагностики писать: потребность,</tspan><tspan x="2368.9" dy="27.6">выбранную цель, причину пропуска, путь, фактический pickup…</tspan></text>
+<circle cx="2342.9" cy="1739.5" r="10" fill="#D0D6E2"/>
+<text x="2368.9" y="1749.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2368.9" dy="0.0">O08 SPEC</tspan></text>
+<text x="2368.9" y="1783.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">Каждый модуль включается отдельным cvar/feature flag и</tspan><tspan x="2368.9" dy="27.6">проверяется узким сценарием перед расширением.</tspan></text>
+<circle cx="2342.9" cy="1833.5" r="10" fill="#D0D6E2"/>
+<text x="2368.9" y="1843.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2368.9" dy="0.0">O09 SPEC</tspan></text>
+<text x="2368.9" y="1877.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">Сохранять локально, в GitHub и на сервере только нужный</tspan><tspan x="2368.9" dy="27.6">исходный пакет</tspan></text>
+<circle cx="2342.9" cy="1927.5" r="10" fill="#59D98E"/>
+<text x="2368.9" y="1937.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#59D98E"><tspan x="2368.9" dy="0.0">O10 LIVE</tspan></text>
+<text x="2368.9" y="1971.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">Prealpha 0.7.2: MSVC Debug/Release 14/14, Python 105/105</tspan></text>
+<circle cx="2342.9" cy="1993.5" r="10" fill="#D0D6E2"/>
+<text x="2368.9" y="2003.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#D0D6E2"><tspan x="2368.9" dy="0.0">O11 SPEC</tspan></text>
+<text x="2368.9" y="2037.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#E5E9F0"><tspan x="2368.9" dy="0.0">После каждого теста сохранять demo, комментарий владельца,</tspan><tspan x="2368.9" dy="27.6">серверный log, версию, карту, состав, cvars и результат по…</tspan></text>
+<text x="2368.9" y="2031.5" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F1BE78"><tspan x="2368.9" dy="0.0">+ ещё 1 правил — на листе раздела</tspan></text>
+</svg>
