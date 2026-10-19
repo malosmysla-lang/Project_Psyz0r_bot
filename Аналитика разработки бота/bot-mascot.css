@@ -42,6 +42,11 @@
 button.bot-mascot{padding:0;border:0;background:none;color:var(--cyan);pointer-events:auto;cursor:pointer;appearance:none;overflow:visible}
 button.bot-mascot:disabled{cursor:default;opacity:1}
 button.bot-mascot:focus-visible{outline:2px solid var(--cyan);outline-offset:5px;border-radius:8px}
-button.bot-mascot::after{content:'▶ Прыгнуть';position:absolute;left:0;right:0;bottom:-20px;font:10px/1.4 'Segoe UI',sans-serif;letter-spacing:.3px;color:#92a9b9;opacity:0;transition:opacity .2s}
-button.bot-mascot.is-ready:not(:disabled)::after{opacity:.85}
-button.bot-mascot:hover:not(:disabled)::after{color:#70f1eb}
+/* Без видимых подсказок: действие доступно по клику и клавиатуре. */
+.eye-mark{position:relative}
+.eye-shutter{position:absolute;inset:20%;border-radius:50%;overflow:hidden;pointer-events:none;transform:rotate(-3deg)}
+.eye-shutter i{position:absolute;left:0;right:0;height:51%;background:linear-gradient(110deg,#202838,#71808b 40%,#25313d 65%,#0b1720);box-shadow:inset 0 -1px #42e8dc88}
+.upper-lid{top:0;transform:translateY(-100%);border-bottom:1px solid #a6d8dd}
+.lower-lid{bottom:0;transform:translateY(100%);border-top:1px solid #a6d8dd}
+@media(prefers-reduced-motion:reduce){.eye-shutter{display:none}}
+@media print{.eye-shutter{display:none}}

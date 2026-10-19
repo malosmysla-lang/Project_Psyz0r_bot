@@ -4,7 +4,7 @@
   if(!heading||!target||!document.body?.animate)return;
   heading.classList.add('mascot-heading');
   const bot=document.createElement('button');bot.type='button';bot.className='bot-mascot';bot.disabled=true;
-  bot.setAttribute('aria-label','Прыгнуть и выстрелить ракетой');bot.title='Нажми: прыжок и выстрел';
+  bot.setAttribute('aria-label','Запустить анимацию персонажа');
   // Единая текстовая обёртка сохраняет переносы названия и его вертикальное выравнивание.
   const title=document.createElement('span');title.className='mascot-title';
   while(heading.firstChild)title.append(heading.firstChild);
