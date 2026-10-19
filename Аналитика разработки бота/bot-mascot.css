@@ -105,3 +105,9 @@ button.eye-mark:focus-visible,.brand-home:focus-visible{outline:2px solid var(--
 .connect-copy-control:hover .connect-copy-label,.connect-copy-control:focus-visible .connect-copy-label{opacity:1}
 .connect-copy-control:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
 @media(prefers-reduced-motion:reduce){.connect-copy-label,.server-connect .connect-copy-control code{transition:none}}
+
+/* 0.8.0: тонкие веки перекрывают шов при полном смыкании. */
+.eye-shutter i{height:54%;background:linear-gradient(155deg,#71848d,#30434f 48%,#18252e);box-shadow:inset 0 1px 1px #d5edf044,inset 0 -1px 2px #07131b88}
+.eye-shutter .upper-lid{border-radius:45% 45% 0 0;border-bottom:1px solid #6f8e98}
+.eye-shutter .lower-lid{border-radius:0 0 45% 45%;border-top:1px solid #6f8e98;background:linear-gradient(155deg,#607985,#2a414d 50%,#172731)}
+.eye-shutter i::after{height:9%;opacity:.35}

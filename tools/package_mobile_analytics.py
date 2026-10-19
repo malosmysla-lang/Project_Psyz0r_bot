@@ -7,7 +7,7 @@ def main():
     data=json.loads((SITE/'data.json').read_text(encoding='utf-8'))
     portable=dict(data)
     # Shared UI needs the release, not admin backup paths or raw console output.
-    portable['deployment']={'version':data.get('deployment',{}).get('version','0.7.9')}
+    portable['deployment']={'version':data.get('deployment',{}).get('version','0.8.0')}
     if 'trial079' in portable:
         portable['trial079']={k:v for k,v in portable['trial079'].items() if k not in ('scores','ready_status')}
     html=(SITE/'Pracc_Room_Server_Analytics.html').read_text(encoding='utf-8')
@@ -54,7 +54,7 @@ def main():
     html+='\n<!-- Project license\n'+own_license.replace('--','—')+'\n-->\n'
     share=SITE/'Поделиться';share.mkdir(exist_ok=True)
     target=share/'Pracc_Room_Server_BOT.html';target.write_text(html,encoding='utf-8')
-    instructions='''Pracc Room Server BOT — автономное демо 0.7.9
+    instructions='''Pracc Room Server BOT — автономное демо 0.8.0
 
 Откройте Pracc_Room_Server_BOT.html в браузере Chrome/Firefox на Android
 или в браузере компьютера. Интернет и установка APK не требуются.
@@ -71,14 +71,14 @@ Android-устройство в этом этапе физически не пр
 '''
     (share/'README.txt').write_text(instructions,encoding='utf-8')
     OUT.mkdir(parents=True,exist_ok=True)
-    package=OUT/'Pracc_Room_Server_BOT_0_7_9.zip'
+    package=OUT/'Pracc_Room_Server_BOT_0_8_0.zip'
     with zipfile.ZipFile(package,'w',zipfile.ZIP_DEFLATED) as z:
         z.write(target,target.name);z.writestr('README.txt',instructions)
         z.writestr('analytics.json',json.dumps(portable,ensure_ascii=False,indent=2))
         if license_text:z.writestr('TABLER_LICENSE.txt',license_text)
         z.writestr('PROJECT_LICENSE.txt',own_license)
     with zipfile.ZipFile(package) as z:assert z.testzip() is None
-    receipt=dict(version='0.7.9',html_bytes=target.stat().st_size,html_sha256=hashlib.sha256(target.read_bytes()).hexdigest(),
+    receipt=dict(version='0.8.0',html_bytes=target.stat().st_size,html_sha256=hashlib.sha256(target.read_bytes()).hexdigest(),
         zip_bytes=package.stat().st_size,zip_sha256=hashlib.sha256(package.read_bytes()).hexdigest(),embedded_project_attachments=len(embedded),
         external_assets_required=False,android_device_tested=False)
     (share/'manifest.json').write_text(json.dumps(receipt,indent=2),encoding='utf-8')

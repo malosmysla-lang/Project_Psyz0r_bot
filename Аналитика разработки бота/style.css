@@ -91,4 +91,16 @@ body::before{
 .donut-layout{display:flex;align-items:center;gap:24px;flex-wrap:wrap}.donut{flex:none;width:150px;height:150px;border-radius:50%;position:relative;background:conic-gradient(#42e8dc 0 var(--share),#b18aff var(--share) 100%);box-shadow:0 0 20px #42e8dc14}.donut:after{content:'';position:absolute;inset:22px;border-radius:50%;background:#121827}.donut>span{position:absolute;inset:0;display:grid;place-items:center;z-index:1;font-size:22px;font-weight:700}.donut-legend{display:grid;gap:12px;font-size:13px}.donut-legend i{display:inline-block;width:8px;height:8px;background:#42e8dc;margin-right:9px}.donut-legend span:last-child i{background:#b18aff}.duel-trend{width:100%;height:auto;max-height:240px}.duel-trend polyline{stroke-dasharray:1;animation:trace-draw .8s ease-out}.history-track,.histogram{background-color:#131e2d}.histogram-bin i{background:linear-gradient(#42e8dc,#336b74)}
 @keyframes trace-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
 @media(prefers-reduced-motion:reduce){.duel-trend polyline{animation:none}}
+/* Рост столбцов по входу в экран; hover, клавиатура и касание. */
+.chart-fill{transform:scaleX(0);transform-origin:left;transition:transform .85s cubic-bezier(.2,.7,.2,1),filter .18s}
+.histogram-bin .chart-fill{transform:scaleY(0);transform-origin:bottom}
+.chart-fill.chart-visible{transform:scale(1)}
+[data-chart-tip]{position:relative;outline-offset:3px}
+[data-chart-tip]:hover i,[data-chart-tip]:focus-visible i,[data-chart-tip].chart-touch i{filter:brightness(1.25) hue-rotate(35deg);box-shadow:0 0 12px #b879ff66}
+[data-chart-tip]:focus-visible{outline:1px solid #b879ff}
+[data-chart-tip]::after{content:attr(data-chart-tip);position:absolute;bottom:100%;left:0;z-index:10;display:none;max-width:320px;width:max-content;padding:7px 10px;background:#14162b;border:1px solid #a276da;border-radius:6px;color:#edf2ff;font-size:12px;white-space:normal;pointer-events:none}
+[data-chart-tip]:hover::after,[data-chart-tip]:focus-visible::after,[data-chart-tip].chart-touch::after{display:block}
+.weapon-icon{display:inline-block;width:88px;height:45px;vertical-align:middle;background-image:url('assets/quake-weapons-atlas.png');background-size:200% 400%;background-repeat:no-repeat;margin-right:9px}
+.table tbody tr:hover{background:#a978ff16}.table tbody tr:hover td{color:#e7daff}
+@media(prefers-reduced-motion:reduce){.chart-fill,.histogram-bin .chart-fill{transform:none;transition:none}}
 @media(max-height:850px) and (min-width:851px){.rail{padding-top:20px}.rail-label{margin:12px 0}.rail nav a{padding:6px 7px}.rail footer{font-size:10px}}

@@ -1,4 +1,4 @@
-Pracc Room Server BOT — автономное демо 0.7.9
+Pracc Room Server BOT — автономное демо 0.8.0
 
 Откройте Pracc_Room_Server_BOT.html в браузере Chrome/Firefox на Android
 или в браузере компьютера. Интернет и установка APK не требуются.

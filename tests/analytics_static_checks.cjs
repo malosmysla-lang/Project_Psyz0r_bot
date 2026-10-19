@@ -12,7 +12,7 @@ vm.runInContext(fs.readFileSync(path.join(root,'mindmap.js'),'utf8'),context);
 vm.runInContext(fs.readFileSync(path.join(root,'duels.js'),'utf8'),context);
 const data=context.window.PSYZ_ANALYTICS;
 if(data.duelLedger){
- assert.equal(data.duelLedger.matches.filter(r=>r.actor==='Psyz0r').length,7);
+ assert(data.duelLedger.matches.filter(r=>r.actor==='Psyz0r').length>=7,'published ledger preserves historical matches and accepts new completed matches');
  assert(nodes['#duelRows'].innerHTML.includes('4:9'));
  assert.equal(context.window.PsyzDuelModel.comparable(context.window.PsyzDuelModel.select('Psyz0r','')).automatic_learning,false);
 }

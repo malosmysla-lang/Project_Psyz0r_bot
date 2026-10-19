@@ -93,6 +93,14 @@ def main():
     if (ROOT/'docs/training/MATCH_LEDGER.json').exists():
         data['duelLedger']=load('docs/training/MATCH_LEDGER.json')
         data['ledgerUrl']='https://raw.githubusercontent.com/malosmysla-lang/Project_Psyz0r_bot/main/docs/training/MATCH_LEDGER.json'
+    if (ROOT/'docs/training/PREALPHA_080_DEPLOYMENT.json').exists():
+        data['release']='Пре-альфа 0.8.0 / test 27961'
+        data['deployment']=load('docs/training/PREALPHA_080_DEPLOYMENT.json')
+        data['trial080']=load('docs/training/PREALPHA_080_TRIAL.json')
+        data['metrics'][-1]={'label':'ПРОВЕРКИ 0.8.0','value':'17 + 143','note':'CTest + Python; отдельно 5 Linux-групп'}
+        data['tests'][1]['value']='143 / 143'
+        data['versionHistory']=data['versionHistory'][-3:]+[{'version':'0.8.0','stage':'пре-альфа','rules':registry['rule_count'],'demos':700,'cpp':17,'note':'Наблюдатель прямого LG/RG-урона и combo-политика подключены. В коротком smoke переключений не было; игровая эффективность не доказана.'}]
+        data['tests'].append({'label':'LIVE / 0.8.0','value':'0 combo switches','note':'Ограниченный smoke без fatal; один combat brake. Это не полный матч и не доказательство силы.'})
     (OUT/'data.js').write_text('window.PSYZ_ANALYTICS = '+json.dumps(data,ensure_ascii=False)+';\n',encoding='utf-8')
     (OUT/'data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
     print('Dashboard:',registry['rule_count'],'rules;',len(modules),'modules; sources linked')

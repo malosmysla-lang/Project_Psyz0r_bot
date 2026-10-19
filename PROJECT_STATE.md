@@ -434,3 +434,6 @@ Read-only ZMQ-сборщик установлен отдельным user-unit �
 ## 2026-10-20 — первая боевая итерация 0.8.0
 Разделены бот/сайт. Тренировочный конфиг основан на публичных настройках основного, изоляция сохранена; ProQ/Bot синие, room/Server белые. Psyz_presence возвращает одного Psyz0r на каждой загрузке ZTN. Native0.8.0 подключает подтверждённые LG/RG попадания к combo-policy, ограничивает невыгодный forward и разрешает близкую нужную пушку при восстановлении. Скрытый точный стек из выбора целей убран; combo использует оценку по своему урону. Skill/aim/profile не повышались. Свежие демки4:20 и0:12 сохранены; второй матч — намеренная отдача ресурсов. Из200 файлов1514 окон и808 многопушечных кандидатов, не доказанных цепочек урона. Windows17/17, Linux5групп, Python143/143. 90с smoke: 1brake,0combo-switch, fatalfalse. Комбо загружено, но успешное выполнение ещё не подтверждено. Подробности docs/PREALPHA_0_8_0_RU.md и полное ТЗ docs/OWNER_TASK_20261020_RU.md. Сайт — следующий независимый этап, без перезапуска игровой службы во время тестов.
 
+
+## 2026-10-20 checkpoint
+Live test remains 0.8.0; 0.8.1 compiled but NOT deployed while human testing. Known 0.8.0 map-reload hook exhaustion; pending fix and real map-transition verification documented in docs/PREALPHA_0_8_1_PENDING_RU.md. Website 0.8.0 published on VPS and Sites v14. Primary PID 429089 unchanged.

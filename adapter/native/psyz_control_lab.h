@@ -68,14 +68,13 @@ static void Psyz_Think(gentity_t* ent) {
 }
 static void Psyz_Install(void) {
     if (!getenv("PSYZ_CONTROL_LAB")) return;
-#ifdef NOPY
     /* Old VM is unloaded here. Reuse only our successful VM-hook slots,
-       leaving permanent engine hooks untouched. NOPY has no other VM hooks. */
+       leaving permanent engine hooks untouched. Full Python HookVm rewinds
+       its own hooks after installation; our slots must rewind in both builds. */
     if(psyz_vm_hook_count && !seek_hook_slot(-psyz_vm_hook_count)){
         fprintf(stderr,"PSYZ_CONTROL refused: cannot rewind VM hooks\n");return;
     }
     psyz_vm_hook_count=0;
-#endif
     /* Duel allready reloads qagame. Preserve only observed match phase,
        never pointers, cached goals or the previous opening plan. */
     Psyz_PreAlphaVmReset();

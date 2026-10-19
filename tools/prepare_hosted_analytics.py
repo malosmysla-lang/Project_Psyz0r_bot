@@ -21,10 +21,16 @@ def main():
     html=re.sub(r'data:([\w.+/-]+);base64,([A-Za-z0-9+/=]+)',extract,html)
     for stale in downloads.iterdir():
         if stale.is_file() and stale.name not in assets:stale.unlink()
-    html=html.replace('</header>','<p class="share-downloads"><a class="btn btn-outline-info" href="Pracc_Room_Server_BOT.html" download>Скачать автономный HTML</a> <a class="btn btn-outline-info" href="Pracc_Room_Server_BOT_0_7_9.zip" download>ZIP для пересылки · около 5 МБ</a></p></header>',1)
+    html=html.replace('</header>','<p class="share-downloads"><a class="btn btn-outline-info" href="Pracc_Room_Server_BOT.html" download>Скачать автономный HTML</a> <a class="btn btn-outline-info" href="Pracc_Room_Server_BOT_0_8_0.zip" download>ZIP для пересылки · автономная версия</a></p></header>',1)
     (dist/'index.html').write_text(html,encoding='utf-8')
-    shutil.copy2(portable,dist/portable.name)
-    shutil.copy2(ROOT/'out/share/Pracc_Room_Server_BOT_0_7_9.zip',dist/'Pracc_Room_Server_BOT_0_7_9.zip')
+    # Hosted assets have a 25 MiB limit. The complete HTML remains inside ZIP.
+    if portable.stat().st_size < 25*1024*1024:
+        shutil.copy2(portable,dist/portable.name)
+    else:
+        (dist/portable.name).unlink(missing_ok=True)
+        html=html.replace('href="Pracc_Room_Server_BOT.html" download>Скачать автономный HTML', 'href="Pracc_Room_Server_BOT_0_8_0.zip" download>Автономный HTML в ZIP')
+        (dist/'index.html').write_text(html,encoding='utf-8')
+    shutil.copy2(ROOT/'out/share/Pracc_Room_Server_BOT_0_8_0.zip',dist/'Pracc_Room_Server_BOT_0_8_0.zip')
     (HOST/'README.md').write_text('Pracc Room Server BOT. Static analytics demo, no game-server control, credentials or database. Source generated from the local Project_Psyz0r_bot evidence.\n',encoding='utf-8')
     (HOST/'.gitignore').write_text('.sites-runtime/\n*.tar.gz\n',encoding='utf-8')
     assert not re.search(r'<script\b[^>]*src=',html)
