@@ -6,6 +6,15 @@ vm.createContext(context);
 vm.runInContext(fs.readFileSync(path.join(root,'data.js'),'utf8'),context);
 vm.runInContext(fs.readFileSync(path.join(root,'app.js'),'utf8'),context);
 const data=context.window.PSYZ_ANALYTICS;
+// Проверяем настоящие HTML-цели: mock DOM не должен скрывать опечатку в id.
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+for(const selector of Object.keys(nodes))if(/^#[\w-]+$/.test(selector))assert(html.includes(`id="${selector.slice(1)}"`),selector);
+if(data.tactical){
+ assert.equal(data.tactical.parsed,500);
+ assert(nodes['#comboCharts'].innerHTML.includes(String(data.tactical.multi_weapon_before_kill)));
+ assert(nodes['#anchorRows'].innerHTML.includes(String(data.tactical.aim_anchors[0].yaw_deg)));
+ assert(nodes['#cycleCharts'].innerHTML.includes('red'));
+}
 for(const b of data.registry.branches)for(const r of b.items)assert(nodes['#branches'].innerHTML.includes(`<code>${r.id}</code>`),r.id);
 assert(nodes['#ruleCount'].textContent.includes(String(data.registry.rule_count)));
 vm.runInContext("$('#search').value='A01';renderRules()",context);

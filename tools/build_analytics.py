@@ -4,8 +4,9 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'Аналитика разработки бота'
 def load(name):return json.loads((ROOT/name).read_text(encoding='utf-8-sig'))
 def main():
-    registry=load('docs/mindmap_v6/logic_registry_v6.json')
-    old=load('docs/mindmap_v5/logic_registry_v5.json')
+    current=7 if (ROOT/'docs/mindmap_v7/logic_registry_v7.json').exists() else 6
+    registry=load(f'docs/mindmap_v{current}/logic_registry_v{current}.json')
+    old=load(f'docs/mindmap_v{current-1}/logic_registry_v{current-1}.json')
     assert {x['id'] for b in old['branches'] for x in b['items']}<={x['id'] for b in registry['branches'] for x in b['items']}
     corpus=load('docs/training/ZTN_TOP500_MANIFEST_20261019.json');players=collections.Counter()
     for r in corpus['records']:
@@ -25,13 +26,16 @@ def main():
       ('Комбо и добивание','LOCAL','PARTIAL','Базовые правила оружия есть. 65–70% подходящих комбо и месть перчаткой в игре не подтверждены.','docs/OWNER_REQUIREMENTS_20261019_RU.md'),
       ('Чат и реакция на перчатку','LOCAL','PARTIAL','Приветствия, темы и нормализация пунктуации добавлены. Native damage/corpse sensors в старом minqlx отсутствуют.','server/minqlx-plugins/psyz_chat.py'),
       ('Forfeit / характер','LOCAL','PARTIAL','Подключена опция: один 15% выбор на матч, после 120с, разрыв ≥18. Guard 27961/один человек/подтверждённый бот/autofill=0. Частота в серии живых дуэлей не проверена.','server/minqlx-plugins/psyz_chat.py'),
-      ('Локальная аналитика','LOCAL','SPEC','252 правила, фильтры, графики и источники. HTML работает без сервера; визуальная проверка браузером ограничена недоступным UI-инструментом.','Аналитика разработки бота/README.md')]
+      ('Локальная аналитика','LOCAL','SPEC','Полный реестр, фильтры, графики и источники. HTML работает без сервера; визуальная проверка браузером ограничена недоступным UI-инструментом.','Аналитика разработки бота/README.md'),
+      ('Добивание / combo policy 0.7.7','LOCAL','SPEC','Новый контракт видимости, стека, давности hit, патронов и безопасного melee. Не подключён к текущему usercmd.','adapter/native/psyz_combo_policy.h'),
+      ('Ранний приход / arrival policy 0.7.7','LOCAL','SPEC','Расписание по проверенному p90 пути; HOLD требует реального объёма подбора. Демо-кандидаты ETA ещё требуют AAS/physics проверки.','adapter/native/psyz_item_arrival.h')]
     smoke=load('docs/training/PREALPHA_076_SMOKE.json') if (ROOT/'docs/training/PREALPHA_076_SMOKE.json').exists() else None
     owner=load('docs/training/OWNER_MATCHES_076.json')
     restored=load('демки для обучения/RESTORED_DEMOS_20261019/manifest.json')['unique_demos']
     fresh_strafe=load('docs/training/STRAFE_TOP500_076.json')
-    data={'release':'0.7.6 / тестовый сервер','generated':'2026-10-19 · локальный снимок','registry':registry,
-      'metrics':[{'label':'ПРАВИЛА ЛОГИКИ','value':registry['rule_count'],'note':'15 веток · прежние ID сохранены'}, {'label':'ВОССТАНОВЛЕННЫЕ ДЕМКИ','value':restored+900,'note':f'{restored} локальных + 900 из архива'}, {'label':'ПОВТОРНЫЙ РАЗБОР ТОПОВ','value':f"{fresh['parsed']} / 500",'note':'Оригиналы сверены по SHA-256'}, {'label':'ЛОКАЛЬНЫЕ ПРОВЕРКИ','value':'15 + 111','note':'C++ группы и Python тесты · не игровой рейтинг'}],
+    tactical=load('docs/training/TACTICAL_PATTERNS_077.json') if (ROOT/'docs/training/TACTICAL_PATTERNS_077.json').exists() else None
+    data={'release':'0.7.6 live / 0.7.7 offline','generated':'2026-10-19 · локальный снимок','registry':registry,'tactical':tactical,
+      'metrics':[{'label':'ПРАВИЛА ЛОГИКИ','value':registry['rule_count'],'note':'15 веток · прежние ID сохранены'}, {'label':'ВОССТАНОВЛЕННЫЕ ДЕМКИ','value':restored+900,'note':f'{restored} локальных + 900 из архива'}, {'label':'ПОВТОРНЫЙ РАЗБОР ТОПОВ','value':f"{fresh['parsed']} / 500",'note':'Оригиналы сверены по SHA-256'}, {'label':'ЛОКАЛЬНЫЕ ПРОВЕРКИ','value':'17 + 118' if tactical else '15 + 111','note':'Следующий офлайн-этап · сервер остаётся 0.7.6'}],
       'modules':[dict(name=a,code=b,game=c,evidence=d,source=e) for a,b,c,d,e in modules],
       'players':sorted(players.items(),key=lambda x:-x[1]),
       'ownerComparison':owner['bloodrun_comparison'],
@@ -39,7 +43,7 @@ def main():
       'jumpStats':[{'label':'Квалифицированные старты (свежие top-500)','value':fresh_strafe['sample_count']},{'label':'Полное окно 4 секунды','value':sum(s['observed_horizon_ms']>=3900 for s in fresh_strafe['samples'])},{'label':'Архивное объединение 925 выгрузок','value':strafe['sample_count']},{'label':'Допуск владельца','value':'±10–15 UPS'},{'label':'Клавиши и мышь','value':'не подтверждены'}],
       'lg':[dict(name=k,frames=v['frames'],yaw=v['yaw_deg_s']['p50'],p95=v['yaw_deg_s']['p95'],strafe=v['lateral_reversal_ms']['p50']) for k,v in lg.items()],
       'modes':[{'tag':'CONTROL / CYCLE','name':'Связать карту в цикл','text':'Сильный стек и подходящие пушки. Основные и вторичные ресурсы в связке; приход заранее, выход после подбора.','status':'PARTIAL'},{'tag':'ANCHOR / ONE MAJOR','name':'Играть от одного основного','text':'Mega или RA как опора. Не превращать выбор в бесконечное ожидание; учитывать второй ресурс и безопасные штрафы.','status':'PARTIAL'},{'tag':'RECOVER / HIDE','name':'Восстановиться от жёлтых','text':'Избегать невыгодной прямой драки. YA, аптечки, ammo и оружие; тихий маршрут, штраф и выход. Полный исполнитель укрытий ещё нужен.','status':'PARTIAL'}],
-      'tests':[{'label':'C++ / DEBUG','value':'15 / 15','note':'Сценарии ядра, watchdog и LG. Не измеряют силу в дуэли.'},{'label':'PYTHON','value':'111 / 111','note':'Парсеры, политики и чат. Native damage hook этим не появляется.'},{'label':'BOT VS XAERO / 0.7.6','value':'65 сек','note':f"{smoke['pickups']} подборов / RA {smoke['red_pickups']} / Mega {smoke['mega_pickups']} / {smoke['opening_pickups']} шага дебюта / {smoke['nav_recoveries']} восстановления. LG не стрелял. Это smoke, не полный матч." if smoke else 'Ожидается проверка'}],
+      'tests':[{'label':'C++ / ЛОКАЛЬНЫЙ ЭТАП','value':'17 / 17' if tactical else '15 / 15','note':'Включает новые combo/arrival политики. Сервер0.7.6 не заменён этим кодом.'},{'label':'PYTHON / ЛОКАЛЬНЫЙ ЭТАП','value':'118 / 118' if tactical else '111 / 111','note':'Парсеры, политики и чат. Native damage hook этим не появляется.'},{'label':'BOT VS XAERO / 0.7.6','value':'65 сек','note':f"{smoke['pickups']} подборов / RA {smoke['red_pickups']} / Mega {smoke['mega_pickups']} / {smoke['opening_pickups']} шага дебюта / {smoke['nav_recoveries']} восстановления. LG не стрелял. Это smoke, не полный матч." if smoke else 'Ожидается проверка'}],
       'questions':registry['questions']+['Прицел в пикселях нельзя перевести в физический угол без FOV/разрешения; настройки задаются в градусах и времени реакции.','Не извлекать «сырые WASD» из одной скорости. Возможны разные управляющие команды при сходной траектории.','Сравнивать победы, подборы, damage и застревания серией полных матчей; один удачный RJ не подтверждает всю навигацию.'],
       'backlog':[{'name':'Подборы и застревания','test':'Полный Duel: близкий доступный ресурс должен быть взят либо записана причина отказа; без AFK под платформой.','status':'LOCAL'},{'name':'Дебют → второй RA → Mega','test':'Проверить каждый старт и порядок 2–3 предметов против Xaero; штраф вместо самоубийственного входа.','status':'PARTIAL'},{'name':'Стартовый разгон по сольной демке и топам','test':'Измерить 2с и 4с, первые 2–3 прыжка, yaw и потери скорости на поворотах.','status':'DATA'},{'name':'LG и dodge по наблюдаемым ракетам','test':'Плавный прицел без тряски, безопасные наземные смены направления; не выдумывать будущий выстрел.','status':'PARTIAL'},{'name':'Комбо / gauntlet revenge / трупы','test':'Сначала подтвердить сенсоры и damage той же цели; затем выполнять безопасное добивание.','status':'SPEC'},{'name':'Реальный forfeit','test':'Один выбор на матч, сильное отставание, корректный выход, отсутствие немедленного возврата через autofill.','status':'SPEC'}]}
     (OUT/'data.js').write_text('window.PSYZ_ANALYTICS = '+json.dumps(data,ensure_ascii=False)+';\n',encoding='utf-8')

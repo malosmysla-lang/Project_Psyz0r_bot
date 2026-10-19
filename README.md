@@ -1,3 +1,5 @@
+> Офлайн-этап 0.7.7 / 19.10.2026: [тактический разбор 500 демок](docs/TACTICAL_RESEARCH_077_RU.md), [Mind Map v7: 262 правила](docs/mindmap_v7/index.html), [локальная аналитика](Аналитика разработки бота/index.html). Новые combo/arrival политики проверены локально; работающий сервер остаётся на 0.7.6.
+
 > Актуализация 19.10.2026: полная логика — docs/MINDMAP_V6_CONTENT_RECONCILIATION_RU.md; результаты и ограничения — docs/PREALPHA_0_7_6_RU.md; локальная панель — Аналитика разработки бота/index.html. Исторические статусы ниже не заменяют проверку новой версии.
 
 > Карта логики обновлена: [v5 — 233 правила](docs/mindmap_v5/index.html), [MD-реестр](docs/MINDMAP_V5_CONTENT_RECONCILIATION_RU.md), [порядок обновления и отложенная WEB-панель](docs/LOGIC_UPDATE_POLICY_RU.md).
