@@ -353,3 +353,8 @@ Origin: https://github.com/malosmysla-lang/Project_Psyz0r_bot.git. Push main у�
 ## 10.10.2026 — расширены основы дуэли
 
 Исследование docs/DUEL_FOUNDATIONS_RESEARCH_RU.md готово. Подтверждены источники классических ориентиров; runtime использует только проверенные правила конкретного режима. Интервалы respawn→damage/death — кандидаты, а не автоматически spawntrap. Позиция атакующего и причинность spawn проверяются отдельно. Следующий блок основ — DuelContext/макрозадачи; в этом этапе код не добавлен.
+
+
+## 2026-10-19 - Analytics site title
+
+Set the dashboard header, sidebar brand, browser title and footer to the owner-approved name: Pracc Room Server. Regenerated the standalone HTML. Validation: node tests/analytics_static_checks.cjs passed. Bot runtime unchanged.

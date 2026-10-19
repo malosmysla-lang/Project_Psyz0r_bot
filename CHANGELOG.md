@@ -346,3 +346,8 @@ SSH через существующий агент работает. Release 7c7
 ## 10.10.2026 — смысл и правила дуэли
 
 Изучены четыре источника без технического разбора мувмента/стрельбы. Добавлена DUEL_FOUNDATIONS_RESEARCH_RU.md: правила,25/35/5, философия владельца отдельно от статистики, стратегические оси и критерии демо-прогонки. Обновлена связь с GAME_BASICS. Код и серверная игра не менялись.
+
+
+## 2026-10-19 - Analytics site title
+
+Set the dashboard header, sidebar brand, browser title and footer to the owner-approved name: Pracc Room Server. Regenerated the standalone HTML. Validation: node tests/analytics_static_checks.cjs passed. Bot runtime unchanged.
