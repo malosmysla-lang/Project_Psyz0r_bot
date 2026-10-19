@@ -1,4 +1,4 @@
-/* Тридцать поз персонажа. Прыжок по кнопке; дым и ракета имеют собственные часы. */
+/* Один приветственный прыжок на каждую загрузку, затем повтор по клику. */
 (() => {
   const heading=document.querySelector('.headline h1'),target=document.querySelector('.headline .release');
   if(!heading||!target||!document.body?.animate)return;
@@ -109,6 +109,9 @@
   }
   reduced.addEventListener('change',()=>{if(reduced.matches){cancelAnimationFrame(raf);cancelJump?.();frame(0);bot.style.transform='';effects.forEach(el=>el.remove());effects.clear();}bot.disabled=busy||reduced.matches;});
   bot.addEventListener('click',play);
-  // Секунда спокойной стойки после загрузки, затем доступен клик, Enter и пробел.
-  const ready=new Image();ready.onload=()=>{frame(0);setTimeout(()=>{bot.disabled=reduced.matches;bot.classList.add('is-ready');},1000);};ready.src='assets/doom-marine-30.png';
+  // Новая загрузка = новая вступительная сцена; никаких флагов в localStorage.
+  let introPending=true,introReady=false;
+  function intro(){if(introPending&&introReady&&!document.hidden&&!reduced.matches){introPending=false;play();}}
+  const ready=new Image();ready.onload=()=>{frame(0);setTimeout(()=>{introReady=true;bot.disabled=reduced.matches;bot.classList.add('is-ready');intro();},1000);};ready.src='assets/doom-marine-30.png';
+  document.addEventListener('visibilitychange',intro);
 })();

@@ -18,11 +18,13 @@ const context=vm.createContext({document,matchMedia:()=>({matches:false,addEvent
 async function advance(until){for(let guard=0;guard<10000;guard++){queue.sort((a,b)=>a.t-b.t);if(!queue.length||queue[0].t>until)break;const task=queue.shift();now=task.t;task.fn();await Promise.resolve();await Promise.resolve();}now=until;await Promise.resolve();}
 (async()=>{
  vm.runInContext(fs.readFileSync(path.join(root,'bot-mascot.js'),'utf8'),context);
- await advance(1200);const bot=nodes.find(n=>n.className==='bot-mascot');assert.equal(bot.disabled,false);
- assert.equal(nodes.filter(n=>n.className==='mascot-rocket').length,0,'No automatic shot');
- bot.listeners.click();await advance(6000);
+ await advance(900);const bot=nodes.find(n=>n.className==='bot-mascot');assert.equal(bot.disabled,true);
+ assert.equal(nodes.filter(n=>n.className==='mascot-rocket').length,0,'Idle before introductory scene');
+ await advance(6000);
  assert.equal(draws.size,30,'All 30 source poses shown');assert.equal(nodes.filter(n=>n.className==='mascot-rocket').length,1);
  assert.equal(nodes.filter(n=>n.className==='explosion-shard').length,36);assert.equal(nodes.filter(n=>n.className==='explosion-lobe').length,8);assert.ok(nodes.filter(n=>n.className==='rocket-smoke-puff').length>70);
  assert.equal(bot.disabled,false);assert.ok(bot.classes.has('has-fired'));assert.ok(!nodes.some(n=>n.className==='mascot-rocket'&&n.isConnected));
- console.log('Scene runtime: click-only, 30 poses, dense smoke, 36 shards, 8 fire lobes, cleanup and replay readiness passed');
+ await advance(12000);assert.equal(nodes.filter(n=>n.className==='mascot-rocket').length,1,'Intro does not repeat on timer');
+ bot.listeners.click();await advance(18000);assert.equal(nodes.filter(n=>n.className==='mascot-rocket').length,2,'Click replays after intro');assert.equal(bot.disabled,false);
+ console.log('Scene runtime: one automatic intro after 1s, no loop, click replay, all 30 poses and FX cleanup passed');
 })().catch(e=>{console.error(e);process.exitCode=1;});
