@@ -1,3 +1,7 @@
+# 2026-10-19 — требования владельца и месть перчаткой
+
+Добавлен docs/OWNER_REQUIREMENTS_20261019_RU.md и ссылки в 15 рабочих MD. Зафиксированы сильный тестовый профиль, накопленный урон 50/100/150 без обязательного убийства, ответ в чат, добивание low HP и комбо против MG-респауна. Прежние ветки сохранены через сводку и ссылки на реестры. Это этап документации: код и сервер не изменялись, игровое исполнение новых правил не заявляется.
+
 # 2026-10-19 - Prealpha 0.7.4 ZTN opening/resource/navigation iteration
 
 Added500 new unique top-player ZTN demos and provenance; recomputed924 opening windows, resource-pattern candidates and129 start-jump observations (72 full4s). Native opening bank now48 scored candidates. Fixed reserved-red cooldown bypass and stale watchdog state, added bounded pixel-stall fallback, corrected rightmove/view-yaw sign and first-jump speed gate. Added preliminary recover/anchor/cycle resource weights with explicit evidence limits. Debug/Release14/14, Python105/105; valid short Xaero5 smoke reached25 pickups, one major, two opening steps and observed1:2 before reset. Global opening optimality, full hide-and-seek logic, perfect navigation and human-reference651UPS remain unconfirmed. Agent100 unavailable from the indexed archive. Test27961 updated; primary27960 preserved. Details: docs/PREALPHA_0_7_4_RU.md.

@@ -1,3 +1,7 @@
+# 2026-10-19 — требования владельца и месть перчаткой
+
+Добавлен docs/OWNER_REQUIREMENTS_20261019_RU.md и ссылки в 15 рабочих MD. Зафиксированы сильный тестовый профиль, накопленный урон 50/100/150 без обязательного убийства, ответ в чат, добивание low HP и комбо против MG-респауна. Прежние ветки сохранены через сводку и ссылки на реестры. Это этап документации: код и сервер не изменялись, игровое исполнение новых правил не заявляется.
+
 # 2026-10-19 - Prealpha 0.7.4 ZTN evidence and bounded resource policy
 
 500 additional unique requested-player ZTN demos downloaded and parsed; 924 total opening windows and 129 qualified start-jump episodes audited. 48 candidate opening orders are in the native bank; static targets are valid, global optimality is unproven. Added red cooldown/reset fixes, a 1.5s stationary-route watchdog, corrected W+strafe yaw geometry, 350-UPS startup gate and initial recover/anchor/cycle resource weights. These policies do not implement complete hiding or eliminate every stall. MSVC Debug/Release14/14 and Python105/105 passed. Final 80s Xaero-5 smoke: 25 actual pickups, one major, two opening steps, one recovery; last non-reset score 1:2. Test27961 only; main PID395898 unchanged. Agent100 quota is unmet: archive has72 matching duel records, only26 new Agent demos were available. See docs/PREALPHA_0_7_4_RU.md and docs/training/PREALPHA_074_DEPLOYMENT.json.
