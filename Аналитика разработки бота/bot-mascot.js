@@ -25,13 +25,13 @@
   let busy=false,raf=0,cancelJump=null;
   const effects=new Set();
   // Частицы остаются в точке следа и рассеиваются: дым не приклеен к ракете.
-  function puff(x,y,index,barrel=false){
+  function puff(x,y,index,heavy=false){
     const el=document.createElement('span');el.className='rocket-smoke-puff';el.setAttribute('aria-hidden','true');
-    const size=barrel?5:7+index%4;
+    const size=heavy?15+index%7:10+index%5;
     el.style.cssText=`left:${x}px;top:${y}px;width:${size}px;height:${size}px`;
     document.body.append(el);effects.add(el);
     const drift=(index%2?1:-1)*(5+index%7);
-    el.animate([{opacity:.34,transform:'translate(-50%,-50%) scale(.4)'},{opacity:.2,offset:.2},{opacity:0,transform:`translate(${drift}px,${-18-index%16}px) scale(3.5)`}],{duration:850+index%5*90,easing:'ease-out'}).finished.finally(()=>{el.remove();effects.delete(el);});
+    el.animate([{opacity:heavy?.6:.5,transform:'translate(-50%,-50%) scale(.4)'},{opacity:heavy?.45:.32,offset:.2},{opacity:0,transform:`translate(${drift*1.8}px,${-25-index%28}px) scale(${heavy?5:4})`}],{duration:(heavy?1550:1100)+index%5*110,easing:'ease-out'}).finished.finally(()=>{el.remove();effects.delete(el);});
   }
   async function shoot(){
     if(reduced.matches)return;
@@ -46,8 +46,10 @@
     const begin=performance.now();let last=-1;
     function trail(now){
       if(!rocket.isConnected)return;
-      const p=Math.min(1,(now-begin)/duration),segment=Math.floor(p*24);
-      if(segment!==last){puff(start.x+dx*p,start.y+dy*p,segment);last=segment;}
+      const p=Math.min(1,(now-begin)/duration),segment=Math.floor(p*48);
+      // Заполняем пропущенные сегменты при редком repaint — след остаётся непрерывным.
+      for(let i=last+1;i<=segment;i++){const q=i/48;puff(start.x+dx*q,start.y+dy*q,i);}
+      last=segment;
       if(p<1)requestAnimationFrame(trail);
     }
     requestAnimationFrame(trail);
@@ -59,14 +61,22 @@
     const ring=document.createElement('span');ring.className='explosion-ring';ring.setAttribute('aria-hidden','true');
     ring.style.cssText=`left:${end.x}px;top:${end.y}px`;document.body.append(ring);effects.add(ring);
     ring.animate([{opacity:.95,transform:'translate(-50%,-50%) scale(.15)'},{opacity:0,transform:'translate(-50%,-50%) scale(2.5)'}],{duration:650,easing:'ease-out'}).finished.finally(()=>{ring.remove();effects.delete(ring);});
-    for(let i=0;i<18;i++){
-      const a=i*Math.PI*2/18,reach=28+(i%5)*12;
+    for(let i=0;i<36;i++){
+      const a=i*2.399963,reach=42+(i%7)*14;
       const shard=document.createElement('span');shard.className='explosion-shard';shard.setAttribute('aria-hidden','true');
-      shard.style.cssText=`left:${end.x}px;top:${end.y}px;width:${2+i%3}px;height:${i%2?2:5}px`;
+      shard.style.cssText=`left:${end.x}px;top:${end.y}px;width:${3+i%5}px;height:${i%2?3:8}px;clip-path:polygon(0 20%,70% 0,100% 65%,30% 100%)`;
       document.body.append(shard);effects.add(shard);
-      shard.animate([{opacity:1,transform:'translate(0,0) rotate(0deg)'},{opacity:.9,offset:.45},{opacity:0,transform:`translate(${Math.cos(a)*reach}px,${Math.sin(a)*reach+22}px) rotate(${i*73}deg)`}],{duration:480+i%5*85,easing:'cubic-bezier(.1,.5,.3,1)'}).finished.finally(()=>{shard.remove();effects.delete(shard);});
+      const x=Math.cos(a)*reach,y=Math.sin(a)*reach;
+      shard.animate([{opacity:1,backgroundColor:'#fff2b5',transform:'translate(0,0) rotate(0deg)'},{opacity:1,backgroundColor:'#ff9d47',offset:.3,transform:`translate(${x*.65}px,${y*.65}px) rotate(${i*31}deg)`},{opacity:.7,backgroundColor:'#616876',offset:.72},{opacity:0,backgroundColor:'#253140',transform:`translate(${x}px,${y+65}px) rotate(${i*113}deg)`}],{duration:750+i%7*95,easing:'ease-out'}).finished.finally(()=>{shard.remove();effects.delete(shard);});
     }
-    for(let i=0;i<18;i++)puff(end.x+(i%6-2.5)*9,end.y+(Math.floor(i/6)-1)*11,i);
+    for(let i=0;i<28;i++)puff(end.x+(i%7-3)*10,end.y+(Math.floor(i/7)-1.5)*12,i,true);
+    // Огненный шар распадается на отдельные всплески, а не просто исчезает кругом.
+    for(let i=0;i<8;i++){
+      const lobe=document.createElement('span');lobe.className='explosion-lobe';lobe.setAttribute('aria-hidden','true');
+      lobe.style.cssText=`left:${end.x}px;top:${end.y}px;width:${24+i%3*10}px;height:${24+i%3*10}px`;
+      document.body.append(lobe);effects.add(lobe);const a=i*Math.PI/4;
+      lobe.animate([{opacity:.9,transform:'translate(-50%,-50%) scale(.2)'},{opacity:.85,offset:.25},{opacity:0,transform:`translate(${Math.cos(a)*48-20}px,${Math.sin(a)*43-20}px) scale(1.6)`}],{duration:520+i%3*100,easing:'ease-out'}).finished.finally(()=>{lobe.remove();effects.delete(lobe);});
+    }
     const glow=target.animate([{borderColor:'#effdff',boxShadow:'0 0 25px #65dcffbb,inset 0 0 16px #b18aff44'},{borderColor:'#564174',boxShadow:'0 0 0 transparent'}],{duration:1300,easing:'ease-out'});
     await flash.animate([{opacity:1,transform:'translate(-50%,-50%) scale(.2)'},{opacity:.8,offset:.18},{opacity:0,transform:'translate(-50%,-50%) scale(1.7)'}],{duration:480,easing:'ease-out'}).finished;
     flash.remove();effects.delete(flash);await glow.finished;

@@ -2,6 +2,7 @@
 (() => {
   if(!document.body?.animate)return;
   const eye=document.querySelector('.eye-mark');if(!eye)return;
+  const glint=document.createElement('span');glint.className='eye-glint';glint.setAttribute('aria-hidden','true');eye.append(glint);
   const mask=document.createElement('span');mask.className='eye-shutter';mask.setAttribute('aria-hidden','true');
   mask.innerHTML='<i class="upper-lid"></i><i class="lower-lid"></i>';eye.append(mask);
   const upper=mask.querySelector('.upper-lid'),lower=mask.querySelector('.lower-lid');

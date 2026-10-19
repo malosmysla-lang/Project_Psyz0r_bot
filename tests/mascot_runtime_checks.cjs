@@ -22,7 +22,7 @@ async function advance(until){for(let guard=0;guard<10000;guard++){queue.sort((a
  assert.equal(nodes.filter(n=>n.className==='mascot-rocket').length,0,'No automatic shot');
  bot.listeners.click();await advance(6000);
  assert.equal(draws.size,30,'All 30 source poses shown');assert.equal(nodes.filter(n=>n.className==='mascot-rocket').length,1);
- assert.equal(nodes.filter(n=>n.className==='explosion-shard').length,18);assert.ok(nodes.filter(n=>n.className==='rocket-smoke-puff').length>30);
+ assert.equal(nodes.filter(n=>n.className==='explosion-shard').length,36);assert.equal(nodes.filter(n=>n.className==='explosion-lobe').length,8);assert.ok(nodes.filter(n=>n.className==='rocket-smoke-puff').length>70);
  assert.equal(bot.disabled,false);assert.ok(bot.classes.has('has-fired'));assert.ok(!nodes.some(n=>n.className==='mascot-rocket'&&n.isConnected));
- console.log('Scene runtime: click-only, 30 poses, rocket, smoke, 18 shards, cleanup and replay readiness passed');
+ console.log('Scene runtime: click-only, 30 poses, dense smoke, 36 shards, 8 fire lobes, cleanup and replay readiness passed');
 })().catch(e=>{console.error(e);process.exitCode=1;});

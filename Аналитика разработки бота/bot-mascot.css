@@ -50,3 +50,15 @@ button.bot-mascot:focus-visible{outline:2px solid var(--cyan);outline-offset:5px
 .lower-lid{bottom:0;transform:translateY(100%);border-top:1px solid #a6d8dd}
 @media(prefers-reduced-motion:reduce){.eye-shutter{display:none}}
 @media print{.eye-shutter{display:none}}
+/* Сильный реактивный факел с отдельным свечением и плотным сохраняющимся следом. */
+.mascot-rocket{box-shadow:0 0 7px #fff3cecc,-10px 0 16px #ffad4aaa,-22px 0 28px #ff653344}
+.mascot-rocket::before{width:43px;height:10px;top:-2px;clip-path:polygon(0 50%,30% 15%,100% 30%,100% 70%,25% 85%);background:linear-gradient(90deg,transparent,#ff6d2b 30%,#ffd775 70%,#fff9e5);filter:blur(.7px)}
+.mascot-rocket::after{content:'';position:absolute;right:20%;top:-12px;width:70px;height:30px;border-radius:50%;background:radial-gradient(ellipse,#ffc36655,transparent 70%);z-index:-1}
+.rocket-smoke-puff{background:radial-gradient(ellipse,#d5d4c599,#737e8b77 40%,#424b5c33 60%,transparent 74%)}
+.explosion-lobe{position:fixed;pointer-events:none;z-index:91;border-radius:43% 57% 61% 39%;background:radial-gradient(ellipse at 40% 35%,#fffde3,#ffd76b 22%,#ff922fbb 45%,#b8422c44 65%,transparent 75%);filter:blur(.8px)}
+.explosion-shard{box-shadow:0 0 6px #ffb25788}
+.eye-glint{position:absolute;left:39%;top:29%;width:17%;height:11%;border-radius:50%;background:radial-gradient(ellipse,#fff9,#c4ffff33 45%,transparent 75%);pointer-events:none;transform:rotate(-27deg);animation:eye-reflection 7s ease-in-out infinite}
+@keyframes eye-reflection{0%,100%{opacity:.45;transform:rotate(-27deg) scale(.9)}50%{opacity:.9;transform:translate(1px,1px) rotate(-20deg) scale(1.08)}}
+.eye-shutter i{background:linear-gradient(110deg,#18212c,#7c8d95 40%,#25313d 65%,#0b1720);box-shadow:inset 0 -1px #42e8dc88,inset 0 2px #cbd8de33}
+@media(prefers-reduced-motion:reduce){.eye-glint{animation:none}.explosion-lobe{display:none!important}}
+@media print{.eye-glint,.explosion-lobe{display:none}}
