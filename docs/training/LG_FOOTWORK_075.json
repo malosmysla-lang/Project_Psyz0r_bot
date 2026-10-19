@@ -1,0 +1,249 @@
+{
+  "files": 500,
+  "method": "Observed POV LG weapon_fired windows <=100ms; view angles and velocity relative to view, not raw keys or screen pixels. No enemy rocket trajectories exported.",
+  "players": {
+    "cypher": {
+      "frames": 53067,
+      "observed_firing_seconds": 1372.01,
+      "grounded_fraction": 0.75,
+      "yaw_deg_s": {
+        "p50": 22,
+        "p75": 58,
+        "p90": 111,
+        "p95": 161
+      },
+      "speed_ups": {
+        "p50": 320,
+        "p90": 390
+      },
+      "patterns": {
+        "lateral": 23565,
+        "diagonal": 7726,
+        "backward": 7743,
+        "pause": 2764,
+        "forward": 11269
+      },
+      "lateral_reversal_ms": {
+        "p25": 150,
+        "p50": 300,
+        "p75": 550
+      }
+    },
+    "rapha": {
+      "frames": 55030,
+      "observed_firing_seconds": 1444.81,
+      "grounded_fraction": 0.779,
+      "yaw_deg_s": {
+        "p50": 27,
+        "p75": 63,
+        "p90": 113,
+        "p95": 155
+      },
+      "speed_ups": {
+        "p50": 310,
+        "p90": 380
+      },
+      "patterns": {
+        "forward": 11679,
+        "diagonal": 8517,
+        "lateral": 25757,
+        "pause": 1622,
+        "backward": 7455
+      },
+      "lateral_reversal_ms": {
+        "p25": 150,
+        "p50": 300,
+        "p75": 550
+      }
+    },
+    "k1llsen": {
+      "frames": 32141,
+      "observed_firing_seconds": 849.29,
+      "grounded_fraction": 0.768,
+      "yaw_deg_s": {
+        "p50": 30,
+        "p75": 81,
+        "p90": 164,
+        "p95": 245
+      },
+      "speed_ups": {
+        "p50": 300,
+        "p90": 370
+      },
+      "patterns": {
+        "forward": 7684,
+        "diagonal": 4756,
+        "lateral": 14492,
+        "pause": 893,
+        "backward": 4316
+      },
+      "lateral_reversal_ms": {
+        "p25": 175,
+        "p50": 275,
+        "p75": 475
+      }
+    },
+    "cooller": {
+      "frames": 44659,
+      "observed_firing_seconds": 1150.41,
+      "grounded_fraction": 0.812,
+      "yaw_deg_s": {
+        "p50": 24,
+        "p75": 62,
+        "p90": 118,
+        "p95": 176
+      },
+      "speed_ups": {
+        "p50": 290,
+        "p90": 360
+      },
+      "patterns": {
+        "diagonal": 7156,
+        "forward": 9837,
+        "lateral": 20214,
+        "pause": 1807,
+        "backward": 5645
+      },
+      "lateral_reversal_ms": {
+        "p25": 150,
+        "p50": 275,
+        "p75": 500
+      }
+    },
+    "strenx": {
+      "frames": 17227,
+      "observed_firing_seconds": 453.64,
+      "grounded_fraction": 0.749,
+      "yaw_deg_s": {
+        "p50": 29,
+        "p75": 66,
+        "p90": 123,
+        "p95": 181
+      },
+      "speed_ups": {
+        "p50": 310,
+        "p90": 380
+      },
+      "patterns": {
+        "lateral": 8306,
+        "diagonal": 2924,
+        "forward": 3450,
+        "backward": 2094,
+        "pause": 453
+      },
+      "lateral_reversal_ms": {
+        "p25": 175,
+        "p50": 300,
+        "p75": 525
+      }
+    },
+    "avek": {
+      "frames": 9773,
+      "observed_firing_seconds": 244.53,
+      "grounded_fraction": 0.819,
+      "yaw_deg_s": {
+        "p50": 21,
+        "p75": 56,
+        "p90": 109,
+        "p95": 157
+      },
+      "speed_ups": {
+        "p50": 320,
+        "p90": 360
+      },
+      "patterns": {
+        "backward": 1443,
+        "diagonal": 1324,
+        "lateral": 4498,
+        "pause": 725,
+        "forward": 1783
+      },
+      "lateral_reversal_ms": {
+        "p25": 225,
+        "p50": 400,
+        "p75": 650
+      }
+    },
+    "agent": {
+      "frames": 10455,
+      "observed_firing_seconds": 261.7,
+      "grounded_fraction": 0.767,
+      "yaw_deg_s": {
+        "p50": 24,
+        "p75": 76,
+        "p90": 156,
+        "p95": 230
+      },
+      "speed_ups": {
+        "p50": 320,
+        "p90": 390
+      },
+      "patterns": {
+        "forward": 2183,
+        "diagonal": 1490,
+        "lateral": 5511,
+        "pause": 173,
+        "backward": 1098
+      },
+      "lateral_reversal_ms": {
+        "p25": 150,
+        "p50": 275,
+        "p75": 525
+      }
+    },
+    "evil": {
+      "frames": 35685,
+      "observed_firing_seconds": 897.85,
+      "grounded_fraction": 0.794,
+      "yaw_deg_s": {
+        "p50": 27,
+        "p75": 65,
+        "p90": 125,
+        "p95": 175
+      },
+      "speed_ups": {
+        "p50": 310,
+        "p90": 380
+      },
+      "patterns": {
+        "forward": 7507,
+        "diagonal": 5982,
+        "lateral": 16066,
+        "backward": 4757,
+        "pause": 1373
+      },
+      "lateral_reversal_ms": {
+        "p25": 150,
+        "p50": 225,
+        "p75": 475
+      }
+    },
+    "toxjq": {
+      "frames": 1070,
+      "observed_firing_seconds": 26.75,
+      "grounded_fraction": 0.719,
+      "yaw_deg_s": {
+        "p50": 33,
+        "p75": 74,
+        "p90": 117,
+        "p95": 161
+      },
+      "speed_ups": {
+        "p50": 300,
+        "p90": 400
+      },
+      "patterns": {
+        "lateral": 602,
+        "diagonal": 178,
+        "backward": 91,
+        "forward": 182,
+        "pause": 17
+      },
+      "lateral_reversal_ms": {
+        "p25": 175,
+        "p50": 325,
+        "p75": 500
+      }
+    }
+  }
+}
