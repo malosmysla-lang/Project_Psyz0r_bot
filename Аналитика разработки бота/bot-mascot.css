@@ -77,3 +77,13 @@ button.bot-mascot:focus-visible{outline:2px solid var(--cyan);outline-offset:5px
 @keyframes rocket-flame-shape{0%{transform:scaleX(.96) scaleY(.94) skewY(-1deg)}50%{transform:scaleX(1.04) scaleY(1.03) skewY(1.5deg)}100%{transform:scaleX(1) scaleY(1.06) skewY(-1deg)}}
 .mascot-rocket::after{right:-3px;top:-32px;width:120px;height:70px;background:radial-gradient(ellipse at 65% 50%,#daf6ff55,#ffcb6955 27%,#ff862a22 50%,transparent 73%)}
 .rocket-blue-core{position:absolute;right:100%;top:-1px;width:13px;height:8px;border-radius:60% 15% 15% 60%;background:radial-gradient(ellipse at right,#fff,#b1ecff 35%,#408bff88 65%,transparent 85%);filter:blur(.5px);box-shadow:0 0 7px #66c8ff99}
+/* Коннект виден сразу в правой части шапки, команда выделяется целиком. */
+.headline>div:first-child{min-width:0;flex:1}
+.headline .release{width:370px;min-width:0;max-width:100%;flex-shrink:0}
+.server-connect{padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #42e8dc44}
+.connect-topline{display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:1.3px;font-weight:800;color:var(--cyan)}
+.server-connect code{display:block;font:700 clamp(14px,1.35vw,20px)/1.6 Consolas,monospace;color:#e8ffff;background:#112b37;padding:10px 8px;margin:14px 0;border:1px solid #42e8dc66;border-radius:5px;white-space:nowrap;user-select:all}
+.server-connect .btn{width:100%;font-weight:700}
+.server-connect p{margin:10px 0 0;font-size:12px;line-height:1.6}
+.server-connect .connect-note{color:#9fb9c9}
+@media(max-width:850px){.headline .release{width:100%}.server-connect code{font-size:clamp(13px,3.6vw,20px)}}
