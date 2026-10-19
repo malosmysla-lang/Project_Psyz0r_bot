@@ -39,7 +39,9 @@
 @media(prefers-reduced-motion:reduce){.table tbody tr>td{transition:none}.explosion-ring,.explosion-shard{display:none!important}}
 @media print{.sidebar-resizer,.explosion-ring,.explosion-shard{display:none}.mascot-title{transform:none}.mascot-heading{min-height:0;padding:0}main{margin:0}}
 /* Персонаж — настоящая кнопка: одинаково работает мышь, Enter и пробел. */
-button.bot-mascot{padding:0;border:0;background:none;color:var(--cyan);pointer-events:auto;cursor:pointer;appearance:none;overflow:visible}
+button.bot-mascot{padding:0;border:0;border-radius:0;background:none;color:var(--cyan);pointer-events:auto;cursor:pointer;appearance:none;overflow:visible;box-sizing:border-box;box-shadow:none}
+button.bot-mascot:hover:not(:disabled){border:0;background:none;box-shadow:none}
+button.bot-mascot canvas,button.bot-mascot .barrel-smoke{pointer-events:none}
 button.bot-mascot:disabled{cursor:default;opacity:1}
 button.bot-mascot:focus-visible{outline:2px solid var(--cyan);outline-offset:5px;border-radius:8px}
 /* Без видимых подсказок: действие доступно по клику и клавиатуре. */
@@ -62,3 +64,16 @@ button.bot-mascot:focus-visible{outline:2px solid var(--cyan);outline-offset:5px
 .eye-shutter i{background:linear-gradient(110deg,#18212c,#7c8d95 40%,#25313d 65%,#0b1720);box-shadow:inset 0 -1px #42e8dc88,inset 0 2px #cbd8de33}
 @media(prefers-reduced-motion:reduce){.eye-glint{animation:none}.explosion-lobe{display:none!important}}
 @media print{.eye-glint,.explosion-lobe{display:none}}
+/* Большой анимированный огонь, а не маленький фитиль: форма колеблется, свет постоянный. */
+.mascot-rocket{box-shadow:0 0 9px 4px #fff4cddd,0 0 25px 10px #ffb43cbb,0 0 52px 20px #ff6d2d66}
+.mascot-rocket::before{width:85px;height:25px;top:-9px;clip-path:polygon(0 50%,24% 20%,46% 32%,70% 6%,100% 28%,100% 75%,68% 94%,42% 65%,20% 82%);background:radial-gradient(ellipse at 92% 50%,#fffde9 0%,#fff19c 22%,#ffbc36 43%,#ff6a25cc 67%,transparent 85%);filter:blur(.7px);transform-origin:right center;animation:rocket-flame-shape .16s ease-in-out infinite alternate}
+.mascot-rocket::after{right:-30px;top:-34px;width:135px;height:75px;background:radial-gradient(ellipse,#fff6b966,#ffad3a66 30%,#ff682a22 55%,transparent 73%);filter:blur(3px)}
+@keyframes rocket-flame-shape{0%{transform:scaleX(.9) scaleY(.9) skewY(-4deg)}50%{transform:scaleX(1.14) scaleY(1.05) skewY(3deg)}100%{transform:scaleX(1) scaleY(1.18) skewY(-2deg)}}
+.rocket-path-light{position:fixed;pointer-events:none;z-index:8;width:240px;height:160px;border-radius:50%;mix-blend-mode:screen;background:radial-gradient(ellipse,#ffdc713b,#ff9b3726 28%,#ff682511 48%,transparent 72%)}
+@media(prefers-reduced-motion:reduce){.rocket-path-light{display:none!important}.mascot-rocket::before{animation:none}}
+@media print{.rocket-path-light{display:none}}
+/* Короткая сопловая струя: небольшая турбулентность, синее ядро у основания. */
+.mascot-rocket::before{width:44px;height:17px;top:-5px;clip-path:polygon(0 50%,25% 28%,55% 16%,100% 30%,100% 72%,55% 84%,23% 70%);background:linear-gradient(90deg,transparent,#ff762dc7 22%,#ffd276ed 55%,#eef8ff 79%,#67cfff 96%);filter:blur(.55px);animation:rocket-flame-shape .19s ease-in-out infinite alternate}
+@keyframes rocket-flame-shape{0%{transform:scaleX(.96) scaleY(.94) skewY(-1deg)}50%{transform:scaleX(1.04) scaleY(1.03) skewY(1.5deg)}100%{transform:scaleX(1) scaleY(1.06) skewY(-1deg)}}
+.mascot-rocket::after{right:-3px;top:-32px;width:120px;height:70px;background:radial-gradient(ellipse at 65% 50%,#daf6ff55,#ffcb6955 27%,#ff862a22 50%,transparent 73%)}
+.rocket-blue-core{position:absolute;right:100%;top:-1px;width:13px;height:8px;border-radius:60% 15% 15% 60%;background:radial-gradient(ellipse at right,#fff,#b1ecff 35%,#408bff88 65%,transparent 85%);filter:blur(.5px);box-shadow:0 0 7px #66c8ff99}

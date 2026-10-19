@@ -1,0 +1,24 @@
+[Unit]
+Description=Pracc Room read-only analytics website
+After=network.target
+
+[Service]
+Type=simple
+User=qlserver
+Group=qlserver
+WorkingDirectory=/home/qlserver/websites/pracc-analytics/current
+ExecStart=/usr/bin/python3 /home/qlserver/websites/pracc-analytics/current/analytics_web.py --root /home/qlserver/websites/pracc-analytics/current --live /home/qlserver/psyz0r-bot/match-telemetry/public_matches.json --port 80
+Restart=on-failure
+RestartSec=3
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+PrivateTmp=true
+MemoryMax=128M
+CPUQuota=20%
+TasksMax=48
+
+[Install]
+WantedBy=multi-user.target

@@ -52,7 +52,9 @@
  q('#duelActor').addEventListener('change',()=>{selectedId=null;render();});q('#duelType').addEventListener('change',()=>{selectedId=null;render();});render();
  async function refresh(){
   try{
-   const response=await window.fetch(data.ledgerUrl+'?snapshot='+Math.floor(Date.now()/30000),{cache:'no-store',credentials:'omit'});
+   // На собственном VPS читаем свежую публичную статистику прямо с сервера.
+   const ledgerUrl=['50515051.com','78.17.9.235'].includes(window.location?.hostname)?'/api/matches.json':data.ledgerUrl;
+   const response=await window.fetch(ledgerUrl+'?snapshot='+Math.floor(Date.now()/30000),{cache:'no-store',credentials:'omit'});
    if(!response.ok)throw Error('not available');const text=await response.text();if(text.length>10000000)throw Error('too large');
    const fresh=JSON.parse(text);if(!Array.isArray(fresh.matches)||fresh.schema_version!==1)throw Error('schema');
    if(JSON.stringify(fresh.matches)!==JSON.stringify(ledger.matches)){ledger=fresh;render();}

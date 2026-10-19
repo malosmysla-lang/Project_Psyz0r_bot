@@ -41,7 +41,12 @@
     // Постоянная скорость полёта; длительность зависит от расстояния в текущей раскладке.
     const duration=Math.min(1100,Math.max(450,Math.hypot(dx,dy)/1.35));
     const rocket=document.createElement('span');rocket.className='mascot-rocket';rocket.setAttribute('aria-hidden','true');
+    rocket.innerHTML='<i class="rocket-blue-core"></i>';
     rocket.style.cssText=`left:${start.x}px;top:${start.y}px`;document.body.append(rocket);effects.add(rocket);
+    // Отдельный широкий источник света движется вместе со снарядом и освещает фон пути.
+    const light=document.createElement('span');light.className='rocket-path-light';light.setAttribute('aria-hidden','true');
+    light.style.cssText=`left:${start.x-22}px;top:${start.y}px`;document.body.append(light);effects.add(light);
+    light.animate([{transform:'translate(-50%,-50%)'},{transform:`translate(calc(-50% + ${dx}px),calc(-50% + ${dy}px))`}],{duration,easing:'linear',fill:'forwards'});
     sprite.animate([{transform:'translateX(0)'},{transform:'translateX(-4px)',offset:.2},{transform:'translateX(0)'}],{duration:180});
     const begin=performance.now();let last=-1;
     function trail(now){
@@ -54,7 +59,7 @@
     }
     requestAnimationFrame(trail);
     await rocket.animate([{transform:`translate(0,-50%) rotate(${angle}deg)`},{transform:`translate(${dx}px,${dy}px) rotate(${angle}deg)`}],{duration,easing:'linear',fill:'forwards'}).finished;
-    rocket.remove();effects.delete(rocket);if(reduced.matches)return;
+    rocket.remove();effects.delete(rocket);light.remove();effects.delete(light);if(reduced.matches)return;
     const flash=document.createElement('span');flash.className='mascot-impact';flash.setAttribute('aria-hidden','true');
     flash.style.cssText=`left:${end.x}px;top:${end.y}px`;document.body.append(flash);effects.add(flash);
     // Несколько слоёв взрыва: горячее ядро, ударное кольцо, обломки и тяжёлый дым.
