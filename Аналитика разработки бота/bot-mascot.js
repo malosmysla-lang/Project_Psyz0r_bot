@@ -89,8 +89,8 @@
   async function play(){
     if(busy||reduced.matches||document.hidden)return;
     busy=true;bot.disabled=true;bot.classList.remove('has-fired');
-    const duration=2400/1.2,begin=performance.now();let fired=false,shot=Promise.resolve();
-    // Те же 30 поз, прыжок быстрее на 20%. Скорость снаряда/частиц не масштабируется.
+    const duration=2400/(1.2*1.2),begin=performance.now();let fired=false,shot=Promise.resolve();
+    // Те же 30 поз: ещё ×1.2 к предыдущей скорости, 2000→1667 мс. Полёт/дым не ускоряем.
     try{
       await new Promise(resolve=>{
         cancelJump=resolve;
