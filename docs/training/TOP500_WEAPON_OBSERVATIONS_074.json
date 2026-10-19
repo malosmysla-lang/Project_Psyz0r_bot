@@ -1,0 +1,6737 @@
+{
+  "demos": 500,
+  "summaries": [
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "observations": 11,
+      "demos": 11,
+      "shots": 3751,
+      "hits": 1082,
+      "pooled_accuracy": 28.85
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "observations": 11,
+      "demos": 11,
+      "shots": 961,
+      "hits": 117,
+      "pooled_accuracy": 12.17
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "observations": 11,
+      "demos": 11,
+      "shots": 247,
+      "hits": 99,
+      "pooled_accuracy": 40.08
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "observations": 11,
+      "demos": 11,
+      "shots": 950,
+      "hits": 311,
+      "pooled_accuracy": 32.74
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "observations": 15,
+      "demos": 15,
+      "shots": 7540,
+      "hits": 2545,
+      "pooled_accuracy": 33.75
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "observations": 13,
+      "demos": 13,
+      "shots": 1295,
+      "hits": 178,
+      "pooled_accuracy": 13.75
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "observations": 15,
+      "demos": 15,
+      "shots": 337,
+      "hits": 149,
+      "pooled_accuracy": 44.21
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "observations": 15,
+      "demos": 15,
+      "shots": 1005,
+      "hits": 254,
+      "pooled_accuracy": 25.27
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "observations": 24,
+      "demos": 24,
+      "shots": 10824,
+      "hits": 3007,
+      "pooled_accuracy": 27.78
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "observations": 24,
+      "demos": 24,
+      "shots": 1864,
+      "hits": 184,
+      "pooled_accuracy": 9.87
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "observations": 24,
+      "demos": 24,
+      "shots": 439,
+      "hits": 180,
+      "pooled_accuracy": 41.0
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "observations": 24,
+      "demos": 24,
+      "shots": 2071,
+      "hits": 647,
+      "pooled_accuracy": 31.24
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "observations": 49,
+      "demos": 49,
+      "shots": 23754,
+      "hits": 7701,
+      "pooled_accuracy": 32.42
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "observations": 47,
+      "demos": 47,
+      "shots": 3947,
+      "hits": 503,
+      "pooled_accuracy": 12.74
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "observations": 49,
+      "demos": 49,
+      "shots": 1212,
+      "hits": 524,
+      "pooled_accuracy": 43.23
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "observations": 49,
+      "demos": 49,
+      "shots": 4215,
+      "hits": 1159,
+      "pooled_accuracy": 27.5
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "observations": 40,
+      "demos": 40,
+      "shots": 18040,
+      "hits": 5959,
+      "pooled_accuracy": 33.03
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "observations": 38,
+      "demos": 38,
+      "shots": 2999,
+      "hits": 425,
+      "pooled_accuracy": 14.17
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "observations": 40,
+      "demos": 40,
+      "shots": 934,
+      "hits": 340,
+      "pooled_accuracy": 36.4
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "observations": 40,
+      "demos": 40,
+      "shots": 3020,
+      "hits": 859,
+      "pooled_accuracy": 28.44
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "observations": 24,
+      "demos": 24,
+      "shots": 8673,
+      "hits": 3008,
+      "pooled_accuracy": 34.68
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "observations": 24,
+      "demos": 24,
+      "shots": 1133,
+      "hits": 112,
+      "pooled_accuracy": 9.89
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "observations": 24,
+      "demos": 24,
+      "shots": 750,
+      "hits": 400,
+      "pooled_accuracy": 53.33
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "observations": 23,
+      "demos": 23,
+      "shots": 1917,
+      "hits": 587,
+      "pooled_accuracy": 30.62
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "observations": 33,
+      "demos": 33,
+      "shots": 16415,
+      "hits": 5768,
+      "pooled_accuracy": 35.14
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "observations": 33,
+      "demos": 33,
+      "shots": 2896,
+      "hits": 374,
+      "pooled_accuracy": 12.91
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "observations": 33,
+      "demos": 33,
+      "shots": 872,
+      "hits": 383,
+      "pooled_accuracy": 43.92
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "observations": 33,
+      "demos": 33,
+      "shots": 2649,
+      "hits": 814,
+      "pooled_accuracy": 30.73
+    },
+    {
+      "player": "strenx",
+      "weapon": "lightningGun",
+      "observations": 7,
+      "demos": 7,
+      "shots": 3086,
+      "hits": 1082,
+      "pooled_accuracy": 35.06
+    },
+    {
+      "player": "strenx",
+      "weapon": "plasmaGun",
+      "observations": 7,
+      "demos": 7,
+      "shots": 234,
+      "hits": 22,
+      "pooled_accuracy": 9.4
+    },
+    {
+      "player": "strenx",
+      "weapon": "railgun",
+      "observations": 7,
+      "demos": 7,
+      "shots": 95,
+      "hits": 45,
+      "pooled_accuracy": 47.37
+    },
+    {
+      "player": "strenx",
+      "weapon": "rocketLauncher",
+      "observations": 7,
+      "demos": 7,
+      "shots": 362,
+      "hits": 125,
+      "pooled_accuracy": 34.53
+    }
+  ],
+  "errors": [],
+  "note": "Only observed scoreboard values; missing entries are not zeros. Includes direct/splash semantics of UDT; player aliases are not verified identities.",
+  "observations": [
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 308,
+      "hits": 101,
+      "damage": 707,
+      "archive_id": 6667
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 27,
+      "hits": 11,
+      "damage": 880,
+      "archive_id": 6667
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 91,
+      "hits": 29,
+      "damage": 1333,
+      "archive_id": 6667
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 69,
+      "hits": 7,
+      "damage": 97,
+      "archive_id": 6667
+    },
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 334,
+      "hits": 102,
+      "damage": 714,
+      "archive_id": 6666
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 27,
+      "hits": 15,
+      "damage": 1200,
+      "archive_id": 6666
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 72,
+      "hits": 21,
+      "damage": 869,
+      "archive_id": 6666
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 2,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 6666
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 340,
+      "hits": 115,
+      "damage": 805,
+      "archive_id": 6659
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 4,
+      "hits": 2,
+      "damage": 160,
+      "archive_id": 6659
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 35,
+      "hits": 15,
+      "damage": 851,
+      "archive_id": 6659
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 72,
+      "hits": 7,
+      "damage": 140,
+      "archive_id": 6659
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 687,
+      "hits": 184,
+      "damage": 1288,
+      "archive_id": 6657
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 10,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 6657
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 107,
+      "hits": 28,
+      "damage": 1350,
+      "archive_id": 6657
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 99,
+      "hits": 18,
+      "damage": 360,
+      "archive_id": 6657
+    },
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 614,
+      "hits": 173,
+      "damage": 1211,
+      "archive_id": 6657
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 5,
+      "damage": 400,
+      "archive_id": 6657
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 88,
+      "hits": 28,
+      "damage": 1118,
+      "archive_id": 6657
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 111,
+      "hits": 6,
+      "damage": 120,
+      "archive_id": 6657
+    },
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 122,
+      "hits": 34,
+      "damage": 238,
+      "archive_id": 6656
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 22,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 6656
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 102,
+      "hits": 29,
+      "damage": 1493,
+      "archive_id": 6656
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 53,
+      "hits": 8,
+      "damage": 134,
+      "archive_id": 6656
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 56,
+      "hits": 5,
+      "damage": 35,
+      "archive_id": 6656
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 6656
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 77,
+      "hits": 24,
+      "damage": 1223,
+      "archive_id": 6656
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 53,
+      "hits": 8,
+      "damage": 134,
+      "archive_id": 6656
+    },
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 222,
+      "hits": 59,
+      "damage": 413,
+      "archive_id": 6655
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 14,
+      "hits": 6,
+      "damage": 480,
+      "archive_id": 6655
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 90,
+      "hits": 27,
+      "damage": 1348,
+      "archive_id": 6655
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 123,
+      "hits": 19,
+      "damage": 357,
+      "archive_id": 6655
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 240,
+      "hits": 94,
+      "damage": 665,
+      "archive_id": 6655
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 14,
+      "hits": 3,
+      "damage": 240,
+      "archive_id": 6655
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 70,
+      "hits": 24,
+      "damage": 1250,
+      "archive_id": 6655
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 14,
+      "hits": 2,
+      "damage": 23,
+      "archive_id": 6655
+    },
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 597,
+      "hits": 167,
+      "damage": 1169,
+      "archive_id": 6653
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 14,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 6653
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 66,
+      "hits": 26,
+      "damage": 1137,
+      "archive_id": 6653
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 20,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 6653
+    },
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 361,
+      "hits": 99,
+      "damage": 693,
+      "archive_id": 6652
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 13,
+      "damage": 1040,
+      "archive_id": 6652
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 86,
+      "hits": 34,
+      "damage": 1857,
+      "archive_id": 6652
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 82,
+      "hits": 18,
+      "damage": 360,
+      "archive_id": 6652
+    },
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 235,
+      "hits": 81,
+      "damage": 543,
+      "archive_id": 6651
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 43,
+      "hits": 17,
+      "damage": 1360,
+      "archive_id": 6651
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 75,
+      "hits": 33,
+      "damage": 1499,
+      "archive_id": 6651
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 214,
+      "hits": 26,
+      "damage": 450,
+      "archive_id": 6651
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 491,
+      "hits": 167,
+      "damage": 1176,
+      "archive_id": 6636
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 7,
+      "hits": 3,
+      "damage": 240,
+      "archive_id": 6636
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 53,
+      "hits": 25,
+      "damage": 1413,
+      "archive_id": 6636
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 72,
+      "hits": 7,
+      "damage": 140,
+      "archive_id": 6636
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 687,
+      "hits": 184,
+      "damage": 1288,
+      "archive_id": 6627
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 10,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 6627
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 107,
+      "hits": 28,
+      "damage": 1350,
+      "archive_id": 6627
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 99,
+      "hits": 18,
+      "damage": 360,
+      "archive_id": 6627
+    },
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 614,
+      "hits": 173,
+      "damage": 1211,
+      "archive_id": 6627
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 5,
+      "damage": 400,
+      "archive_id": 6627
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 88,
+      "hits": 28,
+      "damage": 1118,
+      "archive_id": 6627
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 111,
+      "hits": 6,
+      "damage": 120,
+      "archive_id": 6627
+    },
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 122,
+      "hits": 34,
+      "damage": 238,
+      "archive_id": 6626
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 22,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 6626
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 102,
+      "hits": 29,
+      "damage": 1493,
+      "archive_id": 6626
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 53,
+      "hits": 8,
+      "damage": 134,
+      "archive_id": 6626
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 122,
+      "hits": 34,
+      "damage": 238,
+      "archive_id": 6626
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 22,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 6626
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 102,
+      "hits": 29,
+      "damage": 1493,
+      "archive_id": 6626
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 53,
+      "hits": 8,
+      "damage": 134,
+      "archive_id": 6626
+    },
+    {
+      "player": "agent",
+      "weapon": "lightningGun",
+      "shots": 222,
+      "hits": 59,
+      "damage": 413,
+      "archive_id": 6625
+    },
+    {
+      "player": "agent",
+      "weapon": "railgun",
+      "shots": 14,
+      "hits": 6,
+      "damage": 480,
+      "archive_id": 6625
+    },
+    {
+      "player": "agent",
+      "weapon": "rocketLauncher",
+      "shots": 90,
+      "hits": 27,
+      "damage": 1348,
+      "archive_id": 6625
+    },
+    {
+      "player": "agent",
+      "weapon": "plasmaGun",
+      "shots": 123,
+      "hits": 19,
+      "damage": 357,
+      "archive_id": 6625
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 328,
+      "hits": 109,
+      "damage": 763,
+      "archive_id": 6625
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 18,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 6625
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 90,
+      "hits": 26,
+      "damage": 1323,
+      "archive_id": 6625
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 19,
+      "hits": 2,
+      "damage": 23,
+      "archive_id": 6625
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 988,
+      "hits": 418,
+      "damage": 2933,
+      "archive_id": 8382
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 20,
+      "hits": 10,
+      "damage": 800,
+      "archive_id": 8382
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 80,
+      "hits": 21,
+      "damage": 1087,
+      "archive_id": 8382
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 60,
+      "hits": 12,
+      "damage": 191,
+      "archive_id": 8382
+    },
+    {
+      "player": "strenx",
+      "weapon": "lightningGun",
+      "shots": 971,
+      "hits": 351,
+      "damage": 2457,
+      "archive_id": 8382
+    },
+    {
+      "player": "strenx",
+      "weapon": "railgun",
+      "shots": 11,
+      "hits": 3,
+      "damage": 240,
+      "archive_id": 8382
+    },
+    {
+      "player": "strenx",
+      "weapon": "rocketLauncher",
+      "shots": 54,
+      "hits": 24,
+      "damage": 1006,
+      "archive_id": 8382
+    },
+    {
+      "player": "strenx",
+      "weapon": "plasmaGun",
+      "shots": 35,
+      "hits": 1,
+      "damage": 4,
+      "archive_id": 8382
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 332,
+      "hits": 121,
+      "damage": 847,
+      "archive_id": 8372
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 36,
+      "hits": 16,
+      "damage": 1280,
+      "archive_id": 8372
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 51,
+      "hits": 21,
+      "damage": 1177,
+      "archive_id": 8372
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 13,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 8372
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 863,
+      "hits": 356,
+      "damage": 2492,
+      "archive_id": 8370
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 37,
+      "hits": 25,
+      "damage": 2000,
+      "archive_id": 8370
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 41,
+      "hits": 16,
+      "damage": 848,
+      "archive_id": 8370
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 16,
+      "hits": 7,
+      "damage": 124,
+      "archive_id": 8370
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 651,
+      "hits": 224,
+      "damage": 1568,
+      "archive_id": 8358
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 35,
+      "hits": 15,
+      "damage": 1200,
+      "archive_id": 8358
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 50,
+      "hits": 15,
+      "damage": 721,
+      "archive_id": 8358
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 134,
+      "hits": 20,
+      "damage": 340,
+      "archive_id": 8358
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 666,
+      "hits": 207,
+      "damage": 1449,
+      "archive_id": 8127
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 18,
+      "hits": 6,
+      "damage": 480,
+      "archive_id": 8127
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 77,
+      "hits": 26,
+      "damage": 881,
+      "archive_id": 8127
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 102,
+      "hits": 17,
+      "damage": 323,
+      "archive_id": 8127
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 806,
+      "hits": 259,
+      "damage": 1813,
+      "archive_id": 8123
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 24,
+      "hits": 16,
+      "damage": 1280,
+      "archive_id": 8123
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 75,
+      "hits": 25,
+      "damage": 1110,
+      "archive_id": 8123
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 36,
+      "hits": 8,
+      "damage": 104,
+      "archive_id": 8123
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 735,
+      "hits": 244,
+      "damage": 1708,
+      "archive_id": 7971
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 28,
+      "hits": 12,
+      "damage": 960,
+      "archive_id": 7971
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 79,
+      "hits": 30,
+      "damage": 1606,
+      "archive_id": 7971
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 165,
+      "hits": 22,
+      "damage": 408,
+      "archive_id": 7971
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 658,
+      "hits": 223,
+      "damage": 1561,
+      "archive_id": 7971
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 34,
+      "hits": 11,
+      "damage": 880,
+      "archive_id": 7971
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 65,
+      "hits": 13,
+      "damage": 441,
+      "archive_id": 7971
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 79,
+      "hits": 18,
+      "damage": 341,
+      "archive_id": 7971
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 719,
+      "hits": 272,
+      "damage": 1904,
+      "archive_id": 7936
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 9,
+      "hits": 5,
+      "damage": 400,
+      "archive_id": 7936
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 47,
+      "hits": 11,
+      "damage": 448,
+      "archive_id": 7936
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 38,
+      "hits": 3,
+      "damage": 46,
+      "archive_id": 7936
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 401,
+      "hits": 114,
+      "damage": 798,
+      "archive_id": 7932
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 8,
+      "damage": 640,
+      "archive_id": 7932
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 99,
+      "hits": 28,
+      "damage": 1518,
+      "archive_id": 7932
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 12,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 7932
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 592,
+      "hits": 180,
+      "damage": 1245,
+      "archive_id": 7875
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 12,
+      "hits": 3,
+      "damage": 229,
+      "archive_id": 7875
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 61,
+      "hits": 18,
+      "damage": 861,
+      "archive_id": 7875
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 58,
+      "hits": 14,
+      "damage": 275,
+      "archive_id": 7875
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 196,
+      "hits": 41,
+      "damage": 287,
+      "archive_id": 7865
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 36,
+      "hits": 18,
+      "damage": 1349,
+      "archive_id": 7865
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 122,
+      "hits": 37,
+      "damage": 1555,
+      "archive_id": 7865
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 24,
+      "hits": 1,
+      "damage": 15,
+      "archive_id": 7865
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 483,
+      "hits": 194,
+      "damage": 1357,
+      "archive_id": 7850
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 15,
+      "hits": 3,
+      "damage": 239,
+      "archive_id": 7850
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 57,
+      "hits": 16,
+      "damage": 712,
+      "archive_id": 7850
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 5,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 7850
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 467,
+      "hits": 169,
+      "damage": 1183,
+      "archive_id": 7776
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 16,
+      "hits": 6,
+      "damage": 480,
+      "archive_id": 7776
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 99,
+      "hits": 25,
+      "damage": 1261,
+      "archive_id": 7776
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 128,
+      "hits": 8,
+      "damage": 141,
+      "archive_id": 7776
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 644,
+      "hits": 209,
+      "damage": 1470,
+      "archive_id": 7733
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 36,
+      "hits": 19,
+      "damage": 1520,
+      "archive_id": 7733
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 97,
+      "hits": 36,
+      "damage": 1774,
+      "archive_id": 7733
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 231,
+      "hits": 34,
+      "damage": 621,
+      "archive_id": 7733
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 644,
+      "hits": 209,
+      "damage": 1470,
+      "archive_id": 7728
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 36,
+      "hits": 19,
+      "damage": 1520,
+      "archive_id": 7728
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 97,
+      "hits": 36,
+      "damage": 1774,
+      "archive_id": 7728
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 231,
+      "hits": 34,
+      "damage": 621,
+      "archive_id": 7728
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 531,
+      "hits": 163,
+      "damage": 1114,
+      "archive_id": 7493
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 14,
+      "damage": 1033,
+      "archive_id": 7493
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 79,
+      "hits": 24,
+      "damage": 895,
+      "archive_id": 7493
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 21,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 7493
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 806,
+      "hits": 259,
+      "damage": 1813,
+      "archive_id": 7463
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 24,
+      "hits": 16,
+      "damage": 1280,
+      "archive_id": 7463
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 75,
+      "hits": 25,
+      "damage": 1110,
+      "archive_id": 7463
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 36,
+      "hits": 8,
+      "damage": 104,
+      "archive_id": 7463
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 609,
+      "hits": 174,
+      "damage": 1188,
+      "archive_id": 7397
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 13,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 7397
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 80,
+      "hits": 12,
+      "damage": 430,
+      "archive_id": 7397
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 122,
+      "hits": 21,
+      "damage": 359,
+      "archive_id": 7397
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 405,
+      "hits": 129,
+      "damage": 896,
+      "archive_id": 7383
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 12,
+      "damage": 933,
+      "archive_id": 7383
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 81,
+      "hits": 23,
+      "damage": 1193,
+      "archive_id": 7383
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 38,
+      "hits": 6,
+      "damage": 96,
+      "archive_id": 7383
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 506,
+      "hits": 275,
+      "damage": 1842,
+      "archive_id": 7380
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 20,
+      "hits": 9,
+      "damage": 592,
+      "archive_id": 7380
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 60,
+      "hits": 9,
+      "damage": 454,
+      "archive_id": 7380
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 2,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 7380
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 655,
+      "hits": 245,
+      "damage": 1628,
+      "archive_id": 7376
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 8,
+      "damage": 586,
+      "archive_id": 7376
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 47,
+      "hits": 11,
+      "damage": 431,
+      "archive_id": 7376
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 48,
+      "hits": 13,
+      "damage": 260,
+      "archive_id": 7376
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 308,
+      "hits": 103,
+      "damage": 709,
+      "archive_id": 7376
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 6,
+      "hits": 3,
+      "damage": 240,
+      "archive_id": 7376
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 54,
+      "hits": 22,
+      "damage": 1047,
+      "archive_id": 7376
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 10,
+      "hits": 1,
+      "damage": 12,
+      "archive_id": 7376
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 644,
+      "hits": 206,
+      "damage": 1390,
+      "archive_id": 7367
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 7367
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 83,
+      "hits": 22,
+      "damage": 938,
+      "archive_id": 7367
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 655,
+      "hits": 245,
+      "damage": 1628,
+      "archive_id": 7363
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 8,
+      "damage": 586,
+      "archive_id": 7363
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 47,
+      "hits": 11,
+      "damage": 431,
+      "archive_id": 7363
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 48,
+      "hits": 13,
+      "damage": 260,
+      "archive_id": 7363
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 83,
+      "hits": 21,
+      "damage": 147,
+      "archive_id": 7363
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 3,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 7363
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 48,
+      "hits": 13,
+      "damage": 260,
+      "archive_id": 7363
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 313,
+      "hits": 119,
+      "damage": 831,
+      "archive_id": 7361
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 32,
+      "hits": 14,
+      "damage": 1007,
+      "archive_id": 7361
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 66,
+      "hits": 15,
+      "damage": 897,
+      "archive_id": 7361
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 102,
+      "hits": 13,
+      "damage": 251,
+      "archive_id": 7361
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 313,
+      "hits": 119,
+      "damage": 831,
+      "archive_id": 7359
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 32,
+      "hits": 14,
+      "damage": 1007,
+      "archive_id": 7359
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 66,
+      "hits": 15,
+      "damage": 897,
+      "archive_id": 7359
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 102,
+      "hits": 13,
+      "damage": 251,
+      "archive_id": 7359
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 423,
+      "hits": 161,
+      "damage": 1100,
+      "archive_id": 7358
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 22,
+      "hits": 10,
+      "damage": 703,
+      "archive_id": 7358
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 85,
+      "hits": 26,
+      "damage": 1046,
+      "archive_id": 7358
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 117,
+      "hits": 22,
+      "damage": 335,
+      "archive_id": 7358
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 458,
+      "hits": 173,
+      "damage": 1200,
+      "archive_id": 7352
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 8,
+      "damage": 595,
+      "archive_id": 7352
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 57,
+      "hits": 13,
+      "damage": 514,
+      "archive_id": 7352
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 122,
+      "hits": 13,
+      "damage": 231,
+      "archive_id": 7352
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 360,
+      "hits": 153,
+      "damage": 1060,
+      "archive_id": 7352
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 22,
+      "hits": 6,
+      "damage": 480,
+      "archive_id": 7352
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 70,
+      "hits": 11,
+      "damage": 506,
+      "archive_id": 7352
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 170,
+      "hits": 27,
+      "damage": 377,
+      "archive_id": 7352
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 763,
+      "hits": 245,
+      "damage": 1655,
+      "archive_id": 7350
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 29,
+      "hits": 15,
+      "damage": 1146,
+      "archive_id": 7350
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 62,
+      "hits": 10,
+      "damage": 473,
+      "archive_id": 7350
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 16,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 7350
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 369,
+      "hits": 109,
+      "damage": 741,
+      "archive_id": 7347
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 6,
+      "damage": 419,
+      "archive_id": 7347
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 55,
+      "hits": 21,
+      "damage": 1034,
+      "archive_id": 7347
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 178,
+      "hits": 12,
+      "damage": 221,
+      "archive_id": 7347
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 626,
+      "hits": 202,
+      "damage": 1348,
+      "archive_id": 7345
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 27,
+      "hits": 13,
+      "damage": 1040,
+      "archive_id": 7345
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 62,
+      "hits": 10,
+      "damage": 473,
+      "archive_id": 7345
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 16,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 7345
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 331,
+      "hits": 133,
+      "damage": 927,
+      "archive_id": 7339
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 15,
+      "hits": 8,
+      "damage": 483,
+      "archive_id": 7339
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 72,
+      "hits": 22,
+      "damage": 1069,
+      "archive_id": 7339
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 354,
+      "hits": 143,
+      "damage": 987,
+      "archive_id": 7339
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 9,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 7339
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 31,
+      "hits": 10,
+      "damage": 481,
+      "archive_id": 7339
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 176,
+      "hits": 24,
+      "damage": 389,
+      "archive_id": 7339
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 458,
+      "hits": 173,
+      "damage": 1200,
+      "archive_id": 7334
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 8,
+      "damage": 595,
+      "archive_id": 7334
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 57,
+      "hits": 13,
+      "damage": 514,
+      "archive_id": 7334
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 122,
+      "hits": 13,
+      "damage": 231,
+      "archive_id": 7334
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 360,
+      "hits": 153,
+      "damage": 1060,
+      "archive_id": 7334
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 22,
+      "hits": 6,
+      "damage": 480,
+      "archive_id": 7334
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 70,
+      "hits": 11,
+      "damage": 506,
+      "archive_id": 7334
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 170,
+      "hits": 27,
+      "damage": 377,
+      "archive_id": 7334
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 281,
+      "hits": 95,
+      "damage": 646,
+      "archive_id": 7330
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 35,
+      "hits": 13,
+      "damage": 966,
+      "archive_id": 7330
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 99,
+      "hits": 33,
+      "damage": 1358,
+      "archive_id": 7330
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 35,
+      "hits": 5,
+      "damage": 59,
+      "archive_id": 7330
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 424,
+      "hits": 111,
+      "damage": 770,
+      "archive_id": 7330
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 25,
+      "hits": 9,
+      "damage": 648,
+      "archive_id": 7330
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 90,
+      "hits": 22,
+      "damage": 970,
+      "archive_id": 7330
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 74,
+      "hits": 10,
+      "damage": 183,
+      "archive_id": 7330
+    },
+    {
+      "player": "strenx",
+      "weapon": "lightningGun",
+      "shots": 417,
+      "hits": 149,
+      "damage": 1043,
+      "archive_id": 7301
+    },
+    {
+      "player": "strenx",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 9,
+      "damage": 720,
+      "archive_id": 7301
+    },
+    {
+      "player": "strenx",
+      "weapon": "rocketLauncher",
+      "shots": 64,
+      "hits": 27,
+      "damage": 877,
+      "archive_id": 7301
+    },
+    {
+      "player": "strenx",
+      "weapon": "plasmaGun",
+      "shots": 56,
+      "hits": 10,
+      "damage": 200,
+      "archive_id": 7301
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 494,
+      "hits": 171,
+      "damage": 1197,
+      "archive_id": 7301
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 13,
+      "damage": 1040,
+      "archive_id": 7301
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 60,
+      "hits": 14,
+      "damage": 694,
+      "archive_id": 7301
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 136,
+      "hits": 35,
+      "damage": 657,
+      "archive_id": 7301
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 247,
+      "hits": 101,
+      "damage": 707,
+      "archive_id": 7292
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 37,
+      "hits": 15,
+      "damage": 1200,
+      "archive_id": 7292
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 55,
+      "hits": 15,
+      "damage": 448,
+      "archive_id": 7292
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 16,
+      "hits": 7,
+      "damage": 108,
+      "archive_id": 7292
+    },
+    {
+      "player": "strenx",
+      "weapon": "lightningGun",
+      "shots": 417,
+      "hits": 149,
+      "damage": 1043,
+      "archive_id": 7288
+    },
+    {
+      "player": "strenx",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 9,
+      "damage": 720,
+      "archive_id": 7288
+    },
+    {
+      "player": "strenx",
+      "weapon": "rocketLauncher",
+      "shots": 64,
+      "hits": 27,
+      "damage": 877,
+      "archive_id": 7288
+    },
+    {
+      "player": "strenx",
+      "weapon": "plasmaGun",
+      "shots": 56,
+      "hits": 10,
+      "damage": 200,
+      "archive_id": 7288
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 494,
+      "hits": 171,
+      "damage": 1197,
+      "archive_id": 7288
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 13,
+      "damage": 1040,
+      "archive_id": 7288
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 60,
+      "hits": 14,
+      "damage": 694,
+      "archive_id": 7288
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 136,
+      "hits": 35,
+      "damage": 657,
+      "archive_id": 7288
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 369,
+      "hits": 121,
+      "damage": 833,
+      "archive_id": 7285
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 42,
+      "hits": 17,
+      "damage": 1360,
+      "archive_id": 7285
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 65,
+      "hits": 19,
+      "damage": 977,
+      "archive_id": 7285
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 100,
+      "hits": 12,
+      "damage": 235,
+      "archive_id": 7285
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 824,
+      "hits": 263,
+      "damage": 1812,
+      "archive_id": 7257
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 24,
+      "hits": 10,
+      "damage": 655,
+      "archive_id": 7257
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 63,
+      "hits": 17,
+      "damage": 652,
+      "archive_id": 7257
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 6,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 7257
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 382,
+      "hits": 133,
+      "damage": 921,
+      "archive_id": 7257
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 2,
+      "damage": 160,
+      "archive_id": 7257
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 64,
+      "hits": 18,
+      "damage": 729,
+      "archive_id": 7257
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 46,
+      "hits": 7,
+      "damage": 121,
+      "archive_id": 7257
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 333,
+      "hits": 91,
+      "damage": 637,
+      "archive_id": 6641
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 31,
+      "hits": 9,
+      "damage": 720,
+      "archive_id": 6641
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 76,
+      "hits": 30,
+      "damage": 1360,
+      "archive_id": 6641
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 115,
+      "hits": 25,
+      "damage": 360,
+      "archive_id": 6641
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 458,
+      "hits": 189,
+      "damage": 1323,
+      "archive_id": 6634
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 33,
+      "hits": 17,
+      "damage": 1360,
+      "archive_id": 6634
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 103,
+      "hits": 25,
+      "damage": 1431,
+      "archive_id": 6634
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 88,
+      "hits": 11,
+      "damage": 190,
+      "archive_id": 6634
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 884,
+      "hits": 207,
+      "damage": 1449,
+      "archive_id": 6634
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 20,
+      "hits": 12,
+      "damage": 960,
+      "archive_id": 6634
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 89,
+      "hits": 31,
+      "damage": 1593,
+      "archive_id": 6634
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 194,
+      "hits": 22,
+      "damage": 405,
+      "archive_id": 6634
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 213,
+      "hits": 24,
+      "damage": 168,
+      "archive_id": 6623
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 6623
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 55,
+      "hits": 28,
+      "damage": 1452,
+      "archive_id": 6623
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 70,
+      "hits": 8,
+      "damage": 154,
+      "archive_id": 6623
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 458,
+      "hits": 189,
+      "damage": 1323,
+      "archive_id": 6621
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 33,
+      "hits": 17,
+      "damage": 1360,
+      "archive_id": 6621
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 103,
+      "hits": 25,
+      "damage": 1431,
+      "archive_id": 6621
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 88,
+      "hits": 11,
+      "damage": 190,
+      "archive_id": 6621
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 884,
+      "hits": 207,
+      "damage": 1449,
+      "archive_id": 6621
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 20,
+      "hits": 12,
+      "damage": 960,
+      "archive_id": 6621
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 89,
+      "hits": 31,
+      "damage": 1593,
+      "archive_id": 6621
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 194,
+      "hits": 22,
+      "damage": 405,
+      "archive_id": 6621
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 442,
+      "hits": 95,
+      "damage": 665,
+      "archive_id": 6615
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 6615
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 58,
+      "hits": 28,
+      "damage": 1544,
+      "archive_id": 6615
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 5,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 6615
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 401,
+      "hits": 76,
+      "damage": 532,
+      "archive_id": 6615
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 12,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 6615
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 79,
+      "hits": 22,
+      "damage": 1262,
+      "archive_id": 6615
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 174,
+      "hits": 20,
+      "damage": 390,
+      "archive_id": 6615
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 492,
+      "hits": 150,
+      "damage": 1050,
+      "archive_id": 6613
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 18,
+      "hits": 8,
+      "damage": 640,
+      "archive_id": 6613
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 115,
+      "hits": 42,
+      "damage": 2152,
+      "archive_id": 6613
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 172,
+      "hits": 10,
+      "damage": 181,
+      "archive_id": 6613
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 565,
+      "hits": 140,
+      "damage": 980,
+      "archive_id": 6604
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 25,
+      "hits": 13,
+      "damage": 960,
+      "archive_id": 6604
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 60,
+      "hits": 22,
+      "damage": 1114,
+      "archive_id": 6604
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 5,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 6604
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 442,
+      "hits": 95,
+      "damage": 665,
+      "archive_id": 6599
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 6599
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 58,
+      "hits": 28,
+      "damage": 1544,
+      "archive_id": 6599
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 5,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 6599
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 401,
+      "hits": 76,
+      "damage": 532,
+      "archive_id": 6599
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 12,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 6599
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 79,
+      "hits": 22,
+      "damage": 1262,
+      "archive_id": 6599
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 174,
+      "hits": 20,
+      "damage": 390,
+      "archive_id": 6599
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 460,
+      "hits": 119,
+      "damage": 833,
+      "archive_id": 6595
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 11,
+      "hits": 3,
+      "damage": 240,
+      "archive_id": 6595
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 97,
+      "hits": 44,
+      "damage": 2096,
+      "archive_id": 6595
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 49,
+      "hits": 10,
+      "damage": 150,
+      "archive_id": 6595
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 492,
+      "hits": 150,
+      "damage": 1050,
+      "archive_id": 6586
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 18,
+      "hits": 8,
+      "damage": 640,
+      "archive_id": 6586
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 115,
+      "hits": 42,
+      "damage": 2152,
+      "archive_id": 6586
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 172,
+      "hits": 10,
+      "damage": 181,
+      "archive_id": 6586
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 651,
+      "hits": 207,
+      "damage": 1408,
+      "archive_id": 5832
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 14,
+      "hits": 5,
+      "damage": 348,
+      "archive_id": 5832
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 100,
+      "hits": 35,
+      "damage": 1726,
+      "archive_id": 5832
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 50,
+      "hits": 9,
+      "damage": 180,
+      "archive_id": 5832
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 651,
+      "hits": 207,
+      "damage": 1408,
+      "archive_id": 5816
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 14,
+      "hits": 5,
+      "damage": 348,
+      "archive_id": 5816
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 100,
+      "hits": 35,
+      "damage": 1726,
+      "archive_id": 5816
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 50,
+      "hits": 9,
+      "damage": 180,
+      "archive_id": 5816
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 353,
+      "hits": 119,
+      "damage": 830,
+      "archive_id": 5809
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 5809
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 72,
+      "hits": 25,
+      "damage": 1272,
+      "archive_id": 5809
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 100,
+      "hits": 7,
+      "damage": 135,
+      "archive_id": 5809
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 530,
+      "hits": 173,
+      "damage": 1192,
+      "archive_id": 5809
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 24,
+      "hits": 9,
+      "damage": 718,
+      "archive_id": 5809
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 98,
+      "hits": 21,
+      "damage": 996,
+      "archive_id": 5809
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 21,
+      "hits": 3,
+      "damage": 46,
+      "archive_id": 5809
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 538,
+      "hits": 179,
+      "damage": 1211,
+      "archive_id": 5806
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 13,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 5806
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 120,
+      "hits": 25,
+      "damage": 1037,
+      "archive_id": 5806
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 62,
+      "hits": 9,
+      "damage": 175,
+      "archive_id": 5806
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 616,
+      "hits": 242,
+      "damage": 1576,
+      "archive_id": 5798
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 18,
+      "hits": 5,
+      "damage": 254,
+      "archive_id": 5798
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 80,
+      "hits": 20,
+      "damage": 1021,
+      "archive_id": 5798
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 29,
+      "hits": 3,
+      "damage": 55,
+      "archive_id": 5798
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 616,
+      "hits": 242,
+      "damage": 1576,
+      "archive_id": 5791
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 18,
+      "hits": 5,
+      "damage": 254,
+      "archive_id": 5791
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 80,
+      "hits": 20,
+      "damage": 1021,
+      "archive_id": 5791
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 29,
+      "hits": 3,
+      "damage": 55,
+      "archive_id": 5791
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 443,
+      "hits": 138,
+      "damage": 951,
+      "archive_id": 5788
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 12,
+      "hits": 3,
+      "damage": 200,
+      "archive_id": 5788
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 80,
+      "hits": 37,
+      "damage": 1750,
+      "archive_id": 5788
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 11,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 5788
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 493,
+      "hits": 146,
+      "damage": 1005,
+      "archive_id": 5788
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 7,
+      "hits": 1,
+      "damage": 80,
+      "archive_id": 5788
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 81,
+      "hits": 16,
+      "damage": 765,
+      "archive_id": 5788
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 15,
+      "hits": 4,
+      "damage": 80,
+      "archive_id": 5788
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 353,
+      "hits": 119,
+      "damage": 830,
+      "archive_id": 5760
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 5760
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 72,
+      "hits": 25,
+      "damage": 1272,
+      "archive_id": 5760
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 100,
+      "hits": 7,
+      "damage": 135,
+      "archive_id": 5760
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 530,
+      "hits": 173,
+      "damage": 1192,
+      "archive_id": 5760
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 24,
+      "hits": 9,
+      "damage": 718,
+      "archive_id": 5760
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 98,
+      "hits": 21,
+      "damage": 996,
+      "archive_id": 5760
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 21,
+      "hits": 3,
+      "damage": 46,
+      "archive_id": 5760
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 538,
+      "hits": 179,
+      "damage": 1211,
+      "archive_id": 5756
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 13,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 5756
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 120,
+      "hits": 25,
+      "damage": 1037,
+      "archive_id": 5756
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 62,
+      "hits": 9,
+      "damage": 175,
+      "archive_id": 5756
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 443,
+      "hits": 138,
+      "damage": 951,
+      "archive_id": 5752
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 12,
+      "hits": 3,
+      "damage": 200,
+      "archive_id": 5752
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 80,
+      "hits": 37,
+      "damage": 1750,
+      "archive_id": 5752
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 11,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 5752
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 416,
+      "hits": 122,
+      "damage": 837,
+      "archive_id": 5752
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 4,
+      "hits": 1,
+      "damage": 80,
+      "archive_id": 5752
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 68,
+      "hits": 11,
+      "damage": 564,
+      "archive_id": 5752
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 15,
+      "hits": 4,
+      "damage": 80,
+      "archive_id": 5752
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 218,
+      "hits": 71,
+      "damage": 497,
+      "archive_id": 5589
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 27,
+      "hits": 8,
+      "damage": 640,
+      "archive_id": 5589
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 70,
+      "hits": 13,
+      "damage": 691,
+      "archive_id": 5589
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 117,
+      "hits": 13,
+      "damage": 222,
+      "archive_id": 5589
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 227,
+      "hits": 66,
+      "damage": 462,
+      "archive_id": 5586
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 11,
+      "damage": 806,
+      "archive_id": 5586
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 92,
+      "hits": 28,
+      "damage": 1013,
+      "archive_id": 5586
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 110,
+      "hits": 10,
+      "damage": 181,
+      "archive_id": 5586
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 218,
+      "hits": 71,
+      "damage": 497,
+      "archive_id": 5583
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 27,
+      "hits": 8,
+      "damage": 640,
+      "archive_id": 5583
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 70,
+      "hits": 13,
+      "damage": 691,
+      "archive_id": 5583
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 117,
+      "hits": 13,
+      "damage": 222,
+      "archive_id": 5583
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 227,
+      "hits": 66,
+      "damage": 462,
+      "archive_id": 5581
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 11,
+      "damage": 806,
+      "archive_id": 5581
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 92,
+      "hits": 28,
+      "damage": 1013,
+      "archive_id": 5581
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 110,
+      "hits": 10,
+      "damage": 181,
+      "archive_id": 5581
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 417,
+      "hits": 161,
+      "damage": 1120,
+      "archive_id": 5576
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 44,
+      "hits": 18,
+      "damage": 1317,
+      "archive_id": 5576
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 69,
+      "hits": 24,
+      "damage": 845,
+      "archive_id": 5576
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 71,
+      "hits": 6,
+      "damage": 115,
+      "archive_id": 5576
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 417,
+      "hits": 161,
+      "damage": 1120,
+      "archive_id": 5571
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 44,
+      "hits": 18,
+      "damage": 1317,
+      "archive_id": 5571
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 69,
+      "hits": 24,
+      "damage": 845,
+      "archive_id": 5571
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 71,
+      "hits": 6,
+      "damage": 115,
+      "archive_id": 5571
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 527,
+      "hits": 184,
+      "damage": 1274,
+      "archive_id": 5567
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 22,
+      "hits": 2,
+      "damage": 160,
+      "archive_id": 5567
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 60,
+      "hits": 18,
+      "damage": 902,
+      "archive_id": 5567
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 70,
+      "hits": 4,
+      "damage": 75,
+      "archive_id": 5567
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 256,
+      "hits": 69,
+      "damage": 483,
+      "archive_id": 5567
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 23,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 5567
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 64,
+      "hits": 25,
+      "damage": 1077,
+      "archive_id": 5567
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 125,
+      "hits": 13,
+      "damage": 211,
+      "archive_id": 5567
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 500,
+      "hits": 174,
+      "damage": 1209,
+      "archive_id": 5559
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 14,
+      "hits": 8,
+      "damage": 623,
+      "archive_id": 5559
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 105,
+      "hits": 28,
+      "damage": 1258,
+      "archive_id": 5559
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 137,
+      "hits": 17,
+      "damage": 272,
+      "archive_id": 5559
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 512,
+      "hits": 164,
+      "damage": 1148,
+      "archive_id": 5559
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 5559
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 84,
+      "hits": 19,
+      "damage": 738,
+      "archive_id": 5559
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 32,
+      "hits": 2,
+      "damage": 22,
+      "archive_id": 5559
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 779,
+      "hits": 249,
+      "damage": 1696,
+      "archive_id": 5552
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 26,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 5552
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 90,
+      "hits": 24,
+      "damage": 1230,
+      "archive_id": 5552
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 14,
+      "hits": 1,
+      "damage": 6,
+      "archive_id": 5552
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 523,
+      "hits": 143,
+      "damage": 983,
+      "archive_id": 5552
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 13,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 5552
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 120,
+      "hits": 39,
+      "damage": 1741,
+      "archive_id": 5552
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 62,
+      "hits": 7,
+      "damage": 140,
+      "archive_id": 5552
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 527,
+      "hits": 184,
+      "damage": 1274,
+      "archive_id": 5548
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 22,
+      "hits": 2,
+      "damage": 160,
+      "archive_id": 5548
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 60,
+      "hits": 18,
+      "damage": 902,
+      "archive_id": 5548
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 70,
+      "hits": 4,
+      "damage": 75,
+      "archive_id": 5548
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 256,
+      "hits": 69,
+      "damage": 483,
+      "archive_id": 5548
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 23,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 5548
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 64,
+      "hits": 25,
+      "damage": 1077,
+      "archive_id": 5548
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 125,
+      "hits": 13,
+      "damage": 211,
+      "archive_id": 5548
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 779,
+      "hits": 249,
+      "damage": 1696,
+      "archive_id": 5529
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 26,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 5529
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 90,
+      "hits": 24,
+      "damage": 1230,
+      "archive_id": 5529
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 14,
+      "hits": 1,
+      "damage": 6,
+      "archive_id": 5529
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 523,
+      "hits": 143,
+      "damage": 983,
+      "archive_id": 5529
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 13,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 5529
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 120,
+      "hits": 39,
+      "damage": 1741,
+      "archive_id": 5529
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 62,
+      "hits": 7,
+      "damage": 140,
+      "archive_id": 5529
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 417,
+      "hits": 161,
+      "damage": 1120,
+      "archive_id": 5525
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 44,
+      "hits": 18,
+      "damage": 1317,
+      "archive_id": 5525
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 69,
+      "hits": 24,
+      "damage": 845,
+      "archive_id": 5525
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 71,
+      "hits": 6,
+      "damage": 115,
+      "archive_id": 5525
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 500,
+      "hits": 174,
+      "damage": 1209,
+      "archive_id": 5520
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 14,
+      "hits": 8,
+      "damage": 623,
+      "archive_id": 5520
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 105,
+      "hits": 28,
+      "damage": 1258,
+      "archive_id": 5520
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 137,
+      "hits": 17,
+      "damage": 272,
+      "archive_id": 5520
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 512,
+      "hits": 164,
+      "damage": 1148,
+      "archive_id": 5520
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 5520
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 84,
+      "hits": 19,
+      "damage": 738,
+      "archive_id": 5520
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 32,
+      "hits": 2,
+      "damage": 22,
+      "archive_id": 5520
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 779,
+      "hits": 249,
+      "damage": 1696,
+      "archive_id": 5516
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 26,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 5516
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 90,
+      "hits": 24,
+      "damage": 1230,
+      "archive_id": 5516
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 14,
+      "hits": 1,
+      "damage": 6,
+      "archive_id": 5516
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 523,
+      "hits": 143,
+      "damage": 983,
+      "archive_id": 5516
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 13,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 5516
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 120,
+      "hits": 39,
+      "damage": 1741,
+      "archive_id": 5516
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 62,
+      "hits": 7,
+      "damage": 140,
+      "archive_id": 5516
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 455,
+      "hits": 123,
+      "damage": 845,
+      "archive_id": 5508
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 7,
+      "damage": 474,
+      "archive_id": 5508
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 81,
+      "hits": 28,
+      "damage": 1391,
+      "archive_id": 5508
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 139,
+      "hits": 11,
+      "damage": 167,
+      "archive_id": 5508
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 214,
+      "hits": 75,
+      "damage": 521,
+      "archive_id": 5499
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 29,
+      "hits": 12,
+      "damage": 933,
+      "archive_id": 5499
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 75,
+      "hits": 32,
+      "damage": 1466,
+      "archive_id": 5499
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 84,
+      "hits": 21,
+      "damage": 402,
+      "archive_id": 5499
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 577,
+      "hits": 196,
+      "damage": 1329,
+      "archive_id": 5497
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 42,
+      "hits": 27,
+      "damage": 1968,
+      "archive_id": 5497
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 67,
+      "hits": 20,
+      "damage": 1007,
+      "archive_id": 5497
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 53,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 5497
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 455,
+      "hits": 123,
+      "damage": 845,
+      "archive_id": 5494
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 7,
+      "damage": 474,
+      "archive_id": 5494
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 81,
+      "hits": 28,
+      "damage": 1391,
+      "archive_id": 5494
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 139,
+      "hits": 11,
+      "damage": 167,
+      "archive_id": 5494
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 214,
+      "hits": 75,
+      "damage": 521,
+      "archive_id": 5491
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 29,
+      "hits": 12,
+      "damage": 933,
+      "archive_id": 5491
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 75,
+      "hits": 32,
+      "damage": 1466,
+      "archive_id": 5491
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 84,
+      "hits": 21,
+      "damage": 402,
+      "archive_id": 5491
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 466,
+      "hits": 203,
+      "damage": 1374,
+      "archive_id": 5486
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 37,
+      "hits": 25,
+      "damage": 1712,
+      "archive_id": 5486
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 104,
+      "hits": 33,
+      "damage": 1611,
+      "archive_id": 5486
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 24,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 5486
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 438,
+      "hits": 169,
+      "damage": 1144,
+      "archive_id": 5486
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 4,
+      "hits": 3,
+      "damage": 240,
+      "archive_id": 5486
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 93,
+      "hits": 25,
+      "damage": 973,
+      "archive_id": 5486
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 143,
+      "hits": 27,
+      "damage": 414,
+      "archive_id": 5486
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 577,
+      "hits": 196,
+      "damage": 1329,
+      "archive_id": 5477
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 42,
+      "hits": 27,
+      "damage": 1968,
+      "archive_id": 5477
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 67,
+      "hits": 20,
+      "damage": 1007,
+      "archive_id": 5477
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 53,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 5477
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 466,
+      "hits": 203,
+      "damage": 1374,
+      "archive_id": 5472
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 37,
+      "hits": 25,
+      "damage": 1712,
+      "archive_id": 5472
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 104,
+      "hits": 33,
+      "damage": 1611,
+      "archive_id": 5472
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 24,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 5472
+    },
+    {
+      "player": "evil",
+      "weapon": "lightningGun",
+      "shots": 438,
+      "hits": 169,
+      "damage": 1144,
+      "archive_id": 5472
+    },
+    {
+      "player": "evil",
+      "weapon": "railgun",
+      "shots": 4,
+      "hits": 3,
+      "damage": 240,
+      "archive_id": 5472
+    },
+    {
+      "player": "evil",
+      "weapon": "rocketLauncher",
+      "shots": 93,
+      "hits": 25,
+      "damage": 973,
+      "archive_id": 5472
+    },
+    {
+      "player": "evil",
+      "weapon": "plasmaGun",
+      "shots": 143,
+      "hits": 27,
+      "damage": 414,
+      "archive_id": 5472
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 371,
+      "hits": 140,
+      "damage": 973,
+      "archive_id": 5418
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 48,
+      "hits": 18,
+      "damage": 1307,
+      "archive_id": 5418
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 81,
+      "hits": 24,
+      "damage": 1290,
+      "archive_id": 5418
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 61,
+      "hits": 4,
+      "damage": 80,
+      "archive_id": 5418
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 692,
+      "hits": 198,
+      "damage": 1378,
+      "archive_id": 5415
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 25,
+      "hits": 9,
+      "damage": 609,
+      "archive_id": 5415
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 78,
+      "hits": 20,
+      "damage": 1089,
+      "archive_id": 5415
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 48,
+      "hits": 5,
+      "damage": 81,
+      "archive_id": 5415
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 371,
+      "hits": 140,
+      "damage": 973,
+      "archive_id": 5408
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 48,
+      "hits": 18,
+      "damage": 1307,
+      "archive_id": 5408
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 81,
+      "hits": 24,
+      "damage": 1290,
+      "archive_id": 5408
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 61,
+      "hits": 4,
+      "damage": 80,
+      "archive_id": 5408
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 286,
+      "hits": 112,
+      "damage": 775,
+      "archive_id": 5397
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 26,
+      "hits": 12,
+      "damage": 960,
+      "archive_id": 5397
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 66,
+      "hits": 27,
+      "damage": 1028,
+      "archive_id": 5397
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 69,
+      "hits": 8,
+      "damage": 142,
+      "archive_id": 5397
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 692,
+      "hits": 198,
+      "damage": 1378,
+      "archive_id": 5393
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 25,
+      "hits": 9,
+      "damage": 609,
+      "archive_id": 5393
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 78,
+      "hits": 20,
+      "damage": 1089,
+      "archive_id": 5393
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 48,
+      "hits": 5,
+      "damage": 81,
+      "archive_id": 5393
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 615,
+      "hits": 219,
+      "damage": 1526,
+      "archive_id": 5349
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 12,
+      "hits": 4,
+      "damage": 292,
+      "archive_id": 5349
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 66,
+      "hits": 21,
+      "damage": 926,
+      "archive_id": 5349
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 82,
+      "hits": 9,
+      "damage": 161,
+      "archive_id": 5349
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 504,
+      "hits": 236,
+      "damage": 1564,
+      "archive_id": 5346
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 58,
+      "hits": 37,
+      "damage": 2483,
+      "archive_id": 5346
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 91,
+      "hits": 34,
+      "damage": 1519,
+      "archive_id": 5346
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 18,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 5346
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 286,
+      "hits": 112,
+      "damage": 775,
+      "archive_id": 5342
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 26,
+      "hits": 12,
+      "damage": 960,
+      "archive_id": 5342
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 66,
+      "hits": 27,
+      "damage": 1028,
+      "archive_id": 5342
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 69,
+      "hits": 8,
+      "damage": 142,
+      "archive_id": 5342
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 504,
+      "hits": 236,
+      "damage": 1564,
+      "archive_id": 5321
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 58,
+      "hits": 37,
+      "damage": 2483,
+      "archive_id": 5321
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 91,
+      "hits": 34,
+      "damage": 1519,
+      "archive_id": 5321
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 18,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 5321
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 597,
+      "hits": 213,
+      "damage": 1461,
+      "archive_id": 4162
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 36,
+      "hits": 14,
+      "damage": 1073,
+      "archive_id": 4162
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 85,
+      "hits": 23,
+      "damage": 1110,
+      "archive_id": 4162
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 43,
+      "hits": 1,
+      "damage": 15,
+      "archive_id": 4162
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 403,
+      "hits": 172,
+      "damage": 1188,
+      "archive_id": 4162
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 25,
+      "hits": 7,
+      "damage": 514,
+      "archive_id": 4162
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 91,
+      "hits": 27,
+      "damage": 1564,
+      "archive_id": 4162
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 72,
+      "hits": 6,
+      "damage": 113,
+      "archive_id": 4162
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 141,
+      "hits": 48,
+      "damage": 321,
+      "archive_id": 4127
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 60,
+      "hits": 29,
+      "damage": 2091,
+      "archive_id": 4127
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 57,
+      "hits": 18,
+      "damage": 869,
+      "archive_id": 4127
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 65,
+      "hits": 3,
+      "damage": 50,
+      "archive_id": 4127
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 303,
+      "hits": 84,
+      "damage": 588,
+      "archive_id": 3344
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 29,
+      "hits": 16,
+      "damage": 1280,
+      "archive_id": 3344
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 71,
+      "hits": 15,
+      "damage": 715,
+      "archive_id": 3344
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 33,
+      "hits": 2,
+      "damage": 40,
+      "archive_id": 3344
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 192,
+      "hits": 64,
+      "damage": 448,
+      "archive_id": 3333
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 32,
+      "hits": 10,
+      "damage": 800,
+      "archive_id": 3333
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 154,
+      "hits": 43,
+      "damage": 2359,
+      "archive_id": 3333
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 125,
+      "hits": 14,
+      "damage": 280,
+      "archive_id": 3333
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 426,
+      "hits": 131,
+      "damage": 917,
+      "archive_id": 3320
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 24,
+      "hits": 11,
+      "damage": 880,
+      "archive_id": 3320
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 102,
+      "hits": 32,
+      "damage": 1263,
+      "archive_id": 3320
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 15,
+      "hits": 9,
+      "damage": 143,
+      "archive_id": 3320
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 265,
+      "hits": 46,
+      "damage": 322,
+      "archive_id": 3307
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 18,
+      "damage": 1440,
+      "archive_id": 3307
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 85,
+      "hits": 31,
+      "damage": 1286,
+      "archive_id": 3307
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 3,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 3307
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 143,
+      "hits": 44,
+      "damage": 308,
+      "archive_id": 3307
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 18,
+      "hits": 8,
+      "damage": 640,
+      "archive_id": 3307
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 78,
+      "hits": 18,
+      "damage": 945,
+      "archive_id": 3307
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 35,
+      "hits": 8,
+      "damage": 136,
+      "archive_id": 3307
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 331,
+      "hits": 90,
+      "damage": 630,
+      "archive_id": 3150
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 16,
+      "hits": 3,
+      "damage": 240,
+      "archive_id": 3150
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 77,
+      "hits": 14,
+      "damage": 565,
+      "archive_id": 3150
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 120,
+      "hits": 14,
+      "damage": 184,
+      "archive_id": 3150
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 331,
+      "hits": 90,
+      "damage": 630,
+      "archive_id": 3143
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 16,
+      "hits": 3,
+      "damage": 240,
+      "archive_id": 3143
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 77,
+      "hits": 14,
+      "damage": 565,
+      "archive_id": 3143
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 120,
+      "hits": 14,
+      "damage": 184,
+      "archive_id": 3143
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 596,
+      "hits": 192,
+      "damage": 1344,
+      "archive_id": 3133
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 10,
+      "damage": 800,
+      "archive_id": 3133
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 102,
+      "hits": 24,
+      "damage": 871,
+      "archive_id": 3133
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 56,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 3133
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 596,
+      "hits": 192,
+      "damage": 1344,
+      "archive_id": 3130
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 10,
+      "damage": 800,
+      "archive_id": 3130
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 102,
+      "hits": 24,
+      "damage": 871,
+      "archive_id": 3130
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 56,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 3130
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 538,
+      "hits": 159,
+      "damage": 1113,
+      "archive_id": 3093
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 15,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 3093
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 98,
+      "hits": 26,
+      "damage": 1034,
+      "archive_id": 3093
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 78,
+      "hits": 14,
+      "damage": 249,
+      "archive_id": 3093
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 295,
+      "hits": 101,
+      "damage": 707,
+      "archive_id": 3082
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 11,
+      "damage": 880,
+      "archive_id": 3082
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 121,
+      "hits": 22,
+      "damage": 834,
+      "archive_id": 3082
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 128,
+      "hits": 24,
+      "damage": 383,
+      "archive_id": 3082
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 99,
+      "hits": 23,
+      "damage": 161,
+      "archive_id": 3080
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 8,
+      "damage": 640,
+      "archive_id": 3080
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 57,
+      "hits": 18,
+      "damage": 813,
+      "archive_id": 3080
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 44,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 3080
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 538,
+      "hits": 159,
+      "damage": 1113,
+      "archive_id": 3071
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 15,
+      "hits": 7,
+      "damage": 560,
+      "archive_id": 3071
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 98,
+      "hits": 26,
+      "damage": 1034,
+      "archive_id": 3071
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 78,
+      "hits": 14,
+      "damage": 249,
+      "archive_id": 3071
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 295,
+      "hits": 101,
+      "damage": 707,
+      "archive_id": 3070
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 30,
+      "hits": 11,
+      "damage": 880,
+      "archive_id": 3070
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 121,
+      "hits": 22,
+      "damage": 834,
+      "archive_id": 3070
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 128,
+      "hits": 24,
+      "damage": 383,
+      "archive_id": 3070
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 638,
+      "hits": 206,
+      "damage": 1442,
+      "archive_id": 3067
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 15,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 3067
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 81,
+      "hits": 23,
+      "damage": 1011,
+      "archive_id": 3067
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 93,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 3067
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 305,
+      "hits": 88,
+      "damage": 616,
+      "archive_id": 3067
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 11,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 3067
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 91,
+      "hits": 17,
+      "damage": 604,
+      "archive_id": 3067
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 32,
+      "hits": 11,
+      "damage": 203,
+      "archive_id": 3067
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 99,
+      "hits": 23,
+      "damage": 161,
+      "archive_id": 3059
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 8,
+      "damage": 640,
+      "archive_id": 3059
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 57,
+      "hits": 18,
+      "damage": 813,
+      "archive_id": 3059
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 44,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 3059
+    },
+    {
+      "player": "cooller",
+      "weapon": "lightningGun",
+      "shots": 638,
+      "hits": 206,
+      "damage": 1442,
+      "archive_id": 3055
+    },
+    {
+      "player": "cooller",
+      "weapon": "railgun",
+      "shots": 15,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 3055
+    },
+    {
+      "player": "cooller",
+      "weapon": "rocketLauncher",
+      "shots": 81,
+      "hits": 23,
+      "damage": 1011,
+      "archive_id": 3055
+    },
+    {
+      "player": "cooller",
+      "weapon": "plasmaGun",
+      "shots": 93,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 3055
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 305,
+      "hits": 88,
+      "damage": 616,
+      "archive_id": 3055
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 11,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 3055
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 91,
+      "hits": 17,
+      "damage": 604,
+      "archive_id": 3055
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 32,
+      "hits": 11,
+      "damage": 203,
+      "archive_id": 3055
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 400,
+      "hits": 129,
+      "damage": 903,
+      "archive_id": 3053
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 41,
+      "hits": 17,
+      "damage": 1360,
+      "archive_id": 3053
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 86,
+      "hits": 33,
+      "damage": 1981,
+      "archive_id": 3053
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 28,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 3053
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 400,
+      "hits": 129,
+      "damage": 903,
+      "archive_id": 3033
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 41,
+      "hits": 17,
+      "damage": 1360,
+      "archive_id": 3033
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 86,
+      "hits": 33,
+      "damage": 1981,
+      "archive_id": 3033
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 28,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 3033
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 438,
+      "hits": 77,
+      "damage": 539,
+      "archive_id": 3027
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 5,
+      "damage": 400,
+      "archive_id": 3027
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 103,
+      "hits": 27,
+      "damage": 971,
+      "archive_id": 3027
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 171,
+      "hits": 9,
+      "damage": 141,
+      "archive_id": 3027
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 116,
+      "hits": 34,
+      "damage": 245,
+      "archive_id": 3024
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 14,
+      "damage": 1120,
+      "archive_id": 3024
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 96,
+      "hits": 26,
+      "damage": 1149,
+      "archive_id": 3024
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 49,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 3024
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 438,
+      "hits": 77,
+      "damage": 539,
+      "archive_id": 3006
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 5,
+      "damage": 400,
+      "archive_id": 3006
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 103,
+      "hits": 27,
+      "damage": 971,
+      "archive_id": 3006
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 171,
+      "hits": 9,
+      "damage": 141,
+      "archive_id": 3006
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 116,
+      "hits": 34,
+      "damage": 245,
+      "archive_id": 2992
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 14,
+      "damage": 1120,
+      "archive_id": 2992
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 96,
+      "hits": 26,
+      "damage": 1149,
+      "archive_id": 2992
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 49,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 2992
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 555,
+      "hits": 195,
+      "damage": 1358,
+      "archive_id": 1368
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 14,
+      "hits": 5,
+      "damage": 342,
+      "archive_id": 1368
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 91,
+      "hits": 23,
+      "damage": 1064,
+      "archive_id": 1368
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 17,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 1368
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 474,
+      "hits": 169,
+      "damage": 1160,
+      "archive_id": 1359
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 29,
+      "hits": 17,
+      "damage": 1192,
+      "archive_id": 1359
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 96,
+      "hits": 33,
+      "damage": 1528,
+      "archive_id": 1359
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 76,
+      "hits": 8,
+      "damage": 155,
+      "archive_id": 1359
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 555,
+      "hits": 195,
+      "damage": 1358,
+      "archive_id": 1342
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 14,
+      "hits": 5,
+      "damage": 342,
+      "archive_id": 1342
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 91,
+      "hits": 23,
+      "damage": 1064,
+      "archive_id": 1342
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 17,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 1342
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 618,
+      "hits": 135,
+      "damage": 930,
+      "archive_id": 1328
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 6,
+      "damage": 480,
+      "archive_id": 1328
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 100,
+      "hits": 19,
+      "damage": 891,
+      "archive_id": 1328
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 166,
+      "hits": 6,
+      "damage": 120,
+      "archive_id": 1328
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 319,
+      "hits": 130,
+      "damage": 909,
+      "archive_id": 1313
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 27,
+      "hits": 15,
+      "damage": 883,
+      "archive_id": 1313
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 78,
+      "hits": 24,
+      "damage": 1221,
+      "archive_id": 1313
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 220,
+      "hits": 43,
+      "damage": 763,
+      "archive_id": 1313
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 618,
+      "hits": 135,
+      "damage": 930,
+      "archive_id": 1306
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 6,
+      "damage": 480,
+      "archive_id": 1306
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 100,
+      "hits": 19,
+      "damage": 891,
+      "archive_id": 1306
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 166,
+      "hits": 6,
+      "damage": 120,
+      "archive_id": 1306
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 319,
+      "hits": 130,
+      "damage": 909,
+      "archive_id": 1303
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 27,
+      "hits": 15,
+      "damage": 883,
+      "archive_id": 1303
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 78,
+      "hits": 24,
+      "damage": 1221,
+      "archive_id": 1303
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 220,
+      "hits": 43,
+      "damage": 763,
+      "archive_id": 1303
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 530,
+      "hits": 128,
+      "damage": 896,
+      "archive_id": 1299
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 32,
+      "hits": 9,
+      "damage": 720,
+      "archive_id": 1299
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 62,
+      "hits": 10,
+      "damage": 374,
+      "archive_id": 1299
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 151,
+      "hits": 20,
+      "damage": 345,
+      "archive_id": 1299
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 530,
+      "hits": 128,
+      "damage": 896,
+      "archive_id": 1293
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 32,
+      "hits": 9,
+      "damage": 720,
+      "archive_id": 1293
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 62,
+      "hits": 10,
+      "damage": 374,
+      "archive_id": 1293
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 151,
+      "hits": 20,
+      "damage": 345,
+      "archive_id": 1293
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 474,
+      "hits": 169,
+      "damage": 1160,
+      "archive_id": 1291
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 29,
+      "hits": 17,
+      "damage": 1192,
+      "archive_id": 1291
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 96,
+      "hits": 33,
+      "damage": 1528,
+      "archive_id": 1291
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 76,
+      "hits": 8,
+      "damage": 155,
+      "archive_id": 1291
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 563,
+      "hits": 206,
+      "damage": 1392,
+      "archive_id": 1251
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 53,
+      "hits": 19,
+      "damage": 1424,
+      "archive_id": 1251
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 81,
+      "hits": 22,
+      "damage": 1088,
+      "archive_id": 1251
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 11,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 1251
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 563,
+      "hits": 206,
+      "damage": 1392,
+      "archive_id": 1245
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 53,
+      "hits": 19,
+      "damage": 1424,
+      "archive_id": 1245
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 81,
+      "hits": 22,
+      "damage": 1088,
+      "archive_id": 1245
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 11,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 1245
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 398,
+      "hits": 134,
+      "damage": 936,
+      "archive_id": 1208
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 32,
+      "hits": 15,
+      "damage": 1171,
+      "archive_id": 1208
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 104,
+      "hits": 21,
+      "damage": 873,
+      "archive_id": 1208
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 398,
+      "hits": 134,
+      "damage": 936,
+      "archive_id": 1198
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 32,
+      "hits": 15,
+      "damage": 1171,
+      "archive_id": 1198
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 104,
+      "hits": 21,
+      "damage": 873,
+      "archive_id": 1198
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 249,
+      "hits": 87,
+      "damage": 609,
+      "archive_id": 141
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 19,
+      "hits": 11,
+      "damage": 880,
+      "archive_id": 141
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 60,
+      "hits": 14,
+      "damage": 598,
+      "archive_id": 141
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 183,
+      "hits": 24,
+      "damage": 428,
+      "archive_id": 141
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 427,
+      "hits": 158,
+      "damage": 1106,
+      "archive_id": 119
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 23,
+      "hits": 16,
+      "damage": 1280,
+      "archive_id": 119
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 83,
+      "hits": 33,
+      "damage": 1768,
+      "archive_id": 119
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 81,
+      "hits": 2,
+      "damage": 40,
+      "archive_id": 119
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 427,
+      "hits": 158,
+      "damage": 1106,
+      "archive_id": 74
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 23,
+      "hits": 16,
+      "damage": 1280,
+      "archive_id": 74
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 83,
+      "hits": 33,
+      "damage": 1768,
+      "archive_id": 74
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 81,
+      "hits": 2,
+      "damage": 40,
+      "archive_id": 74
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 247,
+      "hits": 79,
+      "damage": 553,
+      "archive_id": 68
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 45,
+      "hits": 24,
+      "damage": 1920,
+      "archive_id": 68
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 88,
+      "hits": 22,
+      "damage": 1085,
+      "archive_id": 68
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 49,
+      "hits": 12,
+      "damage": 240,
+      "archive_id": 68
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 349,
+      "hits": 106,
+      "damage": 742,
+      "archive_id": 61
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 49,
+      "hits": 25,
+      "damage": 2000,
+      "archive_id": 61
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 118,
+      "hits": 43,
+      "damage": 2567,
+      "archive_id": 61
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 2,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 61
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 247,
+      "hits": 79,
+      "damage": 553,
+      "archive_id": 59
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 45,
+      "hits": 24,
+      "damage": 1920,
+      "archive_id": 59
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 88,
+      "hits": 22,
+      "damage": 1085,
+      "archive_id": 59
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 49,
+      "hits": 12,
+      "damage": 240,
+      "archive_id": 59
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 351,
+      "hits": 123,
+      "damage": 861,
+      "archive_id": 57
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 49,
+      "hits": 27,
+      "damage": 2160,
+      "archive_id": 57
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 113,
+      "hits": 41,
+      "damage": 2593,
+      "archive_id": 57
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 20,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 57
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "lightningGun",
+      "shots": 349,
+      "hits": 106,
+      "damage": 742,
+      "archive_id": 55
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "railgun",
+      "shots": 49,
+      "hits": 25,
+      "damage": 2000,
+      "archive_id": 55
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "rocketLauncher",
+      "shots": 118,
+      "hits": 43,
+      "damage": 2567,
+      "archive_id": 55
+    },
+    {
+      "player": "k1llsen",
+      "weapon": "plasmaGun",
+      "shots": 2,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 55
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 407,
+      "hits": 176,
+      "damage": 1232,
+      "archive_id": 50
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 45,
+      "hits": 29,
+      "damage": 2320,
+      "archive_id": 50
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 79,
+      "hits": 30,
+      "damage": 1754,
+      "archive_id": 50
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 123,
+      "hits": 38,
+      "damage": 701,
+      "archive_id": 50
+    },
+    {
+      "player": "rapha",
+      "weapon": "lightningGun",
+      "shots": 105,
+      "hits": 17,
+      "damage": 119,
+      "archive_id": 49
+    },
+    {
+      "player": "rapha",
+      "weapon": "railgun",
+      "shots": 6,
+      "hits": 1,
+      "damage": 80,
+      "archive_id": 49
+    },
+    {
+      "player": "rapha",
+      "weapon": "rocketLauncher",
+      "shots": 83,
+      "hits": 35,
+      "damage": 1522,
+      "archive_id": 49
+    },
+    {
+      "player": "rapha",
+      "weapon": "plasmaGun",
+      "shots": 136,
+      "hits": 30,
+      "damage": 595,
+      "archive_id": 49
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 358,
+      "hits": 128,
+      "damage": 896,
+      "archive_id": 13
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 48,
+      "hits": 26,
+      "damage": 2080,
+      "archive_id": 13
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 67,
+      "hits": 18,
+      "damage": 1300,
+      "archive_id": 13
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 244,
+      "hits": 21,
+      "damage": 333,
+      "archive_id": 13
+    },
+    {
+      "player": "cypher",
+      "weapon": "lightningGun",
+      "shots": 358,
+      "hits": 128,
+      "damage": 896,
+      "archive_id": 9
+    },
+    {
+      "player": "cypher",
+      "weapon": "railgun",
+      "shots": 48,
+      "hits": 26,
+      "damage": 2080,
+      "archive_id": 9
+    },
+    {
+      "player": "cypher",
+      "weapon": "rocketLauncher",
+      "shots": 67,
+      "hits": 18,
+      "damage": 1300,
+      "archive_id": 9
+    },
+    {
+      "player": "cypher",
+      "weapon": "plasmaGun",
+      "shots": 244,
+      "hits": 21,
+      "damage": 333,
+      "archive_id": 9
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 424,
+      "hits": 114,
+      "damage": 798,
+      "archive_id": 5545
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 32,
+      "hits": 16,
+      "damage": 1204,
+      "archive_id": 5545
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 57,
+      "hits": 14,
+      "damage": 514,
+      "archive_id": 5545
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 73,
+      "hits": 10,
+      "damage": 193,
+      "archive_id": 5545
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 424,
+      "hits": 114,
+      "damage": 798,
+      "archive_id": 5534
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 32,
+      "hits": 16,
+      "damage": 1204,
+      "archive_id": 5534
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 57,
+      "hits": 14,
+      "damage": 514,
+      "archive_id": 5534
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 73,
+      "hits": 10,
+      "damage": 193,
+      "archive_id": 5534
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 475,
+      "hits": 186,
+      "damage": 1290,
+      "archive_id": 5451
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 11,
+      "damage": 751,
+      "archive_id": 5451
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 59,
+      "hits": 15,
+      "damage": 668,
+      "archive_id": 5451
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 106,
+      "hits": 15,
+      "damage": 272,
+      "archive_id": 5451
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 475,
+      "hits": 186,
+      "damage": 1290,
+      "archive_id": 5434
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 17,
+      "hits": 11,
+      "damage": 751,
+      "archive_id": 5434
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 59,
+      "hits": 15,
+      "damage": 668,
+      "archive_id": 5434
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 106,
+      "hits": 15,
+      "damage": 272,
+      "archive_id": 5434
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 1286,
+      "hits": 436,
+      "damage": 2904,
+      "archive_id": 5430
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 22,
+      "hits": 14,
+      "damage": 863,
+      "archive_id": 5430
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 97,
+      "hits": 18,
+      "damage": 790,
+      "archive_id": 5430
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 1286,
+      "hits": 436,
+      "damage": 2904,
+      "archive_id": 5421
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 22,
+      "hits": 14,
+      "damage": 863,
+      "archive_id": 5421
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 97,
+      "hits": 18,
+      "damage": 790,
+      "archive_id": 5421
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 391,
+      "hits": 114,
+      "damage": 752,
+      "archive_id": 4172
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 10,
+      "damage": 653,
+      "archive_id": 4172
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 46,
+      "hits": 11,
+      "damage": 640,
+      "archive_id": 4172
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 93,
+      "hits": 15,
+      "damage": 280,
+      "archive_id": 4172
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 391,
+      "hits": 114,
+      "damage": 752,
+      "archive_id": 4165
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 21,
+      "hits": 10,
+      "damage": 653,
+      "archive_id": 4165
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 46,
+      "hits": 11,
+      "damage": 640,
+      "archive_id": 4165
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 93,
+      "hits": 15,
+      "damage": 280,
+      "archive_id": 4165
+    },
+    {
+      "player": "avek",
+      "weapon": "lightningGun",
+      "shots": 329,
+      "hits": 118,
+      "damage": 809,
+      "archive_id": 4152
+    },
+    {
+      "player": "avek",
+      "weapon": "railgun",
+      "shots": 13,
+      "hits": 5,
+      "damage": 266,
+      "archive_id": 4152
+    },
+    {
+      "player": "avek",
+      "weapon": "rocketLauncher",
+      "shots": 38,
+      "hits": 17,
+      "damage": 888,
+      "archive_id": 4152
+    },
+    {
+      "player": "avek",
+      "weapon": "plasmaGun",
+      "shots": 15,
+      "hits": 2,
+      "damage": 21,
+      "archive_id": 4152
+    },
+    {
+      "player": "strenx",
+      "weapon": "lightningGun",
+      "shots": 204,
+      "hits": 68,
+      "damage": 476,
+      "archive_id": 8389
+    },
+    {
+      "player": "strenx",
+      "weapon": "railgun",
+      "shots": 5,
+      "hits": 4,
+      "damage": 320,
+      "archive_id": 8389
+    },
+    {
+      "player": "strenx",
+      "weapon": "rocketLauncher",
+      "shots": 24,
+      "hits": 8,
+      "damage": 445,
+      "archive_id": 8389
+    },
+    {
+      "player": "strenx",
+      "weapon": "plasmaGun",
+      "shots": 51,
+      "hits": 1,
+      "damage": 20,
+      "archive_id": 8389
+    },
+    {
+      "player": "strenx",
+      "weapon": "lightningGun",
+      "shots": 681,
+      "hits": 184,
+      "damage": 1288,
+      "archive_id": 8386
+    },
+    {
+      "player": "strenx",
+      "weapon": "railgun",
+      "shots": 23,
+      "hits": 12,
+      "damage": 960,
+      "archive_id": 8386
+    },
+    {
+      "player": "strenx",
+      "weapon": "rocketLauncher",
+      "shots": 82,
+      "hits": 18,
+      "damage": 944,
+      "archive_id": 8386
+    },
+    {
+      "player": "strenx",
+      "weapon": "plasmaGun",
+      "shots": 10,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 8386
+    },
+    {
+      "player": "strenx",
+      "weapon": "lightningGun",
+      "shots": 241,
+      "hits": 101,
+      "damage": 700,
+      "archive_id": 7825
+    },
+    {
+      "player": "strenx",
+      "weapon": "railgun",
+      "shots": 11,
+      "hits": 6,
+      "damage": 480,
+      "archive_id": 7825
+    },
+    {
+      "player": "strenx",
+      "weapon": "rocketLauncher",
+      "shots": 50,
+      "hits": 12,
+      "damage": 635,
+      "archive_id": 7825
+    },
+    {
+      "player": "strenx",
+      "weapon": "plasmaGun",
+      "shots": 13,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 7825
+    },
+    {
+      "player": "strenx",
+      "weapon": "lightningGun",
+      "shots": 155,
+      "hits": 80,
+      "damage": 567,
+      "archive_id": 7821
+    },
+    {
+      "player": "strenx",
+      "weapon": "railgun",
+      "shots": 3,
+      "hits": 2,
+      "damage": 160,
+      "archive_id": 7821
+    },
+    {
+      "player": "strenx",
+      "weapon": "rocketLauncher",
+      "shots": 24,
+      "hits": 9,
+      "damage": 567,
+      "archive_id": 7821
+    },
+    {
+      "player": "strenx",
+      "weapon": "plasmaGun",
+      "shots": 13,
+      "hits": 0,
+      "damage": 0,
+      "archive_id": 7821
+    }
+  ]
+}

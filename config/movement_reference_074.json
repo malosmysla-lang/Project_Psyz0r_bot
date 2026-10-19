@@ -1,0 +1,12 @@
+{
+  "reference_kind": "best_observed_candidate_not_verified_execution",
+  "window_ms": 4000,
+  "speed_xy_ups": 651.184,
+  "tolerance_ups": 15,
+  "source_corpus": "bloodrun_top500_20261019",
+  "source_archive_id": 4224,
+  "first_takeoff_ms": 15223075,
+  "raw_keyboard_or_mouse_available": false,
+  "physics_comparable": false,
+  "changes_engine_speed": false
+}

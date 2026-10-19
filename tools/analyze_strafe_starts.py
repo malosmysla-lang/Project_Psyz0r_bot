@@ -73,12 +73,22 @@ def analyse_rows(rows, source):
         start = slow[-1]
         if not 75 <= takeoff["time_ms"] - start["time_ms"] <= 500:
             continue
-        horizon = [r for r in rows[i:min(len(rows), i + 65)]
+        horizon = [r for r in rows[i:min(len(rows), i + 165)]
                    if r["segment"] == takeoff["segment"] and
                    r["client"] == takeoff["client"] and
-                   r["time_ms"] - takeoff["time_ms"] <= 1600]
+                   r["time_ms"] - takeoff["time_ms"] <= 4000]
+        bounded=[]
+        for r in horizon:
+            if bounded and not continuous(bounded[-1],r):break
+            if bounded and 'position' in r and 'position' in bounded[-1] and math.dist(r['position'],bounded[-1]['position'])>128:break
+            bounded.append(r)
+        horizon=bounded
         if has_combat(prior + horizon):
             continue
+        if any(((a.get('health') or 0)-(b.get('health') or 0)>2) or ((a.get('armor') or 0)-(b.get('armor') or 0)>2)
+               for a,b in zip(prior+horizon,(prior+horizon)[1:])):continue
+        if any(a['ground_entity']==b['ground_entity']==AIR and math.hypot(b['velocity'][0]-a['velocity'][0],b['velocity'][1]-a['velocity'][1])>30
+               for a,b in zip(horizon,horizon[1:])):continue
         landing = next((j for j in range(1, len(horizon))
                         if horizon[j - 1]["ground_entity"] == AIR and
                         horizon[j]["ground_entity"] != AIR), None)
@@ -117,6 +127,11 @@ def analyse_rows(rows, source):
             "second_takeoff_delay_ms": horizon[second]["time_ms"] - takeoff["time_ms"],
             "landing_to_second_takeoff_ms": horizon[second]["time_ms"] - horizon[landing]["time_ms"],
             "raw_mouse_or_keys_verified": False,
+            "observed_horizon_ms":horizon[-1]['time_ms']-takeoff['time_ms'],
+            "peak_2s":round(max(r['speed_xy'] for r in horizon if r['time_ms']-takeoff['time_ms']<=2000),3),
+            "peak_4s":round(max(r['speed_xy'] for r in horizon),3),
+            "jump_takeoffs_in_window":sum(a['ground_entity']!=AIR and b['ground_entity']==AIR for a,b in zip(horizon,horizon[1:])),
+            "view_trace":[dict(elapsed_ms=r['time_ms']-takeoff['time_ms'],yaw=r['viewangles'][1],pitch=r['viewangles'][0],velocity=r['velocity'],speed=r['speed_xy']) for r in horizon],
         })
         samples[-1]["first_air_speed_gain"] = round(samples[-1]["first_air_max_speed"] - samples[-1]["pre_jump_speed"], 3)
         samples[-1]["second_air_speed_gain"] = round(samples[-1]["second_air_max_speed"] - samples[-1]["first_air_max_speed"], 3)
@@ -136,7 +151,7 @@ def analyse(paths):
               "first_air_yaw_sweep_deg", "second_setup_yaw_sweep_deg",
               "ground_yaw_sweep_abs_deg", "first_air_yaw_sweep_abs_deg",
               "first_air_speed_gain", "second_air_speed_gain",
-              "second_takeoff_delay_ms", "landing_to_second_takeoff_ms")
+              "second_takeoff_delay_ms", "landing_to_second_takeoff_ms", "peak_2s", "peak_4s")
     return {
         "method": "observable POV state transitions; no recovered keyboard or mouse input",
         "filters": {"minimum_prior_window_ms": 250, "prior_min_speed_max": 80,
@@ -154,8 +169,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("corpus", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument('--extra-corpus',type=Path,action='append',default=[])
+    parser.add_argument('--shard-index',type=int,default=0)
+    parser.add_argument('--shard-count',type=int,default=1)
     args = parser.parse_args()
-    paths = sorted(args.corpus.glob("*/snapshots.jsonl.gz"))
+    paths = sorted({p for corpus in [args.corpus]+args.extra_corpus for p in corpus.glob('*/snapshots.jsonl.gz')})
+    paths = [p for i,p in enumerate(paths) if i%args.shard_count==args.shard_index]
     if not paths:
         parser.error("no snapshots.jsonl.gz files found")
     result = analyse(paths)

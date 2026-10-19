@@ -74,10 +74,13 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--corpus', action='append', help='Folder under out/; repeat to combine corpora')
     parser.add_argument('--output', type=Path, default=ROOT/'docs/training/BLOODRUN_OPENINGS.json')
+    parser.add_argument('--shard-index',type=int,default=0)
+    parser.add_argument('--shard-count',type=int,default=1)
     args=parser.parse_args()
     records = []
     for corpus in (args.corpus or ('bloodrun_corpus', 'owner_bloodrun_corpus')):
-        for folder in sorted((ROOT/'out'/corpus).iterdir()):
+        for folder_index,folder in enumerate(sorted((ROOT/'out'/corpus).iterdir())):
+            if folder_index%args.shard_count!=args.shard_index:continue
             if not folder.is_dir() or not (folder/'snapshots.jsonl.gz').exists():
                 continue
             metadata = next((p for p in folder.glob('*.json')
@@ -90,7 +93,7 @@ def main():
             with gzip.open(folder/'observed_approaches.json.gz', 'rt', encoding='utf-8') as f:
                 approaches = json.load(f)
             for state, gs in enumerate(data.get('gameStates', []), 1):
-                if gs.get('configStringValues', {}).get('mapname', '').lower() != 'bloodrun':
+                if gs.get('configStringValues', {}).get('mapname', '').lower() not in ('bloodrun','ztntourney1'):
                     continue
                 for match in gs.get('matches', []):
                     start = match['startTime']

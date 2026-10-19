@@ -33,11 +33,14 @@ def active_pov(x):
 
 def main():
     global CORPUS, OUT
-    ap=argparse.ArgumentParser();ap.add_argument('--corpus',type=Path,default=CORPUS);ap.add_argument('--output',type=Path,default=OUT);args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--corpus',type=Path,default=CORPUS);ap.add_argument('--output',type=Path,default=OUT)
+    ap.add_argument('--shard-index',type=int,default=0);ap.add_argument('--shard-count',type=int,default=1);args=ap.parse_args()
+    if not 0<=args.shard_index<args.shard_count:ap.error('Invalid shard')
     CORPUS=args.corpus.resolve();OUT=args.output.resolve()
     OUT.mkdir(parents=True,exist_ok=True)
     manifest=json.loads((CORPUS/'manifest.json').read_text(encoding='utf-8'));reports=[]
-    index=OUT/'analysis_index.json'
+    index=OUT/('analysis_index.json' if args.shard_count==1 else f'analysis_index_shard{args.shard_index}.json')
+    manifest['records']=[r for i,r in enumerate(manifest['records']) if i%args.shard_count==args.shard_index]
     cached={r['archive_id']:r for r in json.loads(index.read_text(encoding='utf-8'))['records']} if index.exists() else {}
     for n,record in enumerate(manifest['records'],1):
         if record['archive_id'] in cached and cached[record['archive_id']]['status']=='parsed' and cached[record['archive_id']].get('extractor_revision')==2 and cached[record['archive_id']].get('source_sha256')==record['sha256'] and hashlib.sha256((CORPUS/record['filename']).read_bytes()).hexdigest()==record['sha256']:
@@ -47,7 +50,7 @@ def main():
             run=subprocess.run([str(ROOT/'tools/udt/bin/UDT_json.exe'),'-a=gm','-t=1','-o='+str(folder),str(demo)],capture_output=True,timeout=120)
             if run.returncode:raise RuntimeError('UDT JSON export failed')
             data=json.loads((folder/(demo.stem+'.json')).read_text(encoding='utf-8'));states=data['gameStates'];maps=sorted({s.get('configStringValues',{}).get('mapname','unknown') for s in states})
-            if {m.lower() for m in maps}!={'bloodrun'}:raise ValueError('Unexpected recorded maps: '+str(maps))
+            if not maps or not {m.lower() for m in maps}<={'bloodrun','ztntourney1'}:raise ValueError('Unexpected recorded maps: '+str(maps))
             analysis_demo=demo;conversion=None
             if demo.suffix.lower() in ('.dm_73','.dm_90'):
                 converted=folder/'converted';converted.mkdir(exist_ok=True)
@@ -77,6 +80,7 @@ def main():
             snapshots.unlink()
             reports.append(dict(archive_id=record['archive_id'],filename=record['filename'],source_sha256=record['sha256'],conversion=conversion,maps=maps,status='parsed',snapshots=summary['snapshots'],segments=summary['segments'],active_pov_samples=active,pickups=dict(counts),approaches=len(routes),parser='UDT 1.3.1',physics_verified=False,extractor_revision=2))
         except Exception as e:reports.append(dict(archive_id=record['archive_id'],status='failed',error=str(e)))
-        (OUT/'analysis_index.json').write_text(json.dumps(dict(records=reports),ensure_ascii=False,indent=2),encoding='utf-8')
+        index.write_text(json.dumps(dict(records=reports),ensure_ascii=False,indent=2),encoding='utf-8')
         if n%5==0 or n==len(manifest['records']): print('Analyzed',n,'/',len(manifest['records']),'parsed',sum(r['status']=='parsed' for r in reports),flush=True)
+    index.write_text(json.dumps(dict(records=reports),ensure_ascii=False,indent=2),encoding='utf-8')
 if __name__=='__main__':main()

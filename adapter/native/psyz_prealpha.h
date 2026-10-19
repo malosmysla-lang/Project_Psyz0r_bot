@@ -1,6 +1,7 @@
 /* Experimental Blood Run prealpha. Uses valid goals produced by stock QL. */
 #include <math.h>
 #include "psyz_loadout.h"
+#include "psyz_macro.h"
 #include "psyz_item_timing.h"
 static PsyzItemClock psyz_item_clocks[1024];
 static int psyz_timer_log;
@@ -12,6 +13,7 @@ static const PsyzLearnedRoute *Psyz_Route(size_t i) { return i<PSYZ_ROUTE_COUNT?
 static PsyzNavRecovery psyz_nav;
 static int psyz_nav_health,psyz_nav_armor,psyz_nav_damage_time;
 static int psyz_prepare_log;
+static int psyz_macro_anchor=-1,psyz_macro_anchor_since,psyz_macro_log;
 static int psyz_combat_until,psyz_diagnostic_time;
 static int psyz_combat_log;
 static int psyz_aim_log;
@@ -93,6 +95,8 @@ static float psyz_progress_distance;
 static int psyz_strafe_log;
 static int psyz_strafe_phase,psyz_strafe_since,psyz_strafe_direction,psyz_strafe_route;
 static float psyz_strafe_start_speed,psyz_strafe_first_peak;
+static int psyz_strafe_begin,psyz_strafe_jumps;
+static float psyz_strafe_peak;
 static int psyz_progress_time,psyz_banned[1024];
 static int psyz_demo_retry_after[1024];
 static int psyz_rj=-1,psyz_rj_phase,psyz_rj_time,psyz_rj_ground,psyz_rj_last,psyz_rj_shots,psyz_rj_landed_at;
@@ -112,6 +116,10 @@ static float Psyz_TurnToward(float current,float target,float limit) {
     if(delta>limit)delta=limit;if(delta< -limit)delta=-limit;
     return current+delta;
 }
+static float Psyz_StrafeViewYaw(float velocity_heading,int beat,float speed,int dt){
+    float angle=speed>320?acosf(fminf(1,(320.f-320.f*dt/1000.f)/speed))*57.2957795f:0;
+    return velocity_heading+beat*(45-angle);
+}
 static int Psyz_PreAlphaEnabled(void) {
     cvar_t *v=Cvar_FindVar("qlx_psyzPreAlpha");cvar_t *m=Cvar_FindVar("mapname");
     cvar_t *test=Cvar_FindVar("qlx_psyzTestInstance"),*port=Cvar_FindVar("net_port");
@@ -123,6 +131,7 @@ static void Psyz_PreAlphaReset(void) {
     memset(psyz_item_clocks,0,sizeof(psyz_item_clocks));psyz_timer_log=0;
     psyz_combat_until=psyz_diagnostic_time=0;
     psyz_combat_log=psyz_aim_log=0;
+    psyz_macro_anchor=-1;psyz_macro_anchor_since=psyz_macro_log=0;
     psyz_lg_time=0;psyz_lg_rate=180.f;psyz_lg_scale=1.f;
     Psyz_OpeningReset();
     psyz_debug_logged=0;
@@ -135,13 +144,14 @@ static void Psyz_PreAlphaReset(void) {
     psyz_last_pickup_time=psyz_rj_landed_at=psyz_strafe_log=0;
     psyz_strafe_phase=psyz_strafe_since=0;psyz_strafe_direction=1;psyz_strafe_route=-1;
     psyz_strafe_start_speed=psyz_strafe_first_peak=0;
+    psyz_strafe_begin=psyz_strafe_jumps=0;psyz_strafe_peak=0;
 }
 static void Psyz_PreAlphaVmReset(void) {
     int seen=psyz_opening_seen,playing=psyz_opening_playing;
     Psyz_PreAlphaReset();
     psyz_opening_seen=seen;psyz_opening_playing=playing;
 }
-static float Psyz_ItemWeight(gentity_t *item,gentity_t *own,int recovering) {
+static float Psyz_ItemBaseWeight(gentity_t *item,gentity_t *own,int recovering) {
     const char *c=item->item->classname;int h=own->health,a=own->client->ps.stats[STAT_ARMOR];
     int weapons=own->client->ps.stats[STAT_WEAPONS];
     if(!strcmp(c,"weapon_rocketlauncher"))return !(weapons&(1<<5)) || own->client->ps.ammo[5]<=0?180:own->client->ps.ammo[5]<Psyz_Reserve(5)?105:8;
@@ -157,6 +167,14 @@ static float Psyz_ItemWeight(gentity_t *item,gentity_t *own,int recovering) {
     if(!strcmp(c,"item_armor_shard"))return a>=190?1:recovering?35:12;
     if(!strncmp(c,"ammo_",5))return Psyz_AmmoNeed(weapons,own->client->ps.ammo,item->item->giTag);
     return 1;
+}
+static float Psyz_ItemWeight(gentity_t *item,gentity_t *own,int recovering){
+    int mode=Psyz_MacroMode(own->health,own->client->ps.stats[STAT_ARMOR],
+        Psyz_TrinityReady(own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo),recovering);
+    float weight=Psyz_MacroWeight(mode,item->item->classname,Psyz_ItemBaseWeight(item,own,recovering));
+    if(mode==PSYZ_MACRO_ANCHOR && psyz_macro_anchor>=0 && item!=&g_entities[psyz_macro_anchor] &&
+       (!strcmp(item->item->classname,"item_health_mega") || !strcmp(item->item->classname,"item_armor_body")))weight*=.65f;
+    return weight;
 }
 static void Psyz_SelectDemoRoute(gentity_t *own,int target) {
     float best=97;psyz_active_route=-1;psyz_route_point=0;
@@ -241,6 +259,23 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         float theirs=e->health+fminf(e->client->ps.stats[STAT_ARMOR],2*e->health);
         if(theirs>ours*1.15f)recovering=1;
     }
+    int macro=Psyz_MacroMode(own->health,own->client->ps.stats[STAT_ARMOR],Psyz_TrinityReady(own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo),recovering);
+    if(macro!=PSYZ_MACRO_ANCHOR)psyz_macro_anchor=-1;
+    else if(psyz_macro_anchor<0 || now-psyz_macro_anchor_since>=15000){
+        int best_id=-1;float best=-1e9f;
+        for(int i=0;i<1024;i++){
+            gentity_t *e=&g_entities[i];
+            if(!psyz_goal_known[i] || psyz_banned[i]>now || !e->inuse || !e->item)continue;
+            const char *c=e->item->classname;
+            if(strcmp(c,"item_health_mega") && strcmp(c,"item_armor_body"))continue;
+            float travel=Psyz_ItemTravelSeconds(Psyz_Distance(own->client->ps.origin,e->r.currentOrigin));
+            if(!e->r.contents && (!timed || !Psyz_TimerCandidate(psyz_item_clocks[i],now,travel,1)))continue;
+            float score=Psyz_ItemBaseWeight(e,own,recovering)-Psyz_Distance(own->client->ps.origin,e->r.currentOrigin)*.035f;
+            if(score>best){best=score;best_id=i;}
+        }
+        psyz_macro_anchor=best_id;psyz_macro_anchor_since=now;
+    }
+    if(now-psyz_macro_log>=3000){psyz_macro_log=now;fprintf(stderr,"PSYZ_MACRO t=%d mode=%d anchor=%d health=%d armor=%d hidden_positions=0\n",now,macro,psyz_macro_anchor,own->health,own->client->ps.stats[STAT_ARMOR]);}
     int was_opening=psyz_opening_active;
     int opening_target=Psyz_OpeningTarget(own,recovering);
     if(opening_target<0)opening_target=Psyz_OpeningRedTarget(own);
@@ -379,6 +414,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         fprintf(stderr,"PSYZ_REPATH t=%d target=%d route=%d reason=no_progress\n",now,psyz_goal_target,psyz_active_route);
         if(psyz_active_route>=0)psyz_route_banned[psyz_active_route]=now+60000;
         psyz_banned[psyz_goal_target]=now+8000;psyz_goal_target=-1;psyz_active_route=-1;
+        Psyz_NavReset(&psyz_nav);
         int gs;memcpy(&gs,(char*)state+0x1968,4);void *imports;memcpy(&imports,(char*)qagame+0x2d8000,sizeof(imports));
         void (*pop)(int);memcpy(&pop,(char*)imports+0x468,sizeof(pop));pop(gs);
         float expired=0;memcpy((char*)state+0x179c,&expired,4);return;
@@ -534,6 +570,7 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
             float turn=Psyz_Angle(heading-ps->viewangles[1]);
             psyz_strafe_direction=fabsf(turn)>5?(turn>0?1:-1):(((psyz_active_route+k)&1)?1:-1);
             psyz_strafe_phase=1;psyz_strafe_since=now;psyz_strafe_start_speed=speed;psyz_strafe_first_peak=speed;
+            psyz_strafe_begin=now;psyz_strafe_jumps=0;psyz_strafe_peak=speed;
             fprintf(stderr,"PSYZ_STRAFE_START t=%d route=%d point=%d speed=%.2f direction=%d combat=0\n",now,psyz_active_route,k,speed,psyz_strafe_direction);
         }else if(speed>=150){
             float vh=atan2f(ps->velocity[1],ps->velocity[0])*57.2957795f;
@@ -544,6 +581,7 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
         int elapsed=now-psyz_strafe_since;
         if(ps->groundEntityNum==1023){
             psyz_strafe_phase=2;psyz_strafe_since=now;psyz_strafe_first_peak=speed;
+            psyz_strafe_jumps=1;
             fprintf(stderr,"PSYZ_STRAFE_JUMP1 t=%d route=%d speed=%.2f prep_ms=%d\n",now,psyz_active_route,speed,elapsed);
         }else{
             /* Corpus median: 350 ms from <=80 UPS to takeoff and 36 degrees
@@ -551,11 +589,13 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
                forward+strafe 45-degree wish direction without an aim snap. */
             float progress=elapsed<=100?0.f:(elapsed>=350?1.f:(elapsed-100)/250.f);
             float offset=70.f-25.f*progress;
-            float target=heading-psyz_strafe_direction*offset;
+            /* QL positive rightmove points yaw-90, so W+D wish direction
+               is yaw-45, not yaw+45. Counter-rotate the view accordingly. */
+            float target=heading+psyz_strafe_direction*offset;
             float yaw=Psyz_TurnToward(ps->viewangles[1],target,10.f);
             cmd->angles[1]=(int)(yaw*65536.f/360.f)-ps->delta_angles[1];
             cmd->forwardmove=127;cmd->rightmove=(signed char)(psyz_strafe_direction*127);
-            cmd->upmove=(elapsed>=300 && speed>=300) || elapsed>=450?127:0;
+            cmd->upmove=(elapsed>=300 && speed>=350) || elapsed>=450?127:0;
             return;
         }
     }
@@ -565,6 +605,7 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
         psyz_strafe_direction=-psyz_strafe_direction;psyz_strafe_phase=3;psyz_strafe_since=now;
     }else if(psyz_strafe_phase==3 && ps->groundEntityNum==1023){
         int ground_delay=now-psyz_strafe_since;psyz_strafe_phase=4;psyz_strafe_since=now;
+        psyz_strafe_jumps=2;
         fprintf(stderr,"PSYZ_STRAFE_JUMP2 t=%d route=%d speed=%.2f first_peak=%.2f ground_delay_ms=%d\n",now,psyz_active_route,speed,psyz_strafe_first_peak,ground_delay);
     }else if(psyz_strafe_phase==4 && ps->groundEntityNum!=1023){
         psyz_strafe_direction=-psyz_strafe_direction;psyz_strafe_phase=6;
@@ -572,16 +613,17 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
         psyz_strafe_direction=-psyz_strafe_direction;psyz_strafe_phase=6;
     }else if(psyz_strafe_phase==6 && ps->groundEntityNum==1023){
         psyz_strafe_phase=5;
+        psyz_strafe_jumps++;
     }
     int beat=psyz_strafe_direction;
-    float wish_angle=speed>320?acosf(fminf(1,(320.f-320.f*dt/1000.f)/speed))*57.2957795f:0;
-    float yaw=velocity_heading+beat*wish_angle-beat*45;
+    float yaw=Psyz_StrafeViewYaw(velocity_heading,beat,speed,dt);
     yaw=Psyz_TurnToward(ps->viewangles[1],yaw,10.f);
     cmd->angles[1]=(int)(yaw*65536.f/360.f)-ps->delta_angles[1];
     cmd->forwardmove=127;cmd->rightmove=(signed char)(beat*127);
     if(ps->groundEntityNum!=1023)cmd->upmove=127;
     else cmd->upmove=0;
-    if(now-psyz_strafe_log>500){psyz_strafe_log=now;fprintf(stderr,"PSYZ_STRAFE t=%d route=%d phase=%d speed=%.2f desired_speed=%.2f ground=%d\n",now,psyz_active_route,psyz_strafe_phase,speed,r->speed,ps->groundEntityNum);}
+    if(psyz_strafe_begin>0 && now-psyz_strafe_begin<=4000 && speed>psyz_strafe_peak)psyz_strafe_peak=speed;
+    if(now-psyz_strafe_log>500){psyz_strafe_log=now;fprintf(stderr,"PSYZ_STRAFE t=%d route=%d phase=%d speed=%.2f desired_speed=%.2f ground=%d start_elapsed_ms=%d jump_count=%d peak4s=%.2f\n",now,psyz_active_route,psyz_strafe_phase,speed,r->speed,ps->groundEntityNum,psyz_strafe_begin>0?now-psyz_strafe_begin:-1,psyz_strafe_jumps,psyz_strafe_peak);}
 }
 
 static void (*psyz_real_touch)(gentity_t*,gentity_t*,trace_t*);

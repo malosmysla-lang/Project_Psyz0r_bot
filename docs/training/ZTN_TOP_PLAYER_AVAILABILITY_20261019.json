@@ -1,0 +1,18 @@
+{
+  "catalog_records": 1510,
+  "matching_by_name": {
+    "agent": 72,
+    "cypher": 196,
+    "k1llsen": 115,
+    "rapha": 123,
+    "toxjq": 36,
+    "cooller": 102,
+    "strenx": 57,
+    "evil": 99,
+    "avek": 119
+  },
+  "new_candidates": 41,
+  "requested_total": 500,
+  "requested_agent": 100,
+  "alias_matching": "Explicit names; not verified player identity"
+}

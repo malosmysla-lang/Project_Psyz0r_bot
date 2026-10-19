@@ -3,6 +3,8 @@ typedef struct {
     int target,start,last,progress,paused,stage,waypoint,cell_count;
     int cells[32][3];
     float best_distance;
+    int motion_since;
+    float motion_position[3];
 } PsyzNavRecovery;
 static void Psyz_NavReset(PsyzNavRecovery *s) {
     memset(s,0,sizeof(*s));s->target=-1;s->waypoint=-1;
@@ -13,6 +15,7 @@ static int Psyz_NavUpdate(PsyzNavRecovery *s,int target,int now,const float *pos
     if(target!=s->target || now<s->last){
         Psyz_NavReset(s);s->target=target;s->start=s->progress=s->last=now;
         s->best_distance=distance;
+        s->motion_since=now;memcpy(s->motion_position,position,sizeof(s->motion_position));
     }
     int dt=now-s->last;s->last=now;
     if(target<0)return 0;
@@ -28,7 +31,15 @@ static int Psyz_NavUpdate(PsyzNavRecovery *s,int target,int now,const float *pos
        from the item. Revisiting the same cells does not reset the timer. */
     if(!known && s->cell_count<32){memcpy(s->cells[s->cell_count++],cell,sizeof(cell));s->progress=now;}
     if(distance<s->best_distance-32){s->best_distance=distance;s->progress=now;}
-    if(waypoint>s->waypoint){s->waypoint=waypoint;s->progress=now;}
+    if(waypoint>s->waypoint){s->waypoint=waypoint;s->progress=now;s->motion_since=now;}
+    float moved=0;for(int k=0;k<3;k++){float delta=position[k]-s->motion_position[k];moved+=delta*delta;}
+    if(moved>64 || combat || waiting || distance<=48){
+        s->motion_since=now;memcpy(s->motion_position,position,sizeof(s->motion_position));
+    }else if(now-s->motion_since>=1500){
+        s->motion_since=now;s->progress=now;
+        if(has_demo && !s->stage){s->stage=1;return 1;}
+        return 2;
+    }
     if(now-s->progress<=6000)return 0;
     if(has_demo && !s->stage){s->stage=1;s->progress=now;return 1;}
     return 2;

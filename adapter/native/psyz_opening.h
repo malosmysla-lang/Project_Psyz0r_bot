@@ -50,7 +50,7 @@ static int Psyz_OpeningRedTarget(gentity_t *own) {
     int now=own->client->pers.cmd.serverTime,best=-1;float distance=1e9f;
     for(int i=0;i<1024;i++){
         gentity_t *e=&g_entities[i];
-        if(!psyz_goal_known[i] || !e->inuse || !e->item || !e->item->classname ||
+        if(!psyz_goal_known[i] || psyz_banned[i]>now || !e->inuse || !e->item || !e->item->classname ||
            strcmp(e->item->classname,"item_armor_body"))continue;
         float d=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin);
         if(d<distance){distance=d;best=i;}
@@ -89,7 +89,7 @@ static int Psyz_OpeningTarget(gentity_t *own,int recovering) {
             }
             if(!valid)continue;
             const char *first=p->steps[0].classname;
-            float cost=d+Psyz_Distance(psyz_opening_start,p->steps[0].position)*.05f;
+            float cost=d+Psyz_Distance(psyz_opening_start,p->steps[0].position)*.05f+p->observed_cost;
             if(strcmp(first,"weapon_lightning") && strcmp(first,"weapon_rocketlauncher") && strcmp(first,"weapon_railgun"))cost+=80;
             if(cost<best){best=cost;psyz_opening_plan=(int)i;}
         }

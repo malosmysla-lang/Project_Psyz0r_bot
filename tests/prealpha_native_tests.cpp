@@ -54,6 +54,23 @@ int main(){try{
  for(int t=4025;t<=7025;t+=25){stable.angles[1]+=1000;moving_scale=Psyz_LGContextScale(&stable,t);}
  check(moving_scale>.85f,"Rapid direction changes restore ordinary LG error");
  check(Psyz_LGContextScale(&stable,100)==1.f,"Clock reset discards previous LG context");
+ check(Psyz_MacroMode(70,0,2,0)==PSYZ_MACRO_RECOVER,"Low stack recovers even with guns");
+ check(Psyz_MacroMode(140,100,2,0)==PSYZ_MACRO_CYCLE,"Prepared stack can run resource cycle");
+ check(Psyz_MacroMode(100,50,1,0)==PSYZ_MACRO_ANCHOR,"Intermediate stack uses anchor resources");
+ check(Psyz_MacroWeight(PSYZ_MACRO_RECOVER,"item_armor_combat",100)>100,"Recovery values yellow armor");
+ check(Psyz_MacroWeight(PSYZ_MACRO_CYCLE,"item_health",2)==2,"Cycle does not chase redundant health");
+ for(int beat=-1;beat<=1;beat+=2){
+     float yaw=Psyz_StrafeViewYaw(0,beat,400,25);
+     float wish=yaw-beat*45;
+     check(fabsf(400*cosf(wish*.01745329252f)-312)<.1f,"W plus strafe projects velocity onto useful acceleration direction");
+ }
+ {
+ reset();world[200].inuse=1;world[200].item=&red;psyz_goal_known[200]=1;
+ psyz_opening_red_followup=1;psyz_banned[200]=21000;
+ check(Psyz_OpeningRedTarget(&world[0])<0,"Opening red reservation respects failed-goal cooldown");
+ client.pers.cmd.serverTime=21001;
+ check(Psyz_OpeningRedTarget(&world[0])==200,"Opening red may retry only after cooldown");
+ }
  {
  reset();gitem_t med{"item_health","25 Health",0};unsigned char st[0x1970]{},go[64];
  world[200].inuse=world[201].inuse=1;world[200].item=&red;world[201].item=&med;

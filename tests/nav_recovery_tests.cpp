@@ -16,8 +16,11 @@ int main(){try{
  check(Psyz_NavUpdate(&s,10,11001,p,100,0,1,1,0)==1,"Continuous firing cannot freeze watchdog forever");
  Psyz_NavReset(&s);Psyz_NavUpdate(&s,10,0,p,100,0,1,0,0);
  check(Psyz_NavUpdate(&s,10,5900,p,100,2,1,0,0)==0,"Advancing route waypoint refreshes progress");
- check(Psyz_NavUpdate(&s,10,11000,p,100,2,1,0,0)==0,"Waypoint progress grants finite grace");
+ check(Psyz_NavUpdate(&s,10,11000,p,100,2,1,0,0)==1,"Waypoint progress cannot conceal a new stationary stall");
  check(Psyz_NavUpdate(&s,10,30000,p,100,3,1,0,0)==2,"Absolute deadline bounds endless movement");
  check(Psyz_NavUpdate(&s,11,30001,p,100,0,1,0,0)==0,"New item gets fresh progress state");
+ Psyz_NavReset(&s);Psyz_NavUpdate(&s,10,0,p,100,0,1,0,0);
+ check(Psyz_NavUpdate(&s,10,1501,p,100,0,1,0,0)==1,"Pixel stall falls back after 1.5 seconds");
+ check(Psyz_NavUpdate(&s,10,3002,p,100,-1,0,0,0)==2,"Persisting pixel stall releases failed goal");
  std::cout<<"Navigation recovery scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

@@ -1,0 +1,44 @@
+{
+  "version": "0.7.4",
+  "date": "2026-10-19",
+  "test_endpoint": "78.17.9.235:27961",
+  "primary_pid_preserved": 395898,
+  "test_binary_sha256": "a95d05eb16b51e118dadc7173efb9f65e07be61fa97e839317a9d36f79840e4c",
+  "windows_debug_ctest": "14/14",
+  "windows_release_ctest": "14/14",
+  "python_tests": "105/105",
+  "linux_focused_tests": "passed",
+  "final_trial": [
+    {
+      "trial": 1,
+      "seconds": 80,
+      "psyz_pickups": 25,
+      "major_pickups": 1,
+      "stalls": 1,
+      "opening_pickups": 2,
+      "stock_xaero_asset": "pak00.pk3/botfiles/bots/xaero_c.c",
+      "winner": "inspect saved score output"
+    }
+  ],
+  "last_observed_nonreset_score": {
+    "Psyz0r_bot": 1,
+    "Trial_Xaero": 2
+  },
+  "optimal_openings_verified": false,
+  "all_stalls_eliminated": false,
+  "raw_keyboard_mouse_available": false,
+  "backup": "/home/qlserver/backups/psyz-074-20261019",
+  "source_headers": {
+    "psyz_bloodrun_bank.h": "e1445ddfe156a0ed434dedf2e98489c01e43c66c2c98099d0cabdcf5dc85cfae",
+    "psyz_control_lab.h": "5ff7e8b5b580fc554902062540c9e2605944cbc7a1b8433d8f57941fb8b6d7a5",
+    "psyz_item_timing.h": "1f510cb5aa5724c4ee6f4b62f971f6c89a5c1b83fa5688780d4815e8bf42c01b",
+    "psyz_loadout.h": "aec7a1dfb96ce63454468895b498dc9189a34d70534f71549ec6427718717c2f",
+    "psyz_macro.h": "9047af815100694e7a58b32deca9dafc5acc725749a2f8af7a9197121e57977e",
+    "psyz_nav_recovery.h": "805f6180b537cb0a4d835eec922b0cb18ba1e96cc5e81a2cd6ebce837a53e0c3",
+    "psyz_opening.h": "adc7166db0d117dbb21068a468f684d30ec713ce95076d599a5385cdf1683f08",
+    "psyz_opening_bank.h": "d40b4e401ea415fcbbd9ced0ee4f54d091108cfafda5429035df37078f2fd041",
+    "psyz_prealpha.h": "87700fac62577ff8f47c40b1cee5da1da7320795a7d494160c548a221b2c0742",
+    "psyz_red_routes.h": "961f40d01e4ca5d8f57288e0ad2be4d23974cd718cf856b4c056745e0ff1b724",
+    "psyz_stock_goal_observer.h": "cd8dfae4aed21ba61a29b5cb828643a491fa69d6b3ee8ab936130679cb45a000"
+  }
+}
