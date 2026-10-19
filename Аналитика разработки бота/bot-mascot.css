@@ -16,3 +16,32 @@
 @media(max-width:850px){.mascot-heading{padding-left:95px;min-height:115px}.bot-mascot{width:84px;height:112px}}
 @media(prefers-reduced-motion:reduce){.barrel-smoke,.mascot-rocket,.mascot-impact,.rocket-smoke-puff{display:none!important}}
 @media print{.bot-mascot,.mascot-rocket,.mascot-impact,.rocket-smoke-puff{display:none}.mascot-heading{padding-left:0;min-height:0;padding-top:0}}
+/* Меню: 240–390 px, ширина сохраняется в этом браузере. */
+:root{--rail-width:300px}
+.sidebar-resizer{position:fixed;left:calc(var(--rail-width) - 5px);top:0;bottom:0;width:10px;z-index:20;cursor:col-resize;touch-action:none;display:flex;align-items:center;justify-content:center;color:#7694ab;outline:none}
+.sidebar-resizer span{padding:12px 2px;border-radius:5px;background:#19263a;opacity:.65}
+.sidebar-resizer:hover,.sidebar-resizer:focus-visible{background:#42e8dc33;color:#b8ffff}
+.resizing-sidebar{cursor:col-resize;user-select:none}
+@media(min-width:851px){.rail{width:var(--rail-width);overflow-y:auto;scrollbar-width:thin}.rail .brand{gap:12px;align-items:center;min-height:88px}.rail .brand>span:last-child{min-width:0;font-size:clamp(18px,1.6vw,22px);letter-spacing:.3px}main{margin-left:var(--rail-width)}}
+/* Увеличенный орб сохранён в исходном качестве. */
+.sigil.eye-mark{width:80px;height:80px;margin-right:0;padding:0}.eye-mark img{width:80px;height:80px}
+.mascot-heading{display:flex;align-items:center;min-height:164px;padding-top:28px;padding-bottom:10px}
+.mascot-title{display:block;color:inherit;transform:translateY(8px)}
+.bot-mascot{top:50%;bottom:auto;margin-top:-70px}
+/* Подсвечиваем всю строку, включая ячейки Tabler со своим фоном. */
+.table tbody tr>td{transition:background-color .14s ease,box-shadow .14s ease}
+.table tbody tr:hover>td,.table tbody tr:focus-within>td{background-color:#16363e!important;--tblr-table-bg:#16363e;--tblr-table-accent-bg:#16363e;box-shadow:inset 0 1px #42e8dc33,inset 0 -1px #b18aff33}
+.table tbody tr:hover>td:first-child{box-shadow:inset 3px 0 #42e8dc,inset 0 1px #42e8dc33,inset 0 -1px #b18aff33}
+.explosion-ring{position:fixed;width:56px;height:56px;border:2px solid #ffdba1;border-radius:50%;box-shadow:0 0 14px #ffab4b88;z-index:92;pointer-events:none}
+.explosion-shard{position:fixed;border-radius:1px;background:#ffe4b2;box-shadow:0 0 6px #ff9d3d;z-index:93;pointer-events:none}
+.mascot-impact{width:100px;height:100px;background:radial-gradient(circle,#fff 0%,#fff0c2 12%,#ffac48dd 28%,#e6613655 48%,#b18aff22 64%,transparent 72%)}
+@media(max-width:850px){.sidebar-resizer{display:none}.rail .brand{gap:14px;align-items:center}.mascot-heading{min-height:132px;padding-top:18px}.bot-mascot{margin-top:-56px}main{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.table tbody tr>td{transition:none}.explosion-ring,.explosion-shard{display:none!important}}
+@media print{.sidebar-resizer,.explosion-ring,.explosion-shard{display:none}.mascot-title{transform:none}.mascot-heading{min-height:0;padding:0}main{margin:0}}
+/* Персонаж — настоящая кнопка: одинаково работает мышь, Enter и пробел. */
+button.bot-mascot{padding:0;border:0;background:none;color:var(--cyan);pointer-events:auto;cursor:pointer;appearance:none;overflow:visible}
+button.bot-mascot:disabled{cursor:default;opacity:1}
+button.bot-mascot:focus-visible{outline:2px solid var(--cyan);outline-offset:5px;border-radius:8px}
+button.bot-mascot::after{content:'▶ Прыгнуть';position:absolute;left:0;right:0;bottom:-20px;font:10px/1.4 'Segoe UI',sans-serif;letter-spacing:.3px;color:#92a9b9;opacity:0;transition:opacity .2s}
+button.bot-mascot.is-ready:not(:disabled)::after{opacity:.85}
+button.bot-mascot:hover:not(:disabled)::after{color:#70f1eb}

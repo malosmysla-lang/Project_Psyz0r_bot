@@ -1,9 +1,14 @@
-/* Тридцать поз персонажа. Единственная сцена на загрузку; дым остаётся после неё. */
+/* Тридцать поз персонажа. Прыжок по кнопке; дым и ракета имеют собственные часы. */
 (() => {
   const heading=document.querySelector('.headline h1'),target=document.querySelector('.headline .release');
   if(!heading||!target||!document.body?.animate)return;
   heading.classList.add('mascot-heading');
-  const bot=document.createElement('span');bot.className='bot-mascot';bot.setAttribute('aria-hidden','true');
+  const bot=document.createElement('button');bot.type='button';bot.className='bot-mascot';bot.disabled=true;
+  bot.setAttribute('aria-label','Прыгнуть и выстрелить ракетой');bot.title='Нажми: прыжок и выстрел';
+  // Единая текстовая обёртка сохраняет переносы названия и его вертикальное выравнивание.
+  const title=document.createElement('span');title.className='mascot-title';
+  while(heading.firstChild)title.append(heading.firstChild);
+  heading.append(title);
   bot.innerHTML='<canvas class="marine-sprite" width="280" height="360"></canvas><span class="barrel-smoke"><i></i><i></i><i></i><i></i><i></i><i></i></span>';
   heading.prepend(bot);
   const sprite=bot.querySelector('.marine-sprite');
@@ -17,9 +22,8 @@
     context.clearRect(0,0,280,360);context.imageSmoothingEnabled=true;context.imageSmoothingQuality='high';
     context.drawImage(ready,x,y,w,h,8+(264-w*scale)/2,350-h*scale,w*scale,h*scale);
   };
-  let started=false,raf=0;
+  let busy=false,raf=0,cancelJump=null;
   const effects=new Set();
-  const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
   // Частицы остаются в точке следа и рассеиваются: дым не приклеен к ракете.
   function puff(x,y,index,barrel=false){
     const el=document.createElement('span');el.className='rocket-smoke-puff';el.setAttribute('aria-hidden','true');
@@ -51,27 +55,45 @@
     rocket.remove();effects.delete(rocket);if(reduced.matches)return;
     const flash=document.createElement('span');flash.className='mascot-impact';flash.setAttribute('aria-hidden','true');
     flash.style.cssText=`left:${end.x}px;top:${end.y}px`;document.body.append(flash);effects.add(flash);
-    for(let i=0;i<7;i++)puff(end.x+(i-3)*3,end.y+(i%3-1)*5,i);
+    // Несколько слоёв взрыва: горячее ядро, ударное кольцо, обломки и тяжёлый дым.
+    const ring=document.createElement('span');ring.className='explosion-ring';ring.setAttribute('aria-hidden','true');
+    ring.style.cssText=`left:${end.x}px;top:${end.y}px`;document.body.append(ring);effects.add(ring);
+    ring.animate([{opacity:.95,transform:'translate(-50%,-50%) scale(.15)'},{opacity:0,transform:'translate(-50%,-50%) scale(2.5)'}],{duration:650,easing:'ease-out'}).finished.finally(()=>{ring.remove();effects.delete(ring);});
+    for(let i=0;i<18;i++){
+      const a=i*Math.PI*2/18,reach=28+(i%5)*12;
+      const shard=document.createElement('span');shard.className='explosion-shard';shard.setAttribute('aria-hidden','true');
+      shard.style.cssText=`left:${end.x}px;top:${end.y}px;width:${2+i%3}px;height:${i%2?2:5}px`;
+      document.body.append(shard);effects.add(shard);
+      shard.animate([{opacity:1,transform:'translate(0,0) rotate(0deg)'},{opacity:.9,offset:.45},{opacity:0,transform:`translate(${Math.cos(a)*reach}px,${Math.sin(a)*reach+22}px) rotate(${i*73}deg)`}],{duration:480+i%5*85,easing:'cubic-bezier(.1,.5,.3,1)'}).finished.finally(()=>{shard.remove();effects.delete(shard);});
+    }
+    for(let i=0;i<18;i++)puff(end.x+(i%6-2.5)*9,end.y+(Math.floor(i/6)-1)*11,i);
     const glow=target.animate([{borderColor:'#effdff',boxShadow:'0 0 25px #65dcffbb,inset 0 0 16px #b18aff44'},{borderColor:'#564174',boxShadow:'0 0 0 transparent'}],{duration:1300,easing:'ease-out'});
     await flash.animate([{opacity:1,transform:'translate(-50%,-50%) scale(.2)'},{opacity:.8,offset:.18},{opacity:0,transform:'translate(-50%,-50%) scale(1.7)'}],{duration:480,easing:'ease-out'}).finished;
     flash.remove();effects.delete(flash);await glow.finished;
   }
   async function play(){
-    if(started||reduced.matches||document.hidden)return;
-    started=true;await wait(1000);
-    const duration=2400,begin=performance.now();let fired=false;
-    // 30 реальных ячеек за 2.4 секунды. Положение в пространстве интерполируется при каждом repaint.
-    function tick(now){
-      const p=Math.min(1,(now-begin)/duration),n=Math.min(29,Math.floor(p*30));frame(n);
-      const air=Math.min(1,Math.max(0,(p-.13)/.73));
-      bot.style.transform=`translateY(${-86*4*air*(1-air)}px)`;
-      if(n>=16&&!fired){fired=true;shoot().catch(()=>{});}
-      if(p<1&&!reduced.matches)raf=requestAnimationFrame(tick);
-      else{frame(29);bot.style.transform='';if(fired)bot.classList.add('has-fired');}
-    }
-    raf=requestAnimationFrame(tick);
+    if(busy||reduced.matches||document.hidden)return;
+    busy=true;bot.disabled=true;bot.classList.remove('has-fired');
+    const duration=2400/1.2,begin=performance.now();let fired=false,shot=Promise.resolve();
+    // Те же 30 поз, прыжок быстрее на 20%. Скорость снаряда/частиц не масштабируется.
+    try{
+      await new Promise(resolve=>{
+        cancelJump=resolve;
+        function tick(now){
+          const p=Math.min(1,(now-begin)/duration),n=Math.min(29,Math.floor(p*30));frame(n);
+          const air=Math.min(1,Math.max(0,(p-.13)/.73));
+          bot.style.transform=`translateY(${-86*4*air*(1-air)}px)`;
+          if(n>=16&&!fired){fired=true;shot=shoot().catch(()=>{});}
+          if(p<1&&!reduced.matches)raf=requestAnimationFrame(tick);
+          else{frame(29);bot.style.transform='';if(fired)bot.classList.add('has-fired');resolve();}
+        }
+        raf=requestAnimationFrame(tick);
+      });
+      await shot;
+    }finally{cancelJump=null;busy=false;bot.disabled=reduced.matches;bot.style.transform='';}
   }
-  reduced.addEventListener('change',()=>{if(reduced.matches){cancelAnimationFrame(raf);frame(0);bot.style.transform='';effects.forEach(el=>el.remove());effects.clear();}});
-  const ready=new Image();ready.onload=()=>{frame(0);play();};ready.src='assets/doom-marine-30.png';
-  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!started&&ready.complete)play();});
+  reduced.addEventListener('change',()=>{if(reduced.matches){cancelAnimationFrame(raf);cancelJump?.();frame(0);bot.style.transform='';effects.forEach(el=>el.remove());effects.clear();}bot.disabled=busy||reduced.matches;});
+  bot.addEventListener('click',play);
+  // Секунда спокойной стойки после загрузки, затем доступен клик, Enter и пробел.
+  const ready=new Image();ready.onload=()=>{frame(0);setTimeout(()=>{bot.disabled=reduced.matches;bot.classList.add('is-ready');},1000);};ready.src='assets/doom-marine-30.png';
 })();
