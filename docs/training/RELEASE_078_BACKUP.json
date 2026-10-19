@@ -1,0 +1,23 @@
+{
+  "source_commit": "b8325fbbcab209481aae335d163af638eff664d9",
+  "remote_directory": "/home/qlserver/psyz0r-bot/research-releases/078-20261019T183508Z-b8325fb",
+  "base_bundle_release": "077-20261019T180720Z-a0d67f1",
+  "previous_revision": "077-revision-2316ec9",
+  "files": {
+    "feedback-evidence.tar.gz": {
+      "sha256": "8dab161450f3dfc0c38e20ee682d781fe4c91ad2fd8b63ebd4a29bda9eb0fc3b",
+      "bytes": 9368121
+    },
+    "revision.bundle": {
+      "sha256": "366b6e4bd9d894de8a32a22e0d8e3018739fd6f4375f3dcd7b92d47bcdc915d4",
+      "bytes": 5328780
+    },
+    "source.tar.gz": {
+      "sha256": "a6996ae9dddbeac0d0fdba8ff97e3eb3a9740e2ece95532df37bbd8194ad4d92",
+      "bytes": 34894342
+    }
+  },
+  "runtime_version": "0.7.8",
+  "runtime_restart_performed_by_backup": false,
+  "remote_sha256_verified": true
+}
