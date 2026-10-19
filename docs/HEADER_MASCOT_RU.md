@@ -17,3 +17,11 @@
 Генерация встроенным image_gen, прозрачный фон. Нормализованный prompt: full-body classic Doom Marine, four horizontal equal cells, facing right, standing/crouch/jump/recoil, consistent model and launcher, pearl white/turquoise armor, violet accents, charcoal undersuit, detailed armor seams and metallic shading, Quake III rocket launcher, no background/text/flash/smoke (effects supplied by code).
 
 Синтаксис JS, проверки структуры дашборда и автономного HTML прошли. Просмотр исходного PNG выполнен. В текущем окружении браузерные поверхности недоступны; визуальное воспроизведение сцены и проверка на телефоне пока не подтверждены. Изменения не затрагивают игровой сервер.
+
+## Обновление: 30 поз и детальный орб
+
+По следующей команде владельца создан новый прозрачный атлас `assets/doom-marine-30.png` (1374×1145), 30 изображений, и `assets/mechanical-eye-orb.png`. Оба изображения созданы встроенным image_gen и сохранены в папке сайта; предыдущий исходник сохранён.
+
+Актуальная сцена использует 30 поз за 2,4 секунды, а не четыре. Из-за неравномерных полей генерации границы каждой фигуры заданы отдельно; Canvas выводит соответствующий фрагмент атласа с сохранением пропорций. Положение в прыжке интерполируется через requestAnimationFrame. Снаряд летит равномерно, длительность зависит от расстояния в текущей раскладке. Дымный след состоит из отдельных расширяющихся и исчезающих частиц в точках траектории. После приземления остаётся лёгкий дым из ствола.
+
+Новый prompt атласа: exact same Doom Marine from previous strip; 6 columns by 5 rows, 30 chronological full-body poses; fixed right-facing camera and consistent weapon; anticipation, crouch, takeoff, airborne knees, firing recoil, descent, landing, standing; transparent background, no labels or effects. Prompt орба: detailed front-facing mechanical eyeball, pearly sclera, black pupil, turquoise radial iris fibers, violet limbal ring, white reflections, weathered machined metal rings, micro bolts, cyan cables, violet lights, isolated transparent background, readable small silhouette. Результаты просмотрены как изображения; воспроизведение на устройстве остаётся отдельной визуальной проверкой.

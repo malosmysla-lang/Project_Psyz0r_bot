@@ -1,26 +1,18 @@
-/* Иконка занимает место слева от заголовка, не перекрывая буквы. */
-.mascot-heading{position:relative;padding-left:82px;min-height:96px;display:flex;align-items:center;flex-wrap:wrap;column-gap:.23em}
-.bot-mascot{position:absolute;left:0;bottom:0;width:72px;height:96px;pointer-events:none}
-.bot-mascot svg{display:block;width:100%;height:100%}
-/* Снаряд и вспышка в слое viewport: фон остаётся единственным fixed-слоем под сайтом. */
-.mascot-rocket{position:fixed;width:19px;height:6px;border-radius:2px 70% 70% 2px;background:#e4f8ff;box-shadow:-9px 0 8px #49cfff;z-index:90;pointer-events:none}
-.mascot-rocket::before{content:'';position:absolute;right:100%;top:1px;width:23px;height:4px;background:linear-gradient(90deg,transparent,#46cfff)}
-.mascot-impact{position:fixed;width:58px;height:58px;border-radius:50%;background:radial-gradient(circle,#fff 0%,#a8eaff 15%,#41baff80 35%,transparent 70%);z-index:91;pointer-events:none}
-@media(max-width:850px){.mascot-heading{padding-left:65px;min-height:80px}.bot-mascot{width:56px;height:75px}}
-@media(prefers-reduced-motion:reduce){.mascot-rocket,.mascot-impact{display:none}}
-@media print{.bot-mascot,.mascot-rocket,.mascot-impact{display:none}.mascot-heading{padding-left:0;min-height:0}}
-/* Детальный спрайт: исходник 2172x724, четыре равные ячейки. */
-.mascot-heading{padding-left:120px;min-height:140px;display:block;padding-top:15px}
-.bot-mascot{width:105px;height:140px;bottom:-4px;left:0}
-.marine-sprite{display:block;width:100%;height:100%;background:url('assets/doom-marine-strip.png') 0 50%/400% 100% no-repeat;filter:drop-shadow(0 3px 4px #0008)}
+/* Место для персонажа резервируется заранее: заголовок не прыгает при загрузке. */
+.mascot-heading{position:relative;padding-left:120px;min-height:140px;padding-top:15px}
+.bot-mascot{position:absolute;left:0;bottom:-4px;width:105px;height:140px;pointer-events:none}
+.marine-sprite{display:block;width:100%;height:100%;filter:drop-shadow(0 3px 4px #0008)}
 .barrel-smoke{position:absolute;left:97%;top:25%;display:none}
 .has-fired .barrel-smoke{display:block}
-.barrel-smoke i{position:absolute;width:8px;height:8px;border-radius:50%;background:#d2e1e650;filter:blur(2px);animation:barrel-vapor 3s linear infinite}
-.barrel-smoke i:nth-child(2){animation-delay:-.75s}.barrel-smoke i:nth-child(3){animation-delay:-1.5s}.barrel-smoke i:nth-child(4){animation-delay:-2.25s}
-@keyframes barrel-vapor{0%{transform:translate(0,0) scale(.4);opacity:0}15%{opacity:.6}100%{transform:translate(15px,-45px) scale(2.6);opacity:0}}
-.mascot-rocket{width:24px;height:7px;background:linear-gradient(#edf7ff,#89939d 50%,#26313b);box-shadow:-8px 0 8px #52d6ff}
-.mascot-rocket::after{content:'';position:absolute;right:160%;top:-3px;width:45px;height:12px;background:linear-gradient(90deg,transparent,#b8cad955);filter:blur(3px)}
-.sigil.eye-mark{width:36px;height:36px;margin-right:5px;flex:none}.eye-mark svg{width:100%;height:100%}
+.barrel-smoke i{position:absolute;width:10px;height:13px;border-radius:50%;background:radial-gradient(ellipse,#d1dce066,transparent 70%);filter:blur(1.4px);animation:barrel-vapor 3.8s linear infinite}
+.barrel-smoke i:nth-child(2){animation-delay:-.7s}.barrel-smoke i:nth-child(3){animation-delay:-1.4s}.barrel-smoke i:nth-child(4){animation-delay:-2.1s}.barrel-smoke i:nth-child(5){animation-delay:-2.8s}.barrel-smoke i:nth-child(6){animation-delay:-3.5s}
+@keyframes barrel-vapor{0%{transform:translate(0,0) rotate(-10deg) scale(.35);opacity:0}18%{opacity:.55}55%{transform:translate(8px,-23px) rotate(20deg) scale(1.5);opacity:.25}100%{transform:translate(-5px,-48px) rotate(-18deg) scale(3);opacity:0}}
+/* Полёт без изменения layout. Рассеивающиеся частицы создаются отдельно в JS. */
+.mascot-rocket{position:fixed;width:25px;height:8px;border:1px solid #b8c9d0;border-radius:2px 70% 70% 2px;background:linear-gradient(#f2f8ff,#8c98a1 40%,#35414e 70%,#a3abb2);box-shadow:-7px 0 5px #ffb66688;z-index:90;pointer-events:none}
+.mascot-rocket::before{content:'';position:absolute;right:100%;top:1px;width:17px;height:4px;background:linear-gradient(90deg,transparent,#fb9e44,#fff4cf);filter:blur(.6px)}
+.rocket-smoke-puff{position:fixed;border-radius:50%;pointer-events:none;z-index:89;background:radial-gradient(ellipse,#bac6d0aa,#83909c55 38%,transparent 72%);filter:blur(1.4px)}
+.mascot-impact{position:fixed;width:65px;height:65px;border-radius:50%;background:radial-gradient(circle,#fff,#b7efff 15%,#48baff99 35%,#b18aff33 55%,transparent 70%);z-index:91;pointer-events:none}
+.sigil.eye-mark{width:40px;height:40px;margin-right:5px;flex:none}.eye-mark img{display:block;width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 0 5px #42e8dc33)}
 @media(max-width:850px){.mascot-heading{padding-left:95px;min-height:115px}.bot-mascot{width:84px;height:112px}}
-@media(prefers-reduced-motion:reduce){.barrel-smoke{display:none!important}}
-@media print{.mascot-heading{padding-left:0;min-height:0;padding-top:0}}
+@media(prefers-reduced-motion:reduce){.barrel-smoke,.mascot-rocket,.mascot-impact,.rocket-smoke-puff{display:none!important}}
+@media print{.bot-mascot,.mascot-rocket,.mascot-impact,.rocket-smoke-puff{display:none}.mascot-heading{padding-left:0;min-height:0;padding-top:0}}
