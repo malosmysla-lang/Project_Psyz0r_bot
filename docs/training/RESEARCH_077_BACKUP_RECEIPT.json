@@ -1,0 +1,26 @@
+{
+  "release": "077-20261019T180720Z-a0d67f1",
+  "source_commit": "a0d67f1b1ab2fb35ddbbc07da6c095a975ef4204",
+  "remote_directory": "/home/qlserver/psyz0r-bot/research-releases/077-20261019T180720Z-a0d67f1",
+  "files": {
+    "project.bundle": {
+      "sha256": "16bf1a1a8eb5f00e408bd94a49203a2c579f720a3c37a63b901952b074c80569",
+      "bytes": 26667915
+    },
+    "source.tar.gz": {
+      "sha256": "e8efea448fe9de6951ddbacf532c751f4263e57c6bc9758b330454784fe230df",
+      "bytes": 29416854
+    },
+    "tactical-reports.tar.gz": {
+      "sha256": "5071014ab5700b3acb126b842eb8671fd659937bc1241eb24daf31e859f0524c",
+      "bytes": 6576431
+    }
+  },
+  "runtime_changed": false,
+  "configuration_changed": false,
+  "live_native_sha256": "7b7b72f2f92784721db978172b1117a57f44cd253bd9199e165f47cf9ab50bfc",
+  "python_tests": 118,
+  "ctest_debug": 17,
+  "report_files": 500,
+  "remote_sha256_verified": true
+}
