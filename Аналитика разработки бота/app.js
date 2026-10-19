@@ -2,7 +2,7 @@
 const D=window.PSYZ_ANALYTICS, $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pill=s=>`<span class="pill ${esc(s.split('/')[0])}">${esc(s)}</span>`;
-const colors=['#59dbec','#f4cc78','#bb91f3','#ff92a4','#8bdd98','#ffda9c','#72dccc','#ffae6f','#8fb8ff','#dd9cef','#b9dc77','#ff8b87','#7bd4a7','#bfa4fc','#ffc482'];
+const colors=['#42e8dc','#b18aff','#42e8dc','#b18aff','#42e8dc','#b18aff','#42e8dc','#b18aff','#42e8dc','#b18aff','#42e8dc','#b18aff','#42e8dc','#b18aff','#42e8dc'];
 function bars(rows,max){return rows.map(([k,v,c])=>`<div class="barrow"><span>${esc(k)}</span><div class="bar"><i style="width:${max?v/max*100:0}%;background:${c||'var(--cyan)'}"></i></div><b>${v}</b></div>`).join('')}
 $('#metrics').innerHTML=D.metrics.map(x=>`<article class="metric"><div class="section-label">${esc(x.label)}</div><strong>${esc(x.value)}</strong><small>${esc(x.note)}</small></article>`).join('');
 $('#release').textContent=D.release;

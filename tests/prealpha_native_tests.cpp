@@ -8,7 +8,7 @@
 // A small ABI-independent world. Retail ABI is separately fingerprinted on Linux.
 enum {STAT_HEALTH,STAT_HOLDABLE_ITEM,STAT_RUNE,STAT_WEAPONS,STAT_ARMOR};
 struct usercmd_t {int serverTime,buttons,angles[3];unsigned char weapon;signed char forwardmove,rightmove,upmove;};
-struct playerState_t {float origin[3],velocity[3],viewangles[3];int delta_angles[3],stats[18],ammo[16],groundEntityNum,weapon,weaponTime;};
+struct playerState_t {float origin[3],velocity[3],viewangles[3];int delta_angles[3],stats[18],ammo[16],groundEntityNum,weapon,weaponTime,pm_type;};
 struct Client {playerState_t ps;struct {usercmd_t cmd;char netname[40];} pers;};
 struct gitem_t {const char *classname,*pickup_name;int giTag;};
 struct gentity_t {int inuse,health,nextthink;struct {int number,modelindex;} s;struct {int svFlags,contents;float currentOrigin[3];} r;gitem_t *item;Client *client;};
@@ -47,6 +47,17 @@ static void reset(){
 }
 static void goal(unsigned char *out,int id,int area,const float *position){memset(out,0,64);memcpy(out,position,12);memcpy(out+12,&area,4);memcpy(out+40,&id,4);int flags=1;memcpy(out+48,&flags,4);}
 int main(){try{
+ reset();client.ps.pm_type=5;client.pers.cmd.forwardmove=127;psyz_goal_target=119;
+ for(int t=20000;t<30000;t+=100){client.pers.cmd.serverTime=t;Psyz_PreAlphaMove(&world[0]);}
+ check(psyz_stock_escape_until==0,"Fixed intermission camera never triggers navigation recovery");
+ check(Psyz_ItemWaitAllowed(30,8,0,22000,20000),"Near same-floor future item allows a short wait");
+ check(!Psyz_ItemWaitAllowed(60,-55,0,22000,20000),"Standing below a platform cannot mask a stall as item waiting");
+ check(!Psyz_ItemWaitAllowed(80,0,0,22000,20000),"Remote item timer cannot mask a route stall");
+ check(!Psyz_ItemWaitAllowed(30,8,1,22000,20000),"Already available item is not a timer wait");
+ check(!Psyz_ItemWaitAllowed(30,8,0,24000,20000),"Long wait remains unprotected");
+ reset();client.pers.cmd.forwardmove=127;
+ for(int t=20000;t<=21800;t+=100){client.pers.cmd.serverTime=t;Psyz_PreAlphaMove(&world[0]);}
+ check(psyz_stock_escape_until>21800,"Stock-only wall collision triggers recovery without an overlay item");
  reset();check(Psyz_IsOurBot(&world[0]),"Controlled bot is identified by flag and name");
  world[0].r.svFlags=0;check(!Psyz_IsOurBot(&world[0]),"Human in slot zero is never our bot");
  world[0].r.svFlags=8;strcpy(client.pers.netname,"Xaero");check(!Psyz_IsOurBot(&world[0]),"Baseline Xaero is not modified by overlay");

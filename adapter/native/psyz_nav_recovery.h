@@ -9,6 +9,11 @@ typedef struct {
 // Отдельный сторож движения не сбрасывается при смене item-цели.
 // Иначе чередование целей каждые 1-2с скрывает реальную остановку у стены.
 typedef struct {int since,last,hold;float origin[3];} PsyzMotionWatch;
+// Штатный AAS тоже может упереться в стену без нашей item-цели.
+// При этом неподвижный прицельный бой без команды движения — не маршрутный тупик.
+static int Psyz_MotionExpected(int alive,int learned_jump,int target,int forward,int right){
+    return alive && !learned_jump && (target>=0 || forward!=0 || right!=0);
+}
 static void Psyz_MotionReset(PsyzMotionWatch *s){memset(s,0,sizeof(*s));s->last=-1;}
 static int Psyz_MotionStalled(PsyzMotionWatch *s,int now,const float *position,int active,int hold){
     float distance=0;for(int k=0;k<3;k++){float d=position[k]-s->origin[k];distance+=d*d;}

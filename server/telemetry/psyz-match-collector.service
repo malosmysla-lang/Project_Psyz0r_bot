@@ -1,0 +1,15 @@
+[Unit]
+Description=Read-only Psyz0r test duel statistics collector
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -u /home/qlserver/psyz0r-bot/telemetry/psyz_match_collector.py --output /home/qlserver/psyz0r-bot/match-telemetry
+WorkingDirectory=/home/qlserver/psyz0r-bot/telemetry
+Restart=always
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

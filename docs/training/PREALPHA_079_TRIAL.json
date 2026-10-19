@@ -1,0 +1,91 @@
+{
+  "version": "0.7.9",
+  "requested_minutes": 5,
+  "elapsed_seconds": 300,
+  "interrupted_for_human": false,
+  "participants_verified": true,
+  "ten_minute_strength_proven": false,
+  "pickups": 77,
+  "red": 3,
+  "mega": 3,
+  "stock_escapes": 2,
+  "fatal": false,
+  "first_match_completed": true,
+  "final_score": {
+    "Psyz0r_bot": 4,
+    "Trial_Xaero": 9
+  },
+  "clock_pickups_by_slot": {
+    "1": {
+      "item_armor_combat": 11,
+      "ammo_shells": 3,
+      "ammo_bullets": 3,
+      "item_armor_shard": 39,
+      "weapon_railgun": 9,
+      "ammo_rockets": 4,
+      "weapon_rocketlauncher": 4,
+      "weapon_plasmagun": 4,
+      "item_health_small": 9,
+      "weapon_shotgun": 3,
+      "item_health": 3,
+      "ammo_slugs": 3,
+      "weapon_lightning": 5,
+      "item_health_mega": 4,
+      "ammo_cells": 2,
+      "ammo_grenades": 2,
+      "weapon_grenadelauncher": 2
+    },
+    "0": {
+      "weapon_lightning": 5,
+      "item_health_mega": 3,
+      "item_armor_shard": 20,
+      "item_health": 2,
+      "ammo_slugs": 1,
+      "ammo_rockets": 3,
+      "weapon_shotgun": 6,
+      "ammo_shells": 8,
+      "item_armor_body": 3,
+      "weapon_railgun": 7,
+      "item_health_small": 6,
+      "ammo_bullets": 3,
+      "weapon_grenadelauncher": 2,
+      "ammo_grenades": 1,
+      "ammo_cells": 1,
+      "weapon_rocketlauncher": 4,
+      "item_armor_combat": 2
+    }
+  },
+  "score_source": "First status after Timelimit hit; later automatic rematch excluded",
+  "motion_audit": {
+    "samples": 1408,
+    "observed_ms": 299700,
+    "pickups": {
+      "weapon_lightning": 5,
+      "item_health_mega": 3,
+      "item_armor_shard": 20,
+      "item_health": 2,
+      "ammo_slugs": 1,
+      "ammo_rockets": 3,
+      "weapon_shotgun": 6,
+      "ammo_shells": 8,
+      "item_armor_body": 3,
+      "weapon_railgun": 7,
+      "item_health_small": 6,
+      "ammo_bullets": 3,
+      "weapon_grenadelauncher": 2,
+      "ammo_grenades": 1,
+      "ammo_cells": 1,
+      "weapon_rocketlauncher": 4,
+      "item_armor_combat": 2
+    },
+    "stock_escapes": 2,
+    "stationary_candidates": 0,
+    "no_target_candidates": 0,
+    "longest_candidates": [],
+    "limits": [
+      "Stationary radius 24u for >=1.8s; combat, waiting and game phase can also produce candidates",
+      "No commands in older log means movement intent is unknown, not zero"
+    ]
+  },
+  "tested_native_sha256": "9dabdd02b1cd0fa0582777da88126e025893341078ecb296f115e1463d348b4a"
+}

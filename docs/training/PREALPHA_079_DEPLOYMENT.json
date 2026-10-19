@@ -1,0 +1,14 @@
+{
+  "version": "0.7.9",
+  "backup": "/home/qlserver/backups/psyz-079-20261019T200349Z",
+  "primary_pid": "415921",
+  "test_pid": "426895",
+  "files": {
+    "minqlx_nopy.so": "a7edb0638a46322e95b9f517b25b27918709292a992ac567dc8b1641245c48e1",
+    "psyz_test.cfg": "c2ceeb08d27f745d113112c8b581fdc70a18538a56bb2973aa54d65dbeb12bb1",
+    "zzz_psyz_profile.pk3": "239b2b92850e8e4b1ee682b972c6b5160718c56b642d78c81eeba0a39e8a5455",
+    "psyz_chat.py": "5ab7329b2d33bf7bd830fb26f36cef681c0524230fa8acb40dbfd3f54ad83685"
+  },
+  "unchanged_profile_and_chat": true,
+  "gameplay_verified": false
+}

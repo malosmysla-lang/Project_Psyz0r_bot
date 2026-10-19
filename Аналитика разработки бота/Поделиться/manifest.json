@@ -1,0 +1,10 @@
+{
+  "version": "0.7.9",
+  "html_bytes": 16242411,
+  "html_sha256": "e95148e3611d111b7d3153cc099d6802863fd9d2f677fb114e74475afeb027f5",
+  "zip_bytes": 5012913,
+  "zip_sha256": "86cd3660576a976f38e0b289a8a0e504c13e590211f8f054e48fc4434c20617e",
+  "embedded_project_attachments": 21,
+  "external_assets_required": false,
+  "android_device_tested": false
+}

@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'Аналитика разработки бота'
 def load(name):return json.loads((ROOT/name).read_text(encoding='utf-8-sig'))
 def main():
-    current=8 if (ROOT/'docs/mindmap_v8/logic_registry_v8.json').exists() else 7 if (ROOT/'docs/mindmap_v7/logic_registry_v7.json').exists() else 6
+    current=9 if (ROOT/'docs/mindmap_v9/logic_registry_v9.json').exists() else 8 if (ROOT/'docs/mindmap_v8/logic_registry_v8.json').exists() else 7 if (ROOT/'docs/mindmap_v7/logic_registry_v7.json').exists() else 6
     registry=load(f'docs/mindmap_v{current}/logic_registry_v{current}.json')
     old=load(f'docs/mindmap_v{current-1}/logic_registry_v{current-1}.json')
     assert {x['id'] for b in old['branches'] for x in b['items']}<={x['id'] for b in registry['branches'] for x in b['items']}
@@ -63,6 +63,36 @@ def main():
             if 'Маршруты' in module['name']:module['evidence']='0.7.8: независимый motion-watch и 3с возврат stock AAS; неподвижность не скрывается сменой цели. Полное отсутствие застреваний не доказано.'
             if 'Чат и' in module['name']:module['evidence']='0.7.8: Steam ID/слот вместо object identity; нуб/nub/noob; повторные реплики через 4с и контекст 45с. Native corpse/damage сенсора ещё нет.'
         data['metrics'][1]['note']+='; включает 2 свежие записи'
+    if (ROOT/'docs/training/RESERVE200_RESEARCH_079.json').exists():
+        r=load('docs/training/RESERVE200_RESEARCH_079.json')
+        data['research079']={k:v for k,v in r.items() if k not in ('accuracy_reserve','accuracy_combined','opening_examples')}
+        data['research079']['accuracy']={c:r['accuracy_combined'][c]['table'] for c in ['winner','damage_leader']}
+        data['research079']['histograms']={}
+        for wid in [2,3,5,6,7,8]:
+            bins=[0]*10
+            for row in r['accuracy_combined']['winner']['observations']:
+                if row['weapon_id']==wid:bins[min(9,int(row['accuracy']//10))]+=1
+            data['research079']['histograms'][str(wid)]=bins
+        data['release']='Пре-альфа 0.7.9 / test 27961'
+        data['metrics'][1]={'label':'СТЕК ДЕМОК','value':restored+900,'note':'Уникальные оригиналы в локальном проекте'}
+        data['metrics'][2]={'label':'РАЗОБРАНО','value':f"{500+r['parsed']} / 700",'note':'500 top-player + 200 дополнительных; доступность scoreboard отличается'}
+        data['metrics'].insert(3,{'label':'ОХВАТ СТЕКА','value':f"{500+r['parsed']} / {restored+900}",'note':'Без повторного учёта SHA-256'})
+        data['metrics'][-1]={'label':'ПРОВЕРКИ 0.7.9','value':'17 + 138','note':'CTest + Python; отдельно 5 Linux-групп'}
+        data['tests'][0]['note']='0.7.9: native context, stock-only motion watch, bounded wait, LG/combo/arrival.'
+        data['tests'][1]['value']='138 / 138'
+        data['tests'][1]['note']='Добавлены проверки отдельных winner/damage когорт и отсутствующих наблюдений.'
+        for module in data['modules']:
+            if 'Маршруты' in module['name']:module['evidence']='0.7.9: motion-watch учитывает stock-команды при target=-1; ожидание одинаково ограничено у обоих сторожей. Выход из каждого угла и сила контроля ещё не доказаны.'
+        if (ROOT/'docs/training/PREALPHA_079_DEPLOYMENT.json').exists():data['deployment']=load('docs/training/PREALPHA_079_DEPLOYMENT.json')
+        if (ROOT/'docs/training/PREALPHA_079_TRIAL.json').exists():data['trial079']=load('docs/training/PREALPHA_079_TRIAL.json')
+        data['versionHistory']=[
+            {'version':'0.7.6','stage':'тестовая','rules':load('docs/mindmap_v6/logic_registry_v6.json')['rule_count'],'demos':500,'cpp':17,'note':'Разгон и ранние прогоны; карта v6. Исторические статусы не подтверждают силу.'},
+            {'version':'0.7.7','stage':'офлайн','rules':load('docs/mindmap_v7/logic_registry_v7.json')['rule_count'],'demos':500,'cpp':17,'note':'Комбо/arrival политики проверялись локально. Отдельного live-результата 0.7.7 нет.'},
+            {'version':'0.7.8','stage':'тестовая','rules':load('docs/mindmap_v8/logic_registry_v8.json')['rule_count'],'demos':500,'cpp':17,'note':'Две человеческие демки 1:29 и 3:13. Короткий smoke не доказывает силу.'},
+            {'version':'0.7.9','stage':'пре-альфа','rules':registry['rule_count'],'demos':700,'cpp':17,'note':'Ещё 200 оригиналов; независимый stock motion-watch и единое короткое ожидание.'}]
+    if (ROOT/'docs/training/MATCH_LEDGER.json').exists():
+        data['duelLedger']=load('docs/training/MATCH_LEDGER.json')
+        data['ledgerUrl']='https://raw.githubusercontent.com/malosmysla-lang/Project_Psyz0r_bot/main/docs/training/MATCH_LEDGER.json'
     (OUT/'data.js').write_text('window.PSYZ_ANALYTICS = '+json.dumps(data,ensure_ascii=False)+';\n',encoding='utf-8')
     (OUT/'data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
     print('Dashboard:',registry['rule_count'],'rules;',len(modules),'modules; sources linked')

@@ -22,6 +22,12 @@ static float Psyz_TimerIdle(PsyzItemClock c,int now,float travel) {
     if(c.available)return 0;
     return fmaxf(0,(c.due-now)/1000.f-travel);
 }
+// Короткое ожидание защищает только подход на том же уровне у предмета.
+// Таймер красного наверху не оправдывает неподвижность под платформой.
+static int Psyz_ItemWaitAllowed(float distance,float height,int available,int due,int now){
+    return isfinite(distance) && isfinite(height) && distance>=0 && distance<64 &&
+        fabsf(height)<40 && !available && due>now && due-now<=3000;
+}
 static int Psyz_OpeningRedCanApproach(PsyzItemClock c,int now,int opening_elapsed,float travel) {
     // Резерв второго красного не означает «стоять у него с пятой секунды».
     // Сначала собираем дебютные пушки. Выход начинаем по реальным часам,

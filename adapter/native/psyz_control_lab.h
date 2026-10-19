@@ -31,10 +31,14 @@ static void Psyz_Think(gentity_t* ent) {
         psyz_real_think(ent);
         if (now - psyz_last_log >= 200) {
             psyz_last_log = now;
-            fprintf(stderr,"PSYZ_NAV t=%d pos=%.3f,%.3f,%.3f vel=%.3f,%.3f,%.3f yaw=%.2f weapon=%d health=%d ground=%d source=stock_aas_plus_optin_prealpha\n",
+            // Отличаем отсутствие движения при намерении идти от ожидания/боя.
+            // Скорость ps сама по себе не доказывает перемещение между кадрами.
+            fprintf(stderr,"PSYZ_NAV t=%d pos=%.3f,%.3f,%.3f vel=%.3f,%.3f,%.3f yaw=%.2f weapon=%d health=%d ground=%d source=stock_aas_plus_optin_prealpha forward=%d right=%d up=%d buttons=%d target=%d route=%d armor=%d escape=%d pmtype=%d\n",
                 now,ent->client->ps.origin[0],ent->client->ps.origin[1],ent->client->ps.origin[2],
                 ent->client->ps.velocity[0],ent->client->ps.velocity[1],ent->client->ps.velocity[2],
-                ent->client->ps.viewangles[1],ent->client->ps.weapon,ent->health,ent->client->ps.groundEntityNum);
+                ent->client->ps.viewangles[1],ent->client->ps.weapon,ent->health,ent->client->ps.groundEntityNum,
+                cmd->forwardmove,cmd->rightmove,cmd->upmove,cmd->buttons,psyz_goal_target,psyz_active_route,
+                ent->client->ps.stats[STAT_ARMOR],now<psyz_stock_escape_until,ent->client->ps.pm_type);
         }
         return;
     }

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(Psyz0r_bot VERSION 0.7.8 LANGUAGES CXX)
+project(Psyz0r_bot VERSION 0.7.9 LANGUAGES CXX)
 add_library(psyz0r_core src/behavior.cpp src/movement.cpp src/route_prediction.cpp src/combat_prediction.cpp src/shot_geometry.cpp src/resource_approach.cpp)
 target_include_directories(psyz0r_core PUBLIC include)
 target_compile_features(psyz0r_core PUBLIC cxx_std_17)

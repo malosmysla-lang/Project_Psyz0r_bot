@@ -356,3 +356,19 @@ Set the dashboard header, sidebar brand, browser title and footer to the owner-a
 ## 2026-10-19 - Seamless fixed analytics backdrop
 
 Moved the decorative gradients to a single fixed viewport layer with no repeat. Page content scrolls over the stationary background; no scroll listeners or continuous animation are needed. Disabled the decorative layer for printing and regenerated the standalone HTML. Static dashboard and standalone-script checks passed.
+
+## 19.10.2026 — Пре-альфа 0.7.9: разбор 200 демок и навигация
+
+Заново извлечены 200 уникальных сохранённых оригиналов вне top500: 200/200, 127 итоговых 1v1-записей, 22 разных победителя/лидера damage, 96 доступных выбранных POV, 37 стартов (18 полных 4с). Общие таблицы победителя и лидера урона раздельные. Новые точности не объявляются достигнутой точностью бота.
+
+Native: motion-watch при stock-командах без item-цели; одинаковое короткое ожидание на одном уровне; поля команд/цели/брони/pmtype в логах; intermission исключён из управления и восстановления. Финальный runtime только 27961, backup+SHA, основной PID 415921 сохранён. Профиль Xaero 5, чат и aim-настройки не заменялись. Первый 5-минутный матч до финального intermission-guard: 4:9 против Xaero 5, RA3/Mega3/YA2 против RA0/Mega4/YA11. Победа и устойчивый контроль не подтверждены. Финальная сборка: 30с разминки, 5 подборов, pmtype-диагностика, fatal нет.
+
+Проверки: 17 CTest, 138 Python, 5 Linux-групп; отдельные offline/portable HTML и математика mindmap. Реальная Android/браузерная визуальная проверка недоступна. Полный отчёт docs/PREALPHA_0_7_9_RU.md.
+
+## 19.10.2026 — Сайт и сбор матчей
+
+Pracc Room Server BOT, два неоновых акцента, более крупный текст, фиксированный фон без стыков, анимированные графики/гистограммы/круговые диаграммы. 284 правила / 15 веток, DOM+SVG mindmap с переносом узлов, масштабом, поиском и сохранением раскладки. Сравнение текущего этапа с 0.7.6/0.7.7/0.7.8; офлайн-этап отмечен явно.
+
+Начальный реестр: 7 матчей Psyz0r и отдельно 59 архивных Xaero. Неизвестные версии/skill/оружейные значения не выдумываются. Автообучения нет; измерение прогресса требует сопоставимых матчей одной версии/native SHA.
+
+Read-only ZMQ-сборщик установлен отдельным user-unit на сервере, без перезапуска QL. Включён qlserver linger для фонового сборщика. Public JSON отделён от приватного буфера; Steam ID не публикуются. Реальная первая новая завершённая дуэль ещё ожидается. Локальный watcher и публикация подготовлены; итоговые квитанции добавляются отдельно. Документы: docs/MATCH_TELEMETRY_RU.md и docs/WEB_ANALYTICS_079_RU.md. Автономный HTML/ZIP собраны для телефона и пересылки; APK не требуется.

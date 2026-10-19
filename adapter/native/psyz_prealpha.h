@@ -250,6 +250,9 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     int client;memcpy(&client,(char*)state+8,4);
     if(client<0 || client>=64 || !Psyz_IsOurBot(&g_entities[client]))return;
     gentity_t *own=&g_entities[client];int now=own->client->pers.cmd.serverTime;
+    // Intermission использует живые HP и камеру на фиксированной точке.
+    // Это не тупик маршрута: управление и сторож нужны только PM_NORMAL.
+    if(own->client->ps.pm_type!=0)return;
     unsigned char raw[64];memcpy(raw,output,64);
     int entity,area,raw_flags;memcpy(&raw_flags,raw+48,4);float pos[3];memcpy(pos,raw,12);memcpy(&area,raw+12,4);memcpy(&entity,raw+40,4);
     if(raw_flags==1 && entity>=0 && entity<1024 && area>0 && area<2393 && g_entities[entity].inuse && g_entities[entity].item &&
@@ -469,7 +472,8 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         gentity_t *target=&g_entities[psyz_goal_target];
         // Ждать появления можно у самого предмета. Чужой таймер не должен
         // маскировать застревание в другом конце маршрута.
-        int waiting=distance<=96 && !target->r.contents && target->nextthink>now && target->nextthink-now<=3000;
+        int waiting=Psyz_ItemWaitAllowed(distance,own->client->ps.origin[2]-target->r.currentOrigin[2],
+            target->r.contents!=0,target->nextthink,now);
         int combat=(own->client->pers.cmd.buttons&1) || (psyz_nav_damage_time>0 && now-psyz_nav_damage_time<1000);
         nav_action=Psyz_NavUpdate(&psyz_nav,psyz_goal_target,now,own->client->ps.origin,distance,
                     psyz_active_route>=0?psyz_route_point:-1,psyz_active_route>=0,combat,waiting);
@@ -526,6 +530,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
 static void Psyz_PreAlphaMove(gentity_t *own) {
     if(!Psyz_PreAlphaEnabled())return;
     usercmd_t *cmd=&own->client->pers.cmd;playerState_t *ps=&own->client->ps;int now=cmd->serverTime;
+    if(ps->pm_type!=0){Psyz_MotionReset(&psyz_motion);Psyz_NavReset(&psyz_nav);return;}
     if(now<psyz_last_move_time)Psyz_PreAlphaReset();
     if(psyz_nav_health-own->health>1 || psyz_nav_armor-ps->stats[STAT_ARMOR]>1)psyz_nav_damage_time=now;
     psyz_nav_health=own->health;
@@ -535,10 +540,11 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
     if(now<psyz_stock_escape_until)return;
     int waiting=0;
     if(psyz_goal_target>=0){gentity_t *item=&g_entities[psyz_goal_target];
-        waiting=!item->r.contents && item->nextthink>now && item->nextthink-now<=3000 &&
-            Psyz_Distance(ps->origin,item->r.currentOrigin)<64 && fabsf(ps->origin[2]-item->r.currentOrigin[2])<40;
+        waiting=Psyz_ItemWaitAllowed(Psyz_Distance(ps->origin,item->r.currentOrigin),
+            ps->origin[2]-item->r.currentOrigin[2],item->r.contents!=0,item->nextthink,now);
     }
-    if(Psyz_MotionStalled(&psyz_motion,now,ps->origin,psyz_goal_target>=0 && psyz_rj<0,
+    int motion_expected=Psyz_MotionExpected(own->health>0,psyz_rj>=0,psyz_goal_target,cmd->forwardmove,cmd->rightmove);
+    if(Psyz_MotionStalled(&psyz_motion,now,ps->origin,motion_expected,
                          waiting || (cmd->buttons&1) || (psyz_nav_damage_time>0 && now-psyz_nav_damage_time<750))){
         fprintf(stderr,"PSYZ_STOCK_ESCAPE t=%d target=%d route=%d stock_ms=3000 reason=motion_stall\n",now,psyz_goal_target,psyz_active_route);
         if(psyz_active_route>=0)psyz_route_banned[psyz_active_route]=now+60000;

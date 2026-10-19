@@ -5,6 +5,10 @@
 #include "../adapter/native/psyz_nav_recovery.h"
 static void check(bool ok,const char *message){if(!ok)throw std::runtime_error(message);}
 int main(){try{
+ check(Psyz_MotionExpected(1,0,-1,127,0),"Stock AAS movement without an overlay item is watched");
+ check(!Psyz_MotionExpected(1,0,-1,0,0),"Intentional stock idle is not a route stall");
+ check(!Psyz_MotionExpected(0,0,10,127,0),"Dead player cannot trigger movement recovery");
+ check(!Psyz_MotionExpected(1,1,10,127,0),"Learned jump owns its bounded timeout");
  PsyzMotionWatch motion;Psyz_MotionReset(&motion);float still[3]={1,2,3};
  for(int t=0;t<1800;t+=100)check(!Psyz_MotionStalled(&motion,t,still,1,0),"Motion watch allows initial movement window");
  check(Psyz_MotionStalled(&motion,1800,still,1,0),"Independent motion stall survives item-target churn");

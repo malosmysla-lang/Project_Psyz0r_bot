@@ -34,11 +34,12 @@ def active_pov(x):
 def main():
     global CORPUS, OUT
     ap=argparse.ArgumentParser();ap.add_argument('--corpus',type=Path,default=CORPUS);ap.add_argument('--output',type=Path,default=OUT)
+    ap.add_argument('--manifest',type=Path,help='Explicit subset manifest; source corpus remains unchanged')
     ap.add_argument('--shard-index',type=int,default=0);ap.add_argument('--shard-count',type=int,default=1);args=ap.parse_args()
     if not 0<=args.shard_index<args.shard_count:ap.error('Invalid shard')
     CORPUS=args.corpus.resolve();OUT=args.output.resolve()
     OUT.mkdir(parents=True,exist_ok=True)
-    manifest=json.loads((CORPUS/'manifest.json').read_text(encoding='utf-8'));reports=[]
+    manifest=json.loads((args.manifest or CORPUS/'manifest.json').read_text(encoding='utf-8'));reports=[]
     index=OUT/('analysis_index.json' if args.shard_count==1 else f'analysis_index_shard{args.shard_index}.json')
     manifest['records']=[r for i,r in enumerate(manifest['records']) if i%args.shard_count==args.shard_index]
     cached={r['archive_id']:r for r in json.loads(index.read_text(encoding='utf-8'))['records']} if index.exists() else {}

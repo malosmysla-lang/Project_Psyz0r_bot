@@ -1,5 +1,5 @@
 """Self-contained local HTML export; JS/CSS and preview images are embedded."""
-import base64,re
+import base64,re,json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];SITE=ROOT/'Аналитика разработки бота'
 def main():
@@ -17,7 +17,9 @@ def main():
             return 'src="data:image/png;base64,'+base64.b64encode(p.read_bytes()).decode()+'"'
         return m[0]
     html=re.sub(r'src="([^"]+\.png)"',picture,html)
-    output=SITE/'Psyz0r_Analytics_0_7_8.html';output.write_text(html,encoding='utf-8')
+    version=json.loads((SITE/'data.json').read_text(encoding='utf-8')).get('deployment',{}).get('version','0.7.8')
+    output=SITE/('Psyz0r_Analytics_'+version.replace('.','_')+'.html');output.write_text(html,encoding='utf-8')
+    (SITE/'Pracc_Room_Server_Analytics.html').write_text(html,encoding='utf-8')
     assert '<script src=' not in html and '<link rel="stylesheet"' not in html
     print('Standalone HTML:',output.name,output.stat().st_size,'bytes')
 if __name__=='__main__':main()
