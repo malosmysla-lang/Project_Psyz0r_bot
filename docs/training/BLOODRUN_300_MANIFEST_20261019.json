@@ -1,0 +1,5186 @@
+{
+  "records": [
+    {
+      "archive_id": 9167,
+      "filename": "9167__ashEGB-vs-RAISY-bloodrun-2025_07_20-13_29_16.dm_91",
+      "source_url": "https://files.quakelive.ru/ashEGB-vs-RAISY-bloodrun-2025_07_20-13_29_16.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9167",
+      "sha256": "e5a4dfff0db2af8718a8df0dcf2ceac1270276b1c7e8f9a14a02bd1da2e2c4da",
+      "size": 2355482,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "RAISY"
+      ],
+      "pov": "spec",
+      "date": "20.07.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9143,
+      "filename": "9143__ashEGB-vs-Nitrino-bloodrun-2025_07_13-15_27_27.dm_91",
+      "source_url": "https://files.quakelive.ru/ashEGB-vs-Nitrino-bloodrun-2025_07_13-15_27_27.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9143",
+      "sha256": "ec630c7d844221feefcfb5504e9229970b37f7e15d12ce79a7461426d8bb655b",
+      "size": 1400906,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "Nitrino"
+      ],
+      "pov": "spec",
+      "date": "13.07.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9149,
+      "filename": "9149__Dispyrosebnum-vs-RAISY-bloodrun-2025_07_13-11_26_27.dm_91",
+      "source_url": "https://files.quakelive.ru/Dispyrosebnum-vs-RAISY-bloodrun-2025_07_13-11_26_27.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9149",
+      "sha256": "5282840d64b2cfa0bf11acef99ec852a7b595f322ec17cb92b0a6d7f0dd7bd91",
+      "size": 3002636,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "RAISY",
+        "swex"
+      ],
+      "pov": "spec",
+      "date": "13.07.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9132,
+      "filename": "9132__SV-vs-fire_bot-bloodrun-2025_07_06-10_08_22.dm_91",
+      "source_url": "https://files.quakelive.ru/SV-vs-fire_bot-bloodrun-2025_07_06-10_08_22.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9132",
+      "sha256": "ce81f91ebc9ef00c5246ea6ae850c73b30bef83a56c71c0fdf04986c99f1f7c2",
+      "size": 2051409,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fire_bot",
+        "SV"
+      ],
+      "pov": "spec",
+      "date": "06.07.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9118,
+      "filename": "9118__prox1mo-vs-fire_bot-bloodrun-2025_07_05-17_36_39.dm_91",
+      "source_url": "https://files.quakelive.ru/prox1mo-vs-fire_bot-bloodrun-2025_07_05-17_36_39.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9118",
+      "sha256": "76afa463989159b50eefbddf2e825d5956d7ca1d165f80d8cd45b914fb2881dc",
+      "size": 1679113,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fire_bot",
+        "prox1mo"
+      ],
+      "pov": "spec",
+      "date": "05.07.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9115,
+      "filename": "9115__prox1mo-vs-dem0n-bloodrun-2025_07_05-15_29_56.dm_91",
+      "source_url": "https://files.quakelive.ru/prox1mo-vs-dem0n-bloodrun-2025_07_05-15_29_56.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9115",
+      "sha256": "51bc3ab5fcda8eb65e99e630b0e85f8543cbc5717b25620154f5e1dc10fdf318",
+      "size": 1568043,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "dem0n",
+        "prox1mo"
+      ],
+      "pov": "spec",
+      "date": "05.07.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9087,
+      "filename": "9087__prox1mo-vs-SV-bloodrun-2025_06_29-17_57_32.dm_91",
+      "source_url": "https://files.quakelive.ru/prox1mo-vs-SV-bloodrun-2025_06_29-17_57_32.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9087",
+      "sha256": "95e04d6f12bafbff7f670d4c08e6e3bd3d838f13c87e67717eab4b78f0281c59",
+      "size": 2041739,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "prox1mo",
+        "SV"
+      ],
+      "pov": "spec",
+      "date": "29.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9092,
+      "filename": "9092__sesen-vs-SV-bloodrun-2025_06_29-11_35_40.dm_91",
+      "source_url": "https://files.quakelive.ru/sesen-vs-SV-bloodrun-2025_06_29-11_35_40.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9092",
+      "sha256": "cada70eaea6ab871f2aadbdeac5775b53149767069c9adee212bb19246f502e1",
+      "size": 1858140,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "sesen",
+        "SV"
+      ],
+      "pov": "spec",
+      "date": "28.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8867,
+      "filename": "8867__Cypher-vs-AGENT-bloodrun-2025_06_15-15_09_24.dm_91",
+      "source_url": "https://files.quakelive.ru/Cypher-vs-AGENT-bloodrun-2025_06_15-15_09_24.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8867",
+      "sha256": "625fe9ff69379d98677d023fbc79025e8eef3bfd0577c1972d97ad584119d5e3",
+      "size": 1859258,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "cYpheR"
+      ],
+      "pov": "spec",
+      "date": "15.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8857,
+      "filename": "8857__AGENT-vs-pavel-bloodrun-2025_06_15-14_41_09.dm_91",
+      "source_url": "https://files.quakelive.ru/AGENT-vs-pavel-bloodrun-2025_06_15-14_41_09.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8857",
+      "sha256": "2db0c18e78fa19e1e1a7ef6e7f345ffaaa28fb53e9bd8e021ebac814784eb6d8",
+      "size": 1982213,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "pavel"
+      ],
+      "pov": "spec",
+      "date": "15.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8866,
+      "filename": "8866__Cypher-vs-AGENT-bloodrun-2025_06_15-13_34_36.dm_91",
+      "source_url": "https://files.quakelive.ru/Cypher-vs-AGENT-bloodrun-2025_06_15-13_34_36.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8866",
+      "sha256": "d9a82e5e0102e7677e0fa42d3eefd34547d539128c011b6b2e9a852a69115396",
+      "size": 1808769,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "cYpheR"
+      ],
+      "pov": "spec",
+      "date": "15.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8862,
+      "filename": "8862__ashEGB-vs-pavel-bloodrun-2025_06_15-13_10_41.dm_91",
+      "source_url": "https://files.quakelive.ru/ashEGB-vs-pavel-bloodrun-2025_06_15-13_10_41.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8862",
+      "sha256": "3eb0f0093203e5d68beae2438f7cc685afa0c44dcef25d1cc59ac403b970d744",
+      "size": 2110013,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "pavel"
+      ],
+      "pov": "spec",
+      "date": "15.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8854,
+      "filename": "8854__AGENT-vs-ashEGB-bloodrun-2025_06_15-12_21_16.dm_91",
+      "source_url": "https://files.quakelive.ru/AGENT-vs-ashEGB-bloodrun-2025_06_15-12_21_16.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8854",
+      "sha256": "a902559adb9c5251a99cd9a14f951e27d60bb1bcac59265316e36ca5ed001b9f",
+      "size": 2052689,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "ash"
+      ],
+      "pov": "spec",
+      "date": "15.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8983,
+      "filename": "8983__AGENT-vs-ashEGB-bloodrun-2025_06_14-11_03_10.dm_91",
+      "source_url": "https://files.quakelive.ru/AGENT-vs-ashEGB-bloodrun-2025_06_14-11_03_10.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8983",
+      "sha256": "992342055a32cfa92886d65ab499dffee5b694b51de5308f192666db49b3bc84",
+      "size": 1594190,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "ash"
+      ],
+      "pov": "spec",
+      "date": "13.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8977,
+      "filename": "8977__SV-vs-ash-bloodrun-2025_06_08-15_29_05.dm_91",
+      "source_url": "https://files.quakelive.ru/SV-vs-ash-bloodrun-2025_06_08-15_29_05.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8977",
+      "sha256": "72242ebc694efd6bb328cd730ea34242f493acac2ed66cd094120ecc87a550e8",
+      "size": 1535215,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "SV"
+      ],
+      "pov": "spec",
+      "date": "08.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8968,
+      "filename": "8968__KOLENO_TAURENASLON-vs-pavel-bloodrun-2025_06_08-18_03_47.dm_91",
+      "source_url": "https://files.quakelive.ru/KOLENO_TAURENASLON-vs-pavel-bloodrun-2025_06_08-18_03_47.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8968",
+      "sha256": "431860272436c3d6b0c3e56abf0ef64b779a4d9fa05f20d1fe24598395b6fb93",
+      "size": 1968623,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "pavel",
+        "SLON"
+      ],
+      "pov": "spec",
+      "date": "08.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8970,
+      "filename": "8970__pavel-vs-AGENT-bloodrun-2025_06_08-14_41_23.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel-vs-AGENT-bloodrun-2025_06_08-14_41_23.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8970",
+      "sha256": "bdf219f0dd11272c2b45546e307aaa0a6444ca528e04f199fd336ddbb89eacac",
+      "size": 463948,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "pavel"
+      ],
+      "pov": "spec",
+      "date": "08.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8961,
+      "filename": "8961__Cypher-vs-sCoopY_-bloodrun-2025_06_08-12_30_25.dm_91",
+      "source_url": "https://files.quakelive.ru/Cypher-vs-sCoopY_-bloodrun-2025_06_08-12_30_25.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8961",
+      "sha256": "8010f5a15087fef411ea06142e94e07406b02af36a5eedf83f25114126f6c47e",
+      "size": 1508871,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "sCoopY_"
+      ],
+      "pov": "spec",
+      "date": "08.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8934,
+      "filename": "8934__KOLENO_TAURENASLON-vs-Dispyrosebnum-bloodrun-2025_06_01-16_40_59.dm_91",
+      "source_url": "https://files.quakelive.ru/KOLENO_TAURENASLON-vs-Dispyrosebnum-bloodrun-2025_06_01-16_40_59.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8934",
+      "sha256": "f129411784a96eac4ba8c1462769678c612192812667cd3c165907f86102e8a3",
+      "size": 2005358,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "SLON",
+        "swex"
+      ],
+      "pov": "spec",
+      "date": "01.06.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8895,
+      "filename": "8895__fire_bot-vs-ash-bloodrun-2025_05_31-13_58_49.dm_91",
+      "source_url": "https://files.quakelive.ru/fire_bot-vs-ash-bloodrun-2025_05_31-13_58_49.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8895",
+      "sha256": "8f81949a899abac3fd2acbd230a280abc34ddf85134961c20a52a42da8bef84d",
+      "size": 2249565,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "fire_bot"
+      ],
+      "pov": "spec",
+      "date": "31.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8899,
+      "filename": "8899__fire_bot-vs-zanes-bloodrun-2025_05_31-15_31_35.dm_91",
+      "source_url": "https://files.quakelive.ru/fire_bot-vs-zanes-bloodrun-2025_05_31-15_31_35.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8899",
+      "sha256": "4677a803038e6035300add44a38e99d69437caafd8334abb289a77e523fc846e",
+      "size": 2416637,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fire_bot",
+        "zanes"
+      ],
+      "pov": "spec",
+      "date": "31.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8897,
+      "filename": "8897__fire_bot-vs-serious-bloodrun-2025_05_31-12_09_36.dm_91",
+      "source_url": "https://files.quakelive.ru/fire_bot-vs-serious-bloodrun-2025_05_31-12_09_36.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8897",
+      "sha256": "d40abb81465f82fbcd2955255824166187a10f7162bb317cf0612d35b739ab39",
+      "size": 2237288,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fire_bot",
+        "serious"
+      ],
+      "pov": "spec",
+      "date": "31.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8910,
+      "filename": "8910__serious-vs-SV-bloodrun-2025_05_31-12_47_52.dm_91",
+      "source_url": "https://files.quakelive.ru/serious-vs-SV-bloodrun-2025_05_31-12_47_52.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8910",
+      "sha256": "92eb2f22e20b8aba5d0aa22789193e1e1e32deedb94e5369f5e659f6135e94f1",
+      "size": 1804623,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "serious",
+        "SV"
+      ],
+      "pov": "spec",
+      "date": "30.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8889,
+      "filename": "8889__sCoopY_-vs-baksteen-bloodrun-2025_05_25-13_51_22.dm_91",
+      "source_url": "https://files.quakelive.ru/sCoopY_-vs-baksteen-bloodrun-2025_05_25-13_51_22.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8889",
+      "sha256": "4a9d5de8a507a21ef4a4b2435cfaa11d3fd2a5fc9dcb883c7cbffebf652d3fd5",
+      "size": 1374390,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "baksteen",
+        "sCoopY_"
+      ],
+      "pov": "spec",
+      "date": "25.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8882,
+      "filename": "8882__Cypher-vs-Dispyrosebnum-bloodrun-2025_05_25-12_30_12.dm_91",
+      "source_url": "https://files.quakelive.ru/Cypher-vs-Dispyrosebnum-bloodrun-2025_05_25-12_30_12.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8882",
+      "sha256": "d303042f72aa95c35f3be0055f99d3e83b009fe075f4734d5b5518527d21742e",
+      "size": 1963412,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "swex"
+      ],
+      "pov": "spec",
+      "date": "25.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8891,
+      "filename": "8891__SV-vs-Cypher-bloodrun-2025_05_25-11_26_29.dm_91",
+      "source_url": "https://files.quakelive.ru/SV-vs-Cypher-bloodrun-2025_05_25-11_26_29.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8891",
+      "sha256": "5788068f3e36644dcc65446a7a86b09f510fe7000b9ce6a94a0f148abc814b4e",
+      "size": 1706639,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "SV"
+      ],
+      "pov": "spec",
+      "date": "25.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9042,
+      "filename": "9042__AGENT-vs-goYa-bloodrun-2025_05_24-10_57_42.dm_91",
+      "source_url": "https://files.quakelive.ru/AGENT-vs-goYa-bloodrun-2025_05_24-10_57_42.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9042",
+      "sha256": "8ad4801e71976cf30406c41aead8e4b048910cdede4a192b355191a9ce077b2b",
+      "size": 2229372,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "serious"
+      ],
+      "pov": "spec",
+      "date": "24.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9029,
+      "filename": "9029__pavel-vs-zanes-bloodrun-2025_05_18-15_04_40.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel-vs-zanes-bloodrun-2025_05_18-15_04_40.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9029",
+      "sha256": "c952b9e4d26b9f214688a12f5cf19e076c20acdf4b0d84144542813ea30fe093",
+      "size": 2197882,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "pavel",
+        "zanes"
+      ],
+      "pov": "spec",
+      "date": "18.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9026,
+      "filename": "9026__Cypher-vs-zanes-bloodrun-2025_05_18-14_25_54.dm_91",
+      "source_url": "https://files.quakelive.ru/Cypher-vs-zanes-bloodrun-2025_05_18-14_25_54.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9026",
+      "sha256": "0e870ce5063c5c5320e0ca617d2648c8596f9cef5a346fcfcaeb2a06c0297a3b",
+      "size": 2220250,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "zanes"
+      ],
+      "pov": "spec",
+      "date": "18.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9009,
+      "filename": "9009__Cypher-vs-serious-bloodrun-2025_05_17-12_17_15.dm_91",
+      "source_url": "https://files.quakelive.ru/Cypher-vs-serious-bloodrun-2025_05_17-12_17_15.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9009",
+      "sha256": "90a696ceda6313fedcbe869d924a5c4371d48e2ff6ee4aaee5375abe954e3f36",
+      "size": 1835273,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "serious"
+      ],
+      "pov": "spec",
+      "date": "17.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 9012,
+      "filename": "9012__fire_bot-vs-KOLENO_TAURENASLON-bloodrun-2025_05_17-07_16_01.dm_91",
+      "source_url": "https://files.quakelive.ru/fire_bot-vs-KOLENO_TAURENASLON-bloodrun-2025_05_17-07_16_01.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=9012",
+      "sha256": "0cf93a5ee722cc7f277aa5e55011bbf9606e52a7257fd66211a7596c56651dbc",
+      "size": 2017704,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fire_bot",
+        "SLON"
+      ],
+      "pov": "spec",
+      "date": "17.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8458,
+      "filename": "8458__ARSENY-vs-zanes-bloodrun-2025_05_11-14_42_08.dm_91",
+      "source_url": "https://files.quakelive.ru/ARSENY-vs-zanes-bloodrun-2025_05_11-14_42_08.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8458",
+      "sha256": "e2b46e900018e07536153720191345e329500901d0d1521676d31af636130315",
+      "size": 1140660,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ARSENY",
+        "zanes"
+      ],
+      "pov": "spec",
+      "date": "11.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8457,
+      "filename": "8457__ARSENY-vs-zanes-bloodrun-2025_05_11-14_33_57.dm_91",
+      "source_url": "https://files.quakelive.ru/ARSENY-vs-zanes-bloodrun-2025_05_11-14_33_57.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8457",
+      "sha256": "9a746642c4c5f5bee8f1c5534f2df7c91edcfb3a0f01fd1686ab6ec0f67e81a0",
+      "size": 1074854,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ARSENY",
+        "zanes"
+      ],
+      "pov": "spec",
+      "date": "11.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8531,
+      "filename": "8531__SV-vs-pavel-bloodrun-2025_05_11-13_34_45.dm_91",
+      "source_url": "https://files.quakelive.ru/SV-vs-pavel-bloodrun-2025_05_11-13_34_45.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8531",
+      "sha256": "c12c6ddf64b12c47f721829cd02d2fbc2cbb1c278b021b7d0ecab26bca41bb9a",
+      "size": 1890851,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "pavel",
+        "SV"
+      ],
+      "pov": "spec",
+      "date": "11.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8521,
+      "filename": "8521__SV(POV)-vs-pavel-bloodrun-2025_05_11-13_34_45.dm_91",
+      "source_url": "https://files.quakelive.ru/SV%28POV%29-vs-pavel-bloodrun-2025_05_11-13_34_45.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8521",
+      "sha256": "7b123a3bad07d57ba4aa0f9f87e691f97867cd535b95b9bf27e77ab094467e9d",
+      "size": 1662224,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "pavel",
+        "SV"
+      ],
+      "pov": "SV",
+      "date": "11.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8810,
+      "filename": "8810__pavel(POV)-vs-ash-bloodrun-2025_05_08-19_36_54.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel%28POV%29-vs-ash-bloodrun-2025_05_08-19_36_54.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8810",
+      "sha256": "9f8d9e440617f036027a6221618048c525d971fa18de5f75010e9532809188ac",
+      "size": 1562559,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "pavel"
+      ],
+      "pov": "pavel",
+      "date": "08.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8851,
+      "filename": "8851__SV(POV)-vs-ash-bloodrun-2025_05_08-17_48_16.dm_91",
+      "source_url": "https://files.quakelive.ru/SV%28POV%29-vs-ash-bloodrun-2025_05_08-17_48_16.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8851",
+      "sha256": "657b6b1ac9c046a8ad8aced95363e7e694289a0daf64c54c267a5e6faa9fdedf",
+      "size": 1463654,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "SV"
+      ],
+      "pov": "SV",
+      "date": "08.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8842,
+      "filename": "8842__pavel(POV)-vs-Fancje-bloodrun-2025_05_08-17_37_27.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel%28POV%29-vs-Fancje-bloodrun-2025_05_08-17_37_27.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8842",
+      "sha256": "6ef7e92132819c8b5d5a0ea9724716e26e5f5af11067acec935d12917317612b",
+      "size": 1726971,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Fancje",
+        "pavel"
+      ],
+      "pov": "pavel",
+      "date": "08.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8840,
+      "filename": "8840__Fancje(POV)-vs-pavel-bloodrun-2025_05_08-17_37_27.dm_91",
+      "source_url": "https://files.quakelive.ru/Fancje%28POV%29-vs-pavel-bloodrun-2025_05_08-17_37_27.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8840",
+      "sha256": "209b2be748245452ff410e0d7a3fc6d1fc928f6b8ceb5eff35f35012626ac80d",
+      "size": 1489800,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Fancje",
+        "pavel"
+      ],
+      "pov": "Fancje",
+      "date": "08.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8844,
+      "filename": "8844__SV(POV)-vs-Rell-bloodrun-2025_05_08-16_59_54.dm_91",
+      "source_url": "https://files.quakelive.ru/SV%28POV%29-vs-Rell-bloodrun-2025_05_08-16_59_54.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8844",
+      "sha256": "085db744e0e4a42513ee9a8d90134fca9053b9a5a30dd022914ab3a68377ff05",
+      "size": 1725882,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "RELL",
+        "SV"
+      ],
+      "pov": "SV",
+      "date": "08.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8832,
+      "filename": "8832__SV(POV)-vs-MAGA-bloodrun-2025_05_08-19_32_32.dm_91",
+      "source_url": "https://files.quakelive.ru/SV%28POV%29-vs-MAGA-bloodrun-2025_05_08-19_32_32.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8832",
+      "sha256": "da763523af1fe101a1855d6b28b1467a76a82215f90983b50af8c8df6087ea32",
+      "size": 959324,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "MAGA",
+        "SV"
+      ],
+      "pov": "SV",
+      "date": "08.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8466,
+      "filename": "8466__ash-vs-sCoopY_-bloodrun-2025_05_04-15_33_06.dm_91",
+      "source_url": "https://files.quakelive.ru/ash-vs-sCoopY_-bloodrun-2025_05_04-15_33_06.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8466",
+      "sha256": "80ac46a1cd569e520c85d35da0faa9811d27f3a1ebae6e8645a2b66a2d5bc294",
+      "size": 1374435,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "sCoopY_"
+      ],
+      "pov": "spec",
+      "date": "04.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8475,
+      "filename": "8475__Dispyrosebnum-vs-sCoopY_-bloodrun-2025_05_04-13_54_38.dm_91",
+      "source_url": "https://files.quakelive.ru/Dispyrosebnum-vs-sCoopY_-bloodrun-2025_05_04-13_54_38.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8475",
+      "sha256": "0e8c74accf9e745c88ed044c59236eaaa4ae9c0642026d742f108c1808e18854",
+      "size": 2004439,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "sCoopY_",
+        "swex"
+      ],
+      "pov": "spec",
+      "date": "04.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8504,
+      "filename": "8504__pavel-vs-ash-bloodrun-2025_05_03-15_34_33.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel-vs-ash-bloodrun-2025_05_03-15_34_33.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8504",
+      "sha256": "c861692039ce5324917978f9d07566933b2d3d73409beec0389356095de8755a",
+      "size": 2194774,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "pavel"
+      ],
+      "pov": "spec",
+      "date": "03.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8507,
+      "filename": "8507__pavel-vs-fire_bot-bloodrun-2025_05_03-17_08_12.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel-vs-fire_bot-bloodrun-2025_05_03-17_08_12.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8507",
+      "sha256": "a3e5f5bcf824a5adfbe792d00936c679098f19864528a4a24f776f0693eb31b7",
+      "size": 2136034,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fire_bot",
+        "pavel"
+      ],
+      "pov": "spec",
+      "date": "03.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8481,
+      "filename": "8481__fire_bot-vs-Cypher-bloodrun-2025_05_03-17_27_52.dm_91",
+      "source_url": "https://files.quakelive.ru/fire_bot-vs-Cypher-bloodrun-2025_05_03-17_27_52.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8481",
+      "sha256": "da951c4b1abb31ccc095908861728298558d6ac5e42f437671ff02a1cba32809",
+      "size": 2232630,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "fire_bot"
+      ],
+      "pov": "spec",
+      "date": "03.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8508,
+      "filename": "8508__pavel-vs-serious-bloodrun-2025_05_03-12_39_29.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel-vs-serious-bloodrun-2025_05_03-12_39_29.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8508",
+      "sha256": "3993862cf870ac1a52a355a337c4df2527e5fc7a6f840f683823db4e7419f4a0",
+      "size": 2098651,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "pavel",
+        "serious"
+      ],
+      "pov": "spec",
+      "date": "03.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8802,
+      "filename": "8802__Fancje(POV)-vs-ash-bloodrun-2025_05_01-20_17_19.dm_91",
+      "source_url": "https://files.quakelive.ru/Fancje%28POV%29-vs-ash-bloodrun-2025_05_01-20_17_19.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8802",
+      "sha256": "5bf0e80a4afc3aff077dbb7032e81d21f3e5c30f55bdc21405d8fedac428a78b",
+      "size": 905899,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "Fancje"
+      ],
+      "pov": "Fancje",
+      "date": "01.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8787,
+      "filename": "8787__St0n3(POV)-vs-Dispyrosebnum-bloodrun-2025_05_01-19_56_24.dm_91",
+      "source_url": "https://files.quakelive.ru/St0n3%28POV%29-vs-Dispyrosebnum-bloodrun-2025_05_01-19_56_24.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8787",
+      "sha256": "c85d6c2a1f7050f6a4c49e9fc6b3b9313367128904f79e9511d304400434d266",
+      "size": 940536,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "St0n3",
+        "swex"
+      ],
+      "pov": "St0n3",
+      "date": "01.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8806,
+      "filename": "8806__pavel(POV)-vs-Dispyrosebnum-bloodrun-2025_05_01-18_30_05.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel%28POV%29-vs-Dispyrosebnum-bloodrun-2025_05_01-18_30_05.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8806",
+      "sha256": "bdf0781a677fff6e353d1870e438e7c7aebeffbbc685c3114fa2053538a91c58",
+      "size": 1670444,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "pavel",
+        "swex"
+      ],
+      "pov": "pavel",
+      "date": "01.05.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8762,
+      "filename": "8762__St0n3(POV)-vs-R35_ILY4-bloodrun-2025_04_20-15_38_45.dm_91",
+      "source_url": "https://files.quakelive.ru/St0n3%28POV%29-vs-R35_ILY4-bloodrun-2025_04_20-15_38_45.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8762",
+      "sha256": "45b21870fa03011556c903d7534049656f2dc76abc89e60a664cc35e536806b8",
+      "size": 1473801,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ILY4",
+        "St0n3"
+      ],
+      "pov": "St0n3",
+      "date": "20.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8718,
+      "filename": "8718__Fancje-vs-sCoopY_-bloodrun-2025_04_19-17_03_46.dm_91",
+      "source_url": "https://files.quakelive.ru/Fancje-vs-sCoopY_-bloodrun-2025_04_19-17_03_46.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8718",
+      "sha256": "70be973f86e28607c1d160934850143e29370c57bc1e8fbeda4b76157ccd8e8a",
+      "size": 2168489,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Fancje",
+        "sCoopY_"
+      ],
+      "pov": "spec",
+      "date": "19.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8698,
+      "filename": "8698__sCoopY_(POV)-vs-KOLENO_TAURENASLON-bloodrun-2025_04_13-16_32_12.dm_91",
+      "source_url": "https://files.quakelive.ru/sCoopY_%28POV%29-vs-KOLENO_TAURENASLON-bloodrun-2025_04_13-16_32_12.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8698",
+      "sha256": "e371aa6958242e2f285c9804999ed54dab1773450965c3f19e637e95b5a78840",
+      "size": 1062782,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "sCoopY_",
+        "SLON"
+      ],
+      "pov": "sCoopY_",
+      "date": "13.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8632,
+      "filename": "8632__Dispyrosebnum-vs-1n-bloodrun-2025_04_13-13_36_05.dm_91",
+      "source_url": "https://files.quakelive.ru/Dispyrosebnum-vs-1n-bloodrun-2025_04_13-13_36_05.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8632",
+      "sha256": "749a8e55884fe518117e0a3bd9b7c67c1ceb37207e01afc3277ee8700cb133c1",
+      "size": 1776592,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "n1",
+        "swex"
+      ],
+      "pov": "spec",
+      "date": "13.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8622,
+      "filename": "8622__Dispyrosebnum(POV)-vs-1n-bloodrun-2025_04_13-13_36_05.dm_91",
+      "source_url": "https://files.quakelive.ru/Dispyrosebnum%28POV%29-vs-1n-bloodrun-2025_04_13-13_36_05.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8622",
+      "sha256": "6516d3162e17f4f70d5ccc244e464a06d10b3add437050b34095489586b3606d",
+      "size": 1439657,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "n1",
+        "swex"
+      ],
+      "pov": "ebénum",
+      "date": "13.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8679,
+      "filename": "8679__R35_ILY4(POV)-vs-1n-bloodrun-2025_04_13-16_18_22.dm_91",
+      "source_url": "https://files.quakelive.ru/R35_ILY4%28POV%29-vs-1n-bloodrun-2025_04_13-16_18_22.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8679",
+      "sha256": "f4671eeed63fe16c77590ddbe6deba683de7ccc185881d67f7c6faed44a1eaab",
+      "size": 1491148,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ILY4",
+        "n1"
+      ],
+      "pov": "R35_ILY4",
+      "date": "13.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8697,
+      "filename": "8697__sCoopY_(POV)-vs-KOLENO_TAURENASLON-bloodrun-2025_04_13-15_20_58.dm_91",
+      "source_url": "https://files.quakelive.ru/sCoopY_%28POV%29-vs-KOLENO_TAURENASLON-bloodrun-2025_04_13-15_20_58.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8697",
+      "sha256": "3fdd2679f12c00b37248cb05d4dce3258e36fb9d26d66bdfa7f05e5ef9402528",
+      "size": 1499533,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "sCoopY_",
+        "SLON"
+      ],
+      "pov": "sCoopY_",
+      "date": "13.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8661,
+      "filename": "8661__mkobets(POV)-vs-421-bloodrun-2025_04_13-12_16_29.dm_91",
+      "source_url": "https://files.quakelive.ru/mkobets%28POV%29-vs-421-bloodrun-2025_04_13-12_16_29.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8661",
+      "sha256": "5ba362564fd9203e9f6da962e92b7413b18d70000bb6738e88e9ea1c83ed15e0",
+      "size": 1705335,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "421",
+        "mkobets"
+      ],
+      "pov": "mkobets",
+      "date": "13.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8712,
+      "filename": "8712__xfragijkeeee(POV)-vs-1n-bloodrun-2025_04_13-14_44_49.dm_91",
+      "source_url": "https://files.quakelive.ru/xfragijkeeee%28POV%29-vs-1n-bloodrun-2025_04_13-14_44_49.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8712",
+      "sha256": "73d8a2d4cf942a34e2502dabf9aa42cc6d200a26b559f2c5aa330f42e738454a",
+      "size": 527296,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "mijkeeee",
+        "n1"
+      ],
+      "pov": "xfragijkeeee",
+      "date": "13.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8670,
+      "filename": "8670__mSTRiv(POV)-vs-ipfast-bloodrun-2025_04_13-07_28_52.dm_91",
+      "source_url": "https://files.quakelive.ru/mSTRiv%28POV%29-vs-ipfast-bloodrun-2025_04_13-07_28_52.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8670",
+      "sha256": "82e7319210fd27c2205ad6ec360c99b626f0c1bd5c01e5b56305e39e85f723f7",
+      "size": 1666889,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ipfast",
+        "mSTRiv"
+      ],
+      "pov": "mSTRiv",
+      "date": "13.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8675,
+      "filename": "8675__Needy(POV)-vs-m1n!o-bloodrun-2025_04_13-07_19_01.dm_91",
+      "source_url": "https://files.quakelive.ru/Needy%28POV%29-vs-m1n%21o-bloodrun-2025_04_13-07_19_01.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8675",
+      "sha256": "9767439a41f01f65ca4f2a994fba793d8fc4c86bdb81fec3172758721adf2b31",
+      "size": 1633735,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "m1n!o",
+        "Needy"
+      ],
+      "pov": "Needy",
+      "date": "13.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8566,
+      "filename": "8566__sCoopY_(POV)-vs-1n-bloodrun-2025_04_12-19_07_51.dm_91",
+      "source_url": "https://files.quakelive.ru/sCoopY_%28POV%29-vs-1n-bloodrun-2025_04_12-19_07_51.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8566",
+      "sha256": "0c38fe12df3d675febbb7b22b5a1410df8f9b24664b9703a47f593feaed356e7",
+      "size": 1118787,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "n1",
+        "sCoopY_"
+      ],
+      "pov": "sCoopY_",
+      "date": "12.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8595,
+      "filename": "8595__SV-vs-sCoopY_-bloodrun-2025_04_12-18_45_15.dm_91",
+      "source_url": "https://files.quakelive.ru/SV-vs-sCoopY_-bloodrun-2025_04_12-18_45_15.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8595",
+      "sha256": "23829ad21ad3d678b024ac40a21862fdcd5328942dbbac7fb292c5288773340f",
+      "size": 1660301,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "sCoopY_",
+        "SV"
+      ],
+      "pov": "spec",
+      "date": "12.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8572,
+      "filename": "8572__sCoopY_(POV)-vs-SV-bloodrun-2025_04_12-18_45_15.dm_91",
+      "source_url": "https://files.quakelive.ru/sCoopY_%28POV%29-vs-SV-bloodrun-2025_04_12-18_45_15.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8572",
+      "sha256": "12e02157ae300ee1ca1f7aa79d88adc598b6ee4b3b6cbd41e8ea41a219f1b067",
+      "size": 1361037,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "sCoopY_",
+        "SV"
+      ],
+      "pov": "sCoopY_",
+      "date": "12.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8559,
+      "filename": "8559__R35_ILY4(POV)-vs-1n-bloodrun-2025_04_12-16_30_20.dm_91",
+      "source_url": "https://files.quakelive.ru/R35_ILY4%28POV%29-vs-1n-bloodrun-2025_04_12-16_30_20.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8559",
+      "sha256": "4ef0743046f0bcc7e5e292ed7fa87352f38522612e09e7b3b1dd5191780570b2",
+      "size": 1031933,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ILY4",
+        "n1"
+      ],
+      "pov": "R35_ILY4",
+      "date": "12.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8565,
+      "filename": "8565__sCoopY_(POV)-vs-1n-bloodrun-2025_04_12-14_41_33.dm_91",
+      "source_url": "https://files.quakelive.ru/sCoopY_%28POV%29-vs-1n-bloodrun-2025_04_12-14_41_33.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8565",
+      "sha256": "58862d184f6dae4c0e062ee0c005f61d0f82e9a040f12927547007b9505477ab",
+      "size": 1487695,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "n1",
+        "sCoopY_"
+      ],
+      "pov": "sCoopY_",
+      "date": "12.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8547,
+      "filename": "8547__mkobets(POV)-vs-Ditriy-bloodrun-2025_04_12-11_20_32.dm_91",
+      "source_url": "https://files.quakelive.ru/mkobets%28POV%29-vs-Ditriy-bloodrun-2025_04_12-11_20_32.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8547",
+      "sha256": "0ad61df815d18e965f13818e6bb72a370b129798c94cd56d329f88a09c31bd59",
+      "size": 1626197,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Ditriy",
+        "mkobets"
+      ],
+      "pov": "mkobets",
+      "date": "12.04.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1930,
+      "filename": "1930__AGENT(POV)-vs-ash-bloodrun-2025_03_02-21_21_35.dm_91",
+      "source_url": "https://files.quakelive.ru/AGENT%28POV%29-vs-ash-bloodrun-2025_03_02-21_21_35.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1930",
+      "sha256": "a908b93f75c3ceed5ea5f24297fb559d55cb6cf40a167bfe99039a071027ff60",
+      "size": 1332785,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "ash"
+      ],
+      "pov": "AGENT",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1932,
+      "filename": "1932__ash(POV)-vs-AGENT-bloodrun-2025_03_02-21_21_35.dm_91",
+      "source_url": "https://files.quakelive.ru/ash%28POV%29-vs-AGENT-bloodrun-2025_03_02-21_21_35.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1932",
+      "sha256": "112c56fe6b4b426c94e858da45fe08ed8dbfda5570462bbd8ef42706d995900d",
+      "size": 1369517,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "ash"
+      ],
+      "pov": "ash",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1938,
+      "filename": "1938__ash(POV)-vs-pavel-bloodrun-2025_03_02-20_01_42.dm_91",
+      "source_url": "https://files.quakelive.ru/ash%28POV%29-vs-pavel-bloodrun-2025_03_02-20_01_42.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1938",
+      "sha256": "af8433f44ad16956fead8874c584e1937f3af368a339df8660a19af58012c6cd",
+      "size": 1456180,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "pavel"
+      ],
+      "pov": "ash",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1944,
+      "filename": "1944__pavel(POV)-vs-ash-bloodrun-2025_03_02-20_01_42.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel%28POV%29-vs-ash-bloodrun-2025_03_02-20_01_42.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1944",
+      "sha256": "d5d568e1a1e4cabb7bfdf3f2780d4b62db3dd9bf96e48769b232c902b1517227",
+      "size": 1448445,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "pavel"
+      ],
+      "pov": "pavel",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2215,
+      "filename": "2215__AGENT(POV)-vs-pavel-bloodrun-2025_03_02-16_44_49.dm_91",
+      "source_url": "https://files.quakelive.ru/AGENT%28POV%29-vs-pavel-bloodrun-2025_03_02-16_44_49.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2215",
+      "sha256": "02f78039bf69eba281eda5ae45aa03d6277eb6b5c7cc0580cb70258d3cb61b1c",
+      "size": 1188932,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "pavel"
+      ],
+      "pov": "AGENT",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2222,
+      "filename": "2222__pavel(POV)-vs-AGENT-bloodrun-2025_03_02-16_44_49.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel%28POV%29-vs-AGENT-bloodrun-2025_03_02-16_44_49.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2222",
+      "sha256": "6a0374fbad593cbd047d3727792812164e7e7bf4e4a1ca227fa7b6c42dcaa256",
+      "size": 1212286,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "pavel"
+      ],
+      "pov": "pavel",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1958,
+      "filename": "1958__fire_bot(POV)-vs-R35_ILY4-bloodrun-2025_03_02-16_33_11.dm_91",
+      "source_url": "https://files.quakelive.ru/fire_bot%28POV%29-vs-R35_ILY4-bloodrun-2025_03_02-16_33_11.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1958",
+      "sha256": "60a78a93dca95bc7a22584ecbc814472e2f3a0fb22a161479ab12dc9dd3ddefd",
+      "size": 1530337,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fire_bot",
+        "ILY4"
+      ],
+      "pov": "fire_bot",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1973,
+      "filename": "1973__R35_ILY4(POV)-vs-fire_bot-bloodrun-2025_03_02-16_33_11.dm_91",
+      "source_url": "https://files.quakelive.ru/R35_ILY4%28POV%29-vs-fire_bot-bloodrun-2025_03_02-16_33_11.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1973",
+      "sha256": "ec8ee1825526af9f8f592b51acc4bbdafd314475a041a8939621453d6b2cd25d",
+      "size": 1471864,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fire_bot",
+        "ILY4"
+      ],
+      "pov": "ILY4",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2233,
+      "filename": "2233__Dispyrosebnum(POV)-vs-pavel-bloodrun-2025_03_02-15_27_38.dm_91",
+      "source_url": "https://files.quakelive.ru/Dispyrosebnum%28POV%29-vs-pavel-bloodrun-2025_03_02-15_27_38.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2233",
+      "sha256": "969aa61453f0f3b41660704dc6b9229f411838ed0a6cf1757fcb389b08886203",
+      "size": 1349168,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "pavel",
+        "swex"
+      ],
+      "pov": "swex",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2238,
+      "filename": "2238__pavel(POV)-vs-Dispyrosebnum-bloodrun-2025_03_02-15_27_38.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel%28POV%29-vs-Dispyrosebnum-bloodrun-2025_03_02-15_27_38.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2238",
+      "sha256": "bc67172883ca1f0d31c12d9eefc9457704e3677661ac1a3d60b7253ebf7b15b3",
+      "size": 1433950,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "pavel",
+        "swex"
+      ],
+      "pov": "pavel",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2229,
+      "filename": "2229__Cypher(POV)-vs-sCoopY_-bloodrun-2025_03_02-15_02_08.dm_91",
+      "source_url": "https://files.quakelive.ru/Cypher%28POV%29-vs-sCoopY_-bloodrun-2025_03_02-15_02_08.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2229",
+      "sha256": "0befe7e9ee2410d3ef01d12731d1dbf9c86842832c79416e6a540ff04c484885",
+      "size": 1457577,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "sCoopY_"
+      ],
+      "pov": "Cypher",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2241,
+      "filename": "2241__sCoopY_(POV)-vs-Cypher-bloodrun-2025_03_02-15_02_08.dm_91",
+      "source_url": "https://files.quakelive.ru/sCoopY_%28POV%29-vs-Cypher-bloodrun-2025_03_02-15_02_08.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2241",
+      "sha256": "d02494683a1fe108ca178cfef3f74f937afe7f900560315cfd8fd409321a752e",
+      "size": 1462080,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "sCoopY_"
+      ],
+      "pov": "sCoopY_",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2053,
+      "filename": "2053__Fancje(POV)-vs-KOLENO_TAURENASLON-bloodrun-2025_03_02-14_58_43.dm_91",
+      "source_url": "https://files.quakelive.ru/Fancje%28POV%29-vs-KOLENO_TAURENASLON-bloodrun-2025_03_02-14_58_43.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2053",
+      "sha256": "c7437a3a7f3c448088df27a5e4d453a310d516f6513333934ba5d9b4c35d9a2e",
+      "size": 1482078,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Fancje",
+        "SLON"
+      ],
+      "pov": "Fancje",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2086,
+      "filename": "2086__KOLENO_TAURENASLON(POV)-vs-Fancje-bloodrun-2025_03_02-14_58_43.dm_91",
+      "source_url": "https://files.quakelive.ru/KOLENO_TAURENASLON%28POV%29-vs-Fancje-bloodrun-2025_03_02-14_58_43.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2086",
+      "sha256": "ee567b4b9d83304f59e4dc006e95708bb3847f235790c162bc4e20c915abe5de",
+      "size": 1531064,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Fancje",
+        "SLON"
+      ],
+      "pov": "SLON",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2225,
+      "filename": "2225__AGENT(POV)-vs-Latrommi-bloodrun-2025_03_02-14_34_21.dm_91",
+      "source_url": "https://files.quakelive.ru/AGENT%28POV%29-vs-Latrommi-bloodrun-2025_03_02-14_34_21.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2225",
+      "sha256": "ef1721456c6c5378ab216d952b08aac2d45f696b410858dda1b28c82d05bb76e",
+      "size": 1506837,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "Latrommi"
+      ],
+      "pov": "AGENT",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2236,
+      "filename": "2236__Latrommi(POV)-vs-AGENT-bloodrun-2025_03_02-14_34_21.dm_91",
+      "source_url": "https://files.quakelive.ru/Latrommi%28POV%29-vs-AGENT-bloodrun-2025_03_02-14_34_21.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2236",
+      "sha256": "67c3abea69883ab7ea72848b679a0174dd0f877924d0f4282da184531d934809",
+      "size": 1525095,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "Latrommi"
+      ],
+      "pov": "Latrommi",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2057,
+      "filename": "2057__Fancje(POV)-vs-R72LOKOMOTIV-bloodrun-2025_03_02-14_10_15.dm_91",
+      "source_url": "https://files.quakelive.ru/Fancje%28POV%29-vs-R72LOKOMOTIV-bloodrun-2025_03_02-14_10_15.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2057",
+      "sha256": "4379222148107dfedec9475ab9274c6bb01b33da5e6de9406025647ca15472c5",
+      "size": 1200496,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Fancje",
+        "LOKOMOTIV"
+      ],
+      "pov": "Fancje",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2149,
+      "filename": "2149__R72LOKOMOTIV(POV)-vs-Fancje-bloodrun-2025_03_02-14_10_15.dm_91",
+      "source_url": "https://files.quakelive.ru/R72LOKOMOTIV%28POV%29-vs-Fancje-bloodrun-2025_03_02-14_10_15.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2149",
+      "sha256": "20ec7cf011b32772cef76f9d2884dd264ba7f5947c75a81eb9a9e02581749e09",
+      "size": 1239699,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Fancje",
+        "LOKOMOTIV"
+      ],
+      "pov": "LOKOMOTIV",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2113,
+      "filename": "2113__mstshambler(POV)-vs-p1vash-bloodrun-2025_03_02-14_08_55.dm_91",
+      "source_url": "https://files.quakelive.ru/mstshambler%28POV%29-vs-p1vash-bloodrun-2025_03_02-14_08_55.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2113",
+      "sha256": "853167c2ad71ecd3fea177b7ab54f51dad38b64442fc28cdc3caa1b7139b11d8",
+      "size": 1154221,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "mstshambler",
+        "p1vash"
+      ],
+      "pov": "mstshambler",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2128,
+      "filename": "2128__p1vash(POV)-vs-mstshambler-bloodrun-2025_03_02-14_08_55.dm_91",
+      "source_url": "https://files.quakelive.ru/p1vash%28POV%29-vs-mstshambler-bloodrun-2025_03_02-14_08_55.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2128",
+      "sha256": "21a8f151d550dd176a98d6c231859f1cd65700373f58ece363f55b5dd439ebd4",
+      "size": 1165227,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "mstshambler",
+        "p1vash"
+      ],
+      "pov": "p1vash",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2002,
+      "filename": "2002__AGENT(POV)-vs-fire_bot-bloodrun-2025_03_02-13_59_46.dm_91",
+      "source_url": "https://files.quakelive.ru/AGENT%28POV%29-vs-fire_bot-bloodrun-2025_03_02-13_59_46.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2002",
+      "sha256": "71f373a0bcd14a24b729ee0b490e08244178c6fd0c92ccdc6b69a19453c8271e",
+      "size": 1323680,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "fire_bot"
+      ],
+      "pov": "AGENT",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2059,
+      "filename": "2059__fire_bot(POV)-vs-AGENT-bloodrun-2025_03_02-13_59_46.dm_91",
+      "source_url": "https://files.quakelive.ru/fire_bot%28POV%29-vs-AGENT-bloodrun-2025_03_02-13_59_46.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2059",
+      "sha256": "1714031b46f24a366eae6f5d9d95fe47ac1cd1cbc5e76be1632e34e68e96af9d",
+      "size": 1324649,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "fire_bot"
+      ],
+      "pov": "fire_bot",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2188,
+      "filename": "2188__SV(POV)-vs-WiseGenie-bloodrun-2025_03_02-14_42_23.dm_91",
+      "source_url": "https://files.quakelive.ru/SV%28POV%29-vs-WiseGenie-bloodrun-2025_03_02-14_42_23.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2188",
+      "sha256": "5f0633e4f77dbcccd2adca9f780ff658d67f9c3f60aca4af10fbf7c640cea4f0",
+      "size": 1590958,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "SV",
+        "WiseGenie"
+      ],
+      "pov": "SV",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2201,
+      "filename": "2201__WiseGenie(POV)-vs-SV-bloodrun-2025_03_02-14_42_23.dm_91",
+      "source_url": "https://files.quakelive.ru/WiseGenie%28POV%29-vs-SV-bloodrun-2025_03_02-14_42_23.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2201",
+      "sha256": "c98391f2de1b6870df2d2f0f02d44f5ff89aa07891d4bdf31f8fabfbd4eb62b2",
+      "size": 1586288,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "SV",
+        "WiseGenie"
+      ],
+      "pov": "WiseGenie",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2005,
+      "filename": "2005__AGENT(POV)-vs-Nitrino-bloodrun-2025_03_02-13_35_07.dm_91",
+      "source_url": "https://files.quakelive.ru/AGENT%28POV%29-vs-Nitrino-bloodrun-2025_03_02-13_35_07.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2005",
+      "sha256": "6008245a6339095153e8ac7031bb30851a908a7bf78dfdedb410af908b9e5912",
+      "size": 1527429,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "Nitrino"
+      ],
+      "pov": "AGENT",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2118,
+      "filename": "2118__Nitrino(POV)-vs-AGENT-bloodrun-2025_03_02-13_35_07.dm_91",
+      "source_url": "https://files.quakelive.ru/Nitrino%28POV%29-vs-AGENT-bloodrun-2025_03_02-13_35_07.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2118",
+      "sha256": "9d1b3c94c89702599a3a38c8596648a9cdc35f44948aa1474c0a9c091bdc6bd7",
+      "size": 1530284,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "Nitrino"
+      ],
+      "pov": "Nitrino",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2015,
+      "filename": "2015__ant1(POV)-vs-Drebin-bloodrun-2025_03_02-13_33_58.dm_91",
+      "source_url": "https://files.quakelive.ru/ant1%28POV%29-vs-Drebin-bloodrun-2025_03_02-13_33_58.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2015",
+      "sha256": "81f6cf25b0a51c7e2839be0c2e99c39821a4efa297f8e77de521f668c56fb5da",
+      "size": 1518060,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ant1",
+        "Drebin"
+      ],
+      "pov": "ant1",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2048,
+      "filename": "2048__Drebin(POV)-vs-ant1-bloodrun-2025_03_02-13_33_58.dm_91",
+      "source_url": "https://files.quakelive.ru/Drebin%28POV%29-vs-ant1-bloodrun-2025_03_02-13_33_58.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2048",
+      "sha256": "32aeeb3aeb4263b6f7e46bd35c8ddb7a8639f9879556ed87210dc5a6c7838430",
+      "size": 1560581,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ant1",
+        "Drebin"
+      ],
+      "pov": "Drebin",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1999,
+      "filename": "1999__421(POV)-vs-cherra-bloodrun-2025_03_02-13_29_07.dm_91",
+      "source_url": "https://files.quakelive.ru/421%28POV%29-vs-cherra-bloodrun-2025_03_02-13_29_07.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1999",
+      "sha256": "0a5b3d0c4c5caf1431b4ef099f471d42f9b9f9b7e72c3d3db964a2eeaca5b8ed",
+      "size": 1478449,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "421",
+        "cherra"
+      ],
+      "pov": "421",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2018,
+      "filename": "2018__ash(POV)-vs-shitcatapult-bloodrun-2025_03_02-12_57_32.dm_91",
+      "source_url": "https://files.quakelive.ru/ash%28POV%29-vs-shitcatapult-bloodrun-2025_03_02-12_57_32.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2018",
+      "sha256": "a1f79c7e08234eef5069bc9da8592743d9b4ce8f02d4cdc9c58e98074470b655",
+      "size": 1461597,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "shitcatapult"
+      ],
+      "pov": "ash",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2170,
+      "filename": "2170__shitcatapult(POV)-vs-ash-bloodrun-2025_03_02-12_57_32.dm_91",
+      "source_url": "https://files.quakelive.ru/shitcatapult%28POV%29-vs-ash-bloodrun-2025_03_02-12_57_32.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2170",
+      "sha256": "e49495e4181c748a74a23ea0c4ca236658d6a110067c0a1169dcfb9a5ced3332",
+      "size": 1423317,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "shitcatapult"
+      ],
+      "pov": "shitcatapult",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2008,
+      "filename": "2008__andjey(POV)-vs-baxyc-bloodrun-2025_03_02-12_55_10.dm_91",
+      "source_url": "https://files.quakelive.ru/andjey%28POV%29-vs-baxyc-bloodrun-2025_03_02-12_55_10.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2008",
+      "sha256": "84d5511b44d5629d29c704c73ed3e0cd4498024bfba83d8357d3a6449e75ebcb",
+      "size": 1574018,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "andjey",
+        "baxyc"
+      ],
+      "pov": "andjey",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2074,
+      "filename": "2074__FOLLA(POV)-vs-WiseGenie-bloodrun-2025_03_02-12_35_46.dm_91",
+      "source_url": "https://files.quakelive.ru/FOLLA%28POV%29-vs-WiseGenie-bloodrun-2025_03_02-12_35_46.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2074",
+      "sha256": "e0f24644366d4e90b488dc3ff5953735f14218657945a620c92a82edbe7be286",
+      "size": 1310071,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "FOLLA",
+        "WiseGenie"
+      ],
+      "pov": "FOLLA",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2199,
+      "filename": "2199__WiseGenie(POV)-vs-FOLLA-bloodrun-2025_03_02-12_35_46.dm_91",
+      "source_url": "https://files.quakelive.ru/WiseGenie%28POV%29-vs-FOLLA-bloodrun-2025_03_02-12_35_46.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2199",
+      "sha256": "8f7d99a0469c5c2708181e0eb63a4936bd0870a869528bb8560566238e5ebcf7",
+      "size": 1264399,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "FOLLA",
+        "WiseGenie"
+      ],
+      "pov": "WiseGenie",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2024,
+      "filename": "2024__asvk(POV)-vs-R35_ILY4-Bloodrun-2025_03_02-12_34_33.dm_91",
+      "source_url": "https://files.quakelive.ru/asvk%28POV%29-vs-R35_ILY4-Bloodrun-2025_03_02-12_34_33.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2024",
+      "sha256": "701fe6a9a021a93652b1773ff4585c1d4bd1d2942d901a6d739183ff220c0b73",
+      "size": 1035787,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "asvk",
+        "ILY4"
+      ],
+      "pov": "asvk",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2139,
+      "filename": "2139__R35_ILY4(POV)-vs-asvk-Bloodrun-2025_03_02-12_34_33.dm_91",
+      "source_url": "https://files.quakelive.ru/R35_ILY4%28POV%29-vs-asvk-Bloodrun-2025_03_02-12_34_33.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2139",
+      "sha256": "2aec6a651650544836e3d067fb8063a8dc6539eee70834581cb5f2f5d7659c11",
+      "size": 1009038,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "asvk",
+        "ILY4"
+      ],
+      "pov": "ILY4",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2017,
+      "filename": "2017__ant1(POV)-vs-mstshambler-bloodrun-2025_03_02-12_37_28.dm_91",
+      "source_url": "https://files.quakelive.ru/ant1%28POV%29-vs-mstshambler-bloodrun-2025_03_02-12_37_28.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2017",
+      "sha256": "bfa3d152c5fa5e6ef8bda350d0f0c17133f2134d1f41e45a374414bfc5f2a277",
+      "size": 1500415,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ant1",
+        "mstshambler"
+      ],
+      "pov": "ant1",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2109,
+      "filename": "2109__mstshambler(POV)-vs-ant1-bloodrun-2025_03_02-12_37_28.dm_91",
+      "source_url": "https://files.quakelive.ru/mstshambler%28POV%29-vs-ant1-bloodrun-2025_03_02-12_37_28.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2109",
+      "sha256": "2fa2a3650ac688c575dd1a4b68cf00afce3b979a4a02c9a576121cf68f3d6b25",
+      "size": 1501425,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ant1",
+        "mstshambler"
+      ],
+      "pov": "mstshambler",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2051,
+      "filename": "2051__Drebin(POV)-vs-xfragijkeeee-bloodrun-2025_03_02-12_31_30.dm_91",
+      "source_url": "https://files.quakelive.ru/Drebin%28POV%29-vs-xfragijkeeee-bloodrun-2025_03_02-12_31_30.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2051",
+      "sha256": "196c5d18f099933f789c46cf10300e661ad43ac491c2a2664a65a3536de2b473",
+      "size": 1153321,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Drebin",
+        "mijkeeee"
+      ],
+      "pov": "Drebin",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2205,
+      "filename": "2205__xfragijkeeee(POV)-vs-Drebin-bloodrun-2025_03_02-12_31_30.dm_91",
+      "source_url": "https://files.quakelive.ru/xfragijkeeee%28POV%29-vs-Drebin-bloodrun-2025_03_02-12_31_30.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2205",
+      "sha256": "b39d10878c7a52d51af54d7fff97e57c284d9a15ff785b549b09e891d923dd9a",
+      "size": 1114692,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Drebin",
+        "mijkeeee"
+      ],
+      "pov": "mijkeeee",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 2091,
+      "filename": "2091__KOLENO_TAURENASLON(POV)-vs-[Scarlet]-bloodrun-2025_03_02-12_26_27.dm_91",
+      "source_url": "https://files.quakelive.ru/KOLENO_TAURENASLON%28POV%29-vs-%5BScarlet%5D-bloodrun-2025_03_02-12_26_27.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=2091",
+      "sha256": "48a80595a452b03d02bdb3cd07637391fb602724c224f9a3e10701c4e814a8e2",
+      "size": 839955,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Scarlet",
+        "SLON"
+      ],
+      "pov": "SLON",
+      "date": "02.03.2025",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 6927,
+      "filename": "6927__pavel(POV)-vs-fire_bot-bloodrun-2024_12_22-18_39_45.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel%28POV%29-vs-fire_bot-bloodrun-2024_12_22-18_39_45.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=6927",
+      "sha256": "9617e8e6c661339556356f3e867d53ffe52c28b9824a608a06ddeffb11b163ae",
+      "size": 1755646,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fire_bot",
+        "pavel"
+      ],
+      "pov": "pavel",
+      "date": "22.12.2024",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 6911,
+      "filename": "6911__fire_bot(POV)-vs-pavel-bloodrun-2024_12_22-18_39_45.dm_91",
+      "source_url": "https://files.quakelive.ru/fire_bot%28POV%29-vs-pavel-bloodrun-2024_12_22-18_39_45.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=6911",
+      "sha256": "4f682457cc4911f10f6fe07d0d0d5ad846e302813944c03e71b307017efffc4a",
+      "size": 1605615,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fire_bot",
+        "pavel"
+      ],
+      "pov": "fire_bot",
+      "date": "22.12.2024",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 6940,
+      "filename": "6940__daz(POV)-vs-ash-bloodrun-2024_12_22-15_41_36.dm_91",
+      "source_url": "https://files.quakelive.ru/daz%28POV%29-vs-ash-bloodrun-2024_12_22-15_41_36.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=6940",
+      "sha256": "e0a2f35d79a8ce68cf533fd0dac0e6cd49e3c390455679387a625968b04ce321",
+      "size": 1016208,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "dazator"
+      ],
+      "pov": "daz",
+      "date": "22.12.2024",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 6917,
+      "filename": "6917__pavel(POV)-vs-1n-bloodrun-2024_12_22-14_26_38.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel%28POV%29-vs-1n-bloodrun-2024_12_22-14_26_38.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=6917",
+      "sha256": "013d1bbcb100732500d30c267c842ebbcdf9e9a260d05687ee3806ddd44f9432",
+      "size": 1634963,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "n1",
+        "pavel"
+      ],
+      "pov": "pavel",
+      "date": "22.12.2024",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 6931,
+      "filename": "6931__SV(POV)-vs-Drebin-bloodrun-2024_12_22-19_54_40.dm_91",
+      "source_url": "https://files.quakelive.ru/SV%28POV%29-vs-Drebin-bloodrun-2024_12_22-19_54_40.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=6931",
+      "sha256": "33e9ff3069c7c0b8facac0a7e8837035e3429cd509e2daac405093934ada6bac",
+      "size": 1390562,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Drebin",
+        "SV"
+      ],
+      "pov": "SV",
+      "date": "22.12.2024",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7176,
+      "filename": "7176__pavel-vs-Dispyrosebnum-bloodrun-2024_08_25-16_26_54.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel-vs-Dispyrosebnum-bloodrun-2024_08_25-16_26_54.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7176",
+      "sha256": "2b468822d35359761651665ab850a7f42ebd732b02ac344865838e014fda2969",
+      "size": 1609300,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "pavel",
+        "swex"
+      ],
+      "pov": "spec",
+      "date": "25.08.2024",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7184,
+      "filename": "7184__ash-vs-AGENT-bloodrun-2024_08_25-15_53_30.dm_91",
+      "source_url": "https://files.quakelive.ru/ash-vs-AGENT-bloodrun-2024_08_25-15_53_30.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7184",
+      "sha256": "345a864f733b9279d38a8e02dfaf1ad5f1bfa9fe728aafe24b74d47ac4572acd",
+      "size": 1680863,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "ash"
+      ],
+      "pov": "spec",
+      "date": "25.08.2024",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7193,
+      "filename": "7193__pavel-vs-ash-bloodrun-2024_08_25-14_54_23.dm_91",
+      "source_url": "https://files.quakelive.ru/pavel-vs-ash-bloodrun-2024_08_25-14_54_23.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7193",
+      "sha256": "b39770f5083440ffeab6bf93803b1364e548252353fa548bfe209b10d5092d0e",
+      "size": 1499834,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "pavel"
+      ],
+      "pov": "spec",
+      "date": "25.08.2024",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7178,
+      "filename": "7178__1n-vs-noderde-bloodrun-2024_08_25-13_26_13.dm_91",
+      "source_url": "https://files.quakelive.ru/1n-vs-noderde-bloodrun-2024_08_25-13_26_13.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7178",
+      "sha256": "61d2617a45735c8f33288d946caf4ea8ceaac899ed1c27a88483ddb2c65828dd",
+      "size": 19198,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "n1",
+        "noderde"
+      ],
+      "pov": "spec",
+      "date": "25.08.2024",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7524,
+      "filename": "7524__agent-vs-base-bloodrun-2016_06_27-00_10_28.dm_91",
+      "source_url": "https://files.quakelive.ru/agent-vs-base-bloodrun-2016_06_27-00_10_28.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7524",
+      "sha256": "d0e12cb39cfc205de0807af9b0c2f01fbd4e7a1b6913f842dd83b020bb4cb68c",
+      "size": 1073874,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "base"
+      ],
+      "pov": "spec",
+      "date": "26.06.2016",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7549,
+      "filename": "7549__SPART1E-vs-agent-bloodrun-2016_06_26-21_08_47.dm_91",
+      "source_url": "https://files.quakelive.ru/SPART1E-vs-agent-bloodrun-2016_06_26-21_08_47.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7549",
+      "sha256": "c95c734ba9e6e4e636141872ac773c19c4d52f1c9601d0bdcc4275bcf9d4da82",
+      "size": 1913276,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "SPART1E"
+      ],
+      "pov": "spec",
+      "date": "26.06.2016",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7544,
+      "filename": "7544__prox1mo-vs-102PAVEL-bloodrun-2016_06_26-23_12_58.dm_91",
+      "source_url": "https://files.quakelive.ru/prox1mo-vs-102PAVEL-bloodrun-2016_06_26-23_12_58.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7544",
+      "sha256": "5383ea5000a5f9c6d5b7d4a4b42d18eef94435cf19224fa417097a33b171bdd0",
+      "size": 1606827,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "pavel",
+        "prox1mo"
+      ],
+      "pov": "spec",
+      "date": "26.06.2016",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7552,
+      "filename": "7552__wolf_pl-vs-8PLAYevil-bloodrun-2016_06_26-17_07_32.dm_91",
+      "source_url": "https://files.quakelive.ru/wolf_pl-vs-8PLAYevil-bloodrun-2016_06_26-17_07_32.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7552",
+      "sha256": "d3991fb79df2ceff926da8cc7d41cbeaec55fc87ccb1a3f15484537fe7056936",
+      "size": 1800620,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "wolf_pl"
+      ],
+      "pov": "spec",
+      "date": "26.06.2016",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7541,
+      "filename": "7541__DER_LARS-vs-102PAVEL-bloodrun-2016_06_26-18_26_30.dm_91",
+      "source_url": "https://files.quakelive.ru/DER_LARS-vs-102PAVEL-bloodrun-2016_06_26-18_26_30.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7541",
+      "sha256": "43f57e107a5e1874a58e4d93e8c8a7115d983bbf3cb36514df449ca4a48c99de",
+      "size": 1731461,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "lars",
+        "pavel"
+      ],
+      "pov": "spec",
+      "date": "26.06.2016",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7511,
+      "filename": "7511__8PLAYevil(POV)-vs-base-bloodrun-2015_12_25-23_30_03.dm_91",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-base-bloodrun-2015_12_25-23_30_03.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7511",
+      "sha256": "0445d96bf599b6365e36bf6552fffbf79534737c6edc7f2157dbdb9b3ac70dd0",
+      "size": 690667,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "base",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "25.12.2015",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7518,
+      "filename": "7518__8PLAYevil(POV)-vs-PAVEL-bloodrun-2015_12_24-22_17_07.dm_91",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-PAVEL-bloodrun-2015_12_24-22_17_07.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7518",
+      "sha256": "4777ee3f697a3a6ca0b41e703b0d122c47d8969324e2d071a40373332ef63289",
+      "size": 1512156,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "pavel"
+      ],
+      "pov": "evil",
+      "date": "24.12.2015",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7515,
+      "filename": "7515__8PLAYevil(POV)-vs-GaRpY-bloodrun-2015_12_24-19_22_08.dm_91",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-GaRpY-bloodrun-2015_12_24-19_22_08.dm_91",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7515",
+      "sha256": "e33a2f528c39a72d44c8a283dbeff28d76dabfd6c077f9f1d336124184e37052",
+      "size": 897244,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "GaRpY"
+      ],
+      "pov": "evil",
+      "date": "24.12.2015",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7610,
+      "filename": "7610__evil(POV)-vs-[iG]cYpheR-bloodrun-2015_07_03-22_40_38.dm_90",
+      "source_url": "https://files.quakelive.ru/evil%28POV%29-vs-%5BiG%5DcYpheR-bloodrun-2015_07_03-22_40_38.dm_90",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7610",
+      "sha256": "9627386a61db84f45cbd3c120299d745136e1802eaf8c404b35ce79823356785",
+      "size": 1384860,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "03.07.2015",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7601,
+      "filename": "7601__105649-102RCPAVEl(POV)-vs-AGENT-bloodrun-201.dm_90",
+      "source_url": "https://files.quakelive.ru/105649-102RCPAVEl%28POV%29-vs-AGENT-bloodrun-201.dm_90",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7601",
+      "sha256": "560f3d9ec27ce5e5b8a18c870089b106753fb3e8cb1ade2d01941da01c675454",
+      "size": 1215647,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "pavel"
+      ],
+      "pov": "PAVEl",
+      "date": "02.07.2015",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 866,
+      "filename": "866__coLcarnage(POV)-vs-ukn-l1nkin-bloodrun-2014_07_17-11_11_40.dm_73",
+      "source_url": "https://files.quakelive.ru/coLcarnage%28POV%29-vs-ukn-l1nkin-bloodrun-2014_07_17-11_11_40.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=866",
+      "sha256": "4b7aa831ca10898c4e07d766a9ffc62cbb5573db62932af755fd543b7a5d4518",
+      "size": 1437193,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "carnage",
+        "l1nkin"
+      ],
+      "pov": "carnage",
+      "date": "17.07.2014",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 878,
+      "filename": "878__ukn-l1nkin(POV)-vs-coLcarnage-bloodrun-2014_07_17-11_11_40.dm_73",
+      "source_url": "https://files.quakelive.ru/ukn-l1nkin%28POV%29-vs-coLcarnage-bloodrun-2014_07_17-11_11_40.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=878",
+      "sha256": "98326fec6208ad4b629e18552c1fc5bacfa3cf21a1723b6842f99e555120a593",
+      "size": 1484382,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "carnage",
+        "l1nkin"
+      ],
+      "pov": "l1nkin",
+      "date": "17.07.2014",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8367,
+      "filename": "8367__2014_04_05-20_17_17_upAGENT(POV)-vs-TitancYpheR-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/2014_04_05-20_17_17_upAGENT%28POV%29-vs-TitancYpheR-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8367",
+      "sha256": "e8a7c824a90c6ebb0a424f0570fd38218b93c9971d12a225a14643b6d93d3147",
+      "size": 1406648,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "AGENT",
+        "cYpheR"
+      ],
+      "pov": "AGENT",
+      "date": "05.04.2014",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 6555,
+      "filename": "6555__P0Lprox_pl-vs-notlLeSzNy-bloodrun-2014_03_02-00_14_35.dm_73",
+      "source_url": "https://files.quakelive.ru/P0Lprox_pl-vs-notlLeSzNy-bloodrun-2014_03_02-00_14_35.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=6555",
+      "sha256": "e6145bec29eac767300a57602a3848e606726d3dfa882708ec2d5d4ad09a671e",
+      "size": 1740592,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "LeSzNy",
+        "prox_pl"
+      ],
+      "pov": "spec",
+      "date": "01.03.2014",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7904,
+      "filename": "7904__8PLAYevil(POV)-vs-TitancYpheR-bloodru.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-TitancYpheR-bloodru.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7904",
+      "sha256": "890a077ecc794e7e616bd2d6a6bcc6621b755ff2bb3afe4a85a90a2a73794037",
+      "size": 1530944,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "16.02.2014",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7908,
+      "filename": "7908__8PLAYevil(POV)-vs-102kook-bloodrun-20.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-102kook-bloodrun-20.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7908",
+      "sha256": "2e3d1c4852745cbe3d3c6be5698e8c82eacec5b23ed26ffcc935ae34f5ec1f58",
+      "size": 1519261,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "pavel"
+      ],
+      "pov": "evil",
+      "date": "16.02.2014",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 151,
+      "filename": "151__ictox(POV)-vs-SPART1E-bloodrun-2014_01_25-21_18_09.dm_73",
+      "source_url": "https://files.quakelive.ru/ictox%28POV%29-vs-SPART1E-bloodrun-2014_01_25-21_18_09.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=151",
+      "sha256": "b7b985a00785003781766abda596df2c5d9af3b30f3f2541b848df2e2efaf70e",
+      "size": 1479558,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "SPART1E",
+        "toxjq"
+      ],
+      "pov": "toxjq",
+      "date": "25.01.2014",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7898,
+      "filename": "7898__TitancYpheR-vs-8PLAYevil-bloodrun-201.dm_73",
+      "source_url": "https://files.quakelive.ru/TitancYpheR-vs-8PLAYevil-bloodrun-201.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7898",
+      "sha256": "cdc4468e9d8b1c447f051a47d0bc72c72f1992ce35f6ea72494c938d98cfa5a7",
+      "size": 1856221,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "evil"
+      ],
+      "pov": "spec",
+      "date": "19.01.2014",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5177,
+      "filename": "5177__8PLAYevil(POV)-vs-Av3k-bloodrun-2013_11_30-18_39_00.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-Av3k-bloodrun-2013_11_30-18_39_00.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5177",
+      "sha256": "ae801799b51e072cbbd8b1c4da9d64ac1629f77b3f9dd0afaafb5b662212f49b",
+      "size": 1464044,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5190,
+      "filename": "5190__Av3k(POV)-vs-8PLAYevil-bloodrun-2013_11_30-18_39_00.dm_73",
+      "source_url": "https://files.quakelive.ru/Av3k%28POV%29-vs-8PLAYevil-bloodrun-2013_11_30-18_39_00.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5190",
+      "sha256": "be622456d17fba90ddde213c0cc60d87af19ad46936d02bf6bd31190499c87a5",
+      "size": 1441770,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "evil"
+      ],
+      "pov": "Av3k",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5197,
+      "filename": "5197__Av3k(POV)-vs-TitancYpheR-bloodrun-2013_11_30-17_35_17.dm_73",
+      "source_url": "https://files.quakelive.ru/Av3k%28POV%29-vs-TitancYpheR-bloodrun-2013_11_30-17_35_17.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5197",
+      "sha256": "44244fe390e072d58f466d6afc709c85cf616748248d46f41871b32baf9d847a",
+      "size": 1466020,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "cYpheR"
+      ],
+      "pov": "Av3k",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5257,
+      "filename": "5257__TitancYpheR(POV)-vs-Av3k-bloodrun-2013_11_30-17_35_17.dm_73",
+      "source_url": "https://files.quakelive.ru/TitancYpheR%28POV%29-vs-Av3k-bloodrun-2013_11_30-17_35_17.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5257",
+      "sha256": "b3fdf1259a145e527c20bf2b56a41d26b8e64a9bc6c591db2d58e7c538fb4a01",
+      "size": 1442756,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "cYpheR"
+      ],
+      "pov": "cYpheR",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5186,
+      "filename": "5186__8PLAYevil(POV)-vs-SK-rapha-bloodrun-2013_11_30-16_43_27.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-SK-rapha-bloodrun-2013_11_30-16_43_27.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5186",
+      "sha256": "92974cc028bbd60b0983c742c81974943d267e395d3b49dea0a28d5cb151a2be",
+      "size": 1452522,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "rapha"
+      ],
+      "pov": "evil",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5227,
+      "filename": "5227__SK-rapha(POV)-vs-8PLAYevil-bloodrun-2013_11_30-16_43_27.dm_73",
+      "source_url": "https://files.quakelive.ru/SK-rapha%28POV%29-vs-8PLAYevil-bloodrun-2013_11_30-16_43_27.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5227",
+      "sha256": "a152b5ec8c44014d0506710e5c55cd3b3c412572e580ead4bb5737e2281d09cd",
+      "size": 1500652,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "rapha"
+      ],
+      "pov": "rapha",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5199,
+      "filename": "5199__Av3k(POV)-vs-Zedem0n-bloodrun-2013_11_30-15_18_12.dm_73",
+      "source_url": "https://files.quakelive.ru/Av3k%28POV%29-vs-Zedem0n-bloodrun-2013_11_30-15_18_12.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5199",
+      "sha256": "cce5c562b3591642c7a95d681122199cb843390081ad15ee1f6408a9696e8186",
+      "size": 1463340,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "dem0n"
+      ],
+      "pov": "Av3k",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5269,
+      "filename": "5269__Zedem0n(POV)-vs-Av3k-bloodrun-2013_11_30-15_18_12.dm_73",
+      "source_url": "https://files.quakelive.ru/Zedem0n%28POV%29-vs-Av3k-bloodrun-2013_11_30-15_18_12.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5269",
+      "sha256": "7b34370828e0b2b036fdc00fc19aa61384d8c22bf1e6cef625a708fb1a2dcd48",
+      "size": 1463093,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "dem0n"
+      ],
+      "pov": "dem0n",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5234,
+      "filename": "5234__SK-rapha(POV)-vs-PointDaHanG-bloodrun-2013_11_30-13_54_25.dm_73",
+      "source_url": "https://files.quakelive.ru/SK-rapha%28POV%29-vs-PointDaHanG-bloodrun-2013_11_30-13_54_25.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5234",
+      "sha256": "39e07fb7e35fc83cb900649aff7771fe1bb707f3418443609aaa07144f4e8bce",
+      "size": 1118867,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "DaHanG",
+        "rapha"
+      ],
+      "pov": "rapha",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5220,
+      "filename": "5220__PointDaHanG(POV)-vs-SK-rapha-bloodrun-2013_11_30-13_54_25.dm_73",
+      "source_url": "https://files.quakelive.ru/PointDaHanG%28POV%29-vs-SK-rapha-bloodrun-2013_11_30-13_54_25.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5220",
+      "sha256": "4b69b5564fff29e614b57685bd84a8a2a7ea37705c75426c237109ff8e5f66fa",
+      "size": 1120342,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "DaHanG",
+        "rapha"
+      ],
+      "pov": "DaHanG",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5211,
+      "filename": "5211__ictox(POV)-vs-8PLAYevil-bloodrun-2013_11_30-14_08_38.dm_73",
+      "source_url": "https://files.quakelive.ru/ictox%28POV%29-vs-8PLAYevil-bloodrun-2013_11_30-14_08_38.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5211",
+      "sha256": "769be99f4bebb755ec5b79b1dde7d2cc42ee16f822ac30a2ad0e3fae950c3d1a",
+      "size": 1522849,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "toxjq"
+      ],
+      "pov": "toxjq",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5183,
+      "filename": "5183__8PLAYevil(POV)-vs-ictox-bloodrun-2013_11_30-14_08_38.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-ictox-bloodrun-2013_11_30-14_08_38.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5183",
+      "sha256": "8759da027ddfab967a45a9d9460f1c96c19b37e7d98ffa0051aa7357bba01295",
+      "size": 1495649,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "toxjq"
+      ],
+      "pov": "evil",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5193,
+      "filename": "5193__Av3k(POV)-vs-kRoNic-bloodrun-2013_11_30-11_45_55.dm_73",
+      "source_url": "https://files.quakelive.ru/Av3k%28POV%29-vs-kRoNic-bloodrun-2013_11_30-11_45_55.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5193",
+      "sha256": "13f438bf438ae59ad28e2b7be1e3c500a6cecda46e4aff1ab80d5c2c8e3cc692",
+      "size": 1460837,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "kRoNic"
+      ],
+      "pov": "Av3k",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5217,
+      "filename": "5217__kRoNic(POV)-vs-Av3k-bloodrun-2013_11_30-11_45_55.dm_73",
+      "source_url": "https://files.quakelive.ru/kRoNic%28POV%29-vs-Av3k-bloodrun-2013_11_30-11_45_55.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5217",
+      "sha256": "53fc18d7c94fde5ef2092c7b61fd733152f446517e936c752044a148ee1b09df",
+      "size": 1497961,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "kRoNic"
+      ],
+      "pov": "kRoNic",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5215,
+      "filename": "5215__ictox(POV)-vs-c]-)twister-bloodrun-2013_11_30-10_58_08.dm_73",
+      "source_url": "https://files.quakelive.ru/ictox%28POV%29-vs-c%5D-%29twister-bloodrun-2013_11_30-10_58_08.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5215",
+      "sha256": "475c3420421533d1d60cf1de10244d5b98263edc1d214d814b524c7117926dab",
+      "size": 1480821,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "toxjq",
+        "twister"
+      ],
+      "pov": "toxjq",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5203,
+      "filename": "5203__c]-)twister(POV)-vs-ictox-bloodrun-2013_11_30-10_58_08.dm_73",
+      "source_url": "https://files.quakelive.ru/c%5D-%29twister%28POV%29-vs-ictox-bloodrun-2013_11_30-10_58_08.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5203",
+      "sha256": "89b9a1907b7e5b17a1dfa32d164e4ca7901fc906da44bbda4d7fafec01388ed3",
+      "size": 1403862,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "toxjq",
+        "twister"
+      ],
+      "pov": "twister",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5223,
+      "filename": "5223__PointDaHanG(POV)-vs-[kb]gienon-bloodrun-2013_11_30-10_29_22.dm_73",
+      "source_url": "https://files.quakelive.ru/PointDaHanG%28POV%29-vs-%5Bkb%5Dgienon-bloodrun-2013_11_30-10_29_22.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5223",
+      "sha256": "dc6283926c1b0a15398a674a22d4d26ef61bbafde655f8f47a16854299669019",
+      "size": 1530617,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "DaHanG",
+        "gienon"
+      ],
+      "pov": "DaHanG",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4944,
+      "filename": "4944__wilcyluukets(POV)-vs-[kb]gienon-bloodrun-2013_11_30-10_16_30.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcyluukets%28POV%29-vs-%5Bkb%5Dgienon-bloodrun-2013_11_30-10_16_30.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4944",
+      "sha256": "9a84b75f7e9ec0d4357db0088a29e445093682540ec1d7529efc295c3b0924d3",
+      "size": 477044,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "gienon",
+        "luukets"
+      ],
+      "pov": "luukets",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5205,
+      "filename": "5205__ESCk1llsen(POV)-vs-8PLAYevil-bloodrun-2013_11_30-10_20_17.dm_73",
+      "source_url": "https://files.quakelive.ru/ESCk1llsen%28POV%29-vs-8PLAYevil-bloodrun-2013_11_30-10_20_17.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5205",
+      "sha256": "9d79ec23c13d0f7569327709924842965f3dad64986ec19e0664c41505d5825c",
+      "size": 2023893,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "k1llsen"
+      ],
+      "pov": "k1llsen",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5180,
+      "filename": "5180__8PLAYevil(POV)-vs-ESCk1llsen-bloodrun-2013_11_30-10_20_17.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-ESCk1llsen-bloodrun-2013_11_30-10_20_17.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5180",
+      "sha256": "6b881b4a8f26cd78f9d3f6b6bc6afb389ccf63dacbe64e84061b053f1bb3ab18",
+      "size": 2052907,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "k1llsen"
+      ],
+      "pov": "evil",
+      "date": "30.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5310,
+      "filename": "5310__swsbpatela(POV)-vs-lelarslarslars-bloodrun-2013_11_29-20_38_16.dm_73",
+      "source_url": "https://files.quakelive.ru/swsbpatela%28POV%29-vs-lelarslarslars-bloodrun-2013_11_29-20_38_16.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5310",
+      "sha256": "f1251122cf7a60c7956788232d7d4d8cbb64248200fc382e5b2c0eb312599e20",
+      "size": 1476357,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "bpatela",
+        "lars"
+      ],
+      "pov": "bpatela",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4558,
+      "filename": "4558__ictox(POV)-vs-Zedem0n-bloodrun-2013_11_29-20_19_43.dm_73",
+      "source_url": "https://files.quakelive.ru/ictox%28POV%29-vs-Zedem0n-bloodrun-2013_11_29-20_19_43.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4558",
+      "sha256": "5fa4e9ddaed86339364747cefd76302fd86cfe33867c0870e14ef7c6494011cd",
+      "size": 1484067,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "dem0n",
+        "toxjq"
+      ],
+      "pov": "toxjq",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4624,
+      "filename": "4624__Zedem0n(POV)-vs-ictox-bloodrun-2013_11_29-20_19_43.dm_73",
+      "source_url": "https://files.quakelive.ru/Zedem0n%28POV%29-vs-ictox-bloodrun-2013_11_29-20_19_43.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4624",
+      "sha256": "1493c939c79c2b2820a82042c4d00e4d3402f7fb4bc60f98f34bc76bf5718b19",
+      "size": 1432418,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "dem0n",
+        "toxjq"
+      ],
+      "pov": "dem0n",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4496,
+      "filename": "4496__4sgFraZe(POV)-vs-fazz-bloodrun-2013_11_29-20_04_35.dm_73",
+      "source_url": "https://files.quakelive.ru/4sgFraZe%28POV%29-vs-fazz-bloodrun-2013_11_29-20_04_35.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4496",
+      "sha256": "999fda1510d1c478539229b256fa980de519e20e9259477770b72e8947aa5108",
+      "size": 1427237,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fazz",
+        "FraZe"
+      ],
+      "pov": "FraZe",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4519,
+      "filename": "4519__fazz(POV)-vs-4sgFraZe-bloodrun-2013_11_29-20_04_35.dm_73",
+      "source_url": "https://files.quakelive.ru/fazz%28POV%29-vs-4sgFraZe-bloodrun-2013_11_29-20_04_35.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4519",
+      "sha256": "73036b0a3ba7e7894b055f8c5c62daa70ed691f616af280fcae4cf3b3dc89ad6",
+      "size": 1425018,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fazz",
+        "FraZe"
+      ],
+      "pov": "fazz",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4665,
+      "filename": "4665__ESCk1llsen(POV)-vs-kRoNic-bloodrun-2013_11_29-19_07_55.dm_73",
+      "source_url": "https://files.quakelive.ru/ESCk1llsen%28POV%29-vs-kRoNic-bloodrun-2013_11_29-19_07_55.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4665",
+      "sha256": "f902049f483a90ea20e8057617a9e8b0738d5d9b67c1ac96aba251a4ae3d5082",
+      "size": 1488560,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "k1llsen",
+        "kRoNic"
+      ],
+      "pov": "k1llsen",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4545,
+      "filename": "4545__ictox(POV)-vs-fazz-bloodrun-2013_11_29-18_36_39.dm_73",
+      "source_url": "https://files.quakelive.ru/ictox%28POV%29-vs-fazz-bloodrun-2013_11_29-18_36_39.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4545",
+      "sha256": "84c912e15e35b77596b88a3c5c68115f9d7c8f6a66deb7f2ceaf6ec5db7635be",
+      "size": 1352388,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fazz",
+        "toxjq"
+      ],
+      "pov": "toxjq",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4523,
+      "filename": "4523__fazz(POV)-vs-ictox-bloodrun-2013_11_29-18_36_39.dm_73",
+      "source_url": "https://files.quakelive.ru/fazz%28POV%29-vs-ictox-bloodrun-2013_11_29-18_36_39.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4523",
+      "sha256": "1f92777db866bb3a019e0df2e3894e471b41703f94795c61e465b1c52b9c5867",
+      "size": 1346656,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "fazz",
+        "toxjq"
+      ],
+      "pov": "fazz",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4700,
+      "filename": "4700__kRoNic(POV)-vs-fc03_gory-bloodrun-2013_11_29-17_49_27.dm_73",
+      "source_url": "https://files.quakelive.ru/kRoNic%28POV%29-vs-fc03_gory-bloodrun-2013_11_29-17_49_27.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4700",
+      "sha256": "c990e9e1904bd6ad730393278aea8accbe864a8a70ef5514ba7dff412117d960",
+      "size": 1408744,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "kRoNic",
+        "_gory"
+      ],
+      "pov": "kRoNic",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4675,
+      "filename": "4675__ESCk1llsen(POV)-vs-TitancYpheR-bloodrun-2013_11_29-17_30_10.dm_73",
+      "source_url": "https://files.quakelive.ru/ESCk1llsen%28POV%29-vs-TitancYpheR-bloodrun-2013_11_29-17_30_10.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4675",
+      "sha256": "ffc45aba4336e56d8f664825fc1433d8b12b88b93556c2d7b721c1665989c209",
+      "size": 1749529,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "k1llsen"
+      ],
+      "pov": "k1llsen",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4741,
+      "filename": "4741__TitancYpheR(POV)-vs-ESCk1llsen-bloodrun-2013_11_29-17_30_10.dm_73",
+      "source_url": "https://files.quakelive.ru/TitancYpheR%28POV%29-vs-ESCk1llsen-bloodrun-2013_11_29-17_30_10.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4741",
+      "sha256": "9acd34321ea26228f2981885943d06aef8e8c92664f3fbe05fc6d359fbc943d1",
+      "size": 1708331,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "k1llsen"
+      ],
+      "pov": "cYpheR",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5307,
+      "filename": "5307__STAALzeun_(POV)-vs-lelarslarslars-bloodrun-2013_11_29-17_26_42.dm_73",
+      "source_url": "https://files.quakelive.ru/STAALzeun_%28POV%29-vs-lelarslarslars-bloodrun-2013_11_29-17_26_42.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5307",
+      "sha256": "02a53bcc7a62b9a2168071fe8938c14ad317c223714fe5b571d17d63940e4cc7",
+      "size": 1484089,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "lars",
+        "zeun_"
+      ],
+      "pov": "zeun_",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4607,
+      "filename": "4607__swsbpatela(POV)-vs-ictox-bloodrun-2013_11_29-17_25_35.dm_73",
+      "source_url": "https://files.quakelive.ru/swsbpatela%28POV%29-vs-ictox-bloodrun-2013_11_29-17_25_35.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4607",
+      "sha256": "46843df7104bc3ff8014c602bba8e6704277c94528aa96ef7512aa729aa18cd1",
+      "size": 1429810,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "bpatela",
+        "toxjq"
+      ],
+      "pov": "bpatela",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4555,
+      "filename": "4555__ictox(POV)-vs-swsbpatela-bloodrun-2013_11_29-17_25_35.dm_73",
+      "source_url": "https://files.quakelive.ru/ictox%28POV%29-vs-swsbpatela-bloodrun-2013_11_29-17_25_35.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4555",
+      "sha256": "1a661fec83eb63af53eb4dea33f3f036af044787043d0d7da9f93f76c36fc383",
+      "size": 1477690,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "bpatela",
+        "toxjq"
+      ],
+      "pov": "toxjq",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5073,
+      "filename": "5073__no_il(POV)-vs-[nDc]Ph4ntom-bloodrun-2013_11_29-14_51_36.dm_73",
+      "source_url": "https://files.quakelive.ru/no_il%28POV%29-vs-%5BnDc%5DPh4ntom-bloodrun-2013_11_29-14_51_36.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5073",
+      "sha256": "f15ed300ff0de75ef4f7a104dcffd45cb3e3f08e4f40ae25eb8aa30cd170e77b",
+      "size": 762952,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "no_il",
+        "Ph4ntom"
+      ],
+      "pov": "no_il",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5163,
+      "filename": "5163__[nDc]Ph4ntom(POV)-vs-no_il-bloodrun-2013_11_29-14_51_36.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BnDc%5DPh4ntom%28POV%29-vs-no_il-bloodrun-2013_11_29-14_51_36.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5163",
+      "sha256": "c29a40cf5b1e1972ba8f6b8b71786049718379674ce2a6466ed48378355e3217",
+      "size": 781543,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "no_il",
+        "Ph4ntom"
+      ],
+      "pov": "Ph4ntom",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4775,
+      "filename": "4775__8PLAYevil(POV)-vs-Av3k-bloodrun-2013_11_29-14_51_36.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-Av3k-bloodrun-2013_11_29-14_51_36.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4775",
+      "sha256": "7f66492c9cde31ba4566840d6b65a1bfe33cbeb8b982c5771c09039481691b11",
+      "size": 1414705,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4801,
+      "filename": "4801__Av3k(POV)-vs-8PLAYevil-bloodrun-2013_11_29-14_51_36.dm_73",
+      "source_url": "https://files.quakelive.ru/Av3k%28POV%29-vs-8PLAYevil-bloodrun-2013_11_29-14_51_36.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4801",
+      "sha256": "e184b464e4fc8992612b952b4f65d0df457a1d148079b4c77f1453e5daa1cbac",
+      "size": 1398460,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "evil"
+      ],
+      "pov": "Av3k",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4894,
+      "filename": "4894__STING_PL(POV)-vs-[DrK]Aeol-bloodrun-2013_11_29-14_42_08.dm_73",
+      "source_url": "https://files.quakelive.ru/STING_PL%28POV%29-vs-%5BDrK%5DAeol-bloodrun-2013_11_29-14_42_08.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4894",
+      "sha256": "d70045b666ecb5bda967d6012bb0a9a07b0c00754f83054fa3d3f15c06e8b195",
+      "size": 1485969,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "STING_pl"
+      ],
+      "pov": "STING_PL",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4957,
+      "filename": "4957__[DrK]Aeol(POV)-vs-STING_PL-bloodrun-2013_11_29-14_42_08.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BDrK%5DAeol%28POV%29-vs-STING_PL-bloodrun-2013_11_29-14_42_08.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4957",
+      "sha256": "f9ac29cc257c20c1e0bf5f69578b66b88f8ba76b2528ce05eab7df7fd0ab22f7",
+      "size": 1491621,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "STING_pl"
+      ],
+      "pov": "Aeol",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4931,
+      "filename": "4931__wilcyluukets(POV)-vs-bvdDetrony-bloodrun-2013_11_29-14_36_19.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcyluukets%28POV%29-vs-bvdDetrony-bloodrun-2013_11_29-14_36_19.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4931",
+      "sha256": "fce8b645aedd1040c2280ebac87578704e22f1b947c2960f4a529279b5012b11",
+      "size": 1473296,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Detrony",
+        "luukets"
+      ],
+      "pov": "luukets",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4841,
+      "filename": "4841__bvdDetrony(POV)-vs-wilcyluukets-bloodrun-2013_11_29-14_36_19.dm_73",
+      "source_url": "https://files.quakelive.ru/bvdDetrony%28POV%29-vs-wilcyluukets-bloodrun-2013_11_29-14_36_19.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4841",
+      "sha256": "99d6f8bf89e5c7b32a8ebcde8ee27496c372c4cce0e7372b3d393a65018f7991",
+      "size": 1505314,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Detrony",
+        "luukets"
+      ],
+      "pov": "Detrony",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4825,
+      "filename": "4825__bvdDetrony(POV)-vs-8PLAYevil-bloodrun-2013_11_29-14_12_09.dm_73",
+      "source_url": "https://files.quakelive.ru/bvdDetrony%28POV%29-vs-8PLAYevil-bloodrun-2013_11_29-14_12_09.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4825",
+      "sha256": "15a80e278f1e66287ff27dc7b3b44b9a868fef82f9655b096e506a9d8f7dcf21",
+      "size": 1448786,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Detrony",
+        "evil"
+      ],
+      "pov": "Detrony",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4781,
+      "filename": "4781__8PLAYevil(POV)-vs-bvdDetrony-bloodrun-2013_11_29-14_12_09.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-bvdDetrony-bloodrun-2013_11_29-14_12_09.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4781",
+      "sha256": "0fa80eba62a968b147c3e8e7f411e1b93e8120adb92fce609409bd47f8177b47",
+      "size": 1435330,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Detrony",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5039,
+      "filename": "5039__matr0x_pl(POV)-vs-STAALplazmaistar-bloodrun-2013_11_29-13_49_47.dm_73",
+      "source_url": "https://files.quakelive.ru/matr0x_pl%28POV%29-vs-STAALplazmaistar-bloodrun-2013_11_29-13_49_47.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5039",
+      "sha256": "92a82a3865e058cadd3e504dc7cc9884830b454a0c947ee86f5b4cfaa4f3c98e",
+      "size": 1461195,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "matr0x_pl",
+        "plazma"
+      ],
+      "pov": "matr0x_pl",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5134,
+      "filename": "5134__STAALplazmaistar(POV)-vs-matr0x_pl-bloodrun-2013_11_29-13_49_47.dm_73",
+      "source_url": "https://files.quakelive.ru/STAALplazmaistar%28POV%29-vs-matr0x_pl-bloodrun-2013_11_29-13_49_47.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5134",
+      "sha256": "634d8d0a7b49b92bcb9bdcca6eaa32e6db802dfd8e4712a7dceb83896564ead7",
+      "size": 1445796,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "matr0x_pl",
+        "plazma"
+      ],
+      "pov": "plazmaistar",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4933,
+      "filename": "4933__wilcyluukets(POV)-vs-STAALetty-bloodrun-2013_11_29-13_34_29.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcyluukets%28POV%29-vs-STAALetty-bloodrun-2013_11_29-13_34_29.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4933",
+      "sha256": "81cc53ea1750b0ba32e1d52b42468e0e47664233b0605e9612e1513365913436",
+      "size": 1488362,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "etty",
+        "luukets"
+      ],
+      "pov": "luukets",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4867,
+      "filename": "4867__STAALetty(POV)-vs-wilcyluukets-bloodrun-2013_11_29-13_34_29.dm_73",
+      "source_url": "https://files.quakelive.ru/STAALetty%28POV%29-vs-wilcyluukets-bloodrun-2013_11_29-13_34_29.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4867",
+      "sha256": "a63f517b2681ca1672e77d8534caeac0ba6a9efd9283cf89a09c105148d4989b",
+      "size": 1510719,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "etty",
+        "luukets"
+      ],
+      "pov": "etty",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5156,
+      "filename": "5156__[nDc]Ph4ntom(POV)-vs-jewRo-bloodrun-2013_11_29-13_11_22.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BnDc%5DPh4ntom%28POV%29-vs-jewRo-bloodrun-2013_11_29-13_11_22.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5156",
+      "sha256": "466d0924f07df3d394418a64feb892857b8a31330f9214c754871c2fea4a4134",
+      "size": 1279388,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "jewRo",
+        "Ph4ntom"
+      ],
+      "pov": "Ph4ntom",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5014,
+      "filename": "5014__jewRo(POV)-vs-[nDc]Ph4ntom-bloodrun-2013_11_29-13_11_22.dm_73",
+      "source_url": "https://files.quakelive.ru/jewRo%28POV%29-vs-%5BnDc%5DPh4ntom-bloodrun-2013_11_29-13_11_22.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5014",
+      "sha256": "be4a4599b8f684c7e3f88ae903e526ce5403586e6e3c0826994d707abb0b5827",
+      "size": 1262855,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "jewRo",
+        "Ph4ntom"
+      ],
+      "pov": "jewRo",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4918,
+      "filename": "4918__wilcygienon(POV)-vs-[DrK]Aeol-bloodrun-2013_11_29-13_07_54.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcygienon%28POV%29-vs-%5BDrK%5DAeol-bloodrun-2013_11_29-13_07_54.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4918",
+      "sha256": "fadd61299e61550161856796e7a1675531f2d60e406b189f6ac9d51d98a01bd3",
+      "size": 1311370,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "gienon"
+      ],
+      "pov": "gienon",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4923,
+      "filename": "4923__wilcygienon-vs-[DrK]Aeol-bloodrun-2013_11_29-13_07_54.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcygienon-vs-%5BDrK%5DAeol-bloodrun-2013_11_29-13_07_54.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4923",
+      "sha256": "028b2a794d2c99cff84f500daaa220c07c1f42ae975559622f3be9958b259b5e",
+      "size": 1263543,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "gienon"
+      ],
+      "pov": "spec",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4960,
+      "filename": "4960__[DrK]Aeol(POV)-vs-wilcygienon-bloodrun-2013_11_29-13_07_54.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BDrK%5DAeol%28POV%29-vs-wilcygienon-bloodrun-2013_11_29-13_07_54.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4960",
+      "sha256": "5cd34f69d54fd6761b5fda8af1621d48f20ef3c9b2ced2609919bb692c374c75",
+      "size": 1268240,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "gienon"
+      ],
+      "pov": "Aeol",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4877,
+      "filename": "4877__STING_PL(POV)-vs-Av3k-bloodrun-2013_11_29-13_01_37.dm_73",
+      "source_url": "https://files.quakelive.ru/STING_PL%28POV%29-vs-Av3k-bloodrun-2013_11_29-13_01_37.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4877",
+      "sha256": "8f67cb8b58fa6862125e1bc0080539c5356958c656a009f3a6198271d10738c9",
+      "size": 1470988,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "STING_pl"
+      ],
+      "pov": "STING_PL",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4812,
+      "filename": "4812__Av3k(POV)-vs-STING_PL-bloodrun-2013_11_29-13_01_37.dm_73",
+      "source_url": "https://files.quakelive.ru/Av3k%28POV%29-vs-STING_PL-bloodrun-2013_11_29-13_01_37.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4812",
+      "sha256": "67f38d53631d8ee6f016fba33b2f0beabde5c629adcd7903e2df3482d54dafd0",
+      "size": 1486338,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "STING_pl"
+      ],
+      "pov": "Av3k",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5053,
+      "filename": "5053__no_il(POV)-vs-jewRo-bloodrun-2013_11_29-12_33_44.dm_73",
+      "source_url": "https://files.quakelive.ru/no_il%28POV%29-vs-jewRo-bloodrun-2013_11_29-12_33_44.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5053",
+      "sha256": "66f56aeee82e08e18c2268bf62666e652d0ebf17f84fda94be6087bdce76f6ef",
+      "size": 1382543,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "jewRo",
+        "no_il"
+      ],
+      "pov": "no_il",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5003,
+      "filename": "5003__jewRo(POV)-vs-no_il-bloodrun-2013_11_29-12_33_44.dm_73",
+      "source_url": "https://files.quakelive.ru/jewRo%28POV%29-vs-no_il-bloodrun-2013_11_29-12_33_44.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5003",
+      "sha256": "c659e0e60c6dd34f6f4860b1caece3f2f407f6d1e89c0c4cbc8338ec111cf82a",
+      "size": 1430194,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "jewRo",
+        "no_il"
+      ],
+      "pov": "jewRo",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4874,
+      "filename": "4874__STING_PL(POV)-vs-8PLAYevil-bloodrun-2013_11_29-12_04_18.dm_73",
+      "source_url": "https://files.quakelive.ru/STING_PL%28POV%29-vs-8PLAYevil-bloodrun-2013_11_29-12_04_18.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4874",
+      "sha256": "c3f9b2dc6c5a3586a29049363e4d16a3cd05dd12de770ffada261d2aa3941cf4",
+      "size": 1468224,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "STING_pl"
+      ],
+      "pov": "STING_PL",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5165,
+      "filename": "5165__[nDc]Ph4ntom(POV)-vs-SK-rapha-bloodrun-2013_11_29-11_48_57.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BnDc%5DPh4ntom%28POV%29-vs-SK-rapha-bloodrun-2013_11_29-11_48_57.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5165",
+      "sha256": "64802b8179022788bd3ce1f979fe0dbf43b9ef500ddbd1c405b37b706ab12eaa",
+      "size": 1432972,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Ph4ntom",
+        "rapha"
+      ],
+      "pov": "Ph4ntom",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5096,
+      "filename": "5096__SK-rapha(POV)-vs-[nDc]Ph4ntom-bloodrun-2013_11_29-11_48_57.dm_73",
+      "source_url": "https://files.quakelive.ru/SK-rapha%28POV%29-vs-%5BnDc%5DPh4ntom-bloodrun-2013_11_29-11_48_57.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5096",
+      "sha256": "d32975f5d141dba77c83047271bd65c24b860e40bab954c9a5b0a4dabd8bedf0",
+      "size": 1458400,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Ph4ntom",
+        "rapha"
+      ],
+      "pov": "rapha",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4901,
+      "filename": "4901__wilcygienon(POV)-vs-Av3k-bloodrun-2013_11_29-11_46_24.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcygienon%28POV%29-vs-Av3k-bloodrun-2013_11_29-11_46_24.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4901",
+      "sha256": "89482b6115932295ac1452f2c648418ee4666df14f3879eae53299c90843eeb1",
+      "size": 1479189,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "gienon"
+      ],
+      "pov": "gienon",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4816,
+      "filename": "4816__Av3k(POV)-vs-wilcygienon-bloodrun-2013_11_29-11_46_24.dm_73",
+      "source_url": "https://files.quakelive.ru/Av3k%28POV%29-vs-wilcygienon-bloodrun-2013_11_29-11_46_24.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4816",
+      "sha256": "d7805e5509b645bb818f0c7f2c5313943fd8a4a6f7274c46c99d553f465e3e2b",
+      "size": 1488834,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "gienon"
+      ],
+      "pov": "Av3k",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4940,
+      "filename": "4940__wilcyluukets(POV)-vs-[DrK]Aeol-bloodrun-2013_11_29-11_43_56.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcyluukets%28POV%29-vs-%5BDrK%5DAeol-bloodrun-2013_11_29-11_43_56.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4940",
+      "sha256": "7ffbb6aa2241d30a23d12ace6a400b4597d9821b745e3a876819438cfa5b5cd1",
+      "size": 1468723,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "luukets"
+      ],
+      "pov": "luukets",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4963,
+      "filename": "4963__[DrK]Aeol(POV)-vs-wilcyluukets-bloodrun-2013_11_29-11_43_56.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BDrK%5DAeol%28POV%29-vs-wilcyluukets-bloodrun-2013_11_29-11_43_56.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4963",
+      "sha256": "425561b244b5bf3aed04823215e86c3caa6a4c9ab9f189cda77e1ee08fc4a850",
+      "size": 1489129,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "luukets"
+      ],
+      "pov": "Aeol",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4853,
+      "filename": "4853__STAALetty(POV)-vs-bvdDetrony-bloodrun-2013_11_29-11_52_14.dm_73",
+      "source_url": "https://files.quakelive.ru/STAALetty%28POV%29-vs-bvdDetrony-bloodrun-2013_11_29-11_52_14.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4853",
+      "sha256": "e3a9b2085b1da603d5bc8986630bf5e557a6e2b8645d669f9c661c0d51b88918",
+      "size": 1427870,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Detrony",
+        "etty"
+      ],
+      "pov": "etty",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4831,
+      "filename": "4831__bvdDetrony(POV)-vs-STAALetty-bloodrun-2013_11_29-11_52_14.dm_73",
+      "source_url": "https://files.quakelive.ru/bvdDetrony%28POV%29-vs-STAALetty-bloodrun-2013_11_29-11_52_14.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4831",
+      "sha256": "bfc373097e10d3803bb813a6dc00de274ae6ef63a98ecdf9efa80b0fd53a11cd",
+      "size": 1471669,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Detrony",
+        "etty"
+      ],
+      "pov": "Detrony",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4911,
+      "filename": "4911__wilcygienon(POV)-vs-STING_PL-bloodrun-2013_11_29-11_02_27.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcygienon%28POV%29-vs-STING_PL-bloodrun-2013_11_29-11_02_27.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4911",
+      "sha256": "6a6f75d10536ed9e706fd99a595d39899f81bf0d29a7747ee511dc733a4095c7",
+      "size": 1459909,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "gienon",
+        "STING_pl"
+      ],
+      "pov": "gienon",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4888,
+      "filename": "4888__STING_PL(POV)-vs-wilcygienon-bloodrun-2013_11_29-11_02_27.dm_73",
+      "source_url": "https://files.quakelive.ru/STING_PL%28POV%29-vs-wilcygienon-bloodrun-2013_11_29-11_02_27.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4888",
+      "sha256": "80c91dbfeab6b614853a7ed7d1e336a100deaf5b328ed689508a89ba4b772432",
+      "size": 1453708,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "gienon",
+        "STING_pl"
+      ],
+      "pov": "STING_PL",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5159,
+      "filename": "5159__[nDc]Ph4ntom(POV)-vs-matr0x_pl-bloodrun-2013_11_29-10_33_51.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BnDc%5DPh4ntom%28POV%29-vs-matr0x_pl-bloodrun-2013_11_29-10_33_51.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5159",
+      "sha256": "173f654cad7bc67a814fc28bfea91a11291eeb13dde6ee5d0776baac58a1282b",
+      "size": 1432807,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "matr0x_pl",
+        "Ph4ntom"
+      ],
+      "pov": "Ph4ntom",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5044,
+      "filename": "5044__matr0x_pl(POV)-vs-[nDc]Ph4ntom-bloodrun-2013_11_29-10_33_51.dm_73",
+      "source_url": "https://files.quakelive.ru/matr0x_pl%28POV%29-vs-%5BnDc%5DPh4ntom-bloodrun-2013_11_29-10_33_51.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5044",
+      "sha256": "af7248ec07a7f0a7e504fde3d0276679145e7acbd25a65052aa2ce8547456d33",
+      "size": 1416055,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "matr0x_pl",
+        "Ph4ntom"
+      ],
+      "pov": "matr0x_pl",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4953,
+      "filename": "4953__[DrK]Aeol(POV)-vs-bvdDetrony-bloodrun-2013_11_29-10_29_28.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BDrK%5DAeol%28POV%29-vs-bvdDetrony-bloodrun-2013_11_29-10_29_28.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4953",
+      "sha256": "43381cdeeffdf84ad0724cd2ef5fd0bb474aec2ab006985e2745d43bf6030f8d",
+      "size": 1389424,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "Detrony"
+      ],
+      "pov": "Aeol",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4844,
+      "filename": "4844__bvdDetrony(POV)-vs-[DrK]Aeol-bloodrun-2013_11_29-10_29_28.dm_73",
+      "source_url": "https://files.quakelive.ru/bvdDetrony%28POV%29-vs-%5BDrK%5DAeol-bloodrun-2013_11_29-10_29_28.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4844",
+      "sha256": "2fabd5d563c2b5cd2595c2cf7761b3368dc13e71bcddc8d5c8a6343e4a83712c",
+      "size": 1436208,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "Detrony"
+      ],
+      "pov": "Detrony",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4927,
+      "filename": "4927__wilcyluukets(POV)-vs-Av3k-bloodrun-2013_11_29-10_37_24.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcyluukets%28POV%29-vs-Av3k-bloodrun-2013_11_29-10_37_24.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4927",
+      "sha256": "9455b4b5c4909a2a764c9f3836525f711231f3e6094eb9f390aa2a18518b674b",
+      "size": 1485099,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "luukets"
+      ],
+      "pov": "luukets",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4818,
+      "filename": "4818__Av3k(POV)-vs-wilcyluukets-bloodrun-2013_11_29-10_37_24.dm_73",
+      "source_url": "https://files.quakelive.ru/Av3k%28POV%29-vs-wilcyluukets-bloodrun-2013_11_29-10_37_24.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4818",
+      "sha256": "d940c6cac2a6bc01b147cccca0e97446654b7aa01004a63fc90c50d78f96a64a",
+      "size": 1499675,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "luukets"
+      ],
+      "pov": "Av3k",
+      "date": "29.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4806,
+      "filename": "4806__Av3k(POV)-vs-bvdDetrony-bloodrun-2013_11_28-22_24_37.dm_73",
+      "source_url": "https://files.quakelive.ru/Av3k%28POV%29-vs-bvdDetrony-bloodrun-2013_11_28-22_24_37.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4806",
+      "sha256": "ecd21ae5e183a224707308cbf9afd7c6563f0bcf2c0b676f888eadb499e9e756",
+      "size": 1334418,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "Detrony"
+      ],
+      "pov": "Av3k",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4828,
+      "filename": "4828__bvdDetrony(POV)-vs-Av3k-bloodrun-2013_11_28-22_24_37.dm_73",
+      "source_url": "https://files.quakelive.ru/bvdDetrony%28POV%29-vs-Av3k-bloodrun-2013_11_28-22_24_37.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4828",
+      "sha256": "b6015da0967bc9c80d8068364ad63ab9c584c51ca7a0f2d6f73c5fbf652c5675",
+      "size": 1325644,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "Detrony"
+      ],
+      "pov": "Detrony",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5124,
+      "filename": "5124__SPART1E(POV)-vs-[nDc]Ph4ntom-bloodrun-2013_11_28-22_16_45.dm_73",
+      "source_url": "https://files.quakelive.ru/SPART1E%28POV%29-vs-%5BnDc%5DPh4ntom-bloodrun-2013_11_28-22_16_45.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5124",
+      "sha256": "0843849584f11a8dbd7b09a9a8d75eb137b86f0a37acc112df0973c4d9e67ab8",
+      "size": 1498202,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Ph4ntom",
+        "SPART1E"
+      ],
+      "pov": "SPART1E",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5169,
+      "filename": "5169__[nDc]Ph4ntom(POV)-vs-SPART1E-bloodrun-2013_11_28-22_16_45.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BnDc%5DPh4ntom%28POV%29-vs-SPART1E-bloodrun-2013_11_28-22_16_45.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5169",
+      "sha256": "ea55738d49351d57206a5b8346512dc676e71148b8a1d3ae7489ec0611e02d44",
+      "size": 1470088,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Ph4ntom",
+        "SPART1E"
+      ],
+      "pov": "Ph4ntom",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5022,
+      "filename": "5022__matr0x_pl(POV)-vs-jewRo-bloodrun-2013_11_28-22_11_11.dm_73",
+      "source_url": "https://files.quakelive.ru/matr0x_pl%28POV%29-vs-jewRo-bloodrun-2013_11_28-22_11_11.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5022",
+      "sha256": "f1f45ce2aa4229f2c0e3de91c145dc7e89da53e19e75971b77270f27f25f70ce",
+      "size": 1447457,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "jewRo",
+        "matr0x_pl"
+      ],
+      "pov": "matr0x_pl",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4997,
+      "filename": "4997__jewRo(POV)-vs-matr0x_pl-bloodrun-2013_11_28-22_11_11.dm_73",
+      "source_url": "https://files.quakelive.ru/jewRo%28POV%29-vs-matr0x_pl-bloodrun-2013_11_28-22_11_11.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4997",
+      "sha256": "2c0abc53ebf452c37fc3435f710ccc00050189c364ab8895ef20b3e02bb39913",
+      "size": 1469234,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "jewRo",
+        "matr0x_pl"
+      ],
+      "pov": "jewRo",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4897,
+      "filename": "4897__wilcygienon(POV)-vs-8PLAYevil-bloodrun-2013_11_28-21_54_24.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcygienon%28POV%29-vs-8PLAYevil-bloodrun-2013_11_28-21_54_24.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4897",
+      "sha256": "ec9ac1212314d9b0a9a842b9e730ca965495525daa952bf50de912b0cfdb955d",
+      "size": 1508608,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "gienon"
+      ],
+      "pov": "gienon",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4790,
+      "filename": "4790__8PLAYevil(POV)-vs-wilcygienon-bloodrun-2013_11_28-21_54_24.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-wilcygienon-bloodrun-2013_11_28-21_54_24.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4790",
+      "sha256": "f5ca8ad91eb1bb8038a391421fa5eff3d3632b1a9bc0f67237d27fd40c5a4467",
+      "size": 1513404,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "gienon"
+      ],
+      "pov": "evil",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4955,
+      "filename": "4955__[DrK]Aeol(POV)-vs-STAALetty-bloodrun-2013_11_28-21_59_46.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BDrK%5DAeol%28POV%29-vs-STAALetty-bloodrun-2013_11_28-21_59_46.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4955",
+      "sha256": "80b5cc9bfe38e1d6979ee9e18e87cfbc3fb4ad721226e7dd823f8476b9074bfd",
+      "size": 1468596,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "etty"
+      ],
+      "pov": "Aeol",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4870,
+      "filename": "4870__STAALetty(POV)-vs-[DrK]Aeol-bloodrun-2013_11_28-21_59_46.dm_73",
+      "source_url": "https://files.quakelive.ru/STAALetty%28POV%29-vs-%5BDrK%5DAeol-bloodrun-2013_11_28-21_59_46.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4870",
+      "sha256": "2f9d2428ee92b0e1bb5038d1e56efd3f6427bfe1b5495242cb38df4d3775be71",
+      "size": 1490479,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "etty"
+      ],
+      "pov": "etty",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4892,
+      "filename": "4892__STING_PL(POV)-vs-wilcyluukets-bloodrun-2013_11_28-21_56_48.dm_73",
+      "source_url": "https://files.quakelive.ru/STING_PL%28POV%29-vs-wilcyluukets-bloodrun-2013_11_28-21_56_48.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4892",
+      "sha256": "37116abe8e0bd89b230c6397e63fa25256413071f86915054c499b5d34b278f3",
+      "size": 1491086,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "luukets",
+        "STING_pl"
+      ],
+      "pov": "STING_PL",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4935,
+      "filename": "4935__wilcyluukets(POV)-vs-STING_PL-bloodrun-2013_11_28-21_56_48.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcyluukets%28POV%29-vs-STING_PL-bloodrun-2013_11_28-21_56_48.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4935",
+      "sha256": "a7fa90fedbe8f63a831381cf1ed689f4c82de4aad55d8ece6e1624b40f5cbad9",
+      "size": 1485999,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "luukets",
+        "STING_pl"
+      ],
+      "pov": "luukets",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4991,
+      "filename": "4991__c]-)twister(POV)-vs-[nDc]Ph4ntom-bloodrun-2013_11_28-21_21_16.dm_73",
+      "source_url": "https://files.quakelive.ru/c%5D-%29twister%28POV%29-vs-%5BnDc%5DPh4ntom-bloodrun-2013_11_28-21_21_16.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4991",
+      "sha256": "a745b4391ac24e70ea74f8f6705cb16d238f2a3116eddf293a94aaa368c0a777",
+      "size": 1392102,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Ph4ntom",
+        "twister"
+      ],
+      "pov": "twister",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5153,
+      "filename": "5153__[nDc]Ph4ntom(POV)-vs-c]-)twister-bloodrun-2013_11_28-21_21_16.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BnDc%5DPh4ntom%28POV%29-vs-c%5D-%29twister-bloodrun-2013_11_28-21_21_16.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5153",
+      "sha256": "52d6c64fc1ee31df066c7526f4f8d9aea646cc84b60f59c8b5fcdecedff87408",
+      "size": 1375628,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Ph4ntom",
+        "twister"
+      ],
+      "pov": "Ph4ntom",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4915,
+      "filename": "4915__wilcygienon(POV)-vs-wilcyluukets-bloodrun-2013_11_28-20_56_59.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcygienon%28POV%29-vs-wilcyluukets-bloodrun-2013_11_28-20_56_59.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4915",
+      "sha256": "027f545998eee7ac40bc20e4742da00cae3f38440d59cd8d54848e568d0ad19e",
+      "size": 1461774,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "gienon",
+        "luukets"
+      ],
+      "pov": "gienon",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4937,
+      "filename": "4937__wilcyluukets(POV)-vs-wilcygienon-bloodrun-2013_11_28-20_56_59.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcyluukets%28POV%29-vs-wilcygienon-bloodrun-2013_11_28-20_56_59.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4937",
+      "sha256": "36cd50c240bfc74b14d07c58a4cfcc41e3fce6886d609b78137700590d9da420",
+      "size": 1511856,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "gienon",
+        "luukets"
+      ],
+      "pov": "luukets",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4835,
+      "filename": "4835__bvdDetrony(POV)-vs-STING_PL-bloodrun-2013_11_28-20_51_51.dm_73",
+      "source_url": "https://files.quakelive.ru/bvdDetrony%28POV%29-vs-STING_PL-bloodrun-2013_11_28-20_51_51.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4835",
+      "sha256": "73ccc067b431213148d9378758a29644d09824acb59ea9ad93f986638a61d485",
+      "size": 1483747,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Detrony",
+        "STING_pl"
+      ],
+      "pov": "Detrony",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4881,
+      "filename": "4881__STING_PL(POV)-vs-bvdDetrony-bloodrun-2013_11_28-20_51_51.dm_73",
+      "source_url": "https://files.quakelive.ru/STING_PL%28POV%29-vs-bvdDetrony-bloodrun-2013_11_28-20_51_51.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4881",
+      "sha256": "78e9e33f65e23caf713157a14d3e5e8d20497a41a10e22c7e651fee8ab9d468c",
+      "size": 1476311,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Detrony",
+        "STING_pl"
+      ],
+      "pov": "STING_PL",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5029,
+      "filename": "5029__matr0x_pl(POV)-vs-no_il-bloodrun-2013_11_28-20_45_53.dm_73",
+      "source_url": "https://files.quakelive.ru/matr0x_pl%28POV%29-vs-no_il-bloodrun-2013_11_28-20_45_53.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5029",
+      "sha256": "3e25c5e530aa3921ce66119ea1a25736d5f67aaed6335eb0bb87d1897ef53569",
+      "size": 1215569,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "matr0x_pl",
+        "no_il"
+      ],
+      "pov": "matr0x_pl",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4809,
+      "filename": "4809__Av3k(POV)-vs-STAALetty-bloodrun-2013_11_28-20_39_39.dm_73",
+      "source_url": "https://files.quakelive.ru/Av3k%28POV%29-vs-STAALetty-bloodrun-2013_11_28-20_39_39.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4809",
+      "sha256": "3f76f084364532002116d34c8930fc5ecaea76cf269efae5ce02eefc4915f37c",
+      "size": 1149302,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "etty"
+      ],
+      "pov": "Av3k",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4850,
+      "filename": "4850__STAALetty(POV)-vs-Av3k-bloodrun-2013_11_28-20_39_39.dm_73",
+      "source_url": "https://files.quakelive.ru/STAALetty%28POV%29-vs-Av3k-bloodrun-2013_11_28-20_39_39.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4850",
+      "sha256": "c8319b3dcb0156683294f8017b53543c9bf6799860496af3c8871e6c7dc8a963",
+      "size": 1142838,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "etty"
+      ],
+      "pov": "etty",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4945,
+      "filename": "4945__[DrK]Aeol(POV)-vs-8PLAYevil-bloodrun-2013_11_28-20_46_42.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BDrK%5DAeol%28POV%29-vs-8PLAYevil-bloodrun-2013_11_28-20_46_42.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4945",
+      "sha256": "5e381909c679a67bdd29258b5a5ef2f8991b8f5d624e049a711233083cb80c80",
+      "size": 1509817,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "evil"
+      ],
+      "pov": "Aeol",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4797,
+      "filename": "4797__8PLAYevil(POV)-vs-[DrK]Aeol-bloodrun-2013_11_28-20_46_42.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-%5BDrK%5DAeol-bloodrun-2013_11_28-20_46_42.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4797",
+      "sha256": "8dd301cd654e3e6aa1e003d64b783a0f3b85d2a514b6677f4f3da40de46d1d7d",
+      "size": 1548471,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Aeol",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4971,
+      "filename": "4971__c]-)twister(POV)-vs-matr0x_pl-bloodrun-2013_11_28-19_50_12.dm_73",
+      "source_url": "https://files.quakelive.ru/c%5D-%29twister%28POV%29-vs-matr0x_pl-bloodrun-2013_11_28-19_50_12.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4971",
+      "sha256": "8aa6167dffbafc874b049c38410c690dfae9a3d1f71413c5dea648108facdf03",
+      "size": 1458668,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "matr0x_pl",
+        "twister"
+      ],
+      "pov": "twister",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5018,
+      "filename": "5018__matr0x_pl(POV)-vs-c]-)twister-bloodrun-2013_11_28-19_50_12.dm_73",
+      "source_url": "https://files.quakelive.ru/matr0x_pl%28POV%29-vs-c%5D-%29twister-bloodrun-2013_11_28-19_50_12.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5018",
+      "sha256": "fe4a960c239d530290a53a7b814c847ab8d8f1057471251e558baa3dc2c7c42c",
+      "size": 1433293,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "matr0x_pl",
+        "twister"
+      ],
+      "pov": "matr0x_pl",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4883,
+      "filename": "4883__STING_PL(POV)-vs-STAALetty-bloodrun-2013_11_28-19_27_13.dm_73",
+      "source_url": "https://files.quakelive.ru/STING_PL%28POV%29-vs-STAALetty-bloodrun-2013_11_28-19_27_13.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4883",
+      "sha256": "6a5e5a542ee1e94a7fd0dee8a06317280e060b4a757a50ad495ec40cd77d77cf",
+      "size": 1312031,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "etty",
+        "STING_pl"
+      ],
+      "pov": "STING_PL",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4857,
+      "filename": "4857__STAALetty(POV)-vs-STING_PL-bloodrun-2013_11_28-19_27_13.dm_73",
+      "source_url": "https://files.quakelive.ru/STAALetty%28POV%29-vs-STING_PL-bloodrun-2013_11_28-19_27_13.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4857",
+      "sha256": "bf4f11fd5f306fd3a1fb039967e37a39ebc27bb642ffea1452a113c2418c3d22",
+      "size": 1305272,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "etty",
+        "STING_pl"
+      ],
+      "pov": "etty",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5087,
+      "filename": "5087__SK-rapha(POV)-vs-no_il-bloodrun-2013_11_28-19_22_40.dm_73",
+      "source_url": "https://files.quakelive.ru/SK-rapha%28POV%29-vs-no_il-bloodrun-2013_11_28-19_22_40.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5087",
+      "sha256": "d80a3ff6e8b95fc1d7d54a5203e27caed3f35eeba9779608cfc3b50b4440e975",
+      "size": 1502019,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "no_il",
+        "rapha"
+      ],
+      "pov": "rapha",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5061,
+      "filename": "5061__no_il(POV)-vs-SK-rapha-bloodrun-2013_11_28-19_22_40.dm_73",
+      "source_url": "https://files.quakelive.ru/no_il%28POV%29-vs-SK-rapha-bloodrun-2013_11_28-19_22_40.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5061",
+      "sha256": "d11dac601caf122d74fbf0e8b38a3a46c1fede1039f421aa3750c229ce5b0180",
+      "size": 1455310,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "no_il",
+        "rapha"
+      ],
+      "pov": "no_il",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4904,
+      "filename": "4904__wilcygienon(POV)-vs-bvdDetrony-bloodrun-2013_11_28-19_19_17.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcygienon%28POV%29-vs-bvdDetrony-bloodrun-2013_11_28-19_19_17.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4904",
+      "sha256": "27221b67caf6d75695c1fb29bed11a5c28b26bd3a6a265c132d19b7507236e3f",
+      "size": 1467072,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Detrony",
+        "gienon"
+      ],
+      "pov": "gienon",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4838,
+      "filename": "4838__bvdDetrony(POV)-vs-wilcygienon-bloodrun-2013_11_28-19_19_17.dm_73",
+      "source_url": "https://files.quakelive.ru/bvdDetrony%28POV%29-vs-wilcygienon-bloodrun-2013_11_28-19_19_17.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4838",
+      "sha256": "245a6f20748f49f37988b8639a17e44931394cb3ea31c6fcb1906e5ed29d300c",
+      "size": 1499170,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Detrony",
+        "gienon"
+      ],
+      "pov": "Detrony",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4924,
+      "filename": "4924__wilcyluukets(POV)-vs-8PLAYevil-bloodrun-2013_11_28-19_25_51.dm_73",
+      "source_url": "https://files.quakelive.ru/wilcyluukets%28POV%29-vs-8PLAYevil-bloodrun-2013_11_28-19_25_51.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4924",
+      "sha256": "574444012909ea484d17da94c239c8874a3ae918181d9f3fd8790bad88fb22f4",
+      "size": 1497852,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "luukets"
+      ],
+      "pov": "luukets",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4794,
+      "filename": "4794__8PLAYevil(POV)-vs-wilcyluukets-bloodrun-2013_11_28-19_25_51.dm_73",
+      "source_url": "https://files.quakelive.ru/8PLAYevil%28POV%29-vs-wilcyluukets-bloodrun-2013_11_28-19_25_51.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4794",
+      "sha256": "483246cfce48e1750fa7e45a493d8e8001c52a7a0db287ab84dd24a9d6413e55",
+      "size": 1479583,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "luukets"
+      ],
+      "pov": "evil",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5148,
+      "filename": "5148__STAALplazmaistar(POV)-vs-[nDc]Ph4ntom-bloodrun-2013_11_28-19_10_43.dm_73",
+      "source_url": "https://files.quakelive.ru/STAALplazmaistar%28POV%29-vs-%5BnDc%5DPh4ntom-bloodrun-2013_11_28-19_10_43.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5148",
+      "sha256": "a522c4380a27a9d6e8e2a180b760515f8e0c6a0f0578ad8441839b0a523c3884",
+      "size": 1464566,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Ph4ntom",
+        "plazma"
+      ],
+      "pov": "plazmaistar",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5173,
+      "filename": "5173__[nDc]Ph4ntom(POV)-vs-STAALplazmaistar-bloodrun-2013_11_28-19_10_43.dm_73",
+      "source_url": "https://files.quakelive.ru/%5BnDc%5DPh4ntom%28POV%29-vs-STAALplazmaistar-bloodrun-2013_11_28-19_10_43.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5173",
+      "sha256": "26c9d16d8219c3b81225140029e528273d5b9175a2d4f4ce78c59c9818708aaf",
+      "size": 1393850,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Ph4ntom",
+        "plazma"
+      ],
+      "pov": "Ph4ntom",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4586,
+      "filename": "4586__STAALzeun_(POV)-vs-ictox-bloodrun-2013_11_28-16_39_05.dm_73",
+      "source_url": "https://files.quakelive.ru/STAALzeun_%28POV%29-vs-ictox-bloodrun-2013_11_28-16_39_05.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4586",
+      "sha256": "ccc7a5934d488d407c2a764ce6bfcaff1807ee911f6eda5e23b4bafb7c8f0ad0",
+      "size": 1478438,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "toxjq",
+        "zeun_"
+      ],
+      "pov": "zeun_",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4552,
+      "filename": "4552__ictox(POV)-vs-STAALzeun_-bloodrun-2013_11_28-16_39_05.dm_73",
+      "source_url": "https://files.quakelive.ru/ictox%28POV%29-vs-STAALzeun_-bloodrun-2013_11_28-16_39_05.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4552",
+      "sha256": "e3dc2faaf13824e9ffce1e389add71a21c091d3182f7ca4a0dbafbb95ce5dcc2",
+      "size": 1515115,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "toxjq",
+        "zeun_"
+      ],
+      "pov": "toxjq",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4651,
+      "filename": "4651__4sgcamma(POV)-vs-madix-bloodrun-2013_11_28-16_30_08.dm_73",
+      "source_url": "https://files.quakelive.ru/4sgcamma%28POV%29-vs-madix-bloodrun-2013_11_28-16_30_08.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4651",
+      "sha256": "57ccef99ee7cfde5e3debefc0fb1ebc29c59d7e0aaecf00469787dadec75a509",
+      "size": 1450625,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "camma",
+        "madix"
+      ],
+      "pov": "camma",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5287,
+      "filename": "5287__lelarslarslars(POV)-vs-4sgFraZe-bloodrun-2013_11_28-16_27_29.dm_73",
+      "source_url": "https://files.quakelive.ru/lelarslarslars%28POV%29-vs-4sgFraZe-bloodrun-2013_11_28-16_27_29.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5287",
+      "sha256": "b6c2366469b15929e6e1004e74705d69a1fdd6d4a2758343b1eea02bf1be58b6",
+      "size": 1107038,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "FraZe",
+        "lars"
+      ],
+      "pov": "larslarslars",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5278,
+      "filename": "5278__4sgFraZe(POV)-vs-lelarslarslars-bloodrun-2013_11_28-16_27_29.dm_73",
+      "source_url": "https://files.quakelive.ru/4sgFraZe%28POV%29-vs-lelarslarslars-bloodrun-2013_11_28-16_27_29.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5278",
+      "sha256": "c089be1e70250069f6cc0fa9be7263d71df98a6a6a5c94ef7242a1f96deb686f",
+      "size": 1123196,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "FraZe",
+        "lars"
+      ],
+      "pov": "FraZe",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4603,
+      "filename": "4603__swsbpatela(POV)-vs-fazz-bloodrun-2013_11_28-15_24_01.dm_73",
+      "source_url": "https://files.quakelive.ru/swsbpatela%28POV%29-vs-fazz-bloodrun-2013_11_28-15_24_01.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4603",
+      "sha256": "04257d21dbd9f243d16ea91fdbf7c8a5d44f93e6ef20feba69a3754fc7dba751",
+      "size": 1437939,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "bpatela",
+        "fazz"
+      ],
+      "pov": "bpatela",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4533,
+      "filename": "4533__fazz(POV)-vs-swsbpatela-bloodrun-2013_11_28-15_24_01.dm_73",
+      "source_url": "https://files.quakelive.ru/fazz%28POV%29-vs-swsbpatela-bloodrun-2013_11_28-15_24_01.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4533",
+      "sha256": "3b7c84bd0ea6d828fa0f1b45ac3ed05e31dccb95f3177fe2a95b20f06a432dc6",
+      "size": 1454314,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "bpatela",
+        "fazz"
+      ],
+      "pov": "fazz",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4500,
+      "filename": "4500__4sgFraZe(POV)-vs-ictox-bloodrun-2013_11_28-15_17_53.dm_73",
+      "source_url": "https://files.quakelive.ru/4sgFraZe%28POV%29-vs-ictox-bloodrun-2013_11_28-15_17_53.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4500",
+      "sha256": "b24904b2af36b68eab9631160918f5502966ebe1c297f8b6805cfb8c457fdaed",
+      "size": 1425070,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "FraZe",
+        "toxjq"
+      ],
+      "pov": "FraZe",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4541,
+      "filename": "4541__ictox(POV)-vs-4sgFraZe-bloodrun-2013_11_28-15_17_53.dm_73",
+      "source_url": "https://files.quakelive.ru/ictox%28POV%29-vs-4sgFraZe-bloodrun-2013_11_28-15_17_53.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4541",
+      "sha256": "60a40c5388364295174f8a293de58a120970c3efdb649dea8697da805439e3fb",
+      "size": 1440453,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "FraZe",
+        "toxjq"
+      ],
+      "pov": "toxjq",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4751,
+      "filename": "4751__TitancYpheR(POV)-vs-madix-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/TitancYpheR%28POV%29-vs-madix-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4751",
+      "sha256": "9861c5d7f42032d94afa9d32b0a2e999777593fd32b2c3f626a7b1ef7e1104e9",
+      "size": 1424987,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "madix"
+      ],
+      "pov": "cYpheR",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5294,
+      "filename": "5294__lelarslarslars(POV)-vs-ictox-bloodrun-2013_11_28-12_32_33.dm_73",
+      "source_url": "https://files.quakelive.ru/lelarslarslars%28POV%29-vs-ictox-bloodrun-2013_11_28-12_32_33.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5294",
+      "sha256": "5eb251eded5eec90dd5fd84ec4856d8031fde24881cbc28af467f344c585f395",
+      "size": 1454908,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "lars",
+        "toxjq"
+      ],
+      "pov": "larslarslars",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 5285,
+      "filename": "5285__ictox(POV)-vs-lelarslarslars-bloodrun-2013_11_28-12_32_33.dm_73",
+      "source_url": "https://files.quakelive.ru/ictox%28POV%29-vs-lelarslarslars-bloodrun-2013_11_28-12_32_33.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=5285",
+      "sha256": "bb926808383e67b22ea6a843e35f81df148e26cbebf1ee41216441c824b03378",
+      "size": 1459442,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "lars",
+        "toxjq"
+      ],
+      "pov": "toxjq",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4705,
+      "filename": "4705__kRoNic(POV)-vs-madix-bloodrun-2013_11_28-12_12_00.dm_73",
+      "source_url": "https://files.quakelive.ru/kRoNic%28POV%29-vs-madix-bloodrun-2013_11_28-12_12_00.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4705",
+      "sha256": "8c5dcf8d6695c6589acdddae7559886a9fc0870f12cc2f0ee28588ca51bc2c4e",
+      "size": 1461012,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "kRoNic",
+        "madix"
+      ],
+      "pov": "kRoNic",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4659,
+      "filename": "4659__ESCk1llsen(POV)-vs-4sgcamma-bloodrun-2013_11_28-12_10_48.dm_73",
+      "source_url": "https://files.quakelive.ru/ESCk1llsen%28POV%29-vs-4sgcamma-bloodrun-2013_11_28-12_10_48.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4659",
+      "sha256": "b92448c6afed27cbf7c744474adb8c5f2dbd1ac6e2a998512343bf4ea13b6fe6",
+      "size": 1125873,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "camma",
+        "k1llsen"
+      ],
+      "pov": "k1llsen",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4641,
+      "filename": "4641__4sgcamma(POV)-vs-ESCk1llsen-bloodrun-2013_11_28-12_10_48.dm_73",
+      "source_url": "https://files.quakelive.ru/4sgcamma%28POV%29-vs-ESCk1llsen-bloodrun-2013_11_28-12_10_48.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4641",
+      "sha256": "30e54bd9f3f9063fabe2635a14eba66163dfb55cc77acb998d2241b496b7af0b",
+      "size": 1070967,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "camma",
+        "k1llsen"
+      ],
+      "pov": "camma",
+      "date": "28.11.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4076,
+      "filename": "4076__102evil(POV)-vs-tRcYpheR-bloodrun-2013_09_29-19_42_12.dm_73",
+      "source_url": "https://files.quakelive.ru/102evil%28POV%29-vs-tRcYpheR-bloodrun-2013_09_29-19_42_12.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4076",
+      "sha256": "cfd7f4ee16672ab8c973c5b4035baaea783c62025778f32d4393c449d49263c4",
+      "size": 1635238,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4080,
+      "filename": "4080__tRcYpheR(POV)-vs-102evil-bloodrun-2013_09_29-19_42_12.dm_73",
+      "source_url": "https://files.quakelive.ru/tRcYpheR%28POV%29-vs-102evil-bloodrun-2013_09_29-19_42_12.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4080",
+      "sha256": "be4a9fd575b75e18194f8bf78c2308b66a2c60576997829a9dd6789e9dd37e42",
+      "size": 1582529,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "evil"
+      ],
+      "pov": "cYpheR",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4116,
+      "filename": "4116__102evil(POV)-vs-102pavel_-bloodrun-2013_09_29-21_33_21.dm_73",
+      "source_url": "https://files.quakelive.ru/102evil%28POV%29-vs-102pavel_-bloodrun-2013_09_29-21_33_21.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4116",
+      "sha256": "d94feddbfc4d7b1b3b828d6e07262bb0ed18932543750f8c5e7efad1fdc15d3b",
+      "size": 1744755,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "pavel"
+      ],
+      "pov": "evil",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4120,
+      "filename": "4120__DRzp0ni(POV)-vs-tRcYpheR-bloodrun-2013_09_29-19_10_45.dm_73",
+      "source_url": "https://files.quakelive.ru/DRzp0ni%28POV%29-vs-tRcYpheR-bloodrun-2013_09_29-19_10_45.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4120",
+      "sha256": "101688274dcd9b18357f9c24904598a46e0d1b93d79fa26d8eaca39882af6bab",
+      "size": 1818129,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "p0ni"
+      ],
+      "pov": "p0ni",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4123,
+      "filename": "4123__tRcYpheR(POV)-vs-DRzp0ni-bloodrun-2013_09_29-19_10_45.dm_73",
+      "source_url": "https://files.quakelive.ru/tRcYpheR%28POV%29-vs-DRzp0ni-bloodrun-2013_09_29-19_10_45.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4123",
+      "sha256": "5d95acec473cbe1db7b554cc87996d0035c92a1ca3cd095917b023055840e6d4",
+      "size": 1715199,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "p0ni"
+      ],
+      "pov": "cYpheR",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4114,
+      "filename": "4114__DRzp0ni(POV)-vs-tox-bloodrun-2013_09_29-17_42_15.dm_73",
+      "source_url": "https://files.quakelive.ru/DRzp0ni%28POV%29-vs-tox-bloodrun-2013_09_29-17_42_15.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4114",
+      "sha256": "c131edb0f24839afcd533eac11e7f29677fd6065dafedfcd10a63086ce518073",
+      "size": 1721146,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "p0ni",
+        "toxjq"
+      ],
+      "pov": "p0ni",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4096,
+      "filename": "4096__102evil(POV)-vs-102_ash-bloodrun-2013_09_29-17_25_32.dm_73",
+      "source_url": "https://files.quakelive.ru/102evil%28POV%29-vs-102_ash-bloodrun-2013_09_29-17_25_32.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4096",
+      "sha256": "18fd9a25ae04013061802c6a45077a968018225899f5a36956f799928f2c3bb2",
+      "size": 1577497,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4103,
+      "filename": "4103__102_ash(POV)-vs-102evil-bloodrun-2013_09_29-17_25_32.dm_73",
+      "source_url": "https://files.quakelive.ru/102_ash%28POV%29-vs-102evil-bloodrun-2013_09_29-17_25_32.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4103",
+      "sha256": "3e1687f7af5e06004ee43cef341de1d724683820dcc5adb83c13b29bed671006",
+      "size": 1824911,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "ash",
+        "evil"
+      ],
+      "pov": "_ash",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4098,
+      "filename": "4098__102evil(POV)-vs-DRzp0ni-bloodrun-2013_09_29-16_11_58.dm_73",
+      "source_url": "https://files.quakelive.ru/102evil%28POV%29-vs-DRzp0ni-bloodrun-2013_09_29-16_11_58.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4098",
+      "sha256": "979a2262dcf4f4f864003a789285b0d2bdc603855221610f8207cdb08478ae35",
+      "size": 1314284,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "p0ni"
+      ],
+      "pov": "evil",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4109,
+      "filename": "4109__DRzp0ni(POV)-vs-102evil-bloodrun-2013_09_29-16_11_58.dm_73",
+      "source_url": "https://files.quakelive.ru/DRzp0ni%28POV%29-vs-102evil-bloodrun-2013_09_29-16_11_58.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4109",
+      "sha256": "42807f7587daa4a6804904e63db57e6994841453e7cd90adcd6bc2a2ca79e737",
+      "size": 1425214,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "p0ni"
+      ],
+      "pov": "p0ni",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4101,
+      "filename": "4101__102evil(POV)-vs-tox-bloodrun-2013_09_29-15_01_00.dm_73",
+      "source_url": "https://files.quakelive.ru/102evil%28POV%29-vs-tox-bloodrun-2013_09_29-15_01_00.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4101",
+      "sha256": "f8ab4ba6e8c33fc696bd0033be4dc06a5d9efc0decb3e031e7a0d221303b617e",
+      "size": 1665366,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "toxjq"
+      ],
+      "pov": "evil",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4094,
+      "filename": "4094__tRcYpheR(POV)-vs-102pavel_-bloodrun-2013_09_29-15_41_51.dm_73",
+      "source_url": "https://files.quakelive.ru/tRcYpheR%28POV%29-vs-102pavel_-bloodrun-2013_09_29-15_41_51.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4094",
+      "sha256": "6329696c1d506fe9bedeb22d77fba07a55883a78b743441723be778477654fbd",
+      "size": 1622643,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "pavel"
+      ],
+      "pov": "cYpheR",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4092,
+      "filename": "4092__tRcYpheR(POV)-vs-102coolleR-bloodrun-2013_09_29-13_15_22.dm_73",
+      "source_url": "https://files.quakelive.ru/tRcYpheR%28POV%29-vs-102coolleR-bloodrun-2013_09_29-13_15_22.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4092",
+      "sha256": "85dc889a2db1010defa6a74a7197c1ddf1b4c5334a74b64eb09e90ce543bf042",
+      "size": 1784007,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Cooller",
+        "cYpheR"
+      ],
+      "pov": "cYpheR",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4088,
+      "filename": "4088__102coolleR(POV)-vs-tRcYpheR-bloodrun-2013_09_29-13_15_22.dm_73",
+      "source_url": "https://files.quakelive.ru/102coolleR%28POV%29-vs-tRcYpheR-bloodrun-2013_09_29-13_15_22.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4088",
+      "sha256": "dd339ebbf2d21ed010d263d0f845f49a90fe906b3757f267a25a9d13460ea66a",
+      "size": 1769730,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Cooller",
+        "cYpheR"
+      ],
+      "pov": "coolleR",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4085,
+      "filename": "4085__102coolleR(POV)-vs-102pavel_-bloodrun-2013_09_29-13_40_35.dm_73",
+      "source_url": "https://files.quakelive.ru/102coolleR%28POV%29-vs-102pavel_-bloodrun-2013_09_29-13_40_35.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4085",
+      "sha256": "233f56b48990dc448010c2c1bea9c0a5b34ec5ec7e21726b2bc6e0f190080be0",
+      "size": 1396613,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Cooller",
+        "pavel"
+      ],
+      "pov": "coolleR",
+      "date": "29.09.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1179,
+      "filename": "1179__qcon2013___bronze-map2-EGDaHanG(POV)-vs-102evil-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/qcon2013___bronze-map2-EGDaHanG%28POV%29-vs-102evil-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1179",
+      "sha256": "efb6204e548e8e27ff6434651eafea8fcc879552cb932195a50fef6267cd2a91",
+      "size": 1213257,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "DaHanG",
+        "evil"
+      ],
+      "pov": "DaHanG",
+      "date": "03.08.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1178,
+      "filename": "1178__qcon2013___bronze-map2-102evil(POV)-vs-EGDaHanG-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/qcon2013___bronze-map2-102evil%28POV%29-vs-EGDaHanG-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1178",
+      "sha256": "cbd94490fddea1b84cd8d25662b4f6372546056e3dd26fd10b05663d1c566277",
+      "size": 1201384,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "DaHanG",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "03.08.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1155,
+      "filename": "1155__qcon2013__lb7-map1-ZeRo4-vs-102evil-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/qcon2013__lb7-map1-ZeRo4-vs-102evil-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1155",
+      "sha256": "5a947474d44e38c4f64f56816a07c2f40abad924508bfd63ff22bac272ff4bdd",
+      "size": 1423270,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "ZeRo4"
+      ],
+      "pov": "spec",
+      "date": "03.08.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1154,
+      "filename": "1154__qcon2013__lb7-map1-102evil(POV)-vs-ZeRo4-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/qcon2013__lb7-map1-102evil%28POV%29-vs-ZeRo4-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1154",
+      "sha256": "7cbca98a99a447c95b96886df279119509d72b6d9fbaaefe66bc777608ce28f9",
+      "size": 1513145,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "ZeRo4"
+      ],
+      "pov": "evil",
+      "date": "03.08.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1147,
+      "filename": "1147__qcon2013__lb6a-map1-102evil(POV)-vs-chance-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/qcon2013__lb6a-map1-102evil%28POV%29-vs-chance-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1147",
+      "sha256": "629ebcd34286f7f1f00e4832d9a8c553de99b29b46031c7a19f270c53ce7f953",
+      "size": 1526110,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "chance",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "01.08.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1167,
+      "filename": "1167__qcon2013__wb4b-map2-SK-rapha(POV)-vs-102evil-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/qcon2013__wb4b-map2-SK-rapha%28POV%29-vs-102evil-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1167",
+      "sha256": "38ce4d66dded134fd28e9fbf8c7dfeca8bb8d00ffc6ae629b0cfd31e097cbca6",
+      "size": 1403658,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "rapha"
+      ],
+      "pov": "rapha",
+      "date": "01.08.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1166,
+      "filename": "1166__qcon2013__wb4b-map2-102evil(POV)-vs-SK-rapha-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/qcon2013__wb4b-map2-102evil%28POV%29-vs-SK-rapha-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1166",
+      "sha256": "8eb2a180558f6b1ca91cc7521e8cd267f7702828dc09773d8ab8bcbd3ac84aa2",
+      "size": 1391311,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "rapha"
+      ],
+      "pov": "evil",
+      "date": "01.08.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1163,
+      "filename": "1163__qcon2013__wb4a-map2-ZeRo4(POV)-vs-EGDaHanG-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/qcon2013__wb4a-map2-ZeRo4%28POV%29-vs-EGDaHanG-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1163",
+      "sha256": "ccc183cb486debe2fdb9ad85200b746f15ed00b143c5d2dfc00d19cb716da9a0",
+      "size": 1499075,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "DaHanG",
+        "ZeRo4"
+      ],
+      "pov": "ZeRo4",
+      "date": "01.08.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1162,
+      "filename": "1162__qcon2013__wb4a-map2-EGDaHanG(POV)-vs-ZeRo4-bloodrun.dm_73",
+      "source_url": "https://files.quakelive.ru/qcon2013__wb4a-map2-EGDaHanG%28POV%29-vs-ZeRo4-bloodrun.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1162",
+      "sha256": "3b8d0df0032b046a4e8d990cf0341fbafa3abb38c19390994b1925d7d8192144",
+      "size": 1518420,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "DaHanG",
+        "ZeRo4"
+      ],
+      "pov": "DaHanG",
+      "date": "01.08.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7836,
+      "filename": "7836__fazz(POV)-vs-tRcYpheR-bloodrun-2013_07_21-16_53_11.dm_73",
+      "source_url": "https://files.quakelive.ru/fazz%28POV%29-vs-tRcYpheR-bloodrun-2013_07_21-16_53_11.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7836",
+      "sha256": "da3166874902ab2cf122a9d09b16e24151e623c9a8b22455ea94cea0ce7a0d1b",
+      "size": 1953885,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "fazz"
+      ],
+      "pov": "fazz",
+      "date": "21.07.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7574,
+      "filename": "7574__strenx(POV)-vs-ESCk1llsen-bloodrun-2013_06_28-20_23_45.dm_73",
+      "source_url": "https://files.quakelive.ru/strenx%28POV%29-vs-ESCk1llsen-bloodrun-2013_06_28-20_23_45.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7574",
+      "sha256": "86c6a5e65661e820078da5023ec388a178010c6f60a09c3d649903d43081f17b",
+      "size": 1678509,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "k1llsen",
+        "strenx"
+      ],
+      "pov": "strenx",
+      "date": "28.06.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7419,
+      "filename": "7419__102evil(POV)-vs-tRCypher-bloodrun-2013_06_01-20_15_18.dm_73",
+      "source_url": "https://files.quakelive.ru/102evil%28POV%29-vs-tRCypher-bloodrun-2013_06_01-20_15_18.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7419",
+      "sha256": "5136014c50b731fe75e73a740b3b1e94edcc6583e6d9186257d8c005f444ace5",
+      "size": 1420102,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "evil"
+      ],
+      "pov": "evil",
+      "date": "01.06.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7424,
+      "filename": "7424__tRCypher(POV)-vs-102evil-bloodrun-2013_06_01-20_15_18.dm_73",
+      "source_url": "https://files.quakelive.ru/tRCypher%28POV%29-vs-102evil-bloodrun-2013_06_01-20_15_18.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7424",
+      "sha256": "ca0fb7d24e30f2e591246b117b73cab4f7e955184229de2dd6c5f54728a31430",
+      "size": 1622725,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "evil"
+      ],
+      "pov": "Cypher",
+      "date": "01.06.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7634,
+      "filename": "7634__strenx(POV)-vs-102evil-bloodrun-2013_05_25-17_25_17.dm_73",
+      "source_url": "https://files.quakelive.ru/strenx%28POV%29-vs-102evil-bloodrun-2013_05_25-17_25_17.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7634",
+      "sha256": "4024fb8e3090c807323d47896943d7e32d57cd4aa80ef8eb2ae16cbed84c9cd2",
+      "size": 1665853,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "strenx"
+      ],
+      "pov": "strenx",
+      "date": "25.05.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7627,
+      "filename": "7627__102evil(POV)-vs-strenx-bloodrun-2013_05_25-17_25_17.dm_73",
+      "source_url": "https://files.quakelive.ru/102evil%28POV%29-vs-strenx-bloodrun-2013_05_25-17_25_17.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7627",
+      "sha256": "6fd043c38cbbb136b93dd353ac1b80792af7a6afb36cef096e2772efdfe48b7c",
+      "size": 1655682,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "strenx"
+      ],
+      "pov": "evil",
+      "date": "25.05.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8430,
+      "filename": "8430__cy@FraZe(POV)-vs-apocastroboy_-bloodrun-2013_04_28-22_49_58.dm_73",
+      "source_url": "https://files.quakelive.ru/cy%40FraZe%28POV%29-vs-apocastroboy_-bloodrun-2013_04_28-22_49_58.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8430",
+      "sha256": "dffe13c1c4f25c9d8b351fbf33b94dfd7f22df4114cfd37e7280923fea514cf4",
+      "size": 1404693,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "astroboy_",
+        "FraZe"
+      ],
+      "pov": "FraZe",
+      "date": "28.04.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 8434,
+      "filename": "8434__cy@FraZe(POV)-vs-cy@camma-bloodrun-2013_04_28-22_04_06.dm_73",
+      "source_url": "https://files.quakelive.ru/cy%40FraZe%28POV%29-vs-cy%40camma-bloodrun-2013_04_28-22_04_06.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=8434",
+      "sha256": "f2c14915b79973a88b3e6b9a23069223391ba2f3608aaef56dbd00627407eee9",
+      "size": 672005,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "camma",
+        "FraZe"
+      ],
+      "pov": "FraZe",
+      "date": "28.04.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7498,
+      "filename": "7498__102evil(POV)-vs-Guard-bloodrun-2013_04_24-18_52_52.dm_73",
+      "source_url": "https://files.quakelive.ru/102evil%28POV%29-vs-Guard-bloodrun-2013_04_24-18_52_52.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7498",
+      "sha256": "e6d71734be1e2f06269554751bffa648745dc70f30da0e51e793083f834ec24b",
+      "size": 1811547,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "evil",
+        "guard"
+      ],
+      "pov": "evil",
+      "date": "24.04.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7502,
+      "filename": "7502__GI-k1llsen(POV)-vs-POLAv3k-bloodrun-2013_04_22-18_27_22.dm_73",
+      "source_url": "https://files.quakelive.ru/GI-k1llsen%28POV%29-vs-POLAv3k-bloodrun-2013_04_22-18_27_22.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7502",
+      "sha256": "f46f2ce3cbd1e38c9b1f70ac201517a64efe9aba1aed5acdb2ab3c8312560c90",
+      "size": 1701486,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Av3k",
+        "k1llsen"
+      ],
+      "pov": "k1llsen",
+      "date": "22.04.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 1,
+      "filename": "1__cnz(POV)-vs-zeun_-bloodrun-2013_04_20-19_15_53.dm_73",
+      "source_url": "https://files.quakelive.ru/cnz%28POV%29-vs-zeun_-bloodrun-2013_04_20-19_15_53.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=1",
+      "sha256": "f95feb5c7d6f4f8d6dd4e2d29633a90bea37c58b2b7ff1d19d3a799ea944c610",
+      "size": 1819639,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cnz",
+        "zeun_"
+      ],
+      "pov": "cnz",
+      "date": "20.04.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7434,
+      "filename": "7434__M0UZcoolleR(POV)-vs-MCypher-bloodrun-2013_04_14-20_42_20.dm_73",
+      "source_url": "https://files.quakelive.ru/M0UZcoolleR%28POV%29-vs-MCypher-bloodrun-2013_04_14-20_42_20.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7434",
+      "sha256": "b55e8a661ad5849305fc705a5fa72424af18d974c13bf6ed0663fe5b7fe09fa1",
+      "size": 1663205,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Cooller",
+        "cYpheR"
+      ],
+      "pov": "coolleR",
+      "date": "14.04.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4070,
+      "filename": "4070__MCypher(POV)-vs-102pavel_-bloodrun-2013_04_07-21_15_14.dm_73",
+      "source_url": "https://files.quakelive.ru/MCypher%28POV%29-vs-102pavel_-bloodrun-2013_04_07-21_15_14.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4070",
+      "sha256": "948ab0c02530e92e7cb6b8e12ec13429c15004a3f847557446a0263731785d82",
+      "size": 1708898,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "pavel"
+      ],
+      "pov": "Cypher",
+      "date": "07.04.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4073,
+      "filename": "4073__MCypher(POV)-vs-M0UZcoolleR-bloodrun-2013_04_07-21_04_28.dm_73",
+      "source_url": "https://files.quakelive.ru/MCypher%28POV%29-vs-M0UZcoolleR-bloodrun-2013_04_07-21_04_28.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4073",
+      "sha256": "122f13dac4ac629f0b5f1c54302c34e57df68c5b43f02f251701f85461b3c7f9",
+      "size": 1614223,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "Cooller",
+        "cYpheR"
+      ],
+      "pov": "Cypher",
+      "date": "07.04.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 4066,
+      "filename": "4066__MCypher(POV)-vs-102evil-bloodrun-2013_04_07-18_03_16.dm_73",
+      "source_url": "https://files.quakelive.ru/MCypher%28POV%29-vs-102evil-bloodrun-2013_04_07-18_03_16.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=4066",
+      "sha256": "a2707f1eee9af74850c6692f6611099140d5ced9d7b8827c259eae479031db41",
+      "size": 1567322,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "evil"
+      ],
+      "pov": "Cypher",
+      "date": "07.04.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7414,
+      "filename": "7414__MCypher(POV)-vs-GI-k1llsen-bloodrun-2013_03_29-19_52_51.dm_73",
+      "source_url": "https://files.quakelive.ru/MCypher%28POV%29-vs-GI-k1llsen-bloodrun-2013_03_29-19_52_51.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7414",
+      "sha256": "acd22a49c62fc95dff834d8fc1ae37a35192c7392b34ef623bf98fd3b15ff1a5",
+      "size": 1515953,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "k1llsen"
+      ],
+      "pov": "Cypher",
+      "date": "29.03.2013",
+      "framing_verified": true
+    },
+    {
+      "archive_id": 7597,
+      "filename": "7597__MCypher(POV)-vs-Guard-bloodrun-2013_03_29-17_06_11.dm_73",
+      "source_url": "https://files.quakelive.ru/MCypher%28POV%29-vs-Guard-bloodrun-2013_03_29-17_06_11.dm_73",
+      "archive_page": "https://demos.quakelive.ru/demo?demoId=7597",
+      "sha256": "3a55f2ee29c0d85bfa9e5444a7ea0f82ea76759a70b1293fef9e5e41f908b495",
+      "size": 1713673,
+      "catalog_map": "bloodrun",
+      "type": "Duel",
+      "players": [
+        "cYpheR",
+        "guard"
+      ],
+      "pov": "Cypher",
+      "date": "29.03.2013",
+      "framing_verified": true
+    }
+  ],
+  "errors": [
+    {
+      "archive_id": 7015,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7135,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7031,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7035,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7139,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7021,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7044,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7125,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7148,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7119,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7015,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7135,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7031,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7035,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7139,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7021,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7044,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7125,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7148,
+      "error": "duplicate_sha256_excluded"
+    },
+    {
+      "archive_id": 7119,
+      "error": "duplicate_sha256_excluded"
+    }
+  ]
+}

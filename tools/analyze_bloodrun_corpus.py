@@ -47,10 +47,17 @@ def main():
             run=subprocess.run([str(ROOT/'tools/udt/bin/UDT_json.exe'),'-a=gm','-t=1','-o='+str(folder),str(demo)],capture_output=True,timeout=120)
             if run.returncode:raise RuntimeError('UDT JSON export failed')
             data=json.loads((folder/(demo.stem+'.json')).read_text(encoding='utf-8'));states=data['gameStates'];maps=sorted({s.get('configStringValues',{}).get('mapname','unknown') for s in states})
-            if maps!=['bloodrun']:raise ValueError('Unexpected recorded maps: '+str(maps))
-            snapshots=folder/'snapshots.jsonl';summary=extract(demo,snapshots,ROOT/'tools/udt/bin/UDT.dll')
-            if summary['demo_sha256']!=record['sha256']:raise ValueError('Input SHA differs from manifest')
-            mapping=item_map(demo);window=deque();prior=None;routes=[];counts=Counter();positions=[];active=0
+            if {m.lower() for m in maps}!={'bloodrun'}:raise ValueError('Unexpected recorded maps: '+str(maps))
+            analysis_demo=demo;conversion=None
+            if demo.suffix.lower() in ('.dm_73','.dm_90'):
+                converted=folder/'converted';converted.mkdir(exist_ok=True)
+                run=subprocess.run([str(ROOT/'tools/udt/bin/UDT_converter.exe'),'-p=91','-t=1','-o='+str(converted),str(demo)],capture_output=True,timeout=120)
+                analysis_demo=converted/(demo.stem+'.dm_91')
+                if run.returncode or not analysis_demo.exists():raise RuntimeError('UDT protocol conversion failed')
+                conversion=dict(source_protocol=demo.suffix,tool='UDT_converter 1.3.1',converted_sha256=hashlib.sha256(analysis_demo.read_bytes()).hexdigest(),physics_verified=False)
+            snapshots=folder/'snapshots.jsonl';summary=extract(analysis_demo,snapshots,ROOT/'tools/udt/bin/UDT.dll')
+            if hashlib.sha256(demo.read_bytes()).hexdigest()!=record['sha256']:raise ValueError('Input SHA differs from manifest')
+            mapping=item_map(analysis_demo);window=deque();prior=None;routes=[];counts=Counter();positions=[];active=0
             with snapshots.open() as source:
                 for line in source:
                     x=json.loads(line);identity=(x['segment'],x['client'],x['game_state_number'])
@@ -68,7 +75,7 @@ def main():
             with snapshots.open('rb') as source,gzip.open(folder/'snapshots.jsonl.gz','wb') as target:
                 import shutil;shutil.copyfileobj(source,target)
             snapshots.unlink()
-            reports.append(dict(archive_id=record['archive_id'],filename=record['filename'],source_sha256=summary['demo_sha256'],maps=maps,status='parsed',snapshots=summary['snapshots'],segments=summary['segments'],active_pov_samples=active,pickups=dict(counts),approaches=len(routes),parser='UDT 1.3.1',physics_verified=False,extractor_revision=2))
+            reports.append(dict(archive_id=record['archive_id'],filename=record['filename'],source_sha256=record['sha256'],conversion=conversion,maps=maps,status='parsed',snapshots=summary['snapshots'],segments=summary['segments'],active_pov_samples=active,pickups=dict(counts),approaches=len(routes),parser='UDT 1.3.1',physics_verified=False,extractor_revision=2))
         except Exception as e:reports.append(dict(archive_id=record['archive_id'],status='failed',error=str(e)))
         (OUT/'analysis_index.json').write_text(json.dumps(dict(records=reports),ensure_ascii=False,indent=2),encoding='utf-8')
         if n%5==0 or n==len(manifest['records']): print('Analyzed',n,'/',len(manifest['records']),'parsed',sum(r['status']=='parsed' for r in reports),flush=True)

@@ -1,5 +1,6 @@
 """Audit true match-start POV windows; observations are not executable policies."""
 import gzip
+import argparse
 import json
 import math
 from collections import Counter
@@ -70,8 +71,12 @@ def opening(rows, routes, start, state):
 
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--corpus', action='append', help='Folder under out/; repeat to combine corpora')
+    parser.add_argument('--output', type=Path, default=ROOT/'docs/training/BLOODRUN_OPENINGS.json')
+    args=parser.parse_args()
     records = []
-    for corpus in ('bloodrun_corpus', 'owner_bloodrun_corpus'):
+    for corpus in (args.corpus or ('bloodrun_corpus', 'owner_bloodrun_corpus')):
         for folder in sorted((ROOT/'out'/corpus).iterdir()):
             if not folder.is_dir() or not (folder/'snapshots.jsonl.gz').exists():
                 continue
@@ -85,7 +90,7 @@ def main():
             with gzip.open(folder/'observed_approaches.json.gz', 'rt', encoding='utf-8') as f:
                 approaches = json.load(f)
             for state, gs in enumerate(data.get('gameStates', []), 1):
-                if gs.get('configStringValues', {}).get('mapname') != 'bloodrun':
+                if gs.get('configStringValues', {}).get('mapname', '').lower() != 'bloodrun':
                     continue
                 for match in gs.get('matches', []):
                     start = match['startTime']
@@ -112,7 +117,8 @@ def main():
                               complete=sum(r.get('completion')=='complete' for r in records)),
                   limitations=['Not all possible openings are covered', 'No early-frag attribution',
                                'Pickup coordinates are player positions', 'No policy enabled by this audit'])
-    target = ROOT/'docs/training/BLOODRUN_OPENINGS.json'
+    target = args.output
+    target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(output, indent=2), encoding='utf-8')
     print(json.dumps(dict(counts=output['counts'], spawn_groups=len(groups))))
 
