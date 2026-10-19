@@ -1,0 +1,11 @@
+/* Иконка занимает место слева от заголовка, не перекрывая буквы. */
+.mascot-heading{position:relative;padding-left:82px;min-height:96px;display:flex;align-items:center;flex-wrap:wrap;column-gap:.23em}
+.bot-mascot{position:absolute;left:0;bottom:0;width:72px;height:96px;pointer-events:none}
+.bot-mascot svg{display:block;width:100%;height:100%}
+/* Снаряд и вспышка в слое viewport: фон остаётся единственным fixed-слоем под сайтом. */
+.mascot-rocket{position:fixed;width:19px;height:6px;border-radius:2px 70% 70% 2px;background:#e4f8ff;box-shadow:-9px 0 8px #49cfff;z-index:90;pointer-events:none}
+.mascot-rocket::before{content:'';position:absolute;right:100%;top:1px;width:23px;height:4px;background:linear-gradient(90deg,transparent,#46cfff)}
+.mascot-impact{position:fixed;width:58px;height:58px;border-radius:50%;background:radial-gradient(circle,#fff 0%,#a8eaff 15%,#41baff80 35%,transparent 70%);z-index:91;pointer-events:none}
+@media(max-width:850px){.mascot-heading{padding-left:65px;min-height:80px}.bot-mascot{width:56px;height:75px}}
+@media(prefers-reduced-motion:reduce){.mascot-rocket,.mascot-impact{display:none}}
+@media print{.bot-mascot,.mascot-rocket,.mascot-impact{display:none}.mascot-heading{padding-left:0;min-height:0}}
