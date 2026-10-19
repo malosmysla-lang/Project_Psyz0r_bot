@@ -46,6 +46,14 @@ static void reset(){
 }
 static void goal(unsigned char *out,int id,int area,const float *position){memset(out,0,64);memcpy(out,position,12);memcpy(out+12,&area,4);memcpy(out+40,&id,4);int flags=1;memcpy(out+48,&flags,4);}
 int main(){try{
+ reset();usercmd_t stable{};
+ float stable_scale=1;
+ for(int t=1000;t<=4000;t+=25)stable_scale=Psyz_LGContextScale(&stable,t);
+ check(stable_scale<.3f,"Stable stock aim must not receive full LG shaking");
+ float moving_scale=0;
+ for(int t=4025;t<=7025;t+=25){stable.angles[1]+=1000;moving_scale=Psyz_LGContextScale(&stable,t);}
+ check(moving_scale>.85f,"Rapid direction changes restore ordinary LG error");
+ check(Psyz_LGContextScale(&stable,100)==1.f,"Clock reset discards previous LG context");
  reset();world[200].item=&red;world[200].inuse=1;world[200].r.contents=1;
  client.ps.stats[STAT_ARMOR]=190;
  check(Psyz_ItemWeight(&world[200],&world[0],0)<10,"Do not chase redundant armor at full stack");

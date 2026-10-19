@@ -15,6 +15,31 @@ static int psyz_prepare_log;
 static int psyz_combat_until,psyz_diagnostic_time;
 static int psyz_combat_log;
 static int psyz_aim_log;
+/* Read only stock AI's own aim commands: never hidden target coordinates.
+   Stable aim (stationary target or predictable tracking) needs less added noise.
+   This is an execution heuristic, not a measured per-situation hit percentage. */
+static int psyz_lg_time,psyz_lg_angles[2];
+static float psyz_lg_rate=180.f,psyz_lg_scale=1.f;
+static float Psyz_LGContextScale(const usercmd_t *cmd,int now){
+    int dt=now-psyz_lg_time;
+    if(dt<=0 || dt>150 || psyz_lg_time==0){
+        psyz_lg_rate=180.f;psyz_lg_scale=1.f;
+    }else{
+        float sum=0;
+        for(int a=0;a<2;a++){
+            int delta=(cmd->angles[a]-psyz_lg_angles[a])&65535;
+            if(delta>32767)delta-=65536;
+            float degrees=delta*360.f/65536.f;sum+=degrees*degrees;
+        }
+        float blend=dt/(250.f+dt);
+        psyz_lg_rate+=(sqrtf(sum)*1000.f/dt-psyz_lg_rate)*blend;
+        float wanted=psyz_lg_rate<8.f?.18f:psyz_lg_rate<35.f?.4f:psyz_lg_rate<90.f?.7f:1.f;
+        psyz_lg_scale+=(wanted-psyz_lg_scale)*dt/(300.f+dt);
+    }
+    psyz_lg_time=now;
+    for(int a=0;a<2;a++)psyz_lg_angles[a]=cmd->angles[a];
+    return psyz_lg_scale;
+}
 /* Smooth angular error, never modify damage, projectiles or registered hits.
    Match accuracy still needs empirical calibration at each distance. */
 static float Psyz_AimNoise(unsigned int bucket,unsigned int salt){
@@ -46,6 +71,11 @@ static void Psyz_HumanizeAim(usercmd_t *cmd,int weapon,int now){
             degrees*=center/target;
             if(now-psyz_aim_log>=3000){psyz_aim_log=now;fprintf(stderr,"PSYZ_AIM_PROFILE t=%d weapon=%d target=%.2f error_degrees=%.3f calibrated=0\n",now,weapon,target,degrees);}
         }
+    }
+    cvar_t *context=Cvar_FindVar("qlx_psyzLGContextAim");
+    if(weapon==6 && context && context->integer){
+        degrees*=Psyz_LGContextScale(cmd,now);
+        if(now-psyz_aim_log>=1000){psyz_aim_log=now;fprintf(stderr,"PSYZ_LG_CONTEXT t=%d rate=%.2f noise_scale=%.3f calibrated=0\n",now,psyz_lg_rate,psyz_lg_scale);}
     }
     unsigned int bucket=(unsigned int)(now/240);float t=(now%240)/240.f;t=t*t*(3-2*t);
     for(int axis=0;axis<2;axis++){
@@ -93,6 +123,7 @@ static void Psyz_PreAlphaReset(void) {
     memset(psyz_item_clocks,0,sizeof(psyz_item_clocks));psyz_timer_log=0;
     psyz_combat_until=psyz_diagnostic_time=0;
     psyz_combat_log=psyz_aim_log=0;
+    psyz_lg_time=0;psyz_lg_rate=180.f;psyz_lg_scale=1.f;
     Psyz_OpeningReset();
     psyz_debug_logged=0;
     psyz_registry_retry=0;
