@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'Аналитика разработки бота'
 def load(name):return json.loads((ROOT/name).read_text(encoding='utf-8-sig'))
 def main():
-    current=7 if (ROOT/'docs/mindmap_v7/logic_registry_v7.json').exists() else 6
+    current=8 if (ROOT/'docs/mindmap_v8/logic_registry_v8.json').exists() else 7 if (ROOT/'docs/mindmap_v7/logic_registry_v7.json').exists() else 6
     registry=load(f'docs/mindmap_v{current}/logic_registry_v{current}.json')
     old=load(f'docs/mindmap_v{current-1}/logic_registry_v{current-1}.json')
     assert {x['id'] for b in old['branches'] for x in b['items']}<={x['id'] for b in registry['branches'] for x in b['items']}
@@ -46,6 +46,23 @@ def main():
       'tests':[{'label':'C++ / ЛОКАЛЬНЫЙ ЭТАП','value':'17 / 17' if tactical else '15 / 15','note':'Включает новые combo/arrival политики. Сервер0.7.6 не заменён этим кодом.'},{'label':'PYTHON / ЛОКАЛЬНЫЙ ЭТАП','value':'118 / 118' if tactical else '111 / 111','note':'Парсеры, политики и чат. Native damage hook этим не появляется.'},{'label':'BOT VS XAERO / 0.7.6','value':'65 сек','note':f"{smoke['pickups']} подборов / RA {smoke['red_pickups']} / Mega {smoke['mega_pickups']} / {smoke['opening_pickups']} шага дебюта / {smoke['nav_recoveries']} восстановления. LG не стрелял. Это smoke, не полный матч." if smoke else 'Ожидается проверка'}],
       'questions':registry['questions']+['Прицел в пикселях нельзя перевести в физический угол без FOV/разрешения; настройки задаются в градусах и времени реакции.','Не извлекать «сырые WASD» из одной скорости. Возможны разные управляющие команды при сходной траектории.','Сравнивать победы, подборы, damage и застревания серией полных матчей; один удачный RJ не подтверждает всю навигацию.'],
       'backlog':[{'name':'Подборы и застревания','test':'Полный Duel: близкий доступный ресурс должен быть взят либо записана причина отказа; без AFK под платформой.','status':'LOCAL'},{'name':'Дебют → второй RA → Mega','test':'Проверить каждый старт и порядок 2–3 предметов против Xaero; штраф вместо самоубийственного входа.','status':'PARTIAL'},{'name':'Стартовый разгон по сольной демке и топам','test':'Измерить 2с и 4с, первые 2–3 прыжка, yaw и потери скорости на поворотах.','status':'DATA'},{'name':'LG и dodge по наблюдаемым ракетам','test':'Плавный прицел без тряски, безопасные наземные смены направления; не выдумывать будущий выстрел.','status':'PARTIAL'},{'name':'Комбо / gauntlet revenge / трупы','test':'Сначала подтвердить сенсоры и damage той же цели; затем выполнять безопасное добивание.','status':'SPEC'},{'name':'Реальный forfeit','test':'Один выбор на матч, сильное отставание, корректный выход, отсутствие немедленного возврата через autofill.','status':'SPEC'}]}
+    if (ROOT/'docs/training/PREALPHA_078_DEPLOYMENT.json').exists():
+        data['release']='0.7.8 / test 27961'
+        data['winnerAccuracy']=load('docs/training/WINNER_ACCURACY_078.json')
+        data['freshFeedback']=load('docs/training/FRESH_FEEDBACK_078.json')['records']
+        data['ownerSpam']=load('docs/training/OWNER_SPAM_CIRCLE_078.json')
+        data['unopposed']=load('docs/training/UNOPPOSED_078.json')
+        data['deployment']=load('docs/training/PREALPHA_078_DEPLOYMENT.json')
+        smoke078=ROOT/'docs/training/PREALPHA_078_SMOKE.json'
+        data['smoke078']=load(str(smoke078.relative_to(ROOT))) if smoke078.exists() else None
+        data['metrics'][-1]={'label':'ЛОКАЛЬНЫЕ ПРОВЕРКИ','value':'17 + 121','note':'Windows + 5 Linux-проверок · 0.7.8 установлена'}
+        data['tests'][0]['note']='Новые проверки не блокируют штатное движение при защитном MG-огне; бот определяется по имени/флагу.'
+        data['tests'][1]['value']='121 / 121'
+        data['tests'].append({'label':'LINUX / 0.7.8','value':'5 / 5','note':'Native context, nav, LG, combo и arrival; не доказательство силы полной дуэли.'})
+        for module in data['modules']:
+            if 'Маршруты' in module['name']:module['evidence']='0.7.8: независимый motion-watch и 3с возврат stock AAS; неподвижность не скрывается сменой цели. Полное отсутствие застреваний не доказано.'
+            if 'Чат и' in module['name']:module['evidence']='0.7.8: Steam ID/слот вместо object identity; нуб/nub/noob; повторные реплики через 4с и контекст 45с. Native corpse/damage сенсора ещё нет.'
+        data['metrics'][1]['note']+='; включает 2 свежие записи'
     (OUT/'data.js').write_text('window.PSYZ_ANALYTICS = '+json.dumps(data,ensure_ascii=False)+';\n',encoding='utf-8')
     (OUT/'data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
     print('Dashboard:',registry['rule_count'],'rules;',len(modules),'modules; sources linked')

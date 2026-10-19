@@ -3,6 +3,7 @@ from pathlib import Path
 import sys
 import types
 import unittest
+from unittest.mock import patch
 
 
 class Plugin:
@@ -58,12 +59,36 @@ class ChatTests(unittest.TestCase):
     def test_hello_topic_and_no_false_insult(self):
         self.assertEqual(chat.classify_chat("^1привет"),"hello")
         self.assertEqual(chat.classify_chat("mega"),"mega")
-        self.assertIsNone(chat.classify_chat("bot"))
+        self.assertEqual(chat.classify_chat("bot"),"banter")
         p=self.plugin();p.handle_chat(p.human,"hi",None);p.handle_chat(p.human,"hello",None)
         self.assertEqual(len(p.sent),1)
 
     def test_plain_game_punctuation(self):
         self.assertNotIn(",",chat.render("Hello, {player} — ready?",Player("A,B",123)))
+
+    def test_new_wrapper_same_client_can_talk(self):
+        p=self.plugin();other_wrapper=Player('Human',p.human.steam_id)
+        p.handle_chat(other_wrapper,'нуб',None)
+        self.assertEqual(len(p.sent),1)
+        self.assertEqual(chat.classify_chat('иди на хуй'),'retort')
+        self.assertEqual(chat.classify_chat('NUB!!!'),'retort')
+
+    def test_retorts_can_repeat_after_pause_but_not_spam(self):
+        p=self.plugin()
+        with patch.object(chat.time,'monotonic',return_value=10):p.handle_chat(p.human,'нуб',None)
+        with patch.object(chat.time,'monotonic',return_value=11):p.handle_chat(p.human,'noob',None)
+        self.assertEqual(len(p.sent),1)
+        with patch.object(chat.time,'monotonic',return_value=15):p.handle_chat(p.human,'noob',None)
+        self.assertEqual(len(p.sent),2);self.assertNotEqual(p.sent[0],p.sent[1])
+
+    def test_followup_requires_recent_conversation_and_markers_are_ignored(self):
+        p=self.plugin();p.handle_chat(p.human,'yes',None);self.assertEqual(p.sent,[])
+        with patch.object(chat.time,'monotonic',return_value=10):p.handle_chat(p.human,'mega',None)
+        with patch.object(chat.time,'monotonic',return_value=15):p.handle_chat(p.human,'да',None)
+        self.assertEqual(len(p.sent),2)
+        self.assertIsNone(chat.classify_chat('#bot noob red'))
+        with patch.object(chat.time,'monotonic',return_value=61):p.handle_chat(p.human,'ok',None)
+        self.assertEqual(len(p.sent),2)
 
     def test_forfeit_once_only_confirmed_bot(self):
         p=self.plugin();p.forfeit_selected=True;p.forfeit_started=100

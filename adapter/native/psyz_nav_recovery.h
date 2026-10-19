@@ -6,6 +6,21 @@ typedef struct {
     int motion_since;
     float motion_position[3];
 } PsyzNavRecovery;
+// Отдельный сторож движения не сбрасывается при смене item-цели.
+// Иначе чередование целей каждые 1-2с скрывает реальную остановку у стены.
+typedef struct {int since,last,hold;float origin[3];} PsyzMotionWatch;
+static void Psyz_MotionReset(PsyzMotionWatch *s){memset(s,0,sizeof(*s));s->last=-1;}
+static int Psyz_MotionStalled(PsyzMotionWatch *s,int now,const float *position,int active,int hold){
+    float distance=0;for(int k=0;k<3;k++){float d=position[k]-s->origin[k];distance+=d*d;}
+    if(s->last<0 || now<s->last || now-s->last>500 || !active || distance>32*32){
+        s->since=now;s->hold=0;memcpy(s->origin,position,sizeof(s->origin));s->last=now;return 0;
+    }
+    int dt=now-s->last;s->last=now;
+    // Даже непрерывная стрельба не прячет неподвижность бесконечно.
+    if(hold && s->hold<4000){int pause=dt;if(pause>4000-s->hold)pause=4000-s->hold;s->since+=pause;s->hold+=pause;}
+    if(now-s->since<1800)return 0;
+    s->since=now;return 1;
+}
 static void Psyz_NavReset(PsyzNavRecovery *s) {
     memset(s,0,sizeof(*s));s->target=-1;s->waypoint=-1;
 }

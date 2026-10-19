@@ -1,0 +1,15 @@
+{
+  "version": "0.7.8",
+  "seconds": 80,
+  "valid_smoke": true,
+  "full_match": false,
+  "winning_strength_proven": false,
+  "pickups": 17,
+  "red": 1,
+  "mega": 0,
+  "nav_recovery": 0,
+  "stock_escapes": 0,
+  "lg_events": 1,
+  "fatal": false,
+  "status": "status\nmap: bloodrun\nnum score ping name            lastmsg address               qport rate  steamid\n--- ----- ---- --------------- ------- --------------------- ----- ----- -----------------\n  0     0    0 Psyz0r_bot^7           50 bot                       0 16384 90071996842377216\n\nPSYZ_NAV t=134925 pos=-288.000,-400.000,592.000 vel=-241.738,150.342,0.000 yaw=38.48 weapon=2 health=124 ground=1022 source=stock_aas_plus_optin_prealpha\nPSYZ_NAV t=135125 pos=-288.000,-400.000,592.000 vel=-241.738,150.342,0.000 yaw=38.48 weapon=2 health=124 ground=1022 source=stock_aas_plus_optin_prealpha\n"
+}

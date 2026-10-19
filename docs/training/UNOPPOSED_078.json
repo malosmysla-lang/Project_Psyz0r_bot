@@ -1,0 +1,123 @@
+{
+  "mode": "solo_warmup_after_xaero_smoke",
+  "full_duel": false,
+  "seconds": 351.8,
+  "pickups": {
+    "item_armor_combat": 5,
+    "item_health_mega": 9,
+    "weapon_railgun": 12,
+    "item_armor_body": 7,
+    "item_armor_shard": 26,
+    "weapon_shotgun": 2,
+    "weapon_plasmagun": 1,
+    "item_health_small": 3,
+    "weapon_grenadelauncher": 1
+  },
+  "major_clock_pickups": [
+    {
+      "time_ms": 203975,
+      "entity": 112,
+      "kind": "item_health_mega",
+      "due_ms": 197850,
+      "delay_ms": 6125
+    },
+    {
+      "time_ms": 225800,
+      "entity": 119,
+      "kind": "item_armor_body",
+      "due_ms": 210525,
+      "delay_ms": 15275
+    },
+    {
+      "time_ms": 243175,
+      "entity": 112,
+      "kind": "item_health_mega",
+      "due_ms": 238975,
+      "delay_ms": 4200
+    },
+    {
+      "time_ms": 256625,
+      "entity": 119,
+      "kind": "item_armor_body",
+      "due_ms": 250800,
+      "delay_ms": 5825
+    },
+    {
+      "time_ms": 278200,
+      "entity": 112,
+      "kind": "item_health_mega",
+      "due_ms": 278175,
+      "delay_ms": 25
+    },
+    {
+      "time_ms": 308100,
+      "entity": 119,
+      "kind": "item_armor_body",
+      "due_ms": 281625,
+      "delay_ms": 26475
+    },
+    {
+      "time_ms": 321125,
+      "entity": 112,
+      "kind": "item_health_mega",
+      "due_ms": 313200,
+      "delay_ms": 7925
+    },
+    {
+      "time_ms": 364625,
+      "entity": 112,
+      "kind": "item_health_mega",
+      "due_ms": 356125,
+      "delay_ms": 8500
+    },
+    {
+      "time_ms": 386100,
+      "entity": 119,
+      "kind": "item_armor_body",
+      "due_ms": 333100,
+      "delay_ms": 53000
+    },
+    {
+      "time_ms": 407875,
+      "entity": 112,
+      "kind": "item_health_mega",
+      "due_ms": 399625,
+      "delay_ms": 8250
+    },
+    {
+      "time_ms": 419800,
+      "entity": 119,
+      "kind": "item_armor_body",
+      "due_ms": 411100,
+      "delay_ms": 8700
+    },
+    {
+      "time_ms": 442900,
+      "entity": 112,
+      "kind": "item_health_mega",
+      "due_ms": 442875,
+      "delay_ms": 25
+    },
+    {
+      "time_ms": 465725,
+      "entity": 119,
+      "kind": "item_armor_body",
+      "due_ms": 444800,
+      "delay_ms": 20925
+    },
+    {
+      "time_ms": 483375,
+      "entity": 112,
+      "kind": "item_health_mega",
+      "due_ms": 477900,
+      "delay_ms": 5475
+    }
+  ],
+  "stock_escapes": 5,
+  "new_client_connections": 0,
+  "limits": [
+    "Only a single bot in warmup at the latest status, not duel opposition",
+    "Repeated clock delays may include approaching a late already-available item",
+    "A quick pickup in warmup does not validate early arrival under pressure"
+  ]
+}

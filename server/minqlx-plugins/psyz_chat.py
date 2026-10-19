@@ -52,7 +52,11 @@ RETORT_LINES = (
     "Talk less, time the items more, {player}.",
     "Save the rage for the rematch :-)",
     "You type well. Now show me the movement.",
+    "Noob? Then stop giving me rail practice :)",
+    "Yeah yeah :) Settle it at red.",
+    "Fuck off? After the duel :D",
 )
+SMALLTALK_LINES = ("Still here :) What's your next move?", "Less typing more Quake :)", "Ready for another fight? :D")
 PRAISE_LINES = (
     "Well played, {player}. That was clean.",
     "Okay, that was filthy. Respect.",
@@ -95,21 +99,44 @@ def render(line, player=None):
             .replace(",", "").replace("—", "-").replace("’", "'"))
 
 
+def same_player(a, b):
+    # minqlx может создать новую Python-обёртку того же клиента для chat hook.
+    # Сравниваем Steam ID и слот, а не адрес объекта в памяти.
+    if a is None or b is None or is_bot(a) or is_bot(b):
+        return False
+    try:
+        return (int(a.steam_id) == int(b.steam_id) and
+                getattr(a, "id", None) == getattr(b, "id", None))
+    except (AttributeError, TypeError, ValueError):
+        return False
+
+
 def classify_chat(text):
-    words = set(re.findall(r"[a-zа-я0-9]+", clean(text).lower()))
-    compact = "".join(re.findall(r"[a-zа-я0-9]+", clean(text).lower()))
+    normalized = clean(text).lower().replace("ё", "е")
+    if normalized.startswith(("#", "!")):
+        return None  # Метки демки и команды не становятся случайной беседой.
+    words = set(re.findall(r"[a-zа-я0-9]+", normalized))
+    compact = "".join(re.findall(r"[a-zа-я0-9]+", normalized))
     if "gg" in words or "wp" in words or "goodgame" in compact or "wellplayed" in compact:
         return "gg"
     if ("gl" in words or "hf" in words or "glhf" in compact or
             {"good", "luck"}.issubset(words) or {"have", "fun"}.issubset(words)):
         return "sport"
-    rude = {"idiot", "noob", "сука", "лох", "тупой", "дебил", "говно", "нахуй", "хуй", "блядь", "fuck", "shit"}
+    rude = {"idiot", "noob", "nub", "нуб", "нубас", "нубяра", "сука", "лох", "тупой", "дебил", "говно", "нахуй", "хуй", "блядь", "блять", "fuck", "shit", "ez", "изи"}
     if words & rude:
         return "retort"
     if words & {"hi", "hello", "hey", "yo", "привет", "здарова", "ку", "здравствуйте"}:
         return "hello"
     for topic, tokens in {"mega": {"mega", "мега", "мегу"}, "red": {"red", "красный", "красном"}, "shaft": {"shaft", "lg", "шафт", "шафтом"}}.items():
         if words & tokens:return topic
+    if words & {"thanks", "thx", "спасибо", "lol", "лол", "хаха"}:
+        return "banter"
+    if words & {"yes", "no", "ok", "okay", "да", "нет", "ага", "ок"}:
+        return "followup"
+    if "howareyou" in compact or "какдела" in compact:
+        return "banter"
+    if words & {"bot", "бот", "psyz0r", "psyz"}:
+        return "banter"
     return None
 
 
@@ -121,6 +148,9 @@ class psyz_chat(minqlx.Plugin):
         self.used = set()
         self.gauntlet_damage = {}
         self.replied = set()
+        self.last_reply = float("-inf")
+        self.dialog = {}
+        self.last_dialog_line = None
         self.forfeit_checked = False
         self.forfeit_selected = False
         self.forfeit_done = False
@@ -157,6 +187,9 @@ class psyz_chat(minqlx.Plugin):
         self.used.clear()
         self.gauntlet_damage.clear()
         self.replied.clear()
+        self.dialog.clear()
+        self.last_reply = float("-inf")
+        self.last_dialog_line = None
         self.forfeit_checked = self.forfeit_selected = self.forfeit_done = False
         self.forfeit_started = 0
 
@@ -239,24 +272,41 @@ class psyz_chat(minqlx.Plugin):
             self.periodic(generation)
 
     def handle_chat(self, player, message, channel):
-        if player is None or is_bot(player) or player is not self.valid_duel():
+        if not same_player(player, self.valid_duel()):
             return
         kind = classify_chat(message)
+        if kind is None:
+            return
         if kind == "sport":
             self.say(random.choice(SPORT_REPLY), player, force=True, topic="sport_reply")
         elif kind == "gg":
             self.say(random.choice(GG_REPLY), player, force=True, topic="gg_reply")
-        elif kind == "retort":
-            self.say(random.choice(RETORT_LINES), player, topic="retort")
-        elif kind == "hello":
-            self.say(random.choice(HELLO_LINES), player, topic="hello")
-        elif kind in TOPIC_LINES:
-            self.say(random.choice(TOPIC_LINES[kind]), player, topic="topic_"+kind)
+        else:
+            # Ответы игроку отделены от случайных реплик о фрагах. Одна тема
+            # не блокируется на весь матч; 4с защищают чат от потока сообщений.
+            now = time.monotonic()
+            if now-self.last_reply < 4:
+                return
+            key = str(player.steam_id)
+            previous = self.dialog.get(key)
+            if kind == "followup":
+                if previous is None or now-previous[1] > 45:
+                    return
+                pool = TOPIC_LINES.get(previous[0], SMALLTALK_LINES)
+            else:
+                pool = (RETORT_LINES if kind == "retort" else HELLO_LINES if kind == "hello"
+                        else TOPIC_LINES.get(kind, SMALLTALK_LINES))
+            choices = [line for line in pool if line != self.last_dialog_line]
+            line = random.choice(choices or pool)
+            if self.say(line, player, force=True):
+                self.last_reply = now
+                self.last_dialog_line = line
+                self.dialog[key] = (kind if kind != "followup" else previous[0], now)
 
     def handle_damage(self, victim, attacker, damage, dflags, means_of_death):
         if victim is None or attacker is None or not is_psyz(victim) or is_bot(attacker):
             return
-        if attacker is not self.valid_duel() or "GAUNTLET" not in str(means_of_death).upper():
+        if not same_player(attacker, self.valid_duel()) or "GAUNTLET" not in str(means_of_death).upper():
             return
         key = str(getattr(attacker, "steam_id", ""))
         self.gauntlet_damage[key] = self.gauntlet_damage.get(key, 0) + max(0, int(damage))

@@ -1,0 +1,549 @@
+{
+  "demo": "demo0000.dm_91",
+  "sha256": "0e2a34dcbc24acb0395e501788a8afec4186f6b07ab5fbbebd60dc2cf751ad5a",
+  "snapshots": 17033,
+  "shots": {
+    "5": 54,
+    "4": 19,
+    "7": 1,
+    "6": 5,
+    "8": 90
+  },
+  "spam_candidates": [
+    {
+      "weapon_id": 4,
+      "start_ms": 3737125,
+      "end_ms": 3737925,
+      "demo_seconds": 233.625,
+      "shots": 2,
+      "position": [
+        681.96,
+        -401.14,
+        88.12
+      ],
+      "yaw": 116.5,
+      "pitch": -1.12,
+      "geometry_verified": false,
+      "target_verified": false,
+      "live_enabled": false
+    },
+    {
+      "weapon_id": 4,
+      "start_ms": 3740525,
+      "end_ms": 3741325,
+      "demo_seconds": 237.025,
+      "shots": 2,
+      "position": [
+        688.97,
+        -411.65,
+        88.12
+      ],
+      "yaw": 113.0,
+      "pitch": 2.42,
+      "geometry_verified": false,
+      "target_verified": false,
+      "live_enabled": false
+    },
+    {
+      "weapon_id": 4,
+      "start_ms": 3758675,
+      "end_ms": 3761075,
+      "demo_seconds": 255.175,
+      "shots": 4,
+      "position": [
+        725.35,
+        -1089.49,
+        88.12
+      ],
+      "yaw": -175.49,
+      "pitch": -46.31,
+      "geometry_verified": false,
+      "target_verified": false,
+      "live_enabled": false
+    },
+    {
+      "weapon_id": 4,
+      "start_ms": 3765750,
+      "end_ms": 3769825,
+      "demo_seconds": 262.25,
+      "shots": 6,
+      "position": [
+        -167.65,
+        -404.11,
+        408.24
+      ],
+      "yaw": 23.42,
+      "pitch": 22.22,
+      "geometry_verified": false,
+      "target_verified": false,
+      "live_enabled": false
+    },
+    {
+      "weapon_id": 8,
+      "start_ms": 3807050,
+      "end_ms": 3807650,
+      "demo_seconds": 303.55,
+      "shots": 7,
+      "position": [
+        253.3,
+        -1096.46,
+        280.29
+      ],
+      "yaw": -16.89,
+      "pitch": -0.33,
+      "geometry_verified": false,
+      "target_verified": false,
+      "live_enabled": false
+    },
+    {
+      "weapon_id": 8,
+      "start_ms": 3826325,
+      "end_ms": 3829500,
+      "demo_seconds": 322.825,
+      "shots": 24,
+      "position": [
+        255.73,
+        -1088.67,
+        280.29
+      ],
+      "yaw": -12.73,
+      "pitch": -1.9,
+      "geometry_verified": false,
+      "target_verified": false,
+      "live_enabled": false
+    },
+    {
+      "weapon_id": 8,
+      "start_ms": 3838025,
+      "end_ms": 3840925,
+      "demo_seconds": 334.525,
+      "shots": 30,
+      "position": [
+        -149.69,
+        37.63,
+        537.12
+      ],
+      "yaw": -120.88,
+      "pitch": 8.65,
+      "geometry_verified": false,
+      "target_verified": false,
+      "live_enabled": false
+    },
+    {
+      "weapon_id": 8,
+      "start_ms": 3844350,
+      "end_ms": 3845350,
+      "demo_seconds": 340.85,
+      "shots": 11,
+      "position": [
+        -163.79,
+        36.74,
+        537.12
+      ],
+      "yaw": -121.1,
+      "pitch": 7.93,
+      "geometry_verified": false,
+      "target_verified": false,
+      "live_enabled": false
+    },
+    {
+      "weapon_id": 8,
+      "start_ms": 3848775,
+      "end_ms": 3850275,
+      "demo_seconds": 345.275,
+      "shots": 16,
+      "position": [
+        -506.03,
+        311.27,
+        536.31
+      ],
+      "yaw": -99.64,
+      "pitch": 7.6,
+      "geometry_verified": false,
+      "target_verified": false,
+      "live_enabled": false
+    }
+  ],
+  "major_pickups": [
+    {
+      "time_ms": 3513050,
+      "kind": "red",
+      "position": [
+        -166.8147735595703,
+        19.489274978637695,
+        569.0547485351562
+      ]
+    },
+    {
+      "time_ms": 3522500,
+      "kind": "yellow",
+      "position": [
+        657.400634765625,
+        -960.049072265625,
+        88.125
+      ]
+    },
+    {
+      "time_ms": 3527500,
+      "kind": "mega",
+      "position": [
+        779.0306396484375,
+        -253.80308532714844,
+        89.35073852539062
+      ]
+    },
+    {
+      "time_ms": 3542150,
+      "kind": "yellow",
+      "position": [
+        199.2505340576172,
+        270.7182312011719,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3546050,
+      "kind": "red",
+      "position": [
+        -126.35481262207031,
+        -19.751134872436523,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3554800,
+      "kind": "yellow",
+      "position": [
+        699.334228515625,
+        -984.134521484375,
+        122.37123107910156
+      ]
+    },
+    {
+      "time_ms": 3567150,
+      "kind": "yellow",
+      "position": [
+        242.80059814453125,
+        237.2374267578125,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3572200,
+      "kind": "red",
+      "position": [
+        -146.68296813964844,
+        -15.04155445098877,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3581350,
+      "kind": "yellow",
+      "position": [
+        664.6307983398438,
+        -1022.0167236328125,
+        96.79338836669922
+      ]
+    },
+    {
+      "time_ms": 3584375,
+      "kind": "mega",
+      "position": [
+        761.0654907226562,
+        -255.04708862304688,
+        89.27859497070312
+      ]
+    },
+    {
+      "time_ms": 3598450,
+      "kind": "yellow",
+      "position": [
+        193.06790161132812,
+        259.6671447753906,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3602575,
+      "kind": "red",
+      "position": [
+        -124.88660430908203,
+        -13.69997501373291,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3611500,
+      "kind": "yellow",
+      "position": [
+        679.8942260742188,
+        -1023.2440795898438,
+        88.125
+      ]
+    },
+    {
+      "time_ms": 3623450,
+      "kind": "yellow",
+      "position": [
+        202.57264709472656,
+        238.52117919921875,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3630800,
+      "kind": "mega",
+      "position": [
+        755.824462890625,
+        -188.94076538085938,
+        89.931396484375
+      ]
+    },
+    {
+      "time_ms": 3638050,
+      "kind": "red",
+      "position": [
+        -175.45803833007812,
+        -2.02360200881958,
+        571.3589477539062
+      ]
+    },
+    {
+      "time_ms": 3645025,
+      "kind": "yellow",
+      "position": [
+        680.4227294921875,
+        -1022.360107421875,
+        88.125
+      ]
+    },
+    {
+      "time_ms": 3653250,
+      "kind": "yellow",
+      "position": [
+        190.2659149169922,
+        272.7686462402344,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3663050,
+      "kind": "red",
+      "position": [
+        -140.8394012451172,
+        37.648101806640625,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3672525,
+      "kind": "yellow",
+      "position": [
+        651.7832641601562,
+        -1018.1126098632812,
+        117.07491302490234
+      ]
+    },
+    {
+      "time_ms": 3675850,
+      "kind": "mega",
+      "position": [
+        750.446533203125,
+        -190.81365966796875,
+        90.125
+      ]
+    },
+    {
+      "time_ms": 3695975,
+      "kind": "yellow",
+      "position": [
+        229.64620971679688,
+        270.3286437988281,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3699900,
+      "kind": "red",
+      "position": [
+        -125.25813293457031,
+        -7.198574542999268,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3704800,
+      "kind": "yellow",
+      "position": [
+        654.2391357421875,
+        -956.1925659179688,
+        88.125
+      ]
+    },
+    {
+      "time_ms": 3711850,
+      "kind": "mega",
+      "position": [
+        773.3159790039062,
+        -256.6709899902344,
+        89.20358276367188
+      ]
+    },
+    {
+      "time_ms": 3722600,
+      "kind": "yellow",
+      "position": [
+        189.55502319335938,
+        237.40036010742188,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3726700,
+      "kind": "red",
+      "position": [
+        -129.7189483642578,
+        -16.227123260498047,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3735025,
+      "kind": "yellow",
+      "position": [
+        668.5994873046875,
+        -1020.5702514648438,
+        114.91818237304688
+      ]
+    },
+    {
+      "time_ms": 3748925,
+      "kind": "yellow",
+      "position": [
+        218.8702392578125,
+        270.3464050292969,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3755025,
+      "kind": "mega",
+      "position": [
+        750.8316650390625,
+        -195.01039123535156,
+        121.06444549560547
+      ]
+    },
+    {
+      "time_ms": 3761625,
+      "kind": "yellow",
+      "position": [
+        705.0640869140625,
+        -997.872802734375,
+        88.125
+      ]
+    },
+    {
+      "time_ms": 3772250,
+      "kind": "red",
+      "position": [
+        -175.9896697998047,
+        26.409753799438477,
+        569.5311889648438
+      ]
+    },
+    {
+      "time_ms": 3786775,
+      "kind": "yellow",
+      "position": [
+        663.1365966796875,
+        -1023.668701171875,
+        88.19019317626953
+      ]
+    },
+    {
+      "time_ms": 3800875,
+      "kind": "mega",
+      "position": [
+        751.2227172851562,
+        -226.80404663085938,
+        90.125
+      ]
+    },
+    {
+      "time_ms": 3837350,
+      "kind": "red",
+      "position": [
+        -124.10041046142578,
+        -14.262381553649902,
+        547.0699462890625
+      ]
+    },
+    {
+      "time_ms": 3856250,
+      "kind": "yellow",
+      "position": [
+        214.95677185058594,
+        272.1212158203125,
+        537.125
+      ]
+    },
+    {
+      "time_ms": 3863600,
+      "kind": "mega",
+      "position": [
+        786.7478637695312,
+        -219.07171630859375,
+        124.59944915771484
+      ]
+    },
+    {
+      "time_ms": 3885325,
+      "kind": "yellow",
+      "position": [
+        658.0416870117188,
+        -960.2326049804688,
+        88.125
+      ]
+    }
+  ],
+  "spin_candidates": [
+    {
+      "start_ms": 3572550,
+      "end_ms": 3574375,
+      "sweep_deg": -356.9,
+      "position": [
+        -437.5066833496094,
+        -866.5662841796875,
+        408.125
+      ]
+    },
+    {
+      "start_ms": 3640325,
+      "end_ms": 3642325,
+      "sweep_deg": -364.5,
+      "position": [
+        291.2792663574219,
+        -972.142822265625,
+        387.83734130859375
+      ]
+    },
+    {
+      "start_ms": 3646125,
+      "end_ms": 3648125,
+      "sweep_deg": -354.0,
+      "position": [
+        722.2883911132812,
+        267.71258544921875,
+        88.125
+      ]
+    }
+  ],
+  "raw_input_verified": false,
+  "limits": [
+    "This owner demonstration is not a pro duel and has no match scoreboard",
+    "View direction is not verified target or projectile collision",
+    "User-specified GL conditions require opponent location confidence and no fast closing path before any live activation"
+  ]
+}

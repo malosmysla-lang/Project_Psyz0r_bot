@@ -5,6 +5,14 @@
 #include "../adapter/native/psyz_nav_recovery.h"
 static void check(bool ok,const char *message){if(!ok)throw std::runtime_error(message);}
 int main(){try{
+ PsyzMotionWatch motion;Psyz_MotionReset(&motion);float still[3]={1,2,3};
+ for(int t=0;t<1800;t+=100)check(!Psyz_MotionStalled(&motion,t,still,1,0),"Motion watch allows initial movement window");
+ check(Psyz_MotionStalled(&motion,1800,still,1,0),"Independent motion stall survives item-target churn");
+ Psyz_MotionReset(&motion);
+ for(int t=0;t<=6000;t+=100){still[0]=t*.2f;check(!Psyz_MotionStalled(&motion,t,still,1,0),"Real route movement never triggers stationary escape");}
+ Psyz_MotionReset(&motion);still[0]=0;int fired=0;
+ for(int t=0;t<=6500;t+=100)fired+=Psyz_MotionStalled(&motion,t,still,1,1);
+ check(fired==1,"Combat hold is finite even if firing never stops");
  PsyzNavRecovery s;Psyz_NavReset(&s);float p[3]={0,0,0};
  check(Psyz_NavUpdate(&s,10,0,p,100,0,1,0,0)==0,"Start route");
  p[0]=128;check(Psyz_NavUpdate(&s,10,5500,p,200,0,1,0,0)==0,"Detour away from goal is valid new territory");

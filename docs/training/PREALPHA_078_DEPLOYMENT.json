@@ -1,0 +1,43 @@
+{
+  "version": "0.7.8",
+  "backup": "/home/qlserver/backups/psyz-078-20261019T182430Z",
+  "primary_pid": "415921",
+  "test_pid": "422762",
+  "files": {
+    "minqlx_nopy.so": "d2c9252430da1b0c92d05fe8e134f3d3e97c1ed0e6a2793977f0940f21d3da79",
+    "psyz_chat.py": "5ab7329b2d33bf7bd830fb26f36cef681c0524230fa8acb40dbfd3f54ad83685",
+    "zzz_psyz_profile.pk3": "239b2b92850e8e4b1ee682b972c6b5160718c56b642d78c81eeba0a39e8a5455",
+    "psyz_test.cfg": "6e9e8f1fe99e2854ebf7d8d52b2df604ee86db90d2912fdde04250288b99edc9"
+  },
+  "settings": {
+    "qlx_psyzVersion": "0.7.8",
+    "qlx_psyzAllWeaponAim": "1",
+    "qlx_psyzAimHumanize": "1",
+    "bot_nochat": "1",
+    "qlx_psyzAcc2Base": "29.9",
+    "qlx_psyzAcc2Min": "22.4",
+    "qlx_psyzAcc2Max": "37.4",
+    "qlx_psyzAcc3Base": "24.3",
+    "qlx_psyzAcc3Min": "16.8",
+    "qlx_psyzAcc3Max": "31.8",
+    "qlx_psyzAcc5Base": "29.1",
+    "qlx_psyzAcc5Min": "21.6",
+    "qlx_psyzAcc5Max": "36.6",
+    "qlx_psyzAcc6Base": "32.7",
+    "qlx_psyzAcc6Min": "25.2",
+    "qlx_psyzAcc6Max": "40.2",
+    "qlx_psyzAcc7Base": "43",
+    "qlx_psyzAcc7Min": "35.5",
+    "qlx_psyzAcc7Max": "50.5",
+    "qlx_psyzAcc8Base": "10.2",
+    "qlx_psyzAcc8Min": "2.7",
+    "qlx_psyzAcc8Max": "17.7",
+    "qlx_psyzAimError2": "0.35",
+    "qlx_psyzAimError3": "0.6",
+    "qlx_psyzAimError5": "0.8",
+    "qlx_psyzAimError6": "1.25",
+    "qlx_psyzAimError7": "0.35",
+    "qlx_psyzAimError8": "3.0"
+  },
+  "gameplay_verified": false
+}

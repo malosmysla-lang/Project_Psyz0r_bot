@@ -25,3 +25,13 @@ assert(!nodes['#branches'].innerHTML.includes('<code>A01</code>'));
 assert(vm.runInContext("esc('<img src=x onerror=alert(1)>')",context).startsWith('&lt;img'));
 for(const src of [...fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll(/(?:src|href)="([^"]+)"/g)].map(x=>x[1]))if(!src.startsWith('#')&&!src.startsWith('http'))assert(fs.existsSync(path.resolve(root,decodeURI(src))),src);
 console.log('Offline dashboard: full rule coverage, search, status filtering, escaping, asset links passed');
+const exported=path.join(root,'Psyz0r_Analytics_0_7_8.html');
+if(fs.existsSync(exported)){
+ const html=fs.readFileSync(exported,'utf8');
+ assert(!html.includes('<script src=')&&!html.includes('<link rel="stylesheet"'));
+ const standalone={window:{},document:context.document};vm.createContext(standalone);
+ for(const match of html.matchAll(/<script>([\s\S]*?)<\/script>/g))vm.runInContext(match[1],standalone);
+ assert.equal(standalone.window.PSYZ_ANALYTICS.registry.rule_count,data.registry.rule_count);
+ assert.equal(standalone.window.PSYZ_ANALYTICS.winnerAccuracy.table.find(x=>x.weapon_id===2).mean_match_accuracy,29.9);
+ console.log('Standalone HTML: embedded scripts executed; current rules and MG statistic verified');
+}

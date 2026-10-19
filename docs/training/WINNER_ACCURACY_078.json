@@ -1,0 +1,7735 @@
+{
+  "parsed_demos": 500,
+  "matches_with_verified_winner": 478,
+  "table": [
+    {
+      "weapon_id": 1,
+      "weapon": "gauntlet",
+      "observations": 0,
+      "shots": 0,
+      "hits": 0,
+      "mean_match_accuracy": null,
+      "pooled_accuracy": null,
+      "min_accuracy": null,
+      "max_accuracy": null,
+      "eligible_for_aim_profile": false
+    },
+    {
+      "weapon_id": 2,
+      "weapon": "machinegun",
+      "observations": 131,
+      "shots": 5195,
+      "hits": 1700,
+      "mean_match_accuracy": 29.9,
+      "pooled_accuracy": 32.72,
+      "min_accuracy": 22.4,
+      "max_accuracy": 37.4,
+      "eligible_for_aim_profile": true
+    },
+    {
+      "weapon_id": 3,
+      "weapon": "shotgun",
+      "observations": 49,
+      "shots": 2280,
+      "hits": 525,
+      "mean_match_accuracy": 24.3,
+      "pooled_accuracy": 23.03,
+      "min_accuracy": 16.8,
+      "max_accuracy": 31.8,
+      "eligible_for_aim_profile": true
+    },
+    {
+      "weapon_id": 5,
+      "weapon": "rocketLauncher",
+      "observations": 169,
+      "shots": 13500,
+      "hits": 3998,
+      "mean_match_accuracy": 29.1,
+      "pooled_accuracy": 29.61,
+      "min_accuracy": 21.6,
+      "max_accuracy": 36.6,
+      "eligible_for_aim_profile": true
+    },
+    {
+      "weapon_id": 6,
+      "weapon": "lightningGun",
+      "observations": 169,
+      "shots": 76887,
+      "hits": 25617,
+      "mean_match_accuracy": 32.7,
+      "pooled_accuracy": 33.32,
+      "min_accuracy": 25.2,
+      "max_accuracy": 40.2,
+      "eligible_for_aim_profile": true
+    },
+    {
+      "weapon_id": 7,
+      "weapon": "railgun",
+      "observations": 169,
+      "shots": 4403,
+      "hits": 1979,
+      "mean_match_accuracy": 43,
+      "pooled_accuracy": 44.95,
+      "min_accuracy": 35.5,
+      "max_accuracy": 50.5,
+      "eligible_for_aim_profile": true
+    },
+    {
+      "weapon_id": 8,
+      "weapon": "plasmaGun",
+      "observations": 160,
+      "shots": 12159,
+      "hits": 1478,
+      "mean_match_accuracy": 10.2,
+      "pooled_accuracy": 12.16,
+      "min_accuracy": 2.7,
+      "max_accuracy": 17.7,
+      "eligible_for_aim_profile": true
+    },
+    {
+      "weapon_id": 9,
+      "weapon": "bfg",
+      "observations": 0,
+      "shots": 0,
+      "hits": 0,
+      "mean_match_accuracy": null,
+      "pooled_accuracy": null,
+      "min_accuracy": null,
+      "max_accuracy": null,
+      "eligible_for_aim_profile": false
+    }
+  ],
+  "observations": [
+    {
+      "demo_id": "119",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 83,
+      "hits": 33,
+      "accuracy": 39,
+      "damage": 1768
+    },
+    {
+      "demo_id": "119",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 427,
+      "hits": 158,
+      "accuracy": 37,
+      "damage": 1106
+    },
+    {
+      "demo_id": "119",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 23,
+      "hits": 16,
+      "accuracy": 69,
+      "damage": 1280
+    },
+    {
+      "demo_id": "119",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 81,
+      "hits": 2,
+      "accuracy": 2,
+      "damage": 40
+    },
+    {
+      "demo_id": "1198",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 104,
+      "hits": 21,
+      "accuracy": 20,
+      "damage": 873
+    },
+    {
+      "demo_id": "1198",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 398,
+      "hits": 134,
+      "accuracy": 33,
+      "damage": 936
+    },
+    {
+      "demo_id": "1198",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 15,
+      "accuracy": 46,
+      "damage": 1171
+    },
+    {
+      "demo_id": "1208",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 104,
+      "hits": 21,
+      "accuracy": 20,
+      "damage": 873
+    },
+    {
+      "demo_id": "1208",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 398,
+      "hits": 134,
+      "accuracy": 33,
+      "damage": 936
+    },
+    {
+      "demo_id": "1208",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 15,
+      "accuracy": 46,
+      "damage": 1171
+    },
+    {
+      "demo_id": "1245",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 40,
+      "hits": 14,
+      "accuracy": 35,
+      "damage": 45
+    },
+    {
+      "demo_id": "1245",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 81,
+      "hits": 22,
+      "accuracy": 27,
+      "damage": 1088
+    },
+    {
+      "demo_id": "1245",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 563,
+      "hits": 206,
+      "accuracy": 36,
+      "damage": 1392
+    },
+    {
+      "demo_id": "1245",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 53,
+      "hits": 19,
+      "accuracy": 35,
+      "damage": 1424
+    },
+    {
+      "demo_id": "1245",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 11,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "1251",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 40,
+      "hits": 14,
+      "accuracy": 35,
+      "damage": 45
+    },
+    {
+      "demo_id": "1251",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 81,
+      "hits": 22,
+      "accuracy": 27,
+      "damage": 1088
+    },
+    {
+      "demo_id": "1251",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 563,
+      "hits": 206,
+      "accuracy": 36,
+      "damage": 1392
+    },
+    {
+      "demo_id": "1251",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 53,
+      "hits": 19,
+      "accuracy": 35,
+      "damage": 1424
+    },
+    {
+      "demo_id": "1251",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 11,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "1291",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 15,
+      "accuracy": 18,
+      "damage": 63
+    },
+    {
+      "demo_id": "1291",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 96,
+      "hits": 33,
+      "accuracy": 34,
+      "damage": 1528
+    },
+    {
+      "demo_id": "1291",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 474,
+      "hits": 169,
+      "accuracy": 35,
+      "damage": 1160
+    },
+    {
+      "demo_id": "1291",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 29,
+      "hits": 17,
+      "accuracy": 58,
+      "damage": 1192
+    },
+    {
+      "demo_id": "1291",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 76,
+      "hits": 8,
+      "accuracy": 10,
+      "damage": 155
+    },
+    {
+      "demo_id": "1293",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 6,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "1293",
+      "winner": "cypher",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 2,
+      "accuracy": 10,
+      "damage": 10
+    },
+    {
+      "demo_id": "1293",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 62,
+      "hits": 10,
+      "accuracy": 16,
+      "damage": 374
+    },
+    {
+      "demo_id": "1293",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 530,
+      "hits": 128,
+      "accuracy": 24,
+      "damage": 896
+    },
+    {
+      "demo_id": "1293",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 9,
+      "accuracy": 28,
+      "damage": 720
+    },
+    {
+      "demo_id": "1293",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 151,
+      "hits": 20,
+      "accuracy": 13,
+      "damage": 345
+    },
+    {
+      "demo_id": "1299",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 6,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "1299",
+      "winner": "cypher",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 2,
+      "accuracy": 10,
+      "damage": 10
+    },
+    {
+      "demo_id": "1299",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 62,
+      "hits": 10,
+      "accuracy": 16,
+      "damage": 374
+    },
+    {
+      "demo_id": "1299",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 530,
+      "hits": 128,
+      "accuracy": 24,
+      "damage": 896
+    },
+    {
+      "demo_id": "1299",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 9,
+      "accuracy": 28,
+      "damage": 720
+    },
+    {
+      "demo_id": "1299",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 151,
+      "hits": 20,
+      "accuracy": 13,
+      "damage": 345
+    },
+    {
+      "demo_id": "13",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 67,
+      "hits": 18,
+      "accuracy": 26,
+      "damage": 1300
+    },
+    {
+      "demo_id": "13",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 358,
+      "hits": 128,
+      "accuracy": 35,
+      "damage": 896
+    },
+    {
+      "demo_id": "13",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 48,
+      "hits": 26,
+      "accuracy": 54,
+      "damage": 2080
+    },
+    {
+      "demo_id": "13",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 244,
+      "hits": 21,
+      "accuracy": 8,
+      "damage": 333
+    },
+    {
+      "demo_id": "1303",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 78,
+      "hits": 24,
+      "accuracy": 30,
+      "damage": 1221
+    },
+    {
+      "demo_id": "1303",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 319,
+      "hits": 130,
+      "accuracy": 40,
+      "damage": 909
+    },
+    {
+      "demo_id": "1303",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 27,
+      "hits": 15,
+      "accuracy": 55,
+      "damage": 883
+    },
+    {
+      "demo_id": "1303",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 220,
+      "hits": 43,
+      "accuracy": 19,
+      "damage": 763
+    },
+    {
+      "demo_id": "1306",
+      "winner": "dahang",
+      "weapon": 2,
+      "shots": 4,
+      "hits": 1,
+      "accuracy": 25,
+      "damage": 5
+    },
+    {
+      "demo_id": "1306",
+      "winner": "dahang",
+      "weapon": 5,
+      "shots": 99,
+      "hits": 36,
+      "accuracy": 36,
+      "damage": 1481
+    },
+    {
+      "demo_id": "1306",
+      "winner": "dahang",
+      "weapon": 6,
+      "shots": 123,
+      "hits": 61,
+      "accuracy": 49,
+      "damage": 427
+    },
+    {
+      "demo_id": "1306",
+      "winner": "dahang",
+      "weapon": 7,
+      "shots": 11,
+      "hits": 7,
+      "accuracy": 63,
+      "damage": 560
+    },
+    {
+      "demo_id": "1306",
+      "winner": "dahang",
+      "weapon": 8,
+      "shots": 92,
+      "hits": 12,
+      "accuracy": 13,
+      "damage": 187
+    },
+    {
+      "demo_id": "1313",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 78,
+      "hits": 24,
+      "accuracy": 30,
+      "damage": 1221
+    },
+    {
+      "demo_id": "1313",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 319,
+      "hits": 130,
+      "accuracy": 40,
+      "damage": 909
+    },
+    {
+      "demo_id": "1313",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 27,
+      "hits": 15,
+      "accuracy": 55,
+      "damage": 883
+    },
+    {
+      "demo_id": "1313",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 220,
+      "hits": 43,
+      "accuracy": 19,
+      "damage": 763
+    },
+    {
+      "demo_id": "1328",
+      "winner": "dahang",
+      "weapon": 2,
+      "shots": 4,
+      "hits": 1,
+      "accuracy": 25,
+      "damage": 5
+    },
+    {
+      "demo_id": "1328",
+      "winner": "dahang",
+      "weapon": 5,
+      "shots": 99,
+      "hits": 36,
+      "accuracy": 36,
+      "damage": 1481
+    },
+    {
+      "demo_id": "1328",
+      "winner": "dahang",
+      "weapon": 6,
+      "shots": 123,
+      "hits": 61,
+      "accuracy": 49,
+      "damage": 427
+    },
+    {
+      "demo_id": "1328",
+      "winner": "dahang",
+      "weapon": 7,
+      "shots": 11,
+      "hits": 7,
+      "accuracy": 63,
+      "damage": 560
+    },
+    {
+      "demo_id": "1328",
+      "winner": "dahang",
+      "weapon": 8,
+      "shots": 92,
+      "hits": 12,
+      "accuracy": 13,
+      "damage": 187
+    },
+    {
+      "demo_id": "1342",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 74,
+      "hits": 40,
+      "accuracy": 54,
+      "damage": 199
+    },
+    {
+      "demo_id": "1342",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 8,
+      "accuracy": 40,
+      "damage": 39
+    },
+    {
+      "demo_id": "1342",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 91,
+      "hits": 23,
+      "accuracy": 25,
+      "damage": 1064
+    },
+    {
+      "demo_id": "1342",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 555,
+      "hits": 195,
+      "accuracy": 35,
+      "damage": 1358
+    },
+    {
+      "demo_id": "1342",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 14,
+      "hits": 5,
+      "accuracy": 35,
+      "damage": 342
+    },
+    {
+      "demo_id": "1342",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 17,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "1359",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 15,
+      "accuracy": 18,
+      "damage": 63
+    },
+    {
+      "demo_id": "1359",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 96,
+      "hits": 33,
+      "accuracy": 34,
+      "damage": 1528
+    },
+    {
+      "demo_id": "1359",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 474,
+      "hits": 169,
+      "accuracy": 35,
+      "damage": 1160
+    },
+    {
+      "demo_id": "1359",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 29,
+      "hits": 17,
+      "accuracy": 58,
+      "damage": 1192
+    },
+    {
+      "demo_id": "1359",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 76,
+      "hits": 8,
+      "accuracy": 10,
+      "damage": 155
+    },
+    {
+      "demo_id": "1368",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 74,
+      "hits": 40,
+      "accuracy": 54,
+      "damage": 199
+    },
+    {
+      "demo_id": "1368",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 8,
+      "accuracy": 40,
+      "damage": 39
+    },
+    {
+      "demo_id": "1368",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 91,
+      "hits": 23,
+      "accuracy": 25,
+      "damage": 1064
+    },
+    {
+      "demo_id": "1368",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 555,
+      "hits": 195,
+      "accuracy": 35,
+      "damage": 1358
+    },
+    {
+      "demo_id": "1368",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 14,
+      "hits": 5,
+      "accuracy": 35,
+      "damage": 342
+    },
+    {
+      "demo_id": "1368",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 17,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "141",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 67,
+      "hits": 29,
+      "accuracy": 43,
+      "damage": 145
+    },
+    {
+      "demo_id": "141",
+      "winner": "k1llsen",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 1,
+      "accuracy": 5,
+      "damage": 5
+    },
+    {
+      "demo_id": "141",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 60,
+      "hits": 14,
+      "accuracy": 23,
+      "damage": 598
+    },
+    {
+      "demo_id": "141",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 249,
+      "hits": 87,
+      "accuracy": 34,
+      "damage": 609
+    },
+    {
+      "demo_id": "141",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 19,
+      "hits": 11,
+      "accuracy": 57,
+      "damage": 880
+    },
+    {
+      "demo_id": "141",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 183,
+      "hits": 24,
+      "accuracy": 13,
+      "damage": 428
+    },
+    {
+      "demo_id": "2992",
+      "winner": "avekkk",
+      "weapon": 2,
+      "shots": 11,
+      "hits": 2,
+      "accuracy": 18,
+      "damage": 10
+    },
+    {
+      "demo_id": "2992",
+      "winner": "avekkk",
+      "weapon": 5,
+      "shots": 96,
+      "hits": 29,
+      "accuracy": 30,
+      "damage": 1509
+    },
+    {
+      "demo_id": "2992",
+      "winner": "avekkk",
+      "weapon": 6,
+      "shots": 113,
+      "hits": 45,
+      "accuracy": 39,
+      "damage": 315
+    },
+    {
+      "demo_id": "2992",
+      "winner": "avekkk",
+      "weapon": 7,
+      "shots": 24,
+      "hits": 9,
+      "accuracy": 37,
+      "damage": 720
+    },
+    {
+      "demo_id": "3006",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 103,
+      "hits": 27,
+      "accuracy": 26,
+      "damage": 971
+    },
+    {
+      "demo_id": "3006",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 438,
+      "hits": 77,
+      "accuracy": 17,
+      "damage": 539
+    },
+    {
+      "demo_id": "3006",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 17,
+      "hits": 5,
+      "accuracy": 29,
+      "damage": 400
+    },
+    {
+      "demo_id": "3006",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 171,
+      "hits": 9,
+      "accuracy": 5,
+      "damage": 141
+    },
+    {
+      "demo_id": "3024",
+      "winner": "avekkk",
+      "weapon": 2,
+      "shots": 11,
+      "hits": 2,
+      "accuracy": 18,
+      "damage": 10
+    },
+    {
+      "demo_id": "3024",
+      "winner": "avekkk",
+      "weapon": 5,
+      "shots": 96,
+      "hits": 29,
+      "accuracy": 30,
+      "damage": 1509
+    },
+    {
+      "demo_id": "3024",
+      "winner": "avekkk",
+      "weapon": 6,
+      "shots": 113,
+      "hits": 45,
+      "accuracy": 39,
+      "damage": 315
+    },
+    {
+      "demo_id": "3024",
+      "winner": "avekkk",
+      "weapon": 7,
+      "shots": 24,
+      "hits": 9,
+      "accuracy": 37,
+      "damage": 720
+    },
+    {
+      "demo_id": "3027",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 103,
+      "hits": 27,
+      "accuracy": 26,
+      "damage": 971
+    },
+    {
+      "demo_id": "3027",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 438,
+      "hits": 77,
+      "accuracy": 17,
+      "damage": 539
+    },
+    {
+      "demo_id": "3027",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 17,
+      "hits": 5,
+      "accuracy": 29,
+      "damage": 400
+    },
+    {
+      "demo_id": "3027",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 171,
+      "hits": 9,
+      "accuracy": 5,
+      "damage": 141
+    },
+    {
+      "demo_id": "3033",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 86,
+      "hits": 33,
+      "accuracy": 38,
+      "damage": 1981
+    },
+    {
+      "demo_id": "3033",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 400,
+      "hits": 129,
+      "accuracy": 32,
+      "damage": 903
+    },
+    {
+      "demo_id": "3033",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 41,
+      "hits": 17,
+      "accuracy": 41,
+      "damage": 1360
+    },
+    {
+      "demo_id": "3033",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 28,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "3053",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 86,
+      "hits": 33,
+      "accuracy": 38,
+      "damage": 1981
+    },
+    {
+      "demo_id": "3053",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 400,
+      "hits": 129,
+      "accuracy": 32,
+      "damage": 903
+    },
+    {
+      "demo_id": "3053",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 41,
+      "hits": 17,
+      "accuracy": 41,
+      "damage": 1360
+    },
+    {
+      "demo_id": "3053",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 28,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "3055",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 81,
+      "hits": 23,
+      "accuracy": 28,
+      "damage": 1011
+    },
+    {
+      "demo_id": "3055",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 638,
+      "hits": 206,
+      "accuracy": 32,
+      "damage": 1442
+    },
+    {
+      "demo_id": "3055",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 15,
+      "hits": 4,
+      "accuracy": 26,
+      "damage": 320
+    },
+    {
+      "demo_id": "3055",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 93,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "3059",
+      "winner": "cooller",
+      "weapon": 2,
+      "shots": 14,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "3059",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 57,
+      "hits": 18,
+      "accuracy": 31,
+      "damage": 813
+    },
+    {
+      "demo_id": "3059",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 99,
+      "hits": 23,
+      "accuracy": 23,
+      "damage": 161
+    },
+    {
+      "demo_id": "3059",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 17,
+      "hits": 8,
+      "accuracy": 47,
+      "damage": 640
+    },
+    {
+      "demo_id": "3059",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 44,
+      "hits": 1,
+      "accuracy": 2,
+      "damage": 20
+    },
+    {
+      "demo_id": "3067",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 81,
+      "hits": 23,
+      "accuracy": 28,
+      "damage": 1011
+    },
+    {
+      "demo_id": "3067",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 638,
+      "hits": 206,
+      "accuracy": 32,
+      "damage": 1442
+    },
+    {
+      "demo_id": "3067",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 15,
+      "hits": 4,
+      "accuracy": 26,
+      "damage": 320
+    },
+    {
+      "demo_id": "3067",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 93,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "3070",
+      "winner": "rzr_srs_cypher",
+      "weapon": 2,
+      "shots": 2,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "3070",
+      "winner": "rzr_srs_cypher",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 18,
+      "accuracy": 22,
+      "damage": 90
+    },
+    {
+      "demo_id": "3070",
+      "winner": "rzr_srs_cypher",
+      "weapon": 5,
+      "shots": 121,
+      "hits": 22,
+      "accuracy": 18,
+      "damage": 834
+    },
+    {
+      "demo_id": "3070",
+      "winner": "rzr_srs_cypher",
+      "weapon": 6,
+      "shots": 295,
+      "hits": 101,
+      "accuracy": 34,
+      "damage": 707
+    },
+    {
+      "demo_id": "3070",
+      "winner": "rzr_srs_cypher",
+      "weapon": 7,
+      "shots": 30,
+      "hits": 11,
+      "accuracy": 36,
+      "damage": 880
+    },
+    {
+      "demo_id": "3070",
+      "winner": "rzr_srs_cypher",
+      "weapon": 8,
+      "shots": 128,
+      "hits": 24,
+      "accuracy": 18,
+      "damage": 383
+    },
+    {
+      "demo_id": "3071",
+      "winner": "rzr_srs_cypher",
+      "weapon": 2,
+      "shots": 52,
+      "hits": 13,
+      "accuracy": 25,
+      "damage": 65
+    },
+    {
+      "demo_id": "3071",
+      "winner": "rzr_srs_cypher",
+      "weapon": 5,
+      "shots": 98,
+      "hits": 26,
+      "accuracy": 26,
+      "damage": 1034
+    },
+    {
+      "demo_id": "3071",
+      "winner": "rzr_srs_cypher",
+      "weapon": 6,
+      "shots": 538,
+      "hits": 159,
+      "accuracy": 29,
+      "damage": 1113
+    },
+    {
+      "demo_id": "3071",
+      "winner": "rzr_srs_cypher",
+      "weapon": 7,
+      "shots": 15,
+      "hits": 7,
+      "accuracy": 46,
+      "damage": 560
+    },
+    {
+      "demo_id": "3071",
+      "winner": "rzr_srs_cypher",
+      "weapon": 8,
+      "shots": 78,
+      "hits": 14,
+      "accuracy": 17,
+      "damage": 249
+    },
+    {
+      "demo_id": "3080",
+      "winner": "cooller",
+      "weapon": 2,
+      "shots": 14,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "3080",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 57,
+      "hits": 18,
+      "accuracy": 31,
+      "damage": 813
+    },
+    {
+      "demo_id": "3080",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 99,
+      "hits": 23,
+      "accuracy": 23,
+      "damage": 161
+    },
+    {
+      "demo_id": "3080",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 17,
+      "hits": 8,
+      "accuracy": 47,
+      "damage": 640
+    },
+    {
+      "demo_id": "3080",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 44,
+      "hits": 1,
+      "accuracy": 2,
+      "damage": 20
+    },
+    {
+      "demo_id": "3082",
+      "winner": "rzr_srs_cypher",
+      "weapon": 2,
+      "shots": 2,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "3082",
+      "winner": "rzr_srs_cypher",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 18,
+      "accuracy": 22,
+      "damage": 90
+    },
+    {
+      "demo_id": "3082",
+      "winner": "rzr_srs_cypher",
+      "weapon": 5,
+      "shots": 121,
+      "hits": 22,
+      "accuracy": 18,
+      "damage": 834
+    },
+    {
+      "demo_id": "3082",
+      "winner": "rzr_srs_cypher",
+      "weapon": 6,
+      "shots": 295,
+      "hits": 101,
+      "accuracy": 34,
+      "damage": 707
+    },
+    {
+      "demo_id": "3082",
+      "winner": "rzr_srs_cypher",
+      "weapon": 7,
+      "shots": 30,
+      "hits": 11,
+      "accuracy": 36,
+      "damage": 880
+    },
+    {
+      "demo_id": "3082",
+      "winner": "rzr_srs_cypher",
+      "weapon": 8,
+      "shots": 128,
+      "hits": 24,
+      "accuracy": 18,
+      "damage": 383
+    },
+    {
+      "demo_id": "3093",
+      "winner": "rzr_srs_cypher",
+      "weapon": 2,
+      "shots": 52,
+      "hits": 13,
+      "accuracy": 25,
+      "damage": 65
+    },
+    {
+      "demo_id": "3093",
+      "winner": "rzr_srs_cypher",
+      "weapon": 5,
+      "shots": 98,
+      "hits": 26,
+      "accuracy": 26,
+      "damage": 1034
+    },
+    {
+      "demo_id": "3093",
+      "winner": "rzr_srs_cypher",
+      "weapon": 6,
+      "shots": 538,
+      "hits": 159,
+      "accuracy": 29,
+      "damage": 1113
+    },
+    {
+      "demo_id": "3093",
+      "winner": "rzr_srs_cypher",
+      "weapon": 7,
+      "shots": 15,
+      "hits": 7,
+      "accuracy": 46,
+      "damage": 560
+    },
+    {
+      "demo_id": "3093",
+      "winner": "rzr_srs_cypher",
+      "weapon": 8,
+      "shots": 78,
+      "hits": 14,
+      "accuracy": 17,
+      "damage": 249
+    },
+    {
+      "demo_id": "3130",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 102,
+      "hits": 24,
+      "accuracy": 23,
+      "damage": 871
+    },
+    {
+      "demo_id": "3130",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 596,
+      "hits": 192,
+      "accuracy": 32,
+      "damage": 1344
+    },
+    {
+      "demo_id": "3130",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 19,
+      "hits": 10,
+      "accuracy": 52,
+      "damage": 800
+    },
+    {
+      "demo_id": "3130",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 56,
+      "hits": 1,
+      "accuracy": 1,
+      "damage": 20
+    },
+    {
+      "demo_id": "3133",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 102,
+      "hits": 24,
+      "accuracy": 23,
+      "damage": 871
+    },
+    {
+      "demo_id": "3133",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 596,
+      "hits": 192,
+      "accuracy": 32,
+      "damage": 1344
+    },
+    {
+      "demo_id": "3133",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 19,
+      "hits": 10,
+      "accuracy": 52,
+      "damage": 800
+    },
+    {
+      "demo_id": "3133",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 56,
+      "hits": 1,
+      "accuracy": 1,
+      "damage": 20
+    },
+    {
+      "demo_id": "3143",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 158,
+      "hits": 41,
+      "accuracy": 25,
+      "damage": 205
+    },
+    {
+      "demo_id": "3143",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 77,
+      "hits": 14,
+      "accuracy": 18,
+      "damage": 565
+    },
+    {
+      "demo_id": "3143",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 331,
+      "hits": 90,
+      "accuracy": 27,
+      "damage": 630
+    },
+    {
+      "demo_id": "3143",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 16,
+      "hits": 3,
+      "accuracy": 18,
+      "damage": 240
+    },
+    {
+      "demo_id": "3143",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 120,
+      "hits": 14,
+      "accuracy": 11,
+      "damage": 184
+    },
+    {
+      "demo_id": "3150",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 158,
+      "hits": 41,
+      "accuracy": 25,
+      "damage": 205
+    },
+    {
+      "demo_id": "3150",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 77,
+      "hits": 14,
+      "accuracy": 18,
+      "damage": 565
+    },
+    {
+      "demo_id": "3150",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 331,
+      "hits": 90,
+      "accuracy": 27,
+      "damage": 630
+    },
+    {
+      "demo_id": "3150",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 16,
+      "hits": 3,
+      "accuracy": 18,
+      "damage": 240
+    },
+    {
+      "demo_id": "3150",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 120,
+      "hits": 14,
+      "accuracy": 11,
+      "damage": 184
+    },
+    {
+      "demo_id": "3307",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 148,
+      "hits": 48,
+      "accuracy": 32,
+      "damage": 240
+    },
+    {
+      "demo_id": "3307",
+      "winner": "k1llsen",
+      "weapon": 3,
+      "shots": 100,
+      "hits": 13,
+      "accuracy": 13,
+      "damage": 92
+    },
+    {
+      "demo_id": "3307",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 78,
+      "hits": 18,
+      "accuracy": 23,
+      "damage": 945
+    },
+    {
+      "demo_id": "3307",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 143,
+      "hits": 44,
+      "accuracy": 30,
+      "damage": 308
+    },
+    {
+      "demo_id": "3307",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 18,
+      "hits": 8,
+      "accuracy": 44,
+      "damage": 640
+    },
+    {
+      "demo_id": "3307",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 35,
+      "hits": 8,
+      "accuracy": 22,
+      "damage": 136
+    },
+    {
+      "demo_id": "3320",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 84,
+      "hits": 31,
+      "accuracy": 36,
+      "damage": 155
+    },
+    {
+      "demo_id": "3320",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 102,
+      "hits": 32,
+      "accuracy": 31,
+      "damage": 1263
+    },
+    {
+      "demo_id": "3320",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 426,
+      "hits": 131,
+      "accuracy": 30,
+      "damage": 917
+    },
+    {
+      "demo_id": "3320",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 24,
+      "hits": 11,
+      "accuracy": 45,
+      "damage": 880
+    },
+    {
+      "demo_id": "3320",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 15,
+      "hits": 9,
+      "accuracy": 60,
+      "damage": 143
+    },
+    {
+      "demo_id": "3333",
+      "winner": "cooller",
+      "weapon": 2,
+      "shots": 23,
+      "hits": 8,
+      "accuracy": 34,
+      "damage": 40
+    },
+    {
+      "demo_id": "3333",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 154,
+      "hits": 43,
+      "accuracy": 27,
+      "damage": 2359
+    },
+    {
+      "demo_id": "3333",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 192,
+      "hits": 64,
+      "accuracy": 33,
+      "damage": 448
+    },
+    {
+      "demo_id": "3333",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 10,
+      "accuracy": 31,
+      "damage": 800
+    },
+    {
+      "demo_id": "3333",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 125,
+      "hits": 14,
+      "accuracy": 11,
+      "damage": 280
+    },
+    {
+      "demo_id": "3344",
+      "winner": "avekkk",
+      "weapon": 5,
+      "shots": 90,
+      "hits": 9,
+      "accuracy": 10,
+      "damage": 449
+    },
+    {
+      "demo_id": "3344",
+      "winner": "avekkk",
+      "weapon": 6,
+      "shots": 345,
+      "hits": 101,
+      "accuracy": 29,
+      "damage": 707
+    },
+    {
+      "demo_id": "3344",
+      "winner": "avekkk",
+      "weapon": 7,
+      "shots": 26,
+      "hits": 8,
+      "accuracy": 30,
+      "damage": 640
+    },
+    {
+      "demo_id": "3344",
+      "winner": "avekkk",
+      "weapon": 8,
+      "shots": 85,
+      "hits": 18,
+      "accuracy": 21,
+      "damage": 319
+    },
+    {
+      "demo_id": "3345",
+      "winner": "avekkk",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 6,
+      "accuracy": 30,
+      "damage": 34
+    },
+    {
+      "demo_id": "3345",
+      "winner": "avekkk",
+      "weapon": 5,
+      "shots": 81,
+      "hits": 23,
+      "accuracy": 28,
+      "damage": 1234
+    },
+    {
+      "demo_id": "3345",
+      "winner": "avekkk",
+      "weapon": 6,
+      "shots": 379,
+      "hits": 139,
+      "accuracy": 36,
+      "damage": 973
+    },
+    {
+      "demo_id": "3345",
+      "winner": "avekkk",
+      "weapon": 7,
+      "shots": 33,
+      "hits": 16,
+      "accuracy": 48,
+      "damage": 1280
+    },
+    {
+      "demo_id": "3345",
+      "winner": "avekkk",
+      "weapon": 8,
+      "shots": 121,
+      "hits": 14,
+      "accuracy": 11,
+      "damage": 222
+    },
+    {
+      "demo_id": "4127",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 77,
+      "hits": 28,
+      "accuracy": 36,
+      "damage": 140
+    },
+    {
+      "demo_id": "4127",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 57,
+      "hits": 18,
+      "accuracy": 31,
+      "damage": 869
+    },
+    {
+      "demo_id": "4127",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 141,
+      "hits": 48,
+      "accuracy": 34,
+      "damage": 321
+    },
+    {
+      "demo_id": "4127",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 60,
+      "hits": 29,
+      "accuracy": 48,
+      "damage": 2091
+    },
+    {
+      "demo_id": "4127",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 65,
+      "hits": 3,
+      "accuracy": 4,
+      "damage": 50
+    },
+    {
+      "demo_id": "4152",
+      "winner": "noctis",
+      "weapon": 2,
+      "shots": 42,
+      "hits": 20,
+      "accuracy": 47,
+      "damage": 100
+    },
+    {
+      "demo_id": "4152",
+      "winner": "noctis",
+      "weapon": 5,
+      "shots": 60,
+      "hits": 12,
+      "accuracy": 20,
+      "damage": 542
+    },
+    {
+      "demo_id": "4152",
+      "winner": "noctis",
+      "weapon": 6,
+      "shots": 50,
+      "hits": 21,
+      "accuracy": 42,
+      "damage": 147
+    },
+    {
+      "demo_id": "4152",
+      "winner": "noctis",
+      "weapon": 7,
+      "shots": 13,
+      "hits": 5,
+      "accuracy": 38,
+      "damage": 400
+    },
+    {
+      "demo_id": "4152",
+      "winner": "noctis",
+      "weapon": 8,
+      "shots": 85,
+      "hits": 15,
+      "accuracy": 17,
+      "damage": 282
+    },
+    {
+      "demo_id": "4156",
+      "winner": "zoot_faceit",
+      "weapon": 2,
+      "shots": 4,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "4156",
+      "winner": "zoot_faceit",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 1,
+      "accuracy": 5,
+      "damage": 1
+    },
+    {
+      "demo_id": "4156",
+      "winner": "zoot_faceit",
+      "weapon": 5,
+      "shots": 38,
+      "hits": 17,
+      "accuracy": 44,
+      "damage": 888
+    },
+    {
+      "demo_id": "4156",
+      "winner": "zoot_faceit",
+      "weapon": 6,
+      "shots": 329,
+      "hits": 118,
+      "accuracy": 35,
+      "damage": 809
+    },
+    {
+      "demo_id": "4156",
+      "winner": "zoot_faceit",
+      "weapon": 7,
+      "shots": 13,
+      "hits": 5,
+      "accuracy": 38,
+      "damage": 266
+    },
+    {
+      "demo_id": "4156",
+      "winner": "zoot_faceit",
+      "weapon": 8,
+      "shots": 15,
+      "hits": 2,
+      "accuracy": 13,
+      "damage": 21
+    },
+    {
+      "demo_id": "4162",
+      "winner": "av3k",
+      "weapon": 2,
+      "shots": 13,
+      "hits": 7,
+      "accuracy": 53,
+      "damage": 35
+    },
+    {
+      "demo_id": "4162",
+      "winner": "av3k",
+      "weapon": 5,
+      "shots": 91,
+      "hits": 27,
+      "accuracy": 29,
+      "damage": 1564
+    },
+    {
+      "demo_id": "4162",
+      "winner": "av3k",
+      "weapon": 6,
+      "shots": 403,
+      "hits": 172,
+      "accuracy": 42,
+      "damage": 1188
+    },
+    {
+      "demo_id": "4162",
+      "winner": "av3k",
+      "weapon": 7,
+      "shots": 25,
+      "hits": 7,
+      "accuracy": 28,
+      "damage": 514
+    },
+    {
+      "demo_id": "4162",
+      "winner": "av3k",
+      "weapon": 8,
+      "shots": 72,
+      "hits": 6,
+      "accuracy": 8,
+      "damage": 113
+    },
+    {
+      "demo_id": "4165",
+      "winner": "av3k",
+      "weapon": 2,
+      "shots": 8,
+      "hits": 5,
+      "accuracy": 62,
+      "damage": 25
+    },
+    {
+      "demo_id": "4165",
+      "winner": "av3k",
+      "weapon": 3,
+      "shots": 40,
+      "hits": 27,
+      "accuracy": 67,
+      "damage": 133
+    },
+    {
+      "demo_id": "4165",
+      "winner": "av3k",
+      "weapon": 5,
+      "shots": 46,
+      "hits": 11,
+      "accuracy": 23,
+      "damage": 640
+    },
+    {
+      "demo_id": "4165",
+      "winner": "av3k",
+      "weapon": 6,
+      "shots": 391,
+      "hits": 114,
+      "accuracy": 29,
+      "damage": 752
+    },
+    {
+      "demo_id": "4165",
+      "winner": "av3k",
+      "weapon": 7,
+      "shots": 21,
+      "hits": 10,
+      "accuracy": 47,
+      "damage": 653
+    },
+    {
+      "demo_id": "4165",
+      "winner": "av3k",
+      "weapon": 8,
+      "shots": 93,
+      "hits": 15,
+      "accuracy": 16,
+      "damage": 280
+    },
+    {
+      "demo_id": "4172",
+      "winner": "av3k",
+      "weapon": 2,
+      "shots": 8,
+      "hits": 5,
+      "accuracy": 62,
+      "damage": 25
+    },
+    {
+      "demo_id": "4172",
+      "winner": "av3k",
+      "weapon": 3,
+      "shots": 40,
+      "hits": 27,
+      "accuracy": 67,
+      "damage": 133
+    },
+    {
+      "demo_id": "4172",
+      "winner": "av3k",
+      "weapon": 5,
+      "shots": 46,
+      "hits": 11,
+      "accuracy": 23,
+      "damage": 640
+    },
+    {
+      "demo_id": "4172",
+      "winner": "av3k",
+      "weapon": 6,
+      "shots": 391,
+      "hits": 114,
+      "accuracy": 29,
+      "damage": 752
+    },
+    {
+      "demo_id": "4172",
+      "winner": "av3k",
+      "weapon": 7,
+      "shots": 21,
+      "hits": 10,
+      "accuracy": 47,
+      "damage": 653
+    },
+    {
+      "demo_id": "4172",
+      "winner": "av3k",
+      "weapon": 8,
+      "shots": 93,
+      "hits": 15,
+      "accuracy": 16,
+      "damage": 280
+    },
+    {
+      "demo_id": "4488",
+      "winner": "sc00t",
+      "weapon": 2,
+      "shots": 25,
+      "hits": 5,
+      "accuracy": 20,
+      "damage": 25
+    },
+    {
+      "demo_id": "4488",
+      "winner": "sc00t",
+      "weapon": 5,
+      "shots": 11,
+      "hits": 2,
+      "accuracy": 18,
+      "damage": 75
+    },
+    {
+      "demo_id": "4488",
+      "winner": "sc00t",
+      "weapon": 6,
+      "shots": 284,
+      "hits": 87,
+      "accuracy": 30,
+      "damage": 609
+    },
+    {
+      "demo_id": "4488",
+      "winner": "sc00t",
+      "weapon": 7,
+      "shots": 3,
+      "hits": 1,
+      "accuracy": 33,
+      "damage": 80
+    },
+    {
+      "demo_id": "49",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 132,
+      "hits": 24,
+      "accuracy": 18,
+      "damage": 120
+    },
+    {
+      "demo_id": "49",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 83,
+      "hits": 35,
+      "accuracy": 42,
+      "damage": 1522
+    },
+    {
+      "demo_id": "49",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 105,
+      "hits": 17,
+      "accuracy": 16,
+      "damage": 119
+    },
+    {
+      "demo_id": "49",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 6,
+      "hits": 1,
+      "accuracy": 16,
+      "damage": 80
+    },
+    {
+      "demo_id": "49",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 136,
+      "hits": 30,
+      "accuracy": 22,
+      "damage": 595
+    },
+    {
+      "demo_id": "50",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 24,
+      "hits": 10,
+      "accuracy": 41,
+      "damage": 50
+    },
+    {
+      "demo_id": "50",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 28,
+      "accuracy": 35,
+      "damage": 140
+    },
+    {
+      "demo_id": "50",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 79,
+      "hits": 30,
+      "accuracy": 37,
+      "damage": 1754
+    },
+    {
+      "demo_id": "50",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 407,
+      "hits": 176,
+      "accuracy": 43,
+      "damage": 1232
+    },
+    {
+      "demo_id": "50",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 45,
+      "hits": 29,
+      "accuracy": 64,
+      "damage": 2320
+    },
+    {
+      "demo_id": "50",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 123,
+      "hits": 38,
+      "accuracy": 30,
+      "damage": 701
+    },
+    {
+      "demo_id": "5321",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 21,
+      "hits": 13,
+      "accuracy": 61,
+      "damage": 65
+    },
+    {
+      "demo_id": "5321",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 20,
+      "accuracy": 25,
+      "damage": 61
+    },
+    {
+      "demo_id": "5321",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 91,
+      "hits": 34,
+      "accuracy": 37,
+      "damage": 1519
+    },
+    {
+      "demo_id": "5321",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 504,
+      "hits": 236,
+      "accuracy": 46,
+      "damage": 1564
+    },
+    {
+      "demo_id": "5321",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 58,
+      "hits": 37,
+      "accuracy": 63,
+      "damage": 2483
+    },
+    {
+      "demo_id": "5321",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 18,
+      "hits": 1,
+      "accuracy": 5,
+      "damage": 20
+    },
+    {
+      "demo_id": "5342",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 47,
+      "hits": 23,
+      "accuracy": 48,
+      "damage": 115
+    },
+    {
+      "demo_id": "5342",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 6,
+      "accuracy": 30,
+      "damage": 30
+    },
+    {
+      "demo_id": "5342",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 66,
+      "hits": 27,
+      "accuracy": 40,
+      "damage": 1028
+    },
+    {
+      "demo_id": "5342",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 286,
+      "hits": 112,
+      "accuracy": 39,
+      "damage": 775
+    },
+    {
+      "demo_id": "5342",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 26,
+      "hits": 12,
+      "accuracy": 46,
+      "damage": 960
+    },
+    {
+      "demo_id": "5342",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 69,
+      "hits": 8,
+      "accuracy": 11,
+      "damage": 142
+    },
+    {
+      "demo_id": "5346",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 21,
+      "hits": 13,
+      "accuracy": 61,
+      "damage": 65
+    },
+    {
+      "demo_id": "5346",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 20,
+      "accuracy": 25,
+      "damage": 61
+    },
+    {
+      "demo_id": "5346",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 91,
+      "hits": 34,
+      "accuracy": 37,
+      "damage": 1519
+    },
+    {
+      "demo_id": "5346",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 504,
+      "hits": 236,
+      "accuracy": 46,
+      "damage": 1564
+    },
+    {
+      "demo_id": "5346",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 58,
+      "hits": 37,
+      "accuracy": 63,
+      "damage": 2483
+    },
+    {
+      "demo_id": "5346",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 18,
+      "hits": 1,
+      "accuracy": 5,
+      "damage": 20
+    },
+    {
+      "demo_id": "5349",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 7,
+      "accuracy": 8,
+      "damage": 27
+    },
+    {
+      "demo_id": "5349",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 66,
+      "hits": 21,
+      "accuracy": 31,
+      "damage": 926
+    },
+    {
+      "demo_id": "5349",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 615,
+      "hits": 219,
+      "accuracy": 35,
+      "damage": 1526
+    },
+    {
+      "demo_id": "5349",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 12,
+      "hits": 4,
+      "accuracy": 33,
+      "damage": 292
+    },
+    {
+      "demo_id": "5349",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 82,
+      "hits": 9,
+      "accuracy": 10,
+      "damage": 161
+    },
+    {
+      "demo_id": "5393",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 25,
+      "hits": 9,
+      "accuracy": 36,
+      "damage": 45
+    },
+    {
+      "demo_id": "5393",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 78,
+      "hits": 20,
+      "accuracy": 25,
+      "damage": 1089
+    },
+    {
+      "demo_id": "5393",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 692,
+      "hits": 198,
+      "accuracy": 28,
+      "damage": 1378
+    },
+    {
+      "demo_id": "5393",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 25,
+      "hits": 9,
+      "accuracy": 36,
+      "damage": 609
+    },
+    {
+      "demo_id": "5393",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 48,
+      "hits": 5,
+      "accuracy": 10,
+      "damage": 81
+    },
+    {
+      "demo_id": "5397",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 47,
+      "hits": 23,
+      "accuracy": 48,
+      "damage": 115
+    },
+    {
+      "demo_id": "5397",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 6,
+      "accuracy": 30,
+      "damage": 30
+    },
+    {
+      "demo_id": "5397",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 66,
+      "hits": 27,
+      "accuracy": 40,
+      "damage": 1028
+    },
+    {
+      "demo_id": "5397",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 286,
+      "hits": 112,
+      "accuracy": 39,
+      "damage": 775
+    },
+    {
+      "demo_id": "5397",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 26,
+      "hits": 12,
+      "accuracy": 46,
+      "damage": 960
+    },
+    {
+      "demo_id": "5397",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 69,
+      "hits": 8,
+      "accuracy": 11,
+      "damage": 142
+    },
+    {
+      "demo_id": "5408",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 33,
+      "hits": 10,
+      "accuracy": 30,
+      "damage": 41
+    },
+    {
+      "demo_id": "5408",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 81,
+      "hits": 24,
+      "accuracy": 29,
+      "damage": 1290
+    },
+    {
+      "demo_id": "5408",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 371,
+      "hits": 140,
+      "accuracy": 37,
+      "damage": 973
+    },
+    {
+      "demo_id": "5408",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 48,
+      "hits": 18,
+      "accuracy": 37,
+      "damage": 1307
+    },
+    {
+      "demo_id": "5408",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 61,
+      "hits": 4,
+      "accuracy": 6,
+      "damage": 80
+    },
+    {
+      "demo_id": "5415",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 25,
+      "hits": 9,
+      "accuracy": 36,
+      "damage": 45
+    },
+    {
+      "demo_id": "5415",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 78,
+      "hits": 20,
+      "accuracy": 25,
+      "damage": 1089
+    },
+    {
+      "demo_id": "5415",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 692,
+      "hits": 198,
+      "accuracy": 28,
+      "damage": 1378
+    },
+    {
+      "demo_id": "5415",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 25,
+      "hits": 9,
+      "accuracy": 36,
+      "damage": 609
+    },
+    {
+      "demo_id": "5415",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 48,
+      "hits": 5,
+      "accuracy": 10,
+      "damage": 81
+    },
+    {
+      "demo_id": "5418",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 33,
+      "hits": 10,
+      "accuracy": 30,
+      "damage": 41
+    },
+    {
+      "demo_id": "5418",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 81,
+      "hits": 24,
+      "accuracy": 29,
+      "damage": 1290
+    },
+    {
+      "demo_id": "5418",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 371,
+      "hits": 140,
+      "accuracy": 37,
+      "damage": 973
+    },
+    {
+      "demo_id": "5418",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 48,
+      "hits": 18,
+      "accuracy": 37,
+      "damage": 1307
+    },
+    {
+      "demo_id": "5418",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 61,
+      "hits": 4,
+      "accuracy": 6,
+      "damage": 80
+    },
+    {
+      "demo_id": "5421",
+      "winner": "av3k",
+      "weapon": 2,
+      "shots": 22,
+      "hits": 5,
+      "accuracy": 22,
+      "damage": 25
+    },
+    {
+      "demo_id": "5421",
+      "winner": "av3k",
+      "weapon": 5,
+      "shots": 97,
+      "hits": 18,
+      "accuracy": 18,
+      "damage": 790
+    },
+    {
+      "demo_id": "5421",
+      "winner": "av3k",
+      "weapon": 6,
+      "shots": 1286,
+      "hits": 436,
+      "accuracy": 33,
+      "damage": 2904
+    },
+    {
+      "demo_id": "5421",
+      "winner": "av3k",
+      "weapon": 7,
+      "shots": 22,
+      "hits": 14,
+      "accuracy": 63,
+      "damage": 863
+    },
+    {
+      "demo_id": "5430",
+      "winner": "av3k",
+      "weapon": 2,
+      "shots": 22,
+      "hits": 5,
+      "accuracy": 22,
+      "damage": 25
+    },
+    {
+      "demo_id": "5430",
+      "winner": "av3k",
+      "weapon": 5,
+      "shots": 97,
+      "hits": 18,
+      "accuracy": 18,
+      "damage": 790
+    },
+    {
+      "demo_id": "5430",
+      "winner": "av3k",
+      "weapon": 6,
+      "shots": 1286,
+      "hits": 436,
+      "accuracy": 33,
+      "damage": 2904
+    },
+    {
+      "demo_id": "5430",
+      "winner": "av3k",
+      "weapon": 7,
+      "shots": 22,
+      "hits": 14,
+      "accuracy": 63,
+      "damage": 863
+    },
+    {
+      "demo_id": "5434",
+      "winner": "av3k",
+      "weapon": 2,
+      "shots": 79,
+      "hits": 23,
+      "accuracy": 29,
+      "damage": 115
+    },
+    {
+      "demo_id": "5434",
+      "winner": "av3k",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 12,
+      "accuracy": 15,
+      "damage": 60
+    },
+    {
+      "demo_id": "5434",
+      "winner": "av3k",
+      "weapon": 5,
+      "shots": 59,
+      "hits": 15,
+      "accuracy": 25,
+      "damage": 668
+    },
+    {
+      "demo_id": "5434",
+      "winner": "av3k",
+      "weapon": 6,
+      "shots": 475,
+      "hits": 186,
+      "accuracy": 39,
+      "damage": 1290
+    },
+    {
+      "demo_id": "5434",
+      "winner": "av3k",
+      "weapon": 7,
+      "shots": 17,
+      "hits": 11,
+      "accuracy": 64,
+      "damage": 751
+    },
+    {
+      "demo_id": "5434",
+      "winner": "av3k",
+      "weapon": 8,
+      "shots": 106,
+      "hits": 15,
+      "accuracy": 14,
+      "damage": 272
+    },
+    {
+      "demo_id": "5451",
+      "winner": "av3k",
+      "weapon": 2,
+      "shots": 79,
+      "hits": 23,
+      "accuracy": 29,
+      "damage": 115
+    },
+    {
+      "demo_id": "5451",
+      "winner": "av3k",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 12,
+      "accuracy": 15,
+      "damage": 60
+    },
+    {
+      "demo_id": "5451",
+      "winner": "av3k",
+      "weapon": 5,
+      "shots": 59,
+      "hits": 15,
+      "accuracy": 25,
+      "damage": 668
+    },
+    {
+      "demo_id": "5451",
+      "winner": "av3k",
+      "weapon": 6,
+      "shots": 475,
+      "hits": 186,
+      "accuracy": 39,
+      "damage": 1290
+    },
+    {
+      "demo_id": "5451",
+      "winner": "av3k",
+      "weapon": 7,
+      "shots": 17,
+      "hits": 11,
+      "accuracy": 64,
+      "damage": 751
+    },
+    {
+      "demo_id": "5451",
+      "winner": "av3k",
+      "weapon": 8,
+      "shots": 106,
+      "hits": 15,
+      "accuracy": 14,
+      "damage": 272
+    },
+    {
+      "demo_id": "5472",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 22,
+      "hits": 6,
+      "accuracy": 27,
+      "damage": 30
+    },
+    {
+      "demo_id": "5472",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 104,
+      "hits": 33,
+      "accuracy": 31,
+      "damage": 1611
+    },
+    {
+      "demo_id": "5472",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 466,
+      "hits": 203,
+      "accuracy": 43,
+      "damage": 1374
+    },
+    {
+      "demo_id": "5472",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 37,
+      "hits": 25,
+      "accuracy": 67,
+      "damage": 1712
+    },
+    {
+      "demo_id": "5472",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 24,
+      "hits": 1,
+      "accuracy": 4,
+      "damage": 20
+    },
+    {
+      "demo_id": "5477",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 20,
+      "hits": 10,
+      "accuracy": 50,
+      "damage": 43
+    },
+    {
+      "demo_id": "5477",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 67,
+      "hits": 20,
+      "accuracy": 29,
+      "damage": 1007
+    },
+    {
+      "demo_id": "5477",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 577,
+      "hits": 196,
+      "accuracy": 33,
+      "damage": 1329
+    },
+    {
+      "demo_id": "5477",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 42,
+      "hits": 27,
+      "accuracy": 64,
+      "damage": 1968
+    },
+    {
+      "demo_id": "5477",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 53,
+      "hits": 1,
+      "accuracy": 1,
+      "damage": 20
+    },
+    {
+      "demo_id": "5486",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 22,
+      "hits": 6,
+      "accuracy": 27,
+      "damage": 30
+    },
+    {
+      "demo_id": "5486",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 104,
+      "hits": 33,
+      "accuracy": 31,
+      "damage": 1611
+    },
+    {
+      "demo_id": "5486",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 466,
+      "hits": 203,
+      "accuracy": 43,
+      "damage": 1374
+    },
+    {
+      "demo_id": "5486",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 37,
+      "hits": 25,
+      "accuracy": 67,
+      "damage": 1712
+    },
+    {
+      "demo_id": "5486",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 24,
+      "hits": 1,
+      "accuracy": 4,
+      "damage": 20
+    },
+    {
+      "demo_id": "5491",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 73,
+      "hits": 16,
+      "accuracy": 21,
+      "damage": 80
+    },
+    {
+      "demo_id": "5491",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 75,
+      "hits": 32,
+      "accuracy": 42,
+      "damage": 1466
+    },
+    {
+      "demo_id": "5491",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 214,
+      "hits": 75,
+      "accuracy": 35,
+      "damage": 521
+    },
+    {
+      "demo_id": "5491",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 29,
+      "hits": 12,
+      "accuracy": 41,
+      "damage": 933
+    },
+    {
+      "demo_id": "5491",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 84,
+      "hits": 21,
+      "accuracy": 25,
+      "damage": 402
+    },
+    {
+      "demo_id": "5494",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 166,
+      "hits": 57,
+      "accuracy": 34,
+      "damage": 285
+    },
+    {
+      "demo_id": "5494",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 81,
+      "hits": 28,
+      "accuracy": 34,
+      "damage": 1391
+    },
+    {
+      "demo_id": "5494",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 455,
+      "hits": 123,
+      "accuracy": 27,
+      "damage": 845
+    },
+    {
+      "demo_id": "5494",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 19,
+      "hits": 7,
+      "accuracy": 36,
+      "damage": 474
+    },
+    {
+      "demo_id": "5494",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 139,
+      "hits": 11,
+      "accuracy": 7,
+      "damage": 167
+    },
+    {
+      "demo_id": "5497",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 20,
+      "hits": 10,
+      "accuracy": 50,
+      "damage": 43
+    },
+    {
+      "demo_id": "5497",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 67,
+      "hits": 20,
+      "accuracy": 29,
+      "damage": 1007
+    },
+    {
+      "demo_id": "5497",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 577,
+      "hits": 196,
+      "accuracy": 33,
+      "damage": 1329
+    },
+    {
+      "demo_id": "5497",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 42,
+      "hits": 27,
+      "accuracy": 64,
+      "damage": 1968
+    },
+    {
+      "demo_id": "5497",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 53,
+      "hits": 1,
+      "accuracy": 1,
+      "damage": 20
+    },
+    {
+      "demo_id": "5499",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 73,
+      "hits": 16,
+      "accuracy": 21,
+      "damage": 80
+    },
+    {
+      "demo_id": "5499",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 75,
+      "hits": 32,
+      "accuracy": 42,
+      "damage": 1466
+    },
+    {
+      "demo_id": "5499",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 214,
+      "hits": 75,
+      "accuracy": 35,
+      "damage": 521
+    },
+    {
+      "demo_id": "5499",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 29,
+      "hits": 12,
+      "accuracy": 41,
+      "damage": 933
+    },
+    {
+      "demo_id": "5499",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 84,
+      "hits": 21,
+      "accuracy": 25,
+      "damage": 402
+    },
+    {
+      "demo_id": "55",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 1,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "55",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 118,
+      "hits": 43,
+      "accuracy": 36,
+      "damage": 2567
+    },
+    {
+      "demo_id": "55",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 349,
+      "hits": 106,
+      "accuracy": 30,
+      "damage": 742
+    },
+    {
+      "demo_id": "55",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 49,
+      "hits": 25,
+      "accuracy": 51,
+      "damage": 2000
+    },
+    {
+      "demo_id": "55",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 2,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5508",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 166,
+      "hits": 57,
+      "accuracy": 34,
+      "damage": 285
+    },
+    {
+      "demo_id": "5508",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 81,
+      "hits": 28,
+      "accuracy": 34,
+      "damage": 1391
+    },
+    {
+      "demo_id": "5508",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 455,
+      "hits": 123,
+      "accuracy": 27,
+      "damage": 845
+    },
+    {
+      "demo_id": "5508",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 19,
+      "hits": 7,
+      "accuracy": 36,
+      "damage": 474
+    },
+    {
+      "demo_id": "5508",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 139,
+      "hits": 11,
+      "accuracy": 7,
+      "damage": 167
+    },
+    {
+      "demo_id": "5516",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 71,
+      "hits": 24,
+      "accuracy": 33,
+      "damage": 119
+    },
+    {
+      "demo_id": "5516",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 90,
+      "hits": 24,
+      "accuracy": 26,
+      "damage": 1230
+    },
+    {
+      "demo_id": "5516",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 779,
+      "hits": 249,
+      "accuracy": 31,
+      "damage": 1696
+    },
+    {
+      "demo_id": "5516",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 26,
+      "hits": 4,
+      "accuracy": 15,
+      "damage": 320
+    },
+    {
+      "demo_id": "5516",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 14,
+      "hits": 1,
+      "accuracy": 7,
+      "damage": 6
+    },
+    {
+      "demo_id": "5520",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 14,
+      "hits": 3,
+      "accuracy": 21,
+      "damage": 15
+    },
+    {
+      "demo_id": "5520",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 84,
+      "hits": 19,
+      "accuracy": 22,
+      "damage": 738
+    },
+    {
+      "demo_id": "5520",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 512,
+      "hits": 164,
+      "accuracy": 32,
+      "damage": 1148
+    },
+    {
+      "demo_id": "5520",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 21,
+      "hits": 7,
+      "accuracy": 33,
+      "damage": 560
+    },
+    {
+      "demo_id": "5520",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 32,
+      "hits": 2,
+      "accuracy": 6,
+      "damage": 22
+    },
+    {
+      "demo_id": "5525",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 32,
+      "hits": 3,
+      "accuracy": 9,
+      "damage": 15
+    },
+    {
+      "demo_id": "5525",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 69,
+      "hits": 24,
+      "accuracy": 34,
+      "damage": 845
+    },
+    {
+      "demo_id": "5525",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 417,
+      "hits": 161,
+      "accuracy": 38,
+      "damage": 1120
+    },
+    {
+      "demo_id": "5525",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 44,
+      "hits": 18,
+      "accuracy": 40,
+      "damage": 1317
+    },
+    {
+      "demo_id": "5525",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 71,
+      "hits": 6,
+      "accuracy": 8,
+      "damage": 115
+    },
+    {
+      "demo_id": "5529",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 71,
+      "hits": 24,
+      "accuracy": 33,
+      "damage": 119
+    },
+    {
+      "demo_id": "5529",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 90,
+      "hits": 24,
+      "accuracy": 26,
+      "damage": 1230
+    },
+    {
+      "demo_id": "5529",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 779,
+      "hits": 249,
+      "accuracy": 31,
+      "damage": 1696
+    },
+    {
+      "demo_id": "5529",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 26,
+      "hits": 4,
+      "accuracy": 15,
+      "damage": 320
+    },
+    {
+      "demo_id": "5529",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 14,
+      "hits": 1,
+      "accuracy": 7,
+      "damage": 6
+    },
+    {
+      "demo_id": "5534",
+      "winner": "av3k",
+      "weapon": 2,
+      "shots": 43,
+      "hits": 5,
+      "accuracy": 11,
+      "damage": 25
+    },
+    {
+      "demo_id": "5534",
+      "winner": "av3k",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5534",
+      "winner": "av3k",
+      "weapon": 5,
+      "shots": 57,
+      "hits": 14,
+      "accuracy": 24,
+      "damage": 514
+    },
+    {
+      "demo_id": "5534",
+      "winner": "av3k",
+      "weapon": 6,
+      "shots": 424,
+      "hits": 114,
+      "accuracy": 26,
+      "damage": 798
+    },
+    {
+      "demo_id": "5534",
+      "winner": "av3k",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 16,
+      "accuracy": 50,
+      "damage": 1204
+    },
+    {
+      "demo_id": "5534",
+      "winner": "av3k",
+      "weapon": 8,
+      "shots": 73,
+      "hits": 10,
+      "accuracy": 13,
+      "damage": 193
+    },
+    {
+      "demo_id": "5545",
+      "winner": "av3k",
+      "weapon": 2,
+      "shots": 43,
+      "hits": 5,
+      "accuracy": 11,
+      "damage": 25
+    },
+    {
+      "demo_id": "5545",
+      "winner": "av3k",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5545",
+      "winner": "av3k",
+      "weapon": 5,
+      "shots": 57,
+      "hits": 14,
+      "accuracy": 24,
+      "damage": 514
+    },
+    {
+      "demo_id": "5545",
+      "winner": "av3k",
+      "weapon": 6,
+      "shots": 424,
+      "hits": 114,
+      "accuracy": 26,
+      "damage": 798
+    },
+    {
+      "demo_id": "5545",
+      "winner": "av3k",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 16,
+      "accuracy": 50,
+      "damage": 1204
+    },
+    {
+      "demo_id": "5545",
+      "winner": "av3k",
+      "weapon": 8,
+      "shots": 73,
+      "hits": 10,
+      "accuracy": 13,
+      "damage": 193
+    },
+    {
+      "demo_id": "5548",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 20,
+      "accuracy": 100,
+      "damage": 100
+    },
+    {
+      "demo_id": "5548",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 60,
+      "hits": 18,
+      "accuracy": 30,
+      "damage": 902
+    },
+    {
+      "demo_id": "5548",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 527,
+      "hits": 184,
+      "accuracy": 34,
+      "damage": 1274
+    },
+    {
+      "demo_id": "5548",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 22,
+      "hits": 2,
+      "accuracy": 9,
+      "damage": 160
+    },
+    {
+      "demo_id": "5548",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 70,
+      "hits": 4,
+      "accuracy": 5,
+      "damage": 75
+    },
+    {
+      "demo_id": "5552",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 71,
+      "hits": 24,
+      "accuracy": 33,
+      "damage": 119
+    },
+    {
+      "demo_id": "5552",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 90,
+      "hits": 24,
+      "accuracy": 26,
+      "damage": 1230
+    },
+    {
+      "demo_id": "5552",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 779,
+      "hits": 249,
+      "accuracy": 31,
+      "damage": 1696
+    },
+    {
+      "demo_id": "5552",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 26,
+      "hits": 4,
+      "accuracy": 15,
+      "damage": 320
+    },
+    {
+      "demo_id": "5552",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 14,
+      "hits": 1,
+      "accuracy": 7,
+      "damage": 6
+    },
+    {
+      "demo_id": "5559",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 14,
+      "hits": 3,
+      "accuracy": 21,
+      "damage": 15
+    },
+    {
+      "demo_id": "5559",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 84,
+      "hits": 19,
+      "accuracy": 22,
+      "damage": 738
+    },
+    {
+      "demo_id": "5559",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 512,
+      "hits": 164,
+      "accuracy": 32,
+      "damage": 1148
+    },
+    {
+      "demo_id": "5559",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 21,
+      "hits": 7,
+      "accuracy": 33,
+      "damage": 560
+    },
+    {
+      "demo_id": "5559",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 32,
+      "hits": 2,
+      "accuracy": 6,
+      "damage": 22
+    },
+    {
+      "demo_id": "5567",
+      "winner": "rapha",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 20,
+      "accuracy": 100,
+      "damage": 100
+    },
+    {
+      "demo_id": "5567",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 60,
+      "hits": 18,
+      "accuracy": 30,
+      "damage": 902
+    },
+    {
+      "demo_id": "5567",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 527,
+      "hits": 184,
+      "accuracy": 34,
+      "damage": 1274
+    },
+    {
+      "demo_id": "5567",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 22,
+      "hits": 2,
+      "accuracy": 9,
+      "damage": 160
+    },
+    {
+      "demo_id": "5567",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 70,
+      "hits": 4,
+      "accuracy": 5,
+      "damage": 75
+    },
+    {
+      "demo_id": "5571",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 32,
+      "hits": 3,
+      "accuracy": 9,
+      "damage": 15
+    },
+    {
+      "demo_id": "5571",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 69,
+      "hits": 24,
+      "accuracy": 34,
+      "damage": 845
+    },
+    {
+      "demo_id": "5571",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 417,
+      "hits": 161,
+      "accuracy": 38,
+      "damage": 1120
+    },
+    {
+      "demo_id": "5571",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 44,
+      "hits": 18,
+      "accuracy": 40,
+      "damage": 1317
+    },
+    {
+      "demo_id": "5571",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 71,
+      "hits": 6,
+      "accuracy": 8,
+      "damage": 115
+    },
+    {
+      "demo_id": "5576",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 32,
+      "hits": 3,
+      "accuracy": 9,
+      "damage": 15
+    },
+    {
+      "demo_id": "5576",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 69,
+      "hits": 24,
+      "accuracy": 34,
+      "damage": 845
+    },
+    {
+      "demo_id": "5576",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 417,
+      "hits": 161,
+      "accuracy": 38,
+      "damage": 1120
+    },
+    {
+      "demo_id": "5576",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 44,
+      "hits": 18,
+      "accuracy": 40,
+      "damage": 1317
+    },
+    {
+      "demo_id": "5576",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 71,
+      "hits": 6,
+      "accuracy": 8,
+      "damage": 115
+    },
+    {
+      "demo_id": "5581",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 36,
+      "hits": 9,
+      "accuracy": 25,
+      "damage": 45
+    },
+    {
+      "demo_id": "5581",
+      "winner": "evil",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5581",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 92,
+      "hits": 28,
+      "accuracy": 30,
+      "damage": 1013
+    },
+    {
+      "demo_id": "5581",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 227,
+      "hits": 66,
+      "accuracy": 29,
+      "damage": 462
+    },
+    {
+      "demo_id": "5581",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 30,
+      "hits": 11,
+      "accuracy": 36,
+      "damage": 806
+    },
+    {
+      "demo_id": "5581",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 110,
+      "hits": 10,
+      "accuracy": 9,
+      "damage": 181
+    },
+    {
+      "demo_id": "5583",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 66,
+      "hits": 25,
+      "accuracy": 37,
+      "damage": 125
+    },
+    {
+      "demo_id": "5583",
+      "winner": "evil",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5583",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 70,
+      "hits": 13,
+      "accuracy": 18,
+      "damage": 691
+    },
+    {
+      "demo_id": "5583",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 218,
+      "hits": 71,
+      "accuracy": 32,
+      "damage": 497
+    },
+    {
+      "demo_id": "5583",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 27,
+      "hits": 8,
+      "accuracy": 29,
+      "damage": 640
+    },
+    {
+      "demo_id": "5583",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 117,
+      "hits": 13,
+      "accuracy": 11,
+      "damage": 222
+    },
+    {
+      "demo_id": "5586",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 36,
+      "hits": 9,
+      "accuracy": 25,
+      "damage": 45
+    },
+    {
+      "demo_id": "5586",
+      "winner": "evil",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5586",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 92,
+      "hits": 28,
+      "accuracy": 30,
+      "damage": 1013
+    },
+    {
+      "demo_id": "5586",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 227,
+      "hits": 66,
+      "accuracy": 29,
+      "damage": 462
+    },
+    {
+      "demo_id": "5586",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 30,
+      "hits": 11,
+      "accuracy": 36,
+      "damage": 806
+    },
+    {
+      "demo_id": "5586",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 110,
+      "hits": 10,
+      "accuracy": 9,
+      "damage": 181
+    },
+    {
+      "demo_id": "5589",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 66,
+      "hits": 25,
+      "accuracy": 37,
+      "damage": 125
+    },
+    {
+      "demo_id": "5589",
+      "winner": "evil",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5589",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 70,
+      "hits": 13,
+      "accuracy": 18,
+      "damage": 691
+    },
+    {
+      "demo_id": "5589",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 218,
+      "hits": 71,
+      "accuracy": 32,
+      "damage": 497
+    },
+    {
+      "demo_id": "5589",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 27,
+      "hits": 8,
+      "accuracy": 29,
+      "damage": 640
+    },
+    {
+      "demo_id": "5589",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 117,
+      "hits": 13,
+      "accuracy": 11,
+      "damage": 222
+    },
+    {
+      "demo_id": "57",
+      "winner": "k1llsen",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 1,
+      "accuracy": 5,
+      "damage": 5
+    },
+    {
+      "demo_id": "57",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 113,
+      "hits": 41,
+      "accuracy": 36,
+      "damage": 2593
+    },
+    {
+      "demo_id": "57",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 351,
+      "hits": 123,
+      "accuracy": 35,
+      "damage": 861
+    },
+    {
+      "demo_id": "57",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 49,
+      "hits": 27,
+      "accuracy": 55,
+      "damage": 2160
+    },
+    {
+      "demo_id": "57",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 20,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5752",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 5,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5752",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 80,
+      "hits": 37,
+      "accuracy": 46,
+      "damage": 1750
+    },
+    {
+      "demo_id": "5752",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 443,
+      "hits": 138,
+      "accuracy": 31,
+      "damage": 951
+    },
+    {
+      "demo_id": "5752",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 12,
+      "hits": 3,
+      "accuracy": 25,
+      "damage": 200
+    },
+    {
+      "demo_id": "5752",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 11,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5756",
+      "winner": "pavel_",
+      "weapon": 2,
+      "shots": 73,
+      "hits": 32,
+      "accuracy": 43,
+      "damage": 160
+    },
+    {
+      "demo_id": "5756",
+      "winner": "pavel_",
+      "weapon": 5,
+      "shots": 85,
+      "hits": 31,
+      "accuracy": 36,
+      "damage": 1436
+    },
+    {
+      "demo_id": "5756",
+      "winner": "pavel_",
+      "weapon": 6,
+      "shots": 377,
+      "hits": 125,
+      "accuracy": 33,
+      "damage": 853
+    },
+    {
+      "demo_id": "5756",
+      "winner": "pavel_",
+      "weapon": 7,
+      "shots": 18,
+      "hits": 5,
+      "accuracy": 27,
+      "damage": 400
+    },
+    {
+      "demo_id": "5756",
+      "winner": "pavel_",
+      "weapon": 8,
+      "shots": 60,
+      "hits": 5,
+      "accuracy": 8,
+      "damage": 95
+    },
+    {
+      "demo_id": "5760",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 36,
+      "hits": 19,
+      "accuracy": 52,
+      "damage": 95
+    },
+    {
+      "demo_id": "5760",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 72,
+      "hits": 25,
+      "accuracy": 34,
+      "damage": 1272
+    },
+    {
+      "demo_id": "5760",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 353,
+      "hits": 119,
+      "accuracy": 33,
+      "damage": 830
+    },
+    {
+      "demo_id": "5760",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 19,
+      "hits": 7,
+      "accuracy": 36,
+      "damage": 560
+    },
+    {
+      "demo_id": "5760",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 100,
+      "hits": 7,
+      "accuracy": 7,
+      "damage": 135
+    },
+    {
+      "demo_id": "5788",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 5,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5788",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 80,
+      "hits": 37,
+      "accuracy": 46,
+      "damage": 1750
+    },
+    {
+      "demo_id": "5788",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 443,
+      "hits": 138,
+      "accuracy": 31,
+      "damage": 951
+    },
+    {
+      "demo_id": "5788",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 12,
+      "hits": 3,
+      "accuracy": 25,
+      "damage": 200
+    },
+    {
+      "demo_id": "5788",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 11,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "5791",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 64,
+      "hits": 26,
+      "accuracy": 40,
+      "damage": 130
+    },
+    {
+      "demo_id": "5791",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 80,
+      "hits": 20,
+      "accuracy": 25,
+      "damage": 1021
+    },
+    {
+      "demo_id": "5791",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 616,
+      "hits": 242,
+      "accuracy": 39,
+      "damage": 1576
+    },
+    {
+      "demo_id": "5791",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 18,
+      "hits": 5,
+      "accuracy": 27,
+      "damage": 254
+    },
+    {
+      "demo_id": "5791",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 29,
+      "hits": 3,
+      "accuracy": 10,
+      "damage": 55
+    },
+    {
+      "demo_id": "5798",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 64,
+      "hits": 26,
+      "accuracy": 40,
+      "damage": 130
+    },
+    {
+      "demo_id": "5798",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 80,
+      "hits": 20,
+      "accuracy": 25,
+      "damage": 1021
+    },
+    {
+      "demo_id": "5798",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 616,
+      "hits": 242,
+      "accuracy": 39,
+      "damage": 1576
+    },
+    {
+      "demo_id": "5798",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 18,
+      "hits": 5,
+      "accuracy": 27,
+      "damage": 254
+    },
+    {
+      "demo_id": "5798",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 29,
+      "hits": 3,
+      "accuracy": 10,
+      "damage": 55
+    },
+    {
+      "demo_id": "5806",
+      "winner": "pavel_",
+      "weapon": 2,
+      "shots": 73,
+      "hits": 32,
+      "accuracy": 43,
+      "damage": 160
+    },
+    {
+      "demo_id": "5806",
+      "winner": "pavel_",
+      "weapon": 5,
+      "shots": 85,
+      "hits": 31,
+      "accuracy": 36,
+      "damage": 1436
+    },
+    {
+      "demo_id": "5806",
+      "winner": "pavel_",
+      "weapon": 6,
+      "shots": 377,
+      "hits": 125,
+      "accuracy": 33,
+      "damage": 853
+    },
+    {
+      "demo_id": "5806",
+      "winner": "pavel_",
+      "weapon": 7,
+      "shots": 18,
+      "hits": 5,
+      "accuracy": 27,
+      "damage": 400
+    },
+    {
+      "demo_id": "5806",
+      "winner": "pavel_",
+      "weapon": 8,
+      "shots": 60,
+      "hits": 5,
+      "accuracy": 8,
+      "damage": 95
+    },
+    {
+      "demo_id": "5809",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 36,
+      "hits": 19,
+      "accuracy": 52,
+      "damage": 95
+    },
+    {
+      "demo_id": "5809",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 72,
+      "hits": 25,
+      "accuracy": 34,
+      "damage": 1272
+    },
+    {
+      "demo_id": "5809",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 353,
+      "hits": 119,
+      "accuracy": 33,
+      "damage": 830
+    },
+    {
+      "demo_id": "5809",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 19,
+      "hits": 7,
+      "accuracy": 36,
+      "damage": 560
+    },
+    {
+      "demo_id": "5809",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 100,
+      "hits": 7,
+      "accuracy": 7,
+      "damage": 135
+    },
+    {
+      "demo_id": "5816",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 28,
+      "hits": 11,
+      "accuracy": 39,
+      "damage": 55
+    },
+    {
+      "demo_id": "5816",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 100,
+      "hits": 35,
+      "accuracy": 35,
+      "damage": 1726
+    },
+    {
+      "demo_id": "5816",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 651,
+      "hits": 207,
+      "accuracy": 31,
+      "damage": 1408
+    },
+    {
+      "demo_id": "5816",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 14,
+      "hits": 5,
+      "accuracy": 35,
+      "damage": 348
+    },
+    {
+      "demo_id": "5816",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 50,
+      "hits": 9,
+      "accuracy": 18,
+      "damage": 180
+    },
+    {
+      "demo_id": "5832",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 28,
+      "hits": 11,
+      "accuracy": 39,
+      "damage": 55
+    },
+    {
+      "demo_id": "5832",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 100,
+      "hits": 35,
+      "accuracy": 35,
+      "damage": 1726
+    },
+    {
+      "demo_id": "5832",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 651,
+      "hits": 207,
+      "accuracy": 31,
+      "damage": 1408
+    },
+    {
+      "demo_id": "5832",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 14,
+      "hits": 5,
+      "accuracy": 35,
+      "damage": 348
+    },
+    {
+      "demo_id": "5832",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 50,
+      "hits": 9,
+      "accuracy": 18,
+      "damage": 180
+    },
+    {
+      "demo_id": "59",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 1,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "59",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 88,
+      "hits": 22,
+      "accuracy": 25,
+      "damage": 1085
+    },
+    {
+      "demo_id": "59",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 247,
+      "hits": 79,
+      "accuracy": 31,
+      "damage": 553
+    },
+    {
+      "demo_id": "59",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 45,
+      "hits": 24,
+      "accuracy": 53,
+      "damage": 1920
+    },
+    {
+      "demo_id": "59",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 49,
+      "hits": 12,
+      "accuracy": 24,
+      "damage": 240
+    },
+    {
+      "demo_id": "61",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 1,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "61",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 118,
+      "hits": 43,
+      "accuracy": 36,
+      "damage": 2567
+    },
+    {
+      "demo_id": "61",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 349,
+      "hits": 106,
+      "accuracy": 30,
+      "damage": 742
+    },
+    {
+      "demo_id": "61",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 49,
+      "hits": 25,
+      "accuracy": 51,
+      "damage": 2000
+    },
+    {
+      "demo_id": "61",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 2,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "6586",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 115,
+      "hits": 42,
+      "accuracy": 36,
+      "damage": 2152
+    },
+    {
+      "demo_id": "6586",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 492,
+      "hits": 150,
+      "accuracy": 30,
+      "damage": 1050
+    },
+    {
+      "demo_id": "6586",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 18,
+      "hits": 8,
+      "accuracy": 44,
+      "damage": 640
+    },
+    {
+      "demo_id": "6586",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 172,
+      "hits": 10,
+      "accuracy": 5,
+      "damage": 181
+    },
+    {
+      "demo_id": "6595",
+      "winner": "pavel_",
+      "weapon": 2,
+      "shots": 3,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "6595",
+      "winner": "pavel_",
+      "weapon": 5,
+      "shots": 108,
+      "hits": 31,
+      "accuracy": 28,
+      "damage": 1774
+    },
+    {
+      "demo_id": "6595",
+      "winner": "pavel_",
+      "weapon": 6,
+      "shots": 557,
+      "hits": 188,
+      "accuracy": 33,
+      "damage": 1316
+    },
+    {
+      "demo_id": "6595",
+      "winner": "pavel_",
+      "weapon": 7,
+      "shots": 30,
+      "hits": 13,
+      "accuracy": 43,
+      "damage": 1040
+    },
+    {
+      "demo_id": "6595",
+      "winner": "pavel_",
+      "weapon": 8,
+      "shots": 47,
+      "hits": 2,
+      "accuracy": 4,
+      "damage": 40
+    },
+    {
+      "demo_id": "6599",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 23,
+      "hits": 16,
+      "accuracy": 69,
+      "damage": 80
+    },
+    {
+      "demo_id": "6599",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 79,
+      "hits": 22,
+      "accuracy": 27,
+      "damage": 1262
+    },
+    {
+      "demo_id": "6599",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 401,
+      "hits": 76,
+      "accuracy": 18,
+      "damage": 532
+    },
+    {
+      "demo_id": "6599",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 12,
+      "hits": 4,
+      "accuracy": 33,
+      "damage": 320
+    },
+    {
+      "demo_id": "6599",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 174,
+      "hits": 20,
+      "accuracy": 11,
+      "damage": 390
+    },
+    {
+      "demo_id": "6604",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 19,
+      "hits": 3,
+      "accuracy": 15,
+      "damage": 15
+    },
+    {
+      "demo_id": "6604",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 60,
+      "hits": 22,
+      "accuracy": 36,
+      "damage": 1114
+    },
+    {
+      "demo_id": "6604",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 565,
+      "hits": 140,
+      "accuracy": 24,
+      "damage": 980
+    },
+    {
+      "demo_id": "6604",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 25,
+      "hits": 13,
+      "accuracy": 52,
+      "damage": 960
+    },
+    {
+      "demo_id": "6604",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 5,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "6613",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 115,
+      "hits": 42,
+      "accuracy": 36,
+      "damage": 2152
+    },
+    {
+      "demo_id": "6613",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 492,
+      "hits": 150,
+      "accuracy": 30,
+      "damage": 1050
+    },
+    {
+      "demo_id": "6613",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 18,
+      "hits": 8,
+      "accuracy": 44,
+      "damage": 640
+    },
+    {
+      "demo_id": "6613",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 172,
+      "hits": 10,
+      "accuracy": 5,
+      "damage": 181
+    },
+    {
+      "demo_id": "6615",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 23,
+      "hits": 16,
+      "accuracy": 69,
+      "damage": 80
+    },
+    {
+      "demo_id": "6615",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 79,
+      "hits": 22,
+      "accuracy": 27,
+      "damage": 1262
+    },
+    {
+      "demo_id": "6615",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 401,
+      "hits": 76,
+      "accuracy": 18,
+      "damage": 532
+    },
+    {
+      "demo_id": "6615",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 12,
+      "hits": 4,
+      "accuracy": 33,
+      "damage": 320
+    },
+    {
+      "demo_id": "6615",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 174,
+      "hits": 20,
+      "accuracy": 11,
+      "damage": 390
+    },
+    {
+      "demo_id": "6621",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 20,
+      "hits": 9,
+      "accuracy": 45,
+      "damage": 45
+    },
+    {
+      "demo_id": "6621",
+      "winner": "cypher",
+      "weapon": 3,
+      "shots": 40,
+      "hits": 2,
+      "accuracy": 5,
+      "damage": 10
+    },
+    {
+      "demo_id": "6621",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 103,
+      "hits": 25,
+      "accuracy": 24,
+      "damage": 1431
+    },
+    {
+      "demo_id": "6621",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 458,
+      "hits": 189,
+      "accuracy": 41,
+      "damage": 1323
+    },
+    {
+      "demo_id": "6621",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 33,
+      "hits": 17,
+      "accuracy": 51,
+      "damage": 1360
+    },
+    {
+      "demo_id": "6621",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 88,
+      "hits": 11,
+      "accuracy": 12,
+      "damage": 190
+    },
+    {
+      "demo_id": "6623",
+      "winner": "cooller",
+      "weapon": 2,
+      "shots": 25,
+      "hits": 9,
+      "accuracy": 36,
+      "damage": 45
+    },
+    {
+      "demo_id": "6623",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 55,
+      "hits": 28,
+      "accuracy": 50,
+      "damage": 1452
+    },
+    {
+      "demo_id": "6623",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 213,
+      "hits": 24,
+      "accuracy": 11,
+      "damage": 168
+    },
+    {
+      "demo_id": "6623",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 17,
+      "hits": 7,
+      "accuracy": 41,
+      "damage": 560
+    },
+    {
+      "demo_id": "6623",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 70,
+      "hits": 8,
+      "accuracy": 11,
+      "damage": 154
+    },
+    {
+      "demo_id": "6625",
+      "winner": "agent",
+      "weapon": 2,
+      "shots": 8,
+      "hits": 3,
+      "accuracy": 37,
+      "damage": 15
+    },
+    {
+      "demo_id": "6625",
+      "winner": "agent",
+      "weapon": 5,
+      "shots": 90,
+      "hits": 27,
+      "accuracy": 30,
+      "damage": 1348
+    },
+    {
+      "demo_id": "6625",
+      "winner": "agent",
+      "weapon": 6,
+      "shots": 222,
+      "hits": 59,
+      "accuracy": 26,
+      "damage": 413
+    },
+    {
+      "demo_id": "6625",
+      "winner": "agent",
+      "weapon": 7,
+      "shots": 14,
+      "hits": 6,
+      "accuracy": 42,
+      "damage": 480
+    },
+    {
+      "demo_id": "6625",
+      "winner": "agent",
+      "weapon": 8,
+      "shots": 123,
+      "hits": 19,
+      "accuracy": 15,
+      "damage": 357
+    },
+    {
+      "demo_id": "6627",
+      "winner": "cooller",
+      "weapon": 2,
+      "shots": 10,
+      "hits": 1,
+      "accuracy": 10,
+      "damage": 5
+    },
+    {
+      "demo_id": "6627",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 107,
+      "hits": 28,
+      "accuracy": 26,
+      "damage": 1350
+    },
+    {
+      "demo_id": "6627",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 687,
+      "hits": 184,
+      "accuracy": 26,
+      "damage": 1288
+    },
+    {
+      "demo_id": "6627",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 10,
+      "hits": 4,
+      "accuracy": 40,
+      "damage": 320
+    },
+    {
+      "demo_id": "6627",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 99,
+      "hits": 18,
+      "accuracy": 18,
+      "damage": 360
+    },
+    {
+      "demo_id": "6634",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 20,
+      "hits": 9,
+      "accuracy": 45,
+      "damage": 45
+    },
+    {
+      "demo_id": "6634",
+      "winner": "cypher",
+      "weapon": 3,
+      "shots": 40,
+      "hits": 2,
+      "accuracy": 5,
+      "damage": 10
+    },
+    {
+      "demo_id": "6634",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 103,
+      "hits": 25,
+      "accuracy": 24,
+      "damage": 1431
+    },
+    {
+      "demo_id": "6634",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 458,
+      "hits": 189,
+      "accuracy": 41,
+      "damage": 1323
+    },
+    {
+      "demo_id": "6634",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 33,
+      "hits": 17,
+      "accuracy": 51,
+      "damage": 1360
+    },
+    {
+      "demo_id": "6634",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 88,
+      "hits": 11,
+      "accuracy": 12,
+      "damage": 190
+    },
+    {
+      "demo_id": "6636",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 53,
+      "hits": 25,
+      "accuracy": 47,
+      "damage": 1413
+    },
+    {
+      "demo_id": "6636",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 491,
+      "hits": 167,
+      "accuracy": 34,
+      "damage": 1176
+    },
+    {
+      "demo_id": "6636",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 7,
+      "hits": 3,
+      "accuracy": 42,
+      "damage": 240
+    },
+    {
+      "demo_id": "6636",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 72,
+      "hits": 7,
+      "accuracy": 9,
+      "damage": 140
+    },
+    {
+      "demo_id": "6641",
+      "winner": "alfaomega",
+      "weapon": 2,
+      "shots": 32,
+      "hits": 3,
+      "accuracy": 9,
+      "damage": 15
+    },
+    {
+      "demo_id": "6641",
+      "winner": "alfaomega",
+      "weapon": 5,
+      "shots": 92,
+      "hits": 31,
+      "accuracy": 33,
+      "damage": 1790
+    },
+    {
+      "demo_id": "6641",
+      "winner": "alfaomega",
+      "weapon": 6,
+      "shots": 252,
+      "hits": 54,
+      "accuracy": 21,
+      "damage": 378
+    },
+    {
+      "demo_id": "6641",
+      "winner": "alfaomega",
+      "weapon": 7,
+      "shots": 22,
+      "hits": 8,
+      "accuracy": 36,
+      "damage": 640
+    },
+    {
+      "demo_id": "6641",
+      "winner": "alfaomega",
+      "weapon": 8,
+      "shots": 12,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "6651",
+      "winner": "agent",
+      "weapon": 2,
+      "shots": 178,
+      "hits": 51,
+      "accuracy": 28,
+      "damage": 255
+    },
+    {
+      "demo_id": "6651",
+      "winner": "agent",
+      "weapon": 3,
+      "shots": 140,
+      "hits": 18,
+      "accuracy": 12,
+      "damage": 95
+    },
+    {
+      "demo_id": "6651",
+      "winner": "agent",
+      "weapon": 5,
+      "shots": 75,
+      "hits": 33,
+      "accuracy": 44,
+      "damage": 1499
+    },
+    {
+      "demo_id": "6651",
+      "winner": "agent",
+      "weapon": 6,
+      "shots": 235,
+      "hits": 81,
+      "accuracy": 34,
+      "damage": 543
+    },
+    {
+      "demo_id": "6651",
+      "winner": "agent",
+      "weapon": 7,
+      "shots": 43,
+      "hits": 17,
+      "accuracy": 39,
+      "damage": 1360
+    },
+    {
+      "demo_id": "6651",
+      "winner": "agent",
+      "weapon": 8,
+      "shots": 214,
+      "hits": 26,
+      "accuracy": 12,
+      "damage": 450
+    },
+    {
+      "demo_id": "6652",
+      "winner": "agent",
+      "weapon": 2,
+      "shots": 109,
+      "hits": 24,
+      "accuracy": 22,
+      "damage": 120
+    },
+    {
+      "demo_id": "6652",
+      "winner": "agent",
+      "weapon": 3,
+      "shots": 60,
+      "hits": 13,
+      "accuracy": 21,
+      "damage": 65
+    },
+    {
+      "demo_id": "6652",
+      "winner": "agent",
+      "weapon": 5,
+      "shots": 86,
+      "hits": 34,
+      "accuracy": 39,
+      "damage": 1857
+    },
+    {
+      "demo_id": "6652",
+      "winner": "agent",
+      "weapon": 6,
+      "shots": 361,
+      "hits": 99,
+      "accuracy": 27,
+      "damage": 693
+    },
+    {
+      "demo_id": "6652",
+      "winner": "agent",
+      "weapon": 7,
+      "shots": 30,
+      "hits": 13,
+      "accuracy": 43,
+      "damage": 1040
+    },
+    {
+      "demo_id": "6652",
+      "winner": "agent",
+      "weapon": 8,
+      "shots": 82,
+      "hits": 18,
+      "accuracy": 21,
+      "damage": 360
+    },
+    {
+      "demo_id": "6653",
+      "winner": "agent",
+      "weapon": 2,
+      "shots": 21,
+      "hits": 15,
+      "accuracy": 71,
+      "damage": 75
+    },
+    {
+      "demo_id": "6653",
+      "winner": "agent",
+      "weapon": 5,
+      "shots": 66,
+      "hits": 26,
+      "accuracy": 39,
+      "damage": 1137
+    },
+    {
+      "demo_id": "6653",
+      "winner": "agent",
+      "weapon": 6,
+      "shots": 597,
+      "hits": 167,
+      "accuracy": 27,
+      "damage": 1169
+    },
+    {
+      "demo_id": "6653",
+      "winner": "agent",
+      "weapon": 7,
+      "shots": 14,
+      "hits": 7,
+      "accuracy": 50,
+      "damage": 560
+    },
+    {
+      "demo_id": "6653",
+      "winner": "agent",
+      "weapon": 8,
+      "shots": 20,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "6655",
+      "winner": "agent",
+      "weapon": 2,
+      "shots": 8,
+      "hits": 3,
+      "accuracy": 37,
+      "damage": 15
+    },
+    {
+      "demo_id": "6655",
+      "winner": "agent",
+      "weapon": 5,
+      "shots": 90,
+      "hits": 27,
+      "accuracy": 30,
+      "damage": 1348
+    },
+    {
+      "demo_id": "6655",
+      "winner": "agent",
+      "weapon": 6,
+      "shots": 222,
+      "hits": 59,
+      "accuracy": 26,
+      "damage": 413
+    },
+    {
+      "demo_id": "6655",
+      "winner": "agent",
+      "weapon": 7,
+      "shots": 14,
+      "hits": 6,
+      "accuracy": 42,
+      "damage": 480
+    },
+    {
+      "demo_id": "6655",
+      "winner": "agent",
+      "weapon": 8,
+      "shots": 123,
+      "hits": 19,
+      "accuracy": 15,
+      "damage": 357
+    },
+    {
+      "demo_id": "6657",
+      "winner": "cooller",
+      "weapon": 2,
+      "shots": 10,
+      "hits": 1,
+      "accuracy": 10,
+      "damage": 5
+    },
+    {
+      "demo_id": "6657",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 107,
+      "hits": 28,
+      "accuracy": 26,
+      "damage": 1350
+    },
+    {
+      "demo_id": "6657",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 687,
+      "hits": 184,
+      "accuracy": 26,
+      "damage": 1288
+    },
+    {
+      "demo_id": "6657",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 10,
+      "hits": 4,
+      "accuracy": 40,
+      "damage": 320
+    },
+    {
+      "demo_id": "6657",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 99,
+      "hits": 18,
+      "accuracy": 18,
+      "damage": 360
+    },
+    {
+      "demo_id": "6659",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 35,
+      "hits": 15,
+      "accuracy": 42,
+      "damage": 851
+    },
+    {
+      "demo_id": "6659",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 340,
+      "hits": 115,
+      "accuracy": 33,
+      "damage": 805
+    },
+    {
+      "demo_id": "6659",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 4,
+      "hits": 2,
+      "accuracy": 50,
+      "damage": 160
+    },
+    {
+      "demo_id": "6659",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 72,
+      "hits": 7,
+      "accuracy": 9,
+      "damage": 140
+    },
+    {
+      "demo_id": "6666",
+      "winner": "agent",
+      "weapon": 2,
+      "shots": 14,
+      "hits": 5,
+      "accuracy": 35,
+      "damage": 25
+    },
+    {
+      "demo_id": "6666",
+      "winner": "agent",
+      "weapon": 5,
+      "shots": 72,
+      "hits": 21,
+      "accuracy": 29,
+      "damage": 869
+    },
+    {
+      "demo_id": "6666",
+      "winner": "agent",
+      "weapon": 6,
+      "shots": 334,
+      "hits": 102,
+      "accuracy": 30,
+      "damage": 714
+    },
+    {
+      "demo_id": "6666",
+      "winner": "agent",
+      "weapon": 7,
+      "shots": 27,
+      "hits": 15,
+      "accuracy": 55,
+      "damage": 1200
+    },
+    {
+      "demo_id": "6666",
+      "winner": "agent",
+      "weapon": 8,
+      "shots": 2,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "6667",
+      "winner": "agent",
+      "weapon": 2,
+      "shots": 35,
+      "hits": 16,
+      "accuracy": 45,
+      "damage": 80
+    },
+    {
+      "demo_id": "6667",
+      "winner": "agent",
+      "weapon": 5,
+      "shots": 91,
+      "hits": 29,
+      "accuracy": 31,
+      "damage": 1333
+    },
+    {
+      "demo_id": "6667",
+      "winner": "agent",
+      "weapon": 6,
+      "shots": 308,
+      "hits": 101,
+      "accuracy": 32,
+      "damage": 707
+    },
+    {
+      "demo_id": "6667",
+      "winner": "agent",
+      "weapon": 7,
+      "shots": 27,
+      "hits": 11,
+      "accuracy": 40,
+      "damage": 880
+    },
+    {
+      "demo_id": "6667",
+      "winner": "agent",
+      "weapon": 8,
+      "shots": 69,
+      "hits": 7,
+      "accuracy": 10,
+      "damage": 97
+    },
+    {
+      "demo_id": "68",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 1,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "68",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 88,
+      "hits": 22,
+      "accuracy": 25,
+      "damage": 1085
+    },
+    {
+      "demo_id": "68",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 247,
+      "hits": 79,
+      "accuracy": 31,
+      "damage": 553
+    },
+    {
+      "demo_id": "68",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 45,
+      "hits": 24,
+      "accuracy": 53,
+      "damage": 1920
+    },
+    {
+      "demo_id": "68",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 49,
+      "hits": 12,
+      "accuracy": 24,
+      "damage": 240
+    },
+    {
+      "demo_id": "7257",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 2,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "7257",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 63,
+      "hits": 17,
+      "accuracy": 26,
+      "damage": 652
+    },
+    {
+      "demo_id": "7257",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 824,
+      "hits": 263,
+      "accuracy": 31,
+      "damage": 1812
+    },
+    {
+      "demo_id": "7257",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 24,
+      "hits": 10,
+      "accuracy": 41,
+      "damage": 655
+    },
+    {
+      "demo_id": "7257",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 6,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "7285",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 48,
+      "hits": 25,
+      "accuracy": 52,
+      "damage": 125
+    },
+    {
+      "demo_id": "7285",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 65,
+      "hits": 19,
+      "accuracy": 29,
+      "damage": 977
+    },
+    {
+      "demo_id": "7285",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 369,
+      "hits": 121,
+      "accuracy": 32,
+      "damage": 833
+    },
+    {
+      "demo_id": "7285",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 42,
+      "hits": 17,
+      "accuracy": 40,
+      "damage": 1360
+    },
+    {
+      "demo_id": "7285",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 100,
+      "hits": 12,
+      "accuracy": 12,
+      "damage": 235
+    },
+    {
+      "demo_id": "7288",
+      "winner": "strenx",
+      "weapon": 2,
+      "shots": 29,
+      "hits": 9,
+      "accuracy": 31,
+      "damage": 45
+    },
+    {
+      "demo_id": "7288",
+      "winner": "strenx",
+      "weapon": 5,
+      "shots": 64,
+      "hits": 27,
+      "accuracy": 42,
+      "damage": 877
+    },
+    {
+      "demo_id": "7288",
+      "winner": "strenx",
+      "weapon": 6,
+      "shots": 417,
+      "hits": 149,
+      "accuracy": 35,
+      "damage": 1043
+    },
+    {
+      "demo_id": "7288",
+      "winner": "strenx",
+      "weapon": 7,
+      "shots": 21,
+      "hits": 9,
+      "accuracy": 42,
+      "damage": 720
+    },
+    {
+      "demo_id": "7288",
+      "winner": "strenx",
+      "weapon": 8,
+      "shots": 56,
+      "hits": 10,
+      "accuracy": 17,
+      "damage": 200
+    },
+    {
+      "demo_id": "7292",
+      "winner": "tox",
+      "weapon": 2,
+      "shots": 44,
+      "hits": 2,
+      "accuracy": 4,
+      "damage": 10
+    },
+    {
+      "demo_id": "7292",
+      "winner": "tox",
+      "weapon": 5,
+      "shots": 42,
+      "hits": 11,
+      "accuracy": 26,
+      "damage": 714
+    },
+    {
+      "demo_id": "7292",
+      "winner": "tox",
+      "weapon": 6,
+      "shots": 790,
+      "hits": 269,
+      "accuracy": 34,
+      "damage": 1883
+    },
+    {
+      "demo_id": "7292",
+      "winner": "tox",
+      "weapon": 7,
+      "shots": 30,
+      "hits": 14,
+      "accuracy": 46,
+      "damage": 1120
+    },
+    {
+      "demo_id": "7292",
+      "winner": "tox",
+      "weapon": 8,
+      "shots": 6,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "7295",
+      "winner": "spart1e",
+      "weapon": 2,
+      "shots": 8,
+      "hits": 3,
+      "accuracy": 37,
+      "damage": 15
+    },
+    {
+      "demo_id": "7295",
+      "winner": "spart1e",
+      "weapon": 5,
+      "shots": 65,
+      "hits": 22,
+      "accuracy": 33,
+      "damage": 969
+    },
+    {
+      "demo_id": "7295",
+      "winner": "spart1e",
+      "weapon": 6,
+      "shots": 469,
+      "hits": 169,
+      "accuracy": 36,
+      "damage": 1183
+    },
+    {
+      "demo_id": "7295",
+      "winner": "spart1e",
+      "weapon": 7,
+      "shots": 25,
+      "hits": 14,
+      "accuracy": 56,
+      "damage": 1120
+    },
+    {
+      "demo_id": "7295",
+      "winner": "spart1e",
+      "weapon": 8,
+      "shots": 45,
+      "hits": 11,
+      "accuracy": 24,
+      "damage": 215
+    },
+    {
+      "demo_id": "7301",
+      "winner": "strenx",
+      "weapon": 2,
+      "shots": 29,
+      "hits": 9,
+      "accuracy": 31,
+      "damage": 45
+    },
+    {
+      "demo_id": "7301",
+      "winner": "strenx",
+      "weapon": 5,
+      "shots": 64,
+      "hits": 27,
+      "accuracy": 42,
+      "damage": 877
+    },
+    {
+      "demo_id": "7301",
+      "winner": "strenx",
+      "weapon": 6,
+      "shots": 417,
+      "hits": 149,
+      "accuracy": 35,
+      "damage": 1043
+    },
+    {
+      "demo_id": "7301",
+      "winner": "strenx",
+      "weapon": 7,
+      "shots": 21,
+      "hits": 9,
+      "accuracy": 42,
+      "damage": 720
+    },
+    {
+      "demo_id": "7301",
+      "winner": "strenx",
+      "weapon": 8,
+      "shots": 56,
+      "hits": 10,
+      "accuracy": 17,
+      "damage": 200
+    },
+    {
+      "demo_id": "7309",
+      "winner": "avekkk",
+      "weapon": 2,
+      "shots": 35,
+      "hits": 12,
+      "accuracy": 34,
+      "damage": 60
+    },
+    {
+      "demo_id": "7309",
+      "winner": "avekkk",
+      "weapon": 3,
+      "shots": 40,
+      "hits": 2,
+      "accuracy": 5,
+      "damage": 10
+    },
+    {
+      "demo_id": "7309",
+      "winner": "avekkk",
+      "weapon": 5,
+      "shots": 94,
+      "hits": 15,
+      "accuracy": 15,
+      "damage": 630
+    },
+    {
+      "demo_id": "7309",
+      "winner": "avekkk",
+      "weapon": 6,
+      "shots": 420,
+      "hits": 123,
+      "accuracy": 29,
+      "damage": 848
+    },
+    {
+      "demo_id": "7309",
+      "winner": "avekkk",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 15,
+      "accuracy": 46,
+      "damage": 1122
+    },
+    {
+      "demo_id": "7309",
+      "winner": "avekkk",
+      "weapon": 8,
+      "shots": 131,
+      "hits": 15,
+      "accuracy": 11,
+      "damage": 242
+    },
+    {
+      "demo_id": "7320",
+      "winner": "avekkk",
+      "weapon": 2,
+      "shots": 96,
+      "hits": 39,
+      "accuracy": 40,
+      "damage": 195
+    },
+    {
+      "demo_id": "7320",
+      "winner": "avekkk",
+      "weapon": 5,
+      "shots": 26,
+      "hits": 3,
+      "accuracy": 11,
+      "damage": 166
+    },
+    {
+      "demo_id": "7320",
+      "winner": "avekkk",
+      "weapon": 6,
+      "shots": 314,
+      "hits": 109,
+      "accuracy": 34,
+      "damage": 749
+    },
+    {
+      "demo_id": "7320",
+      "winner": "avekkk",
+      "weapon": 7,
+      "shots": 31,
+      "hits": 14,
+      "accuracy": 45,
+      "damage": 1049
+    },
+    {
+      "demo_id": "7320",
+      "winner": "avekkk",
+      "weapon": 8,
+      "shots": 141,
+      "hits": 24,
+      "accuracy": 17,
+      "damage": 397
+    },
+    {
+      "demo_id": "7330",
+      "winner": "av3k",
+      "weapon": 2,
+      "shots": 20,
+      "hits": 12,
+      "accuracy": 60,
+      "damage": 60
+    },
+    {
+      "demo_id": "7330",
+      "winner": "av3k",
+      "weapon": 5,
+      "shots": 90,
+      "hits": 22,
+      "accuracy": 24,
+      "damage": 970
+    },
+    {
+      "demo_id": "7330",
+      "winner": "av3k",
+      "weapon": 6,
+      "shots": 424,
+      "hits": 111,
+      "accuracy": 26,
+      "damage": 770
+    },
+    {
+      "demo_id": "7330",
+      "winner": "av3k",
+      "weapon": 7,
+      "shots": 25,
+      "hits": 9,
+      "accuracy": 36,
+      "damage": 648
+    },
+    {
+      "demo_id": "7330",
+      "winner": "av3k",
+      "weapon": 8,
+      "shots": 74,
+      "hits": 10,
+      "accuracy": 13,
+      "damage": 183
+    },
+    {
+      "demo_id": "7334",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 57,
+      "hits": 13,
+      "accuracy": 22,
+      "damage": 514
+    },
+    {
+      "demo_id": "7334",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 458,
+      "hits": 173,
+      "accuracy": 37,
+      "damage": 1200
+    },
+    {
+      "demo_id": "7334",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 30,
+      "hits": 8,
+      "accuracy": 26,
+      "damage": 595
+    },
+    {
+      "demo_id": "7334",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 122,
+      "hits": 13,
+      "accuracy": 10,
+      "damage": 231
+    },
+    {
+      "demo_id": "7339",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 13,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "7339",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 72,
+      "hits": 22,
+      "accuracy": 30,
+      "damage": 1069
+    },
+    {
+      "demo_id": "7339",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 331,
+      "hits": 133,
+      "accuracy": 40,
+      "damage": 927
+    },
+    {
+      "demo_id": "7339",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 15,
+      "hits": 8,
+      "accuracy": 53,
+      "damage": 483
+    },
+    {
+      "demo_id": "7345",
+      "winner": "nicerdicer",
+      "weapon": 3,
+      "shots": 40,
+      "hits": 5,
+      "accuracy": 12,
+      "damage": 23
+    },
+    {
+      "demo_id": "7345",
+      "winner": "nicerdicer",
+      "weapon": 5,
+      "shots": 62,
+      "hits": 10,
+      "accuracy": 16,
+      "damage": 473
+    },
+    {
+      "demo_id": "7345",
+      "winner": "nicerdicer",
+      "weapon": 6,
+      "shots": 769,
+      "hits": 247,
+      "accuracy": 32,
+      "damage": 1655
+    },
+    {
+      "demo_id": "7345",
+      "winner": "nicerdicer",
+      "weapon": 7,
+      "shots": 29,
+      "hits": 15,
+      "accuracy": 51,
+      "damage": 1146
+    },
+    {
+      "demo_id": "7345",
+      "winner": "nicerdicer",
+      "weapon": 8,
+      "shots": 16,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "7347",
+      "winner": "spart1e",
+      "weapon": 2,
+      "shots": 18,
+      "hits": 5,
+      "accuracy": 27,
+      "damage": 25
+    },
+    {
+      "demo_id": "7347",
+      "winner": "spart1e",
+      "weapon": 5,
+      "shots": 139,
+      "hits": 45,
+      "accuracy": 32,
+      "damage": 1830
+    },
+    {
+      "demo_id": "7347",
+      "winner": "spart1e",
+      "weapon": 6,
+      "shots": 345,
+      "hits": 108,
+      "accuracy": 31,
+      "damage": 745
+    },
+    {
+      "demo_id": "7347",
+      "winner": "spart1e",
+      "weapon": 7,
+      "shots": 22,
+      "hits": 10,
+      "accuracy": 45,
+      "damage": 772
+    },
+    {
+      "demo_id": "7347",
+      "winner": "spart1e",
+      "weapon": 8,
+      "shots": 13,
+      "hits": 1,
+      "accuracy": 7,
+      "damage": 20
+    },
+    {
+      "demo_id": "7350",
+      "winner": "nicerdicer",
+      "weapon": 3,
+      "shots": 40,
+      "hits": 5,
+      "accuracy": 12,
+      "damage": 23
+    },
+    {
+      "demo_id": "7350",
+      "winner": "nicerdicer",
+      "weapon": 5,
+      "shots": 62,
+      "hits": 10,
+      "accuracy": 16,
+      "damage": 473
+    },
+    {
+      "demo_id": "7350",
+      "winner": "nicerdicer",
+      "weapon": 6,
+      "shots": 769,
+      "hits": 247,
+      "accuracy": 32,
+      "damage": 1655
+    },
+    {
+      "demo_id": "7350",
+      "winner": "nicerdicer",
+      "weapon": 7,
+      "shots": 29,
+      "hits": 15,
+      "accuracy": 51,
+      "damage": 1146
+    },
+    {
+      "demo_id": "7350",
+      "winner": "nicerdicer",
+      "weapon": 8,
+      "shots": 16,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "7352",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 57,
+      "hits": 13,
+      "accuracy": 22,
+      "damage": 514
+    },
+    {
+      "demo_id": "7352",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 458,
+      "hits": 173,
+      "accuracy": 37,
+      "damage": 1200
+    },
+    {
+      "demo_id": "7352",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 30,
+      "hits": 8,
+      "accuracy": 26,
+      "damage": 595
+    },
+    {
+      "demo_id": "7352",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 122,
+      "hits": 13,
+      "accuracy": 10,
+      "damage": 231
+    },
+    {
+      "demo_id": "7358",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 67,
+      "hits": 27,
+      "accuracy": 40,
+      "damage": 132
+    },
+    {
+      "demo_id": "7358",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 85,
+      "hits": 26,
+      "accuracy": 30,
+      "damage": 1046
+    },
+    {
+      "demo_id": "7358",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 423,
+      "hits": 161,
+      "accuracy": 38,
+      "damage": 1100
+    },
+    {
+      "demo_id": "7358",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 22,
+      "hits": 10,
+      "accuracy": 45,
+      "damage": 703
+    },
+    {
+      "demo_id": "7358",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 117,
+      "hits": 22,
+      "accuracy": 18,
+      "damage": 335
+    },
+    {
+      "demo_id": "7359",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 127,
+      "hits": 37,
+      "accuracy": 29,
+      "damage": 181
+    },
+    {
+      "demo_id": "7359",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 66,
+      "hits": 15,
+      "accuracy": 22,
+      "damage": 897
+    },
+    {
+      "demo_id": "7359",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 313,
+      "hits": 119,
+      "accuracy": 38,
+      "damage": 831
+    },
+    {
+      "demo_id": "7359",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 14,
+      "accuracy": 43,
+      "damage": 1007
+    },
+    {
+      "demo_id": "7359",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 102,
+      "hits": 13,
+      "accuracy": 12,
+      "damage": 251
+    },
+    {
+      "demo_id": "7361",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 127,
+      "hits": 37,
+      "accuracy": 29,
+      "damage": 181
+    },
+    {
+      "demo_id": "7361",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 66,
+      "hits": 15,
+      "accuracy": 22,
+      "damage": 897
+    },
+    {
+      "demo_id": "7361",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 313,
+      "hits": 119,
+      "accuracy": 38,
+      "damage": 831
+    },
+    {
+      "demo_id": "7361",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 14,
+      "accuracy": 43,
+      "damage": 1007
+    },
+    {
+      "demo_id": "7361",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 102,
+      "hits": 13,
+      "accuracy": 12,
+      "damage": 251
+    },
+    {
+      "demo_id": "7363",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 21,
+      "hits": 1,
+      "accuracy": 4,
+      "damage": 3
+    },
+    {
+      "demo_id": "7363",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 47,
+      "hits": 11,
+      "accuracy": 23,
+      "damage": 431
+    },
+    {
+      "demo_id": "7363",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 655,
+      "hits": 245,
+      "accuracy": 37,
+      "damage": 1628
+    },
+    {
+      "demo_id": "7363",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 19,
+      "hits": 8,
+      "accuracy": 42,
+      "damage": 586
+    },
+    {
+      "demo_id": "7363",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 48,
+      "hits": 13,
+      "accuracy": 27,
+      "damage": 260
+    },
+    {
+      "demo_id": "7367",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 90,
+      "hits": 20,
+      "accuracy": 22,
+      "damage": 100
+    },
+    {
+      "demo_id": "7367",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 83,
+      "hits": 22,
+      "accuracy": 26,
+      "damage": 938
+    },
+    {
+      "demo_id": "7367",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 644,
+      "hits": 206,
+      "accuracy": 31,
+      "damage": 1390
+    },
+    {
+      "demo_id": "7367",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 17,
+      "hits": 7,
+      "accuracy": 41,
+      "damage": 560
+    },
+    {
+      "demo_id": "7376",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 21,
+      "hits": 1,
+      "accuracy": 4,
+      "damage": 3
+    },
+    {
+      "demo_id": "7376",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 47,
+      "hits": 11,
+      "accuracy": 23,
+      "damage": 431
+    },
+    {
+      "demo_id": "7376",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 655,
+      "hits": 245,
+      "accuracy": 37,
+      "damage": 1628
+    },
+    {
+      "demo_id": "7376",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 19,
+      "hits": 8,
+      "accuracy": 42,
+      "damage": 586
+    },
+    {
+      "demo_id": "7376",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 48,
+      "hits": 13,
+      "accuracy": 27,
+      "damage": 260
+    },
+    {
+      "demo_id": "7380",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 60,
+      "hits": 9,
+      "accuracy": 15,
+      "damage": 454
+    },
+    {
+      "demo_id": "7380",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 506,
+      "hits": 275,
+      "accuracy": 54,
+      "damage": 1842
+    },
+    {
+      "demo_id": "7380",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 20,
+      "hits": 9,
+      "accuracy": 45,
+      "damage": 592
+    },
+    {
+      "demo_id": "7380",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 2,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "7383",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 6,
+      "hits": 1,
+      "accuracy": 16,
+      "damage": 5
+    },
+    {
+      "demo_id": "7383",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 81,
+      "hits": 23,
+      "accuracy": 28,
+      "damage": 1193
+    },
+    {
+      "demo_id": "7383",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 405,
+      "hits": 129,
+      "accuracy": 31,
+      "damage": 896
+    },
+    {
+      "demo_id": "7383",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 21,
+      "hits": 12,
+      "accuracy": 57,
+      "damage": 933
+    },
+    {
+      "demo_id": "7383",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 38,
+      "hits": 6,
+      "accuracy": 15,
+      "damage": 96
+    },
+    {
+      "demo_id": "7397",
+      "winner": "guard",
+      "weapon": 5,
+      "shots": 82,
+      "hits": 20,
+      "accuracy": 24,
+      "damage": 1018
+    },
+    {
+      "demo_id": "7397",
+      "winner": "guard",
+      "weapon": 6,
+      "shots": 633,
+      "hits": 219,
+      "accuracy": 34,
+      "damage": 1515
+    },
+    {
+      "demo_id": "7397",
+      "winner": "guard",
+      "weapon": 7,
+      "shots": 21,
+      "hits": 11,
+      "accuracy": 52,
+      "damage": 801
+    },
+    {
+      "demo_id": "7397",
+      "winner": "guard",
+      "weapon": 8,
+      "shots": 12,
+      "hits": 1,
+      "accuracy": 8,
+      "damage": 20
+    },
+    {
+      "demo_id": "74",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 83,
+      "hits": 33,
+      "accuracy": 39,
+      "damage": 1768
+    },
+    {
+      "demo_id": "74",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 427,
+      "hits": 158,
+      "accuracy": 37,
+      "damage": 1106
+    },
+    {
+      "demo_id": "74",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 23,
+      "hits": 16,
+      "accuracy": 69,
+      "damage": 1280
+    },
+    {
+      "demo_id": "74",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 81,
+      "hits": 2,
+      "accuracy": 2,
+      "damage": 40
+    },
+    {
+      "demo_id": "7463",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 35,
+      "hits": 12,
+      "accuracy": 34,
+      "damage": 60
+    },
+    {
+      "demo_id": "7463",
+      "winner": "cypher",
+      "weapon": 3,
+      "shots": 60,
+      "hits": 23,
+      "accuracy": 38,
+      "damage": 115
+    },
+    {
+      "demo_id": "7463",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 75,
+      "hits": 25,
+      "accuracy": 33,
+      "damage": 1110
+    },
+    {
+      "demo_id": "7463",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 806,
+      "hits": 259,
+      "accuracy": 32,
+      "damage": 1813
+    },
+    {
+      "demo_id": "7463",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 24,
+      "hits": 16,
+      "accuracy": 66,
+      "damage": 1280
+    },
+    {
+      "demo_id": "7463",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 36,
+      "hits": 8,
+      "accuracy": 22,
+      "damage": 104
+    },
+    {
+      "demo_id": "7493",
+      "winner": "cooller",
+      "weapon": 2,
+      "shots": 26,
+      "hits": 8,
+      "accuracy": 30,
+      "damage": 40
+    },
+    {
+      "demo_id": "7493",
+      "winner": "cooller",
+      "weapon": 3,
+      "shots": 60,
+      "hits": 3,
+      "accuracy": 5,
+      "damage": 15
+    },
+    {
+      "demo_id": "7493",
+      "winner": "cooller",
+      "weapon": 5,
+      "shots": 79,
+      "hits": 24,
+      "accuracy": 30,
+      "damage": 895
+    },
+    {
+      "demo_id": "7493",
+      "winner": "cooller",
+      "weapon": 6,
+      "shots": 531,
+      "hits": 163,
+      "accuracy": 30,
+      "damage": 1114
+    },
+    {
+      "demo_id": "7493",
+      "winner": "cooller",
+      "weapon": 7,
+      "shots": 30,
+      "hits": 14,
+      "accuracy": 46,
+      "damage": 1033
+    },
+    {
+      "demo_id": "7493",
+      "winner": "cooller",
+      "weapon": 8,
+      "shots": 21,
+      "hits": 1,
+      "accuracy": 4,
+      "damage": 20
+    },
+    {
+      "demo_id": "7728",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 4,
+      "hits": 2,
+      "accuracy": 50,
+      "damage": 10
+    },
+    {
+      "demo_id": "7728",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 97,
+      "hits": 36,
+      "accuracy": 37,
+      "damage": 1774
+    },
+    {
+      "demo_id": "7728",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 644,
+      "hits": 209,
+      "accuracy": 32,
+      "damage": 1470
+    },
+    {
+      "demo_id": "7728",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 36,
+      "hits": 19,
+      "accuracy": 52,
+      "damage": 1520
+    },
+    {
+      "demo_id": "7728",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 231,
+      "hits": 34,
+      "accuracy": 14,
+      "damage": 621
+    },
+    {
+      "demo_id": "7733",
+      "winner": "rapha",
+      "weapon": 2,
+      "shots": 4,
+      "hits": 2,
+      "accuracy": 50,
+      "damage": 10
+    },
+    {
+      "demo_id": "7733",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 97,
+      "hits": 36,
+      "accuracy": 37,
+      "damage": 1774
+    },
+    {
+      "demo_id": "7733",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 644,
+      "hits": 209,
+      "accuracy": 32,
+      "damage": 1470
+    },
+    {
+      "demo_id": "7733",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 36,
+      "hits": 19,
+      "accuracy": 52,
+      "damage": 1520
+    },
+    {
+      "demo_id": "7733",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 231,
+      "hits": 34,
+      "accuracy": 14,
+      "damage": 621
+    },
+    {
+      "demo_id": "7776",
+      "winner": "rapha",
+      "weapon": 5,
+      "shots": 99,
+      "hits": 25,
+      "accuracy": 25,
+      "damage": 1261
+    },
+    {
+      "demo_id": "7776",
+      "winner": "rapha",
+      "weapon": 6,
+      "shots": 467,
+      "hits": 169,
+      "accuracy": 36,
+      "damage": 1183
+    },
+    {
+      "demo_id": "7776",
+      "winner": "rapha",
+      "weapon": 7,
+      "shots": 16,
+      "hits": 6,
+      "accuracy": 37,
+      "damage": 480
+    },
+    {
+      "demo_id": "7776",
+      "winner": "rapha",
+      "weapon": 8,
+      "shots": 128,
+      "hits": 8,
+      "accuracy": 6,
+      "damage": 141
+    },
+    {
+      "demo_id": "7865",
+      "winner": "evil",
+      "weapon": 2,
+      "shots": 19,
+      "hits": 5,
+      "accuracy": 26,
+      "damage": 25
+    },
+    {
+      "demo_id": "7865",
+      "winner": "evil",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 11,
+      "accuracy": 13,
+      "damage": 30
+    },
+    {
+      "demo_id": "7865",
+      "winner": "evil",
+      "weapon": 5,
+      "shots": 122,
+      "hits": 37,
+      "accuracy": 30,
+      "damage": 1555
+    },
+    {
+      "demo_id": "7865",
+      "winner": "evil",
+      "weapon": 6,
+      "shots": 196,
+      "hits": 41,
+      "accuracy": 20,
+      "damage": 287
+    },
+    {
+      "demo_id": "7865",
+      "winner": "evil",
+      "weapon": 7,
+      "shots": 36,
+      "hits": 18,
+      "accuracy": 50,
+      "damage": 1349
+    },
+    {
+      "demo_id": "7865",
+      "winner": "evil",
+      "weapon": 8,
+      "shots": 24,
+      "hits": 1,
+      "accuracy": 4,
+      "damage": 15
+    },
+    {
+      "demo_id": "7875",
+      "winner": "pavel_",
+      "weapon": 2,
+      "shots": 17,
+      "hits": 4,
+      "accuracy": 23,
+      "damage": 20
+    },
+    {
+      "demo_id": "7875",
+      "winner": "pavel_",
+      "weapon": 5,
+      "shots": 87,
+      "hits": 29,
+      "accuracy": 33,
+      "damage": 1483
+    },
+    {
+      "demo_id": "7875",
+      "winner": "pavel_",
+      "weapon": 6,
+      "shots": 505,
+      "hits": 139,
+      "accuracy": 27,
+      "damage": 962
+    },
+    {
+      "demo_id": "7875",
+      "winner": "pavel_",
+      "weapon": 7,
+      "shots": 19,
+      "hits": 4,
+      "accuracy": 21,
+      "damage": 307
+    },
+    {
+      "demo_id": "7875",
+      "winner": "pavel_",
+      "weapon": 8,
+      "shots": 48,
+      "hits": 8,
+      "accuracy": 16,
+      "damage": 126
+    },
+    {
+      "demo_id": "7918",
+      "winner": "tox",
+      "weapon": 2,
+      "shots": 35,
+      "hits": 13,
+      "accuracy": 37,
+      "damage": 65
+    },
+    {
+      "demo_id": "7918",
+      "winner": "tox",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 14,
+      "accuracy": 70,
+      "damage": 70
+    },
+    {
+      "demo_id": "7918",
+      "winner": "tox",
+      "weapon": 5,
+      "shots": 80,
+      "hits": 20,
+      "accuracy": 25,
+      "damage": 1033
+    },
+    {
+      "demo_id": "7918",
+      "winner": "tox",
+      "weapon": 6,
+      "shots": 234,
+      "hits": 54,
+      "accuracy": 23,
+      "damage": 378
+    },
+    {
+      "demo_id": "7918",
+      "winner": "tox",
+      "weapon": 7,
+      "shots": 17,
+      "hits": 7,
+      "accuracy": 41,
+      "damage": 454
+    },
+    {
+      "demo_id": "7918",
+      "winner": "tox",
+      "weapon": 8,
+      "shots": 20,
+      "hits": 1,
+      "accuracy": 5,
+      "damage": 20
+    },
+    {
+      "demo_id": "7920",
+      "winner": "spart1e",
+      "weapon": 2,
+      "shots": 58,
+      "hits": 22,
+      "accuracy": 37,
+      "damage": 106
+    },
+    {
+      "demo_id": "7920",
+      "winner": "spart1e",
+      "weapon": 5,
+      "shots": 47,
+      "hits": 12,
+      "accuracy": 25,
+      "damage": 656
+    },
+    {
+      "demo_id": "7920",
+      "winner": "spart1e",
+      "weapon": 6,
+      "shots": 591,
+      "hits": 227,
+      "accuracy": 38,
+      "damage": 1585
+    },
+    {
+      "demo_id": "7920",
+      "winner": "spart1e",
+      "weapon": 7,
+      "shots": 28,
+      "hits": 12,
+      "accuracy": 42,
+      "damage": 926
+    },
+    {
+      "demo_id": "7920",
+      "winner": "spart1e",
+      "weapon": 8,
+      "shots": 3,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "7932",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 99,
+      "hits": 28,
+      "accuracy": 28,
+      "damage": 1518
+    },
+    {
+      "demo_id": "7932",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 401,
+      "hits": 114,
+      "accuracy": 28,
+      "damage": 798
+    },
+    {
+      "demo_id": "7932",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 21,
+      "hits": 8,
+      "accuracy": 38,
+      "damage": 640
+    },
+    {
+      "demo_id": "7932",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 12,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "7936",
+      "winner": "pawelek85",
+      "weapon": 2,
+      "shots": 21,
+      "hits": 14,
+      "accuracy": 66,
+      "damage": 70
+    },
+    {
+      "demo_id": "7936",
+      "winner": "pawelek85",
+      "weapon": 5,
+      "shots": 60,
+      "hits": 14,
+      "accuracy": 23,
+      "damage": 563
+    },
+    {
+      "demo_id": "7936",
+      "winner": "pawelek85",
+      "weapon": 6,
+      "shots": 827,
+      "hits": 324,
+      "accuracy": 39,
+      "damage": 2268
+    },
+    {
+      "demo_id": "7936",
+      "winner": "pawelek85",
+      "weapon": 7,
+      "shots": 11,
+      "hits": 5,
+      "accuracy": 45,
+      "damage": 400
+    },
+    {
+      "demo_id": "7936",
+      "winner": "pawelek85",
+      "weapon": 8,
+      "shots": 38,
+      "hits": 3,
+      "accuracy": 7,
+      "damage": 46
+    },
+    {
+      "demo_id": "7971",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 46,
+      "hits": 12,
+      "accuracy": 26,
+      "damage": 60
+    },
+    {
+      "demo_id": "7971",
+      "winner": "cypher",
+      "weapon": 3,
+      "shots": 80,
+      "hits": 36,
+      "accuracy": 45,
+      "damage": 180
+    },
+    {
+      "demo_id": "7971",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 79,
+      "hits": 30,
+      "accuracy": 37,
+      "damage": 1606
+    },
+    {
+      "demo_id": "7971",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 735,
+      "hits": 244,
+      "accuracy": 33,
+      "damage": 1708
+    },
+    {
+      "demo_id": "7971",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 28,
+      "hits": 12,
+      "accuracy": 42,
+      "damage": 960
+    },
+    {
+      "demo_id": "7971",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 165,
+      "hits": 22,
+      "accuracy": 13,
+      "damage": 408
+    },
+    {
+      "demo_id": "8123",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 35,
+      "hits": 12,
+      "accuracy": 34,
+      "damage": 60
+    },
+    {
+      "demo_id": "8123",
+      "winner": "cypher",
+      "weapon": 3,
+      "shots": 60,
+      "hits": 23,
+      "accuracy": 38,
+      "damage": 115
+    },
+    {
+      "demo_id": "8123",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 75,
+      "hits": 25,
+      "accuracy": 33,
+      "damage": 1110
+    },
+    {
+      "demo_id": "8123",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 806,
+      "hits": 259,
+      "accuracy": 32,
+      "damage": 1813
+    },
+    {
+      "demo_id": "8123",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 24,
+      "hits": 16,
+      "accuracy": 66,
+      "damage": 1280
+    },
+    {
+      "demo_id": "8123",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 36,
+      "hits": 8,
+      "accuracy": 22,
+      "damage": 104
+    },
+    {
+      "demo_id": "8127",
+      "winner": "spart1e",
+      "weapon": 2,
+      "shots": 62,
+      "hits": 24,
+      "accuracy": 38,
+      "damage": 120
+    },
+    {
+      "demo_id": "8127",
+      "winner": "spart1e",
+      "weapon": 5,
+      "shots": 86,
+      "hits": 23,
+      "accuracy": 26,
+      "damage": 903
+    },
+    {
+      "demo_id": "8127",
+      "winner": "spart1e",
+      "weapon": 6,
+      "shots": 397,
+      "hits": 163,
+      "accuracy": 41,
+      "damage": 1141
+    },
+    {
+      "demo_id": "8127",
+      "winner": "spart1e",
+      "weapon": 7,
+      "shots": 31,
+      "hits": 12,
+      "accuracy": 38,
+      "damage": 960
+    },
+    {
+      "demo_id": "8127",
+      "winner": "spart1e",
+      "weapon": 8,
+      "shots": 34,
+      "hits": 3,
+      "accuracy": 8,
+      "damage": 60
+    },
+    {
+      "demo_id": "8138",
+      "winner": "avekkk",
+      "weapon": 2,
+      "shots": 12,
+      "hits": 7,
+      "accuracy": 58,
+      "damage": 35
+    },
+    {
+      "demo_id": "8138",
+      "winner": "avekkk",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 5,
+      "accuracy": 25,
+      "damage": 25
+    },
+    {
+      "demo_id": "8138",
+      "winner": "avekkk",
+      "weapon": 5,
+      "shots": 90,
+      "hits": 27,
+      "accuracy": 30,
+      "damage": 834
+    },
+    {
+      "demo_id": "8138",
+      "winner": "avekkk",
+      "weapon": 6,
+      "shots": 602,
+      "hits": 138,
+      "accuracy": 22,
+      "damage": 966
+    },
+    {
+      "demo_id": "8138",
+      "winner": "avekkk",
+      "weapon": 7,
+      "shots": 32,
+      "hits": 17,
+      "accuracy": 53,
+      "damage": 1360
+    },
+    {
+      "demo_id": "8138",
+      "winner": "avekkk",
+      "weapon": 8,
+      "shots": 73,
+      "hits": 6,
+      "accuracy": 8,
+      "damage": 102
+    },
+    {
+      "demo_id": "8358",
+      "winner": "zero4",
+      "weapon": 2,
+      "shots": 57,
+      "hits": 22,
+      "accuracy": 38,
+      "damage": 110
+    },
+    {
+      "demo_id": "8358",
+      "winner": "zero4",
+      "weapon": 5,
+      "shots": 60,
+      "hits": 20,
+      "accuracy": 33,
+      "damage": 614
+    },
+    {
+      "demo_id": "8358",
+      "winner": "zero4",
+      "weapon": 6,
+      "shots": 598,
+      "hits": 172,
+      "accuracy": 28,
+      "damage": 1204
+    },
+    {
+      "demo_id": "8358",
+      "winner": "zero4",
+      "weapon": 7,
+      "shots": 36,
+      "hits": 20,
+      "accuracy": 55,
+      "damage": 1600
+    },
+    {
+      "demo_id": "8358",
+      "winner": "zero4",
+      "weapon": 8,
+      "shots": 76,
+      "hits": 23,
+      "accuracy": 30,
+      "damage": 352
+    },
+    {
+      "demo_id": "8370",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 14,
+      "hits": 4,
+      "accuracy": 28,
+      "damage": 20
+    },
+    {
+      "demo_id": "8370",
+      "winner": "k1llsen",
+      "weapon": 3,
+      "shots": 60,
+      "hits": 15,
+      "accuracy": 25,
+      "damage": 75
+    },
+    {
+      "demo_id": "8370",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 41,
+      "hits": 16,
+      "accuracy": 39,
+      "damage": 848
+    },
+    {
+      "demo_id": "8370",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 863,
+      "hits": 356,
+      "accuracy": 41,
+      "damage": 2492
+    },
+    {
+      "demo_id": "8370",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 37,
+      "hits": 25,
+      "accuracy": 67,
+      "damage": 2000
+    },
+    {
+      "demo_id": "8370",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 16,
+      "hits": 7,
+      "accuracy": 43,
+      "damage": 124
+    },
+    {
+      "demo_id": "8372",
+      "winner": "k1llsen",
+      "weapon": 2,
+      "shots": 6,
+      "hits": 1,
+      "accuracy": 16,
+      "damage": 5
+    },
+    {
+      "demo_id": "8372",
+      "winner": "k1llsen",
+      "weapon": 5,
+      "shots": 51,
+      "hits": 21,
+      "accuracy": 41,
+      "damage": 1177
+    },
+    {
+      "demo_id": "8372",
+      "winner": "k1llsen",
+      "weapon": 6,
+      "shots": 332,
+      "hits": 121,
+      "accuracy": 36,
+      "damage": 847
+    },
+    {
+      "demo_id": "8372",
+      "winner": "k1llsen",
+      "weapon": 7,
+      "shots": 36,
+      "hits": 16,
+      "accuracy": 44,
+      "damage": 1280
+    },
+    {
+      "demo_id": "8372",
+      "winner": "k1llsen",
+      "weapon": 8,
+      "shots": 13,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "8382",
+      "winner": "cypher",
+      "weapon": 2,
+      "shots": 9,
+      "hits": 5,
+      "accuracy": 55,
+      "damage": 25
+    },
+    {
+      "demo_id": "8382",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 80,
+      "hits": 21,
+      "accuracy": 26,
+      "damage": 1087
+    },
+    {
+      "demo_id": "8382",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 988,
+      "hits": 418,
+      "accuracy": 42,
+      "damage": 2933
+    },
+    {
+      "demo_id": "8382",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 20,
+      "hits": 10,
+      "accuracy": 50,
+      "damage": 800
+    },
+    {
+      "demo_id": "8382",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 60,
+      "hits": 12,
+      "accuracy": 20,
+      "damage": 191
+    },
+    {
+      "demo_id": "8386",
+      "winner": "strenx",
+      "weapon": 2,
+      "shots": 13,
+      "hits": 7,
+      "accuracy": 53,
+      "damage": 35
+    },
+    {
+      "demo_id": "8386",
+      "winner": "strenx",
+      "weapon": 5,
+      "shots": 82,
+      "hits": 18,
+      "accuracy": 21,
+      "damage": 944
+    },
+    {
+      "demo_id": "8386",
+      "winner": "strenx",
+      "weapon": 6,
+      "shots": 681,
+      "hits": 184,
+      "accuracy": 27,
+      "damage": 1288
+    },
+    {
+      "demo_id": "8386",
+      "winner": "strenx",
+      "weapon": 7,
+      "shots": 23,
+      "hits": 12,
+      "accuracy": 52,
+      "damage": 960
+    },
+    {
+      "demo_id": "8386",
+      "winner": "strenx",
+      "weapon": 8,
+      "shots": 10,
+      "hits": 0,
+      "accuracy": 0,
+      "damage": 0
+    },
+    {
+      "demo_id": "8389",
+      "winner": "_ash",
+      "weapon": 2,
+      "shots": 7,
+      "hits": 1,
+      "accuracy": 14,
+      "damage": 5
+    },
+    {
+      "demo_id": "8389",
+      "winner": "_ash",
+      "weapon": 3,
+      "shots": 20,
+      "hits": 7,
+      "accuracy": 35,
+      "damage": 35
+    },
+    {
+      "demo_id": "8389",
+      "winner": "_ash",
+      "weapon": 5,
+      "shots": 28,
+      "hits": 8,
+      "accuracy": 28,
+      "damage": 466
+    },
+    {
+      "demo_id": "8389",
+      "winner": "_ash",
+      "weapon": 6,
+      "shots": 426,
+      "hits": 131,
+      "accuracy": 30,
+      "damage": 917
+    },
+    {
+      "demo_id": "8389",
+      "winner": "_ash",
+      "weapon": 7,
+      "shots": 17,
+      "hits": 12,
+      "accuracy": 70,
+      "damage": 960
+    },
+    {
+      "demo_id": "8389",
+      "winner": "_ash",
+      "weapon": 8,
+      "shots": 101,
+      "hits": 5,
+      "accuracy": 4,
+      "damage": 82
+    },
+    {
+      "demo_id": "9",
+      "winner": "cypher",
+      "weapon": 5,
+      "shots": 67,
+      "hits": 18,
+      "accuracy": 26,
+      "damage": 1300
+    },
+    {
+      "demo_id": "9",
+      "winner": "cypher",
+      "weapon": 6,
+      "shots": 358,
+      "hits": 128,
+      "accuracy": 35,
+      "damage": 896
+    },
+    {
+      "demo_id": "9",
+      "winner": "cypher",
+      "weapon": 7,
+      "shots": 48,
+      "hits": 26,
+      "accuracy": 54,
+      "damage": 2080
+    },
+    {
+      "demo_id": "9",
+      "winner": "cypher",
+      "weapon": 8,
+      "shots": 244,
+      "hits": 21,
+      "accuracy": 8,
+      "damage": 333
+    }
+  ],
+  "method": "Arithmetic mean of reported per-match accuracy for the winning scoreboard row; pooled hits/shots shown separately; range +/-7.5 percentage points.",
+  "limitations": [
+    "A score winner is not independently verified player identity",
+    "Accuracy is not damage per bullet",
+    "Gauntlet, splash and shotgun pellet semantics differ; do not calibrate by raw hit quotient alone",
+    "Aiming profile parameters do not guarantee achieved accuracy; live calibration required"
+  ],
+  "pipeline_sha256": "798a5de0f7db4df4aa6817913740d9683bf3da74e43e21cd864f372ff7cde1e8"
+}

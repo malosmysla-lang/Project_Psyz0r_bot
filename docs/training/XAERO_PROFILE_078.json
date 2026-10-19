@@ -1,0 +1,168 @@
+{
+  "stock_source": "/home/qlserver/psyz0r-test-server/baseq3/pak00.pk3",
+  "stock_character_sha256": "1ead8a0e4714d1743670cd1dcba714d23c2c8dd206bd13db800a44922a91ad3d",
+  "profile_sha256": "239b2b92850e8e4b1ee682b972c6b5160718c56b642d78c81eeba0a39e8a5455",
+  "changes": {
+    "CHARACTERISTIC_ATTACK_SKILL": {
+      "old": ".85",
+      "new": "0.95"
+    },
+    "CHARACTERISTIC_AIM_SKILL": {
+      "old": ".85",
+      "new": "0.95"
+    },
+    "CHARACTERISTIC_AIM_ACCURACY": {
+      "old": ".75",
+      "new": "0.95"
+    },
+    "CHARACTERISTIC_VIEW_FACTOR": {
+      "old": ".8",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_VIEW_MAXCHANGE": {
+      "old": "240",
+      "new": "360"
+    },
+    "CHARACTERISTIC_REACTIONTIME": {
+      "old": ".20",
+      "new": ".12"
+    },
+    "CHARACTERISTIC_CHAT_CPM": {
+      "old": null,
+      "new": "400"
+    },
+    "CHARACTERISTIC_CHAT_INSULT": {
+      "old": null,
+      "new": "0.4"
+    },
+    "CHARACTERISTIC_CHAT_MISC": {
+      "old": null,
+      "new": "0.5"
+    },
+    "CHARACTERISTIC_CHAT_STARTENDLEVEL": {
+      "old": null,
+      "new": "0.5"
+    },
+    "CHARACTERISTIC_CHAT_ENTEREXITGAME": {
+      "old": null,
+      "new": "0.5"
+    },
+    "CHARACTERISTIC_CHAT_KILL": {
+      "old": null,
+      "new": "0.5"
+    },
+    "CHARACTERISTIC_CHAT_DEATH": {
+      "old": null,
+      "new": "0.5"
+    },
+    "CHARACTERISTIC_CHAT_ENEMYSUICIDE": {
+      "old": null,
+      "new": "0.5"
+    },
+    "CHARACTERISTIC_CHAT_HITTALKING": {
+      "old": null,
+      "new": "0.1"
+    },
+    "CHARACTERISTIC_CHAT_HITNODEATH": {
+      "old": null,
+      "new": "0.5"
+    },
+    "CHARACTERISTIC_CHAT_HITNOKILL": {
+      "old": null,
+      "new": "0.5"
+    },
+    "CHARACTERISTIC_CHAT_RANDOM": {
+      "old": null,
+      "new": "0.5"
+    },
+    "CHARACTERISTIC_CHAT_REPLY": {
+      "old": null,
+      "new": "0.1"
+    },
+    "CHARACTERISTIC_JUMPER": {
+      "old": ".05",
+      "new": ".25"
+    },
+    "CHARACTERISTIC_GRAPPLE_USER": {
+      "old": null,
+      "new": "0.0"
+    },
+    "CHARACTERISTIC_AGGRESSION": {
+      "old": ".65",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_SELFPRESERVATION": {
+      "old": ".9",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_VENGEFULNESS": {
+      "old": ".5",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_CAMPER": {
+      "old": ".1",
+      "new": "0.0"
+    },
+    "CHARACTERISTIC_EASY_FRAGGER": {
+      "old": ".5",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_ALERTNESS": {
+      "old": ".9",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_ACCURACY_MACHINEGUN": {
+      "old": ".65",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_ACCURACY_SHOTGUN": {
+      "old": ".65",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_ACCURACY_ROCKETLAUNCHER": {
+      "old": ".75",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_ACCURACY_GRENADELAUNCHER": {
+      "old": ".5",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_ACCURACY_LIGHTNING": {
+      "old": ".65",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_ACCURACY_PLASMAGUN": {
+      "old": ".6",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_ACCURACY_RAILGUN": {
+      "old": ".75",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_ACCURACY_BFG10K": {
+      "old": null,
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_SKILL_ROCKETLAUNCHER": {
+      "old": ".8",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_SKILL_GRENADELAUNCHER": {
+      "old": ".8",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_SKILL_PLASMAGUN": {
+      "old": ".8",
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_AIM_SKILL_BFG10K": {
+      "old": null,
+      "new": "1.0"
+    },
+    "CHARACTERISTIC_FIRETHROTTLE": {
+      "old": "1",
+      "new": "1.0"
+    }
+  },
+  "gameplay_accuracy_calibrated": false
+}

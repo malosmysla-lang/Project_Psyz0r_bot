@@ -9,7 +9,7 @@
 enum {STAT_HEALTH,STAT_HOLDABLE_ITEM,STAT_RUNE,STAT_WEAPONS,STAT_ARMOR};
 struct usercmd_t {int serverTime,buttons,angles[3];unsigned char weapon;signed char forwardmove,rightmove,upmove;};
 struct playerState_t {float origin[3],velocity[3],viewangles[3];int delta_angles[3],stats[18],ammo[16],groundEntityNum,weapon,weaponTime;};
-struct Client {playerState_t ps;struct {usercmd_t cmd;} pers;};
+struct Client {playerState_t ps;struct {usercmd_t cmd;char netname[40];} pers;};
 struct gitem_t {const char *classname,*pickup_name;int giTag;};
 struct gentity_t {int inuse,health,nextthink;struct {int number,modelindex;} s;struct {int svFlags,contents;float currentOrigin[3];} r;gitem_t *item;Client *client;};
 struct trace_t {};
@@ -40,12 +40,24 @@ static void reset(){
  openingvar.integer=0;phasevar.string="PRE_GAME";portvar.integer=27961;
  registry_ready=0;combatvar.integer=0;aimvar.integer=0;preparevar.integer=0;timervar.integer=0;
  world[0].client=&client;world[0].inuse=1;world[0].health=100;world[0].r.svFlags=8;
+ strcpy(client.pers.netname,"Psyz0r_bot");
  client.ps.groundEntityNum=1022;client.pers.cmd.serverTime=20000;
  void *im=imports_memory;memcpy(game_memory+0x2d8000,&im,sizeof(im));
  auto p=pop;auto u=push;auto g=get_item;memcpy(imports_memory+0x468,&p,sizeof(p));memcpy(imports_memory+0x460,&u,sizeof(u));memcpy(imports_memory+0x4d0,&g,sizeof(g));
 }
 static void goal(unsigned char *out,int id,int area,const float *position){memset(out,0,64);memcpy(out,position,12);memcpy(out+12,&area,4);memcpy(out+40,&id,4);int flags=1;memcpy(out+48,&flags,4);}
 int main(){try{
+ reset();check(Psyz_IsOurBot(&world[0]),"Controlled bot is identified by flag and name");
+ world[0].r.svFlags=0;check(!Psyz_IsOurBot(&world[0]),"Human in slot zero is never our bot");
+ world[0].r.svFlags=8;strcpy(client.pers.netname,"Xaero");check(!Psyz_IsOurBot(&world[0]),"Baseline Xaero is not modified by overlay");
+ strcpy(client.pers.netname,"^2Psyz0r_bot");world[5]=world[0];world[0].inuse=0;
+ check(Psyz_ControlledEntity()==&world[5],"Psyz0r in nonzero slot remains controlled");
+ reset();world[200].item=&mega;world[200].r.contents=1;
+ check(Psyz_ItemBaseWeight(&world[200],&world[0],1)>=200,"Available Mega is valuable during recovery without Trinity");
+ world[201].item=&red;world[201].r.contents=1;
+ check(Psyz_ItemBaseWeight(&world[201],&world[0],1)>=190,"Available red is not rejected just because opponent has larger stack");
+ client.ps.stats[STAT_ARMOR]=200;
+ check(Psyz_ItemBaseWeight(&world[201],&world[0],1)<10,"Do not chase red when armor already full");
  reset();usercmd_t stable{};
  float stable_scale=1;
  for(int t=1000;t<=4000;t+=25)stable_scale=Psyz_LGContextScale(&stable,t);
@@ -98,7 +110,7 @@ int main(){try{
  Psyz_PreAlphaGoal(state,0,out);check(psyz_goal_target==200,"At adequate stack prefer Mega");
  Client enemy{};world[1].inuse=1;world[1].client=&enemy;world[1].health=200;enemy.ps.stats[STAT_ARMOR]=200;
  psyz_goal_target=-1;goal(out,200,10,world[200].r.currentOrigin);Psyz_PreAlphaGoal(state,0,out);
- check(psyz_goal_target==201,"Outstacked bot should recover on yellow armor");
+ check(psyz_goal_target==200,"Larger rival stack alone cannot veto an available nearby Mega");
  // Entity IDs change between FFA and Duel; position and class must retain the route.
  const auto &r=psyz_routes[0];gitem_t mapped{r.classname,"test",0};world[333].item=&mapped;
  memcpy(world[333].r.currentOrigin,r.target,12);memcpy(client.ps.origin,r.points[0].p,12);
@@ -211,7 +223,7 @@ int main(){try{
  reset();combatvar.integer=1;preparevar.integer=1;psyz_last_move_time=19975;
  client.pers.cmd.buttons=1;client.pers.cmd.forwardmove=127;client.pers.cmd.rightmove=64;
  Psyz_PreAlphaMove(&world[0]);
- check(client.pers.cmd.forwardmove==0 && client.pers.cmd.rightmove==64 && (client.pers.cmd.buttons&1),"Unarmed bot defends without voluntary forward push");
+ check(client.pers.cmd.forwardmove==127 && client.pers.cmd.rightmove==64 && (client.pers.cmd.buttons&1),"Unarmed defensive fire must preserve stock movement instead of freezing MG bot");
  client.ps.stats[STAT_WEAPONS]=(1<<5)|(1<<6);client.ps.ammo[5]=3;client.ps.ammo[6]=40;
  client.pers.cmd.serverTime+=25;client.pers.cmd.forwardmove=127;Psyz_PreAlphaMove(&world[0]);
  check(client.pers.cmd.forwardmove==127,"Two adequately supplied main weapons permit stock push");

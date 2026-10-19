@@ -11,10 +11,10 @@ static void Psyz_Think(gentity_t* ent) {
     cvar_t *mode = Cvar_FindVar("qlx_psyzControlMode");
     cvar_t *port = Cvar_FindVar("net_port");
     if (!test || test->integer != 1 || !mode || (mode->integer != 1 && mode->integer != 2 && mode->integer != 3) ||
-        !port || port->integer != 27961 || !ent || ent->s.number != 0 ||
+        !port || port->integer != 27961 || !Psyz_IsOurBot(ent) ||
         !(ent->r.svFlags & 8) || !ent->client || ent->health <= 0) {
         if (!mode || mode->integer == 0) psyz_started = -1;
-        if(ent && ent->s.number==0 && ent->health<=0){
+        if(Psyz_IsOurBot(ent) && ent->health<=0){
             psyz_rj=-1;
             if(Psyz_PreAlphaEnabled() && ent->client)Psyz_OpeningEnd(ent->client->pers.cmd.serverTime,"death");
             psyz_goal_target=psyz_active_route=psyz_rj_plan=-1;

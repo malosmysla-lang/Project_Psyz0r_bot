@@ -1,5 +1,22 @@
 /* Experimental Blood Run prealpha. Uses valid goals produced by stock QL. */
 #include <math.h>
+#include <ctype.h>
+static int Psyz_IsOurBot(const gentity_t *ent){
+    if(!ent || !ent->inuse || !ent->client || !(ent->r.svFlags&8))return 0;
+    char name[40];int n=0;
+    for(int i=0;i<39 && ent->client->pers.netname[i];i++){
+        unsigned char c=(unsigned char)ent->client->pers.netname[i];
+        if(c=='^' && i<38 && isdigit((unsigned char)ent->client->pers.netname[i+1])){i++;continue;}
+        name[n++]=(char)tolower(c);
+    }
+    name[n]=0;
+    return !strcmp(name,"psyz0r") || !strcmp(name,"psyz0r_bot") || !strcmp(name,"pzyz0r-bot") || !strcmp(name,"pzyz0r_bot");
+}
+static gentity_t *Psyz_ControlledEntity(void){
+    if(!g_entities)return NULL;
+    for(int i=0;i<64;i++)if(Psyz_IsOurBot(&g_entities[i]))return &g_entities[i];
+    return NULL;
+}
 #include "psyz_loadout.h"
 #include "psyz_macro.h"
 #include "psyz_lg_style.h"
@@ -15,6 +32,8 @@ static int psyz_timer_log;
 static const PsyzLearnedRoute *Psyz_Route(size_t i) { return i<PSYZ_ROUTE_COUNT?&psyz_routes[i]:&psyz_red_routes[i-PSYZ_ROUTE_COUNT]; }
 #include "psyz_nav_recovery.h"
 static PsyzNavRecovery psyz_nav;
+static PsyzMotionWatch psyz_motion;
+static int psyz_stock_escape_until,psyz_stock_escape_pending;
 static int psyz_nav_health,psyz_nav_armor,psyz_nav_damage_time;
 static int psyz_prepare_log;
 static int psyz_macro_anchor=-1,psyz_macro_anchor_since,psyz_macro_log;
@@ -61,6 +80,9 @@ static void Psyz_HumanizeAim(usercmd_t *cmd,int weapon,int now){
     const float initial[9]={0,0,1.1f,1.5f,3.f,2.5f,1.25f,.45f,3.f};
     cvar_t *amplitude=Cvar_FindVar(weapon==6?"qlx_psyzLGAimError":weapon==8?"qlx_psyzPlasmaAimError":"qlx_psyzOtherAimError");
     float degrees=amplitude?(float)atof(amplitude->string):initial[weapon];
+    // Отдельная ошибка каждой пушки: MG не наследует разброс RL/plasma.
+    char per_weapon[48];snprintf(per_weapon,sizeof(per_weapon),"qlx_psyzAimError%d",weapon);
+    cvar_t *specific=Cvar_FindVar(per_weapon);if(specific)degrees=(float)atof(specific->string);
     if(!isfinite(degrees))degrees=initial[weapon];
     if(degrees<0)degrees=0;if(degrees>10)degrees=10;
     if(all_weapons){
@@ -86,12 +108,13 @@ static void Psyz_HumanizeAim(usercmd_t *cmd,int weapon,int now){
     // Для шафта используем сопровождение с задержкой и постоянной ошибкой очереди.
     // Прежний шум остаётся у других пушек, но не добавляется поверх LG-фильтра.
     cvar_t *smooth=Cvar_FindVar("qlx_psyzLGSmoothTracking");
-    if(weapon==6 && smooth && smooth->integer && g_entities && g_entities[0].client){
+    gentity_t *controlled=Psyz_ControlledEntity();
+    if(weapon==6 && smooth && smooth->integer && controlled){
         cvar_t *cap=Cvar_FindVar("qlx_psyzLGTurnRate");float rate=cap?(float)atof(cap->string):240.f;
         if(!isfinite(rate) || rate<30 || rate>720)rate=240.f;
         float current[2],seed[2];
         for(int a=0;a<2;a++){
-            current[a]=g_entities[0].client->ps.viewangles[a]-g_entities[0].client->ps.delta_angles[a]*360.f/65536.f;
+            current[a]=controlled->client->ps.viewangles[a]-controlled->client->ps.delta_angles[a]*360.f/65536.f;
             seed[a]=Psyz_AimNoise((unsigned int)(now/1000),(unsigned int)(91+a));
         }
         Psyz_LGSmoothCommand(&psyz_lg_smooth,cmd->angles,current,now,degrees,rate,seed);
@@ -156,6 +179,7 @@ static int Psyz_JumpAutoAllowed(int sample){
 #include "psyz_opening.h"
 static void Psyz_PreAlphaReset(void) {
     Psyz_NavReset(&psyz_nav);psyz_nav_health=psyz_nav_armor=psyz_nav_damage_time=psyz_prepare_log=0;
+    Psyz_MotionReset(&psyz_motion);psyz_stock_escape_until=psyz_stock_escape_pending=0;
     memset(psyz_item_clocks,0,sizeof(psyz_item_clocks));psyz_timer_log=0;
     psyz_combat_until=psyz_diagnostic_time=0;
     psyz_combat_log=psyz_aim_log=0;
@@ -191,8 +215,10 @@ static float Psyz_ItemBaseWeight(gentity_t *item,gentity_t *own,int recovering) 
     if(!strcmp(c,"weapon_shotgun"))return (weapons&(1<<3)) && own->client->ps.ammo[3]>0?6:90;
     if(!strcmp(c,"weapon_plasmagun"))return (weapons&(1<<8)) && own->client->ps.ammo[8]>0?6:75;
     if(!strcmp(c,"weapon_grenadelauncher"))return weapons&(1<<4)?5:50;
-    if(!strcmp(c,"item_health_mega"))return h>=190?5:recovering?65:135;
-    if(!strcmp(c,"item_armor_body"))return a>=190?4:recovering?55:110;
+    // Свободная Mega восстанавливает стек лучше аптечки. Больший стек врага
+    // сам по себе не является сведением об опасности на точке подбора.
+    if(!strcmp(c,"item_health_mega"))return h>=190?5:item->r.contents?(h<150?225:155):recovering?100:135;
+    if(!strcmp(c,"item_armor_body"))return a>=190?4:item->r.contents?(h>=70 && a<150?195:115):recovering?85:110;
     if(!strcmp(c,"item_armor_combat"))return a>=150?4:recovering?160:80;
     if(!strncmp(c,"item_health",11))return h>=100?2:recovering?180:120;
     if(!strcmp(c,"item_armor_shard"))return a>=190?1:recovering?35:12;
@@ -222,8 +248,8 @@ static void Psyz_SelectDemoRoute(gentity_t *own,int target) {
 static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     (void)travel_flags;if(!g_entities)return;
     int client;memcpy(&client,(char*)state+8,4);
-    if(client!=0 || !g_entities[0].client || !(g_entities[0].r.svFlags&8))return;
-    gentity_t *own=&g_entities[0];int now=own->client->pers.cmd.serverTime;
+    if(client<0 || client>=64 || !Psyz_IsOurBot(&g_entities[client]))return;
+    gentity_t *own=&g_entities[client];int now=own->client->pers.cmd.serverTime;
     unsigned char raw[64];memcpy(raw,output,64);
     int entity,area,raw_flags;memcpy(&raw_flags,raw+48,4);float pos[3];memcpy(pos,raw,12);memcpy(&area,raw+12,4);memcpy(&entity,raw+40,4);
     if(raw_flags==1 && entity>=0 && entity<1024 && area>0 && area<2393 && g_entities[entity].inuse && g_entities[entity].item &&
@@ -238,6 +264,16 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         }
     }
     if(!Psyz_PreAlphaEnabled())return;
+    if(now<psyz_stock_escape_until){
+        if(psyz_stock_escape_pending){
+            // Освобождаем только свою верхнюю цель тем же проверенным API,
+            // который уже используется штатным отказом от плохого маршрута.
+            int gs;memcpy(&gs,(char*)state+0x1968,4);void *im;memcpy(&im,(char*)qagame+0x2d8000,sizeof(im));
+            void (*pop)(int);memcpy(&pop,(char*)im+0x468,sizeof(pop));pop(gs);
+            float expired=0;memcpy((char*)state+0x179c,&expired,4);psyz_stock_escape_pending=0;
+        }
+        return; // На 3с goal и движение полностью принадлежат штатному AAS.
+    }
     Psyz_OpeningTick(own);
     cvar_t *clock_mode=Cvar_FindVar("qlx_psyzItemTiming");int timed=clock_mode && clock_mode->integer;
     if(timed){
@@ -284,8 +320,8 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     }
     int recovering=own->health<70 || (own->health<100 && own->client->ps.stats[STAT_ARMOR]<30);
     // Only exact enemy HP/armor are read, never hidden enemy coordinates.
-    for(int i=1;i<64;i++) {
-        gentity_t *e=&g_entities[i];if(!e->inuse||!e->client||(e->r.svFlags&8)||e->health<=0)continue;
+    for(int i=0;i<64;i++) {
+        gentity_t *e=&g_entities[i];if(e==own || !e->inuse||!e->client||(e->r.svFlags&8)||e->health<=0)continue;
         float ours=own->health+fminf(own->client->ps.stats[STAT_ARMOR],2*own->health);
         float theirs=e->health+fminf(e->client->ps.stats[STAT_ARMOR],2*e->health);
         if(theirs>ours*1.15f)recovering=1;
@@ -352,13 +388,16 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     /* A timed major-item opportunity can interrupt the old 30s navigation
        hold. Keep emergency recovery, missing nearby guns and openings first. */
     int major_target=-1;float major_best=-1;
-    if(timed && opening_target<0 && nearby_main<0 && own->health>=70 &&
-       Psyz_TrinityReady(own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo)>=2){
+    if(timed && opening_target<0 && nearby_main<0){
         for(int i=0;i<1024;i++){
             gentity_t *e=&g_entities[i];
             if(!psyz_goal_known[i] || psyz_banned[i]>now || !e->inuse || !e->item || !e->item->classname)continue;
             const char *c=e->item->classname;
             if(strcmp(c,"item_health_mega") && strcmp(c,"item_armor_body"))continue;
+            // На ещё не появившийся предмет идём с боевым набором. Уже лежащую
+            // Mega/RA нельзя игнорировать только из-за отсутствия двух пушек.
+            if(!e->r.contents && (own->health<70 || Psyz_TrinityReady(own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo)<2))continue;
+            if(!strcmp(c,"item_armor_body") && own->health<40)continue;
             float weight=Psyz_ItemWeight(e,own,recovering);if(weight<=15)continue;
             float distance=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin),travel=Psyz_ItemTravelSeconds(distance);
             if(!Psyz_TimerCandidate(psyz_item_clocks[i],now,travel,1))continue;
@@ -491,6 +530,24 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
     if(psyz_nav_health-own->health>1 || psyz_nav_armor-ps->stats[STAT_ARMOR]>1)psyz_nav_damage_time=now;
     psyz_nav_health=own->health;
     psyz_nav_armor=ps->stats[STAT_ARMOR];
+    // Проверяем фактическое перемещение на каждом think, не только когда AI
+    // запрашивает новую цель. Так смена целей не обнуляет сторожа застревания.
+    if(now<psyz_stock_escape_until)return;
+    int waiting=0;
+    if(psyz_goal_target>=0){gentity_t *item=&g_entities[psyz_goal_target];
+        waiting=!item->r.contents && item->nextthink>now && item->nextthink-now<=3000 &&
+            Psyz_Distance(ps->origin,item->r.currentOrigin)<64 && fabsf(ps->origin[2]-item->r.currentOrigin[2])<40;
+    }
+    if(Psyz_MotionStalled(&psyz_motion,now,ps->origin,psyz_goal_target>=0 && psyz_rj<0,
+                         waiting || (cmd->buttons&1) || (psyz_nav_damage_time>0 && now-psyz_nav_damage_time<750))){
+        fprintf(stderr,"PSYZ_STOCK_ESCAPE t=%d target=%d route=%d stock_ms=3000 reason=motion_stall\n",now,psyz_goal_target,psyz_active_route);
+        if(psyz_active_route>=0)psyz_route_banned[psyz_active_route]=now+60000;
+        if(psyz_goal_target>=0){psyz_banned[psyz_goal_target]=now+4000;psyz_demo_retry_after[psyz_goal_target]=now+15000;}
+        Psyz_OpeningEnd(now,"motion_stall");
+        psyz_goal_target=psyz_active_route=psyz_rj_plan=-1;
+        psyz_stock_escape_until=now+3000;psyz_stock_escape_pending=1;
+        Psyz_NavReset(&psyz_nav);Psyz_MotionReset(&psyz_motion);return;
+    }
     Psyz_OpeningTick(own);
     int dt=now-psyz_last_move_time;psyz_last_move_time=now;
     if(dt<=0 || dt>100 || own->health<=0){psyz_rj=-1;return;}
@@ -499,11 +556,9 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
     cvar_t *prepare=Cvar_FindVar("qlx_psyzLoadoutPreparation");
     if(prepare && prepare->integer && psyz_rj<0 && (cmd->buttons&1) && cmd->forwardmove>0 &&
        Psyz_TrinityReady(ps->stats[STAT_WEAPONS],ps->ammo)<2){
-        /* Stock AI still aims, fires and strafes defensively. Do not add a
-           voluntary forward push with insufficient main weapons/ammunition.
-           No hidden enemy position is read or synthetic retreat path issued. */
-        cmd->forwardmove=0;
-        if(now-psyz_prepare_log>=2000){psyz_prepare_log=now;fprintf(stderr,"PSYZ_PREPARE t=%d ready=%d forward_push_blocked=1\n",now,Psyz_TrinityReady(ps->stats[STAT_WEAPONS],ps->ammo));}
+        // Недобор пушек повышает приоритет ресурсов, но не обнуляет ходьбу.
+        // Прежний запрет forward превращал защитный огонь с MG в остановку.
+        if(now-psyz_prepare_log>=2000){psyz_prepare_log=now;fprintf(stderr,"PSYZ_PREPARE t=%d ready=%d stock_movement_preserved=1\n",now,Psyz_TrinityReady(ps->stats[STAT_WEAPONS],ps->ammo));}
     }
     Psyz_HumanizeAim(cmd,ps->weapon,now);
     // Плавно набираем силу нового наземного стрейфа, сохраняя безопасное
@@ -676,7 +731,9 @@ static void Psyz_PreAlphaTouch(gentity_t *item,gentity_t *other,trace_t *trace) 
         int now=other->client->pers.cmd.serverTime;
         fprintf(stderr,"PSYZ_CLOCK_PICKUP t=%d entity=%d class=%s picker=%d nextthink=%d source=engine_nextthink\n",now,item->s.number,item->item->classname,other->s.number,item->nextthink);
     }
-    if(other->s.number!=0)return;
+    // Слот 0 может принадлежать человеку после смены карты. Не считаем его
+    // подборы статистикой бота и не вмешиваемся в его управление.
+    if(!Psyz_IsOurBot(other))return;
     int ammo_after=item->item && item->item->giTag>=0 && item->item->giTag<16?other->client->ps.ammo[item->item->giTag]:0;
     if(item->item && ((before && !item->r.contents) || weapons_before!=other->client->ps.stats[STAT_WEAPONS] || ammo_after>ammo_before)) {
         const char *c=item->item->classname;
