@@ -1,9 +1,9 @@
 {
   "version": "0.7.9",
-  "html_bytes": 22795461,
-  "html_sha256": "9499770d439986e7613c6484545f2b07a005895c03555c2b0110efaf9484a69a",
-  "zip_bytes": 9897064,
-  "zip_sha256": "e390587dad26c00ef77cd9b95186bb337e9d8a0ed11916bc80c6e138e02bb828",
+  "html_bytes": 22796697,
+  "html_sha256": "41df96fb7c7eb82fbbb3f718a675bb8e091623c5d78cfce482cdff92ddcc77b7",
+  "zip_bytes": 9897250,
+  "zip_sha256": "4212073de90648d49909c46203e831325e6d4ad3bdbdba63f3e2710e35d9b225",
   "embedded_project_attachments": 21,
   "external_assets_required": false,
   "android_device_tested": false

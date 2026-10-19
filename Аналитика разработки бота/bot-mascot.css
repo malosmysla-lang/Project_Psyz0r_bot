@@ -97,3 +97,11 @@ button.eye-mark:focus-visible,.brand-home:focus-visible{outline:2px solid var(--
 .eye-shutter .upper-lid{border-radius:42% 42% 18% 18%;border-bottom:2px solid #91afb9}
 .eye-shutter .lower-lid{border-radius:18% 18% 42% 42%;border-top:2px solid #c7dce0;background:radial-gradient(ellipse at 66% 6%,#eaf9ff99,transparent 40%),linear-gradient(150deg,#879fa8,#344a56 40%,#12232d 85%)}
 .eye-shutter i::after{content:'';position:absolute;left:8%;right:9%;top:12%;height:22%;border-radius:50%;background:linear-gradient(90deg,transparent,#efffff66 40%,#b7e3ef22 70%,transparent);filter:blur(.5px);transform:rotate(-9deg)}
+/* Один элемент, две подписи в одной ячейке: размеры и центр не меняются при hover. */
+.connect-copy-control{width:100%;min-height:58px;display:grid;place-items:center;position:relative;padding:10px 8px;margin:14px 0;border:1px solid #42e8dc88;border-radius:5px;background:#112b37;color:#e8ffff;cursor:pointer}
+.server-connect .connect-copy-control code{grid-area:1/1;margin:0;padding:0;border:0;background:none;text-align:center;pointer-events:none;transition:opacity .15s ease}
+.connect-copy-label{grid-area:1/1;text-align:center;font-size:17px;font-weight:750;color:var(--cyan);opacity:0;pointer-events:none;transition:opacity .15s ease}
+.connect-copy-control:hover code,.connect-copy-control:focus-visible code{opacity:0}
+.connect-copy-control:hover .connect-copy-label,.connect-copy-control:focus-visible .connect-copy-label{opacity:1}
+.connect-copy-control:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.connect-copy-label,.server-connect .connect-copy-control code{transition:none}}
