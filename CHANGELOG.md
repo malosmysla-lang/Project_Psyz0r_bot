@@ -430,3 +430,8 @@ Read-only ZMQ-сборщик установлен отдельным user-unit �
 
 ## 2026-10-20 — UI 0.8.0 and pending 0.8.1
 Published viewport charts, weapon illustrations, thinner eyelids and four-release comparison. Diagnosed VM hook-pool exhaustion; fixed and passed 100 allocator reload cycles. 0.8.1 deployment blocked before mutations by human-presence guard. See docs/PREALPHA_0_8_1_PENDING_RU.md.
+
+## 20.10.2026 — классические иконки и проверка тестового сервера
+
+См. docs/OWNER_UPDATE_20261020_CLASSIC_AND_PRESSURE.md. VPS-атлас обновлён, SHA-256 проверен, игровые PID сохранены. Сервер 0.8.5 на базе Xaero; экспериментальные дебюты/replay выключены. Новое разрешение на будущий респаун записано, реализация не заявляется готовой.
+

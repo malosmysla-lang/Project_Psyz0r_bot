@@ -437,3 +437,8 @@ Read-only ZMQ-сборщик установлен отдельным user-unit �
 
 ## 2026-10-20 checkpoint
 Live test remains 0.8.0; 0.8.1 compiled but NOT deployed while human testing. Known 0.8.0 map-reload hook exhaustion; pending fix and real map-transition verification documented in docs/PREALPHA_0_8_1_PENDING_RU.md. Website 0.8.0 published on VPS and Sites v14. Primary PID 429089 unchanged.
+
+## 20.10.2026 — классические иконки и проверка тестового сервера
+
+См. docs/OWNER_UPDATE_20261020_CLASSIC_AND_PRESSURE.md. VPS-атлас обновлён, SHA-256 проверен, игровые PID сохранены. Сервер 0.8.5 на базе Xaero; экспериментальные дебюты/replay выключены. Новое разрешение на будущий респаун записано, реализация не заявляется готовой.
+
