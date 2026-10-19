@@ -52,6 +52,29 @@ class ChatTests(unittest.TestCase):
         self.assertEqual(p.sent,[]);p.handle_damage(p.bot,p.human,1,0,"MOD_GAUNTLET")
         self.assertEqual(len(p.sent),1)
 
+    def test_native_gauntlet_bridge_requires_console_and_current_duel(self):
+        p=self.plugin();p.human.id=3
+        p.cmd_gauntlet_event(p.human,['psyz_gauntlet_event','3','50'],'console')
+        p.cmd_gauntlet_event(None,['psyz_gauntlet_event','4','50'],'console')
+        p.cmd_gauntlet_event(None,['psyz_gauntlet_event','3','50'],'chat')
+        self.assertEqual(p.sent,[])
+        p.cmd_gauntlet_event(None,['psyz_gauntlet_event','3','50'],'console')
+        self.assertEqual(len(p.sent),1)
+
+    def test_spectator_does_not_disable_duel_replies(self):
+        p=self.plugin();spectator=Player('Watcher',123);spectator.team='spectator'
+        p._players.append(spectator)
+        self.assertIs(p.valid_duel(),p.human)
+        p.handle_chat(p.human,'hi',None)
+        self.assertEqual(len(p.sent),1)
+
+    def test_legacy_console_dummy_can_deliver_native_damage(self):
+        p=self.plugin();p.human.id=3
+        class Dummy:pass
+        with patch.object(fake,'RconDummyPlayer',Dummy,create=True):
+            p.cmd_gauntlet_event(Dummy(),['psyz_gauntlet_event','3','50'],'console')
+        self.assertEqual(len(p.sent),1)
+
     def test_ignores_wrong_bot_and_multiple_humans(self):
         p=self.plugin();p._players.append(Player("Other",123));p.handle_chat(p.human,"gl hf",None)
         self.assertEqual(p.sent,[])
@@ -100,8 +123,24 @@ class ChatTests(unittest.TestCase):
         for key,value in [('net_port','27960'),('bot_minplayers','1'),('qlx_psyzForfeitEnabled','0')]:
             p=self.plugin();p.forfeit_selected=True;p._cvars[key]=value
             self.assertFalse(p.maybe_forfeit(1000));self.assertFalse(hasattr(p.bot,'kicked'))
-        p=self.plugin();p.forfeit_selected=True;p.human.score=17
+        p=self.plugin();p.forfeit_selected=True;p.human.score=14
         self.assertFalse(p.maybe_forfeit(1000))
+
+    def test_new_vocabulary_and_spam(self):
+        for text in ('trash', 'n00b', 'retard', 'pizaras', 'xyilo', 'xyi'):
+            self.assertEqual(chat.classify_chat(text), 'retort')
+        self.assertEqual(chat.classify_chat('найди меня'), 'find')
+        self.assertEqual(chat.classify_chat('how are you'), 'mood')
+        p=self.plugin()
+        with patch.object(chat.time, 'monotonic', return_value=100):
+            for _ in range(12): p.handle_chat(p.human, 'abcdef', None)
+        self.assertEqual(len(p.sent), 1)
+
+    def test_comeback_delays_forfeit(self):
+        p=self.plugin();p.forfeit_selected=True;p.bot.score=1
+        self.assertFalse(p.maybe_forfeit(200))
+        self.assertFalse(p.maybe_forfeit(289))
+        self.assertTrue(p.maybe_forfeit(290))
 
     def test_forfeit_never_acts_with_multiple_humans(self):
         p=self.plugin();p.forfeit_selected=True;p._players.append(Player('Other',123))

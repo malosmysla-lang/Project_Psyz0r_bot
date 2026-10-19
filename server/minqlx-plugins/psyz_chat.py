@@ -44,6 +44,9 @@ GAUNTLET_LINES = (
 )
 HELLO_LINES = ("Hey {player} :) Ready for ZTN?", "Hi :) Red or mega first?", "Yo {player} :) Let's quake!")
 TOPIC_LINES = {
+    "find": ("Challenge accepted :) Listen for footsteps.", "Hide well. I'll check the items first :)", "See you at the next mega :)"),
+    "mood": ("Still warming up :) How about you?", "Rails could be better. Mood is good :D"),
+    "spam": ("Easy on the keyboard :) One message at a time.", "I heard you :) Save some energy for the duel."),
     "mega": ("Mega talk? Watch the clock :)", "Health is nice. Getting out alive is nicer :D"),
     "red": ("Red room gets expensive :) ", "Armor first. Excuses later :D"),
     "shaft": ("LG time :) Keep your feet moving.", "A little shaft and a lot of strafing :D"),
@@ -122,9 +125,13 @@ def classify_chat(text):
     if ("gl" in words or "hf" in words or "glhf" in compact or
             {"good", "luck"}.issubset(words) or {"have", "fun"}.issubset(words)):
         return "sport"
-    rude = {"idiot", "noob", "nub", "нуб", "нубас", "нубяра", "сука", "лох", "тупой", "дебил", "говно", "нахуй", "хуй", "блядь", "блять", "fuck", "shit", "ez", "изи"}
+    rude = {"idiot", "noob", "n00b", "nub", "trash", "retard", "pizaras", "pidaras", "xyilo", "xyi", "xyй", "хуйло", "пидарас", "нуб", "нубас", "нубяра", "сука", "лох", "тупой", "дебил", "говно", "нахуй", "хуй", "блядь", "блять", "fuck", "shit", "ez", "изи"}
     if words & rude:
         return "retort"
+    if any(phrase in compact for phrase in ("найдименя", "findme", "naidimenya", "naydim enya".replace(" ", ""))):
+        return "find"
+    if "howareyou" in compact or "какдела" in compact or "kakdela" in compact:
+        return "mood"
     if words & {"hi", "hello", "hey", "yo", "привет", "здарова", "ку", "здравствуйте"}:
         return "hello"
     for topic, tokens in {"mega": {"mega", "мега", "мегу"}, "red": {"red", "красный", "красном"}, "shaft": {"shaft", "lg", "шафт", "шафтом"}}.items():
@@ -155,6 +162,9 @@ class psyz_chat(minqlx.Plugin):
         self.forfeit_selected = False
         self.forfeit_done = False
         self.forfeit_started = 0
+        self.bot_score_seen = 0
+        self.bot_last_frag = 0
+        self.chat_arrivals = []
         self.add_hook("map", self.handle_reset)
         self.add_hook("new_game", self.handle_reset)
         self.add_hook("game_countdown", self.handle_countdown)
@@ -164,6 +174,7 @@ class psyz_chat(minqlx.Plugin):
         self.add_hook("death", self.handle_death)
         self.add_hook("player_disconnect", self.handle_disconnect)
         self.add_command("psychat", self.cmd_test, 5)
+        self.add_command("psyz_gauntlet_event", self.cmd_gauntlet_event, 5)
 
     def players_safe(self):
         try:
@@ -173,7 +184,9 @@ class psyz_chat(minqlx.Plugin):
             return []
 
     def participants(self):
-        players = self.players_safe()
+        # Spectators must not silence the active one-human duel.
+        players = [p for p in self.players_safe()
+                   if getattr(p, "team", "free") in ("free", "red", "blue")]
         humans = [p for p in players if not is_bot(p)]
         bots = [p for p in players if is_psyz(p)]
         return humans, bots
@@ -192,14 +205,18 @@ class psyz_chat(minqlx.Plugin):
         self.last_dialog_line = None
         self.forfeit_checked = self.forfeit_selected = self.forfeit_done = False
         self.forfeit_started = 0
+        self.bot_score_seen = 0
+        self.bot_last_frag = 0
+        self.chat_arrivals.clear()
 
     def handle_start(self, *args, **kwargs):
         # One roll per match, not one roll on each low-score frame.
         if self.forfeit_checked:
             return
         self.forfeit_checked = True
-        self.forfeit_selected = random.random() < .15
+        self.forfeit_selected = random.random() < .35
         self.forfeit_started = time.monotonic()
+        self.bot_last_frag = self.forfeit_started
         self.watch_forfeit(self.generation)
 
     def maybe_forfeit(self, now):
@@ -217,11 +234,20 @@ class psyz_chat(minqlx.Plugin):
                 return False
             _, bots = self.participants()
             bot = bots[0]
-            if human.score-bot.score < 18:
+            if bot.score > self.bot_score_seen:
+                self.bot_last_frag = now
+            self.bot_score_seen = bot.score
+            if human.score-bot.score < 15:
+                return False
+            # A comeback pauses resignation; repeated actual gauntlet damage
+            # can also establish that this particular duel is going badly.
+            glove = self.gauntlet_damage.get(str(human.steam_id), 0)
+            if now-self.bot_last_frag < 90 and glove < 150:
                 return False
             # Latch before the action so disconnect/reentrant callbacks cannot retry.
             self.forfeit_done = True
-            self.say("GG :) This one's yours. I need a break.", human, force=True, topic="forfeit")
+            self.say("GG :) Nothing landed today. Rematch?", human, force=True, topic="forfeit")
+            print("PSYZ_FORFEIT gap={} gauntlet_damage={} stalled_seconds={} probability=0.35".format(human.score-bot.score, glove, int(now-self.bot_last_frag)))
             bot.kick("Psyz0r forfeit")
             return True
         except Exception:
@@ -275,6 +301,13 @@ class psyz_chat(minqlx.Plugin):
         if not same_player(player, self.valid_duel()):
             return
         kind = classify_chat(message)
+        # Detect a burst even when the text is not in the vocabulary. Bot
+        # messages never enter this path, so replies cannot start a bot loop.
+        now = time.monotonic()
+        self.chat_arrivals = [t for t in self.chat_arrivals if now-t < 8]
+        self.chat_arrivals.append(now)
+        if len(self.chat_arrivals) >= 4 and not clean(message).startswith(("!", "#")):
+            kind = "spam"
         if kind is None:
             return
         if kind == "sport":
@@ -302,6 +335,23 @@ class psyz_chat(minqlx.Plugin):
                 self.last_reply = now
                 self.last_dialog_line = line
                 self.dialog[key] = (kind if kind != "followup" else previous[0], now)
+
+    def cmd_gauntlet_event(self, player, msg, channel):
+        # Internal console bridge only: clients cannot forge damage events.
+        console_player = player is None or isinstance(player, getattr(minqlx, "RconDummyPlayer", ()))
+        if not console_player or str(channel) != "console" or len(msg) != 3:
+            return
+        if self.get_cvar("net_port") != "27961":
+            return
+        try:
+            client, damage = int(msg[1]), int(msg[2])
+        except (ValueError, TypeError):
+            return
+        human = self.valid_duel()
+        if human is None or getattr(human, "id", -1) != client or not 0 < damage <= 1000:
+            return
+        _, bots = self.participants()
+        self.handle_damage(bots[0], human, damage, 0, "MOD_GAUNTLET")
 
     def handle_damage(self, victim, attacker, damage, dflags, means_of_death):
         if victim is None or attacker is None or not is_psyz(victim) or is_bot(attacker):
