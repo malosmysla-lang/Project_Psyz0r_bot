@@ -358,3 +358,8 @@ Origin: https://github.com/malosmysla-lang/Project_Psyz0r_bot.git. Push main —É—
 ## 2026-10-19 - Analytics site title
 
 Set the dashboard header, sidebar brand, browser title and footer to the owner-approved name: Pracc Room Server. Regenerated the standalone HTML. Validation: node tests/analytics_static_checks.cjs passed. Bot runtime unchanged.
+
+
+## 2026-10-19 - Seamless fixed analytics backdrop
+
+Moved the decorative gradients to a single fixed viewport layer with no repeat. Page content scrolls over the stationary background; no scroll listeners or continuous animation are needed. Disabled the decorative layer for printing and regenerated the standalone HTML. Static dashboard and standalone-script checks passed.
