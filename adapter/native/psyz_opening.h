@@ -53,6 +53,8 @@ static int Psyz_OpeningRedTarget(gentity_t *own) {
         if(!psyz_goal_known[i] || psyz_banned[i]>now || !e->inuse || !e->item || !e->item->classname ||
            strcmp(e->item->classname,"item_armor_body"))continue;
         float d=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin);
+        PsyzItemClock clock=Psyz_ReadItemClock(e->r.contents,e->nextthink,now);
+        if(!Psyz_OpeningRedCanApproach(clock,now,now-psyz_opening_since,Psyz_ItemTravelSeconds(d)))continue;
         if(d<distance){distance=d;best=i;}
     }
     if(best>=0 && !psyz_opening_red_mode_logged){
@@ -131,7 +133,7 @@ static void Psyz_OpeningPickup(gentity_t *item,int now) {
     }
 }
 static void Psyz_OpeningAnyPickup(gentity_t *item,int now) {
-    if(psyz_opening_red_followup && item && item->item && item->item->classname &&
+    if(psyz_opening_red_followup && now-psyz_opening_since>=20000 && item && item->item && item->item->classname &&
        !strcmp(item->item->classname,"item_armor_body")){
         fprintf(stderr,"PSYZ_OPENING_RED_END t=%d reason=red_picked\n",now);
         psyz_opening_red_followup=0;psyz_opening_red_resolved=1;

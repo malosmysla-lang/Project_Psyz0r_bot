@@ -428,7 +428,9 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     int nav_action=0;
     if(nav && nav->integer){
         gentity_t *target=&g_entities[psyz_goal_target];
-        int waiting=!target->r.contents && target->nextthink>now && target->nextthink-now<=3000;
+        // Ждать появления можно у самого предмета. Чужой таймер не должен
+        // маскировать застревание в другом конце маршрута.
+        int waiting=distance<=96 && !target->r.contents && target->nextthink>now && target->nextthink-now<=3000;
         int combat=(own->client->pers.cmd.buttons&1) || (psyz_nav_damage_time>0 && now-psyz_nav_damage_time<1000);
         nav_action=Psyz_NavUpdate(&psyz_nav,psyz_goal_target,now,own->client->ps.origin,distance,
                     psyz_active_route>=0?psyz_route_point:-1,psyz_active_route>=0,combat,waiting);

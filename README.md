@@ -1,3 +1,5 @@
+> Актуализация 19.10.2026: полная логика — docs/MINDMAP_V6_CONTENT_RECONCILIATION_RU.md; результаты и ограничения — docs/PREALPHA_0_7_6_RU.md; локальная панель — Аналитика разработки бота/index.html. Исторические статусы ниже не заменяют проверку новой версии.
+
 > Карта логики обновлена: [v5 — 233 правила](docs/mindmap_v5/index.html), [MD-реестр](docs/MINDMAP_V5_CONTENT_RECONCILIATION_RU.md), [порядок обновления и отложенная WEB-панель](docs/LOGIC_UPDATE_POLICY_RU.md).
 
 <!-- owner-requirements-20261019 -->

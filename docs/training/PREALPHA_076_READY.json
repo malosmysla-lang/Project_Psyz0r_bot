@@ -1,0 +1,12 @@
+{
+  "test_service": "active",
+  "primary_pid": "415921",
+  "bot_names": [
+    "Psyz0r_bot"
+  ],
+  "sole_requested_bot": true,
+  "map_bloodrun": true,
+  "version_076": true,
+  "forfeit_configured": true,
+  "human_free_at_check": true
+}

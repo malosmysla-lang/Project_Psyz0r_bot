@@ -65,7 +65,7 @@ int main(){try{
      check(fabsf(400*cosf(wish*.01745329252f)-312)<.1f,"W plus strafe projects velocity onto useful acceleration direction");
  }
  {
- reset();world[200].inuse=1;world[200].item=&red;psyz_goal_known[200]=1;
+ reset();world[200].inuse=1;world[200].item=&red;world[200].r.contents=1;psyz_goal_known[200]=1;
  psyz_opening_red_followup=1;psyz_banned[200]=21000;
  check(Psyz_OpeningRedTarget(&world[0])<0,"Opening red reservation respects failed-goal cooldown");
  client.pers.cmd.serverTime=21001;
@@ -155,8 +155,10 @@ int main(){try{
  check(psyz_opening_red_followup,"Completed first-cycle order must reserve second-cycle red");
  world[220].inuse=1;world[220].item=&red;world[220].r.contents=0;world[220].r.currentOrigin[0]=300;
  psyz_goal_known[220]=1;
+ check(Psyz_OpeningRedTarget(&world[0])<0,"First-cycle completion reserves red without early camping");
+ client.pers.cmd.serverTime=psyz_opening_since+21000;world[220].nextthink=client.pers.cmd.serverTime+5000;
  check(Psyz_OpeningRedTarget(&world[0])==220,"Red follow-up targets Heavy Armor even before it respawns");
- Psyz_OpeningAnyPickup(&world[220],20010);check(!psyz_opening_red_followup,"Actual red pickup ends mandatory follow-up");
+ Psyz_OpeningAnyPickup(&world[220],client.pers.cmd.serverTime+100);check(!psyz_opening_red_followup,"Actual second-cycle red pickup ends mandatory follow-up");
  psyz_opening_active=1;psyz_opening_plan=0;psyz_opening_step=1;
  world[0].health=60;Psyz_OpeningTarget(&world[0],1);check(!psyz_opening_active,"Emergency recovery preempts opening");world[0].health=100;
  phasevar.string="PRE_GAME";Psyz_OpeningTick(&world[0]);phasevar.string="IN_PROGRESS";Psyz_OpeningTick(&world[0]);
@@ -234,6 +236,9 @@ int main(){try{
  auto unknown=Psyz_ReadItemClock(0,0,20000);
  check(unknown.due<0 && !Psyz_TimerCandidate(unknown,20000,5,1),"Unknown timer is not invented as available");
  check(!Psyz_TimerCandidate(Psyz_ReadItemClock(0,28000,20000),20000,5,0),"Ordinary item keeps short waiting window");
+ check(!Psyz_OpeningRedCanApproach(Psyz_ReadItemClock(0,30000,6000),6000,6000,4),"Second-red reservation cannot camp from second six");
+ check(Psyz_OpeningRedCanApproach(Psyz_ReadItemClock(0,27000,21000),21000,21000,4),"Approach second red by actual due time");
+ check(!Psyz_OpeningRedCanApproach(Psyz_ReadItemClock(0,45000,21000),21000,21000,4),"Late first pickup shifts red timing instead of invented 25 seconds");
  reset();world[201].inuse=1;world[201].item=&red_display;world[201].r.contents=1;world[201].r.currentOrigin[0]=100;
  goal(late_goal,0,10,world[201].r.currentOrigin);registry_ready=1;
  goal(out,201,10,world[201].r.currentOrigin);memcpy(out+48,&bad_flags,4);Psyz_PreAlphaGoal(state,0,out);

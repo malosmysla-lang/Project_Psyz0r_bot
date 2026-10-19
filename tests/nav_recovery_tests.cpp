@@ -22,5 +22,10 @@ int main(){try{
  Psyz_NavReset(&s);Psyz_NavUpdate(&s,10,0,p,100,0,1,0,0);
  check(Psyz_NavUpdate(&s,10,1501,p,100,0,1,0,0)==1,"Pixel stall falls back after 1.5 seconds");
  check(Psyz_NavUpdate(&s,10,3002,p,100,-1,0,0,0)==2,"Persisting pixel stall releases failed goal");
+ Psyz_NavReset(&s);Psyz_NavUpdate(&s,10,0,p,30,0,1,0,0);
+ check(Psyz_NavUpdate(&s,10,1501,p,30,0,1,0,0)==1,"Near item without pickup is still a stall");
+ Psyz_NavReset(&s);Psyz_NavUpdate(&s,10,0,p,30,0,1,0,1);
+ check(Psyz_NavUpdate(&s,10,2000,p,30,0,1,0,1)==0,"Real bounded spawn waiting is allowed");
+ check(Psyz_NavUpdate(&s,10,3501,p,30,0,1,0,0)==1,"Expired wait must not conceal stationary stall");
  std::cout<<"Navigation recovery scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

@@ -1,0 +1,24 @@
+{
+  "version": "0.7.6",
+  "binary_sha256": "7b7b72f2f92784721db978172b1117a57f44cd253bd9199e165f47cf9ab50bfc",
+  "plugin_sha256": "029b2a8434d4329827fd3246f4790fa8225d5c27a845420cf0cf6a649c1166c7",
+  "backup": "/home/qlserver/backups/psyz-076-20261019T173715Z",
+  "primary_pid": "415921",
+  "test_pid": "419821",
+  "service": "active",
+  "linux_tests": [
+    {
+      "name": "prealpha_native_tests",
+      "output": "Native prealpha contextual scenarios passed"
+    },
+    {
+      "name": "nav_recovery_tests",
+      "output": "Navigation recovery scenarios passed"
+    },
+    {
+      "name": "lg_style_tests",
+      "output": "LG tracking and safe footwork contracts passed"
+    }
+  ],
+  "gameplay_verified": false
+}

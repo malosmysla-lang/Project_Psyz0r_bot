@@ -1,0 +1,12 @@
+{
+  "seconds": 65,
+  "valid_smoke": true,
+  "full_match": false,
+  "pickups": 10,
+  "red_pickups": 1,
+  "mega_pickups": 0,
+  "nav_recoveries": 2,
+  "lg_style_events": 0,
+  "opening_pickups": 2,
+  "winner": null
+}

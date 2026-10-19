@@ -36,3 +36,10 @@ class StrafeStartTests(unittest.TestCase):
 
     def test_combat_window_is_excluded(self):
         self.assertEqual(module.analyse_rows(self.sequence(True), "combat"), [])
+
+    def test_direct_solo_pov_is_not_discarded(self):
+        rows=self.sequence()
+        for r in rows:r['pm_type']=0
+        self.assertEqual(len(module.analyse_rows(rows,"solo")),1)
+        rows[10]['pm_type']=3
+        self.assertEqual(module.analyse_rows(rows,"spectator_transition"),[])

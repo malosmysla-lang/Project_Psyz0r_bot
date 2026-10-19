@@ -22,4 +22,10 @@ static float Psyz_TimerIdle(PsyzItemClock c,int now,float travel) {
     if(c.available)return 0;
     return fmaxf(0,(c.due-now)/1000.f-travel);
 }
+static int Psyz_OpeningRedCanApproach(PsyzItemClock c,int now,int opening_elapsed,float travel) {
+    // Резерв второго красного не означает «стоять у него с пятой секунды».
+    // Сначала собираем дебютные пушки. Выход начинаем по реальным часам,
+    // чтобы ранний неподвижный поход не завершился watchdog-ban до spawn.
+    return opening_elapsed>=20000 && Psyz_TimerCandidate(c,now,travel,1);
+}
 #endif

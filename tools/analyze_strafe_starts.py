@@ -13,8 +13,8 @@ from pathlib import Path
 
 
 AIR = 1023
-# The validated dm_91/UDT export labels live QL POV movement as pm_type 2.
-# Health is also required so intermission/death frames cannot become samples.
+# Direct solo POV uses pm_type 0; the validated spectated QL exports use 2.
+# Both must remain continuous and alive. Neither implies recovered raw input.
 ACTIVE_PM_TYPE = 2
 
 
@@ -42,7 +42,7 @@ def summary(values):
 def continuous(a, b):
     return (a["segment"] == b["segment"] and a["client"] == b["client"] and
             0 < b["time_ms"] - a["time_ms"] <= 100 and
-            a["pm_type"] == b["pm_type"] == ACTIVE_PM_TYPE and
+            a["pm_type"] == b["pm_type"] and a["pm_type"] in (0, ACTIVE_PM_TYPE) and
             a.get("health", 1) > 0 and b.get("health", 1) > 0)
 
 
@@ -65,6 +65,8 @@ def analyse_rows(rows, source):
                  if r["segment"] == takeoff["segment"] and
                  r["client"] == takeoff["client"]]
         if not prior or takeoff["time_ms"] - prior[0]["time_ms"] < 250:
+            continue
+        if any(not continuous(a,b) for a,b in zip(prior,prior[1:])):
             continue
         # A start after a real pause/slow approach, rather than a later hop.
         slow = [r for r in prior if r["speed_xy"] <= 80]

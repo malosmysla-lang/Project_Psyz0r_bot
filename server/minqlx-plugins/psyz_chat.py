@@ -1,8 +1,8 @@
 """Bounded duel chat for the isolated Psyz0r test bot.
 
-This plugin does not spawn, rename or control bots.  It speaks only when one
-Psyz0r bot and one human are present on the isolated test server.  Stock bot
-chat can remain disabled so the scripted policy is the single voice.
+It speaks only for one Psyz0r bot plus one human on the isolated test server.
+Optional forfeit may remove only that confirmed bot, never a human; it never
+spawns a replacement. Stock bot chat remains disabled for a single voice.
 """
 import random
 import re
@@ -39,7 +39,15 @@ GAUNTLET_LINES = (
     "Put that little knife away, {player} :-)",
     "Okay, gauntlet noted. I'll return it when you're low HP.",
     "You scratched me with the gauntlet. Now it's personal.",
+    "Knife again? Fine. My turn :-)",
+    "Keep that glove warm. I'll need it :D",
 )
+HELLO_LINES = ("Hey {player} :) Ready for ZTN?", "Hi :) Red or mega first?", "Yo {player} :) Let's quake!")
+TOPIC_LINES = {
+    "mega": ("Mega talk? Watch the clock :)", "Health is nice. Getting out alive is nicer :D"),
+    "red": ("Red room gets expensive :) ", "Armor first. Excuses later :D"),
+    "shaft": ("LG time :) Keep your feet moving.", "A little shaft and a lot of strafing :D"),
+}
 RETORT_LINES = (
     "Talk less, time the items more, {player}.",
     "Save the rage for the rematch :-)",
@@ -82,20 +90,26 @@ def is_psyz(player):
 
 def render(line, player=None):
     name = clean(getattr(player, "name", "")) if player is not None else ""
-    return line.replace("{player}", "^3{}^7".format(name or "player"))
+    # Plain punctuation avoids the square glyphs seen in the game client.
+    return (line.replace("{player}", "^3{}^7".format(name or "player"))
+            .replace(",", "").replace("—", "-").replace("’", "'"))
 
 
 def classify_chat(text):
     words = set(re.findall(r"[a-zа-я0-9]+", clean(text).lower()))
-    compact = "".join(words)
+    compact = "".join(re.findall(r"[a-zа-я0-9]+", clean(text).lower()))
     if "gg" in words or "wp" in words or "goodgame" in compact or "wellplayed" in compact:
         return "gg"
     if ("gl" in words or "hf" in words or "glhf" in compact or
             {"good", "luck"}.issubset(words) or {"have", "fun"}.issubset(words)):
         return "sport"
-    rude = {"idiot", "noob", "bot", "сука", "лох", "тупой", "дебил", "говно"}
+    rude = {"idiot", "noob", "сука", "лох", "тупой", "дебил", "говно", "нахуй", "хуй", "блядь", "fuck", "shit"}
     if words & rude:
         return "retort"
+    if words & {"hi", "hello", "hey", "yo", "привет", "здарова", "ку", "здравствуйте"}:
+        return "hello"
+    for topic, tokens in {"mega": {"mega", "мега", "мегу"}, "red": {"red", "красный", "красном"}, "shaft": {"shaft", "lg", "шафт", "шафтом"}}.items():
+        if words & tokens:return topic
     return None
 
 
@@ -107,9 +121,14 @@ class psyz_chat(minqlx.Plugin):
         self.used = set()
         self.gauntlet_damage = {}
         self.replied = set()
+        self.forfeit_checked = False
+        self.forfeit_selected = False
+        self.forfeit_done = False
+        self.forfeit_started = 0
         self.add_hook("map", self.handle_reset)
         self.add_hook("new_game", self.handle_reset)
         self.add_hook("game_countdown", self.handle_countdown)
+        self.add_hook("game_start", self.handle_start)
         self.add_hook("game_end", self.handle_game_end)
         self.add_hook("chat", self.handle_chat)
         self.add_hook("death", self.handle_death)
@@ -138,6 +157,51 @@ class psyz_chat(minqlx.Plugin):
         self.used.clear()
         self.gauntlet_damage.clear()
         self.replied.clear()
+        self.forfeit_checked = self.forfeit_selected = self.forfeit_done = False
+        self.forfeit_started = 0
+
+    def handle_start(self, *args, **kwargs):
+        # One roll per match, not one roll on each low-score frame.
+        if self.forfeit_checked:
+            return
+        self.forfeit_checked = True
+        self.forfeit_selected = random.random() < .15
+        self.forfeit_started = time.monotonic()
+        self.watch_forfeit(self.generation)
+
+    def maybe_forfeit(self, now):
+        if not self.forfeit_selected or self.forfeit_done or now-self.forfeit_started < 120:
+            return False
+        try:
+            # Test-only lifecycle guard. Autofill would immediately undo leaving.
+            if (self.get_cvar("net_port") != "27961" or
+                    self.get_cvar("qlx_psyzForfeitEnabled") != "1" or
+                    self.get_cvar("bot_minplayers") != "0" or
+                    self.game.state != "in_progress"):
+                return False
+            human = self.valid_duel()
+            if human is None:
+                return False
+            _, bots = self.participants()
+            bot = bots[0]
+            if human.score-bot.score < 18:
+                return False
+            # Latch before the action so disconnect/reentrant callbacks cannot retry.
+            self.forfeit_done = True
+            self.say("GG :) This one's yours. I need a break.", human, force=True, topic="forfeit")
+            bot.kick("Psyz0r forfeit")
+            return True
+        except Exception:
+            minqlx.log_exception()
+            return False
+
+    @minqlx.delay(15)
+    def watch_forfeit(self, generation):
+        if generation != self.generation or self.forfeit_done:
+            return
+        self.maybe_forfeit(time.monotonic())
+        if generation == self.generation and not self.forfeit_done:
+            self.watch_forfeit(generation)
 
     def say(self, line, player=None, force=False, topic=None):
         now = time.monotonic()
@@ -184,6 +248,10 @@ class psyz_chat(minqlx.Plugin):
             self.say(random.choice(GG_REPLY), player, force=True, topic="gg_reply")
         elif kind == "retort":
             self.say(random.choice(RETORT_LINES), player, topic="retort")
+        elif kind == "hello":
+            self.say(random.choice(HELLO_LINES), player, topic="hello")
+        elif kind in TOPIC_LINES:
+            self.say(random.choice(TOPIC_LINES[kind]), player, topic="topic_"+kind)
 
     def handle_damage(self, victim, attacker, damage, dflags, means_of_death):
         if victim is None or attacker is None or not is_psyz(victim) or is_bot(attacker):
@@ -192,7 +260,8 @@ class psyz_chat(minqlx.Plugin):
             return
         key = str(getattr(attacker, "steam_id", ""))
         self.gauntlet_damage[key] = self.gauntlet_damage.get(key, 0) + max(0, int(damage))
-        if self.gauntlet_damage[key] >= 25:
+        # 50 cumulative damage is the owner's current rule. A death is not required.
+        if self.gauntlet_damage[key] >= 50:
             self.say(random.choice(GAUNTLET_LINES), attacker, topic="gauntlet")
 
     def handle_death(self, victim, killer, data):

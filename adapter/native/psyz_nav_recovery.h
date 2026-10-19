@@ -33,7 +33,10 @@ static int Psyz_NavUpdate(PsyzNavRecovery *s,int target,int now,const float *pos
     if(distance<s->best_distance-32){s->best_distance=distance;s->progress=now;}
     if(waypoint>s->waypoint){s->waypoint=waypoint;s->progress=now;s->motion_since=now;}
     float moved=0;for(int k=0;k<3;k++){float delta=position[k]-s->motion_position[k];moved+=delta*delta;}
-    if(moved>64 || combat || waiting || distance<=48){
+    // Близость к предмету сама по себе не доказывает подбор: можно стоять
+    // под платформой красного. Только реальное движение или ограниченное
+    // ожидание таймера защищают остановку от восстановления маршрута.
+    if(moved>64 || combat || waiting){
         s->motion_since=now;memcpy(s->motion_position,position,sizeof(s->motion_position));
     }else if(now-s->motion_since>=1500){
         s->motion_since=now;s->progress=now;
