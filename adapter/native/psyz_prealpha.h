@@ -2,6 +2,10 @@
 #include <math.h>
 #include "psyz_loadout.h"
 #include "psyz_macro.h"
+#include "psyz_lg_style.h"
+static PsyzLGSmooth psyz_lg_smooth;
+static PsyzLGFeet psyz_lg_feet;
+static int psyz_lg_style_log;
 #include "psyz_item_timing.h"
 static PsyzItemClock psyz_item_clocks[1024];
 static int psyz_timer_log;
@@ -79,6 +83,24 @@ static void Psyz_HumanizeAim(usercmd_t *cmd,int weapon,int now){
         degrees*=Psyz_LGContextScale(cmd,now);
         if(now-psyz_aim_log>=1000){psyz_aim_log=now;fprintf(stderr,"PSYZ_LG_CONTEXT t=%d rate=%.2f noise_scale=%.3f calibrated=0\n",now,psyz_lg_rate,psyz_lg_scale);}
     }
+    // Для шафта используем сопровождение с задержкой и постоянной ошибкой очереди.
+    // Прежний шум остаётся у других пушек, но не добавляется поверх LG-фильтра.
+    cvar_t *smooth=Cvar_FindVar("qlx_psyzLGSmoothTracking");
+    if(weapon==6 && smooth && smooth->integer && g_entities && g_entities[0].client){
+        cvar_t *cap=Cvar_FindVar("qlx_psyzLGTurnRate");float rate=cap?(float)atof(cap->string):240.f;
+        if(!isfinite(rate) || rate<30 || rate>720)rate=240.f;
+        float current[2],seed[2];
+        for(int a=0;a<2;a++){
+            current[a]=g_entities[0].client->ps.viewangles[a]-g_entities[0].client->ps.delta_angles[a]*360.f/65536.f;
+            seed[a]=Psyz_AimNoise((unsigned int)(now/1000),(unsigned int)(91+a));
+        }
+        Psyz_LGSmoothCommand(&psyz_lg_smooth,cmd->angles,current,now,degrees,rate,seed);
+        if(now-psyz_lg_style_log>=1500){
+            psyz_lg_style_log=now;
+            fprintf(stderr,"PSYZ_LG_STYLE t=%d smooth=1 cap=%.1f bias_degrees=%.3f calibrated=0\n",now,rate,degrees);
+        }
+        return; /* LG has an engagement bias, never the oscillating noise below. */
+    }
     unsigned int bucket=(unsigned int)(now/240);float t=(now%240)/240.f;t=t*t*(3-2*t);
     for(int axis=0;axis<2;axis++){
         unsigned int salt=(unsigned int)(weapon*11+axis);
@@ -125,6 +147,12 @@ static int Psyz_PreAlphaEnabled(void) {
     cvar_t *test=Cvar_FindVar("qlx_psyzTestInstance"),*port=Cvar_FindVar("net_port");
     return test && test->integer==1 && port && port->integer==27961 && v && v->integer==1 && m && !strcmp(m->string,"bloodrun");
 }
+// Эксперимент разрешает кандидаты из уже существующего банка, не создаёт
+// телепортацию или бесплатный импульс. Геометрия/оружие/запас HP проверяются ниже.
+static int Psyz_JumpAutoAllowed(int sample){
+    cvar_t *experimental=Cvar_FindVar("qlx_psyzExperimentalJumps");
+    return sample==0 || (experimental && experimental->integer==1);
+}
 #include "psyz_opening.h"
 static void Psyz_PreAlphaReset(void) {
     Psyz_NavReset(&psyz_nav);psyz_nav_health=psyz_nav_armor=psyz_nav_damage_time=psyz_prepare_log=0;
@@ -133,6 +161,9 @@ static void Psyz_PreAlphaReset(void) {
     psyz_combat_log=psyz_aim_log=0;
     psyz_macro_anchor=-1;psyz_macro_anchor_since=psyz_macro_log=0;
     psyz_lg_time=0;psyz_lg_rate=180.f;psyz_lg_scale=1.f;
+    Psyz_LGSmoothReset(&psyz_lg_smooth);
+    Psyz_LGFeetReset(&psyz_lg_feet);
+    psyz_lg_style_log=0;
     Psyz_OpeningReset();
     psyz_debug_logged=0;
     psyz_registry_retry=0;
@@ -435,7 +466,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         float best=probe_jump>=0?100000:256;
         for(size_t j=0;j<PSYZ_JUMP_COUNT;j++){
             if(probe_jump>=0 && j!=(size_t)probe_jump)continue;
-            if(probe_jump<0 && j!=0)continue; /* Sample 0 passed three live repetitions. */
+            if(probe_jump<0 && !Psyz_JumpAutoAllowed((int)j))continue;
             const PsyzLearnedJump *r=&psyz_jumps[j];float d=Psyz_Distance(own->client->ps.origin,r->start);
             int armed=(own->client->ps.stats[STAT_WEAPONS]&(1<<r->weapon)) && own->client->ps.ammo[r->weapon]>=r->shot_count;
             if(r->start_area>0 && armed && d<best && own->health>r->health_cost+50 && Psyz_Distance(g_entities[psyz_goal_target].r.currentOrigin,r->landing)<160){best=d;psyz_rj_plan=(int)j;}
@@ -473,6 +504,12 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
         if(now-psyz_prepare_log>=2000){psyz_prepare_log=now;fprintf(stderr,"PSYZ_PREPARE t=%d ready=%d forward_push_blocked=1\n",now,Psyz_TrinityReady(ps->stats[STAT_WEAPONS],ps->ammo));}
     }
     Psyz_HumanizeAim(cmd,ps->weapon,now);
+    // Плавно набираем силу нового наземного стрейфа, сохраняя безопасное
+    // направление stock AI. Прыжки, RJ и остановки этим блоком не заменяются.
+    cvar_t *lg_feet=Cvar_FindVar("qlx_psyzLGFootwork");
+    if(lg_feet && lg_feet->integer && ps->weapon==6 && cmd->weapon==6 &&
+       (cmd->buttons&1) && ps->groundEntityNum!=1023 && psyz_rj<0)
+        Psyz_LGFeetCommand(&psyz_lg_feet,&cmd->forwardmove,&cmd->rightmove,now);
     cvar_t *ground_combat=Cvar_FindVar("qlx_psyzGroundCombat");
     if(ground_combat && ground_combat->integer){
         int triggered=(cmd->buttons&1) || (psyz_nav_damage_time>0 && now-psyz_nav_damage_time<1000);
@@ -492,7 +529,7 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
        1) {
         for(size_t j=0;j<PSYZ_JUMP_COUNT;j++) {
             if(psyz_rj_plan>=0 && j!=(size_t)psyz_rj_plan)continue;
-            if(psyz_rj_plan<0 && j!=0)continue;
+            if(psyz_rj_plan<0 && !Psyz_JumpAutoAllowed((int)j))continue;
             const PsyzLearnedJump *r=&psyz_jumps[j];
             if(Psyz_Distance(ps->origin,r->start)<40 && Psyz_Distance(g_entities[psyz_goal_target].r.currentOrigin,r->landing)<160 &&
                (ps->stats[STAT_WEAPONS]&(1<<r->weapon)) && ps->ammo[r->weapon]>=r->shot_count &&
