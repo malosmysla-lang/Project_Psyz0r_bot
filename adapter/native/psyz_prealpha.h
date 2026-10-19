@@ -266,6 +266,23 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         if(d<nearby_best){nearby_best=d;nearby_main=i;}
     }
     if(nearby_main>=0 && !recovering && opening_target<0 && nearby_main!=psyz_goal_target)keep=0;
+    /* Finish a useful pickup already within a short, same-floor approach.
+       Do not walk past it because an old route is retained for 30 seconds.
+       No detour during combat, learned jumps, or a reserved opening. */
+    int touch_target=-1;float touch_best=0;
+    if(opening_target<0 && psyz_rj<0 && !(own->client->pers.cmd.buttons&1) && now>=psyz_combat_until){
+        for(int i=0;i<1024;i++){
+            gentity_t *e=&g_entities[i];
+            if(!psyz_goal_known[i] || psyz_banned[i]>now || !e->inuse || !e->item || !e->r.contents)continue;
+            float distance=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin);
+            if(distance>112 || fabsf(own->client->ps.origin[2]-e->r.currentOrigin[2])>40)continue;
+            float weight=Psyz_ItemWeight(e,own,recovering);
+            if(weight<35)continue;
+            float score=weight-distance*.25f;
+            if(score>touch_best){touch_best=score;touch_target=i;}
+        }
+        if(touch_target>=0 && touch_target!=psyz_goal_target)keep=0;
+    }
     /* A timed major-item opportunity can interrupt the old 30s navigation
        hold. Keep emergency recovery, missing nearby guns and openings first. */
     int major_target=-1;float major_best=-1;
@@ -307,6 +324,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         }
         if(nearby_main>=0 && !recovering && opening_target<0)selected=nearby_main;
         else if(major_target>=0)selected=major_target;
+        if(touch_target>=0 && major_target<0)selected=touch_target;
         if(opening_target>=0)selected=opening_target;
         if(selected!=psyz_goal_target) {
             psyz_goal_target=selected;psyz_goal_since=now;psyz_progress_time=now;

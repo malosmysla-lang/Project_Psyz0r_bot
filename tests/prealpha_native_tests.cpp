@@ -54,6 +54,18 @@ int main(){try{
  for(int t=4025;t<=7025;t+=25){stable.angles[1]+=1000;moving_scale=Psyz_LGContextScale(&stable,t);}
  check(moving_scale>.85f,"Rapid direction changes restore ordinary LG error");
  check(Psyz_LGContextScale(&stable,100)==1.f,"Clock reset discards previous LG context");
+ {
+ reset();gitem_t med{"item_health","25 Health",0};unsigned char st[0x1970]{},go[64];
+ world[200].inuse=world[201].inuse=1;world[200].item=&red;world[201].item=&med;
+ world[200].r.contents=world[201].r.contents=1;
+ world[200].r.currentOrigin[0]=800;world[201].r.currentOrigin[0]=60;
+ client.ps.stats[STAT_ARMOR]=40;client.ps.stats[STAT_WEAPONS]=(1<<5)|(1<<6);client.ps.ammo[5]=10;client.ps.ammo[6]=100;
+ world[0].health=90;psyz_debug_logged=1;psyz_registry_retry=20000;
+ goal(psyz_goal_cache[200],200,10,world[200].r.currentOrigin);psyz_goal_known[200]=1;
+ goal(psyz_goal_cache[201],201,10,world[201].r.currentOrigin);psyz_goal_known[201]=1;
+ psyz_goal_target=200;psyz_goal_since=19000;goal(go,200,10,world[200].r.currentOrigin);
+ Psyz_PreAlphaGoal(st,0,go);check(psyz_goal_target==201,"Nearby useful health interrupts retained distant route");
+ }
  reset();world[200].item=&red;world[200].inuse=1;world[200].r.contents=1;
  client.ps.stats[STAT_ARMOR]=190;
  check(Psyz_ItemWeight(&world[200],&world[0],0)<10,"Do not chase redundant armor at full stack");
