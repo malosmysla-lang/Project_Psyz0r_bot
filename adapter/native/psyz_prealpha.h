@@ -321,14 +321,10 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         }
         if(count)fprintf(stderr,"PSYZ_GOAL_REGISTRY newly_valid_item_goals=%d weapons=%d ammo_rl=%d\n",count,own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo[5]);
     }
-    int recovering=own->health<70 || (own->health<100 && own->client->ps.stats[STAT_ARMOR]<30);
-    // Only exact enemy HP/armor are read, never hidden enemy coordinates.
-    for(int i=0;i<64;i++) {
-        gentity_t *e=&g_entities[i];if(e==own || !e->inuse||!e->client||(e->r.svFlags&8)||e->health<=0)continue;
-        float ours=own->health+fminf(own->client->ps.stats[STAT_ARMOR],2*own->health);
-        float theirs=e->health+fminf(e->client->ps.stats[STAT_ARMOR],2*e->health);
-        if(theirs>ours*1.15f)recovering=1;
-    }
+    // Готовность к восстановлению выводим из своего состояния, не скрытого стека соперника.
+    int ready_for_battle=Psyz_TrinityReady(own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo);
+    int recovering=own->health<80 || ready_for_battle==0 ||
+        (own->health<120 && own->client->ps.stats[STAT_ARMOR]<40 && ready_for_battle<2);
     int macro=Psyz_MacroMode(own->health,own->client->ps.stats[STAT_ARMOR],Psyz_TrinityReady(own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo),recovering);
     if(macro!=PSYZ_MACRO_ANCHOR)psyz_macro_anchor=-1;
     else if(psyz_macro_anchor<0 || now-psyz_macro_anchor_since>=15000){
@@ -370,7 +366,8 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         float d=Psyz_Distance(own->client->ps.origin,e->r.currentOrigin);
         if(d<nearby_best){nearby_best=d;nearby_main=i;}
     }
-    if(nearby_main>=0 && !recovering && opening_target<0 && nearby_main!=psyz_goal_target)keep=0;
+    int weapon_recovery=nearby_main>=0 && own->health>=45 && Psyz_TrinityReady(own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo)<2;
+    if(nearby_main>=0 && (!recovering || weapon_recovery) && opening_target<0 && nearby_main!=psyz_goal_target)keep=0;
     /* Finish a useful pickup already within a short, same-floor approach.
        Do not walk past it because an old route is retained for 30 seconds.
        No detour during combat, learned jumps, or a reserved opening. */
@@ -430,7 +427,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
             float score=weight-distance*.035f-wait*15;
             if(score>best){best=score;selected=i;}
         }
-        if(nearby_main>=0 && !recovering && opening_target<0)selected=nearby_main;
+        if(nearby_main>=0 && (!recovering || weapon_recovery) && opening_target<0)selected=nearby_main;
         else if(major_target>=0)selected=major_target;
         if(touch_target>=0 && major_target<0)selected=touch_target;
         if(opening_target>=0)selected=opening_target;

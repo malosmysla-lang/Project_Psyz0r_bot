@@ -1,0 +1,4787 @@
+{
+  "fresh": [
+    {
+      "demo_id": "nekitz0r(POV)-vs-Psyz0r_bot-bloodrun-2026_10_19-21_18_53.dm_91",
+      "kill_windows": [
+        {
+          "time_ms": 4512975,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "railgun"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4610575,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "lightning"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4641175,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "grenade"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4662025,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "grenade",
+            "rocket"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4669225,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "railgun",
+            "lightning"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4707675,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "lightning",
+            "rocket",
+            "shotgun"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4729225,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4753150,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "lightning"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4790250,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "lightning"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4822825,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "gauntlet"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4863875,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "machinegun",
+            "rocket"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4895225,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4925200,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "shotgun"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4941200,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "lightning"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 4972850,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "shotgun",
+            "rocket"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5029900,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "railgun"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5045325,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5054900,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5075525,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "gauntlet"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5088850,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "gauntlet"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        }
+      ],
+      "rail_shots": [
+        {
+          "time_ms": 4512975,
+          "position": [
+            -513.3356323242188,
+            -320.14697265625,
+            56.125064849853516
+          ],
+          "viewangles": [
+            2.889404296875,
+            75.1025390625,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 6.536865234375,
+            "pitch_span": 0.9228515625,
+            "held": false,
+            "moving": true
+          },
+          "health": 181,
+          "armor": 10
+        },
+        {
+          "time_ms": 4537725,
+          "position": [
+            585.4420166015625,
+            -230.17431640625,
+            88.125
+          ],
+          "viewangles": [
+            5.8447265625,
+            173.8970947265625,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 6.7620849609375,
+            "pitch_span": 3.4991455078125,
+            "held": false,
+            "moving": true
+          },
+          "health": 154,
+          "armor": 77
+        },
+        {
+          "time_ms": 4577250,
+          "position": [
+            -383.7350158691406,
+            -369.8548278808594,
+            56.125
+          ],
+          "viewangles": [
+            -1.60400390625,
+            6.9158935546875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 1.549072265625,
+            "pitch_span": 3.6639404296875,
+            "held": true,
+            "moving": true
+          },
+          "health": 78,
+          "armor": 120
+        },
+        {
+          "time_ms": 4579125,
+          "position": [
+            -487.7213439941406,
+            9.803397178649902,
+            56.12509536743164
+          ],
+          "viewangles": [
+            8.85498046875,
+            -36.771240234375,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 1.3568115234375,
+            "pitch_span": 1.219482421875,
+            "held": true,
+            "moving": true
+          },
+          "health": 66,
+          "armor": 50
+        },
+        {
+          "time_ms": 4647550,
+          "position": [
+            528.732421875,
+            -1230.82080078125,
+            280.125
+          ],
+          "viewangles": [
+            23.97216796875,
+            39.0618896484375,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 21.1541748046875,
+            "pitch_span": 3.427734375,
+            "held": false,
+            "moving": true
+          },
+          "health": 96,
+          "armor": 174
+        },
+        {
+          "time_ms": 4649350,
+          "position": [
+            544.8724975585938,
+            -1286.001708984375,
+            280.125
+          ],
+          "viewangles": [
+            15.6390380859375,
+            79.12353515625,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 0.263671875,
+            "pitch_span": 0.626220703125,
+            "held": true,
+            "moving": true
+          },
+          "health": 95,
+          "armor": 168
+        },
+        {
+          "time_ms": 4651525,
+          "position": [
+            529.2852783203125,
+            -1353.813232421875,
+            280.1250305175781
+          ],
+          "viewangles": [
+            11.5191650390625,
+            78.0743408203125,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 0.02197265625,
+            "pitch_span": 0.1263427734375,
+            "held": true,
+            "moving": false
+          },
+          "health": 95,
+          "armor": 166
+        },
+        {
+          "time_ms": 4663150,
+          "position": [
+            717.2902221679688,
+            104.53396606445312,
+            88.16526794433594
+          ],
+          "viewangles": [
+            3.175048828125,
+            -93.0267333984375,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 1.6534423828125,
+            "pitch_span": 1.12060546875,
+            "held": true,
+            "moving": true
+          },
+          "health": 166,
+          "armor": 101
+        },
+        {
+          "time_ms": 4665400,
+          "position": [
+            692.067626953125,
+            82.45893096923828,
+            88.165283203125
+          ],
+          "viewangles": [
+            2.318115234375,
+            -91.834716796875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 1.351318359375,
+            "pitch_span": 1.614990234375,
+            "held": true,
+            "moving": true
+          },
+          "health": 164,
+          "armor": 100
+        },
+        {
+          "time_ms": 4801100,
+          "position": [
+            340.9022521972656,
+            -191.6024169921875,
+            88.12513732910156
+          ],
+          "viewangles": [
+            2.6531982421875,
+            -17.81982421875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 13.9910888671875,
+            "pitch_span": 2.076416015625,
+            "held": false,
+            "moving": true
+          },
+          "health": 84,
+          "armor": 144
+        },
+        {
+          "time_ms": 5020750,
+          "position": [
+            -283.53997802734375,
+            -452.213134765625,
+            408.164794921875
+          ],
+          "viewangles": [
+            -10.78857421875,
+            28.8336181640625,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 6.2347412109375,
+            "pitch_span": 0.98876953125,
+            "held": false,
+            "moving": true
+          },
+          "health": 100,
+          "armor": 199
+        },
+        {
+          "time_ms": 5022250,
+          "position": [
+            -188.92987060546875,
+            -321.1873779296875,
+            437.0692443847656
+          ],
+          "viewangles": [
+            -8.349609375,
+            -8.5968017578125,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 17.68798828125,
+            "pitch_span": 1.153564453125,
+            "held": false,
+            "moving": true
+          },
+          "health": 100,
+          "armor": 197
+        },
+        {
+          "time_ms": 5026875,
+          "position": [
+            427.47998046875,
+            -1323.8997802734375,
+            280.125
+          ],
+          "viewangles": [
+            -5.7733154296875,
+            31.17919921875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 16.76513671875,
+            "pitch_span": 0.955810546875,
+            "held": false,
+            "moving": true
+          },
+          "health": 100,
+          "armor": 198
+        },
+        {
+          "time_ms": 5028425,
+          "position": [
+            292.83544921875,
+            -1195.8153076171875,
+            280.125
+          ],
+          "viewangles": [
+            3.2025146484375,
+            -6.2786865234375,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 2.867431640625,
+            "pitch_span": 0.560302734375,
+            "held": true,
+            "moving": true
+          },
+          "health": 74,
+          "armor": 145
+        },
+        {
+          "time_ms": 5029900,
+          "position": [
+            380.92498779296875,
+            -1216.940673828125,
+            280.37078857421875
+          ],
+          "viewangles": [
+            28.01513671875,
+            2.5048828125,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 13.9251708984375,
+            "pitch_span": 24.7467041015625,
+            "held": false,
+            "moving": true
+          },
+          "health": 71,
+          "armor": 137
+        }
+      ],
+      "low_health_shots": [
+        {
+          "time_ms": 4579125,
+          "weapon": "railgun",
+          "health": 66,
+          "armor": 50,
+          "position": [
+            -487.7213439941406,
+            9.803397178649902,
+            56.12509536743164
+          ]
+        },
+        {
+          "time_ms": 4584850,
+          "weapon": "rocket",
+          "health": 66,
+          "armor": 50,
+          "position": [
+            569.822998046875,
+            -91.9771957397461,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 4587675,
+          "weapon": "rocket",
+          "health": 66,
+          "armor": 50,
+          "position": [
+            -34.4940185546875,
+            -420.71112060546875,
+            345.6848449707031
+          ]
+        },
+        {
+          "time_ms": 4588950,
+          "weapon": "shotgun",
+          "health": 63,
+          "armor": 43,
+          "position": [
+            121.12450408935547,
+            -306.7814636230469,
+            24.125003814697266
+          ]
+        },
+        {
+          "time_ms": 4589950,
+          "weapon": "shotgun",
+          "health": 63,
+          "armor": 43,
+          "position": [
+            347.56781005859375,
+            -196.7767333984375,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4590950,
+          "weapon": "shotgun",
+          "health": 30,
+          "armor": 0,
+          "position": [
+            641.400390625,
+            -275.81201171875,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4704475,
+          "weapon": "lightning",
+          "health": 68,
+          "armor": 93,
+          "position": [
+            619.8345336914062,
+            -614.3724975585938,
+            88.12660217285156
+          ]
+        },
+        {
+          "time_ms": 4704525,
+          "weapon": "lightning",
+          "health": 66,
+          "armor": 89,
+          "position": [
+            605.0567626953125,
+            -615.810302734375,
+            88.126708984375
+          ]
+        },
+        {
+          "time_ms": 4704575,
+          "weapon": "lightning",
+          "health": 64,
+          "armor": 85,
+          "position": [
+            591.1250610351562,
+            -615.4310302734375,
+            88.1268081665039
+          ]
+        },
+        {
+          "time_ms": 4704625,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 81,
+          "position": [
+            591.2255859375,
+            -614.5498657226562,
+            88.1268081665039
+          ]
+        },
+        {
+          "time_ms": 4704675,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 81,
+          "position": [
+            596.3275146484375,
+            -614.7529907226562,
+            88.1268081665039
+          ]
+        },
+        {
+          "time_ms": 4704725,
+          "weapon": "lightning",
+          "health": 60,
+          "armor": 77,
+          "position": [
+            605.5535888671875,
+            -616.7019653320312,
+            88.12692260742188
+          ]
+        },
+        {
+          "time_ms": 4704775,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 73,
+          "position": [
+            620.7619018554688,
+            -621.34521484375,
+            88.12702941894531
+          ]
+        },
+        {
+          "time_ms": 4704825,
+          "weapon": "lightning",
+          "health": 56,
+          "armor": 69,
+          "position": [
+            634.5615844726562,
+            -626.1497192382812,
+            88.12712860107422
+          ]
+        },
+        {
+          "time_ms": 4704875,
+          "weapon": "lightning",
+          "health": 56,
+          "armor": 69,
+          "position": [
+            652.6453247070312,
+            -631.7158813476562,
+            88.12712860107422
+          ]
+        },
+        {
+          "time_ms": 4705475,
+          "weapon": "rocket",
+          "health": 50,
+          "armor": 57,
+          "position": [
+            736.5817260742188,
+            -518.6615600585938,
+            88.12738037109375
+          ]
+        },
+        {
+          "time_ms": 4706675,
+          "weapon": "shotgun",
+          "health": 50,
+          "armor": 57,
+          "position": [
+            563.7398071289062,
+            -181.52420043945312,
+            98.60877227783203
+          ]
+        },
+        {
+          "time_ms": 4707675,
+          "weapon": "shotgun",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            308.1634826660156,
+            -229.45858764648438,
+            88.32416534423828
+          ]
+        },
+        {
+          "time_ms": 4709350,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            -236.72393798828125,
+            -214.15069580078125,
+            16.125
+          ]
+        },
+        {
+          "time_ms": 4710375,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            -235.0458526611328,
+            -144.6652069091797,
+            24.125
+          ]
+        },
+        {
+          "time_ms": 4713200,
+          "weapon": "lightning",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            629.8494262695312,
+            -257.7715148925781,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4713250,
+          "weapon": "lightning",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            627.552978515625,
+            -268.24639892578125,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4713300,
+          "weapon": "lightning",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            625.5557861328125,
+            -277.35675048828125,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4713350,
+          "weapon": "lightning",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            623.9491577148438,
+            -284.68511962890625,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4713400,
+          "weapon": "lightning",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            622.9349365234375,
+            -289.31146240234375,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4713450,
+          "weapon": "lightning",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            622.29833984375,
+            -292.2156066894531,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4713500,
+          "weapon": "lightning",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            621.8798828125,
+            -294.1736755371094,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4713550,
+          "weapon": "lightning",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            621.9000854492188,
+            -298.2091064453125,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4713600,
+          "weapon": "lightning",
+          "health": 40,
+          "armor": 37,
+          "position": [
+            622.3101806640625,
+            -309.48883056640625,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4720575,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 87,
+          "position": [
+            385.7306213378906,
+            -259.59814453125,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4721375,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 87,
+          "position": [
+            385.7306213378906,
+            -259.59814453125,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4722175,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 87,
+          "position": [
+            385.7306213378906,
+            -259.59814453125,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4724400,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 87,
+          "position": [
+            676.3114624023438,
+            -182.61734008789062,
+            88.22086334228516
+          ]
+        },
+        {
+          "time_ms": 4725575,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 87,
+          "position": [
+            722.1592407226562,
+            -211.0581512451172,
+            90.125
+          ]
+        },
+        {
+          "time_ms": 4726675,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 87,
+          "position": [
+            583.39794921875,
+            -237.21490478515625,
+            88.16522979736328
+          ]
+        },
+        {
+          "time_ms": 4727475,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 87,
+          "position": [
+            673.6729736328125,
+            -170.82672119140625,
+            88.16522979736328
+          ]
+        },
+        {
+          "time_ms": 4728275,
+          "weapon": "rocket",
+          "health": 39,
+          "armor": 83,
+          "position": [
+            674.3665161132812,
+            -156.63668823242188,
+            88.1652603149414
+          ]
+        },
+        {
+          "time_ms": 4729075,
+          "weapon": "rocket",
+          "health": 39,
+          "armor": 83,
+          "position": [
+            675.7527465820312,
+            -144.39991760253906,
+            88.1652603149414
+          ]
+        },
+        {
+          "time_ms": 4805000,
+          "weapon": "rocket",
+          "health": 63,
+          "armor": 57,
+          "position": [
+            674.5360717773438,
+            -766.475341796875,
+            88.12501525878906
+          ]
+        },
+        {
+          "time_ms": 4822425,
+          "weapon": "gauntlet",
+          "health": 66,
+          "armor": 0,
+          "position": [
+            1179.48828125,
+            -1061.5133056640625,
+            228.38430786132812
+          ]
+        },
+        {
+          "time_ms": 4822825,
+          "weapon": "gauntlet",
+          "health": 66,
+          "armor": 0,
+          "position": [
+            1179.017822265625,
+            -1157.6348876953125,
+            338.22015380859375
+          ]
+        },
+        {
+          "time_ms": 4824200,
+          "weapon": "rocket",
+          "health": 66,
+          "armor": 0,
+          "position": [
+            1174.0931396484375,
+            -1117.664306640625,
+            279.5473937988281
+          ]
+        },
+        {
+          "time_ms": 4854150,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            539.6546630859375,
+            -189.881103515625,
+            88.68434143066406
+          ]
+        },
+        {
+          "time_ms": 4854225,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            516.1768188476562,
+            -204.8184356689453,
+            88.36111450195312
+          ]
+        },
+        {
+          "time_ms": 4854250,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            506.6219787597656,
+            -210.9237060546875,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854300,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            494.01739501953125,
+            -221.00180053710938,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854350,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            483.7388916015625,
+            -234.63343811035156,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854400,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            476.0603942871094,
+            -238.9188995361328,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854450,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            467.6758117675781,
+            -235.15774536132812,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854500,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            461.4980773925781,
+            -228.52882385253906,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854550,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            456.5548095703125,
+            -224.3646240234375,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854600,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            456.2720947265625,
+            -227.77647399902344,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854650,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            462.3522644042969,
+            -234.05465698242188,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854725,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            477.646240234375,
+            -242.7164306640625,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854775,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            492.3266296386719,
+            -243.4549560546875,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854800,
+          "weapon": "lightning",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            500.5725402832031,
+            -242.95242309570312,
+            88.36122131347656
+          ]
+        },
+        {
+          "time_ms": 4854875,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            525.5382690429688,
+            -244.83883666992188,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4854900,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            533.6054077148438,
+            -246.7181396484375,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4854950,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            550.8706665039062,
+            -246.87924194335938,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855000,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            562.9059448242188,
+            -240.19078063964844,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855050,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            571.62548828125,
+            -228.77381896972656,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855100,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            578.6862182617188,
+            -212.79835510253906,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855175,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            585.5022583007812,
+            -192.5255126953125,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855200,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            587.2645263671875,
+            -189.17359924316406,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855250,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            589.317138671875,
+            -189.72027587890625,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855300,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            590.4359130859375,
+            -197.30325317382812,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855350,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            591.0753784179688,
+            -210.04344177246094,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855425,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            591.9089965820312,
+            -232.48272705078125,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855450,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            592.3457641601562,
+            -241.12887573242188,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855525,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            593.3734130859375,
+            -259.2997741699219,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855550,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            593.3912963867188,
+            -261.0971984863281,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855600,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            593.1976318359375,
+            -257.263671875,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855650,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            592.8229370117188,
+            -248.98239135742188,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4855700,
+          "weapon": "lightning",
+          "health": 50,
+          "armor": 0,
+          "position": [
+            592.0777587890625,
+            -233.40036010742188,
+            88.36131286621094
+          ]
+        },
+        {
+          "time_ms": 4863825,
+          "weapon": "rocket",
+          "health": 60,
+          "armor": 0,
+          "position": [
+            653.5036010742188,
+            -552.3601684570312,
+            88.1259765625
+          ]
+        },
+        {
+          "time_ms": 4864700,
+          "weapon": "rocket",
+          "health": 39,
+          "armor": 0,
+          "position": [
+            683.8223266601562,
+            -409.0844421386719,
+            88.24396514892578
+          ]
+        },
+        {
+          "time_ms": 4870575,
+          "weapon": "rocket",
+          "health": 39,
+          "armor": 50,
+          "position": [
+            86.0103530883789,
+            598.9806518554688,
+            536.2635498046875
+          ]
+        },
+        {
+          "time_ms": 4936725,
+          "weapon": "rocket",
+          "health": 60,
+          "armor": 16,
+          "position": [
+            514.585205078125,
+            -982.9140014648438,
+            88.1261215209961
+          ]
+        },
+        {
+          "time_ms": 4937500,
+          "weapon": "rocket",
+          "health": 60,
+          "armor": 16,
+          "position": [
+            757.1843872070312,
+            -1037.1387939453125,
+            125.11972045898438
+          ]
+        },
+        {
+          "time_ms": 4938700,
+          "weapon": "lightning",
+          "health": 60,
+          "armor": 16,
+          "position": [
+            657.0037841796875,
+            -770.2399291992188,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4938750,
+          "weapon": "lightning",
+          "health": 60,
+          "armor": 16,
+          "position": [
+            652.3638916015625,
+            -754.2203979492188,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4938800,
+          "weapon": "lightning",
+          "health": 60,
+          "armor": 16,
+          "position": [
+            649.5664672851562,
+            -739.1831665039062,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4938850,
+          "weapon": "lightning",
+          "health": 60,
+          "armor": 16,
+          "position": [
+            647.7273559570312,
+            -720.071044921875,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4938900,
+          "weapon": "lightning",
+          "health": 60,
+          "armor": 16,
+          "position": [
+            647.3853149414062,
+            -706.3057250976562,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4938950,
+          "weapon": "lightning",
+          "health": 60,
+          "armor": 16,
+          "position": [
+            648.043212890625,
+            -688.0869140625,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4939000,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            650.2236938476562,
+            -671.8612670898438,
+            88.16511535644531
+          ]
+        },
+        {
+          "time_ms": 4939050,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            653.9947509765625,
+            -658.3445434570312,
+            99.49071502685547
+          ]
+        },
+        {
+          "time_ms": 4939100,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            659.6354370117188,
+            -640.13525390625,
+            112.05350494384766
+          ]
+        },
+        {
+          "time_ms": 4939150,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            664.6873168945312,
+            -625.3133544921875,
+            120.1034927368164
+          ]
+        },
+        {
+          "time_ms": 4939200,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            670.57666015625,
+            -609.1748657226562,
+            126.81649017333984
+          ]
+        },
+        {
+          "time_ms": 4939250,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            676.7203369140625,
+            -591.2826538085938,
+            131.91513061523438
+          ]
+        },
+        {
+          "time_ms": 4939300,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            681.890625,
+            -574.1207275390625,
+            134.6297149658203
+          ]
+        },
+        {
+          "time_ms": 4939350,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            686.8828125,
+            -554.9405517578125,
+            135.40353393554688
+          ]
+        },
+        {
+          "time_ms": 4939400,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            690.21240234375,
+            -540.0657348632812,
+            134.49954223632812
+          ]
+        },
+        {
+          "time_ms": 4939450,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            694.0865478515625,
+            -519.4555053710938,
+            131.24874877929688
+          ]
+        },
+        {
+          "time_ms": 4939500,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            697.0442504882812,
+            -499.832763671875,
+            126.15873718261719
+          ]
+        },
+        {
+          "time_ms": 4939550,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            699.286376953125,
+            -480.5299987792969,
+            119.39073944091797
+          ]
+        },
+        {
+          "time_ms": 4939600,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            701.0111083984375,
+            -458.8145751953125,
+            109.77654266357422
+          ]
+        },
+        {
+          "time_ms": 4939650,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            701.868896484375,
+            -438.02398681640625,
+            98.64653778076172
+          ]
+        },
+        {
+          "time_ms": 4939700,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            701.7633666992188,
+            -416.6865539550781,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4939750,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            695.6663818359375,
+            -396.8261413574219,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4939800,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            686.6358642578125,
+            -384.4361572265625,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4939850,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            676.076171875,
+            -371.9094543457031,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4939900,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            664.4387817382812,
+            -358.93768310546875,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4939950,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            654.9871826171875,
+            -349.3123779296875,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940000,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            643.2598876953125,
+            -334.1430969238281,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940050,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            634.2733154296875,
+            -319.9112854003906,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940100,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            626.5881958007812,
+            -306.5503234863281,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940150,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            618.5638427734375,
+            -291.4731750488281,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940200,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            613.9149780273438,
+            -276.8750305175781,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940250,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            609.872802734375,
+            -260.5190734863281,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940300,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            606.1929931640625,
+            -245.23573303222656,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940350,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            601.7118530273438,
+            -229.33335876464844,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940400,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            594.2354125976562,
+            -215.46005249023438,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940450,
+          "weapon": "lightning",
+          "health": 58,
+          "armor": 12,
+          "position": [
+            583.333740234375,
+            -203.60797119140625,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940500,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            568.2106323242188,
+            -191.7946319580078,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4940550,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            556.0247802734375,
+            -174.31796264648438,
+            97.24530792236328
+          ]
+        },
+        {
+          "time_ms": 4940600,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            540.65478515625,
+            -153.81033325195312,
+            105.92802429199219
+          ]
+        },
+        {
+          "time_ms": 4940650,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            525.9777221679688,
+            -148.96180725097656,
+            111.13179016113281
+          ]
+        },
+        {
+          "time_ms": 4940700,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            505.79766845703125,
+            -145.438720703125,
+            115.45851135253906
+          ]
+        },
+        {
+          "time_ms": 4940750,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            486.220458984375,
+            -143.1258087158203,
+            117.32362365722656
+          ]
+        },
+        {
+          "time_ms": 4940800,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            469.6203308105469,
+            -143.12841796875,
+            117.21220397949219
+          ]
+        },
+        {
+          "time_ms": 4940850,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            451.8358154296875,
+            -149.53176879882812,
+            114.83039093017578
+          ]
+        },
+        {
+          "time_ms": 4940900,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            437.355224609375,
+            -157.81710815429688,
+            110.58377075195312
+          ]
+        },
+        {
+          "time_ms": 4940950,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            423.41876220703125,
+            -165.9132843017578,
+            104.62541198730469
+          ]
+        },
+        {
+          "time_ms": 4941000,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            409.9739074707031,
+            -174.00567626953125,
+            97.18572235107422
+          ]
+        },
+        {
+          "time_ms": 4941050,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            394.98370361328125,
+            -183.15733337402344,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941100,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            380.4776916503906,
+            -193.0423583984375,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941150,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            368.6407165527344,
+            -202.20957946777344,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941200,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            356.44970703125,
+            -212.83062744140625,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941250,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            345.7701110839844,
+            -228.8388671875,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941300,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            339.9603271484375,
+            -241.34890747070312,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941350,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            337.1475524902344,
+            -259.47198486328125,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941400,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            341.22906494140625,
+            -272.875,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941450,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            351.96063232421875,
+            -272.875,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941500,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            364.84814453125,
+            -272.7391052246094,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941550,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            379.6606750488281,
+            -269.5806579589844,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941600,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            393.9632873535156,
+            -259.9852600097656,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4941650,
+          "weapon": "lightning",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            401.9526062011719,
+            -247.77903747558594,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4942100,
+          "weapon": "rocket",
+          "health": 10,
+          "armor": 0,
+          "position": [
+            291.71484375,
+            -229.99188232421875,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 4971950,
+          "weapon": "rocket",
+          "health": 48,
+          "armor": 4,
+          "position": [
+            302.12548828125,
+            -312.4289245605469,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 4972775,
+          "weapon": "rocket",
+          "health": 48,
+          "armor": 4,
+          "position": [
+            244.1408233642578,
+            -269.66571044921875,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 4976600,
+          "weapon": "rocket",
+          "health": 28,
+          "armor": 74,
+          "position": [
+            -208.87498474121094,
+            32.065879821777344,
+            536.3505249023438
+          ]
+        },
+        {
+          "time_ms": 4982750,
+          "weapon": "rocket",
+          "health": 28,
+          "armor": 74,
+          "position": [
+            431.68994140625,
+            -1282.1697998046875,
+            280.125
+          ]
+        },
+        {
+          "time_ms": 4986825,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -216.1719207763672,
+            -576.6680908203125,
+            408.125
+          ]
+        },
+        {
+          "time_ms": 4987625,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -229.478515625,
+            -318.86187744140625,
+            409.125
+          ]
+        },
+        {
+          "time_ms": 4988425,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -215.7320556640625,
+            -359.76409912109375,
+            409.125
+          ]
+        },
+        {
+          "time_ms": 4989225,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -212.63888549804688,
+            -410.7992248535156,
+            408.3507385253906
+          ]
+        },
+        {
+          "time_ms": 4990025,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -180.52862548828125,
+            -385.96356201171875,
+            408.2787780761719
+          ]
+        },
+        {
+          "time_ms": 4990825,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -239.18157958984375,
+            -309.1189880371094,
+            409.125
+          ]
+        },
+        {
+          "time_ms": 4991625,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -262.56488037109375,
+            -372.6343994140625,
+            408.3507995605469
+          ]
+        },
+        {
+          "time_ms": 4992425,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -183.96499633789062,
+            -298.8370056152344,
+            408.20361328125
+          ]
+        },
+        {
+          "time_ms": 4993225,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -168.82748413085938,
+            -313.216796875,
+            408.3507385253906
+          ]
+        },
+        {
+          "time_ms": 4994025,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -159.1438446044922,
+            -378.1583557128906,
+            408.2415466308594
+          ]
+        },
+        {
+          "time_ms": 4994825,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -149.7445068359375,
+            -356.4874572753906,
+            408.2415466308594
+          ]
+        },
+        {
+          "time_ms": 4995625,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -162.54135131835938,
+            -362.925048828125,
+            408.2415466308594
+          ]
+        },
+        {
+          "time_ms": 4996425,
+          "weapon": "grenade",
+          "health": 28,
+          "armor": 99,
+          "position": [
+            -184.7594451904297,
+            -374.425537109375,
+            408.2415466308594
+          ]
+        },
+        {
+          "time_ms": 5054825,
+          "weapon": "rocket",
+          "health": 62,
+          "armor": 0,
+          "position": [
+            489.2484436035156,
+            -274.4418029785156,
+            88.12541198730469
+          ]
+        },
+        {
+          "time_ms": 5061775,
+          "weapon": "rocket",
+          "health": 65,
+          "armor": 15,
+          "position": [
+            379.5804443359375,
+            -103.25639343261719,
+            565.5411987304688
+          ]
+        },
+        {
+          "time_ms": 5062675,
+          "weapon": "rocket",
+          "health": 60,
+          "armor": 0,
+          "position": [
+            83.51107788085938,
+            -28.34154510498047,
+            583.3817749023438
+          ]
+        },
+        {
+          "time_ms": 5065850,
+          "weapon": "rocket",
+          "health": 52,
+          "armor": 93,
+          "position": [
+            -435.74859619140625,
+            -28.954551696777344,
+            56.125
+          ]
+        },
+        {
+          "time_ms": 5075525,
+          "weapon": "gauntlet",
+          "health": 15,
+          "armor": 18,
+          "position": [
+            248.5937042236328,
+            -212.9582977294922,
+            88.125
+          ]
+        }
+      ],
+      "players": [
+        {
+          "clientNumber": 0,
+          "name": "Psyz0r_bot",
+          "cleanName": "Psyz0r_bot",
+          "team": "free",
+          "score": 4,
+          "ping": 0,
+          "playTime": 10,
+          "kills": 4,
+          "deaths": 20,
+          "accuracy": 39,
+          "bestWeapon": "rocket launcher",
+          "perfect": 0,
+          "impressives": 0,
+          "excellents": 0,
+          "gauntlets": 0,
+          "damageGiven": 2822,
+          "damageReceived": 4086,
+          "redArmorPickups": 3,
+          "yellowArmorPickups": 9,
+          "greenArmorPickups": 0,
+          "megaHealthPickups": 7,
+          "redArmorTime": 4,
+          "yellowArmorTime": 15,
+          "greenArmorTime": 0,
+          "megaHealthTime": 8,
+          "gauntletKills": 0,
+          "gauntletAccuracy": 0,
+          "gauntletShots": 0,
+          "gauntletHits": 0,
+          "gauntletDamage": 0,
+          "machinegunKills": 1,
+          "machinegunAccuracy": 42,
+          "machinegunShots": 374,
+          "machinegunHits": 159,
+          "machinegunDamage": 795,
+          "shotgunKills": 0,
+          "shotgunAccuracy": 0,
+          "shotgunShots": 20,
+          "shotgunHits": 0,
+          "shotgunDamage": 0,
+          "grenadeLauncherKills": 0,
+          "grenadeLauncherAccuracy": 0,
+          "grenadeLauncherShots": 0,
+          "grenadeLauncherHits": 0,
+          "grenadeLauncherDamage": 0,
+          "rocketLauncherKills": 2,
+          "rocketLauncherAccuracy": 41,
+          "rocketLauncherSkill": 43,
+          "rocketLauncherShots": 65,
+          "rocketLauncherHits": 27,
+          "rocketLauncherDamage": 1169,
+          "plasmaGunKills": 0,
+          "plasmaGunAccuracy": 0,
+          "plasmaGunShots": 20,
+          "plasmaGunHits": 0,
+          "plasmaGunDamage": 0,
+          "railgunKills": 1,
+          "railgunAccuracy": 26,
+          "railgunShots": 23,
+          "railgunHits": 6,
+          "railgunDamage": 480,
+          "lightningGunKills": 0,
+          "lightningGunAccuracy": 38,
+          "lightningGunShots": 163,
+          "lightningGunHits": 63,
+          "lightningGunDamage": 378,
+          "bfgKills": 0,
+          "bfgAccuracy": 0,
+          "bfgShots": 0,
+          "bfgHits": 0,
+          "bfgDamage": 0,
+          "grapplingHookKills": 0,
+          "grapplingHookAccuracy": 0,
+          "grapplingHookShots": 0,
+          "grapplingHookHits": 0,
+          "grapplingHookDamage": 0,
+          "nailgunKills": 0,
+          "nailgunAccuracy": 0,
+          "nailgunShots": 0,
+          "nailgunHits": 0,
+          "nailgunDamage": 0,
+          "chaingunKills": 0,
+          "chaingunAccuracy": 0,
+          "chaingunShots": 0,
+          "chaingunHits": 0,
+          "chaingunDamage": 0,
+          "proximityMineKills": 0,
+          "proximityMineAccuracy": 0,
+          "proximityMineShots": 0,
+          "proximityMineHits": 0,
+          "proximityMineDamage": 0,
+          "heavyMachinegunKills": 0,
+          "heavyMachinegunAccuracy": 0,
+          "heavyMachinegunShots": 0,
+          "heavyMachinegunHits": 0,
+          "heavyMachinegunDamage": 0
+        },
+        {
+          "clientNumber": 1,
+          "name": "nekitz0r",
+          "cleanName": "nekitz0r",
+          "team": "free",
+          "score": 20,
+          "ping": 70,
+          "playTime": 10,
+          "kills": 20,
+          "deaths": 4,
+          "accuracy": 32,
+          "bestWeapon": "rocket launcher",
+          "perfect": 0,
+          "impressives": 2,
+          "excellents": 0,
+          "gauntlets": 3,
+          "damageGiven": 4086,
+          "damageReceived": 2822,
+          "redArmorPickups": 11,
+          "yellowArmorPickups": 19,
+          "greenArmorPickups": 0,
+          "megaHealthPickups": 7,
+          "redArmorTime": 20,
+          "yellowArmorTime": 16,
+          "greenArmorTime": 0,
+          "megaHealthTime": 10,
+          "gauntletKills": 3,
+          "gauntletAccuracy": 0,
+          "gauntletShots": 0,
+          "gauntletHits": 0,
+          "gauntletDamage": 200,
+          "machinegunKills": 0,
+          "machinegunAccuracy": 0,
+          "machinegunShots": 7,
+          "machinegunHits": 0,
+          "machinegunDamage": 0,
+          "shotgunKills": 2,
+          "shotgunAccuracy": 20,
+          "shotgunShots": 180,
+          "shotgunHits": 37,
+          "shotgunDamage": 165,
+          "grenadeLauncherKills": 1,
+          "grenadeLauncherAccuracy": 5,
+          "grenadeLauncherShots": 53,
+          "grenadeLauncherHits": 3,
+          "grenadeLauncherDamage": 130,
+          "rocketLauncherKills": 7,
+          "rocketLauncherAccuracy": 35,
+          "rocketLauncherSkill": 45,
+          "rocketLauncherShots": 131,
+          "rocketLauncherHits": 47,
+          "rocketLauncherDamage": 2131,
+          "plasmaGunKills": 0,
+          "plasmaGunAccuracy": 0,
+          "plasmaGunShots": 0,
+          "plasmaGunHits": 0,
+          "plasmaGunDamage": 0,
+          "railgunKills": 2,
+          "railgunAccuracy": 46,
+          "railgunShots": 15,
+          "railgunHits": 7,
+          "railgunDamage": 560,
+          "lightningGunKills": 5,
+          "lightningGunAccuracy": 34,
+          "lightningGunShots": 449,
+          "lightningGunHits": 153,
+          "lightningGunDamage": 900,
+          "bfgKills": 0,
+          "bfgAccuracy": 0,
+          "bfgShots": 0,
+          "bfgHits": 0,
+          "bfgDamage": 0,
+          "grapplingHookKills": 0,
+          "grapplingHookAccuracy": 0,
+          "grapplingHookShots": 0,
+          "grapplingHookHits": 0,
+          "grapplingHookDamage": 0,
+          "nailgunKills": 0,
+          "nailgunAccuracy": 0,
+          "nailgunShots": 0,
+          "nailgunHits": 0,
+          "nailgunDamage": 0,
+          "chaingunKills": 0,
+          "chaingunAccuracy": 0,
+          "chaingunShots": 0,
+          "chaingunHits": 0,
+          "chaingunDamage": 0,
+          "proximityMineKills": 0,
+          "proximityMineAccuracy": 0,
+          "proximityMineShots": 0,
+          "proximityMineHits": 0,
+          "proximityMineDamage": 0,
+          "heavyMachinegunKills": 0,
+          "heavyMachinegunAccuracy": 0,
+          "heavyMachinegunShots": 0,
+          "heavyMachinegunHits": 0,
+          "heavyMachinegunDamage": 0
+        }
+      ],
+      "sha256": "b3265113f9865ebbb826964f399509e33634875401d9c1c51979dbe6b035bc1d",
+      "owner_resource_concession": false
+    },
+    {
+      "demo_id": "nekitz0r(POV)-vs-Psyz0r_bot-bloodrun-2026_10_19-21_29_28.dm_91",
+      "kill_windows": [
+        {
+          "time_ms": 5155975,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5168725,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "railgun"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5188700,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "lightning",
+            "gauntlet",
+            "rocket"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5222175,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "grenade"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5275050,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "railgun"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5309250,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "grenade",
+            "rocket"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5467425,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "grenade",
+            "rocket",
+            "railgun"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5561325,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "shotgun"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5624125,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "railgun"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5641025,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "lightning",
+            "rocket",
+            "railgun"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5705975,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "rocket",
+            "railgun"
+          ],
+          "multi_weapon": true,
+          "same_target_damage_verified": false
+        },
+        {
+          "time_ms": 5721250,
+          "state": 1,
+          "client": 1,
+          "target": 0,
+          "sequence": [
+            "railgun"
+          ],
+          "multi_weapon": false,
+          "same_target_damage_verified": false
+        }
+      ],
+      "rail_shots": [
+        {
+          "time_ms": 5168725,
+          "position": [
+            723.27734375,
+            -1270.76171875,
+            280.125
+          ],
+          "viewangles": [
+            19.9072265625,
+            95.9710693359375,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 6.5643310546875,
+            "pitch_span": 0.7965087890625,
+            "held": false,
+            "moving": true
+          },
+          "health": 118,
+          "armor": 64
+        },
+        {
+          "time_ms": 5275050,
+          "position": [
+            685.485107421875,
+            -853.04248046875,
+            88.26356506347656
+          ],
+          "viewangles": [
+            0.3021240234375,
+            92.0819091796875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 1.2799072265625,
+            "pitch_span": 2.8564453125,
+            "held": true,
+            "moving": true
+          },
+          "health": 100,
+          "armor": 164
+        },
+        {
+          "time_ms": 5467425,
+          "position": [
+            -154.12210083007812,
+            -231.9148406982422,
+            408.26055908203125
+          ],
+          "viewangles": [
+            39.7705078125,
+            21.6156005859375,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 20.5609130859375,
+            "pitch_span": 1.2249755859375,
+            "held": false,
+            "moving": true
+          },
+          "health": 73,
+          "armor": 77
+        },
+        {
+          "time_ms": 5544400,
+          "position": [
+            -362.7630920410156,
+            -97.41114044189453,
+            48.125
+          ],
+          "viewangles": [
+            -42.2589111328125,
+            -0.3570556640625,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 2.208251953125,
+            "pitch_span": 1.0272216796875,
+            "held": true,
+            "moving": true
+          },
+          "health": 73,
+          "armor": 40
+        },
+        {
+          "time_ms": 5552175,
+          "position": [
+            245.86073303222656,
+            -207.0732421875,
+            88.125
+          ],
+          "viewangles": [
+            -2.9937744140625,
+            167.9425048828125,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 1.1260986328125,
+            "pitch_span": 11.6510009765625,
+            "held": false,
+            "moving": true
+          },
+          "health": 72,
+          "armor": 133
+        },
+        {
+          "time_ms": 5565275,
+          "position": [
+            635.8445434570312,
+            -441.9541931152344,
+            536.125
+          ],
+          "viewangles": [
+            19.302978515625,
+            -71.89453125,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 8.94287109375,
+            "pitch_span": 0.59326171875,
+            "held": false,
+            "moving": false
+          },
+          "health": 18,
+          "armor": 34
+        },
+        {
+          "time_ms": 5594275,
+          "position": [
+            885.1381225585938,
+            -1274.0372314453125,
+            280.125
+          ],
+          "viewangles": [
+            21.5936279296875,
+            114.67529296875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 2.977294921875,
+            "pitch_span": 2.076416015625,
+            "held": true,
+            "moving": true
+          },
+          "health": 100,
+          "armor": 172
+        },
+        {
+          "time_ms": 5595950,
+          "position": [
+            742.7996826171875,
+            -1274.1683349609375,
+            280.125
+          ],
+          "viewangles": [
+            37.957763671875,
+            63.369140625,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 46.329345703125,
+            "pitch_span": 12.139892578125,
+            "held": false,
+            "moving": true
+          },
+          "health": 100,
+          "armor": 170
+        },
+        {
+          "time_ms": 5597675,
+          "position": [
+            355.0667724609375,
+            -1184.6585693359375,
+            280.125
+          ],
+          "viewangles": [
+            19.676513671875,
+            26.004638671875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 5.185546875,
+            "pitch_span": 2.669677734375,
+            "held": true,
+            "moving": true
+          },
+          "health": 91,
+          "armor": 103
+        },
+        {
+          "time_ms": 5602250,
+          "position": [
+            -171.9043426513672,
+            -237.05587768554688,
+            408.35076904296875
+          ],
+          "viewangles": [
+            46.142578125,
+            3.6199951171875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 4.8175048828125,
+            "pitch_span": 15.5072021484375,
+            "held": false,
+            "moving": true
+          },
+          "health": 91,
+          "armor": 123
+        },
+        {
+          "time_ms": 5624125,
+          "position": [
+            -744.875,
+            -256.0093994140625,
+            425.7485656738281
+          ],
+          "viewangles": [
+            -4.9053955078125,
+            6.6522216796875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 0.17578125,
+            "pitch_span": 0.1263427734375,
+            "held": true,
+            "moving": false
+          },
+          "health": 91,
+          "armor": 151
+        },
+        {
+          "time_ms": 5641025,
+          "position": [
+            184.2222900390625,
+            -235.13873291015625,
+            536.125
+          ],
+          "viewangles": [
+            2.39501953125,
+            141.405029296875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 12.6123046875,
+            "pitch_span": 2.96630859375,
+            "held": false,
+            "moving": true
+          },
+          "health": 93,
+          "armor": 151
+        },
+        {
+          "time_ms": 5687400,
+          "position": [
+            -374.47998046875,
+            -384.1561279296875,
+            64.7083969116211
+          ],
+          "viewangles": [
+            -31.2066650390625,
+            44.417724609375,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 14.6173095703125,
+            "pitch_span": 1.878662109375,
+            "held": false,
+            "moving": true
+          },
+          "health": 40,
+          "armor": 25
+        },
+        {
+          "time_ms": 5705975,
+          "position": [
+            -534.52197265625,
+            -131.4618377685547,
+            56.125
+          ],
+          "viewangles": [
+            7.5201416015625,
+            16.50146484375,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 4.097900390625,
+            "pitch_span": 3.8946533203125,
+            "held": true,
+            "moving": true
+          },
+          "health": 37,
+          "armor": 18
+        },
+        {
+          "time_ms": 5710500,
+          "position": [
+            690.3980102539062,
+            -239.05003356933594,
+            88.27571868896484
+          ],
+          "viewangles": [
+            1.197509765625,
+            -111.4178466796875,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 18.577880859375,
+            "pitch_span": 0.362548828125,
+            "held": false,
+            "moving": true
+          },
+          "health": 35,
+          "armor": 10
+        },
+        {
+          "time_ms": 5719750,
+          "position": [
+            -427.21826171875,
+            -47.268943786621094,
+            56.125
+          ],
+          "viewangles": [
+            -35.595703125,
+            -11.0577392578125,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 10.92041015625,
+            "pitch_span": 1.1865234375,
+            "held": false,
+            "moving": false
+          },
+          "health": 20,
+          "armor": 50
+        },
+        {
+          "time_ms": 5721250,
+          "position": [
+            535.2262573242188,
+            -90.19416809082031,
+            536.125
+          ],
+          "viewangles": [
+            3.2354736328125,
+            178.9398193359375,
+            0.0
+          ],
+          "preaim": {
+            "yaw_span": 0.8624267578125,
+            "pitch_span": 0.59326171875,
+            "held": true,
+            "moving": true
+          },
+          "health": 20,
+          "armor": 50
+        }
+      ],
+      "low_health_shots": [
+        {
+          "time_ms": 5288825,
+          "weapon": "rocket",
+          "health": 66,
+          "armor": 85,
+          "position": [
+            631.6436767578125,
+            -456.5873718261719,
+            536.1254272460938
+          ]
+        },
+        {
+          "time_ms": 5289600,
+          "weapon": "rocket",
+          "health": 66,
+          "armor": 85,
+          "position": [
+            561.7146606445312,
+            -320.2973937988281,
+            536.1254272460938
+          ]
+        },
+        {
+          "time_ms": 5472650,
+          "weapon": "rocket",
+          "health": 69,
+          "armor": 61,
+          "position": [
+            692.8309936523438,
+            -868.9241333007812,
+            115.49742889404297
+          ]
+        },
+        {
+          "time_ms": 5476675,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 103,
+          "position": [
+            -534.480224609375,
+            356.621337890625,
+            552.125
+          ]
+        },
+        {
+          "time_ms": 5477450,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 102,
+          "position": [
+            -511.12982177734375,
+            341.49725341796875,
+            548.2833862304688
+          ]
+        },
+        {
+          "time_ms": 5478225,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 101,
+          "position": [
+            -397.1670837402344,
+            282.7680969238281,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5479025,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 100,
+          "position": [
+            -206.053466796875,
+            287.7776794433594,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5479825,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 100,
+          "position": [
+            -95.81756591796875,
+            298.4825134277344,
+            534.2755737304688
+          ]
+        },
+        {
+          "time_ms": 5480625,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 100,
+          "position": [
+            -23.12525177001953,
+            307.143798828125,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5481875,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 100,
+          "position": [
+            7.607122421264648,
+            589.2984619140625,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5482675,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 100,
+          "position": [
+            213.77513122558594,
+            467.9070129394531,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5483475,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 150,
+          "position": [
+            231.06446838378906,
+            222.9580841064453,
+            537.125
+          ]
+        },
+        {
+          "time_ms": 5488000,
+          "weapon": "rocket",
+          "health": 68,
+          "armor": 145,
+          "position": [
+            475.6169738769531,
+            -125.38514709472656,
+            570.7777709960938
+          ]
+        },
+        {
+          "time_ms": 5488775,
+          "weapon": "rocket",
+          "health": 68,
+          "armor": 145,
+          "position": [
+            210.61404418945312,
+            -179.68031311035156,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5489600,
+          "weapon": "rocket",
+          "health": 68,
+          "armor": 144,
+          "position": [
+            209.5291290283203,
+            -383.0061950683594,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5490800,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 143,
+          "position": [
+            198.4843292236328,
+            -315.8336181640625,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5491600,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 142,
+          "position": [
+            248.33108520507812,
+            -195.6821746826172,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5500250,
+          "weapon": "rocket",
+          "health": 65,
+          "armor": 176,
+          "position": [
+            -504.8406677246094,
+            236.4054718017578,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5508050,
+          "weapon": "rocket",
+          "health": 58,
+          "armor": 83,
+          "position": [
+            706.4874267578125,
+            167.8909454345703,
+            536.1250610351562
+          ]
+        },
+        {
+          "time_ms": 5509275,
+          "weapon": "grenade",
+          "health": 58,
+          "armor": 83,
+          "position": [
+            538.2691040039062,
+            -107.92720031738281,
+            536.1250610351562
+          ]
+        },
+        {
+          "time_ms": 5510075,
+          "weapon": "grenade",
+          "health": 58,
+          "armor": 83,
+          "position": [
+            419.77960205078125,
+            -134.80943298339844,
+            536.1250610351562
+          ]
+        },
+        {
+          "time_ms": 5510875,
+          "weapon": "grenade",
+          "health": 58,
+          "armor": 83,
+          "position": [
+            383.8270568847656,
+            -135.93093872070312,
+            536.1250610351562
+          ]
+        },
+        {
+          "time_ms": 5511650,
+          "weapon": "grenade",
+          "health": 58,
+          "armor": 83,
+          "position": [
+            256.3417053222656,
+            -153.19216918945312,
+            536.1250610351562
+          ]
+        },
+        {
+          "time_ms": 5512475,
+          "weapon": "grenade",
+          "health": 58,
+          "armor": 83,
+          "position": [
+            238.20822143554688,
+            -160.02667236328125,
+            536.1250610351562
+          ]
+        },
+        {
+          "time_ms": 5555950,
+          "weapon": "shotgun",
+          "health": 45,
+          "armor": 77,
+          "position": [
+            336.81689453125,
+            -212.34730529785156,
+            88.12532806396484
+          ]
+        },
+        {
+          "time_ms": 5557175,
+          "weapon": "shotgun",
+          "health": 18,
+          "armor": 24,
+          "position": [
+            410.88153076171875,
+            -194.74058532714844,
+            88.26545715332031
+          ]
+        },
+        {
+          "time_ms": 5558175,
+          "weapon": "shotgun",
+          "health": 18,
+          "armor": 34,
+          "position": [
+            165.22409057617188,
+            -27.125215530395508,
+            88.26545715332031
+          ]
+        },
+        {
+          "time_ms": 5559175,
+          "weapon": "shotgun",
+          "health": 18,
+          "armor": 34,
+          "position": [
+            -178.04380798339844,
+            -108.472412109375,
+            68.27538299560547
+          ]
+        },
+        {
+          "time_ms": 5560300,
+          "weapon": "shotgun",
+          "health": 18,
+          "armor": 34,
+          "position": [
+            -460.25738525390625,
+            33.47327423095703,
+            56.125
+          ]
+        },
+        {
+          "time_ms": 5561325,
+          "weapon": "shotgun",
+          "health": 18,
+          "armor": 34,
+          "position": [
+            635.1324462890625,
+            -99.3531494140625,
+            536.2964477539062
+          ]
+        },
+        {
+          "time_ms": 5562425,
+          "weapon": "shotgun",
+          "health": 18,
+          "armor": 34,
+          "position": [
+            528.9185791015625,
+            -75.14693450927734,
+            536.2964477539062
+          ]
+        },
+        {
+          "time_ms": 5565275,
+          "weapon": "railgun",
+          "health": 18,
+          "armor": 34,
+          "position": [
+            635.8445434570312,
+            -441.9541931152344,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5569825,
+          "weapon": "grenade",
+          "health": 68,
+          "armor": 34,
+          "position": [
+            -123.13895416259766,
+            -667.6721801757812,
+            425.4442138671875
+          ]
+        },
+        {
+          "time_ms": 5571750,
+          "weapon": "rocket",
+          "health": 68,
+          "armor": 59,
+          "position": [
+            269.0698547363281,
+            -831.7526245117188,
+            344.125
+          ]
+        },
+        {
+          "time_ms": 5574050,
+          "weapon": "rocket",
+          "health": 68,
+          "armor": 59,
+          "position": [
+            -165.34942626953125,
+            -422.25909423828125,
+            444.795654296875
+          ]
+        },
+        {
+          "time_ms": 5574875,
+          "weapon": "rocket",
+          "health": 59,
+          "armor": 41,
+          "position": [
+            -166.68577575683594,
+            -110.2027359008789,
+            555.9244995117188
+          ]
+        },
+        {
+          "time_ms": 5576075,
+          "weapon": "grenade",
+          "health": 59,
+          "armor": 140,
+          "position": [
+            -178.6641082763672,
+            -223.76467895507812,
+            447.6146240234375
+          ]
+        },
+        {
+          "time_ms": 5576875,
+          "weapon": "grenade",
+          "health": 59,
+          "armor": 140,
+          "position": [
+            -176.10499572753906,
+            -302.13104248046875,
+            408.3150634765625
+          ]
+        },
+        {
+          "time_ms": 5578100,
+          "weapon": "rocket",
+          "health": 59,
+          "armor": 138,
+          "position": [
+            -175.2380828857422,
+            -296.0656433105469,
+            408.20355224609375
+          ]
+        },
+        {
+          "time_ms": 5657125,
+          "weapon": "rocket",
+          "health": 59,
+          "armor": 56,
+          "position": [
+            1084.8770751953125,
+            561.0732421875,
+            392.1252136230469
+          ]
+        },
+        {
+          "time_ms": 5658025,
+          "weapon": "rocket",
+          "health": 41,
+          "armor": 14,
+          "position": [
+            1023.59814453125,
+            560.6849365234375,
+            409.8630065917969
+          ]
+        },
+        {
+          "time_ms": 5658825,
+          "weapon": "rocket",
+          "health": 15,
+          "armor": 0,
+          "position": [
+            1128.875,
+            434.3563232421875,
+            376.1430969238281
+          ]
+        },
+        {
+          "time_ms": 5659650,
+          "weapon": "rocket",
+          "health": 15,
+          "armor": 0,
+          "position": [
+            985.9261474609375,
+            625.8950805664062,
+            416.125
+          ]
+        },
+        {
+          "time_ms": 5669875,
+          "weapon": "grenade",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            -89.35504150390625,
+            232.2291259765625,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5671425,
+          "weapon": "rocket",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            105.24687957763672,
+            586.416748046875,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5674600,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            563.3568725585938,
+            -83.6854248046875,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5674900,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            457.5589904785156,
+            -58.84487533569336,
+            576.0056762695312
+          ]
+        },
+        {
+          "time_ms": 5674950,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            439.1230773925781,
+            -61.29307174682617,
+            576.9837646484375
+          ]
+        },
+        {
+          "time_ms": 5675000,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            422.41265869140625,
+            -64.06006622314453,
+            576.0457763671875
+          ]
+        },
+        {
+          "time_ms": 5675050,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            402.35980224609375,
+            -68.05206298828125,
+            572.7847290039062
+          ]
+        },
+        {
+          "time_ms": 5675100,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            384.4840393066406,
+            -72.15937042236328,
+            568.0476684570312
+          ]
+        },
+        {
+          "time_ms": 5675150,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            363.6770324707031,
+            -77.2181625366211,
+            560.4234619140625
+          ]
+        },
+        {
+          "time_ms": 5675200,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            346.3378601074219,
+            -81.43382263183594,
+            552.2879638671875
+          ]
+        },
+        {
+          "time_ms": 5675250,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            327.0721130371094,
+            -86.11788940429688,
+            541.3484497070312
+          ]
+        },
+        {
+          "time_ms": 5675300,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            307.5875244140625,
+            -91.96620178222656,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675375,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            283.1387023925781,
+            -107.58110809326172,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675400,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            275.5268859863281,
+            -115.85301971435547,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675450,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            265.53314208984375,
+            -133.66598510742188,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675525,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            263.47454833984375,
+            -158.211669921875,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675550,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            265.20050048828125,
+            -167.65084838867188,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675600,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            266.2087097167969,
+            -182.84768676757812,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675650,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            264.6583251953125,
+            -197.89918518066406,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675700,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            264.34478759765625,
+            -207.7660675048828,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675750,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            267.82794189453125,
+            -210.51470947265625,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675825,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            272.74456787109375,
+            -201.4082794189453,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675850,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            273.0955505371094,
+            -195.861083984375,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675900,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            268.4071044921875,
+            -184.77134704589844,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5675975,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            256.85504150390625,
+            -170.2649688720703,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5676000,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            253.5986328125,
+            -166.20864868164062,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5676050,
+          "weapon": "lightning",
+          "health": 55,
+          "armor": 50,
+          "position": [
+            248.74166870117188,
+            -160.1586151123047,
+            536.158447265625
+          ]
+        },
+        {
+          "time_ms": 5676825,
+          "weapon": "shotgun",
+          "health": 25,
+          "armor": 0,
+          "position": [
+            162.75009155273438,
+            -166.9993133544922,
+            536.1587524414062
+          ]
+        },
+        {
+          "time_ms": 5679725,
+          "weapon": "rocket",
+          "health": 15,
+          "armor": 0,
+          "position": [
+            -503.8205261230469,
+            -49.20059585571289,
+            56.125
+          ]
+        },
+        {
+          "time_ms": 5680500,
+          "weapon": "rocket",
+          "health": 15,
+          "armor": 0,
+          "position": [
+            -502.1648864746094,
+            -49.819419860839844,
+            56.125
+          ]
+        },
+        {
+          "time_ms": 5681300,
+          "weapon": "rocket",
+          "health": 15,
+          "armor": 0,
+          "position": [
+            -502.1648864746094,
+            -49.819419860839844,
+            56.125
+          ]
+        },
+        {
+          "time_ms": 5687400,
+          "weapon": "railgun",
+          "health": 40,
+          "armor": 25,
+          "position": [
+            -374.47998046875,
+            -384.1561279296875,
+            64.7083969116211
+          ]
+        },
+        {
+          "time_ms": 5692125,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 25,
+          "position": [
+            564.9532470703125,
+            -92.8877944946289,
+            536.2966918945312
+          ]
+        },
+        {
+          "time_ms": 5694600,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 25,
+          "position": [
+            337.24688720703125,
+            -105.98668670654297,
+            536.2966918945312
+          ]
+        },
+        {
+          "time_ms": 5697225,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 25,
+          "position": [
+            379.2406921386719,
+            -97.6883544921875,
+            536.2966918945312
+          ]
+        },
+        {
+          "time_ms": 5703150,
+          "weapon": "rocket",
+          "health": 40,
+          "armor": 25,
+          "position": [
+            27.176542282104492,
+            -283.11456298828125,
+            345.68511962890625
+          ]
+        },
+        {
+          "time_ms": 5703950,
+          "weapon": "rocket",
+          "health": 37,
+          "armor": 18,
+          "position": [
+            -190.42994689941406,
+            -265.5917663574219,
+            23.811405181884766
+          ]
+        },
+        {
+          "time_ms": 5704750,
+          "weapon": "rocket",
+          "health": 37,
+          "armor": 18,
+          "position": [
+            -266.2310791015625,
+            -328.2043151855469,
+            24.125
+          ]
+        },
+        {
+          "time_ms": 5705975,
+          "weapon": "railgun",
+          "health": 37,
+          "armor": 18,
+          "position": [
+            -534.52197265625,
+            -131.4618377685547,
+            56.125
+          ]
+        },
+        {
+          "time_ms": 5710500,
+          "weapon": "railgun",
+          "health": 35,
+          "armor": 10,
+          "position": [
+            690.3980102539062,
+            -239.05003356933594,
+            88.27571868896484
+          ]
+        },
+        {
+          "time_ms": 5712975,
+          "weapon": "rocket",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            694.5645751953125,
+            -1014.8826293945312,
+            88.26380157470703
+          ]
+        },
+        {
+          "time_ms": 5713925,
+          "weapon": "rocket",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            687.337646484375,
+            -990.6692504882812,
+            128.37379455566406
+          ]
+        },
+        {
+          "time_ms": 5715475,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            648.2824096679688,
+            -358.9031982421875,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5715525,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            647.872314453125,
+            -342.2679443359375,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5715575,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            646.6187133789062,
+            -327.9131774902344,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5715625,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            643.6796264648438,
+            -309.718505859375,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5715675,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            636.3394165039062,
+            -293.6583251953125,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5715725,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            627.3787231445312,
+            -283.6460266113281,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5715775,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            611.1359252929688,
+            -271.74072265625,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5715825,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            595.4215698242188,
+            -263.37298583984375,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5715875,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            581.7725219726562,
+            -257.91351318359375,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5715925,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            563.9751586914062,
+            -252.79351806640625,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5715975,
+          "weapon": "lightning",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            547.1718139648438,
+            -248.9207000732422,
+            88.125
+          ]
+        },
+        {
+          "time_ms": 5719750,
+          "weapon": "railgun",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            -427.21826171875,
+            -47.268943786621094,
+            56.125
+          ]
+        },
+        {
+          "time_ms": 5721250,
+          "weapon": "railgun",
+          "health": 20,
+          "armor": 50,
+          "position": [
+            535.2262573242188,
+            -90.19416809082031,
+            536.125
+          ]
+        },
+        {
+          "time_ms": 5732950,
+          "weapon": "rocket",
+          "health": 69,
+          "armor": 136,
+          "position": [
+            -527.931640625,
+            300.78619384765625,
+            536.125
+          ]
+        }
+      ],
+      "players": [
+        {
+          "clientNumber": 0,
+          "name": "Psyz0r_bot",
+          "cleanName": "Psyz0r_bot",
+          "team": "free",
+          "score": 0,
+          "ping": 0,
+          "playTime": 10,
+          "kills": 0,
+          "deaths": 12,
+          "accuracy": 18,
+          "bestWeapon": "railgun",
+          "perfect": 0,
+          "impressives": 1,
+          "excellents": 0,
+          "gauntlets": 0,
+          "damageGiven": 1347,
+          "damageReceived": 3617,
+          "redArmorPickups": 6,
+          "yellowArmorPickups": 11,
+          "greenArmorPickups": 0,
+          "megaHealthPickups": 11,
+          "redArmorTime": 38,
+          "yellowArmorTime": 10,
+          "greenArmorTime": 0,
+          "megaHealthTime": 12,
+          "gauntletKills": 0,
+          "gauntletAccuracy": 0,
+          "gauntletShots": 0,
+          "gauntletHits": 0,
+          "gauntletDamage": 0,
+          "machinegunKills": 0,
+          "machinegunAccuracy": 19,
+          "machinegunShots": 72,
+          "machinegunHits": 14,
+          "machinegunDamage": 70,
+          "shotgunKills": 0,
+          "shotgunAccuracy": 0,
+          "shotgunShots": 0,
+          "shotgunHits": 0,
+          "shotgunDamage": 0,
+          "grenadeLauncherKills": 0,
+          "grenadeLauncherAccuracy": 0,
+          "grenadeLauncherShots": 0,
+          "grenadeLauncherHits": 0,
+          "grenadeLauncherDamage": 0,
+          "rocketLauncherKills": 0,
+          "rocketLauncherAccuracy": 16,
+          "rocketLauncherSkill": 74,
+          "rocketLauncherShots": 31,
+          "rocketLauncherHits": 5,
+          "rocketLauncherDamage": 369,
+          "plasmaGunKills": 0,
+          "plasmaGunAccuracy": 23,
+          "plasmaGunShots": 55,
+          "plasmaGunHits": 13,
+          "plasmaGunDamage": 234,
+          "railgunKills": 0,
+          "railgunAccuracy": 20,
+          "railgunShots": 35,
+          "railgunHits": 7,
+          "railgunDamage": 560,
+          "lightningGunKills": 0,
+          "lightningGunAccuracy": 15,
+          "lightningGunShots": 123,
+          "lightningGunHits": 19,
+          "lightningGunDamage": 114,
+          "bfgKills": 0,
+          "bfgAccuracy": 0,
+          "bfgShots": 0,
+          "bfgHits": 0,
+          "bfgDamage": 0,
+          "grapplingHookKills": 0,
+          "grapplingHookAccuracy": 0,
+          "grapplingHookShots": 0,
+          "grapplingHookHits": 0,
+          "grapplingHookDamage": 0,
+          "nailgunKills": 0,
+          "nailgunAccuracy": 0,
+          "nailgunShots": 0,
+          "nailgunHits": 0,
+          "nailgunDamage": 0,
+          "chaingunKills": 0,
+          "chaingunAccuracy": 0,
+          "chaingunShots": 0,
+          "chaingunHits": 0,
+          "chaingunDamage": 0,
+          "proximityMineKills": 0,
+          "proximityMineAccuracy": 0,
+          "proximityMineShots": 0,
+          "proximityMineHits": 0,
+          "proximityMineDamage": 0,
+          "heavyMachinegunKills": 0,
+          "heavyMachinegunAccuracy": 0,
+          "heavyMachinegunShots": 0,
+          "heavyMachinegunHits": 0,
+          "heavyMachinegunDamage": 0
+        },
+        {
+          "clientNumber": 1,
+          "name": "nekitz0r",
+          "cleanName": "nekitz0r",
+          "team": "free",
+          "score": 12,
+          "ping": 35,
+          "playTime": 10,
+          "kills": 12,
+          "deaths": 0,
+          "accuracy": 28,
+          "bestWeapon": "rocket launcher",
+          "perfect": 1,
+          "impressives": 5,
+          "excellents": 0,
+          "gauntlets": 0,
+          "damageGiven": 3617,
+          "damageReceived": 1347,
+          "redArmorPickups": 5,
+          "yellowArmorPickups": 18,
+          "greenArmorPickups": 0,
+          "megaHealthPickups": 2,
+          "redArmorTime": 22,
+          "yellowArmorTime": 15,
+          "greenArmorTime": 0,
+          "megaHealthTime": 2,
+          "gauntletKills": 0,
+          "gauntletAccuracy": 0,
+          "gauntletShots": 0,
+          "gauntletHits": 0,
+          "gauntletDamage": 50,
+          "machinegunKills": 0,
+          "machinegunAccuracy": 0,
+          "machinegunShots": 0,
+          "machinegunHits": 0,
+          "machinegunDamage": 0,
+          "shotgunKills": 1,
+          "shotgunAccuracy": 12,
+          "shotgunShots": 220,
+          "shotgunHits": 27,
+          "shotgunDamage": 100,
+          "grenadeLauncherKills": 1,
+          "grenadeLauncherAccuracy": 10,
+          "grenadeLauncherShots": 104,
+          "grenadeLauncherHits": 11,
+          "grenadeLauncherDamage": 656,
+          "rocketLauncherKills": 3,
+          "rocketLauncherAccuracy": 28,
+          "rocketLauncherSkill": 46,
+          "rocketLauncherShots": 112,
+          "rocketLauncherHits": 32,
+          "rocketLauncherDamage": 1479,
+          "plasmaGunKills": 0,
+          "plasmaGunAccuracy": 0,
+          "plasmaGunShots": 20,
+          "plasmaGunHits": 0,
+          "plasmaGunDamage": 0,
+          "railgunKills": 7,
+          "railgunAccuracy": 70,
+          "railgunShots": 17,
+          "railgunHits": 12,
+          "railgunDamage": 960,
+          "lightningGunKills": 0,
+          "lightningGunAccuracy": 37,
+          "lightningGunShots": 166,
+          "lightningGunHits": 62,
+          "lightningGunDamage": 372,
+          "bfgKills": 0,
+          "bfgAccuracy": 0,
+          "bfgShots": 0,
+          "bfgHits": 0,
+          "bfgDamage": 0,
+          "grapplingHookKills": 0,
+          "grapplingHookAccuracy": 0,
+          "grapplingHookShots": 0,
+          "grapplingHookHits": 0,
+          "grapplingHookDamage": 0,
+          "nailgunKills": 0,
+          "nailgunAccuracy": 0,
+          "nailgunShots": 0,
+          "nailgunHits": 0,
+          "nailgunDamage": 0,
+          "chaingunKills": 0,
+          "chaingunAccuracy": 0,
+          "chaingunShots": 0,
+          "chaingunHits": 0,
+          "chaingunDamage": 0,
+          "proximityMineKills": 0,
+          "proximityMineAccuracy": 0,
+          "proximityMineShots": 0,
+          "proximityMineHits": 0,
+          "proximityMineDamage": 0,
+          "heavyMachinegunKills": 0,
+          "heavyMachinegunAccuracy": 0,
+          "heavyMachinegunShots": 0,
+          "heavyMachinegunHits": 0,
+          "heavyMachinegunDamage": 0
+        }
+      ],
+      "sha256": "535c337a7c7dba7e47abece720e8b225d7911110240f4e66eccd4cbadaa6b900",
+      "owner_resource_concession": true
+    }
+  ],
+  "pro_files": 200,
+  "pro_observed_kills": 1514,
+  "pro_multi_weapon": 808,
+  "combo_sequences": [
+    [
+      "rocket -> lightning",
+      148
+    ],
+    [
+      "rocket -> railgun",
+      80
+    ],
+    [
+      "lightning -> railgun",
+      78
+    ],
+    [
+      "lightning -> rocket",
+      54
+    ],
+    [
+      "railgun -> lightning",
+      41
+    ],
+    [
+      "railgun -> rocket",
+      27
+    ],
+    [
+      "lightning -> rocket -> lightning",
+      26
+    ],
+    [
+      "grenade -> lightning",
+      22
+    ],
+    [
+      "grenade -> railgun",
+      22
+    ],
+    [
+      "grenade -> rocket",
+      18
+    ],
+    [
+      "rocket -> lightning -> railgun",
+      16
+    ],
+    [
+      "railgun -> shotgun",
+      16
+    ],
+    [
+      "plasma -> railgun",
+      15
+    ],
+    [
+      "lightning -> shotgun",
+      15
+    ],
+    [
+      "lightning -> rocket -> railgun",
+      14
+    ],
+    [
+      "rocket -> shotgun",
+      13
+    ],
+    [
+      "rocket -> lightning -> rocket",
+      13
+    ],
+    [
+      "plasma -> lightning",
+      12
+    ],
+    [
+      "railgun -> rocket -> railgun",
+      8
+    ],
+    [
+      "grenade -> lightning -> rocket",
+      6
+    ],
+    [
+      "railgun -> rocket -> lightning",
+      6
+    ],
+    [
+      "rocket -> railgun -> lightning",
+      6
+    ],
+    [
+      "railgun -> lightning -> railgun",
+      6
+    ],
+    [
+      "plasma -> shotgun",
+      5
+    ],
+    [
+      "machinegun -> lightning",
+      5
+    ],
+    [
+      "machinegun -> rocket",
+      5
+    ],
+    [
+      "plasma -> rocket",
+      4
+    ],
+    [
+      "rocket -> railgun -> rocket",
+      4
+    ],
+    [
+      "lightning -> railgun -> lightning",
+      4
+    ],
+    [
+      "rocket -> grenade -> railgun",
+      4
+    ],
+    [
+      "railgun -> lightning -> rocket",
+      4
+    ],
+    [
+      "lightning -> railgun -> shotgun",
+      3
+    ],
+    [
+      "railgun -> machinegun",
+      3
+    ],
+    [
+      "rocket -> grenade -> rocket",
+      3
+    ],
+    [
+      "rocket -> grenade",
+      3
+    ],
+    [
+      "grenade -> shotgun",
+      3
+    ],
+    [
+      "plasma -> rocket -> shotgun",
+      3
+    ],
+    [
+      "lightning -> plasma",
+      3
+    ],
+    [
+      "rocket -> plasma",
+      3
+    ],
+    [
+      "lightning -> rocket -> shotgun",
+      3
+    ],
+    [
+      "grenade -> railgun -> lightning",
+      3
+    ],
+    [
+      "plasma -> railgun -> shotgun",
+      2
+    ],
+    [
+      "grenade -> lightning -> railgun",
+      2
+    ],
+    [
+      "plasma -> lightning -> shotgun",
+      2
+    ],
+    [
+      "rocket -> railgun -> shotgun",
+      2
+    ],
+    [
+      "rocket -> shotgun -> railgun",
+      2
+    ],
+    [
+      "rocket -> lightning -> rocket -> railgun",
+      2
+    ],
+    [
+      "machinegun -> railgun",
+      2
+    ],
+    [
+      "rocket -> grenade -> lightning",
+      2
+    ],
+    [
+      "grenade -> lightning -> shotgun",
+      2
+    ],
+    [
+      "lightning -> plasma -> railgun",
+      2
+    ],
+    [
+      "lightning -> railgun -> rocket",
+      2
+    ],
+    [
+      "grenade -> plasma -> lightning",
+      2
+    ],
+    [
+      "grenade -> rocket -> lightning",
+      2
+    ],
+    [
+      "plasma -> lightning -> rocket",
+      1
+    ],
+    [
+      "plasma -> lightning -> plasma",
+      1
+    ],
+    [
+      "railgun -> plasma -> railgun",
+      1
+    ],
+    [
+      "plasma -> railgun -> lightning",
+      1
+    ],
+    [
+      "lightning -> grenade -> railgun",
+      1
+    ],
+    [
+      "railgun -> grenade -> rocket",
+      1
+    ],
+    [
+      "plasma -> shotgun -> plasma -> railgun",
+      1
+    ],
+    [
+      "rocket -> railgun -> machinegun",
+      1
+    ],
+    [
+      "lightning -> railgun -> shotgun -> railgun",
+      1
+    ],
+    [
+      "grenade -> rocket -> railgun",
+      1
+    ],
+    [
+      "lightning -> railgun -> rocket -> shotgun",
+      1
+    ],
+    [
+      "railgun -> grenade -> lightning",
+      1
+    ],
+    [
+      "lightning -> rocket -> railgun -> rocket",
+      1
+    ],
+    [
+      "gauntlet -> shotgun",
+      1
+    ],
+    [
+      "rocket -> lightning -> grenade",
+      1
+    ],
+    [
+      "grenade -> rocket -> shotgun",
+      1
+    ],
+    [
+      "grenade -> machinegun",
+      1
+    ],
+    [
+      "grenade -> railgun -> shotgun",
+      1
+    ],
+    [
+      "lightning -> machinegun -> shotgun",
+      1
+    ],
+    [
+      "rocket -> machinegun",
+      1
+    ],
+    [
+      "plasma -> machinegun",
+      1
+    ],
+    [
+      "railgun -> gauntlet",
+      1
+    ],
+    [
+      "plasma -> railgun -> rocket",
+      1
+    ],
+    [
+      "grenade -> rocket -> grenade -> railgun",
+      1
+    ],
+    [
+      "railgun -> shotgun -> lightning",
+      1
+    ],
+    [
+      "rocket -> shotgun -> rocket",
+      1
+    ],
+    [
+      "rocket -> shotgun -> lightning",
+      1
+    ],
+    [
+      "shotgun -> rocket",
+      1
+    ],
+    [
+      "lightning -> rocket -> lightning -> rocket -> railgun",
+      1
+    ],
+    [
+      "lightning -> grenade -> rocket",
+      1
+    ],
+    [
+      "railgun -> machinegun -> shotgun",
+      1
+    ],
+    [
+      "rocket -> grenade -> lightning -> rocket",
+      1
+    ],
+    [
+      "grenade -> railgun -> rocket",
+      1
+    ],
+    [
+      "lightning -> plasma -> rocket",
+      1
+    ],
+    [
+      "lightning -> rocket -> railgun -> lightning",
+      1
+    ],
+    [
+      "machinegun -> grenade -> railgun",
+      1
+    ],
+    [
+      "lightning -> machinegun",
+      1
+    ],
+    [
+      "lightning -> gauntlet",
+      1
+    ],
+    [
+      "lightning -> railgun -> grenade",
+      1
+    ],
+    [
+      "lightning -> rocket -> lightning -> rocket",
+      1
+    ],
+    [
+      "rocket -> machinegun -> rocket",
+      1
+    ],
+    [
+      "rocket -> railgun -> lightning -> railgun",
+      1
+    ],
+    [
+      "lightning -> machinegun -> lightning -> railgun",
+      1
+    ],
+    [
+      "grenade -> plasma -> railgun",
+      1
+    ],
+    [
+      "lightning -> grenade -> lightning",
+      1
+    ],
+    [
+      "railgun -> plasma",
+      1
+    ],
+    [
+      "lightning -> plasma -> lightning -> rocket",
+      1
+    ],
+    [
+      "lightning -> plasma -> lightning -> railgun",
+      1
+    ],
+    [
+      "railgun -> grenade",
+      1
+    ],
+    [
+      "machinegun -> rocket -> railgun",
+      1
+    ],
+    [
+      "lightning -> railgun -> plasma",
+      1
+    ],
+    [
+      "lightning -> rocket -> lightning -> railgun",
+      1
+    ],
+    [
+      "rocket -> plasma -> rocket",
+      1
+    ],
+    [
+      "rocket -> machinegun -> railgun",
+      1
+    ],
+    [
+      "railgun -> grenade -> railgun",
+      1
+    ]
+  ],
+  "limits": [
+    "Observed shots before an own kill are combo candidates, not proof of damage by every gun to the same target",
+    "All available POVs included, not only winners; unavailable perspectives are not invented",
+    "Second chronological fresh demo tagged resource concession by owner"
+  ]
+}

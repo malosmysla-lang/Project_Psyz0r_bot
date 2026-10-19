@@ -3,6 +3,7 @@
 #include "psyz_prealpha.h"
 #define PSYZ_PREALPHA 1
 #include "psyz_stock_goal_observer.h"
+#include "psyz_live_combat.h"
 static void (*psyz_real_think)(gentity_t*);
 static int psyz_started = -1;
 static int psyz_last_log = -1;
@@ -28,6 +29,7 @@ static void Psyz_Think(gentity_t* ent) {
         Psyz_InstallGoalObserver();
         /* Preserve stock AAS; explicitly enabled prealpha may alter this bot. */
         Psyz_PreAlphaMove(ent);
+        Psyz_LiveCombatCommand(ent);
         psyz_real_think(ent);
         if (now - psyz_last_log >= 200) {
             psyz_last_log = now;
@@ -77,7 +79,9 @@ static void Psyz_Install(void) {
     /* Duel allready reloads qagame. Preserve only observed match phase,
        never pointers, cached goals or the previous opening plan. */
     Psyz_PreAlphaVmReset();
+    Psyz_LiveCombatReset();
     Psyz_InstallPickup();
+    Psyz_InstallDamageObserver();
     psyz_original_item_goal = NULL; /* VM reload invalidates the old trampoline. */
     /* Caller also verifies SHA256 of bin.pk3. Verify the target prologue here. */
     unsigned char expected[] = {0x41,0x57,0x41,0x56,0x41,0x55,0x41,0x54};

@@ -7,6 +7,8 @@ int main(){try{
     int ammo[16]{};for(int i=1;i<9;i++)ammo[i]=100;
     PsyzComboContext c{6,0x1fe,ammo,450,100,50,60,0,1,1,6,100,0,0,0};
     check(Psyz_ComboChoose(&c).weapon==7,"LG -> rail for visible low-stack retreating contact");
+    c.distance=650;c.closing=1;
+    check(Psyz_ComboChoose(&c).weapon==7,"Distant one-rail finish does not require walking backwards");
     c.distance=500;c.enemy_health=100;
     check(Psyz_ComboChoose(&c).weapon==6,"Medium duel keeps LG instead of manufacturing a combo");
     c.distance=140;c.closing=1;c.enemy_health=100;

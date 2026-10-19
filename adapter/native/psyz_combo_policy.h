@@ -1,4 +1,4 @@
-/* Offline-tested finishing policy. Not connected to retail usercmd yet. */
+/* Finishing policy; retail bridge provides a labelled, damage-based stack estimate. */
 #ifndef PSYZ_COMBO_POLICY_H
 #define PSYZ_COMBO_POLICY_H
 #include <math.h>
@@ -44,7 +44,7 @@ static PsyzComboChoice Psyz_ComboChoose(const PsyzComboContext *c){
         out.weapon=1;out.reason=PSYZ_COMBO_GAUNTLET_REVENGE;return out;
     }
     // Дальний отход и цель на один rail: не бежим ради искусственной квоты комбо.
-    if(!c->closing && c->distance>=350 && target<=80 && Psyz_ComboHas(c,7,1)){
+    if((!c->closing || c->distance>=600) && c->distance>=350 && target<=80 && Psyz_ComboHas(c,7,1)){
         out.weapon=7;out.reason=PSYZ_COMBO_RAIL_FINISH;return out;
     }
     // LG -> RL только при настоящем сближении и запасе HP для собственного splash.

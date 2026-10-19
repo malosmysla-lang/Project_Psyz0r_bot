@@ -1,0 +1,10 @@
+{
+  "version": "0.8.0",
+  "seconds": 90,
+  "interrupted_for_human": false,
+  "combo_switches": [],
+  "brakes": 1,
+  "fatal": false,
+  "status": "status\nmap: bloodrun\nnum score ping name            lastmsg address               qport rate  steamid\n--- ----- ---- --------------- ------- --------------------- ----- ----- -----------------\n  0     1    0 Psyz0r_bot^7          100 bot                       0 16384 90071996842377216\n\n",
+  "full_match": false
+}
