@@ -1,4 +1,4 @@
-/* Черновой векторный спортсмен: заменить форму по референсу владельца.
+/* Детальный Doom Marine: четыре согласованные позы и плавная дуга прыжка.
    Координаты ракеты берутся из реальной раскладки, а не из ширины монитора. */
 (() => {
   const heading = document.querySelector('.headline h1');
@@ -8,8 +8,10 @@
   const bot = document.createElement('span');
   bot.className = 'bot-mascot';
   bot.setAttribute('aria-hidden', 'true');
-  bot.innerHTML = `<svg viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke="#bcecff" stroke-width="2" stroke-linejoin="round"><path fill="#edfaff" d="M27 6h17l5 8-3 14H28l-5-14z"/><path fill="#238ad0" d="M25 14h23l-3 8H29z"/><path fill="#268ed0" d="M27 30h18l7 26-9 8H29l-8-10z"/><path fill="#eefaff" d="M27 32l7 13h8l3-13M29 62l-5 19-9 7 3 5h14l7-25M42 63l8 16 2 13h12v-6l-5-11-7-21"/><path fill="#e6f6ff" d="M25 33L13 48l6 7 15-9M46 34l7 10 11-2 3 8-19 5-10-11"/><path fill="#306988" d="M43 36h26v10H43z"/><path stroke="#59d8ff" d="M48 39h16"/></g></svg>`;
   heading.prepend(bot);
+  bot.innerHTML = '<span class="marine-sprite"></span><span class="barrel-smoke"><i></i><i></i><i></i><i></i></span>';
+  const sprite=bot.querySelector('.marine-sprite');
+  const frame=n=>{sprite.style.backgroundPosition=`${n*100/3}% 50%`;};
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let busy = false;
   // Один цикл: прыжок → выстрел → попадание → контур гаснет за 1.3 секунды.
@@ -19,12 +21,15 @@
     let rocket;
     let flash;
     try {
-      const jump = bot.animate([{transform:'translateY(0)'},{transform:'translateY(-62px)',offset:.38},{transform:'translateY(-62px)',offset:.58},{transform:'translateY(0)'}],{duration:1100,easing:'ease-in-out'});
-      await new Promise(resolve => setTimeout(resolve, 420));
+      frame(1);await new Promise(resolve=>setTimeout(resolve,180));frame(2);
+      // 20 опорных положений: браузер интерполирует движение без ограничения FPS.
+      const arc=Array.from({length:20},(_,i)=>({offset:i/19,transform:`translateY(${-86*Math.sin(Math.PI*i/19)}px)`}));
+      const jump = bot.animate(arc,{duration:1900,easing:'linear'});
+      await new Promise(resolve => setTimeout(resolve, 700));frame(3);
       if (reduced.matches || document.hidden) { jump.cancel(); return; }
       const b = bot.getBoundingClientRect(), t = target.getBoundingClientRect();
-      const start = {x:b.right-5,y:b.top+b.height*.43};
-      const end = {x:t.left,y:Math.max(t.top+16,Math.min(t.bottom-16,start.y))};
+      const start = {x:b.right-5,y:b.top+b.height*.25};
+      const end = {x:t.left+2,y:t.top+18};
       const angle = Math.atan2(end.y-start.y,end.x-start.x)*180/Math.PI;
       rocket = document.createElement('span');
       rocket.className = 'mascot-rocket';
@@ -38,14 +43,17 @@
       flash.setAttribute('aria-hidden','true');
       flash.style.cssText = `left:${end.x}px;top:${end.y}px`;
       document.body.append(flash);
+      // Приземление не ждёт завершения свечения рамки.
+      jump.finished.then(()=>{frame(0);bot.classList.add('has-fired');});
       await Promise.all([
         flash.animate([{opacity:1,transform:'translate(-50%,-50%) scale(.2)'},{opacity:0,transform:'translate(-50%,-50%) scale(1.5)'}],{duration:420}).finished,
         target.animate([{borderColor:'#e9fbff',boxShadow:'0 0 22px #65dcff99, inset 0 0 14px #65dcff33'},{borderColor:'#564174',boxShadow:'0 0 0 transparent'}],{duration:1300,easing:'ease-out'}).finished,
         jump.finished
       ]);
     } catch (_) { /* Смена вкладки или отмена анимации не ломает дашборд. */ }
-    finally { rocket?.remove(); flash?.remove(); busy = false; }
+    finally { rocket?.remove(); flash?.remove(); frame(0);busy = false; }
   }
-  setTimeout(play, 1500);
-  setInterval(play, 12000);
+  // Только один выстрел после reload. Никакого повторяющегося таймера.
+  const ready=new Image();ready.onload=()=>setTimeout(play,1500);
+  ready.src='assets/doom-marine-strip.png';
 })();

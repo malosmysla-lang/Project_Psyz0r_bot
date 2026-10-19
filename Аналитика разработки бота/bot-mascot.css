@@ -9,3 +9,18 @@
 @media(max-width:850px){.mascot-heading{padding-left:65px;min-height:80px}.bot-mascot{width:56px;height:75px}}
 @media(prefers-reduced-motion:reduce){.mascot-rocket,.mascot-impact{display:none}}
 @media print{.bot-mascot,.mascot-rocket,.mascot-impact{display:none}.mascot-heading{padding-left:0;min-height:0}}
+/* Детальный спрайт: исходник 2172x724, четыре равные ячейки. */
+.mascot-heading{padding-left:120px;min-height:140px;display:block;padding-top:15px}
+.bot-mascot{width:105px;height:140px;bottom:-4px;left:0}
+.marine-sprite{display:block;width:100%;height:100%;background:url('assets/doom-marine-strip.png') 0 50%/400% 100% no-repeat;filter:drop-shadow(0 3px 4px #0008)}
+.barrel-smoke{position:absolute;left:97%;top:25%;display:none}
+.has-fired .barrel-smoke{display:block}
+.barrel-smoke i{position:absolute;width:8px;height:8px;border-radius:50%;background:#d2e1e650;filter:blur(2px);animation:barrel-vapor 3s linear infinite}
+.barrel-smoke i:nth-child(2){animation-delay:-.75s}.barrel-smoke i:nth-child(3){animation-delay:-1.5s}.barrel-smoke i:nth-child(4){animation-delay:-2.25s}
+@keyframes barrel-vapor{0%{transform:translate(0,0) scale(.4);opacity:0}15%{opacity:.6}100%{transform:translate(15px,-45px) scale(2.6);opacity:0}}
+.mascot-rocket{width:24px;height:7px;background:linear-gradient(#edf7ff,#89939d 50%,#26313b);box-shadow:-8px 0 8px #52d6ff}
+.mascot-rocket::after{content:'';position:absolute;right:160%;top:-3px;width:45px;height:12px;background:linear-gradient(90deg,transparent,#b8cad955);filter:blur(3px)}
+.sigil.eye-mark{width:36px;height:36px;margin-right:5px;flex:none}.eye-mark svg{width:100%;height:100%}
+@media(max-width:850px){.mascot-heading{padding-left:95px;min-height:115px}.bot-mascot{width:84px;height:112px}}
+@media(prefers-reduced-motion:reduce){.barrel-smoke{display:none!important}}
+@media print{.mascot-heading{padding-left:0;min-height:0;padding-top:0}}

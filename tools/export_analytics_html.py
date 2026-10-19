@@ -17,6 +17,9 @@ def main():
             return 'src="data:image/png;base64,'+base64.b64encode(p.read_bytes()).decode()+'"'
         return m[0]
     html=re.sub(r'src="([^"]+\.png)"',picture,html)
+    # CSS и JS используют тот же встроенный спрайт в автономном файле.
+    for asset in (SITE/'assets').glob('*.png'):
+        html=html.replace('assets/'+asset.name,'data:image/png;base64,'+base64.b64encode(asset.read_bytes()).decode())
     version=json.loads((SITE/'data.json').read_text(encoding='utf-8')).get('deployment',{}).get('version','0.7.8')
     output=SITE/('Psyz0r_Analytics_'+version.replace('.','_')+'.html');output.write_text(html,encoding='utf-8')
     (SITE/'Pracc_Room_Server_Analytics.html').write_text(html,encoding='utf-8')
