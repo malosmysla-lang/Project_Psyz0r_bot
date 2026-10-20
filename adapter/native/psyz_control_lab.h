@@ -8,6 +8,8 @@ static void (*psyz_real_think)(gentity_t*);
 static int psyz_started = -1;
 static int psyz_last_log = -1;
 static void Psyz_Think(gentity_t* ent) {
+    /* Independent finisher does not enable the legacy route/aim policy. */
+    Psyz_Finish087Command(ent);
     cvar_t *test = Cvar_FindVar("qlx_psyzTestInstance");
     cvar_t *mode = Cvar_FindVar("qlx_psyzControlMode");
     cvar_t *port = Cvar_FindVar("net_port");
@@ -79,6 +81,7 @@ static void Psyz_Install(void) {
        never pointers, cached goals or the previous opening plan. */
     Psyz_PreAlphaVmReset();
     Psyz_LiveCombatReset();
+    Psyz_Finish087Reset();
     Psyz_InstallPickup();
     Psyz_InstallDamageObserver();
     psyz_original_item_goal = NULL; /* VM reload invalidates the old trampoline. */

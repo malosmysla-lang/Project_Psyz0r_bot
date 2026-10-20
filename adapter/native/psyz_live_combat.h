@@ -1,5 +1,6 @@
 /* Retail bridge: observe real damage; never replace damage or steer aim at hidden players. */
 #include "psyz_combo_policy.h"
+#include "psyz_finish087.h"
 typedef struct {int victim,time,weapon,health,armor;float range;int angles[2];} PsyzHitContact;
 static PsyzHitContact psyz_hit_contact;
 static int psyz_combo_hold_until,psyz_combo_hold_weapon,psyz_live_combat_log;
@@ -9,6 +10,7 @@ static void Psyz_ObserveDamage(gentity_t *target,gentity_t *inflictor,gentity_t 
     int before=target?target->health:0;
     int armor_before=target && target->client?target->client->ps.stats[STAT_ARMOR]:0;
     psyz_damage_original(target,inflictor,attacker,dir,point,damage,flags,mod);
+    Psyz_Finish087Hit(target,attacker,before,mod);
     if(!Psyz_PreAlphaEnabled() || !Psyz_IsOurBot(attacker) || !target || !target->client || target==attacker)return;
     if(target->health<=0){if(psyz_hit_contact.victim==target->s.number)Psyz_LiveCombatReset();return;}
     // Только прямой LG/RG hit подтверждает контакт на этой линии выстрела.
