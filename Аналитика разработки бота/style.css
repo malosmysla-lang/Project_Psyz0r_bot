@@ -100,7 +100,52 @@ body::before{
 [data-chart-tip]:focus-visible{outline:1px solid #b879ff}
 [data-chart-tip]::after{content:attr(data-chart-tip);position:absolute;bottom:100%;left:0;z-index:10;display:none;max-width:320px;width:max-content;padding:7px 10px;background:#14162b;border:1px solid #a276da;border-radius:6px;color:#edf2ff;font-size:12px;white-space:normal;pointer-events:none}
 [data-chart-tip]:hover::after,[data-chart-tip]:focus-visible::after,[data-chart-tip].chart-touch::after{display:block}
-.weapon-icon{display:inline-block;width:88px;height:45px;vertical-align:middle;background-image:url('assets/quake-weapons-atlas.png');background-size:200% 400%;background-repeat:no-repeat;margin-right:9px}
+.weapon-icon{display:inline-block;width:112px;height:28px;vertical-align:middle;background-image:url('assets/quake-weapons-classic-v2.png');background-size:200% 400%;background-repeat:no-repeat;margin-right:9px}
+/* Полные названия; отдельные оружейные цвета сохраняют различие двух игроков. */
+[data-weapon-index="0"]{color:#c5d1df}[data-weapon-index="1"]{color:#ffe25c}[data-weapon-index="2"]{color:#ffad52}[data-weapon-index="3"]{color:#75d870}[data-weapon-index="4"]{color:#ff6868}[data-weapon-index="5"]{color:#68cfff}[data-weapon-index="6"]{color:#83f175}[data-weapon-index="7"]{color:#bc88ff}
+@media(min-width:851px){main{padding-top:20px}}
+/* Один неподвижный кадр Intel; секции прокручиваются поверх без стыков. */
+body::before{background-image:linear-gradient(90deg,#070c16de,#090e18a8 55%,#080d17cd),var(--map-backdrop,url('assets/bloodrun-intel-red-cinematic.png'));background-size:cover;background-position:center;background-repeat:no-repeat}
+body::after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 18% 85%,#87cde80b,transparent 48%),radial-gradient(ellipse at 83% 30%,#a897ed09,transparent 44%);animation:ambient-steam 22s ease-in-out infinite alternate}
+@keyframes ambient-steam{from{transform:translate3d(-1%,1%,0);opacity:.35}to{transform:translate3d(1%,-1%,0);opacity:.8}}
+.connect-topline{flex-wrap:wrap;gap:8px}.server-online-label{font-size:11px;letter-spacing:.3px;color:#bdcbd8}
+.connect-topline .led{width:8px;height:8px;margin-right:0;flex:none}
+.connect-topline .led.server-online{background:#a6ffbd;animation:server-breathe 4s ease-in-out infinite}
+.connect-topline .led.server-offline{background:#9ba8b5;box-shadow:none;animation:none}
+@keyframes server-breathe{0%,100%{opacity:.55;box-shadow:0 0 3px #a6ffbd55}50%{opacity:1;box-shadow:0 0 6px #a6ffbd99,0 0 14px #82ffc844}}
+.github-project-link{display:inline-flex;align-items:center;gap:6px;color:#c9d5e4;font-size:12px;text-decoration:none;border:1px solid #53617866;border-radius:6px;padding:5px 9px}.github-project-link:hover{color:#fff;border-color:#ad8add}
+[data-weapon-index]{color:var(--weapon-color)!important}
+.weapon-detail[data-weapon-index] .comparison-bar i,.cohort-comparison[data-weapon-index] .comparison-bar i,.histogram-panel[data-weapon-index] .histogram-bin i{background:var(--weapon-color);opacity:.75}
+.weapon-detail[data-weapon-index] .comparison-bar.damage i,.cohort-comparison[data-weapon-index] .comparison-bar.damage i{background:repeating-linear-gradient(135deg,var(--weapon-color) 0 5px,color-mix(in srgb,var(--weapon-color),#10162c 35%) 5px 10px);opacity:.6}
+@media(prefers-reduced-motion:reduce){body::after,.connect-topline .led.server-online{animation:none}}
 .table tbody tr:hover{background:#a978ff16}.table tbody tr:hover td{color:#e7daff}
 @media(prefers-reduced-motion:reduce){.chart-fill,.histogram-bin .chart-fill{transform:none;transition:none}}
 @media(max-height:850px) and (min-width:851px){.rail{padding-top:20px}.rail-label{margin:12px 0}.rail nav a{padding:6px 7px}.rail footer{font-size:10px}}
+
+/* 0.8.6 visual pass: one compact vertical rhythm across hero and panels. */
+main{padding-top:28px}
+#overview>.eyebrow{display:block;margin:0 0 12px}
+#overview .headline{align-items:flex-start;margin:0}
+#overview .headline>div:first-child{align-self:flex-start}
+#overview h1{margin:4px 0 14px}
+#overview .sub{margin:0}
+.section-label{display:block;margin:0 0 12px;line-height:1.25}
+.section-top .section-label{margin-bottom:8px}
+.panel>.section-label+.flow{margin-top:22px}
+.flow{gap:10px}
+.flow span{min-width:80%;padding:10px 20px}
+
+/* A brighter but soft, real-status lamp. It animates only after server-status.js confirms UDP. */
+.connect-topline .led{width:11px;height:11px;border:1px solid #d9ffe3}
+.connect-topline .led.server-online{background:#9dffc0;animation:server-breathe 2.8s ease-in-out infinite}
+@keyframes server-breathe{0%,100%{opacity:.72;box-shadow:0 0 5px #b7ffd080,0 0 14px #72ffac55}50%{opacity:1;box-shadow:0 0 10px #d6ffe1,0 0 25px #78ffadbb,0 0 42px #44e18a55}}
+
+/* Thin articulated eyelids: shallow folds give the eye an eyelid rather than a solid shutter. */
+.eye-shutter{inset:22% 16%;transform:rotate(-3deg)}
+.eye-shutter i{height:52%;overflow:hidden;background:linear-gradient(160deg,#788992,#334956 48%,#172832);box-shadow:inset 0 1px 1px #d5edf055,inset 0 -1px 3px #07131baa}
+.eye-shutter .upper-lid{border-radius:52% 48% 15% 18%;border-bottom:1px solid #88aab3}
+.eye-shutter .lower-lid{border-radius:15% 18% 52% 48%;border-top:1px solid #88aab3;background:linear-gradient(160deg,#607985,#2a414d 50%,#172731)}
+.eye-shutter i::after{left:7%;right:8%;top:14%;height:13%;opacity:.38;background:linear-gradient(90deg,transparent,#d9f2f255 42%,transparent);filter:blur(.45px)}
+.eye-shutter i::before{content:'';position:absolute;left:10%;right:12%;height:20%;border-radius:50%;border-top:1px solid #b6d3d544;box-shadow:0 -4px 0 -3px #07141b99,0 -8px 0 -7px #a0c3c222}
+.eye-shutter .upper-lid::before{bottom:8%}.eye-shutter .lower-lid::before{top:8%;transform:scaleY(-1)}
+@media(max-width:850px){main{padding-top:22px}#overview>.eyebrow{margin-bottom:8px}.panel>.section-label+.flow{margin-top:16px}}
