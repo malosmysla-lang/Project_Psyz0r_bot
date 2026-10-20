@@ -101,6 +101,28 @@ def main():
         data['tests'][1]['value']='143 / 143'
         data['versionHistory']=data['versionHistory'][-3:]+[{'version':'0.8.0','stage':'пре-альфа','rules':registry['rule_count'],'demos':700,'cpp':17,'note':'Наблюдатель прямого LG/RG-урона и combo-политика подключены. В коротком smoke переключений не было; игровая эффективность не доказана.'}]
         data['tests'].append({'label':'LIVE / 0.8.0','value':'0 combo switches','note':'Ограниченный smoke без fatal; один combat brake. Это не полный матч и не доказательство силы.'})
+    if (ROOT/'docs/training/PREALPHA_082_DEPLOYMENT.json').exists():
+        data['release']='Пре-альфа 0.8.2 / Xaero baseline / test 27961'
+        data['deployment']=load('docs/training/PREALPHA_082_DEPLOYMENT.json')
+        data['generated']='2026-10-20 · локальный снимок'
+        data['freshFeedback082']=load('docs/training/FEEDBACK_082.json')
+        data['baseline082']=load('docs/training/BASELINE_082_PROFILE.json')
+        data['versionHistory']=data['versionHistory'][-3:]+[{'version':'0.8.2','stage':'контрольная база','rules':registry['rule_count'],'demos':700,'cpp':17,'note':'Все характеристики Xaero 5 кроме имени; штатные оружейные веса, движение и прицел. Старые надстройки отключены. Превосходство ещё не доказано.'}]
+        for module in data['modules']:
+            module['evidence']+=' История до 0.8.2: на контрольной базе старые надстройки отключены; статус не означает, что они сейчас включены.'
+    if (ROOT/'docs/training/PREALPHA_083_DEPLOYMENT.json').exists():
+        data['release']='Пре-альфа 0.8.3 / Xaero + короткие дебюты / test 27961'
+        data['deployment']=load('docs/training/PREALPHA_083_DEPLOYMENT.json')
+        data['versionHistory']=data['versionHistory'][-3:]+[{'version':'0.8.3','stage':'проверка в игре','rules':registry['rule_count'],'demos':700,'cpp':17,'note':'Штатные Xaero aim/movement/weapon weights; только короткие LTG-дебюты и Mega→RA. 10 BSP-респаунов, 2 варианта на каждый. Оптимальность не доказана.'}]
+        data['baseline082Trial']=load('docs/training/BASELINE_082_TRIAL.json') if (ROOT/'docs/training/BASELINE_082_TRIAL.json').exists() else None
+        data['compact083Trial']=load('docs/training/COMPACT_083_TRIAL.json') if (ROOT/'docs/training/COMPACT_083_TRIAL.json').exists() else None
+        data['metrics'][-1]={'label':'ПРОВЕРКИ 0.8.3','value':'7 Linux + 145 Python','note':'Плюс 100 циклов hook-пула; игровые результаты отдельно'}
+    if (ROOT/'docs/training/PREALPHA_085_DEPLOYMENT.json').exists():
+        data['release']='Пре-альфа 0.8.6 / Xaero baseline / test 27961'
+        data['deployment']=load('docs/training/PREALPHA_085_DEPLOYMENT.json')
+        data['generated']='2026-10-20 · локальный снимок'
+        data['versionHistory']=data['versionHistory'][-3:]+[{'version':'0.8.6','stage':'профиль и стенд','rules':registry['rule_count'],'demos':len(data.get('freshFeedback082',{}).get('records',[])),'cpp':17,'note':'Исправлен перекрывающий отдельный профиль. Загрузка xaero_w.c подтверждена журналом. Forfeit и закрытый стенд требуют живой проверки.'}]
+        data['metrics'][-1]={'label':'ПРОВЕРКИ 0.8.6','value':'22 Python','note':'Чат, forfeit и отдельный стенд; игровой результат измеряется отдельно'}
     (OUT/'data.js').write_text('window.PSYZ_ANALYTICS = '+json.dumps(data,ensure_ascii=False)+';\n',encoding='utf-8')
     (OUT/'data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
     print('Dashboard:',registry['rule_count'],'rules;',len(modules),'modules; sources linked')
