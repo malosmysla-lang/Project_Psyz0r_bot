@@ -1,3 +1,7 @@
+# 2026-10-21 — 0.8.7 / overnight isolated lab
+
+See docs/PREALPHA_087_NIGHT_RU.md. Independent per-bot direct-hit finisher added; legacy prealpha movement remains disabled. Test 27961 and private 27962 receive the verified native binary; primary 27960 is preserved. Night lab rotates enhanced Xaero/Psy, reverse seats, Psy mirror, and module-off stock control. Persistent queue, watchdog, 10s player snapshots and 60s JSON/CSV report timer added. Earlier 246 game_end events include 123 setup forfeits: 123 genuine completed matches remain after filtering. No autonomous model learning is claimed. Steam startup recovery on 27961 uses a new isolated HOME cache; fs_homepath/configs remain separate and unchanged in location. Site is frozen for this bot stage.
+
 # 2026-10-19 — prealpha 0.7.8: two fresh duel failures and live fixes
 
 Серверная копия исходников, Git-дельты и evidence (две свежие дуэли + demo0000 + снимки/логи) сверена по SHA-256: /home/qlserver/psyz0r-bot/research-releases/078-20261019T183508Z-b8325fb. Квитанция: docs/training/RELEASE_078_BACKUP.json.

@@ -1,0 +1,33 @@
+{
+  "version": "0.8.7",
+  "test": {
+    "version": "0.8.7",
+    "backup": "/home/qlserver/backups/psyz-test087-recovery-20261020T220418Z",
+    "primary_pid": "573658",
+    "test_pid": "597450",
+    "native_sha256": "329f3e58f4ca93e94373654a5e0f200a5bd5de058d7f89f0a44d98e90fde0c16",
+    "steam_sdk_permissions_fixed": true
+  },
+  "lab": {
+    "version": "0.8.7",
+    "backup": "/home/qlserver/backups/psyz-night087-20261020T215818Z",
+    "primary_pid": "573658",
+    "native_sha256": "329f3e58f4ca93e94373654a5e0f200a5bd5de058d7f89f0a44d98e90fde0c16",
+    "password_preserved": true,
+    "experimental_navigation": false,
+    "lab_pid_at_first_deployment": "594224"
+  },
+  "lab_plugin": "server/minqlx-plugins/psyz_lab.py",
+  "report": "tools/summarize_lab087.py",
+  "report_refresh_seconds": 60,
+  "automatic_learning": false,
+  "legacy_navigation_enabled": false,
+  "tests": {
+    "python": 158,
+    "linux_native_groups": 9
+  },
+  "pending": [
+    "Measure finisher switches and kills across full night blocks",
+    "No general movement/opening/route improvement claimed"
+  ]
+}
