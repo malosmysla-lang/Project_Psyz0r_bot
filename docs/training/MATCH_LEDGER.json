@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T05:00:32.444111+00:00",
+  "updated_at": "2026-10-24T07:38:20.227210+00:00",
   "matches": [
     {
       "id": "demo:5ceedc138b6d6add65041948",
@@ -33361,6 +33361,406 @@
               "hits": 18,
               "accuracy_pct": 22.78,
               "damage": 251,
+              "kills": 0,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "bfg": {
+              "shots": 0,
+              "hits": 0,
+              "accuracy_pct": null,
+              "damage": 0,
+              "kills": 0,
+              "accuracy_source": "unavailable_or_counter_semantics"
+            }
+          }
+        }
+      ],
+      "automatic_learning": false,
+      "learning_status": "not_proven_manual_policy_updates",
+      "counter_semantics": "WEAPONS H/S; splash/pellet counters are not interchangeable with hitscan",
+      "actor": "Psyz0r"
+    },
+    {
+      "id": "live:62f8a9b0-4f2a-46a5-b3f0-ef76195ac251",
+      "source": "quakelive_zmq",
+      "source_quality": "server_report",
+      "map": "bloodrun",
+      "version": "0.8.7",
+      "version_source": "config_at_match_start",
+      "native_sha256": "329f3e58f4ca93e94373654a5e0f200a5bd5de058d7f89f0a44d98e90fde0c16",
+      "started_at": "2026-10-24T07:27:50.127444+00:00",
+      "ended_at": "2026-10-24T07:37:49.801635+00:00",
+      "duration_seconds": 599,
+      "aborted": false,
+      "opponent_type": "human",
+      "bot": {
+        "name": "Psyz0r_bot",
+        "is_bot": true,
+        "is_psyz": true,
+        "score": 6,
+        "kills": 6,
+        "deaths": 9,
+        "damage_given": 2840,
+        "damage_taken": 2928,
+        "play_seconds": 599,
+        "won": false,
+        "quit": false,
+        "pickups": {
+          "red": 2,
+          "yellow": 12,
+          "green": 0,
+          "mega": 12,
+          "health": 33,
+          "ammo": 36
+        },
+        "weapons": {
+          "gauntlet": {
+            "shots": 0,
+            "hits": 0,
+            "accuracy_pct": null,
+            "damage": 0,
+            "kills": 0,
+            "accuracy_source": "unavailable_or_counter_semantics"
+          },
+          "machinegun": {
+            "shots": 19,
+            "hits": 16,
+            "accuracy_pct": 84.21,
+            "damage": 80,
+            "kills": 0,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "shotgun": {
+            "shots": 40,
+            "hits": 4,
+            "accuracy_pct": 10.0,
+            "damage": 20,
+            "kills": 0,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "grenade": {
+            "shots": 6,
+            "hits": 0,
+            "accuracy_pct": 0.0,
+            "damage": 0,
+            "kills": 0,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "rocket": {
+            "shots": 7,
+            "hits": 2,
+            "accuracy_pct": 28.57,
+            "damage": 56,
+            "kills": 0,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "lightning": {
+            "shots": 62,
+            "hits": 34,
+            "accuracy_pct": 54.84,
+            "damage": 204,
+            "kills": 1,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "railgun": {
+            "shots": 62,
+            "hits": 31,
+            "accuracy_pct": 50.0,
+            "damage": 2480,
+            "kills": 5,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "plasma": {
+            "shots": 2,
+            "hits": 0,
+            "accuracy_pct": 0.0,
+            "damage": 0,
+            "kills": 0,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "bfg": {
+            "shots": 0,
+            "hits": 0,
+            "accuracy_pct": null,
+            "damage": 0,
+            "kills": 0,
+            "accuracy_source": "unavailable_or_counter_semantics"
+          }
+        }
+      },
+      "opponent": {
+        "name": "nekitz0r",
+        "is_bot": false,
+        "is_psyz": false,
+        "score": 8,
+        "kills": 9,
+        "deaths": 7,
+        "damage_given": 3059,
+        "damage_taken": 2773,
+        "play_seconds": 599,
+        "won": true,
+        "quit": false,
+        "pickups": {
+          "red": 2,
+          "yellow": 23,
+          "green": 0,
+          "mega": 0,
+          "health": 39,
+          "ammo": 28
+        },
+        "weapons": {
+          "gauntlet": {
+            "shots": 0,
+            "hits": 0,
+            "accuracy_pct": null,
+            "damage": 0,
+            "kills": 0,
+            "accuracy_source": "unavailable_or_counter_semantics"
+          },
+          "machinegun": {
+            "shots": 12,
+            "hits": 5,
+            "accuracy_pct": 41.67,
+            "damage": 25,
+            "kills": 0,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "shotgun": {
+            "shots": 80,
+            "hits": 37,
+            "accuracy_pct": 46.25,
+            "damage": 180,
+            "kills": 2,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "grenade": {
+            "shots": 73,
+            "hits": 6,
+            "accuracy_pct": 8.22,
+            "damage": 341,
+            "kills": 1,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "rocket": {
+            "shots": 115,
+            "hits": 37,
+            "accuracy_pct": 32.17,
+            "damage": 1638,
+            "kills": 2,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "lightning": {
+            "shots": 74,
+            "hits": 31,
+            "accuracy_pct": 41.89,
+            "damage": 180,
+            "kills": 1,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "railgun": {
+            "shots": 13,
+            "hits": 7,
+            "accuracy_pct": 53.85,
+            "damage": 560,
+            "kills": 3,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "plasma": {
+            "shots": 95,
+            "hits": 8,
+            "accuracy_pct": 8.42,
+            "damage": 135,
+            "kills": 0,
+            "accuracy_source": "derived_hits_over_shots"
+          },
+          "bfg": {
+            "shots": 0,
+            "hits": 0,
+            "accuracy_pct": null,
+            "damage": 0,
+            "kills": 0,
+            "accuracy_source": "unavailable_or_counter_semantics"
+          }
+        }
+      },
+      "players": [
+        {
+          "name": "nekitz0r",
+          "is_bot": false,
+          "is_psyz": false,
+          "score": 8,
+          "kills": 9,
+          "deaths": 7,
+          "damage_given": 3059,
+          "damage_taken": 2773,
+          "play_seconds": 599,
+          "won": true,
+          "quit": false,
+          "pickups": {
+            "red": 2,
+            "yellow": 23,
+            "green": 0,
+            "mega": 0,
+            "health": 39,
+            "ammo": 28
+          },
+          "weapons": {
+            "gauntlet": {
+              "shots": 0,
+              "hits": 0,
+              "accuracy_pct": null,
+              "damage": 0,
+              "kills": 0,
+              "accuracy_source": "unavailable_or_counter_semantics"
+            },
+            "machinegun": {
+              "shots": 12,
+              "hits": 5,
+              "accuracy_pct": 41.67,
+              "damage": 25,
+              "kills": 0,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "shotgun": {
+              "shots": 80,
+              "hits": 37,
+              "accuracy_pct": 46.25,
+              "damage": 180,
+              "kills": 2,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "grenade": {
+              "shots": 73,
+              "hits": 6,
+              "accuracy_pct": 8.22,
+              "damage": 341,
+              "kills": 1,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "rocket": {
+              "shots": 115,
+              "hits": 37,
+              "accuracy_pct": 32.17,
+              "damage": 1638,
+              "kills": 2,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "lightning": {
+              "shots": 74,
+              "hits": 31,
+              "accuracy_pct": 41.89,
+              "damage": 180,
+              "kills": 1,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "railgun": {
+              "shots": 13,
+              "hits": 7,
+              "accuracy_pct": 53.85,
+              "damage": 560,
+              "kills": 3,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "plasma": {
+              "shots": 95,
+              "hits": 8,
+              "accuracy_pct": 8.42,
+              "damage": 135,
+              "kills": 0,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "bfg": {
+              "shots": 0,
+              "hits": 0,
+              "accuracy_pct": null,
+              "damage": 0,
+              "kills": 0,
+              "accuracy_source": "unavailable_or_counter_semantics"
+            }
+          }
+        },
+        {
+          "name": "Psyz0r_bot",
+          "is_bot": true,
+          "is_psyz": true,
+          "score": 6,
+          "kills": 6,
+          "deaths": 9,
+          "damage_given": 2840,
+          "damage_taken": 2928,
+          "play_seconds": 599,
+          "won": false,
+          "quit": false,
+          "pickups": {
+            "red": 2,
+            "yellow": 12,
+            "green": 0,
+            "mega": 12,
+            "health": 33,
+            "ammo": 36
+          },
+          "weapons": {
+            "gauntlet": {
+              "shots": 0,
+              "hits": 0,
+              "accuracy_pct": null,
+              "damage": 0,
+              "kills": 0,
+              "accuracy_source": "unavailable_or_counter_semantics"
+            },
+            "machinegun": {
+              "shots": 19,
+              "hits": 16,
+              "accuracy_pct": 84.21,
+              "damage": 80,
+              "kills": 0,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "shotgun": {
+              "shots": 40,
+              "hits": 4,
+              "accuracy_pct": 10.0,
+              "damage": 20,
+              "kills": 0,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "grenade": {
+              "shots": 6,
+              "hits": 0,
+              "accuracy_pct": 0.0,
+              "damage": 0,
+              "kills": 0,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "rocket": {
+              "shots": 7,
+              "hits": 2,
+              "accuracy_pct": 28.57,
+              "damage": 56,
+              "kills": 0,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "lightning": {
+              "shots": 62,
+              "hits": 34,
+              "accuracy_pct": 54.84,
+              "damage": 204,
+              "kills": 1,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "railgun": {
+              "shots": 62,
+              "hits": 31,
+              "accuracy_pct": 50.0,
+              "damage": 2480,
+              "kills": 5,
+              "accuracy_source": "derived_hits_over_shots"
+            },
+            "plasma": {
+              "shots": 2,
+              "hits": 0,
+              "accuracy_pct": 0.0,
+              "damage": 0,
               "kills": 0,
               "accuracy_source": "derived_hits_over_shots"
             },
