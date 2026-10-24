@@ -1,3 +1,7 @@
+# 2026-10-25 — bounded laboratory smoke check
+
+Two diagnostic runs, one observed LG-to-SG switch, no acceptance score claim. Empty stock standby restored. Plugin-loader errors recorded as an open evaluation-harness issue.
+
 # 2026-10-25 — marked-demo dataset and learning audit
 
 Build 74 aligned annotation windows from 19 POV exports, explicitly rejecting automatic positive labels when the annotation describes a different actor. Three ownership/continuity tests and seven existing demo-learning tests pass. Audit upstream Q3 genetic selection and fuzzy weights without copying GPL source or claiming active online learning.

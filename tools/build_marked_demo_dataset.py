@@ -5,7 +5,7 @@ exported POV can belong to the human. Never train the human trajectory as
 positive bot behaviour merely because the timestamps coincide.
 No raw key reconstruction, live writes or autonomous-learning claim.
 """
-import argparse,bisect,json,math,re
+import argparse,json,math,re
 from pathlib import Path
 
 def window(rows, marker):

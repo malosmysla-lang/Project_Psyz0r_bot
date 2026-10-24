@@ -1,3 +1,7 @@
+# Runtime verification — 2026-10-25
+
+One actual SG switch confirmed, LG branch still requires match coverage. Lab returned to empty stock standby; fix temporary Python-loader errors before full evaluation. Zero of the new 1000 acceptance matches completed.
+
 # Demo-learning stage — 2026-10-25
 
 74 timestamp-aligned marked windows prepared; automatic accepted positive examples remain zero because annotation subject and human POV are not interchangeable. Three new plus seven existing tests pass. See docs/Q3_LEARNING_AUDIT_RU.md.

@@ -23,3 +23,6 @@
 - Исправлен дальний Rail в legacy combo; удалены случайные символы, мешавшие компиляции этого заголовка.
 - Нативная сборка и девять групп тестов пройдены. SHA-256 бинарника: `50dc45014bad9bb00b17d696ccca25c34cea55752c925656864fca6a8b3f59c7`.
 - На 27961 установлен rc2, legacy PreAlpha остаётся 0. На 27960 экспериментальные модули не включены. Приёмочная серия ещё не запущена.
+
+## Runtime smoke evidence — 2026-10-25
+Two bounded lab runs loaded the native hook; one actual LG-to-SG switch was observed (range 122.8, age 25 ms). No new LG switch observed in this short sample. Accepted matches: 0/1000. Python plugin loader errors occurred in the temporary test harness; fix that harness before ranked evaluation. The finally block restored the original stock, empty standby and verified no players. Main service build QLFI-2026.10.25.04 and training 0.9.0-rc2 are active. Website release 20261025-sidebar-bot-r22 records both results and limitations.
