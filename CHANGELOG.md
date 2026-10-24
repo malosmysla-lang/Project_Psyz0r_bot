@@ -1,3 +1,7 @@
+# 2026-10-25 — marked-demo dataset and learning audit
+
+Build 74 aligned annotation windows from 19 POV exports, explicitly rejecting automatic positive labels when the annotation describes a different actor. Three ownership/continuity tests and seven existing demo-learning tests pass. Audit upstream Q3 genetic selection and fuzzy weights without copying GPL source or claiming active online learning.
+
 # 2026-10-25 — 0.9.0-rc2 candidate
 
 Bound stationary combat/wait recovery; add command provenance and LG/SG finishing. Nine Linux test groups passed, training 27961 updated with rollback. Legacy navigation stays opt-in. Alpha 1.0.1 requires the new 1000-match acceptance; see docs/ALPHA_101_ACCEPTANCE_RU.md.

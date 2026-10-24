@@ -1,3 +1,7 @@
+# Demo-learning stage — 2026-10-25
+
+74 timestamp-aligned marked windows prepared; automatic accepted positive examples remain zero because annotation subject and human POV are not interchangeable. Three new plus seven existing tests pass. See docs/Q3_LEARNING_AUDIT_RU.md.
+
 # Current stage — 2026-10-25
 
 0.9.0-rc2 is deployed to training only, with nine passing test groups. No accepted Alpha or measured strength claim. See docs/ALPHA_101_ACCEPTANCE_RU.md for all ten open/passed boundaries.
