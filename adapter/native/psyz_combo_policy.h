@@ -1,4 +1,4 @@
-/* Finishing policy; retail bridge provides a labelled, damage-based stack estimate. */
+/* Offline-tested finishing policy. Not connected to retail usercmd yet. */
 #ifndef PSYZ_COMBO_POLICY_H
 #define PSYZ_COMBO_POLICY_H
 #include <math.h>

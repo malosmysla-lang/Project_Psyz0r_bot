@@ -24,8 +24,12 @@ int main(){try{
  check(Psyz_NavUpdate(&s,10,11501,p,200,0,1,0,0)==1,"Repeated loop eventually falls back to AAS");
  check(Psyz_NavUpdate(&s,10,17502,p,200,-1,0,0,0)==2,"Failed AAS attempt releases goal");
  Psyz_NavReset(&s);Psyz_NavUpdate(&s,10,0,p,100,0,1,0,0);
- for(int t=1000;t<=10000;t+=1000)check(Psyz_NavUpdate(&s,10,t,p,100,0,1,1,0)==0,"Bounded combat pause");
- check(Psyz_NavUpdate(&s,10,11001,p,100,0,1,1,0)==1,"Continuous firing cannot freeze watchdog forever");
+ for(int t=1000;t<=6000;t+=1000)check(Psyz_NavUpdate(&s,10,t,p,100,0,1,1,0)==0,"Bounded combat pause");
+ check(Psyz_NavUpdate(&s,10,6500,p,100,0,1,1,0)==1,"Continuous fire cannot refresh the stationary clock after its hold budget");
+ check(Psyz_NavUpdate(&s,10,8000,p,100,-1,0,1,0)==2,"Persistent firing releases failed AAS goal after fallback");
+ Psyz_NavReset(&s);Psyz_NavUpdate(&s,10,0,p,30,0,1,0,1);
+ for(int t=100;t<6500;t+=100)check(Psyz_NavUpdate(&s,10,t,p,30,0,1,0,1)==0,"Spawn waiting consumes finite shared budget");
+ check(Psyz_NavUpdate(&s,10,6500,p,30,0,1,0,1)==1,"Stale spawn timer cannot conceal a stationary failed pickup");
  Psyz_NavReset(&s);Psyz_NavUpdate(&s,10,0,p,100,0,1,0,0);
  check(Psyz_NavUpdate(&s,10,5900,p,100,2,1,0,0)==0,"Advancing route waypoint refreshes progress");
  check(Psyz_NavUpdate(&s,10,11000,p,100,2,1,0,0)==1,"Waypoint progress cannot conceal a new stationary stall");

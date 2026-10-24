@@ -1,3 +1,14 @@
+# 2026-10-25 — 0.9.0-rc2 candidate
+
+Bound stationary combat/wait recovery; add command provenance and LG/SG finishing. Nine Linux test groups passed, training 27961 updated with rollback. Legacy navigation stays opt-in. Alpha 1.0.1 requires the new 1000-match acceptance; see docs/ALPHA_101_ACCEPTANCE_RU.md.
+
+# 2026-10-24 — audit stage
+
+- Preserve inherited source changes in an isolated worktree; no invented historical release commits.
+- Consolidate owner requirements, ten acceptance stages and explicit contradictions.
+- Record active feature gates and exact-map restriction; inventory 254 demos including short/annotated files.
+- No claim of autonomous learning or accepted 1.0.0 gameplay.
+
 # 2026-10-21 — 0.8.7 / overnight isolated lab
 
 See docs/PREALPHA_087_NIGHT_RU.md. Independent per-bot direct-hit finisher added; legacy prealpha movement remains disabled. Test 27961 and private 27962 receive the verified native binary; primary 27960 is preserved. Night lab rotates enhanced Xaero/Psy, reverse seats, Psy mirror, and module-off stock control. Persistent queue, watchdog, 10s player snapshots and 60s JSON/CSV report timer added. Earlier 246 game_end events include 123 setup forfeits: 123 genuine completed matches remain after filtering. No autonomous model learning is claimed. Steam startup recovery on 27961 uses a new isolated HOME cache; fs_homepath/configs remain separate and unchanged in location. Site is frozen for this bot stage.

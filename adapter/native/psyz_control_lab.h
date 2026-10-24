@@ -4,11 +4,12 @@
 #define PSYZ_PREALPHA 1
 #include "psyz_stock_goal_observer.h"
 #include "psyz_live_combat.h"
+#include "psyz_replay_move.h"
 static void (*psyz_real_think)(gentity_t*);
 static int psyz_started = -1;
 static int psyz_last_log = -1;
 static void Psyz_Think(gentity_t* ent) {
-    /* Independent finisher does not enable the legacy route/aim policy. */
+    /* Independent finisher never enables legacy route/aim overrides. Per-bot state also supports lab mirrors. */
     Psyz_Finish087Command(ent);
     cvar_t *test = Cvar_FindVar("qlx_psyzTestInstance");
     cvar_t *mode = Cvar_FindVar("qlx_psyzControlMode");
@@ -27,14 +28,24 @@ static void Psyz_Think(gentity_t* ent) {
     usercmd_t *cmd = &ent->client->pers.cmd;
     int now = cmd->serverTime;
     if (mode->integer == 3) {
+        usercmd_t stock_command=*cmd;
         /* Install lazily: custom cvars may not exist during VM load. */
         Psyz_InstallGoalObserver();
         /* Preserve stock AAS; explicitly enabled prealpha may alter this bot. */
         Psyz_PreAlphaMove(ent);
         Psyz_LiveCombatCommand(ent);
+        Psyz_ReplayMove(ent);
+        usercmd_t overlay_command=*cmd;
         psyz_real_think(ent);
         if (now - psyz_last_log >= 200) {
             psyz_last_log = now;
+            cvar_t *map=Cvar_FindVar("mapname");
+            cvar_t *enabled=Cvar_FindVar("qlx_psyzPreAlpha");
+            fprintf(stderr,"PSYZ_COMMAND_AUDIT t=%d prealpha_requested=%d prealpha_active=%d map=%s stock=%d,%d,%d,%d,%d overlay=%d,%d,%d,%d,%d final=%d,%d,%d,%d,%d\n",
+                now,enabled?enabled->integer:0,Psyz_PreAlphaEnabled(),map?map->string:"unknown",
+                stock_command.forwardmove,stock_command.rightmove,stock_command.upmove,stock_command.weapon,stock_command.buttons,
+                overlay_command.forwardmove,overlay_command.rightmove,overlay_command.upmove,overlay_command.weapon,overlay_command.buttons,
+                cmd->forwardmove,cmd->rightmove,cmd->upmove,cmd->weapon,cmd->buttons);
             // Отличаем отсутствие движения при намерении идти от ожидания/боя.
             // Скорость ps сама по себе не доказывает перемещение между кадрами.
             fprintf(stderr,"PSYZ_NAV t=%d pos=%.3f,%.3f,%.3f vel=%.3f,%.3f,%.3f yaw=%.2f weapon=%d health=%d ground=%d source=stock_aas_plus_optin_prealpha forward=%d right=%d up=%d buttons=%d target=%d route=%d armor=%d escape=%d pmtype=%d\n",
@@ -82,6 +93,7 @@ static void Psyz_Install(void) {
     Psyz_PreAlphaVmReset();
     Psyz_LiveCombatReset();
     Psyz_Finish087Reset();
+    psyz_replay_active=-1;psyz_replay_cooldown=0;
     Psyz_InstallPickup();
     Psyz_InstallDamageObserver();
     psyz_original_item_goal = NULL; /* VM reload invalidates the old trampoline. */

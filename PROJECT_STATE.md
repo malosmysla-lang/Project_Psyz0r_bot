@@ -1,3 +1,11 @@
+# Current stage — 2026-10-25
+
+0.9.0-rc2 is deployed to training only, with nine passing test groups. No accepted Alpha or measured strength claim. See docs/ALPHA_101_ACCEPTANCE_RU.md for all ten open/passed boundaries.
+
+# 2026-10-24 — 1.0.0 target, baseline reconciliation
+
+The server/site stage is separate from bot combat. New owner requirements and contradictions: docs/owner_20261024/. Current inspected training runtime is 0.8.7 with PreAlpha=0 and several movement/combat features disabled; it has not been relabelled 1.0.0. Demos were inventoried read-only; detailed movement analysis and acceptance stages remain open.
+
 # 2026-10-21 — 0.8.7 / overnight isolated lab
 
 See docs/PREALPHA_087_NIGHT_RU.md. Independent per-bot direct-hit finisher added; legacy prealpha movement remains disabled. Test 27961 and private 27962 receive the verified native binary; primary 27960 is preserved. Night lab rotates enhanced Xaero/Psy, reverse seats, Psy mirror, and module-off stock control. Persistent queue, watchdog, 10s player snapshots and 60s JSON/CSV report timer added. Earlier 246 game_end events include 123 setup forfeits: 123 genuine completed matches remain after filtering. No autonomous model learning is claimed. Steam startup recovery on 27961 uses a new isolated HOME cache; fs_homepath/configs remain separate and unchanged in location. Site is frozen for this bot stage.

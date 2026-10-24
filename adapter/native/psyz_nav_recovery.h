@@ -40,9 +40,10 @@ static int Psyz_NavUpdate(PsyzNavRecovery *s,int target,int now,const float *pos
     int dt=now-s->last;s->last=now;
     if(target<0)return 0;
     if(now-s->start>=30000)return 2;
+    int granted_hold=0;
     if((combat || waiting) && dt>0 && s->paused<5000){
         int hold=dt;if(hold>5000-s->paused)hold=5000-s->paused;
-        s->paused+=hold;s->progress+=hold;
+        s->paused+=hold;s->progress+=hold;granted_hold=hold;
     }
     int cell[3];for(int k=0;k<3;k++)cell[k]=(int)floorf(position[k]/64.f);
     int known=0;
@@ -56,12 +57,17 @@ static int Psyz_NavUpdate(PsyzNavRecovery *s,int target,int now,const float *pos
     // Близость к предмету сама по себе не доказывает подбор: можно стоять
     // под платформой красного. Только реальное движение или ограниченное
     // ожидание таймера защищают остановку от восстановления маршрута.
-    if(moved>64 || combat || waiting){
+    if(moved>64){
         s->motion_since=now;memcpy(s->motion_position,position,sizeof(s->motion_position));
-    }else if(now-s->motion_since>=1500){
+    }else {
+        /* Share the finite hold budget with the pixel-stall clock. A held
+           attack/wait flag is not physical progress or a confirmed pickup. */
+        s->motion_since+=granted_hold;
+        if(now-s->motion_since>=1500){
         s->motion_since=now;s->progress=now;
         if(has_demo && !s->stage){s->stage=1;return 1;}
         return 2;
+        }
     }
     if(now-s->progress<=6000)return 0;
     if(has_demo && !s->stage){s->stage=1;s->progress=now;return 1;}
