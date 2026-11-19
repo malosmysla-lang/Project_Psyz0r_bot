@@ -145,6 +145,15 @@ static float psyz_strafe_peak;
 static int psyz_progress_time,psyz_banned[1024];
 static int psyz_demo_retry_after[1024];
 static int psyz_rj=-1,psyz_rj_phase,psyz_rj_time,psyz_rj_ground,psyz_rj_last,psyz_rj_shots,psyz_rj_landed_at;
+/* Latch the intended item and actor before goal changes; unrelated pickups
+   and higher landings are not proof that this resource route succeeded. */
+static int psyz_rj_target=-1,psyz_rj_actor=-1,psyz_rj_attempt_since,psyz_rj_target_picked_at=-1,psyz_rj_landed_higher;
+static int Psyz_RJTargetPickupConfirmed(int now){
+    int deadline=psyz_rj_phase==2?psyz_rj_landed_at+1500:psyz_rj_time+3000;
+    return psyz_rj_target>=0 && psyz_rj_actor>=0 &&
+        psyz_rj_target_picked_at>=psyz_rj_attempt_since &&
+        psyz_rj_target_picked_at<=now && psyz_rj_target_picked_at<=deadline;
+}
 static float psyz_rj_start_z;
 static int psyz_debug_logged;
 static int psyz_registry_retry;
@@ -197,6 +206,8 @@ static void Psyz_PreAlphaReset(void) {
 
     psyz_registry_logged=psyz_rj_phase=psyz_rj_last=psyz_last_move_time=0;
     psyz_last_pickup_time=psyz_rj_landed_at=psyz_strafe_log=0;
+    psyz_rj_target=psyz_rj_actor=psyz_rj_target_picked_at=-1;
+    psyz_rj_attempt_since=psyz_rj_landed_higher=0;
     psyz_strafe_phase=psyz_strafe_since=0;psyz_strafe_direction=1;psyz_strafe_route=-1;
     psyz_strafe_start_speed=psyz_strafe_first_peak=0;
     psyz_strafe_begin=psyz_strafe_jumps=0;psyz_strafe_peak=0;
@@ -595,16 +606,21 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
                (ps->stats[STAT_WEAPONS]&(1<<r->weapon)) && ps->ammo[r->weapon]>=r->shot_count &&
                own->health>r->health_cost+50 && ps->groundEntityNum!=1023) {
                 psyz_rj=(int)j;psyz_rj_phase=0;psyz_rj_time=now;psyz_rj_start_z=ps->origin[2];psyz_rj_ground=0;psyz_rj_shots=0;
+                psyz_rj_target=psyz_goal_target;psyz_rj_actor=own->s.number;
+                psyz_rj_attempt_since=now;psyz_rj_target_picked_at=-1;psyz_rj_landed_higher=0;
                 fprintf(stderr,"PSYZ_RJ_BEGIN t=%d sample=%d target=%d health=%d\n",now,psyz_rj,psyz_goal_target,own->health);break;
             }
         }
     }
     if(psyz_rj>=0) {
         const PsyzLearnedJump *r=&psyz_jumps[psyz_rj];int elapsed=now-psyz_rj_time;
+        if(Psyz_RJTargetPickupConfirmed(now)){
+            fprintf(stderr,"PSYZ_RJ_END t=%d sample=%d target=%d actor=%d higher=%d pickup=1 outcome=target_pickup reconstructed_input=1\n",now,psyz_rj,psyz_rj_target,psyz_rj_actor,psyz_rj_landed_higher);
+            psyz_rj=-1;psyz_rj_last=now;return;
+        }
         if(elapsed>3000 && psyz_rj_phase!=2){fprintf(stderr,"PSYZ_RJ_END t=%d outcome=timeout\n",now);psyz_rj=-1;psyz_rj_last=now;return;}
         if(psyz_rj_phase==2){
-            int pickup=psyz_last_pickup_time>=psyz_rj_time && psyz_last_pickup_time<=psyz_rj_landed_at+1500;
-            if(pickup || now-psyz_rj_landed_at>=1500){fprintf(stderr,"PSYZ_RJ_END t=%d sample=%d higher=0 pickup=%d reconstructed_input=1\n",now,psyz_rj,pickup);psyz_rj=-1;psyz_rj_last=now;}
+            if(now-psyz_rj_landed_at>=1500){fprintf(stderr,"PSYZ_RJ_END t=%d sample=%d target=%d actor=%d higher=%d pickup=0 outcome=target_not_picked reconstructed_input=1\n",now,psyz_rj,psyz_rj_target,psyz_rj_actor,psyz_rj_landed_higher);psyz_rj=-1;psyz_rj_last=now;}
             return;
         }
         cmd->weapon=r->weapon;
@@ -640,10 +656,9 @@ static void Psyz_PreAlphaMove(gentity_t *own) {
         }
         if(ps->groundEntityNum==1023)psyz_rj_ground=1;
         if(elapsed>250 && psyz_rj_ground && ps->groundEntityNum!=1023) {
-            int higher=ps->origin[2]>psyz_rj_start_z+8;
-            int pickup=psyz_last_pickup_time>=psyz_rj_time && now-psyz_last_pickup_time<1500;
-            if(higher || pickup){fprintf(stderr,"PSYZ_RJ_END t=%d sample=%d higher=%d pickup=%d delta_z=%.2f reconstructed_input=1\n",now,psyz_rj,higher,pickup,ps->origin[2]-psyz_rj_start_z);psyz_rj=-1;psyz_rj_last=now;}
-            else{psyz_rj_phase=2;psyz_rj_landed_at=now;}
+            psyz_rj_landed_higher=ps->origin[2]>psyz_rj_start_z+8;
+            psyz_rj_phase=2;psyz_rj_landed_at=now;
+            fprintf(stderr,"PSYZ_RJ_LANDED t=%d sample=%d target=%d higher=%d pickup=0 awaiting_target=1\n",now,psyz_rj,psyz_rj_target,psyz_rj_landed_higher);
         }
         return;
     }
@@ -740,6 +755,8 @@ static void Psyz_PreAlphaTouch(gentity_t *item,gentity_t *other,trace_t *trace) 
     int ammo_after=item->item && item->item->giTag>=0 && item->item->giTag<16?other->client->ps.ammo[item->item->giTag]:0;
     if(item->item && ((before && !item->r.contents) || weapons_before!=other->client->ps.stats[STAT_WEAPONS] || ammo_after>ammo_before)) {
         const char *c=item->item->classname;
+        if(psyz_rj>=0 && item->s.number==psyz_rj_target && other->s.number==psyz_rj_actor)
+            psyz_rj_target_picked_at=other->client->pers.cmd.serverTime;
         Psyz_OpeningPickup(item,other->client->pers.cmd.serverTime);
         Psyz_OpeningAnyPickup(item,other->client->pers.cmd.serverTime);
         if(!strncmp(c,"weapon_",7) || !strncmp(c,"item_health",11) || !strcmp(c,"item_armor_body") || !strcmp(c,"item_armor_combat")){psyz_last_pickup=item->s.number;psyz_last_pickup_time=other->client->pers.cmd.serverTime;}

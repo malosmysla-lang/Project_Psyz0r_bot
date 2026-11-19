@@ -9,6 +9,21 @@ spec.loader.exec_module(module)
 
 
 class LogEvidenceTests(unittest.TestCase):
+    def test_v2_missed_target_is_not_success_even_on_higher_ground(self):
+        self.assertFalse(module.jump_success(dict(outcome='target_not_picked',higher='1',pickup='0',target='200',actor='0')))
+        self.assertFalse(module.jump_success(dict(outcome='target_pickup',pickup='1')))
+        self.assertTrue(module.jump_success(dict(outcome='target_pickup',pickup='1',target='200',actor='0')))
+
+    def test_legacy_height_is_separate_from_verified_target_pickup(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'console.log'
+            path.write_text('PSYZ_RJ_END t=1 higher=1 pickup=0\n'
+                            'PSYZ_RJ_END t=2 target=200 actor=0 higher=1 pickup=0 outcome=target_not_picked\n'
+                            'PSYZ_RJ_END t=3 target=200 actor=0 higher=0 pickup=1 outcome=target_pickup\n')
+            result=module.summarize(path)
+            self.assertEqual(result['rocketjump_successes'],2)
+            self.assertEqual(result['verified_target_pickup_successes'],1)
+
     def test_hook_failure_is_exposed_even_without_gameplay_events(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'console.log'

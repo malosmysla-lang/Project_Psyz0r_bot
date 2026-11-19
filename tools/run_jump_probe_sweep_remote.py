@@ -45,7 +45,7 @@ def main():
             sample = probe - 1
             results.append(dict(probe=probe, sample=sample,
                 begins=len(re.findall(fr'PSYZ_RJ_BEGIN[^\n]*sample={sample}(?:\s|$)', text)),
-                successes=len(re.findall(fr'PSYZ_RJ_END[^\n]*sample={sample}[^\n]*(?:higher=1|pickup=1)', text)),
+                successes=len(re.findall(fr'PSYZ_RJ_END[^\n]*sample={sample}\s[^\n]*pickup=1\s+outcome=target_pickup(?:\s|$)', text)),
                 endings=len(re.findall(fr'PSYZ_RJ_END[^\n]*sample={sample}(?:\s|$)', text))))
             (OUT / 'progress.json').write_text(json.dumps(results, indent=2))
     finally:

@@ -1,3 +1,19 @@
+# 2026-11-19 — V2.0.0-red_rj_instruction / F01-A (local development)
+
+Require the latched target item to be picked up by the initiating bot before an
+RJ resource route is reported successful. Higher landings, unrelated items,
+another actor and stale/future/late events cannot complete it; a missed target
+ends with an explicit bounded failure. Preserve all existing runtime gates.
+
+Add reproducible demo mining, observed-client attribution, takeoff/shot separation,
+candidate envelopes and an all-map owner-v-Xaero scoreboard audit. Preserve raw
+recordings privately and keep uncertain boost causality/geometry/live acceptance
+explicit. Record F01–F11, AI01 and the renewed Q3 source audit. The new release
+label is a development version; it does not relabel historical matches.
+
+Validation: MSVC build and 19/19 CTest scenarios; 172/172 Python tests. This is not
+a deployed game release or completed movement/adaptation feature set.
+
 # 2026-10-25 — bounded laboratory smoke check
 
 Two diagnostic runs, one observed LG-to-SG switch, no acceptance score claim. Empty stock standby restored. Plugin-loader errors recorded as an open evaluation-harness issue.

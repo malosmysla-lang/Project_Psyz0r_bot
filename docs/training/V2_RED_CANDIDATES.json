@@ -1,0 +1,2959 @@
+{
+  "version": "V2.0.0-red_rj_instruction",
+  "map": "bloodrun",
+  "candidates": [
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -3,
+        -7,
+        6
+      ],
+      "successful_observed_pickups": 32,
+      "distinct_demos": 30,
+      "actors": {
+        "nekitz0r": 27,
+        "agent": 5
+      },
+      "repetition_band": 20,
+      "exemplar": {
+        "takeoff_ms": 277350,
+        "takeoff_position": [
+          -187.4971923828125,
+          -446.5919494628906,
+          408.2787780761719
+        ],
+        "takeoff_velocity": [
+          6.474379539489746,
+          328.6393127441406,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          66.9232177734375,
+          75.6573486328125,
+          0.0
+        ],
+        "takeoff_speed_xy": 328.7030810189683,
+        "shot_delay_ms": 50,
+        "shot_position": [
+          -186.6302032470703,
+          -427.58917236328125,
+          417.6603698730469
+        ],
+        "shot_viewangles": [
+          87.890625,
+          76.7559814453125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1125,
+        "pickup_position": [
+          -177.87994384765625,
+          -12.938003540039062,
+          537.125
+        ],
+        "height_to_pickup": 128.84622192382812,
+        "health_before": 45,
+        "armor_before": 0,
+        "actor": "nekitz0r",
+        "demo_sha256": "d673260486233d923088d94a06e50b9a3ce14fe8c2e2b2183897f7ad76cd3b78",
+        "pickup_ms": 278475,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          307.85737822345743,
+          440.9668505109543
+        ],
+        "shot_delay_ms": [
+          50,
+          225
+        ],
+        "pickup_delay_ms": [
+          975,
+          2725
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -4,
+        6
+      ],
+      "successful_observed_pickups": 46,
+      "distinct_demos": 29,
+      "actors": {
+        "agent": 33,
+        "nekitz0r": 13
+      },
+      "repetition_band": 20,
+      "exemplar": {
+        "takeoff_ms": 44228075,
+        "takeoff_position": [
+          -271.2832336425781,
+          -254.22174072265625,
+          408.125
+        ],
+        "takeoff_velocity": [
+          171.33370971679688,
+          161.53175354003906,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          34.189453125,
+          -25.7025146484375,
+          0.0
+        ],
+        "takeoff_speed_xy": 235.4734538903261,
+        "shot_delay_ms": 25,
+        "shot_position": [
+          -266.9058532714844,
+          -250.15109252929688,
+          414.75
+        ],
+        "shot_viewangles": [
+          35.5078125,
+          -26.0321044921875,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 800,
+        "pickup_position": [
+          -189.97494506835938,
+          -11.24450397491455,
+          537.125
+        ],
+        "height_to_pickup": 129.0,
+        "health_before": 114,
+        "armor_before": 101,
+        "actor": "agent",
+        "demo_sha256": "d5146a13cf4957273c193a6ba09854accd8d051a9a30c5a7eede9cd997b6827d",
+        "pickup_ms": 44228875,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          235.4734538903261,
+          381.1381928324447
+        ],
+        "shot_delay_ms": [
+          0,
+          175
+        ],
+        "pickup_delay_ms": [
+          600,
+          2725
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -5,
+        -4,
+        6
+      ],
+      "successful_observed_pickups": 39,
+      "distinct_demos": 27,
+      "actors": {
+        "agent": 37,
+        "nekitz0r": 1,
+        "psyroz": 1
+      },
+      "repetition_band": 20,
+      "exemplar": {
+        "takeoff_ms": 256575,
+        "takeoff_position": [
+          -314.6458740234375,
+          -249.6800537109375,
+          408.125
+        ],
+        "takeoff_velocity": [
+          231.1034698486328,
+          226.1509552001953,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          37.8204345703125,
+          -37.3699951171875,
+          0.0
+        ],
+        "takeoff_speed_xy": 323.34666893914135,
+        "shot_delay_ms": 25,
+        "shot_position": [
+          -308.8940734863281,
+          -244.0161895751953,
+          413.7236022949219
+        ],
+        "shot_viewangles": [
+          38.0841064453125,
+          -38.4246826171875,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 800,
+        "pickup_position": [
+          -192.71676635742188,
+          -15.015310287475586,
+          547.80517578125
+        ],
+        "height_to_pickup": 139.68017578125,
+        "health_before": 104,
+        "armor_before": 84,
+        "actor": "agent",
+        "demo_sha256": "6008245a6339095153e8ac7031bb30851a908a7bf78dfdedb410af908b9e5912",
+        "pickup_ms": 257375,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          302.39348739729894,
+          354.638728191938
+        ],
+        "shot_delay_ms": [
+          25,
+          175
+        ],
+        "pickup_delay_ms": [
+          625,
+          2975
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -5,
+        6
+      ],
+      "successful_observed_pickups": 28,
+      "distinct_demos": 26,
+      "actors": {
+        "nekitz0r": 22,
+        "agent": 6
+      },
+      "repetition_band": 20,
+      "exemplar": {
+        "takeoff_ms": 1782275,
+        "takeoff_position": [
+          -257.4724426269531,
+          -316.82464599609375,
+          409.125
+        ],
+        "takeoff_velocity": [
+          87.06926727294922,
+          307.96905517578125,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          27.685546875,
+          73.30078125,
+          0.0
+        ],
+        "takeoff_speed_xy": 320.04061656188526,
+        "shot_delay_ms": 175,
+        "shot_position": [
+          -241.16490173339844,
+          -259.2348327636719,
+          446.0544128417969
+        ],
+        "shot_viewangles": [
+          87.890625,
+          75.3497314453125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 850,
+        "pickup_position": [
+          -191.12234497070312,
+          10.257266998291016,
+          571.4445190429688
+        ],
+        "height_to_pickup": 162.31951904296875,
+        "health_before": 100,
+        "armor_before": 25,
+        "actor": "nekitz0r",
+        "demo_sha256": "04ae5cb4e2091591748900863c25308485fd27ff9f9c49626f925f77a0ea2c4d",
+        "pickup_ms": 1783125,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          187.74357258526535,
+          439.96490642442325
+        ],
+        "shot_delay_ms": [
+          25,
+          250
+        ],
+        "pickup_delay_ms": [
+          650,
+          1325
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -3,
+        -6,
+        6
+      ],
+      "successful_observed_pickups": 29,
+      "distinct_demos": 25,
+      "actors": {
+        "nekitz0r": 23,
+        "agent": 5,
+        "psyroz": 1
+      },
+      "repetition_band": 20,
+      "exemplar": {
+        "takeoff_ms": 82750,
+        "takeoff_position": [
+          -185.46641540527344,
+          -399.09686279296875,
+          408.3151550292969
+        ],
+        "takeoff_velocity": [
+          -1.3118317127227783,
+          320.3648681640625,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          28.7017822265625,
+          87.4896240234375,
+          0.0
+        ],
+        "takeoff_speed_xy": 320.3675540004319,
+        "shot_delay_ms": 75,
+        "shot_position": [
+          -185.55958557128906,
+          -376.3508605957031,
+          425.82373046875
+        ],
+        "shot_viewangles": [
+          81.8975830078125,
+          89.2364501953125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1175,
+        "pickup_position": [
+          -195.6333770751953,
+          21.71533203125,
+          537.125
+        ],
+        "height_to_pickup": 128.80984497070312,
+        "health_before": 81,
+        "armor_before": 14,
+        "actor": "nekitz0r",
+        "demo_sha256": "2646fd08c48a67834fa6261834d7f8c520ad550e24782e785c9ad6068e721d5c",
+        "pickup_ms": 83925,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.0000628394843,
+          373.56187475010694
+        ],
+        "shot_delay_ms": [
+          25,
+          275
+        ],
+        "pickup_delay_ms": [
+          775,
+          2975
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -3,
+        -5,
+        6
+      ],
+      "successful_observed_pickups": 15,
+      "distinct_demos": 15,
+      "actors": {
+        "nekitz0r": 10,
+        "agent": 5
+      },
+      "repetition_band": 15,
+      "exemplar": {
+        "takeoff_ms": 369275,
+        "takeoff_position": [
+          -200.31785583496094,
+          -315.2693176269531,
+          408.3506774902344
+        ],
+        "takeoff_velocity": [
+          -31.478458404541016,
+          324.93408203125,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          24.2193603515625,
+          106.9464111328125,
+          0.0
+        ],
+        "takeoff_speed_xy": 326.4552817906574,
+        "shot_delay_ms": 125,
+        "shot_position": [
+          -204.2052459716797,
+          -270.10235595703125,
+          434.8681945800781
+        ],
+        "shot_viewangles": [
+          56.8927001953125,
+          -166.5252685546875,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 700,
+        "pickup_position": [
+          -163.8660430908203,
+          -9.272237777709961,
+          564.7119140625
+        ],
+        "height_to_pickup": 156.36123657226562,
+        "health_before": 82,
+        "armor_before": 20,
+        "actor": "agent",
+        "demo_sha256": "6008245a6339095153e8ac7031bb30851a908a7bf78dfdedb410af908b9e5912",
+        "pickup_ms": 369975,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          211.5563201643338,
+          433.85635880396205
+        ],
+        "shot_delay_ms": [
+          25,
+          275
+        ],
+        "pickup_delay_ms": [
+          700,
+          1850
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -6,
+        6
+      ],
+      "successful_observed_pickups": 15,
+      "distinct_demos": 15,
+      "actors": {
+        "agent": 3,
+        "nekitz0r": 12
+      },
+      "repetition_band": 15,
+      "exemplar": {
+        "takeoff_ms": 830675,
+        "takeoff_position": [
+          -243.426025390625,
+          -371.96240234375,
+          408.350830078125
+        ],
+        "takeoff_velocity": [
+          71.28679656982422,
+          314.04425048828125,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          54.5855712890625,
+          70.7684326171875,
+          0.0
+        ],
+        "takeoff_speed_xy": 322.03353649881535,
+        "shot_delay_ms": 100,
+        "shot_position": [
+          -235.30348205566406,
+          -338.7184143066406,
+          429.40264892578125
+        ],
+        "shot_viewangles": [
+          87.890625,
+          68.126220703125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1125,
+        "pickup_position": [
+          -173.64566040039062,
+          40.852256774902344,
+          563.6941528320312
+        ],
+        "height_to_pickup": 155.34332275390625,
+        "health_before": 68,
+        "armor_before": 22,
+        "actor": "nekitz0r",
+        "demo_sha256": "9ebc7662beb7398291a6a9e261d4fef1a75478585f2d8385cbb96597d75885dc",
+        "pickup_ms": 831800,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.0964873844851,
+          345.5402455590759
+        ],
+        "shot_delay_ms": [
+          50,
+          225
+        ],
+        "pickup_delay_ms": [
+          825,
+          3225
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -5,
+        -13,
+        6
+      ],
+      "successful_observed_pickups": 13,
+      "distinct_demos": 13,
+      "actors": {
+        "nekitz0r": 5,
+        "agent": 8
+      },
+      "repetition_band": 10,
+      "exemplar": {
+        "takeoff_ms": 101450,
+        "takeoff_position": [
+          -324.1792907714844,
+          -813.304443359375,
+          408.18487548828125
+        ],
+        "takeoff_velocity": [
+          172.44244384765625,
+          344.3382873535156,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          13.6614990234375,
+          54.722900390625,
+          0.0
+        ],
+        "takeoff_speed_xy": 385.1042100233447,
+        "shot_delay_ms": 875,
+        "shot_position": [
+          -238.2512969970703,
+          -430.7378234863281,
+          443.7283935546875
+        ],
+        "shot_viewangles": [
+          83.7542724609375,
+          88.319091796875,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 2475,
+        "pickup_position": [
+          -124.50052642822266,
+          35.90544891357422,
+          537.125
+        ],
+        "height_to_pickup": 128.94012451171875,
+        "health_before": 100,
+        "armor_before": 25,
+        "actor": "agent",
+        "demo_sha256": "6008245a6339095153e8ac7031bb30851a908a7bf78dfdedb410af908b9e5912",
+        "pickup_ms": 103925,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          335.5096395160906,
+          396.66037527764763
+        ],
+        "shot_delay_ms": [
+          850,
+          975
+        ],
+        "pickup_delay_ms": [
+          1575,
+          3075
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -3,
+        -4,
+        6
+      ],
+      "successful_observed_pickups": 12,
+      "distinct_demos": 12,
+      "actors": {
+        "agent": 3,
+        "nekitz0r": 9
+      },
+      "repetition_band": 10,
+      "exemplar": {
+        "takeoff_ms": 194525,
+        "takeoff_position": [
+          -204.60269165039062,
+          -256.6992492675781,
+          408.2633056640625
+        ],
+        "takeoff_velocity": [
+          -24.375215530395508,
+          55.487510681152344,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          35.5078125,
+          63.797607421875,
+          0.0
+        ],
+        "takeoff_speed_xy": 60.605403832861555,
+        "shot_delay_ms": 125,
+        "shot_position": [
+          -208.2943115234375,
+          -246.07040405273438,
+          436.5628662109375
+        ],
+        "shot_viewangles": [
+          87.890625,
+          77.003173828125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1350,
+        "pickup_position": [
+          -167.0655059814453,
+          -19.822628021240234,
+          547.2351684570312
+        ],
+        "height_to_pickup": 138.97186279296875,
+        "health_before": 78,
+        "armor_before": 19,
+        "actor": "agent",
+        "demo_sha256": "1c9d26edca2edcf341a084013c1e86122517b5c70f3403d3c2e2350a7e5671ae",
+        "pickup_ms": 195875,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          60.605403832861555,
+          461.3288754694584
+        ],
+        "shot_delay_ms": [
+          0,
+          150
+        ],
+        "pickup_delay_ms": [
+          650,
+          1350
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -3,
+        -8,
+        6
+      ],
+      "successful_observed_pickups": 12,
+      "distinct_demos": 11,
+      "actors": {
+        "nekitz0r": 7,
+        "agent": 5
+      },
+      "repetition_band": 10,
+      "exemplar": {
+        "takeoff_ms": 10059875,
+        "takeoff_position": [
+          -203.0541534423828,
+          -498.7965087890625,
+          408.1254577636719
+        ],
+        "takeoff_velocity": [
+          3.124039649963379,
+          386.35015869140625,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          28.23486328125,
+          82.386474609375,
+          0.0
+        ],
+        "takeoff_speed_xy": 386.36278902685405,
+        "shot_delay_ms": 150,
+        "shot_position": [
+          -205.7236328125,
+          -441.5787353515625,
+          438.4578552246094
+        ],
+        "shot_viewangles": [
+          77.6678466796875,
+          98.41552734375,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1275,
+        "pickup_position": [
+          -153.68942260742188,
+          40.746337890625,
+          562.0144653320312
+        ],
+        "height_to_pickup": 153.88900756835938,
+        "health_before": 146,
+        "armor_before": 76,
+        "actor": "agent",
+        "demo_sha256": "fb8fc8d4b41bf2f72e4f619b16cbbdf0eb5586a3f2e14ebb42aefc3330219d99",
+        "pickup_ms": 10061150,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.0752238320329,
+          386.36278902685405
+        ],
+        "shot_delay_ms": [
+          25,
+          200
+        ],
+        "pickup_delay_ms": [
+          900,
+          2575
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -7,
+        6
+      ],
+      "successful_observed_pickups": 11,
+      "distinct_demos": 10,
+      "actors": {
+        "agent": 3,
+        "nekitz0r": 8
+      },
+      "repetition_band": 10,
+      "exemplar": {
+        "takeoff_ms": 210925,
+        "takeoff_position": [
+          -240.67489624023438,
+          -445.7629699707031,
+          408.125
+        ],
+        "takeoff_velocity": [
+          64.03656005859375,
+          313.9610900878906,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          58.1396484375,
+          75.52001953125,
+          0.0
+        ],
+        "takeoff_speed_xy": 320.42510375018134,
+        "shot_delay_ms": 100,
+        "shot_position": [
+          -233.5908660888672,
+          -412.79791259765625,
+          427.35357666015625
+        ],
+        "shot_viewangles": [
+          87.890625,
+          60.2435302734375,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1125,
+        "pickup_position": [
+          -131.31524658203125,
+          -8.926656723022461,
+          562.8347778320312
+        ],
+        "height_to_pickup": 154.70977783203125,
+        "health_before": 106,
+        "armor_before": 25,
+        "actor": "nekitz0r",
+        "demo_sha256": "a351042059821fcb09e7c0cb9f1a715de75f083018af9b30b4d45f23e11fd510",
+        "pickup_ms": 212050,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.00852379154315,
+          378.0771710815249
+        ],
+        "shot_delay_ms": [
+          25,
+          225
+        ],
+        "pickup_delay_ms": [
+          875,
+          1900
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -2,
+        -7,
+        6
+      ],
+      "successful_observed_pickups": 8,
+      "distinct_demos": 8,
+      "actors": {
+        "nekitz0r": 8
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 19853700,
+        "takeoff_position": [
+          -151.58053588867188,
+          -457.4893798828125,
+          408.2639465332031
+        ],
+        "takeoff_velocity": [
+          -18.139442443847656,
+          322.466552734375,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          32.530517578125,
+          85.4351806640625,
+          0.0
+        ],
+        "takeoff_speed_xy": 322.9763412458645,
+        "shot_delay_ms": 100,
+        "shot_position": [
+          -152.80319213867188,
+          -425.78057861328125,
+          427.28033447265625
+        ],
+        "shot_viewangles": [
+          87.890625,
+          85.3033447265625,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1125,
+        "pickup_position": [
+          -158.32176208496094,
+          3.622130870819092,
+          566.9136352539062
+        ],
+        "height_to_pickup": 158.64968872070312,
+        "health_before": 94,
+        "armor_before": 12,
+        "actor": "nekitz0r",
+        "demo_sha256": "4697e0206bfc9ef435575850de9970b8b3538b2256866cc4b0e772fa54efaff0",
+        "pickup_ms": 19854825,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.004429806425,
+          323.4030403956014
+        ],
+        "shot_delay_ms": [
+          50,
+          250
+        ],
+        "pickup_delay_ms": [
+          1050,
+          1300
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -5,
+        -5,
+        6
+      ],
+      "successful_observed_pickups": 7,
+      "distinct_demos": 7,
+      "actors": {
+        "agent": 7
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 164625,
+        "takeoff_position": [
+          -303.6920471191406,
+          -319.63726806640625,
+          408.2401123046875
+        ],
+        "takeoff_velocity": [
+          235.84938049316406,
+          216.72315979003906,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          38.9410400390625,
+          -44.9285888671875,
+          0.0
+        ],
+        "takeoff_speed_xy": 320.30276031965144,
+        "shot_delay_ms": 50,
+        "shot_position": [
+          -292.1520690917969,
+          -309.0211486816406,
+          419.7275695800781
+        ],
+        "shot_viewangles": [
+          39.9298095703125,
+          -48.5595703125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 750,
+        "pickup_position": [
+          -188.50181579589844,
+          -16.82309341430664,
+          537.125
+        ],
+        "height_to_pickup": 128.8848876953125,
+        "health_before": 85,
+        "armor_before": 0,
+        "actor": "agent",
+        "demo_sha256": "98f42d112b1feb00687e460636f467ef38d99152636b80bad082974b0b404866",
+        "pickup_ms": 165375,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.30276031965144,
+          337.06268626076786
+        ],
+        "shot_delay_ms": [
+          0,
+          50
+        ],
+        "pickup_delay_ms": [
+          750,
+          1000
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -2,
+        -6,
+        6
+      ],
+      "successful_observed_pickups": 7,
+      "distinct_demos": 7,
+      "actors": {
+        "nekitz0r": 5,
+        "agent": 2
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 285775,
+        "takeoff_position": [
+          -147.74081420898438,
+          -404.0767822265625,
+          408.125
+        ],
+        "takeoff_velocity": [
+          2.7843587398529053,
+          321.4632263183594,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          87.890625,
+          84.012451171875,
+          0.0
+        ],
+        "takeoff_speed_xy": 321.47528447549576,
+        "shot_delay_ms": 75,
+        "shot_position": [
+          -147.43972778320312,
+          -382.88323974609375,
+          422.0399475097656
+        ],
+        "shot_viewangles": [
+          87.890625,
+          87.4017333984375,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1025,
+        "pickup_position": [
+          -160.19447326660156,
+          -19.310619354248047,
+          570.50927734375
+        ],
+        "height_to_pickup": 162.38427734375,
+        "health_before": 142,
+        "armor_before": 0,
+        "actor": "nekitz0r",
+        "demo_sha256": "32699d39cbfb61e4d220ce5b029b9396b9e5e3a54611df835deb11d8e664a7ac",
+        "pickup_ms": 286800,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.2377322085831,
+          438.01739085651036
+        ],
+        "shot_delay_ms": [
+          50,
+          250
+        ],
+        "pickup_delay_ms": [
+          725,
+          2850
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -13,
+        6
+      ],
+      "successful_observed_pickups": 4,
+      "distinct_demos": 4,
+      "actors": {
+        "agent": 2,
+        "nekitz0r": 2
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 10719575,
+        "takeoff_position": [
+          -280.13916015625,
+          -805.6144409179688,
+          408.2416687011719
+        ],
+        "takeoff_velocity": [
+          187.12677001953125,
+          340.03118896484375,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          20.7257080078125,
+          53.96484375,
+          0.0
+        ],
+        "takeoff_speed_xy": 388.12064815825994,
+        "shot_delay_ms": 950,
+        "shot_position": [
+          -189.1797637939453,
+          -379.44549560546875,
+          450.83233642578125
+        ],
+        "shot_viewangles": [
+          82.2161865234375,
+          92.186279296875,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1550,
+        "pickup_position": [
+          -175.52256774902344,
+          -14.08941650390625,
+          537.125
+        ],
+        "height_to_pickup": 128.88333129882812,
+        "health_before": 66,
+        "armor_before": 10,
+        "actor": "agent",
+        "demo_sha256": "55d706c2709c13bd52672e99b0cc05b5a421dfb4ee08b48e42ee98709ba4eed5",
+        "pickup_ms": 10721125,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          380.82759183414,
+          389.58411137538695
+        ],
+        "shot_delay_ms": [
+          800,
+          950
+        ],
+        "pickup_delay_ms": [
+          1550,
+          1900
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -3,
+        6
+      ],
+      "successful_observed_pickups": 4,
+      "distinct_demos": 4,
+      "actors": {
+        "agent": 2,
+        "nekitz0r": 2
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 526975,
+        "takeoff_position": [
+          -262.8006591796875,
+          -213.00144958496094,
+          408.2095947265625
+        ],
+        "takeoff_velocity": [
+          186.6297149658203,
+          226.08258056640625,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          35.70556640625,
+          -18.2373046875,
+          0.0
+        ],
+        "takeoff_speed_xy": 293.1620434909487,
+        "shot_delay_ms": 75,
+        "shot_position": [
+          -249.3863525390625,
+          -196.2426300048828,
+          425.0600280761719
+        ],
+        "shot_viewangles": [
+          36.826171875,
+          -19.09423828125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 600,
+        "pickup_position": [
+          -195.73435974121094,
+          -11.52570915222168,
+          541.102783203125
+        ],
+        "height_to_pickup": 132.8931884765625,
+        "health_before": 73,
+        "armor_before": 139,
+        "actor": "agent",
+        "demo_sha256": "2db0c18e78fa19e1e1a7ef6e7f345ffaaa28fb53e9bd8e021ebac814784eb6d8",
+        "pickup_ms": 527575,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          233.72915627760077,
+          373.95253610353524
+        ],
+        "shot_delay_ms": [
+          25,
+          150
+        ],
+        "pickup_delay_ms": [
+          600,
+          1050
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -8,
+        6
+      ],
+      "successful_observed_pickups": 4,
+      "distinct_demos": 4,
+      "actors": {
+        "agent": 1,
+        "nekitz0r": 3
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 56986550,
+        "takeoff_position": [
+          -238.90016174316406,
+          -512.1973266601562,
+          408.125
+        ],
+        "takeoff_velocity": [
+          162.2017059326172,
+          418.4545593261719,
+          2.5920599000528455e-10
+        ],
+        "takeoff_viewangles": [
+          23.6370849609375,
+          77.2174072265625,
+          0.0
+        ],
+        "takeoff_speed_xy": 448.7912784672981,
+        "shot_delay_ms": 125,
+        "shot_position": [
+          -221.15908813476562,
+          -457.53857421875,
+          435.3649597167969
+        ],
+        "shot_viewangles": [
+          87.890625,
+          79.793701171875,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1275,
+        "pickup_position": [
+          -147.8232879638672,
+          -15.184661865234375,
+          569.6965942382812
+        ],
+        "height_to_pickup": 161.57159423828125,
+        "health_before": 100,
+        "armor_before": 62,
+        "actor": "nekitz0r",
+        "demo_sha256": "c5809ec58810dbdce2ee511d8b1c6d87daa7614734d2e5a6c0112d2f9fde91fb",
+        "pickup_ms": 56987825,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          322.8514703539664,
+          488.5603175188277
+        ],
+        "shot_delay_ms": [
+          25,
+          175
+        ],
+        "pickup_delay_ms": [
+          1025,
+          1275
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "plasmajump",
+      "takeoff_grid": [
+        -4,
+        -3,
+        6
+      ],
+      "successful_observed_pickups": 3,
+      "distinct_demos": 3,
+      "actors": {
+        "nekitz0r": 3
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 3691800,
+        "takeoff_position": [
+          -285.8156433105469,
+          -192.9485626220703,
+          408.1647644042969
+        ],
+        "takeoff_velocity": [
+          -243.78184509277344,
+          232.91934204101562,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          48.614501953125,
+          162.9437255859375,
+          0.0
+        ],
+        "takeoff_speed_xy": 337.1661428638063,
+        "shot_delay_ms": 50,
+        "shot_position": [
+          -298.4974670410156,
+          -180.11497497558594,
+          417.29974365234375
+        ],
+        "shot_viewangles": [
+          47.296142578125,
+          163.1195068359375,
+          0.0
+        ],
+        "shot_count": 2,
+        "shot_span_ms": 100,
+        "pickup_delay_ms": 875,
+        "pickup_position": [
+          -188.2154083251953,
+          -18.83120346069336,
+          537.125
+        ],
+        "height_to_pickup": 128.96023559570312,
+        "health_before": 187,
+        "armor_before": 180,
+        "actor": "nekitz0r",
+        "demo_sha256": "27854857e5b85f8f356d19bbd1c279f2f6148c80273d7d5e6bd70440ec0ee093",
+        "pickup_ms": 3692675,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.00449911975636,
+          352.69034770201563
+        ],
+        "shot_delay_ms": [
+          25,
+          50
+        ],
+        "pickup_delay_ms": [
+          875,
+          1200
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -5,
+        -12,
+        6
+      ],
+      "successful_observed_pickups": 3,
+      "distinct_demos": 3,
+      "actors": {
+        "agent": 1,
+        "nekitz0r": 2
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 200225,
+        "takeoff_position": [
+          -316.8406066894531,
+          -790.0243530273438,
+          408.125
+        ],
+        "takeoff_velocity": [
+          168.1031036376953,
+          322.56683349609375,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          3.3123779296875,
+          45.8624267578125,
+          0.0
+        ],
+        "takeoff_speed_xy": 363.7416879109712,
+        "shot_delay_ms": 925,
+        "shot_position": [
+          -220.3761444091797,
+          -390.1603088378906,
+          450.39544677734375
+        ],
+        "shot_viewangles": [
+          86.5008544921875,
+          89.6923828125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1575,
+        "pickup_position": [
+          -195.8504638671875,
+          2.9502835273742676,
+          537.333984375
+        ],
+        "height_to_pickup": 129.208984375,
+        "health_before": 100,
+        "armor_before": 49,
+        "actor": "agent",
+        "demo_sha256": "2e86284edd89496cbb6d89c4e322c1393909b11b19a96c7a072a62d9dbbf538c",
+        "pickup_ms": 201800,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          363.7416879109712,
+          389.7259388915358
+        ],
+        "shot_delay_ms": [
+          800,
+          925
+        ],
+        "pickup_delay_ms": [
+          1575,
+          2250
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -5,
+        -6,
+        6
+      ],
+      "successful_observed_pickups": 3,
+      "distinct_demos": 3,
+      "actors": {
+        "agent": 2,
+        "nekitz0r": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 357775,
+        "takeoff_position": [
+          -302.4029541015625,
+          -353.9217529296875,
+          409.125
+        ],
+        "takeoff_velocity": [
+          239.22393798828125,
+          225.1873779296875,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          35.6781005859375,
+          -33.64013671875,
+          0.0
+        ],
+        "takeoff_speed_xy": 328.53835040291557,
+        "shot_delay_ms": 50,
+        "shot_position": [
+          -289.5953063964844,
+          -341.56195068359375,
+          419.2415771484375
+        ],
+        "shot_viewangles": [
+          38.12255859375,
+          -38.7213134765625,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 875,
+        "pickup_position": [
+          -168.89639282226562,
+          -19.31875991821289,
+          537.125
+        ],
+        "height_to_pickup": 128.0,
+        "health_before": 34,
+        "armor_before": 44,
+        "actor": "agent",
+        "demo_sha256": "2e86284edd89496cbb6d89c4e322c1393909b11b19a96c7a072a62d9dbbf538c",
+        "pickup_ms": 358650,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          324.0092569703385,
+          328.53835040291557
+        ],
+        "shot_delay_ms": [
+          25,
+          125
+        ],
+        "pickup_delay_ms": [
+          800,
+          1225
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -12,
+        6
+      ],
+      "successful_observed_pickups": 3,
+      "distinct_demos": 3,
+      "actors": {
+        "agent": 2,
+        "nekitz0r": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 595650,
+        "takeoff_position": [
+          -261.94952392578125,
+          -794.6334838867188,
+          408.125
+        ],
+        "takeoff_velocity": [
+          32.64045715332031,
+          371.8671875,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          12.7386474609375,
+          70.9771728515625,
+          0.0
+        ],
+        "takeoff_speed_xy": 373.29693888691065,
+        "shot_delay_ms": 925,
+        "shot_position": [
+          -178.36959838867188,
+          -400.7666931152344,
+          450.65997314453125
+        ],
+        "shot_viewangles": [
+          71.279296875,
+          101.40380859375,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1675,
+        "pickup_position": [
+          -161.36373901367188,
+          -9.539041519165039,
+          537.125
+        ],
+        "height_to_pickup": 129.0,
+        "health_before": 86,
+        "armor_before": 28,
+        "actor": "agent",
+        "demo_sha256": "6008245a6339095153e8ac7031bb30851a908a7bf78dfdedb410af908b9e5912",
+        "pickup_ms": 597325,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          366.76478966602843,
+          394.129276397917
+        ],
+        "shot_delay_ms": [
+          825,
+          925
+        ],
+        "pickup_delay_ms": [
+          1550,
+          1925
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        3,
+        -6,
+        1
+      ],
+      "successful_observed_pickups": 2,
+      "distinct_demos": 2,
+      "actors": {
+        "nekitz0r": 2
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 1030100,
+        "takeoff_position": [
+          203.11570739746094,
+          -409.3770446777344,
+          88.125
+        ],
+        "takeoff_velocity": [
+          -316.7600402832031,
+          45.49925994873047,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          87.890625,
+          171.3482666015625,
+          0.0
+        ],
+        "takeoff_speed_xy": 320.01110258254886,
+        "shot_delay_ms": 50,
+        "shot_position": [
+          189.49559020996094,
+          -407.41888427734375,
+          98.24158477783203
+        ],
+        "shot_viewangles": [
+          87.890625,
+          169.8980712890625,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 2375,
+        "pickup_position": [
+          -172.6726531982422,
+          -9.350878715515137,
+          563.8313598632812
+        ],
+        "height_to_pickup": 475.70635986328125,
+        "health_before": 73,
+        "armor_before": 105,
+        "actor": "nekitz0r",
+        "demo_sha256": "94b973f06bc5293a434775b31022474219277b57382403f4e1cf6d4ac9a7a57b",
+        "pickup_ms": 1032475,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.01110258254886,
+          320.1388607883275
+        ],
+        "shot_delay_ms": [
+          50,
+          50
+        ],
+        "pickup_delay_ms": [
+          2375,
+          2575
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -11,
+        6
+      ],
+      "successful_observed_pickups": 2,
+      "distinct_demos": 2,
+      "actors": {
+        "nekitz0r": 2
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 1335600,
+        "takeoff_position": [
+          -285.240478515625,
+          -687.6083984375,
+          408.125
+        ],
+        "takeoff_velocity": [
+          15.844308853149414,
+          384.6733703613281,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          1.790771484375,
+          98.8604736328125,
+          0.0
+        ],
+        "takeoff_speed_xy": 384.99953764670613,
+        "shot_delay_ms": 775,
+        "shot_position": [
+          -240.82110595703125,
+          -353.25152587890625,
+          430.3778991699219
+        ],
+        "shot_viewangles": [
+          85.2154541015625,
+          69.620361328125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1825,
+        "pickup_position": [
+          -141.5230712890625,
+          -7.473784923553467,
+          568.4481201171875
+        ],
+        "height_to_pickup": 160.3231201171875,
+        "health_before": 100,
+        "armor_before": 2,
+        "actor": "nekitz0r",
+        "demo_sha256": "d3f801eb0c5c529639337570207e5d5789128700b56d3b6ae276a594e239f1d5",
+        "pickup_ms": 1337425,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          343.9546123385992,
+          384.99953764670613
+        ],
+        "shot_delay_ms": [
+          775,
+          900
+        ],
+        "pickup_delay_ms": [
+          1600,
+          1825
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -10,
+        6
+      ],
+      "successful_observed_pickups": 2,
+      "distinct_demos": 2,
+      "actors": {
+        "nekitz0r": 2
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 21904075,
+        "takeoff_position": [
+          -267.4066467285156,
+          -640.9749755859375,
+          408.125
+        ],
+        "takeoff_velocity": [
+          157.0600128173828,
+          288.167724609375,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          -4.4219970703125,
+          93.58154296875,
+          0.0
+        ],
+        "takeoff_speed_xy": 328.18970905977693,
+        "shot_delay_ms": 750,
+        "shot_position": [
+          -178.04534912109375,
+          -381.657470703125,
+          421.3434143066406
+        ],
+        "shot_viewangles": [
+          78.837890625,
+          75.4925537109375,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1700,
+        "pickup_position": [
+          -152.0665283203125,
+          5.259718418121338,
+          567.5896606445312
+        ],
+        "height_to_pickup": 159.46466064453125,
+        "health_before": 57,
+        "armor_before": 92,
+        "actor": "nekitz0r",
+        "demo_sha256": "3d51bc587319ce43e621f07de4e8e80c66178cd2a9a9adbbfee1862e15f384f5",
+        "pickup_ms": 21905775,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          328.18970905977693,
+          371.278951579546
+        ],
+        "shot_delay_ms": [
+          750,
+          825
+        ],
+        "pickup_delay_ms": [
+          1700,
+          2225
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -2,
+        -5,
+        6
+      ],
+      "successful_observed_pickups": 2,
+      "distinct_demos": 2,
+      "actors": {
+        "agent": 1,
+        "nekitz0r": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 4316475,
+        "takeoff_position": [
+          -159.3377685546875,
+          -326.6100158691406,
+          408.125
+        ],
+        "takeoff_velocity": [
+          15.701929092407227,
+          319.6864013671875,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          82.4688720703125,
+          88.4014892578125,
+          0.0
+        ],
+        "takeoff_speed_xy": 320.07178225567696,
+        "shot_delay_ms": 50,
+        "shot_position": [
+          -158.57662963867188,
+          -310.8507385253906,
+          417.75238037109375
+        ],
+        "shot_viewangles": [
+          87.890625,
+          86.0943603515625,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 975,
+        "pickup_position": [
+          -187.6892547607422,
+          40.874996185302734,
+          587.0763549804688
+        ],
+        "height_to_pickup": 178.95135498046875,
+        "health_before": 122,
+        "armor_before": 28,
+        "actor": "nekitz0r",
+        "demo_sha256": "fc2e1685605ed73932647ce375e08c1aecd284ff28a2d2201c6a07da45381c81",
+        "pickup_ms": 4317450,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.07178225567696,
+          342.4806015296021
+        ],
+        "shot_delay_ms": [
+          50,
+          275
+        ],
+        "pickup_delay_ms": [
+          775,
+          975
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -5,
+        -3,
+        6
+      ],
+      "successful_observed_pickups": 2,
+      "distinct_demos": 2,
+      "actors": {
+        "agent": 2
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 174775,
+        "takeoff_position": [
+          -298.4848327636719,
+          -206.46646118164062,
+          408.125
+        ],
+        "takeoff_velocity": [
+          207.41433715820312,
+          184.7232208251953,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          34.1290283203125,
+          -13.7933349609375,
+          0.0
+        ],
+        "takeoff_speed_xy": 277.74696320718004,
+        "shot_delay_ms": 25,
+        "shot_position": [
+          -291.702392578125,
+          -200.1070098876953,
+          415.7636413574219
+        ],
+        "shot_viewangles": [
+          37.825927734375,
+          -15.3973388671875,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 850,
+        "pickup_position": [
+          -190.20419311523438,
+          -14.62120532989502,
+          539.0994262695312
+        ],
+        "height_to_pickup": 130.97442626953125,
+        "health_before": 82,
+        "armor_before": 76,
+        "actor": "agent",
+        "demo_sha256": "969791191e1c04ee8385495b2107cbcf16dc2421dea409a7855236e6395e9104",
+        "pickup_ms": 175625,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          270.01005900676773,
+          277.74696320718004
+        ],
+        "shot_delay_ms": [
+          25,
+          50
+        ],
+        "pickup_delay_ms": [
+          825,
+          850
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -4,
+        -9,
+        6
+      ],
+      "successful_observed_pickups": 2,
+      "distinct_demos": 2,
+      "actors": {
+        "nekitz0r": 2
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 1367550,
+        "takeoff_position": [
+          -245.7761688232422,
+          -584.3564453125,
+          408.125
+        ],
+        "takeoff_velocity": [
+          41.72438049316406,
+          317.30096435546875,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          6.416015625,
+          83.3258056640625,
+          0.0
+        ],
+        "takeoff_speed_xy": 320.0325388276148,
+        "shot_delay_ms": 700,
+        "shot_position": [
+          -218.6155242919922,
+          -359.8763122558594,
+          410.4079284667969
+        ],
+        "shot_viewangles": [
+          87.890625,
+          79.2938232421875,
+          0.0
+        ],
+        "shot_count": 2,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1675,
+        "pickup_position": [
+          -178.6561737060547,
+          -19.379661560058594,
+          537.125
+        ],
+        "height_to_pickup": 129.0,
+        "health_before": 100,
+        "armor_before": 20,
+        "actor": "nekitz0r",
+        "demo_sha256": "8ca10a0ddcc95de7c47950a3bf5cad791c92e41dc6926e0a6af810be9a4aea87",
+        "pickup_ms": 1369225,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          320.0325388276148,
+          330.9280445785134
+        ],
+        "shot_delay_ms": [
+          700,
+          800
+        ],
+        "pickup_delay_ms": [
+          1675,
+          2175
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "plasmajump",
+      "takeoff_grid": [
+        -5,
+        -3,
+        6
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "agent": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 462400,
+        "takeoff_position": [
+          -288.3267822265625,
+          -194.49075317382812,
+          408.2787170410156
+        ],
+        "takeoff_velocity": [
+          -226.55337524414062,
+          264.75531005859375,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          56.7388916015625,
+          170.7110595703125,
+          0.0
+        ],
+        "takeoff_speed_xy": 348.4563186953775,
+        "shot_delay_ms": 25,
+        "shot_position": [
+          -293.62359619140625,
+          -188.30282592773438,
+          410.7213134765625
+        ],
+        "shot_viewangles": [
+          60.216064453125,
+          178.2806396484375,
+          0.0
+        ],
+        "shot_count": 3,
+        "shot_span_ms": 200,
+        "pickup_delay_ms": 875,
+        "pickup_position": [
+          -192.58663940429688,
+          -7.607466697692871,
+          537.125
+        ],
+        "height_to_pickup": 128.84628295898438,
+        "health_before": 48,
+        "armor_before": 0,
+        "actor": "agent",
+        "demo_sha256": "08d4f88683f246b6478538ec3f7db5b05f51240b4f6a5c3a79ac4ea0709d2747",
+        "pickup_ms": 463275,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          348.4563186953775,
+          348.4563186953775
+        ],
+        "shot_delay_ms": [
+          25,
+          25
+        ],
+        "pickup_delay_ms": [
+          875,
+          875
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -5,
+        -11,
+        6
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "nekitz0r": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 1192850,
+        "takeoff_position": [
+          -310.27935791015625,
+          -717.18310546875,
+          408.3507385253906
+        ],
+        "takeoff_velocity": [
+          107.58318328857422,
+          351.4324951171875,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          2.8564453125,
+          57.4420166015625,
+          0.0
+        ],
+        "takeoff_speed_xy": 367.53086938486535,
+        "shot_delay_ms": 850,
+        "shot_position": [
+          -244.72793579101562,
+          -380.91455078125,
+          441.29058837890625
+        ],
+        "shot_viewangles": [
+          87.890625,
+          73.8116455078125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1700,
+        "pickup_position": [
+          -175.61953735351562,
+          36.295555114746094,
+          567.6838989257812
+        ],
+        "height_to_pickup": 159.33316040039062,
+        "health_before": 136,
+        "armor_before": 111,
+        "actor": "nekitz0r",
+        "demo_sha256": "308bf182f8098bdcea431c59acf132d0c8fd4fc7f403a9e41db1b3a289649061",
+        "pickup_ms": 1194550,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          367.53086938486535,
+          367.53086938486535
+        ],
+        "shot_delay_ms": [
+          850,
+          850
+        ],
+        "pickup_delay_ms": [
+          1700,
+          1700
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        5,
+        -4,
+        1
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "nekitz0r": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 152475,
+        "takeoff_position": [
+          309.67889404296875,
+          -253.50735473632812,
+          88.27530670166016
+        ],
+        "takeoff_velocity": [
+          -325.8516540527344,
+          -110.87316131591797,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          67.6263427734375,
+          126.551513671875,
+          0.0
+        ],
+        "takeoff_speed_xy": 344.19784768224287,
+        "shot_delay_ms": 50,
+        "shot_position": [
+          294.62799072265625,
+          -257.1202392578125,
+          95.15489959716797
+        ],
+        "shot_viewangles": [
+          87.890625,
+          56.151123046875,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 2575,
+        "pickup_position": [
+          -166.47879028320312,
+          -11.487714767456055,
+          566.15185546875
+        ],
+        "height_to_pickup": 477.87654876708984,
+        "health_before": 129,
+        "armor_before": 0,
+        "actor": "nekitz0r",
+        "demo_sha256": "32699d39cbfb61e4d220ce5b029b9396b9e5e3a54611df835deb11d8e664a7ac",
+        "pickup_ms": 155050,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          344.19784768224287,
+          344.19784768224287
+        ],
+        "shot_delay_ms": [
+          50,
+          50
+        ],
+        "pickup_delay_ms": [
+          2575,
+          2575
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -3,
+        -9,
+        6
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "nekitz0r": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 22054925,
+        "takeoff_position": [
+          -220.0891571044922,
+          -552.0046997070312,
+          408.1390075683594
+        ],
+        "takeoff_velocity": [
+          -26.038162231445312,
+          341.1268005371094,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          51.2457275390625,
+          -100.601806640625,
+          0.0
+        ],
+        "takeoff_speed_xy": 342.1191019763086,
+        "shot_delay_ms": 50,
+        "shot_position": [
+          -222.18646240234375,
+          -534.0025634765625,
+          419.2243957519531
+        ],
+        "shot_viewangles": [
+          77.8765869140625,
+          -105.5181884765625,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1100,
+        "pickup_position": [
+          -179.83714294433594,
+          -8.497574806213379,
+          537.2714233398438
+        ],
+        "height_to_pickup": 129.13241577148438,
+        "health_before": 83,
+        "armor_before": 185,
+        "actor": "nekitz0r",
+        "demo_sha256": "3d51bc587319ce43e621f07de4e8e80c66178cd2a9a9adbbfee1862e15f384f5",
+        "pickup_ms": 22056025,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          342.1191019763086,
+          342.1191019763086
+        ],
+        "shot_delay_ms": [
+          50,
+          50
+        ],
+        "pickup_delay_ms": [
+          1100,
+          1100
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        4,
+        -4,
+        1
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "nekitz0r": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 2164225,
+        "takeoff_position": [
+          268.1017150878906,
+          -255.0928192138672,
+          88.125
+        ],
+        "takeoff_velocity": [
+          -349.4909973144531,
+          -29.317766189575195,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          87.890625,
+          95.1800537109375,
+          0.0
+        ],
+        "takeoff_speed_xy": 350.7185319001516,
+        "shot_delay_ms": 25,
+        "shot_position": [
+          258.61895751953125,
+          -255.5412139892578,
+          94.23839569091797
+        ],
+        "shot_viewangles": [
+          87.890625,
+          47.691650390625,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 2700,
+        "pickup_position": [
+          -156.09536743164062,
+          39.20691680908203,
+          568.7364501953125
+        ],
+        "height_to_pickup": 480.6114501953125,
+        "health_before": 82,
+        "armor_before": 14,
+        "actor": "nekitz0r",
+        "demo_sha256": "55c921b585f78109ecd473e06becb53952b8db4999927ace6d282b7aa437d991",
+        "pickup_ms": 2166925,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          350.7185319001516,
+          350.7185319001516
+        ],
+        "shot_delay_ms": [
+          25,
+          25
+        ],
+        "pickup_delay_ms": [
+          2700,
+          2700
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        10,
+        -4,
+        1
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "agent": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 98725,
+        "takeoff_position": [
+          609.9713745117188,
+          -248.97418212890625,
+          88.32965850830078
+        ],
+        "takeoff_velocity": [
+          -377.7579040527344,
+          -0.22452545166015625,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          19.75341796875,
+          -169.3267822265625,
+          0.0
+        ],
+        "takeoff_speed_xy": 377.7579707775778,
+        "shot_delay_ms": 725,
+        "shot_position": [
+          298.9753112792969,
+          -237.87086486816406,
+          91.36740112304688
+        ],
+        "shot_viewangles": [
+          75.3936767578125,
+          -164.90478515625,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 3500,
+        "pickup_position": [
+          -194.6641845703125,
+          -11.388327598571777,
+          537.3527221679688
+        ],
+        "height_to_pickup": 449.02306365966797,
+        "health_before": 200,
+        "armor_before": 198,
+        "actor": "agent",
+        "demo_sha256": "6212c58702a1333d8982e8c70017f073332e7534976e0910749d2b953fae5783",
+        "pickup_ms": 102225,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          377.7579707775778,
+          377.7579707775778
+        ],
+        "shot_delay_ms": [
+          725,
+          725
+        ],
+        "pickup_delay_ms": [
+          3500,
+          3500
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -6,
+        -12,
+        6
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "agent": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 472350,
+        "takeoff_position": [
+          -368.3399963378906,
+          -752.5779418945312,
+          408.3016052246094
+        ],
+        "takeoff_velocity": [
+          237.47427368164062,
+          311.35589599609375,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          19.302978515625,
+          48.9715576171875,
+          0.0
+        ],
+        "takeoff_speed_xy": 391.5820790487648,
+        "shot_delay_ms": 975,
+        "shot_position": [
+          -207.09857177734375,
+          -332.4812927246094,
+          452.9725036621094
+        ],
+        "shot_viewangles": [
+          86.6876220703125,
+          98.28369140625,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1475,
+        "pickup_position": [
+          -165.43194580078125,
+          -16.256011962890625,
+          537.125
+        ],
+        "height_to_pickup": 128.82339477539062,
+        "health_before": 60,
+        "armor_before": 51,
+        "actor": "agent",
+        "demo_sha256": "71f373a0bcd14a24b729ee0b490e08244178c6fd0c92ccdc6b69a19453c8271e",
+        "pickup_ms": 473825,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          391.5820790487648,
+          391.5820790487648
+        ],
+        "shot_delay_ms": [
+          975,
+          975
+        ],
+        "pickup_delay_ms": [
+          1475,
+          1475
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -6,
+        -13,
+        6
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "agent": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 3772525,
+        "takeoff_position": [
+          -369.0162048339844,
+          -800.9988403320312,
+          408.125
+        ],
+        "takeoff_velocity": [
+          255.46487426757812,
+          278.27398681640625,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          14.9139404296875,
+          35.9088134765625,
+          0.0
+        ],
+        "takeoff_speed_xy": 377.7548328257985,
+        "shot_delay_ms": 900,
+        "shot_position": [
+          -213.4430389404297,
+          -425.2441711425781,
+          446.5579833984375
+        ],
+        "shot_viewangles": [
+          83.1610107421875,
+          101.14013671875,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1625,
+        "pickup_position": [
+          -160.80520629882812,
+          -11.13166618347168,
+          561.8027954101562
+        ],
+        "height_to_pickup": 153.67779541015625,
+        "health_before": 100,
+        "armor_before": 157,
+        "actor": "agent",
+        "demo_sha256": "8ad4801e71976cf30406c41aead8e4b048910cdede4a192b355191a9ce077b2b",
+        "pickup_ms": 3774150,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          377.7548328257985,
+          377.7548328257985
+        ],
+        "shot_delay_ms": [
+          900,
+          900
+        ],
+        "pickup_delay_ms": [
+          1625,
+          1625
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        3,
+        -1,
+        1
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "agent": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 44226525,
+        "takeoff_position": [
+          221.42446899414062,
+          -74.30400085449219,
+          88.3683090209961
+        ],
+        "takeoff_velocity": [
+          -303.3492736816406,
+          -108.63259887695312,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          75.1739501953125,
+          -162.8448486328125,
+          0.0
+        ],
+        "takeoff_speed_xy": 322.2139403904491,
+        "shot_delay_ms": 50,
+        "shot_position": [
+          206.5037841796875,
+          -78.23652648925781,
+          97.50330352783203
+        ],
+        "shot_viewangles": [
+          74.8443603515625,
+          -162.9766845703125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 2350,
+        "pickup_position": [
+          -189.97494506835938,
+          -11.24450397491455,
+          537.125
+        ],
+        "height_to_pickup": 448.7566909790039,
+        "health_before": 128,
+        "armor_before": 128,
+        "actor": "agent",
+        "demo_sha256": "d5146a13cf4957273c193a6ba09854accd8d051a9a30c5a7eede9cd997b6827d",
+        "pickup_ms": 44228875,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          322.2139403904491,
+          322.2139403904491
+        ],
+        "shot_delay_ms": [
+          50,
+          50
+        ],
+        "pickup_delay_ms": [
+          2350,
+          2350
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        4,
+        -6,
+        1
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "agent": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 44282525,
+        "takeoff_position": [
+          233.31297302246094,
+          -376.4896240234375,
+          88.35297393798828
+        ],
+        "takeoff_velocity": [
+          -334.41424560546875,
+          -31.36974334716797,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          69.43359375,
+          -171.2164306640625,
+          0.0
+        ],
+        "takeoff_speed_xy": 335.88234318216547,
+        "shot_delay_ms": 50,
+        "shot_position": [
+          218.89927673339844,
+          -376.3756408691406,
+          93.95157623291016
+        ],
+        "shot_viewangles": [
+          71.6802978515625,
+          -173.3917236328125,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 2250,
+        "pickup_position": [
+          -124.8447036743164,
+          39.29580307006836,
+          537.125
+        ],
+        "height_to_pickup": 448.7720260620117,
+        "health_before": 78,
+        "armor_before": 143,
+        "actor": "agent",
+        "demo_sha256": "d5146a13cf4957273c193a6ba09854accd8d051a9a30c5a7eede9cd997b6827d",
+        "pickup_ms": 44284775,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          335.88234318216547,
+          335.88234318216547
+        ],
+        "shot_delay_ms": [
+          50,
+          50
+        ],
+        "pickup_delay_ms": [
+          2250,
+          2250
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    },
+    {
+      "kind": "rocketjump",
+      "takeoff_grid": [
+        -5,
+        -10,
+        6
+      ],
+      "successful_observed_pickups": 1,
+      "distinct_demos": 1,
+      "actors": {
+        "nekitz0r": 1
+      },
+      "repetition_band": 0,
+      "exemplar": {
+        "takeoff_ms": 1070275,
+        "takeoff_position": [
+          -309.9183044433594,
+          -657.470703125,
+          408.2787780761719
+        ],
+        "takeoff_velocity": [
+          206.12440490722656,
+          274.38946533203125,
+          0.0
+        ],
+        "takeoff_viewangles": [
+          17.567138671875,
+          29.267578125,
+          0.0
+        ],
+        "takeoff_speed_xy": 343.18631817652096,
+        "shot_delay_ms": 875,
+        "shot_position": [
+          -195.54844665527344,
+          -337.55242919921875,
+          443.4535827636719
+        ],
+        "shot_viewangles": [
+          87.890625,
+          76.9482421875,
+          0.0
+        ],
+        "shot_count": 1,
+        "shot_span_ms": 0,
+        "pickup_delay_ms": 1675,
+        "pickup_position": [
+          -132.55548095703125,
+          40.48165512084961,
+          571.4320678710938
+        ],
+        "height_to_pickup": 163.15328979492188,
+        "health_before": 100,
+        "armor_before": 0,
+        "actor": "nekitz0r",
+        "demo_sha256": "e2c9bf6bbc5dd959c4f157aacb834a32df9a13303f897e1d515ea141419364db",
+        "pickup_ms": 1071950,
+        "game_state_number": 1
+      },
+      "observed_ranges": {
+        "takeoff_speed_xy": [
+          343.18631817652096,
+          343.18631817652096
+        ],
+        "shot_delay_ms": [
+          875,
+          875
+        ],
+        "pickup_delay_ms": [
+          1675,
+          1675
+        ]
+      },
+      "self_damage_causality_verified": false,
+      "collision_geometry_verified": false,
+      "live_bot_pickup_verified": false,
+      "automatic_execution_enabled": false
+    }
+  ],
+  "rejected": {
+    "discontinuous_window": 71,
+    "no_platform_ascent": 4,
+    "no_observed_takeoff": 1
+  },
+  "note": "Successful recorded pickups with candidate boost signatures. No success denominator or runtime acceptance is implied."
+}

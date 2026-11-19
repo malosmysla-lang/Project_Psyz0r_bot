@@ -11,6 +11,7 @@ const char* mood_name(Mood mood) {
 }
 int main(int argc,char** argv) {
     try {
+        std::cout<<"Psyz0r "<<PSYZ_VERSION_LABEL<<" (offline sandbox)\n";
         auto settings=argc>2?BehaviorSettings::load(argv[2]):BehaviorSettings{};
         Behavior bot(Style::Aggressive,settings);
         Observation seen; seen.time=30; seen.enemy_visible=true; seen.damage_dealt=85;
@@ -29,7 +30,7 @@ int main(int argc,char** argv) {
             movement.update(input);input.own.server_time_ms+=50;
             auto motion=movement.update(input);
             if(log.is_open()) {
-                log<<"{\"mode\":\"offline_scenario\",\"bot\":\"Psyz0r_bot\",\"scenario_id\":"<<id
+                log<<"{\"mode\":\"offline_scenario\",\"build_version\":\""<<PSYZ_VERSION_LABEL<<"\",\"bot\":\"Psyz0r_bot\",\"scenario_id\":"<<id
                    <<",\"time\":"<<o.time<<",\"mood\":\""<<mood_name(d.mood)<<"\",\"reason\":\""<<d.reason
                    <<"\",\"intent\":"<<static_cast<int>(d.intent)<<",\"weapon\":"<<static_cast<int>(d.weapon)
                    <<",\"collect_resources\":"<<(d.collect_resources?"true":"false")

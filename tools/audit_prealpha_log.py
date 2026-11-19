@@ -6,6 +6,18 @@ import re
 from pathlib import Path
 
 
+def jump_success(fields):
+    if 'outcome' in fields:
+        try:
+            return (fields['outcome']=='target_pickup' and fields.get('pickup')=='1'
+                    and 0<=int(fields['target'])<1024 and 0<=int(fields['actor'])<64)
+        except (KeyError,ValueError,TypeError):
+            return False
+    # Preserve historical interpretation explicitly; these results are not
+    # accepted V2 target-pickup evidence.
+    return fields.get('higher')=='1' or fields.get('pickup')=='1'
+
+
 def summarize(path):
     data = path.read_bytes()
     lines = data.decode('utf-8', errors='replace').splitlines()
@@ -21,7 +33,8 @@ def summarize(path):
         if line.startswith('PSYZ_PICKUP ') and all(k in fields for k in ('t', 'entity', 'class')):
             pickups.append(fields)
         elif line.startswith('PSYZ_RJ_END '):
-            fields['success'] = fields.get('higher') == '1' or fields.get('pickup') == '1'
+            fields['success'] = jump_success(fields)
+            fields['success_criterion'] = 'target_pickup' if 'outcome' in fields else 'legacy_height_or_pickup'
             jumps.append(fields)
         elif line.startswith('PSYZ_DEMO_ROUTE '):
             routes.append(fields)
@@ -39,6 +52,7 @@ def summarize(path):
         strafe_command_observations=strafes,
         rocketjump_results=jumps,
         rocketjump_successes=sum(j['success'] for j in jumps),
+        verified_target_pickup_successes=sum(j['success'] and j['success_criterion']=='target_pickup' for j in jumps),
         repath_count=len(repaths),
         opening_events=openings,
         integration_errors=integration_errors,

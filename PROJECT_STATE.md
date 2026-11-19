@@ -1,4 +1,25 @@
-# Runtime verification — 2026-10-25
+# Current source — V2.0.0-red_rj_instruction / 19.11.2026
+
+Isolated branch `codex/psyz0r-v2-red-rj`, base `1b52d27`. Current item F01,
+substage A: correct target-pickup acceptance and evidence preparation. Native
+regression scenarios and demo audit tests pass locally: 19 CTest + 172 Python.
+Previous runtime/experimental gates were not changed; no new native deployment.
+
+Red evidence: 267 selected demos, 265 validated dm_91 exports and two preserved
+unsupported protocols. Observed target-player pickups: nekitz0r 803, AGENT 321,
+PsyRoZ 9. Initial detector: 321 rocket and five plasma candidate sequences;
+these are not verified self-damage or accepted robot execution. The candidate
+bank retains original exemplar coordinates, not invented averaged movements.
+
+All-map Xaero intake: 142 preserved demos exported; 130 suitable scoreboards
+(75 completed, 55 incomplete/forfeit). Additional filename-only candidates are
+retained separately. Never merge training data into human server rankings.
+
+See docs/V2_0_0_RED_RJ_INSTRUCTION_RU.md and docs/Q3_LEARNING_V2_RU.md. Later
+fixes, high-ground control, forced eligible combos/revenge, early probabilistic
+FF and a trained opponent model are pending; they are not enabled by this stage.
+
+# Runtime verification — 2026-10-25 (historical)
 
 One actual SG switch confirmed, LG branch still requires match coverage. Lab returned to empty stock standby; fix temporary Python-loader errors before full evaluation. Zero of the new 1000 acceptance matches completed.
 

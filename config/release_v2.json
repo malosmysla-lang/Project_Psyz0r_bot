@@ -1,0 +1,11 @@
+{
+  "version": "V2.0.0-red_rj_instruction",
+  "stage": "development",
+  "source_base_commit": "1b52d27",
+  "previous_documented_runtime": "0.9.0-rc2",
+  "game_runtime_deployed": false,
+  "current_item": "V2-F01",
+  "current_substage": "target-pickup-verification-and-demo-evidence",
+  "trained_model_connected": false,
+  "automatic_route_enable": false
+}

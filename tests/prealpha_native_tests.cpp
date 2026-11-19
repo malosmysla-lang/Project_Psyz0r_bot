@@ -46,7 +46,38 @@ static void reset(){
  auto p=pop;auto u=push;auto g=get_item;memcpy(imports_memory+0x468,&p,sizeof(p));memcpy(imports_memory+0x460,&u,sizeof(u));memcpy(imports_memory+0x4d0,&g,sizeof(g));
 }
 static void goal(unsigned char *out,int id,int area,const float *position){memset(out,0,64);memcpy(out,position,12);memcpy(out+12,&area,4);memcpy(out+40,&id,4);int flags=1;memcpy(out+48,&flags,4);}
+static void take_item(gentity_t *item,gentity_t*,trace_t*){item->r.contents=0;}
+static void target_jump(){
+ reset();psyz_real_touch=take_item;
+ psyz_rj=0;psyz_rj_phase=1;psyz_rj_time=19500;psyz_rj_attempt_since=19500;
+ psyz_rj_target=200;psyz_rj_actor=0;psyz_rj_ground=1;psyz_rj_start_z=0;
+ psyz_last_move_time=19975;client.ps.origin[2]=128;client.ps.weapon=5;
+ world[200].inuse=1;world[200].s.number=200;world[200].r.contents=1;world[200].item=&red;
+ world[201].inuse=1;world[201].s.number=201;world[201].r.contents=1;world[201].item=&mega;
+}
 int main(){try{
+ target_jump();Psyz_PreAlphaMove(&world[0]);
+ check(psyz_rj==0 && psyz_rj_phase==2 && psyz_rj_landed_higher,"Higher landing alone cannot complete the target-resource route");
+ client.pers.cmd.serverTime=20025;Psyz_PreAlphaTouch(&world[201],&world[0],nullptr);
+ Psyz_PreAlphaMove(&world[0]);
+ check(psyz_rj==0 && !Psyz_RJTargetPickupConfirmed(20025),"An unrelated Mega pickup cannot complete a Red route");
+ client.pers.cmd.serverTime=20050;Psyz_PreAlphaTouch(&world[200],&world[0],nullptr);
+ check(Psyz_RJTargetPickupConfirmed(20050),"Actual target pickup is latched before the current goal changes");
+ // A later pickup must not erase the positive target evidence.
+ world[201].r.contents=1;Psyz_PreAlphaTouch(&world[201],&world[0],nullptr);
+ Psyz_PreAlphaMove(&world[0]);
+ check(psyz_rj<0,"Only the target pickup completes the route even after another item is collected");
+ target_jump();Psyz_PreAlphaMove(&world[0]);
+ client.pers.cmd.serverTime=21500;psyz_last_move_time=21475;Psyz_PreAlphaMove(&world[0]);
+ check(psyz_rj<0 && !Psyz_RJTargetPickupConfirmed(21500),"Landing without the target ends in bounded failure rather than a false success");
+ target_jump();Client other=client;world[1].client=&other;world[1].s.number=1;world[1].r.svFlags=8;
+ other.pers.cmd.serverTime=20000;Psyz_PreAlphaTouch(&world[200],&world[1],nullptr);
+ check(!Psyz_RJTargetPickupConfirmed(20000),"Another bot taking the target cannot satisfy this actor's jump");
+ target_jump();psyz_rj_target_picked_at=19499;
+ check(!Psyz_RJTargetPickupConfirmed(20000),"Pickup from before the attempt is rejected");
+ psyz_rj_target_picked_at=20001;check(!Psyz_RJTargetPickupConfirmed(20000),"A future pickup timestamp is rejected");
+ psyz_rj_phase=2;psyz_rj_landed_at=20000;psyz_rj_target_picked_at=21501;
+ check(!Psyz_RJTargetPickupConfirmed(21501),"Pickup after the landing deadline is not credited to this jump");
  reset();client.ps.pm_type=5;client.pers.cmd.forwardmove=127;psyz_goal_target=119;
  for(int t=20000;t<30000;t+=100){client.pers.cmd.serverTime=t;Psyz_PreAlphaMove(&world[0]);}
  check(psyz_stock_escape_until==0,"Fixed intermission camera never triggers navigation recovery");
