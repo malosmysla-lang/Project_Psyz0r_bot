@@ -10,6 +10,26 @@ LOG = HOME / 'console.log'
 OUT = Path('/home/qlserver/psyz0r-bot/jump-probes-072')
 
 
+def probe_result(text, probe):
+    sample=probe-1
+    result=dict(probe=probe,sample=sample,begins=0,successes=0,endings=0)
+    for line in text.splitlines():
+        fields=dict(re.findall(r'(\w+)=([^\s]+)',line))
+        if fields.get('sample')!=str(sample):
+            continue
+        if line.startswith('PSYZ_RJ_BEGIN '):
+            result['begins']+=1
+        elif line.startswith('PSYZ_RJ_END '):
+            result['endings']+=1
+            try:
+                success=(fields.get('outcome')=='target_pickup' and fields.get('pickup')=='1'
+                         and 0<=int(fields['target'])<1024 and 0<=int(fields['actor'])<64)
+            except (KeyError,ValueError):
+                success=False
+            result['successes']+=success
+    return result
+
+
 def command(value):
     with socket.socket(socket.AF_UNIX) as connection:
         connection.settimeout(3)
@@ -42,11 +62,7 @@ def main():
                 time.sleep(5)
                 status_without_human()
             text = LOG.read_bytes()[begin:].decode(errors='replace')
-            sample = probe - 1
-            results.append(dict(probe=probe, sample=sample,
-                begins=len(re.findall(fr'PSYZ_RJ_BEGIN[^\n]*sample={sample}(?:\s|$)', text)),
-                successes=len(re.findall(fr'PSYZ_RJ_END[^\n]*sample={sample}\s[^\n]*pickup=1\s+outcome=target_pickup(?:\s|$)', text)),
-                endings=len(re.findall(fr'PSYZ_RJ_END[^\n]*sample={sample}(?:\s|$)', text))))
+            results.append(probe_result(text,probe))
             (OUT / 'progress.json').write_text(json.dumps(results, indent=2))
     finally:
         command('set qlx_psyzRJProbe 0')

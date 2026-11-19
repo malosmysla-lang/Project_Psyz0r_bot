@@ -2,7 +2,7 @@
 
 Isolated branch `codex/psyz0r-v2-red-rj`, base `1b52d27`. Current item F01,
 substage A: correct target-pickup acceptance and evidence preparation. Native
-regression scenarios and demo audit tests pass locally: 19 CTest + 172 Python.
+regression scenarios and demo audit tests pass locally: 19 CTest + 174 Python.
 Previous runtime/experimental gates were not changed; no new native deployment.
 
 Red evidence: 267 selected demos, 265 validated dm_91 exports and two preserved

@@ -11,7 +11,7 @@ recordings privately and keep uncertain boost causality/geometry/live acceptance
 explicit. Record F01–F11, AI01 and the renewed Q3 source audit. The new release
 label is a development version; it does not relabel historical matches.
 
-Validation: MSVC build and 19/19 CTest scenarios; 172/172 Python tests. This is not
+Validation: MSVC build and 19/19 CTest scenarios; 174/174 Python tests. This is not
 a deployed game release or completed movement/adaptation feature set.
 
 # 2026-10-25 — bounded laboratory smoke check
