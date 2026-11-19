@@ -18,9 +18,10 @@
 
 > **Current development: V2.0.0-red_rj_instruction.**
 > [Owner requirements and staged implementation](docs/V2_0_0_RED_RJ_INSTRUCTION_RU.md).
-> F01-A fixes target-item confirmation and prepares observed red approaches.
-> [F01-A is deployed to training](docs/V2_DEPLOYMENT_20261119_RU.md);
-> new movement/replay remain disabled. Historical
+> [F01-B is deployed to training 27961](docs/V2_F01B_EXECUTION_RU.md): five RJ,
+> an AAS-guided teleporter-to-red route, circle/strafe and a bounded 360 turn.
+> Controlled physics and LG/SG firing passed; real duel acceptance is pending.
+> [Sanitized release evidence](docs/training/V2_F01B_RELEASE.json). Historical
 > results below keep their original versions and acceptance limits.
 
 Последнее дополнение10.10: [адаптация к силе/стилю соперника](docs/OPPONENT_ADAPTATION_SPEC_RU.md): многопризнаковая оценка, читаемые привычки, подготовленная контратака, «Крыса» иQA-план. Исходник сохранён; кодирование уточняется отдельно.

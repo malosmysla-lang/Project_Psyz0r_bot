@@ -1,0 +1,138 @@
+{
+  "version": "V2.0.0-red_rj_instruction",
+  "stage": "F01-B-r1",
+  "deployed_at": "2026-11-19T12:28:00.260743+00:00",
+  "host": "78.17.47.29",
+  "port": 27961,
+  "native_sha256": "4aaa449ade70b6b245c5f58de2adebef1678410307afc9a329aa1e40b8f378ac",
+  "flags": {
+    "qlx_psyzV2": 1,
+    "qlx_psyzV2JumpMask": 31,
+    "qlx_psyzV2Strafe": 1,
+    "qlx_psyzV2Spin": 1,
+    "qlx_psyzPreAlpha": 0,
+    "qlx_psyzFinish087": 1,
+    "qlx_psyzV2Lab": 0,
+    "all_lab_probes": 0
+  },
+  "validation": {
+    "python_tests": 179,
+    "ctest_scenarios": 19,
+    "linux_groups": 8,
+    "controlled_red_presets": 5,
+    "real_human_duel_acceptance": "pending"
+  },
+  "red_lab": {
+    "results": [
+      {
+        "preset": 0,
+        "setup": true,
+        "launch": true,
+        "shot": true,
+        "success": true,
+        "validated_native_sha256": "4aaa449ade70b6b245c5f58de2adebef1678410307afc9a329aa1e40b8f378ac",
+        "ending": [
+          "PSYZ_V2_RJ_END slot=0 t=21250 preset=0 target=117 outcome=target_pickup pickup_confirmed=1 pos=-192.11,-14.45,550.99"
+        ]
+      },
+      {
+        "preset": 1,
+        "setup": true,
+        "launch": true,
+        "shot": true,
+        "success": true,
+        "ending": [
+          "PSYZ_V2_RJ_END slot=0 t=21650 preset=1 target=117 outcome=target_pickup pickup_confirmed=1 pos=-191.99,-15.16,537.12"
+        ],
+        "validated_native_sha256": "0d08a9373191b0ff9599d22b9f15cc48e3c6eabc246d8feb3a9be96851cf03c0"
+      },
+      {
+        "preset": 2,
+        "setup": true,
+        "launch": true,
+        "shot": true,
+        "success": true,
+        "ending": [
+          "PSYZ_V2_RJ_END slot=0 t=21850 preset=2 target=117 outcome=target_pickup pickup_confirmed=1 pos=-172.58,-12.17,546.32"
+        ],
+        "validated_native_sha256": "0d08a9373191b0ff9599d22b9f15cc48e3c6eabc246d8feb3a9be96851cf03c0"
+      },
+      {
+        "preset": 3,
+        "setup": true,
+        "launch": true,
+        "shot": true,
+        "success": true,
+        "ending": [
+          "PSYZ_V2_RJ_END slot=0 t=22275 preset=3 target=117 outcome=target_pickup pickup_confirmed=1 pos=-195.17,-11.62,541.55"
+        ],
+        "validated_native_sha256": "0d08a9373191b0ff9599d22b9f15cc48e3c6eabc246d8feb3a9be96851cf03c0"
+      },
+      {
+        "preset": 4,
+        "setup": true,
+        "launch": true,
+        "shot": true,
+        "success": true,
+        "ending": [
+          "PSYZ_V2_RJ_END slot=0 t=22125 preset=4 target=117 outcome=target_pickup pickup_confirmed=1 pos=-160.79,18.22,588.83"
+        ],
+        "validated_native_sha256": "0d08a9373191b0ff9599d22b9f15cc48e3c6eabc246d8feb3a9be96851cf03c0"
+      }
+    ],
+    "unchanged_function_sha256": {
+      "Psyz_V2JumpMove": "c903cfb156b18a57421464b05a6d0643673375a3462f5cfb51bb7ad98d15a2b2",
+      "Psyz_V2Wish": "ff2bda275f772d2a55324dd27ba30c7bb042353296dc539b09c39c4b34e49af4",
+      "Psyz_V2View": "183c2281a35c6fbab70e99b0001f19560c7dffd8df8fbe5fe031d4af12c1c8b4",
+      "Psyz_V2CircleYaw": "0ec8cc7d7a6b319aa36cec18ccd6c86b3d13d04ccaa34f75ec7d6c870ff9bf8f",
+      "Psyz_V2Spin": "fa5a9934e3acbe33a6fb1a192bd3a3167ffbcc468bda667a127fa86396e3f9bd"
+    }
+  },
+  "motion_lab": {
+    "phase": "controlled_motion",
+    "circle_strafe_events": 13,
+    "measured_peak_speed": 536.97,
+    "completed_spin": true,
+    "actual_teleport_exit": true,
+    "red_pickups": 1,
+    "circle_spin_source_native_sha256": "4aaa449ade70b6b245c5f58de2adebef1678410307afc9a329aa1e40b8f378ac",
+    "tp_source_native_sha256": "4aaa449ade70b6b245c5f58de2adebef1678410307afc9a329aa1e40b8f378ac"
+  },
+  "weapon_lab": {
+    "results": [
+      {
+        "weapon": 6,
+        "ack": true,
+        "fired": true
+      },
+      {
+        "weapon": 3,
+        "ack": true,
+        "fired": true
+      }
+    ]
+  },
+  "lab_restored": {
+    "restored_empty_stock_standby": true,
+    "cfg_sha256": "63150aedad969355e57be47390dde7d62ee2f859c33d67ee822927f1b174e7c9",
+    "protected_services_unchanged": true
+  },
+  "evidence_archive_sha256": "9b14b810e578edf0a168c2eb29066ae9a8a725f29d82eb791fa91a57eeb3d808",
+  "site": {
+    "published_at": "2026-11-19T12:34:39.763912+00:00",
+    "sha256": {
+      "build-info.json": "a59e34e0e8a45cd4123f3f38d3a5dfa2eb49e49fe19ed0601a4a553680849ab9",
+      "bot/index.html": "fb074c3591ccf426db27b778fa6be252916ad3386a1979e3d1d73d657b860fa2"
+    },
+    "native_sha256": "4aaa449ade70b6b245c5f58de2adebef1678410307afc9a329aa1e40b8f378ac",
+    "accepted_presets": 5,
+    "unrelated_website_metadata_preserved": true
+  },
+  "limitations": [
+    "No trained adaptation model connected.",
+    "Four RJ results were retained from r9 after unchanged executor and preset hash checks; r11 rechecked preset 0 and all motion/combat fixtures.",
+    "No claim of complete human movement reproduction or final duel acceptance.",
+    "Intermittent external Steam UDP query timeouts; one 137-byte A2S INFO response was observed.",
+    "Plasma jump learning and remaining V2 backlog are still pending."
+  ]
+}

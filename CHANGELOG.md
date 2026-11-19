@@ -1,3 +1,19 @@
+# 2026-11-19 - deploy V2 F01-B-r1 to training 27961
+
+Use the latest owner duel (RA1 vs12, LG/SG zero shots) to correct goal control,
+minor combat detours and the weapon-switch lease through actual engine ACK.
+Enable five observed Red RJ presets, a 36-point pinned AAS teleporter route,
+ground circle acceleration, safe strafe and one bounded owner-derived 360.
+Keep item pickup independent of look direction; gate frontal pressure on
+100HP/100Armor and two usable core weapons. Ignore natural stack decay as damage.
+
+Validate eight Linux groups, 19 CTest scenarios and 179 Python tests. Empty LAB
+confirms five Red pickups, real TP-to-Red, a completed spin and actual LG/SG fire.
+Deploy only the empty training instance; preserve public rooms and restore LAB.
+Update bot metadata on the existing website; preserve unrelated site fields.
+Human match acceptance and all remaining V2 requirements are explicitly pending.
+See [execution](docs/V2_F01B_EXECUTION_RU.md) and [receipt](docs/training/V2_F01B_RELEASE.json).
+
 # 2026-11-19 — deploy V2 F01-A to empty training
 
 Recover the pinned rc2 native source, preserve its inherited opt-in code and build

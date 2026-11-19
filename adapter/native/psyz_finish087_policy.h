@@ -48,4 +48,21 @@ static PsyzFinish087Choice Psyz_Finish087Choose(const PsyzFinish087Input *c) {
     }
     return out;
 }
+/* V2 distance roles, using only a recent confirmed direct contact. */
+static PsyzFinish087Choice Psyz_FinishV2Choose(const PsyzFinish087Input *c){
+    PsyzFinish087Choice keep={c->current,PSYZ_F087_KEEP};
+    if(!c->ammo || !c->attack || c->age_ms<0 || c->age_ms>100 ||
+       !isfinite(c->distance) || !isfinite(c->turn_degrees) || c->distance<0 ||
+       c->turn_degrees<0 || c->turn_degrees>8 || c->own_health<=0 ||
+       c->target_health<=0 || c->target_armor<0)return keep;
+    PsyzFinish087Choice old=Psyz_Finish087Choose(c);
+    if(old.reason==PSYZ_F087_GAUNTLET)return old;
+    int effective=c->target_health+(c->target_armor<2*c->target_health?c->target_armor:2*c->target_health);
+    if(c->distance<150 && (c->weapons&(1<<3)) && c->ammo[3]>0){keep.weapon=3;keep.reason=PSYZ_F090_SHOTGUN;return keep;}
+    if(c->distance>=150 && c->distance<260 && c->own_health>=90 && (c->weapons&(1<<5)) && c->ammo[5]>0){keep.weapon=5;keep.reason=PSYZ_F087_ROCKET;return keep;}
+    if(c->last_weapon==6 && effective<=80 && c->distance>=450 && (c->weapons&(1<<7)) && c->ammo[7]>0){keep.weapon=7;keep.reason=PSYZ_F087_RAIL;return keep;}
+    if(c->distance>=192 && c->distance<=700 && c->own_health>=45 && (c->weapons&(1<<6)) && c->ammo[6]>=12){keep.weapon=6;keep.reason=PSYZ_F090_LIGHTNING;return keep;}
+    if(c->distance>700 && (c->weapons&(1<<7)) && c->ammo[7]>0){keep.weapon=7;keep.reason=PSYZ_F087_RAIL;return keep;}
+    return old;
+}
 #endif

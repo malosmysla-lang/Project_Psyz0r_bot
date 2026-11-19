@@ -1,3 +1,16 @@
+# Current runtime - V2.0.0-red_rj_instruction / F01-B-r1 / 19.11.2026
+
+Training 78.17.47.29:27961 uses native SHA
+4aaa449ade70b6b245c5f58de2adebef1678410307afc9a329aa1e40b8f378ac.
+V2=1, RJ mask31, strafe=1, spin=1; legacy PreAlpha/replay and all lab probes=0.
+Five owner-demo RJ presets, actual teleport exit to Red, circle/strafe/360 and
+LG/SG acknowledgement followed by real ammo expenditure passed controlled LAB.
+Four RJ results retain their r9 SHA; unchanged executor functions were checked
+before r11 deployment. Natural single-point decay no longer invents combat.
+Public rooms preserved; LAB restored to empty stock. Real owner duel and the
+remaining V2 backlog, including plasma and trained adaptation, remain pending.
+[Execution](docs/V2_F01B_EXECUTION_RU.md) / [receipt](docs/training/V2_F01B_RELEASE.json).
+
 # Current runtime — V2.0.0-red_rj_instruction / F01-A / 19.11.2026
 
 Training 78.17.47.29:27961 updated after fresh empty-room checks and verified local

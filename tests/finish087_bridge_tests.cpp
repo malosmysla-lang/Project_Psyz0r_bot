@@ -8,12 +8,12 @@
 #define MOD_LIGHTNING 6
 #define MOD_RAILGUN 7
 struct cvar_t{int integer;};
-struct usercmd_t{int serverTime,angles[3],buttons;unsigned char weapon;};
-struct playerState_t{int weapon,stats[4],ammo[16];float origin[3];};
+struct usercmd_t{int serverTime,angles[3],buttons;unsigned char weapon;signed char forwardmove;};
+struct playerState_t{int weapon,stats[4],ammo[16];float origin[3];int weaponTime;};
 struct Client{struct {usercmd_t cmd;} pers;playerState_t ps;};
 struct gentity_t{int health;struct {int number;} s;Client *client;bool ours;};
-static int port=27962,enabled=1;
-static cvar_t *Cvar_FindVar(const char *name){static cvar_t p,t,e;p.integer=port;t.integer=1;e.integer=enabled;return !strcmp(name,"net_port")?&p:!strcmp(name,"qlx_psyzFinish087")?&e:&t;}
+static int port=27962,enabled=1,v2=0;
+static cvar_t *Cvar_FindVar(const char *name){static cvar_t p,t,e,v;p.integer=port;t.integer=1;e.integer=enabled;v.integer=v2;return !strcmp(name,"net_port")?&p:!strcmp(name,"qlx_psyzFinish087")?&e:!strcmp(name,"qlx_psyzV2")?&v:&t;}
 static int Psyz_IsOurBot(const gentity_t *e){return e && e->ours;}
 static float Psyz_Distance(const float *a,const float *b){return std::sqrt((a[0]-b[0])*(a[0]-b[0])+(a[1]-b[1])*(a[1]-b[1])+(a[2]-b[2])*(a[2]-b[2]));}
 #include "../adapter/native/psyz_finish087.h"
@@ -31,5 +31,17 @@ int main(){
  Psyz_Finish087Hit(&victim,&one,100,MOD_LIGHTNING);port=27960;
  Psyz_Finish087Command(&one);assert(a.pers.cmd.weapon==6);
  port=27962;enabled=0;Psyz_Finish087Command(&one);assert(a.pers.cmd.weapon==6);
+ // A one-frame weapon request during rail recovery can be ignored by PM_Weapon.
+ enabled=1;v2=1;Psyz_Finish087Reset();a.ps.weapon=7;a.ps.weaponTime=1400;
+ a.ps.stats[STAT_WEAPONS]=(1<<6)|(1<<7);a.ps.ammo[6]=100;a.pers.cmd.weapon=7;
+ a.pers.cmd.serverTime=2000;victim.health=150;v.ps.origin[0]=450;
+ a.pers.cmd.forwardmove=127;
+ Psyz_Finish087Hit(&victim,&one,180,MOD_RAILGUN);Psyz_Finish087Command(&one);
+ assert(a.pers.cmd.weapon==6);
+ assert(a.pers.cmd.forwardmove==32);
+ for(int t=2100;t<=3400;t+=100){a.pers.cmd.serverTime=t;a.pers.cmd.weapon=7;Psyz_Finish087Command(&one);assert(a.pers.cmd.weapon==6);}
+ a.ps.weapon=6;a.pers.cmd.serverTime=3425;Psyz_Finish087Command(&one);
+ assert(psyz_finish087[0].pending_ack==3425);
+ a.pers.cmd.serverTime=4026;Psyz_Finish087Command(&one);assert(psyz_finish087[0].pending_weapon==0);
  std::puts("Finish087 two-bot isolation, consume-once and primary-port guards passed");
 }

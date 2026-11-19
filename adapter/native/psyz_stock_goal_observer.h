@@ -12,7 +12,9 @@ static int Psyz_GoalObserverEnabled(void) {
     cvar_t *test_var = Cvar_FindVar("qlx_psyzTestInstance");
     cvar_t *port_var = Cvar_FindVar("net_port");
     cvar_t *mode_var = Cvar_FindVar("qlx_psyzControlMode");
-    return test_var && test_var->integer == 1 && port_var && port_var->integer == 27961 &&
+    cvar_t *lab=Cvar_FindVar("qlx_psyzV2Lab"),*v2=Cvar_FindVar("qlx_psyzV2");
+    return test_var && test_var->integer == 1 && port_var &&
+           (port_var->integer == 27961 || (port_var->integer==27962 && lab && lab->integer==1 && v2 && v2->integer==1)) &&
            mode_var && mode_var->integer == 3;
 }
 static int Psyz_ObserveItemGoal(void *state, int travel_flags, void *goal) {
@@ -20,7 +22,9 @@ static int Psyz_ObserveItemGoal(void *state, int travel_flags, void *goal) {
     int result = psyz_original_item_goal(state, travel_flags, goal);
     if (result && goal && Psyz_GoalObserverEnabled()) {
 #ifdef PSYZ_PREALPHA
+        psyz_v2_reject_goal=0;
         Psyz_PreAlphaGoal(state,travel_flags,goal);
+        if(psyz_v2_reject_goal)result=0;
 #endif
         unsigned long long sequence = ++psyz_goal_observations;
         /* A bounded prefix only. Layout remains unverified; never cast to Q3 goal. */

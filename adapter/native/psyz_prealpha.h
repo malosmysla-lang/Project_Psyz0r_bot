@@ -186,7 +186,9 @@ static int Psyz_JumpAutoAllowed(int sample){
     return sample==0 || (experimental && experimental->integer==1);
 }
 #include "psyz_opening.h"
+static void Psyz_V2Reset(void);
 static void Psyz_PreAlphaReset(void) {
+    Psyz_V2Reset();
     Psyz_NavReset(&psyz_nav);psyz_nav_health=psyz_nav_armor=psyz_nav_damage_time=psyz_prepare_log=0;
     Psyz_MotionReset(&psyz_motion);psyz_stock_escape_until=psyz_stock_escape_pending=0;
     memset(psyz_item_clocks,0,sizeof(psyz_item_clocks));psyz_timer_log=0;
@@ -256,6 +258,7 @@ static void Psyz_SelectDemoRoute(gentity_t *own,int target) {
     }
     if(psyz_active_route>=0)fprintf(stderr,"PSYZ_DEMO_ROUTE t=%d target=%d route=%d source=demo_bank\n",own->client->pers.cmd.serverTime,target,psyz_active_route);
 }
+#include "psyz_v2.h"
 static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
     (void)travel_flags;if(!g_entities)return;
     int client;memcpy(&client,(char*)state+8,4);
@@ -277,8 +280,8 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
             fprintf(stderr,"PSYZ_ITEM entity=%d class=%s pos=%.3f,%.3f,%.3f contents=%d next=%d model=%d\n",i,e->item->classname,e->r.currentOrigin[0],e->r.currentOrigin[1],e->r.currentOrigin[2],e->r.contents,e->nextthink,e->s.modelindex);
         }
     }
-    if(!Psyz_PreAlphaEnabled())return;
-    if(now<psyz_stock_escape_until){
+    if(!Psyz_PreAlphaEnabled() && !Psyz_V2Enabled())return;
+    if(Psyz_PreAlphaEnabled() && now<psyz_stock_escape_until){
         if(psyz_stock_escape_pending){
             // Освобождаем только свою верхнюю цель тем же проверенным API,
             // который уже используется штатным отказом от плохого маршрута.
@@ -288,7 +291,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         }
         return; // На 3с goal и движение полностью принадлежат штатному AAS.
     }
-    Psyz_OpeningTick(own);
+    if(Psyz_PreAlphaEnabled())Psyz_OpeningTick(own);
     cvar_t *clock_mode=Cvar_FindVar("qlx_psyzItemTiming");int timed=clock_mode && clock_mode->integer;
     if(timed){
         int clocks=0,unknown=0;
@@ -332,6 +335,7 @@ static void Psyz_PreAlphaGoal(void *state,int travel_flags,void *output) {
         }
         if(count)fprintf(stderr,"PSYZ_GOAL_REGISTRY newly_valid_item_goals=%d weapons=%d ammo_rl=%d\n",count,own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo[5]);
     }
+    if(Psyz_V2Enabled()){Psyz_V2Goal(state,output,own);return;}
     // Готовность к восстановлению выводим из своего состояния, не скрытого стека соперника.
     int ready_for_battle=Psyz_TrinityReady(own->client->ps.stats[STAT_WEAPONS],own->client->ps.ammo);
     int recovering=own->health<80 || ready_for_battle==0 ||
@@ -744,7 +748,7 @@ static void Psyz_PreAlphaTouch(gentity_t *item,gentity_t *other,trace_t *trace) 
     int weapons_before=other && other->client?other->client->ps.stats[STAT_WEAPONS]:0;
     int ammo_before=item && item->item && other && other->client && item->item->giTag>=0 && item->item->giTag<16?other->client->ps.ammo[item->item->giTag]:0;
     psyz_real_touch(item,other,trace);
-    if(!Psyz_PreAlphaEnabled() || !item || !other || !other->client)return;
+    if((!Psyz_PreAlphaEnabled() && !Psyz_V2Enabled()) || !item || !other || !other->client)return;
     if(item->item && before && !item->r.contents){
         int now=other->client->pers.cmd.serverTime;
         fprintf(stderr,"PSYZ_CLOCK_PICKUP t=%d entity=%d class=%s picker=%d nextthink=%d source=engine_nextthink\n",now,item->s.number,item->item->classname,other->s.number,item->nextthink);
@@ -755,6 +759,7 @@ static void Psyz_PreAlphaTouch(gentity_t *item,gentity_t *other,trace_t *trace) 
     int ammo_after=item->item && item->item->giTag>=0 && item->item->giTag<16?other->client->ps.ammo[item->item->giTag]:0;
     if(item->item && ((before && !item->r.contents) || weapons_before!=other->client->ps.stats[STAT_WEAPONS] || ammo_after>ammo_before)) {
         const char *c=item->item->classname;
+        Psyz_V2Pickup(item,other,other->client->pers.cmd.serverTime);
         if(psyz_rj>=0 && item->s.number==psyz_rj_target && other->s.number==psyz_rj_actor)
             psyz_rj_target_picked_at=other->client->pers.cmd.serverTime;
         Psyz_OpeningPickup(item,other->client->pers.cmd.serverTime);

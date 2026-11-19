@@ -21,14 +21,31 @@ static cvar_t openingvar{0,"0"},phasevar{0,"PRE_GAME"};
 static cvar_t combatvar{0,"0"},aimvar{0,"0"};
 static cvar_t preparevar{0,"0"};
 static cvar_t timervar{0,"0"};
+static cvar_t v2var{0,"0"},v2lab{0,"0"},v2mask{0,"0"},v2probe{0,"0"};
+static cvar_t v2strafe{0,"0"};
+static cvar_t v2spin{0,"0"},v2spinprobe{0,"0"};
+#define Cvar_FindVar Legacy_FindVar
 static cvar_t *Cvar_FindVar(const char *name){return !strcmp(name,"qlx_psyzItemTiming")?&timervar:!strcmp(name,"qlx_psyzLoadoutPreparation")?&preparevar:!strcmp(name,"qlx_psyzAimHumanize")?&aimvar:!strcmp(name,"qlx_psyzGroundCombat")?&combatvar:!strcmp(name,"qlx_psyzOpening")?&openingvar:!strcmp(name,"g_gameState")?&phasevar:!strcmp(name,"qlx_psyzPreAlpha")?&enabled:!strcmp(name,"mapname")?&mapvar:!strcmp(name,"qlx_psyzTestInstance")?&testvar:!strcmp(name,"net_port")?&portvar:nullptr;}
 static int Hook(void*,void(*)(gentity_t*,gentity_t*,trace_t*),void*){return 0;}
+#undef Cvar_FindVar
+static cvar_t *Cvar_FindVar(const char *name){
+ if(!strcmp(name,"qlx_psyzV2"))return &v2var;
+ if(!strcmp(name,"qlx_psyzV2Lab"))return &v2lab;
+ if(!strcmp(name,"qlx_psyzV2JumpMask"))return &v2mask;
+ if(!strcmp(name,"qlx_psyzV2JumpProbe"))return &v2probe;
+ if(!strcmp(name,"qlx_psyzV2Strafe"))return &v2strafe;
+ if(!strcmp(name,"qlx_psyzV2Spin"))return &v2spin;
+ if(!strcmp(name,"qlx_psyzV2SpinProbe"))return &v2spinprobe;
+ return Legacy_FindVar(name);
+}
 #include "../adapter/native/psyz_prealpha.h"
 static void check(bool v,const char *message){if(!v)throw std::runtime_error(message);}
 static unsigned char pushed[64];
 static void pop(int){}
 static void push(int,void *p){memcpy(pushed,p,64);}
 static int registry_ready;static unsigned char late_goal[64];
+static int top_valid;static unsigned char top_goal[64];
+static int get_top(int,void *out){if(top_valid)memcpy(out,top_goal,64);return top_valid;}
 static int get_item(int cursor,const char *name,void *out){
  if(registry_ready && cursor<0 && !strcmp(name,"Heavy Armor")){memcpy(out,late_goal,64);return 1;}
  return -1;
@@ -37,6 +54,9 @@ static Client client;
 static gitem_t red{"item_armor_body","Heavy Armor",0},mega{"item_health_mega","Mega Health",0};
 static void reset(){
  memset(world,0,sizeof(world));memset(&client,0,sizeof(client));Psyz_PreAlphaReset();enabled.integer=1;
+ v2var.integer=v2lab.integer=v2mask.integer=v2probe.integer=0;
+ v2strafe.integer=top_valid=0;
+ v2spin.integer=v2spinprobe.integer=0;
  openingvar.integer=0;phasevar.string="PRE_GAME";portvar.integer=27961;
  registry_ready=0;combatvar.integer=0;aimvar.integer=0;preparevar.integer=0;timervar.integer=0;
  world[0].client=&client;world[0].inuse=1;world[0].health=100;world[0].r.svFlags=8;
@@ -44,6 +64,7 @@ static void reset(){
  client.ps.groundEntityNum=1022;client.pers.cmd.serverTime=20000;
  void *im=imports_memory;memcpy(game_memory+0x2d8000,&im,sizeof(im));
  auto p=pop;auto u=push;auto g=get_item;memcpy(imports_memory+0x468,&p,sizeof(p));memcpy(imports_memory+0x460,&u,sizeof(u));memcpy(imports_memory+0x4d0,&g,sizeof(g));
+ auto top=get_top;memcpy(imports_memory+0x490,&top,sizeof(top));
 }
 static void goal(unsigned char *out,int id,int area,const float *position){memset(out,0,64);memcpy(out,position,12);memcpy(out+12,&area,4);memcpy(out+40,&id,4);int flags=1;memcpy(out+48,&flags,4);}
 static void take_item(gentity_t *item,gentity_t*,trace_t*){item->r.contents=0;}
@@ -318,5 +339,63 @@ int main(){try{
  reset();combatvar.integer=1;psyz_active_route=1;psyz_route_point=0;memcpy(client.ps.origin,sr.points[0].p,12);
  client.pers.cmd.forwardmove=127;client.pers.cmd.buttons=1;psyz_last_move_time=19975;
  Psyz_PreAlphaMove(&world[0]);check(psyz_strafe_phase==0,"Combat cannot start route strafe controller");
- std::cout<<"Native prealpha contextual scenarios passed\n";return 0;
+ // V2 works with legacy navigation disabled and never enables public ports.
+ reset();v2var.integer=1;enabled.integer=0;
+ check(Psyz_V2Enabled() && !Psyz_PreAlphaEnabled(),"V2 execution is independent of legacy PreAlpha");
+ portvar.integer=27960;check(!Psyz_V2Enabled(),"Public port cannot run V2");
+ portvar.integer=27962;check(!Psyz_V2Enabled(),"LAB needs an explicit second opt-in");
+ v2lab.integer=1;check(Psyz_V2Enabled(),"Explicit private LAB can test V2");portvar.integer=27961;
+ gitem_t shard{"item_armor_shard","Armor Shard",0};world[202].item=&shard;
+ check(Psyz_V2Weight(&world[202],&world[0],1)==0,"Combat never detours for a shard");
+ check(Psyz_V2Weight(&world[202],&world[0],0)==0,"Intermediate stack ignores shards");
+ client.ps.stats[STAT_WEAPONS]=(1<<5)|(1<<6);client.ps.ammo[5]=5;client.ps.ammo[6]=100;client.ps.stats[STAT_ARMOR]=100;
+ check(Psyz_V2Ready(&world[0]) && Psyz_V2Weight(&world[202],&world[0],0)>0,"Dominant stack may collect nearby shards");
+ client.ps.stats[STAT_ARMOR]=99;check(!Psyz_V2Ready(&world[0]),"99 armor cannot satisfy the 100/100 fight gate");
+ world[201].inuse=1;world[201].item=&red;world[201].s.number=201;world[201].r.contents=1;
+ memcpy(world[201].r.currentOrigin,psyz_v2_red_presets[0].flight[psyz_v2_red_presets[0].count-1].p,12);
+ goal(psyz_goal_cache[201],201,10,world[201].r.currentOrigin);psyz_goal_known[201]=1;
+ memcpy(client.ps.origin,psyz_v2_red_presets[0].runup,12);
+ Psyz_V2Goal(state,out,&world[0]);check(psyz_v2[0].target==201 && psyz_v2[0].jump<0,"Unaccepted RJ presets cannot execute automatically");
+ v2mask.integer=1;Psyz_V2Goal(state,out,&world[0]);check(psyz_v2[0].jump==0,"Accepted preset can acquire a Red route");
+ psyz_real_touch=take_item;world[200].inuse=1;world[200].s.number=200;world[200].item=&mega;world[200].r.contents=1;
+ Psyz_PreAlphaTouch(&world[200],&world[0],nullptr);check(psyz_v2[0].picked_at==0,"Mega cannot confirm a Red jump");
+ Psyz_PreAlphaTouch(&world[201],&world[0],nullptr);check(psyz_v2[0].picked_at==20000,"Exact bot Red pickup confirms the V2 route");
+ Psyz_V2JumpMove(&world[0],&psyz_v2[0],20025);check(psyz_v2[0].jump<0,"Confirmed route relinquishes command ownership");
+ usercmd_t wish{};Psyz_V2Wish(&wish,0,0,1,127);check(wish.forwardmove==0 && wish.rightmove==-127,"World movement uses QL right-vector handedness");
+ world[202].inuse=1;goal(top_goal,202,10,world[202].r.currentOrigin);top_valid=1;client.pers.cmd.buttons=1;
+ Psyz_V2Move(&world[0]);check(psyz_v2_reject_goal==1,"Nearby shard detour is also rejected during combat");
+ portvar.integer=27962;v2lab.integer=1;world[3].inuse=1;world[3].client=&client;
+ check(!Psyz_V2LabEmpty(),"Any human entity forbids probe setup");
+ reset();enabled.integer=0;v2var.integer=v2strafe.integer=1;
+ const auto &corridor=psyz_routes[11];memcpy(client.ps.origin,corridor.points[0].p,12);client.pers.cmd.forwardmove=127;
+ Psyz_V2Move(&world[0]);check(psyz_v2[0].strafe_phase==1 && client.pers.cmd.upmove==0,"V2 prepares a circle start in a recorded straight corridor");
+ client.pers.cmd.serverTime+=375;client.ps.velocity[0]=340;client.pers.cmd.angles[1]=0;client.pers.cmd.forwardmove=127;client.pers.cmd.rightmove=0;
+ Psyz_V2Move(&world[0]);check(client.pers.cmd.upmove==127 && psyz_v2[0].strafe_jumps==1,"Prepared V2 ground acceleration leads to the first jump");
+ client.pers.cmd.serverTime+=25;client.ps.groundEntityNum=1023;client.pers.cmd.angles[1]=0;client.pers.cmd.forwardmove=127;client.pers.cmd.rightmove=0;
+ Psyz_V2Move(&world[0]);check(client.pers.cmd.upmove==0,"V2 releases jump during flight");
+ // A whole observed camera turn must retain the world wish direction and
+ // PM_CmdScale's maximum-axis magnitude on every frame, including diagonals.
+ reset();enabled.integer=0;v2var.integer=v2lab.integer=v2spin.integer=v2spinprobe.integer=1;portvar.integer=27962;
+ client.ps.velocity[0]=400;
+ for(int t=20000;t<=20950;t+=25){client.pers.cmd.serverTime=t;client.pers.cmd.angles[1]=0;client.pers.cmd.forwardmove=127;client.pers.cmd.rightmove=0;
+   Psyz_V2Spin(&world[0]);float a=client.pers.cmd.angles[1]*6.28318530718f/65536.f;
+   float x=client.pers.cmd.forwardmove*cosf(a)+client.pers.cmd.rightmove*sinf(a),y=client.pers.cmd.forwardmove*sinf(a)-client.pers.cmd.rightmove*cosf(a);
+   check(x>0 && fabsf(y/hypotf(x,y))<.012f,"Camera turn preserves world movement direction");
+   check(abs(client.pers.cmd.forwardmove)>=126 || abs(client.pers.cmd.rightmove)>=126,"Camera turn preserves QL command scale");
+ }
+ check(psyz_v2[0].spin_start==0,"Observed full turn finishes after 950ms");
+ float ground_yaw=Psyz_V2CircleYaw(0,1,320,25);
+ check(fabsf(272*cosf((ground_yaw-45)*.01745329252f)-240)<.02f,"Circle preparation accounts for ground friction before acceleration");
+ reset();enabled.integer=0;v2var.integer=1;world[0].health=125;client.ps.stats[STAT_ARMOR]=125;
+ Psyz_V2Move(&world[0]);client.pers.cmd.serverTime+=1000;world[0].health=124;client.ps.stats[STAT_ARMOR]=124;
+ Psyz_V2Move(&world[0]);check(psyz_v2[0].combat_until<=client.pers.cmd.serverTime,"Natural overheal/overarmor decay is not incoming combat damage");
+ world[201].inuse=1;world[201].item=&red;world[201].r.contents=1;psyz_goal_known[201]=1;
+ auto &tp=psyz_v2[0];tp.tp_active=1;tp.tp_since=client.pers.cmd.serverTime;
+ int jump_point=0;while(!psyz_v2_tp_points[jump_point].jump)jump_point++;
+ tp.tp_point=jump_point;memcpy(client.ps.origin,psyz_v2_tp_points[jump_point].p,12);client.ps.velocity[0]=-320;
+ check(Psyz_V2TPMove(&world[0],&tp,client.pers.cmd.serverTime)==1 && client.pers.cmd.upmove==127,"TP route executes its real AAS normal-jump link at the takeoff");
+ client.ps.groundEntityNum=1023;client.pers.cmd.serverTime+=25;Psyz_V2TPMove(&world[0],&tp,client.pers.cmd.serverTime);
+ check(client.pers.cmd.upmove==0,"TP normal jump releases upmove in flight");
+ Psyz_V2TPMove(&world[0],&tp,tp.tp_since+16001);check(!tp.tp_active,"TP route has a finite control budget");
+ std::cout<<"Native prealpha and V2 contextual scenarios passed\n";return 0;
  }catch(const std::exception &e){std::cerr<<e.what()<<'\n';return 1;}}

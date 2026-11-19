@@ -5,20 +5,24 @@
 #include "psyz_stock_goal_observer.h"
 #include "psyz_live_combat.h"
 #include "psyz_replay_move.h"
+#include "psyz_v2_lab_probes.h"
 static void (*psyz_real_think)(gentity_t*);
 static int psyz_started = -1;
 static int psyz_last_log = -1;
 static void Psyz_Think(gentity_t* ent) {
+    if(Psyz_V2CombatProbePauseOther(ent)){psyz_real_think(ent);return;}
+    Psyz_V2CombatProbePreCommand(ent);
     /* Independent finisher never enables legacy route/aim overrides. Per-bot state also supports lab mirrors. */
     Psyz_Finish087Command(ent);
     cvar_t *test = Cvar_FindVar("qlx_psyzTestInstance");
     cvar_t *mode = Cvar_FindVar("qlx_psyzControlMode");
     cvar_t *port = Cvar_FindVar("net_port");
     if (!test || test->integer != 1 || !mode || (mode->integer != 1 && mode->integer != 2 && mode->integer != 3) ||
-        !port || port->integer != 27961 || !Psyz_IsOurBot(ent) ||
+        !port || (port->integer != 27961 && !(port->integer==27962 && Psyz_V2Enabled())) || !Psyz_IsOurBot(ent) ||
         !(ent->r.svFlags & 8) || !ent->client || ent->health <= 0) {
         if (!mode || mode->integer == 0) psyz_started = -1;
         if(Psyz_IsOurBot(ent) && ent->health<=0){
+            Psyz_V2Move(ent);
             psyz_rj=-1;
             if(Psyz_PreAlphaEnabled() && ent->client)Psyz_OpeningEnd(ent->client->pers.cmd.serverTime,"death");
             psyz_goal_target=psyz_active_route=psyz_rj_plan=-1;
@@ -29,14 +33,24 @@ static void Psyz_Think(gentity_t* ent) {
     int now = cmd->serverTime;
     if (mode->integer == 3) {
         usercmd_t stock_command=*cmd;
+        int previous_weapon=ent->client->ps.weapon,previous_ammo=previous_weapon>=0 && previous_weapon<16?ent->client->ps.ammo[previous_weapon]:0;
         /* Install lazily: custom cvars may not exist during VM load. */
         Psyz_InstallGoalObserver();
         /* Preserve stock AAS; explicitly enabled prealpha may alter this bot. */
         Psyz_PreAlphaMove(ent);
         Psyz_LiveCombatCommand(ent);
         Psyz_ReplayMove(ent);
+        Psyz_V2Move(ent);
+        Psyz_V2Spin(ent);
+        Psyz_V2CombatProbeCommand(ent);
         usercmd_t overlay_command=*cmd;
         psyz_real_think(ent);
+        if(Psyz_V2Enabled() && previous_weapon>1 && previous_weapon<16 && (overlay_command.buttons&1) && ent->client->ps.ammo[previous_weapon]<previous_ammo){
+            PsyzV2State *s=&psyz_v2[ent->s.number];int consumed=previous_ammo-ent->client->ps.ammo[previous_weapon];
+            s->fire_count[previous_weapon]+=consumed;
+            if(now-s->fire_log_at[previous_weapon]>=500){s->fire_log_at[previous_weapon]=now;
+                fprintf(stderr,"PSYZ_V2_FIRE slot=%d t=%d weapon=%d consumed=%d total_fired=%d jump=%d\n",ent->s.number,now,previous_weapon,consumed,s->fire_count[previous_weapon],s->jump);}
+        }
         if (now - psyz_last_log >= 200) {
             psyz_last_log = now;
             cvar_t *map=Cvar_FindVar("mapname");
@@ -81,7 +95,7 @@ static void Psyz_Think(gentity_t* ent) {
 }
 static void Psyz_Install(void) {
     if (!getenv("PSYZ_CONTROL_LAB")) return;
-    fprintf(stderr,"PSYZ_BUILD version=V2.0.0-red_rj_instruction stage=F01-A target_pickup_verification=1\n");
+    fprintf(stderr,"PSYZ_BUILD version=V2.0.0-red_rj_instruction stage=F01-B revision=1 v2_execution=1 target_pickup_verification=1\n");
     /* Old VM is unloaded here. Reuse only our successful VM-hook slots,
        leaving permanent engine hooks untouched. Full Python HookVm rewinds
        its own hooks after installation; our slots must rewind in both builds. */
@@ -94,6 +108,7 @@ static void Psyz_Install(void) {
     Psyz_PreAlphaVmReset();
     Psyz_LiveCombatReset();
     Psyz_Finish087Reset();
+    psyz_v2_combat_probe=psyz_v2_combat_probe_at=0;psyz_v2_combat_probe_slot=-1;
     psyz_replay_active=-1;psyz_replay_cooldown=0;
     Psyz_InstallPickup();
     Psyz_InstallDamageObserver();
@@ -106,6 +121,7 @@ static void Psyz_Install(void) {
     }
     Psyz_InstallGoalObserver();
     psyz_started = -1;
+    psyz_last_log = -1;
     int error = Hook(target,Psyz_Think,(void*)&psyz_real_think);
     if(!error)psyz_vm_hook_count++;
     fprintf(stderr,"PSYZ_CONTROL install=%d\n",error);
