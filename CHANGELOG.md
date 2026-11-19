@@ -1,3 +1,17 @@
+# 2026-11-19 — deploy V2 F01-A to empty training
+
+Recover the pinned rc2 native source, preserve its inherited opt-in code and build
+the current overlay in an isolated Ubuntu22/Python3.10 compiler container. Eight
+Linux test groups pass, including 100 hook-pool reloads. Verify local rollback,
+loaded native SHA, engine version, stock bot presence and external Steam A2S.
+Public rooms and LAB keep their PIDs. Legacy movement/replay remain disabled.
+Update website metadata/Connect and explicitly identify the partial release.
+
+Recheck 265 Blood Run demos for actor-owned noncombat circle/strafe starts and
+measure speed at 2s/4s from the observed ground start with coverage. Python179/179.
+See docs/V2_DEPLOYMENT_20261119_RU.md. Full movement reproduction and adaptation
+remain unimplemented; this deployment does not claim them.
+
 # 2026-11-19 — V2.0.0-red_rj_instruction / F01-A (local development)
 
 Require the latched target item to be picked up by the initiating bot before an

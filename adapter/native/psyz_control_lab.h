@@ -81,6 +81,7 @@ static void Psyz_Think(gentity_t* ent) {
 }
 static void Psyz_Install(void) {
     if (!getenv("PSYZ_CONTROL_LAB")) return;
+    fprintf(stderr,"PSYZ_BUILD version=V2.0.0-red_rj_instruction stage=F01-A target_pickup_verification=1\n");
     /* Old VM is unloaded here. Reuse only our successful VM-hook slots,
        leaving permanent engine hooks untouched. Full Python HookVm rewinds
        its own hooks after installation; our slots must rewind in both builds. */

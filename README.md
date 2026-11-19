@@ -19,7 +19,8 @@
 > **Current development: V2.0.0-red_rj_instruction.**
 > [Owner requirements and staged implementation](docs/V2_0_0_RED_RJ_INSTRUCTION_RU.md).
 > F01-A fixes target-item confirmation and prepares observed red approaches.
-> Local tests pass; a new retail runtime has not been deployed. Historical
+> [F01-A is deployed to training](docs/V2_DEPLOYMENT_20261119_RU.md);
+> new movement/replay remain disabled. Historical
 > results below keep their original versions and acceptance limits.
 
 Последнее дополнение10.10: [адаптация к силе/стилю соперника](docs/OPPONENT_ADAPTATION_SPEC_RU.md): многопризнаковая оценка, читаемые привычки, подготовленная контратака, «Крыса» иQA-план. Исходник сохранён; кодирование уточняется отдельно.

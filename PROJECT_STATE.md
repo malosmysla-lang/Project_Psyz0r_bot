@@ -1,4 +1,13 @@
-# Current source — V2.0.0-red_rj_instruction / 19.11.2026
+# Current runtime — V2.0.0-red_rj_instruction / F01-A / 19.11.2026
+
+Training 78.17.47.29:27961 updated after fresh empty-room checks and verified local
+rollback. Loaded native SHA 0a3eca6a5eae427ff8e29b8c200fb74f71d2953dc60a64b643eb8b5b69c1f637.
+Engine build marker/hook, live version, Psyz0r and external Steam A2S confirmed.
+Eight Linux test groups passed; Python179/179. Public FIN rooms and LAB unchanged.
+PreAlpha=0, movement replay/probe=0, independent finisher=1. New movement and
+learned adaptation are NOT active. See docs/V2_DEPLOYMENT_20261119_RU.md.
+
+# Source stage before deployment — 19.11.2026
 
 Isolated branch `codex/psyz0r-v2-red-rj`, base `1b52d27`. Current item F01,
 substage A: correct target-pickup acceptance and evidence preparation. Native
